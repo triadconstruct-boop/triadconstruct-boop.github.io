@@ -172,7 +172,7 @@
       <div><span>ARCHIVE</span><strong id="archive-count">00</strong></div>
       <div><span>CONFIRMED</span><strong id="confirmed-count">00</strong></div>
       <div><span>WARNINGS</span><strong id="warning-count">00</strong></div>
-      <div><span>SNAPSHOT</span><strong>30.AUG.26</strong></div>
+      <div><span>SNAPSHOT</span><strong>31.AUG.26</strong></div>
     </section>
 
     <section class="controls" aria-label="Filter intelligence feed">
@@ -202,6 +202,69 @@
     "use strict";
 
     const alerts = [
+      {
+        id: "AL-260831-01",
+        timestamp: "2026-08-31 // 02:41 UTC",
+        region: "TÜRKIYE / SAUDI ARABIA / PAKISTAN",
+        classification: "CONFIRMED",
+        confidence: "HIGH",
+        title: "MAKKAH DEFENCE PACT MOVES INTO OPERATIONAL PLANNING",
+        summary: "Türkiye confirmed that its foreign and defence ministers and chief of staff will meet Saudi and Pakistani counterparts in Istanbul on August 31 for the first Strategic Political and Defence Committee session under the Makkah Joint Defence Agreement. The pact, signed August 7, treats an armed attack on one member as an attack on all three. The committee is expected to address interoperability, defence capabilities and joint weapons development. The original agreement does not publicly specify what military action each state must take, so its automatic-response mechanism remains untested.",
+        significance: "A new collective-defence bloc linking NATO's second-largest military, a nuclear-armed state and a leading Gulf energy exporter is beginning to build implementation machinery. This creates a regional security architecture partly independent of Washington and could alter deterrence calculations involving Iran, Israel, India, the Gulf and the Red Sea.",
+        revisions: [
+          "Add the Makkah pact as a formal alliance node spanning Anatolia, the Gulf and South Asia.",
+          "Map Turkish defence industry, Pakistani military and nuclear weight, and Saudi financing and basing as complementary capabilities.",
+          "Treat attacks on any member as potential three-state escalation triggers while keeping response obligations uncertain.",
+          "Add interoperability, joint exercises, air defence, drones, electronic warfare and joint production to the alliance capability timeline.",
+          "Model tension between Türkiye's NATO obligations and an expanding autonomous regional bloc.",
+          "Add Egypt and Bangladesh as potential expansion pressure points."
+        ],
+        watch: [
+          "Published committee decisions or command arrangements",
+          "Joint land, air or maritime exercises",
+          "Integrated missile and drone defence",
+          "Permanent secretariat, liaison officers or shared intelligence cells",
+          "Egyptian or Bangladeshi accession steps",
+          "Clarification of nuclear-deterrence coverage",
+          "Responses from Iran, Israel and India"
+        ],
+        sources: [
+          ["TÜRKİYE MFA", "https://www.mfa.gov.tr/no_-168_-mekke-ortak-savunma-anlasmasi-kapsaminda-tesis-edilen-stratejik-siyasi-ve-savunma-komitesi-nin-ilk-toplantisi-hk.en.mfa"],
+          ["REUTERS // FIRST COMMITTEE", "https://www.reuters.com/world/asia-pacific/turkey-saudi-arabia-pakistan-hold-first-defence-pact-meeting-source-says-2026-08-30/"],
+          ["REUTERS // PACT TERMS", "https://www.reuters.com/world/asia-pacific/saudi-arabia-turkey-pakistan-sign-joint-defence-deal-amid-regional-turmoil-2026-08-07/"]
+        ]
+      },
+      {
+        id: "EU-260831-01",
+        timestamp: "2026-08-31 // 02:40 UTC",
+        region: "UKRAINE / RUSSIA",
+        classification: "CREDIBLE WARNING",
+        confidence: "MEDIUM–HIGH",
+        title: "RUSSIA PREPARES MASS STRIKES ON UKRAINE'S ENERGY SYSTEM",
+        summary: "Russia's Defence Ministry said its forces had begun preparing large-scale attacks on Ukrainian energy facilities in retaliation for Ukrainian strikes on Russian civilian and fuel infrastructure. Associated Press independently reported the announcement amid an intensified Russian air campaign and Ukrainian long-range attacks on Russian refineries and logistics. Moscow disclosed no timing, target list or strike package, and the statement may also serve coercive signaling; attack execution is not yet confirmed.",
+        significance: "The announcement is a concrete early-warning indicator for another infrastructure-centered winter campaign. A major wave could force Ukraine to divide scarce air defences between cities, military sites and the grid while increasing heating, water, industrial, displacement and European-aid pressures.",
+        revisions: [
+          "Move Ukraine's energy grid into a pre-strike high-alert phase.",
+          "Raise expected demand for air-defence interceptors, transformers, mobile generation and repair crews.",
+          "Map power generation, substations, gas storage and cross-border interconnectors as priority pressure points.",
+          "Connect Ukrainian attacks on Russian oil and logistics to a widening reciprocal infrastructure-war cycle.",
+          "Increase winter displacement, municipal-service failure and European emergency-support assumptions.",
+          "Include grid instability around nuclear facilities as a secondary safety risk."
+        ],
+        watch: [
+          "Strategic-bomber dispersal and cruise-missile loading indicators",
+          "Large Shahed or missile launch formations",
+          "Strikes on generation plants, substations or gas infrastructure",
+          "Sustained regional blackouts and transformer losses",
+          "Emergency electricity imports and air-defence reallocations",
+          "Ukrainian retaliation against Russian fuel infrastructure",
+          "Whether Moscow limits attacks to military-linked energy sites"
+        ],
+        sources: [
+          ["RUSSIAN DEFENCE MINISTRY VIA TASS", "https://tass.com/defense/2179463"],
+          ["ASSOCIATED PRESS", "https://apnews.com/article/russia-ukraine-war-strikes-attacks-energy-oil-gas-drones-warehouse-5cfe71b2954a40489c070459ba82116e"]
+        ]
+      },
       {
         id: "FI-260830-01",
         timestamp: "2026-08-30 // 23:52 UTC",
