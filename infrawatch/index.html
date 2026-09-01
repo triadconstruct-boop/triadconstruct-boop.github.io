@@ -18,10 +18,36 @@
     <section class="sector-grid" id="sectors" aria-label="Infrastructure sectors"></section>
     <section class="controls"><span class="prompt">root@ronin:~$ infra --severity</span><div class="filters"><button class="filter active" data-level="ALL" aria-pressed="true">[ALL]</button><button class="filter" data-level="CRITICAL" aria-pressed="false">[CRITICAL]</button><button class="filter" data-level="ELEVATED" aria-pressed="false">[ELEVATED]</button></div></section>
     <section><div class="feed" id="feed"></div></section>
-    <footer><span>WORLD WATCH SYNC // 01 SEP 2026 // 02:38 UTC</span><a href="/">RETURN TO Y&Y ↑</a></footer>
+    <footer><span>WORLD WATCH SYNC // 01 SEP 2026 // 10:48 UTC</span><a href="/">RETURN TO Y&Y ↑</a></footer>
   </main>
   <script>
     "use strict";const signals=[
+      {
+            "id": "ME-260901-01",
+            "sector": "FUEL",
+            "level": "CRITICAL",
+            "score": 90,
+            "region": "STRAIT OF HORMUZ / SAUDI ARABIA / OMAN",
+            "title": "NEAR-SIMULTANEOUS STRIKES HIT SAUDI CRUDE TANKERS AT HORMUZ",
+            "changed": "Two fully laden VLCCs carrying roughly 4 million barrels in total were reportedly struck within minutes while leaving Hormuz near Khasab. Crews were reported safe; operators had not confirmed damage, cargo loss or pollution, and no attacker has been identified.",
+            "dependencies": [
+                  "HORMUZ OUTBOUND SHIPPING CORRIDOR",
+                  "SAUDI JUAYMAH AND RAS TANURA EXPORTS",
+                  "VLCC CREWS, SALVAGE AND SPILL RESPONSE",
+                  "WAR-RISK INSURANCE AND TANKER AVAILABILITY",
+                  "EAST–WEST PIPELINE AND YANBU DIVERSION CAPACITY",
+                  "NAVAL ESCORT AND MINE-COUNTERMEASURE CAPACITY"
+            ],
+            "watch": [
+                  "Saudi, Omani, U.S. or Iranian attribution and operational statements.",
+                  "Operator confirmation of hull damage, cargo loss, fire or pollution.",
+                  "Naval escorts, convoy rules or changes to the Omani transit corridor.",
+                  "Additional attacks on Saudi, UAE, Kuwaiti or Iraqi crude carriers.",
+                  "Saudi export shifts from Juaymah and Ras Tanura toward Yanbu.",
+                  "Hormuz transit counts, tanker rates and war-risk insurance premiums.",
+                  "Whether the vessels continue under their own power or require salvage."
+            ]
+      },
       {
             "id": "PS-260901-01",
             "sector": "TRANSPORT",
