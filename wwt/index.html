@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Y&Y public-source global war escalation assessment console.">
+  <title>Y&amp;Y // WWT</title>
+  <style>
+    :root{color-scheme:dark;--bg:#030000;--panel:#070101;--red:#ff2a2a;--soft:#b82c2c;--muted:#7d2020;--border:#5d1010}
+    *{box-sizing:border-box}html{background:var(--bg)}body{margin:0;min-height:100vh;background:var(--bg);color:var(--red);font-family:"Courier New",Courier,monospace}button,input,a{font:inherit}::selection{background:var(--red);color:var(--bg)}
+    body::before{content:"";position:fixed;inset:0;z-index:20;pointer-events:none;opacity:.15;background:repeating-linear-gradient(to bottom,transparent 0,transparent 3px,rgba(255,42,42,.14) 4px)}
+    body::after{content:"";position:fixed;inset:0;z-index:19;pointer-events:none;background:radial-gradient(circle at center,transparent 42%,rgba(70,0,0,.18) 100%)}
+    .terminal{position:relative;width:min(1240px,100%);min-height:100vh;margin:auto;padding:28px clamp(16px,4vw,48px) 40px;text-shadow:0 0 8px rgba(255,20,20,.25)}
+    header{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;padding:20px 22px;border:1px solid var(--border);border-left:5px solid var(--red);background:linear-gradient(90deg,rgba(80,0,0,.18),transparent 70%)}
+    .eyebrow,.label{margin:0 0 7px;color:var(--muted);font-size:.66rem;letter-spacing:.14em}.brand{margin:0;font-size:clamp(2.2rem,7vw,5rem);line-height:.88;letter-spacing:-.07em}.readout{text-align:right;color:var(--soft);font-size:.7rem;line-height:1.65}.dot{display:inline-block;width:7px;height:7px;margin-right:7px;background:var(--red);box-shadow:0 0 10px var(--red);animation:pulse 1.8s infinite}.home{color:var(--soft);text-decoration:none}.home:hover{color:var(--red)}
+    .notice{margin:0;padding:10px 14px;border:1px solid var(--border);border-top:0;color:var(--soft);font-size:.66rem;letter-spacing:.08em;text-align:center}
+    .hero{display:grid;grid-template-columns:340px 1fr;border:1px solid var(--border);border-top:0}.dial-wrap{display:grid;place-items:center;padding:30px;border-right:1px solid var(--border)}
+    .dial{--score:67;position:relative;width:230px;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--red) calc(var(--score)*1%),#260606 0);filter:drop-shadow(0 0 18px rgba(255,42,42,.16))}.dial::before{content:"";position:absolute;inset:14px;border-radius:50%;background:var(--bg);border:1px solid var(--border)}.dial-data{position:relative;text-align:center}.score{display:block;font-size:4.2rem;font-weight:700;line-height:.9;letter-spacing:-.08em}.denom{color:var(--muted);font-size:.7rem;letter-spacing:.12em}.state{display:block;margin-top:12px;font-size:1rem;letter-spacing:.18em}.trend{display:block;margin-top:8px;color:var(--soft);font-size:.68rem}
+    .hero-copy{padding:28px;display:grid;align-content:center;gap:18px}.hero-copy h2{margin:0;font-size:clamp(1.4rem,3vw,2.2rem);letter-spacing:-.04em}.hero-copy p{margin:0;max-width:780px;color:#d84a4a;line-height:1.65;font-size:.85rem}.probability{display:inline-flex;align-items:baseline;gap:10px;width:max-content;padding:10px 12px;border:1px solid var(--border)}.probability strong{font-size:1.35rem}.probability span{color:var(--muted);font-size:.62rem;letter-spacing:.08em}
+    .stat-row{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--border)}.stat{padding:12px;border-right:1px solid var(--border)}.stat:last-child{border:0}.stat span{display:block;color:var(--muted);font-size:.58rem;letter-spacing:.12em}.stat strong{display:block;margin-top:7px;font-size:.78rem}
+    .section{margin-top:18px;border:1px solid var(--border);background:rgba(7,1,1,.72)}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:center;padding:13px 16px;border-bottom:1px solid var(--border)}.section-head h2{margin:0;font-size:.8rem;letter-spacing:.14em}.section-head span{color:var(--muted);font-size:.6rem}.vectors{display:grid;grid-template-columns:repeat(2,1fr)}.vector{padding:16px;border-right:1px solid var(--border);border-bottom:1px solid var(--border)}.vector:nth-child(2n){border-right:0}.vector:nth-last-child(-n+2){border-bottom:0}.vector-top{display:flex;justify-content:space-between;gap:14px;align-items:center}.vector h3{margin:0;font-size:.76rem;letter-spacing:.08em}.vector output{font-size:1.15rem;font-weight:700}.bar{height:5px;margin:12px 0;background:#260606}.bar i{display:block;height:100%;width:0;background:var(--red);box-shadow:0 0 8px rgba(255,42,42,.45)}.vector p{margin:0;color:var(--soft);font-size:.67rem;line-height:1.5}
+    details{border-top:1px solid var(--border)}summary{cursor:pointer;padding:14px 16px;list-style:none;font-size:.72rem;letter-spacing:.12em}summary::-webkit-details-marker{display:none}summary::before{content:"[+] ";color:var(--soft)}details[open] summary::before{content:"[-] "}.controls{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;padding:16px;border-top:1px solid var(--border)}.control{border:1px solid var(--border);padding:12px}.control label{display:flex;justify-content:space-between;gap:12px;font-size:.68rem;letter-spacing:.08em}.control input[type=range]{width:100%;margin-top:12px;accent-color:var(--red)}
+    .actions{display:flex;flex-wrap:wrap;gap:10px;padding:0 16px 16px}.btn{min-height:40px;padding:0 14px;border:1px solid var(--red);background:var(--bg);color:var(--red);cursor:pointer;font-size:.65rem;letter-spacing:.1em}.btn:hover,.btn:focus{background:var(--red);color:var(--bg)}.btn.secondary{border-color:var(--border);color:var(--soft)}
+    .grid{display:grid;grid-template-columns:1.18fr .82fr}.indicators,.evidence{padding:0;margin:0;list-style:none}.indicators li,.evidence li{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:14px 16px;border-bottom:1px solid var(--border);font-size:.72rem;line-height:1.55}.indicators li:last-child,.evidence li:last-child{border:0}.tag{color:var(--muted);font-size:.61rem;letter-spacing:.08em}.indicators p,.evidence p{margin:0;color:#d84a4a}.indicators a,.evidence a{color:var(--red);text-decoration:none;border-bottom:1px dotted var(--muted)}.indicators a:hover,.evidence a:hover{border-bottom-color:var(--red)}.method{padding:16px;border-left:1px solid var(--border)}.method p,.method li{color:var(--soft);font-size:.68rem;line-height:1.6}.method ul{padding-left:18px}.method strong{color:var(--red)}
+    footer{padding:24px 2px 0;color:var(--muted);font-size:.58rem;letter-spacing:.08em;line-height:1.6}
+    @keyframes pulse{50%{opacity:.35}}@media(max-width:800px){.hero{grid-template-columns:1fr}.dial-wrap{border-right:0;border-bottom:1px solid var(--border)}.vectors,.controls,.grid{grid-template-columns:1fr}.vector{border-right:0}.vector:nth-last-child(2){border-bottom:1px solid var(--border)}.method{border-left:0;border-top:1px solid var(--border)}.stat-row{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--border)}header{align-items:flex-start}.readout{font-size:.6rem}}
+  </style>
+</head>
+<body>
+  <main class="terminal">
+    <header>
+      <div><p class="eyebrow">Y&amp;Y // GLOBAL ESCALATION SYSTEM</p><h1 class="brand">WWT</h1></div>
+      <div class="readout"><span class="dot"></span>MODEL ONLINE<br>WORLD WATCH FED<br><a class="home" href="/">[RETURN TO GATE]</a></div>
+    </header>
+    <p class="notice">PUBLIC-SOURCE PLANNING ESTIMATE — NOT AN OFFICIAL WARNING OR STATISTICAL FORECAST</p>
+
+    <section class="hero" aria-label="Current global-war assessment">
+      <div class="dial-wrap"><div class="dial" id="dial"><div class="dial-data"><span class="score" id="score">67</span><span class="denom">/ 100</span><strong class="state" id="state">SEVERE</strong><span class="trend" id="trend">RISING</span></div></div></div>
+      <div class="hero-copy">
+        <div><p class="label">ASSESSMENT</p><h2>ALL-OUT GLOBAL CONFLICT RISK</h2></div>
+        <p id="assessment">Multiple wars, alliance commitments, economic coercion and hybrid operations are increasingly coupled. Public evidence shows severe escalation pressure, but not an irreversible transition to sustained direct combat among opposing nuclear great powers.</p>
+        <div class="probability"><strong id="probability">12–25%</strong><span>12-MONTH MODEL BAND</span></div>
+        <div class="stat-row">
+          <div class="stat"><span>CONFIDENCE</span><strong id="confidence">MEDIUM–HIGH</strong></div>
+          <div class="stat"><span>LEADING DRIVER</span><strong id="leader">ECONOMIC WARFARE</strong></div>
+          <div class="stat"><span>SOURCE COVERAGE</span><strong>26 ALERTS / 61 LINKS</strong></div>
+          <div class="stat"><span>UPDATED</span><strong id="updated">2026-09-01 // 17:56 UTC</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><h2>ESCALATION VECTORS</h2><span>EIGHT-VECTOR MODEL</span></div>
+      <div class="vectors" id="vectors"></div>
+      <details>
+        <summary>OPEN ANALYST CALIBRATION</summary>
+        <div class="controls" id="controls"></div>
+        <div class="actions"><button class="btn" id="save">SAVE ASSESSMENT</button><button class="btn secondary" id="copy">COPY SNAPSHOT</button><button class="btn secondary" id="reset">RESET PUBLISHED MODEL</button></div>
+      </details>
+    </section>
+
+    <section class="section grid">
+      <div>
+        <div class="section-head"><h2>ACTIVE INTERPRETATION</h2><span>FACT / INFERENCE SEPARATION</span></div>
+        <ul class="indicators" id="indicators"></ul>
+      </div>
+      <aside class="method">
+        <p class="label">MODEL DEFINITION</p>
+        <p><strong>ALL-OUT GLOBAL CONFLICT</strong> means sustained direct combat among two or more nuclear great powers or opposing alliance systems across multiple theaters.</p>
+        <p class="label">SCORE</p>
+        <ul><li>40% highest escalation vector</li><li>35% eight-vector average</li><li>25% systemic global pressure</li></ul>
+        <p class="label">PROBABILITY BAND</p>
+        <p>The displayed 12-month range is a scenario-planning translation of the score. It is not a frequency-derived actuarial probability and must not be read as precision.</p>
+        <p><strong>WAR CONFIRMED</strong> is a separate state and cannot be produced by this model alone.</p>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><h2>DECISIVE EVIDENCE</h2><span>WORLD WATCH INGEST // 01.SEP.26</span></div>
+      <ul class="evidence">
+        <li><span class="tag">OBSERVED</span><p>U.S.–Iran fighting has restarted around Hormuz, and coordinated attacks have struck Saudi crude tankers. This directly couples military escalation with a global energy chokepoint. <a href="https://www.reuters.com/world/middle-east/us-forces-strike-two-iranian-launchers-irans-larak-island-us-official-says-2026-08-30/" target="_blank" rel="noopener noreferrer">REUTERS</a> · <a href="https://www.ukmto.org/-/media/ukmto/products/20260831-ukmto_warning_124-26.pdf" target="_blank" rel="noopener noreferrer">UKMTO</a></p></li>
+        <li><span class="tag">OBSERVED</span><p>Russia has shifted Kyiv into sustained jet-drone saturation while European authorities investigate an expanding pattern of sabotage against logistics, defence production and power infrastructure. <a href="https://www.president.gov.ua/en/news/z-komandoyu-mi-gotuyemos-do-novoyi-komunikaciyi-z-predstavni-106177" target="_blank" rel="noopener noreferrer">UKRAINE</a> · <a href="https://www.reuters.com/world/german-police-probe-unexploded-incendiary-device-brandenburg-power-substation-2026-09-01/" target="_blank" rel="noopener noreferrer">REUTERS</a></p></li>
+        <li><span class="tag">WARNING</span><p>Taiwan assesses that China is increasingly rehearsing blockade-first operations. The exercises establish a plausible second major theater, but they do not prove a decision to attack. <a href="https://www.mnd.gov.tw/en/publication/87162" target="_blank" rel="noopener noreferrer">TAIWAN MND</a> · <a href="https://www.reuters.com/business/aerospace-defense/taiwan-says-unpredictable-china-strengthens-air-sea-control-nearby-2026-08-31/" target="_blank" rel="noopener noreferrer">REUTERS</a></p></li>
+        <li><span class="tag">OBSERVED</span><p>New defence pacts and industrial mobilisation are hardening alliance blocs and replenishment capacity. They increase entanglement and endurance without making general war inevitable. <a href="https://www.mfa.gov.tr/no_-168_-mekke-ortak-savunma-anlasmasi-kapsaminda-tesis-edilen-stratejik-siyasi-ve-savunma-komitesi-nin-ilk-toplantisi-hk.en.mfa" target="_blank" rel="noopener noreferrer">TÜRKİYE MFA</a></p></li>
+        <li><span class="tag">BOUNDARY</span><p>No current source establishes synchronized mobilisation by opposing nuclear great powers, evacuation of national leadership, launch-force dispersal, alliance-wide war orders or collapse of major deconfliction channels. Those would move WWT toward CRITICAL.</p></li>
+      </ul>
+    </section>
+
+    <footer>WWT evaluates published World Watch evidence. Scores and probability bands are transparent decision-support estimates, not intelligence-community judgments, emergency instructions or claims of access to classified information.</footer>
+  </main>
+  <script>
+    const definitions=[
+      {id:"direct",name:"GREAT-POWER DIRECT CLASH",value:55,desc:"Direct combat or rapidly shrinking separation between nuclear-armed major powers.",basis:"Direct U.S.–Iran combat raises escalation pressure, but the archive does not show sustained direct U.S.–Russia or U.S.–China fighting."},
+      {id:"alliances",name:"ALLIANCE ENTANGLEMENT",value:63,desc:"Treaty commitments, basing, reinforcement and cross-bloc obligations.",basis:"New defence coordination and overlapping alliances create more pathways for regional fighting to pull in additional states."},
+      {id:"theaters",name:"MULTI-THEATER COUPLING",value:67,desc:"Operational links among Europe, the Middle East and the Indo-Pacific.",basis:"Ukraine saturation, Hormuz combat and blockade-first Taiwan planning are simultaneous pressure fronts, although they are not yet one coordinated war."},
+      {id:"nuclear",name:"NUCLEAR ESCALATION",value:42,desc:"Changes in doctrine, alert posture, dispersal, signaling or command risk.",basis:"Nuclear powers are implicated in several crises, but no archive source establishes launch preparation or a new operational alert posture."},
+      {id:"mobilization",name:"MILITARY MOBILIZATION",value:55,desc:"Long-duration production, manpower, basing and stockpile expansion.",basis:"Seven-year U.S. interceptor agreements and regional procurement point to endurance planning, not proof of imminent general war."},
+      {id:"economic",name:"ECONOMIC WARFARE",value:70,desc:"Blockades, sanctions, shipping attacks and strategic supply-chain fracture.",basis:"The Hormuz blockade, tanker attacks, Iranian export collapse and dual-sided Black Sea disruption now connect war directly to energy and food systems."},
+      {id:"crisis",name:"CRISIS-CONTROL FAILURE",value:60,desc:"Erosion of diplomacy, deconfliction, verification and trusted signaling.",basis:"Synthetic official imagery, coercive signaling and widening retaliation increase miscalculation, while some communication channels remain active."},
+      {id:"hybrid",name:"HYBRID PREPARATION",value:68,desc:"Cyber, sabotage, intelligence collection and deniable pre-conflict action.",basis:"Confirmed European sabotage and alleged global maritime signals collection broaden pre-conflict capabilities without proving a unified campaign."}
+    ];
+    const baseline={values:Object.fromEntries(definitions.map(d=>[d.id,d.value])),pressure:70,confidence:4,updated:"2026-09-01 // 17:56 UTC",trend:"RISING"};
+    let model=load();
+    const vectorBox=document.getElementById("vectors"),controlBox=document.getElementById("controls");
+
+    function load(){try{return {...baseline,...JSON.parse(localStorage.getItem("yy-wwt")||"{}")}}catch{return {...baseline}}}
+    function band(score){if(score>=95)return"EXTREME";if(score>=80)return"CRITICAL";if(score>=60)return"SEVERE";if(score>=40)return"ELEVATED";if(score>=20)return"GUARDED";return"ROUTINE"}
+    function probability(score){if(score>=90)return"45%+";if(score>=75)return"25–45%";if(score>=60)return"12–25%";if(score>=40)return"4–12%";if(score>=20)return"1–4%";return"<1%"}
+    function overall(){const values=definitions.map(d=>Number(model.values[d.id]));return Math.round(Math.max(...values)*.40+(values.reduce((a,b)=>a+b,0)/values.length)*.35+Number(model.pressure)*.25)}
+    function renderStructure(){
+      vectorBox.innerHTML=definitions.map(d=>`<article class="vector"><div class="vector-top"><h3>${d.name}</h3><output id="out-${d.id}">00</output></div><div class="bar"><i id="bar-${d.id}"></i></div><p>${d.desc}</p></article>`).join("");
+      controlBox.innerHTML=definitions.map(d=>`<div class="control"><label for="${d.id}"><span>${d.name}</span><output id="ctl-${d.id}">00</output></label><input id="${d.id}" type="range" min="0" max="100" value="${model.values[d.id]}"></div>`).join("")+`<div class="control"><label for="pressure"><span>SYSTEMIC PRESSURE</span><output id="ctl-pressure">00</output></label><input id="pressure" type="range" min="0" max="100" value="${model.pressure}"></div><div class="control"><label for="confidenceControl"><span>EVIDENCE CONFIDENCE</span><output id="ctl-confidence">MEDIUM</output></label><input id="confidenceControl" type="range" min="1" max="5" value="${model.confidence}"></div>`;
+      [...definitions.map(d=>d.id),"pressure","confidenceControl"].forEach(id=>document.getElementById(id).addEventListener("input",updateFromControls));
+    }
+    function updateFromControls(){definitions.forEach(d=>model.values[d.id]=Number(document.getElementById(d.id).value));model.pressure=Number(document.getElementById("pressure").value);model.confidence=Number(document.getElementById("confidenceControl").value);model.updated="UNSAVED ANALYST CHANGE";render()}
+    function render(){
+      const score=overall(),sorted=[...definitions].sort((a,b)=>model.values[b.id]-model.values[a.id]),conf=["","LOW","LOW–MEDIUM","MEDIUM","MEDIUM–HIGH","HIGH"][model.confidence];
+      document.getElementById("dial").style.setProperty("--score",score);document.getElementById("score").textContent=score;document.getElementById("state").textContent=band(score);document.getElementById("probability").textContent=probability(score);document.getElementById("confidence").textContent=conf;document.getElementById("leader").textContent=sorted[0].name;document.getElementById("updated").textContent=model.updated;
+      definitions.forEach(d=>{const v=model.values[d.id];document.getElementById(`out-${d.id}`).textContent=String(v).padStart(2,"0");document.getElementById(`bar-${d.id}`).style.width=v+"%";document.getElementById(`ctl-${d.id}`).textContent=v;document.getElementById(d.id).value=v});
+      document.getElementById("ctl-pressure").textContent=model.pressure;document.getElementById("pressure").value=model.pressure;document.getElementById("ctl-confidence").textContent=conf;document.getElementById("confidenceControl").value=model.confidence;
+      const messages={ROUTINE:"No material public-source path to all-out global conflict is established.",GUARDED:"Some escalation drivers are present, but they remain separated by strong barriers to general war.",ELEVATED:"Several theaters or alliance pressures are active, without a coherent transition toward general war.",SEVERE:"Multiple theaters, alliances and economic systems are increasingly coupled, but public evidence does not show an irreversible great-power war trajectory.",CRITICAL:"Strong converging indicators suggest possible transition toward direct multi-theater great-power combat; official posture changes require immediate scrutiny.",EXTREME:"Public-source indicators are at the model ceiling. Confirm conditions through official emergency and national-security channels."};
+      document.getElementById("assessment").textContent=messages[band(score)];document.getElementById("trend").textContent=model.updated==="UNSAVED ANALYST CHANGE"?"CALIBRATION IN PROGRESS":model.trend||"ASSESSMENT STORED";
+      document.getElementById("indicators").innerHTML=sorted.slice(0,3).map((d,i)=>`<li><span class="tag">${i===0?"LEADING":"SUPPORTING"}</span><p><strong>${d.name}</strong> is scored at ${model.values[d.id]}/100. ${d.basis}</p></li>`).join("")+`<li><span class="tag">BOUNDARY</span><p>The score measures escalation structure, not inevitability. A regional war, blockade or cyber campaign is not automatically a world war.</p></li>`;
+    }
+    function stamp(){return new Date().toISOString().replace("T"," // ").slice(0,19)+" UTC"}
+    document.getElementById("save").addEventListener("click",()=>{model.updated=stamp();model.trend="ANALYST OVERRIDE";localStorage.setItem("yy-wwt",JSON.stringify(model));render()});
+    document.getElementById("reset").addEventListener("click",()=>{model=structuredClone(baseline);localStorage.removeItem("yy-wwt");renderStructure();render()});
+    document.getElementById("copy").addEventListener("click",async()=>{const score=overall(),leader=[...definitions].sort((a,b)=>model.values[b.id]-model.values[a.id])[0];const text=`WWT // ALL-OUT GLOBAL CONFLICT RISK\n${score}/100 // ${band(score)}\n12-MONTH MODEL BAND: ${probability(score)}\nCONFIDENCE: ${document.getElementById("confidence").textContent}\nLEADING DRIVER: ${leader.name} (${model.values[leader.id]})\nUPDATED: ${model.updated}\nPUBLIC-SOURCE PLANNING ESTIMATE — NOT AN OFFICIAL WARNING`;try{await navigator.clipboard.writeText(text);document.getElementById("copy").textContent="COPIED";setTimeout(()=>document.getElementById("copy").textContent="COPY SNAPSHOT",1200)}catch{alert(text)}});
+    renderStructure();render();
+  </script>
+</body>
+</html>
