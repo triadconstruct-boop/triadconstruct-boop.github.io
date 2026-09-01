@@ -205,6 +205,36 @@
 
     const alerts = [
       {
+        id: "EU-260901-02",
+        timestamp: "2026-09-01 // 17:56 UTC",
+        region: "GERMANY / EUROPEAN POWER GRID / HYBRID SECURITY",
+        classification: "CONFIRMED",
+        confidence: "HIGH",
+        title: "CONDUCTIVE-PROJECTILE SABOTAGE HITS BRANDENBURG GRID NODE",
+        summary: "Brandenburg authorities confirmed a deliberate, technically coordinated attack on extra-high-voltage lines at the Turnow-Preilack substation, which connects the Jaenschwalde power plant to the 50Hertz transmission grid. Improvised projectiles used propellant to place conductive material across energized lines. Two attempts caused short circuits and automatically shut down the plant's 500-megawatt Block B; additional devices failed or were recovered. The wider electricity supply remained stable and no injuries were reported. The perpetrators, motive and any foreign sponsorship remain unknown.",
+        significance: "This is a demonstrated low-cost physical sabotage method against the interface between generation and transmission, not merely a discovered device or cyber warning. Attackers achieved a measurable operational effect without penetrating a control network or destroying a substation. For Ronin, European grid security must now account for stand-off attacks on exposed conductors and power-plant interconnects alongside arson, drones and cyber intrusion. The incident broadens the hybrid-threat map, but current evidence does not justify linking it to Russia, domestic extremists or other recent European sabotage cases.",
+        revisions: [
+          "Add Turnow-Preilack, Jaenschwalde and comparable power-plant-to-grid interconnects to the European critical-infrastructure sabotage map.",
+          "Model improvised propellant-launched conductive material as a low-cost method for forcing faults on exposed high-voltage lines.",
+          "Treat substations, line approaches and nearby launch positions as one security perimeter rather than protecting only fenced equipment.",
+          "Add automatic unit trips, reserve-generation activation, network rerouting and rapid conductor inspection to grid-disruption timelines.",
+          "Distinguish the confirmed localized 500-megawatt generation loss from an unsuccessful attempt to cause a wider blackout.",
+          "Keep attribution branches separate until forensic, arrest or intelligence evidence connects the attack to a domestic or foreign actor."
+        ],
+        watch: [
+          "Forensic findings on propellant, conductive payloads, launch positions and common construction across recovered devices.",
+          "Arrests, responsibility claims or official attribution by Brandenburg or federal authorities.",
+          "Repeat use of the method against substations, transmission corridors or power-plant interconnects in Germany or neighboring states.",
+          "Block B's return to service and any evidence of lasting line or substation damage.",
+          "New patrols, sensors, vegetation controls, exclusion zones or redundancy measures around exposed grid conductors.",
+          "Any evidentiary link to the Leipzig cargo-aircraft plot, the Polish drone-factory fire or earlier German grid attacks."
+        ],
+        sources: [
+          ["REUTERS — MINISTER, GRID AND PLANT-IMPACT REPORTING", "https://www.reuters.com/world/german-police-probe-unexploded-incendiary-device-brandenburg-power-substation-2026-09-01/"],
+          ["TAGESSCHAU — POLICE AND STATE-GOVERNMENT REPORTING", "https://www.tagesschau.de/inland/sprengvorrichtung-umspannwerk-brandenburg-100.html"]
+        ]
+      },
+      {
         id: "ME-260901-02",
         timestamp: "2026-09-01 // 14:41 UTC",
         region: "IRAN / CHINA / STRAIT OF HORMUZ",
