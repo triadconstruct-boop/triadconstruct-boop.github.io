@@ -14,14 +14,65 @@
 </head>
 <body><a class="portal-home" href="/" aria-label="Return to Y and Y system selector">Y&amp;Y</a><main class="terminal"><div class="scanlines" aria-hidden="true"></div>
     <header><div><p class="eyebrow">Y&amp;Y // CRITICAL SYSTEMS MONITOR</p><h1>INFRAWATCH</h1></div><div class="system-readout"><span><i class="status-dot"></i>DEPENDENCY GRID ONLINE</span><span id="clock">--:--:-- UTC</span></div></header>
-    <section class="status-grid"><div><span>OPEN SIGNALS</span><strong id="open-count">00</strong></div><div><span>CRITICAL</span><strong id="critical-count">00</strong></div><div><span>SECTORS</span><strong>06</strong></div><div><span>SNAPSHOT</span><strong>31.AUG.26</strong></div></section>
+    <section class="status-grid"><div><span>OPEN SIGNALS</span><strong id="open-count">00</strong></div><div><span>CRITICAL</span><strong id="critical-count">00</strong></div><div><span>SECTORS</span><strong>06</strong></div><div><span>SNAPSHOT</span><strong>01.SEP.26</strong></div></section>
     <section class="sector-grid" id="sectors" aria-label="Infrastructure sectors"></section>
     <section class="controls"><span class="prompt">root@ronin:~$ infra --severity</span><div class="filters"><button class="filter active" data-level="ALL" aria-pressed="true">[ALL]</button><button class="filter" data-level="CRITICAL" aria-pressed="false">[CRITICAL]</button><button class="filter" data-level="ELEVATED" aria-pressed="false">[ELEVATED]</button></div></section>
     <section><div class="feed" id="feed"></div></section>
-    <footer><span>WORLD WATCH SYNC // 31 AUG 2026 // 22:50 UTC</span><a href="/">RETURN TO Y&Y ↑</a></footer>
+    <footer><span>WORLD WATCH SYNC // 01 SEP 2026 // 02:38 UTC</span><a href="/">RETURN TO Y&Y ↑</a></footer>
   </main>
   <script>
     "use strict";const signals=[
+      {
+            "id": "PS-260901-01",
+            "sector": "TRANSPORT",
+            "level": "ELEVATED",
+            "score": 76,
+            "region": "MEXICO / NORTH AMERICA",
+            "title": "MEXICAN CARTELS EXPAND IED AND DRONE-BOMB WARFARE",
+            "changed": "Mexican state officials report a sustained regional rise in vehicle bombs, explosive drones and landmines targeting police positions, patrol routes and rural communities. The trend is confirmed, but capability is not uniform across Mexico and attribution can be delayed.",
+            "dependencies": [
+                  "MUNICIPAL POLICE COMPOUNDS",
+                  "PATROL ROUTES AND CHECKPOINTS",
+                  "RURAL ROAD ACCESS",
+                  "BOMB-DISPOSAL AND ROUTE-CLEARANCE TEAMS",
+                  "DRONE DETECTION AND ELECTRONIC COUNTERMEASURES",
+                  "DISPLACED COMMUNITIES AND LOCAL GOVERNMENT"
+            ],
+            "watch": [
+                  "Federal confirmation of national incident totals and attribution for the Ojocaliente bombing.",
+                  "Multiple coordinated bombings, attacks on federal installations or use in major urban centers.",
+                  "Cartel deployment of one-way attack drones, larger payloads, autonomous navigation or anti-jamming systems.",
+                  "Cross-border drone incursions, explosives-component trafficking or U.S.–Mexico counter-UAS cooperation.",
+                  "Military casualties, bomb-disposal losses and seizures of workshops or trained technicians.",
+                  "Expansion from intimidation and retaliation into sustained area denial against roads and communities."
+            ]
+      },
+      {
+            "id": "EC-260901-01",
+            "sector": "FUEL",
+            "level": "CRITICAL",
+            "score": 88,
+            "region": "ASIA / MIDDLE EAST / AFRICA",
+            "title": "REFINED-FUEL SHOCK REDRAWS ASIA–AFRICA SUPPLY FLOWS",
+            "changed": "Observed August flows show Asian refined-fuel imports at a post-war low while Middle East-to-Africa diesel shipments fell to their lowest level in almost nine years and Asian replacement exports to Africa reached a 4.5-year high. The shortage duration remains uncertain.",
+            "dependencies": [
+                  "DIESEL AND JET FUEL",
+                  "AFRICAN TRUCKING AND FOOD DISTRIBUTION",
+                  "MINING AND BACKUP GENERATION",
+                  "AVIATION AND MILITARY MOBILITY",
+                  "TANKER CAPACITY AND MARINE INSURANCE",
+                  "ASIAN REFINERY RUNS AND INVENTORIES"
+            ],
+            "watch": [
+                  "September Asian import volumes and commercial-inventory drawdowns.",
+                  "Saudi and UAE refinery restarts, export increases and safe access to Gulf shipping lanes.",
+                  "Extension of Russian diesel, gasoline or jet-fuel export restrictions.",
+                  "African pump shortages, rationing, transport interruptions or food-price transmission.",
+                  "Asian refinery runs and government limits on diesel or jet-fuel exports.",
+                  "Singapore gasoil and jet-fuel cracks, tanker rates and insurance costs.",
+                  "Military or emergency-service fuel prioritization in import-dependent states."
+            ]
+      },
       {
             "id": "AP-260831-01",
             "sector": "TRANSPORT",
