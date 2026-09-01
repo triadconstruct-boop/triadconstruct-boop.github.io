@@ -18,10 +18,36 @@
     <section class="sector-grid" id="sectors" aria-label="Infrastructure sectors"></section>
     <section class="controls"><span class="prompt">root@ronin:~$ infra --severity</span><div class="filters"><button class="filter active" data-level="ALL" aria-pressed="true">[ALL]</button><button class="filter" data-level="CRITICAL" aria-pressed="false">[CRITICAL]</button><button class="filter" data-level="ELEVATED" aria-pressed="false">[ELEVATED]</button></div></section>
     <section><div class="feed" id="feed"></div></section>
-    <footer><span>WORLD WATCH SYNC // 01 SEP 2026 // 11:42 UTC</span><a href="/">RETURN TO Y&Y ↑</a></footer>
+    <footer><span>WORLD WATCH SYNC // 01 SEP 2026 // 14:41 UTC</span><a href="/">RETURN TO Y&Y ↑</a></footer>
   </main>
   <script>
     "use strict";const signals=[
+      {
+            "id": "ME-260901-02",
+            "sector": "FUEL",
+            "level": "CRITICAL",
+            "score": 93,
+            "region": "IRAN / CHINA / STRAIT OF HORMUZ",
+            "title": "IRANIAN OIL EXPORTS COLLAPSE UNDER RECORD-LONG BLOCKADE",
+            "changed": "Iran has gone about seven weeks without a meaningful crude cargo crossing Hormuz. August crude and condensate loadings fell to an estimated 220,000–255,000 barrels per day from about 2 million in March. Production, Asian floating storage and the shadow fleet remain active, so the export system is constrained rather than destroyed.",
+            "dependencies": [
+                  "HORMUZ COMMERCIAL TRANSIT AND BLOCKADE ENFORCEMENT",
+                  "CHINESE REFINERY ACCESS TO IRANIAN CRUDE",
+                  "IRANIAN STORAGE AND PRODUCTION CONTINUITY",
+                  "ASIAN FLOATING STORAGE NEAR CHINA, MALAYSIA AND SRI LANKA",
+                  "SHADOW-FLEET TANKERS, INSURANCE AND TRANSSHIPMENT",
+                  "IRANIAN EXPORT REVENUE, CURRENCY AND FUEL SUBSIDIES"
+            ],
+            "watch": [
+                  "Any verified Iranian crude crossing to China or return of empty tankers to Iranian ports.",
+                  "Depletion rates for floating storage near China, Malaysia and Sri Lanka.",
+                  "Iranian storage saturation, production shut-ins or emergency refining changes.",
+                  "Rial depreciation, inflation, subsidy cuts, payment arrears or unrest tied to lost oil income.",
+                  "Chinese diplomatic, naval, insurance or sanctions-evasion measures protecting crude access.",
+                  "Iranian retaliation against tankers, blockade forces or Gulf export infrastructure.",
+                  "Negotiations linking commercial transit, the blockade and Iran's nuclear or missile programs."
+            ]
+      },
       {
             "id": "CI-260901-01",
             "sector": "COMMUNICATIONS",
