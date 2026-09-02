@@ -174,7 +174,7 @@
       <div><span>ARCHIVE</span><strong id="archive-count">00</strong></div>
       <div><span>CONFIRMED</span><strong id="confirmed-count">00</strong></div>
       <div><span>WARNINGS</span><strong id="warning-count">00</strong></div>
-      <div><span>SNAPSHOT</span><strong>01.SEP.26</strong></div>
+      <div><span>SNAPSHOT</span><strong>02.SEP.26</strong></div>
     </section>
 
     <section class="controls" aria-label="Filter intelligence feed">
@@ -204,6 +204,36 @@
     "use strict";
 
     const alerts = [
+      {
+        id: "EU-260902-01",
+        timestamp: "2026-09-02 // 00:45 UTC",
+        region: "UKRAINE / RUSSIA / EUROPEAN AIR WAR",
+        classification: "CONFIRMED",
+        confidence: "HIGH",
+        title: "RUSSIA SHIFTS KYIV CAMPAIGN TO CONTINUOUS JET-DRONE PRESSURE",
+        summary: "Russia has subjected Kyiv and its surrounding region to six consecutive days of intense air attacks, an unprecedented sustained sequence in the full-scale war. The latest assault lasted more than 12 hours and used ballistic, cruise and anti-radar missiles plus 218 drones and decoys; Ukraine says roughly one-third of the drones were jet-powered. Reuters reports Russia sent more than 2,800 jet-powered drones against Ukraine in August after increasing their use fivefold in July from June. Twelve people were reported killed in Kyiv and the surrounding region. Russia says it targeted military, weapons-production, storage and energy facilities; Ukrainian authorities and independent reporting also document residential and railway damage.",
+        significance: "This is a material operational shift from periodic mass raids toward continuous day-and-night pressure using faster drones that are harder to intercept. The campaign can exhaust air-defence crews and scarce Patriot-class interceptors, disrupt rail and urban routines, and create persistent rather than episodic risk around the capital. It does not establish a breakthrough on the ground or direct NATO–Russia combat, but it changes the realistic tempo, defensive burden and civilian-stability assumptions for the Ukraine theater.",
+        revisions: [
+          "Advance the Russian air-campaign timeline to an unprecedented six-day sequence of heavy attacks on Kyiv beginning in late August.",
+          "Model jet-powered one-way attack drones as a mass component of Russian strike packages rather than a limited experimental capability.",
+          "Replace single-night raid cycles with overlapping daytime and nighttime alerts, repeated sheltering and reduced recovery windows for air-defence crews.",
+          "Raise the pressure on Patriot interceptors, ballistic-missile defence, mobile fire teams, radar coverage and ammunition allocation around Kyiv.",
+          "Add railway depots, residential districts, warehouses and urban power support to the disruption map while preserving Russia's stated military-target attribution.",
+          "Do not infer a ground breakthrough, NATO intervention or synchronized global escalation from the air campaign alone."
+        ],
+        watch: [
+          "Whether heavy attacks continue beyond six days or settle back into periodic mass-raids.",
+          "Monthly jet-drone production and launch totals, launch locations and the ratio of jet-powered to propeller-driven systems.",
+          "Ukrainian Patriot and other interceptor deliveries, expenditure rates and reported gaps in ballistic-missile coverage.",
+          "Changes in Russian strike timing designed to overlap repair work, rail operations, school hours or air-defence reload cycles.",
+          "Confirmed effects on Kyiv command functions, rail throughput, power supply, population movement and military logistics.",
+          "Any spillover into NATO airspace or attacks on cross-border resupply nodes that alter alliance involvement."
+        ],
+        sources: [
+          ["REUTERS — SIXTH DAY, NEW TACTIC AND JET-DRONE SCALE", "https://www.reuters.com/world/europe/explosions-heard-ukraines-kyiv-four-people-injured-2026-09-01/"],
+          ["ASSOCIATED PRESS — 12-HOUR ASSAULT, WEAPON MIX AND CASUALTIES", "https://apnews.com/article/russia-ukraine-war-drones-missiles-kyiv-odesa-7564a892bfb99a853aa150c8710b7985"]
+        ]
+      },
       {
         id: "AI-260901-02",
         timestamp: "2026-09-01 // 22:55 UTC",
