@@ -14,7 +14,7 @@
 </head>
 <body><a class="portal-home" href="/" aria-label="Return to Y and Y system selector">Y&amp;Y</a><main class="terminal"><div class="scanlines" aria-hidden="true"></div>
     <header><div><p class="eyebrow">Y&amp;Y // CRITICAL SYSTEMS MONITOR</p><h1>INFRAWATCH</h1></div><div class="system-readout"><span><i class="status-dot"></i>DEPENDENCY GRID ONLINE</span><span id="clock">--:--:-- UTC</span></div></header>
-    <section class="status-grid"><div><span>OPEN SIGNALS</span><strong id="open-count">00</strong></div><div><span>CRITICAL</span><strong id="critical-count">00</strong></div><div><span>SECTORS</span><strong>06</strong></div><div><span>SNAPSHOT</span><strong>01.SEP.26</strong></div></section>
+    <section class="status-grid"><div><span>OPEN SIGNALS</span><strong id="open-count">00</strong></div><div><span>CRITICAL</span><strong id="critical-count">00</strong></div><div><span>SECTORS</span><strong>06</strong></div><div><span>SNAPSHOT</span><strong>02.SEP.26</strong></div></section>
     <section class="sector-grid" id="sectors" aria-label="Infrastructure sectors"></section>
     <section class="controls"><span class="prompt">root@ronin:~$ infra --severity</span><div class="filters"><button class="filter active" data-level="ALL" aria-pressed="true">[ALL]</button><button class="filter" data-level="CRITICAL" aria-pressed="false">[CRITICAL]</button><button class="filter" data-level="ELEVATED" aria-pressed="false">[ELEVATED]</button></div></section>
     <section><div class="feed" id="feed"></div></section>
@@ -22,6 +22,31 @@
   </main>
   <script>
     "use strict";const signals=[
+      {
+            "id": "EU-260902-01",
+            "sector": "TRANSPORT",
+            "level": "CRITICAL",
+            "score": 87,
+            "region": "UKRAINE / RUSSIA / EUROPEAN AIR WAR",
+            "title": "RUSSIA SHIFTS KYIV CAMPAIGN TO CONTINUOUS JET-DRONE PRESSURE",
+            "changed": "Six consecutive days of intense attacks on Kyiv have shifted disruption from episodic raids toward continuous day-and-night pressure. The latest 12-hour assault combined ballistic, cruise and anti-radar missiles with 218 drones and decoys; railway and residential damage was documented. Ukrainian launch totals and the jet-drone share remain Ukrainian assessments, while Russia says it targeted military, weapons-production, storage and energy facilities.",
+            "dependencies": [
+                  "KYIV RAILWAY DEPOTS AND URBAN TRANSIT",
+                  "MILITARY AND HUMANITARIAN LOGISTICS",
+                  "PATRIOT-CLASS AND OTHER AIR-DEFENCE INTERCEPTORS",
+                  "RADAR COVERAGE, MOBILE FIRE TEAMS AND CREW ENDURANCE",
+                  "URBAN POWER, COMMUNICATIONS AND SHELTER ACCESS",
+                  "REPAIR CREWS, WAREHOUSING AND RECOVERY WINDOWS"
+            ],
+            "watch": [
+                  "Whether heavy attacks continue beyond six days or return to periodic mass raids.",
+                  "Confirmed effects on rail throughput, command functions, power supply and military logistics.",
+                  "Interceptor expenditure, new deliveries and reported gaps in ballistic-missile coverage.",
+                  "Changes in strike timing that overlap repair work, rail operations or air-defence reload cycles.",
+                  "Monthly jet-drone production and launch totals and independent corroboration of the mix.",
+                  "Any spillover into NATO airspace or attacks on cross-border resupply nodes."
+            ]
+      },
       {
             "id": "AI-260901-02",
             "sector": "COMMS",
