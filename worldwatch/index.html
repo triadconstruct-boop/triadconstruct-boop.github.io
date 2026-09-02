@@ -205,6 +205,37 @@
 
     const alerts = [
       {
+        id: "CY-260902-01",
+        timestamp: "2026-09-02 // 02:44 UTC",
+        region: "GLOBAL / CYBERCRIME / CRITICAL DIGITAL INFRASTRUCTURE",
+        classification: "CONFIRMED",
+        confidence: "HIGH",
+        title: "MULTINATIONAL OPERATION DISRUPTS 20-YEAR SALITY BOTNET",
+        summary: "The U.S. Justice Department says authorities and private-sector partners disrupted Sality, a peer-to-peer malware network active since 2003, through coordinated actions in the United States, Bulgaria, Hungary and Romania. CrowdStrike reports that a sinkholing operation isolated more than 15,000 infected machines worldwide from the operator's command channel; U.S. authorities also seized supporting domains. Sality enabled cryptocurrency theft, distributed-denial-of-service attacks and delivery of additional malware. DOJ says the botnet was based in Russia, but the operator has not been publicly identified and no public evidence attributes it to the Russian state.",
+        significance: "The action removes a persistent global access-and-delivery platform and demonstrates a mature counter-botnet model combining court-authorized domain seizure, private-sector reverse engineering, peer-to-peer sinkholing and multinational enforcement. For realism, it changes Sality from an available long-duration criminal capability into disrupted infrastructure under active remediation. It does not eliminate infected files from every host, establish the operator's identity or prove that recovery attempts will fail.",
+        revisions: [
+          "Mark Sality's command channel and supporting domains as disrupted on 31 August–1 September 2026 after more than two decades of operation.",
+          "Reduce Sality's near-term availability for malware delivery, cryptocurrency theft, spam and distributed-denial-of-service operations.",
+          "Add peer-to-peer sinkholing and coordinated domain seizure to the multinational cyber-disruption playbook.",
+          "Map the operation across the United States, Bulgaria, Hungary and Romania, with Europol, Eurojust, CrowdStrike and Shadowserver support.",
+          "Keep infected endpoints distinct from controlled botnet infrastructure: isolated machines may still contain compromised files and require remediation.",
+          "Do not convert DOJ's Russia-based assessment into state attribution; the operator remains publicly unidentified."
+        ],
+        watch: [
+          "Attempts by the Sality operator or affiliates to rebuild command infrastructure or distribute replacement malware.",
+          "Updated sinkhole telemetry showing how many infected machines remain active and where they are concentrated.",
+          "Host-cleanup guidance, victim notifications and evidence that dormant infections are being removed rather than merely isolated.",
+          "Charges, arrests, asset seizures or public identification of the operator and infrastructure providers.",
+          "Technical indicators that Sality variants have migrated to new domains, protocols or payload-delivery partnerships.",
+          "Whether the public-private disruption method is reused against other resilient peer-to-peer botnets."
+        ],
+        sources: [
+          ["U.S. JUSTICE DEPARTMENT — MULTINATIONAL SALITY DISRUPTION", "https://www.justice.gov/usao-cdca/pr/sality-malware-disrupted-international-cyber-takedown"],
+          ["CROWDSTRIKE — PEER-TO-PEER SINKHOLE AND 15,000 INFECTED MACHINES", "https://www.crowdstrike.com/en-us/blog/inside-sality-botnet-disruption-operation/"],
+          ["REUTERS — U.S. OFFICIALS AND INDEPENDENT ATTRIBUTION LIMITS", "https://www.reuters.com/legal/government/russian-cybercrime-operation-being-dismantled-after-two-decades-us-officials-2026-09-01/"]
+        ]
+      },
+      {
         id: "EU-260902-01",
         timestamp: "2026-09-02 // 00:45 UTC",
         region: "UKRAINE / RUSSIA / EUROPEAN AIR WAR",
