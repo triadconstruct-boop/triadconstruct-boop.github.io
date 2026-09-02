@@ -23,6 +23,31 @@
   <script>
     "use strict";const signals=[
       {
+            "id": "CY-260902-01",
+            "sector": "COMMS",
+            "level": "ELEVATED",
+            "score": 44,
+            "region": "GLOBAL / CYBERCRIME / CRITICAL DIGITAL INFRASTRUCTURE",
+            "title": "MULTINATIONAL OPERATION DISRUPTS 20-YEAR SALITY BOTNET",
+            "changed": "A multinational sinkholing and domain-seizure operation isolated more than 15,000 Sality-infected machines from the botnet's command channel, reducing a long-running malware-delivery, theft and denial-of-service capability. Command infrastructure is disrupted, but infected files may remain on endpoints and the unidentified operator could attempt recovery. DOJ describes the botnet as Russia-based without attributing it to the Russian state.",
+            "dependencies": [
+                  "SINKHOLE AND SEIZED-DOMAIN CONTINUITY",
+                  "VICTIM NOTIFICATION AND ENDPOINT REMEDIATION",
+                  "DNS, HOSTING AND DOMAIN-REGISTRY COOPERATION",
+                  "PRIVATE-SECTOR MALWARE TELEMETRY",
+                  "MULTINATIONAL LAW-ENFORCEMENT COORDINATION",
+                  "ORGANIZATIONAL PATCHING, CREDENTIAL RESET AND INCIDENT RESPONSE"
+            ],
+            "watch": [
+                  "Attempts to rebuild command infrastructure or distribute replacement malware.",
+                  "Sinkhole telemetry showing remaining infected-machine counts and concentration.",
+                  "Evidence that infected files are removed rather than merely isolated.",
+                  "Charges, arrests, seizures or public identification of the operator.",
+                  "Sality variants migrating to new domains, protocols or payload partnerships.",
+                  "Reuse of the public-private disruption method against other peer-to-peer botnets."
+            ]
+      },
+      {
             "id": "EU-260902-01",
             "sector": "TRANSPORT",
             "level": "CRITICAL",
