@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - 'scripts/y_and_y_autonomous.py'
+      - 'scripts/y_and_y_signal_refiner.py'
       - 'assets/y-and-y-live.js'
       - '.github/workflows/y-and-y-autonomous.yml'
 
@@ -36,10 +37,15 @@ jobs:
           git reset --hard origin/main
 
       - name: Validate engine syntax
-        run: python3 -m py_compile scripts/y_and_y_autonomous.py
+        run: |
+          python3 -m py_compile scripts/y_and_y_autonomous.py
+          python3 -m py_compile scripts/y_and_y_signal_refiner.py
 
       - name: Run autonomous ingestion
         run: python3 scripts/y_and_y_autonomous.py
+
+      - name: Apply evidence-gated strategic signals
+        run: python3 scripts/y_and_y_signal_refiner.py
 
       - name: Validate generated data and signal bounds
         run: |
@@ -61,8 +67,8 @@ jobs:
               print(f'OK {p}')
 
           status = docs['autonomy-status.json']
-          if int(status.get('version', 0)) < 2:
-              raise SystemExit('autonomy-status version is not v2+')
+          if float(status.get('version', 0)) < 2.1:
+              raise SystemExit('autonomy-status version is not v2.1+')
           if int(status.get('sources_total', 0)) < 8:
               raise SystemExit('source registry unexpectedly small')
           if not status.get('last_poll'):
@@ -79,6 +85,8 @@ jobs:
               score = docs[name].get('score')
               if not isinstance(score, int) or not 0 <= score <= 100:
                   raise SystemExit(f'invalid score in {name}: {score}')
+              if docs[name].get('rules_version') != '2.2-evidence-gated':
+                  raise SystemExit(f'evidence-gated refiner missing from {name}')
 
           events = docs['live-events.json'].get('events', [])
           if len(events) > 700:
@@ -104,12 +112,16 @@ jobs:
           python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
           import json
           s=json.load(open('data/autonomy-status.json'))
+          t=json.load(open('data/threshold-live.json'))
+          w=json.load(open('data/wwt-live.json'))
           print('## Y&Y Autonomous Core')
           print(f"- Mode: **{s['mode']}**")
           print(f"- Source health: **{s['source_health_percent']}%** ({s['sources_ok']}/{s['sources_total']})")
           print(f"- New events: **{s['new_events']}**")
           print(f"- Strategic live events: **{s['strategic_live_events']}**")
           print(f"- Corroborated live events: **{s['corroborated_live_events']}**")
+          print(f"- THRESHOLD machine signal: **{t['score']}** ({t['basis_event_count']} gated events)")
+          print(f"- WWT machine signal: **{w['score']}** ({w['basis_event_count']} systemic events)")
           print(f"- Poll: `{s['last_poll']}`")
           PY
 
@@ -129,6 +141,14 @@ jobs:
             return 0
           }
 
+          regenerate() {
+            python3 -m py_compile scripts/y_and_y_autonomous.py
+            python3 -m py_compile scripts/y_and_y_signal_refiner.py
+            python3 scripts/y_and_y_autonomous.py
+            python3 scripts/y_and_y_signal_refiner.py
+            git diff --check
+          }
+
           if ! stage_and_commit; then
             exit 0
           fi
@@ -142,9 +162,7 @@ jobs:
             echo "Remote changed during publish; regenerating from latest main (attempt $attempt)."
             git fetch origin main
             git reset --hard origin/main
-            python3 -m py_compile scripts/y_and_y_autonomous.py
-            python3 scripts/y_and_y_autonomous.py
-            git diff --check
+            regenerate
             if ! stage_and_commit; then
               exit 0
             fi
