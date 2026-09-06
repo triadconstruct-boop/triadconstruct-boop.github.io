@@ -17,12 +17,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 DATA.mkdir(exist_ok=True)
-USER_AGENT = "YY-Autonomous-OSINT/2.0 (+https://triadconstruct-boop.github.io/)"
+USER_AGENT = "YY-Autonomous-OSINT/2.1 (+https://triadconstruct-boop.github.io/)"
 TIMEOUT = 25
 MAX_EVENTS = 700
 FRESH_HOURS = 240
 LIVE_WINDOW_HOURS = 120
 CORROBORATION_HOURS = 48
+FUTURE_TOLERANCE_HOURS = 2
 
 RSS_SOURCES = [
     {"id":"iaea_topnews","name":"IAEA","url":"https://www.iaea.org/feeds/topnews","tier":"primary","default_domain":"NUCLEAR","weight":1.00},
@@ -36,7 +37,7 @@ RSS_SOURCES = [
 JSON_SOURCES = [
     {"id":"cisa_kev","name":"CISA Known Exploited Vulnerabilities","url":"https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json","tier":"primary","kind":"cisa_kev","default_domain":"CYBER","weight":1.00},
     {"id":"usgs_significant","name":"USGS Significant Earthquakes","url":"https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.geojson","tier":"primary","kind":"usgs_quakes","default_domain":"CLIMATE","weight":0.90},
-    {"id":"federal_register","name":"U.S. Federal Register","url":"https://www.federalregister.gov/api/v1/documents.json?per_page=100&order=newest","tier":"primary","kind":"federal_register","default_domain":"POLITICAL","weight":0.80},
+    {"id":"federal_register","name":"U.S. Federal Register","url":"https://www.federalregister.gov/api/v1/documents.json?per_page=100&order=newest","tier":"primary","kind":"federal_register","default_domain":"POLITICAL","weight":0.70},
 ]
 ALL_SOURCES = RSS_SOURCES + JSON_SOURCES
 PAGES = ["index.html","worldwatch/index.html","atlas/index.html","infrawatch/index.html","brief/index.html","threshold/index.html","wwt/index.html","trfk/index.html"]
@@ -59,6 +60,7 @@ HIGH_IMPACT = ("nuclear","ballistic missile","intercontinental","airstrike","inv
 MEDIUM_IMPACT = ("sanctions","cyber","ransomware","drone","missile","troops","naval","ceasefire","proxy","export control","trafficking network","smuggling","exploit","vulnerability","earthquake","hurricane","tornado","wildfire")
 US_TERMS = ("united states","u.s."," u.s ","american","america","washington","new york","california","texas","florida","pentagon","homeland","fbi","cisa")
 HOMELAND_PATHWAY_TERMS = ("homeland","inside the united states","in the united states","against americans","u.s. infrastructure","american infrastructure","u.s. grid","u.s. soil","domestic terrorism","attack plot","bomb plot","critical infrastructure","ransomware","state-sponsored","biological threat")
+FEDERAL_REGISTER_INTEREST = ("department of defense","department of homeland security","department of state","nuclear regulatory commission","department of energy","department of the treasury","cybersecurity","critical infrastructure","sanction","export control","national security","military","terror","biological","biosecurity","trafficking","maritime security","emergency","foreign assets","intelligence")
 REGION_RULES = [
     ("IRAN",("iran","tehran","persian gulf","hormuz"),(32.4279,53.6880)),
     ("ISRAEL",("israel","gaza","jerusalem","tel aviv"),(31.0461,34.8516)),
@@ -134,7 +136,8 @@ def parse_feed(src,payload):
                     link=candidate
                     if c.attrib.get("rel")!="self": break
         if title and link:
-            out.append(source_item(src,title,summary,link,parse_date(node_text(item,("pubdate","published","updated","date")))))
+            raw_date=node_text(item,("pubdate","published","updated","date"))
+            out.append(source_item(src,title,summary,link,parse_date(raw_date),published_inferred=not bool(raw_date)))
     return out
 
 def parse_json_source(src,payload):
@@ -144,18 +147,20 @@ def parse_json_source(src,payload):
             cve=v.get("cveID","")
             if not cve: continue
             added=v.get("dateAdded")
-            out.append(source_item(src,f"{cve} — {v.get('vendorProject','')} {v.get('product','')}",v.get("shortDescription",""),f"https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext={urllib.parse.quote(cve)}",parse_date(f"{added}T00:00:00+00:00" if added else None)))
+            out.append(source_item(src,f"{cve} — {v.get('vendorProject','')} {v.get('product','')}",v.get("shortDescription",""),f"https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext={urllib.parse.quote(cve)}",parse_date(f"{added}T00:00:00+00:00" if added else None),published_inferred=not bool(added)))
     elif kind=="usgs_quakes":
         for f in doc.get("features",[])[:80]:
             p=f.get("properties") or {}; g=f.get("geometry") or {}; coords=g.get("coordinates") or []
-            when=p.get("time"); published=iso_z(dt.datetime.fromtimestamp(when/1000,dt.timezone.utc)) if isinstance(when,(int,float)) else iso_z(utcnow())
+            when=p.get("time"); inferred=not isinstance(when,(int,float)); published=iso_z(dt.datetime.fromtimestamp(when/1000,dt.timezone.utc)) if not inferred else iso_z(utcnow())
             summary=f"Magnitude {p.get('mag')} earthquake. Alert={p.get('alert') or 'none'}; significance={p.get('sig')}; tsunami={p.get('tsunami',0)}."
-            out.append(source_item(src,p.get("title") or f"USGS earthquake {f.get('id','')}",summary,p.get("url") or src["url"],published,lat=(coords[1] if len(coords)>1 else None),lon=(coords[0] if len(coords)>1 else None),usgs_significance=p.get("sig") or 0,tsunami=bool(p.get("tsunami"))))
+            out.append(source_item(src,p.get("title") or f"USGS earthquake {f.get('id','')}",summary,p.get("url") or src["url"],published,published_inferred=inferred,lat=(coords[1] if len(coords)>1 else None),lon=(coords[0] if len(coords)>1 else None),usgs_significance=p.get("sig") or 0,tsunami=bool(p.get("tsunami"))))
     elif kind=="federal_register":
         for r in doc.get("results",[])[:100]:
             title=r.get("title") or "Federal Register document"; agencies=", ".join(a.get("name","") for a in (r.get("agencies") or []) if a.get("name")); abstract=r.get("abstract") or ""
-            summary=f"{agencies}. {abstract}".strip(); published=parse_date(f"{r.get('publication_date')}T00:00:00+00:00" if r.get("publication_date") else None)
-            out.append(source_item(src,title,summary,r.get("html_url") or r.get("raw_text_url") or src["url"],published))
+            interest=f"{title} {agencies} {abstract}".lower()
+            if not any(term in interest for term in FEDERAL_REGISTER_INTEREST): continue
+            pub=r.get("publication_date"); summary=f"{agencies}. {abstract}".strip(); published=parse_date(f"{pub}T00:00:00+00:00" if pub else None)
+            out.append(source_item(src,title,summary,r.get("html_url") or r.get("raw_text_url") or src["url"],published,published_inferred=not bool(pub)))
     return out
 
 def classify(text,default):
@@ -191,7 +196,9 @@ def enrich(item):
     low=f" {text.lower()} "; eid=hashlib.sha256(f"{item.get('source_id','')}|{item.get('url','')}|{item.get('title','')}".encode()).hexdigest()[:20]
     sev=severity(text,item.get("source_tier","institutional"),domain,item.get("source_weight",0.8),item)
     us_rel=any(t in low for t in US_TERMS); pathway=us_rel and (any(t in low for t in HOMELAND_PATHWAY_TERMS) or domain in ("TERRORISM","INFRA","BIO"))
-    return {"id":eid,"published":item["published"],"source":item["source"],"source_id":item["source_id"],"source_tier":item["source_tier"],"source_weight":item.get("source_weight",0.8),"title":item["title"],"summary":item.get("summary",""),"url":item["url"],"domain":domain,"tags":sorted(set(tags)),"region":region,"lat":lat,"lon":lon,"severity":sev,"effective_severity":sev,"us_relevance":us_rel,"homeland_pathway":pathway,"corroborated_by":[],"corroboration_count":1,"machine_generated":True}
+    if region=="GLOBAL" and us_rel: region="UNITED STATES"
+    seen=iso_z(utcnow())
+    return {"id":eid,"published":item["published"],"published_inferred":bool(item.get("published_inferred")),"first_seen":seen,"last_seen":seen,"source":item["source"],"source_id":item["source_id"],"source_tier":item["source_tier"],"source_weight":item.get("source_weight",0.8),"title":item["title"],"summary":item.get("summary",""),"url":item["url"],"domain":domain,"tags":sorted(set(tags)),"region":region,"lat":lat,"lon":lon,"severity":sev,"effective_severity":sev,"us_relevance":us_rel,"homeland_pathway":pathway,"corroborated_by":[],"corroboration_count":1,"machine_generated":True}
 
 def load_json(path,default):
     try: return json.loads(path.read_text(encoding="utf-8"))
@@ -199,7 +206,8 @@ def load_json(path,default):
 
 def write_json(path,obj): path.write_text(json.dumps(obj,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
 def recent(events,hours):
-    cutoff=utcnow()-dt.timedelta(hours=hours); return [e for e in events if parse_iso(e.get("published",""))>=cutoff]
+    now=utcnow(); cutoff=now-dt.timedelta(hours=hours); ceiling=now+dt.timedelta(hours=FUTURE_TOLERANCE_HOURS)
+    return [e for e in events if cutoff<=parse_iso(e.get("published",""))<=ceiling]
 def title_tokens(e):
     return {w for w in re.findall(r"[a-z0-9]{4,}",(e.get("title") or "").lower()) if w not in STOPWORDS}
 def corroborate(events):
@@ -276,21 +284,28 @@ def main():
         try:
             items=parse_json_source(src,fetch_bytes(src["url"])); fetched.extend(items); status.append(health_status(src,True,len(items),None,previous_status))
         except Exception as exc: status.append(health_status(src,False,0,f"{type(exc).__name__}: {exc}"[:260],previous_status))
-    cutoff=now-dt.timedelta(hours=FRESH_HOURS); new_count=0
+    cutoff=now-dt.timedelta(hours=FRESH_HOURS); ceiling=now+dt.timedelta(hours=FUTURE_TOLERANCE_HOURS); new_count=0; future_rejected=0
     for item in fetched:
-        e=enrich(item)
-        if parse_iso(e["published"])<cutoff: continue
+        e=enrich(item); existing=by_id.get(e["id"])
+        if existing:
+            e["first_seen"]=existing.get("first_seen") or existing.get("published") or e["first_seen"]
+            if e.get("published_inferred") and existing.get("published"): e["published"]=existing["published"]
+        published=parse_iso(e["published"])
+        if published>ceiling:
+            future_rejected+=1; continue
+        if published<cutoff: continue
         if e["id"] not in by_id: new_count+=1
         by_id[e["id"]]=e
-    events=sorted(by_id.values(),key=lambda e:parse_iso(e.get("published","")),reverse=True)[:MAX_EVENTS]; events=corroborate(events); live=recent(events,LIVE_WINDOW_HOURS)
+    candidates=[e for e in by_id.values() if cutoff<=parse_iso(e.get("published",""))<=ceiling]
+    events=sorted(candidates,key=lambda e:parse_iso(e.get("published","")),reverse=True)[:MAX_EVENTS]; events=corroborate(events); live=recent(events,LIVE_WINDOW_HOURS)
     world=sorted([e for e in live if e.get("domain") in STRATEGIC_DOMAINS and e.get("effective_severity",0)>=40],key=lambda e:(e.get("effective_severity",0),e.get("corroboration_count",1),e.get("published","")),reverse=True)
     atlas=[e for e in world if e.get("lat") is not None and e.get("lon") is not None]; infra=[e for e in world if e.get("domain") in ("INFRA","CYBER","ECONOMIC","CLIMATE")]; trfk=[e for e in world if e.get("domain")=="TRAFFICKING"]
     ok=sum(1 for s in status if s["ok"]); injected=inject_panel(); health_pct=round((ok/len(status))*100) if status else 0; mode="AUTONOMOUS" if health_pct>=80 else "DEGRADED" if health_pct>=50 else "CRITICAL"
     status_by_id={s["id"]:s for s in status}
-    state={"engine":"Y&Y Autonomous Core","version":2,"last_poll":iso_z(now),"sources_total":len(status),"sources_ok":ok,"sources_failed":len(status)-ok,"source_health_percent":health_pct,"source_status":status,"source_status_by_id":status_by_id,"fetched_items":len(fetched),"new_events":new_count,"live_events":len(live),"strategic_live_events":len(world),"archive_events":len(events),"corroborated_live_events":sum(1 for e in live if e.get("corroboration_count",1)>1),"mode":mode,"chatgpt_dependency":False,"pages_injected_this_run":injected,"notes":["Machine-generated live signals are kept separate from curated strategic assessments.","Source failures are isolated; successful sources continue updating the system.","Corroboration raises effective severity but never converts a machine signal into a confirmed claim."]}
+    state={"engine":"Y&Y Autonomous Core","version":2.1,"last_poll":iso_z(now),"sources_total":len(status),"sources_ok":ok,"sources_failed":len(status)-ok,"source_health_percent":health_pct,"source_status":status,"source_status_by_id":status_by_id,"fetched_items":len(fetched),"new_events":new_count,"future_dated_items_rejected":future_rejected,"live_events":len(live),"strategic_live_events":len(world),"archive_events":len(events),"corroborated_live_events":sum(1 for e in live if e.get("corroboration_count",1)>1),"mode":mode,"chatgpt_dependency":False,"pages_injected_this_run":injected,"notes":["Machine-generated live signals are kept separate from curated strategic assessments.","Source failures are isolated; successful sources continue updating the system.","Undated feed items preserve their first observed timestamp instead of appearing newly published every poll.","Future-dated publication records are rejected until their publication time arrives."]}
     registry={"generated_at":iso_z(now),"sources":[{k:s[k] for k in ("id","name","url","tier","weight","default_domain")} for s in ALL_SOURCES]}
     write_json(DATA/"source-registry.json",registry); write_json(DATA/"live-events.json",{"generated_at":iso_z(now),"events":events}); write_json(DATA/"autonomy-status.json",state); write_json(DATA/"worldwatch-live.json",{"generated_at":iso_z(now),"events":world[:160]}); write_json(DATA/"atlas-live.json",{"generated_at":iso_z(now),"events":atlas[:160]}); write_json(DATA/"infrawatch-live.json",{"generated_at":iso_z(now),"events":infra[:160]}); write_json(DATA/"trfk-live.json",{"generated_at":iso_z(now),"events":trfk[:160]}); write_json(DATA/"threshold-live.json",threshold_signal(events)); write_json(DATA/"wwt-live.json",wwt_signal(events)); write_json(DATA/"brief-live.json",brief_signal(events))
-    print(f"Y&Y v2 poll: health {health_pct}% ({ok}/{len(status)}); fetched {len(fetched)}; new {new_count}; live {len(live)}; strategic {len(world)}; corroborated {state['corroborated_live_events']}")
+    print(f"Y&Y v2.1 poll: health {health_pct}% ({ok}/{len(status)}); fetched {len(fetched)}; new {new_count}; future rejected {future_rejected}; live {len(live)}; strategic {len(world)}; corroborated {state['corroborated_live_events']}")
     for s in status:
         if not s["ok"]: print(f"WARN {s['name']}: {s['error']}",file=sys.stderr)
     return 0
