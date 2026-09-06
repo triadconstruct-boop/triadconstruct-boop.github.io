@@ -130,5 +130,6 @@
     document.getElementById("copy").addEventListener("click",async()=>{const score=overall(),leader=[...definitions].sort((a,b)=>model.values[b.id]-model.values[a.id])[0];const text=`WWT // ALL-OUT GLOBAL CONFLICT RISK\n${score}/100 // ${band(score)}\n12-MONTH MODEL BAND: ${probability(score)}\nCONFIDENCE: ${document.getElementById("confidence").textContent}\nLEADING DRIVER: ${leader.name} (${model.values[leader.id]})\nUPDATED: ${model.updated}\nPUBLIC-SOURCE PLANNING ESTIMATE — NOT AN OFFICIAL WARNING`;try{await navigator.clipboard.writeText(text);document.getElementById("copy").textContent="COPIED";setTimeout(()=>document.getElementById("copy").textContent="COPY SNAPSHOT",1200)}catch{alert(text)}});
     renderStructure();render();
   </script>
+  <script src="/assets/y-and-y-live.js" defer></script>
 </body>
 </html>

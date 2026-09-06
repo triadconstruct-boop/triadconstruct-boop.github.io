@@ -421,5 +421,6 @@
     document.getElementById("filters").innerHTML=domains.map((d,i)=>`<button class="filter ${i===0?"active":""}" type="button" data-domain="${d}" aria-pressed="${i===0}">[${d}]</button>`).join("");document.querySelectorAll(".filter").forEach(b=>b.addEventListener("click",()=>{active=b.dataset.domain;document.querySelectorAll(".filter").forEach(x=>{x.classList.toggle("active",x===b);x.setAttribute("aria-pressed",String(x===b))});render()}));
     document.getElementById("zone-count").textContent=String(records.length).padStart(2,"0");document.getElementById("critical-count").textContent=String(records.filter(r=>r.severity==="CRITICAL").length).padStart(2,"0");document.getElementById("domain-count").textContent=String(domains.length-1).padStart(2,"0");function clock(){document.getElementById("clock").textContent=`${new Intl.DateTimeFormat("en-GB",{timeZone:"UTC",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false}).format(new Date())} UTC`}clock();setInterval(clock,1000);render();
   </script>
+  <script src="/assets/y-and-y-live.js" defer></script>
 </body>
 </html>

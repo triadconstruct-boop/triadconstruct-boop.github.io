@@ -1,0 +1,65 @@
+{
+  "engine": "Y&Y Autonomous Core",
+  "version": 1,
+  "last_poll": "2026-09-06T15:50:30Z",
+  "sources_total": 5,
+  "sources_ok": 3,
+  "sources_failed": 2,
+  "source_status": [
+    {
+      "id": "un_news",
+      "name": "UN News",
+      "ok": false,
+      "items": 0,
+      "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+    },
+    {
+      "id": "nato_news",
+      "name": "NATO News",
+      "ok": false,
+      "items": 0,
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "id": "iaea_topnews",
+      "name": "IAEA",
+      "ok": true,
+      "items": 15,
+      "error": null
+    },
+    {
+      "id": "doj_nsd",
+      "name": "U.S. DOJ National Security Division",
+      "ok": true,
+      "items": 25,
+      "error": null
+    },
+    {
+      "id": "cisa_kev",
+      "name": "CISA Known Exploited Vulnerabilities",
+      "ok": true,
+      "items": 120,
+      "error": null
+    }
+  ],
+  "fetched_items": 160,
+  "new_events": 29,
+  "live_events": 24,
+  "archive_events": 29,
+  "mode": "AUTONOMOUS",
+  "chatgpt_dependency": false,
+  "pages_injected_this_run": [
+    "index.html",
+    "worldwatch/index.html",
+    "atlas/index.html",
+    "infrawatch/index.html",
+    "brief/index.html",
+    "threshold/index.html",
+    "wwt/index.html",
+    "trfk/index.html"
+  ],
+  "notes": [
+    "Machine-generated live signals are kept separate from curated strategic assessments.",
+    "Source failures are isolated; successful sources continue updating the system."
+  ]
+}
