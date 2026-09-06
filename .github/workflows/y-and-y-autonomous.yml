@@ -24,10 +24,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 12
     steps:
-      - name: Checkout
+      - name: Checkout latest main
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
+
+      - name: Sync latest main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
 
       - name: Validate engine syntax
         run: python3 -m py_compile scripts/y_and_y_autonomous.py
@@ -107,15 +113,42 @@ jobs:
           print(f"- Poll: `{s['last_poll']}`")
           PY
 
-      - name: Commit changed autonomous data
+      - name: Commit and publish autonomous data
         run: |
-          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
-            echo "No Y&Y data changes."
-            exit 0
-          fi
+          set -euo pipefail
           git config user.name "Y&Y Autonomous Core"
           git config user.email "actions@users.noreply.github.com"
-          git add data/ assets/y-and-y-live.js index.html worldwatch/index.html atlas/index.html infrawatch/index.html brief/index.html threshold/index.html wwt/index.html trfk/index.html
-          git commit -m "Y&Y: autonomous public-source refresh" || exit 0
-          git pull --rebase origin main
-          git push origin HEAD:main
+
+          stage_and_commit() {
+            git add data/ assets/y-and-y-live.js index.html worldwatch/index.html atlas/index.html infrawatch/index.html brief/index.html threshold/index.html wwt/index.html trfk/index.html
+            if git diff --cached --quiet; then
+              echo "No Y&Y data changes."
+              return 1
+            fi
+            git commit -m "Y&Y: autonomous public-source refresh"
+            return 0
+          }
+
+          if ! stage_and_commit; then
+            exit 0
+          fi
+
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "Y&Y publish succeeded on attempt $attempt."
+              exit 0
+            fi
+
+            echo "Remote changed during publish; regenerating from latest main (attempt $attempt)."
+            git fetch origin main
+            git reset --hard origin/main
+            python3 -m py_compile scripts/y_and_y_autonomous.py
+            python3 scripts/y_and_y_autonomous.py
+            git diff --check
+            if ! stage_and_commit; then
+              exit 0
+            fi
+          done
+
+          echo "Y&Y publish failed after 3 race-safe attempts." >&2
+          exit 1
