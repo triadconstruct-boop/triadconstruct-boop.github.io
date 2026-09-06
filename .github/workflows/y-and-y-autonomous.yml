@@ -1,0 +1,64 @@
+name: Y&Y Autonomous Core
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/y_and_y_autonomous.py'
+      - 'assets/y-and-y-live.js'
+      - '.github/workflows/y-and-y-autonomous.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: y-and-y-autonomous
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run autonomous ingestion
+        run: python3 scripts/y_and_y_autonomous.py
+
+      - name: Validate generated JSON
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          expected = [
+              'autonomy-status.json','live-events.json','worldwatch-live.json',
+              'atlas-live.json','infrawatch-live.json','brief-live.json',
+              'threshold-live.json','wwt-live.json','trfk-live.json'
+          ]
+          for name in expected:
+              p = Path('data') / name
+              if not p.exists():
+                  raise SystemExit(f'missing generated file: {p}')
+              json.loads(p.read_text(encoding='utf-8'))
+              print(f'OK {p}')
+          PY
+
+      - name: Commit changed autonomous data
+        run: |
+          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
+            echo "No Y&Y data changes."
+            exit 0
+          fi
+          git config user.name "Y&Y Autonomous Core"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/ assets/y-and-y-live.js index.html worldwatch/index.html atlas/index.html infrawatch/index.html brief/index.html threshold/index.html wwt/index.html trfk/index.html
+          git commit -m "Y&Y: autonomous public-source refresh" || exit 0
+          git pull --rebase origin main
+          git push origin HEAD:main
