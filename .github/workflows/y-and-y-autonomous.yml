@@ -3,7 +3,7 @@ name: Y&Y Autonomous Core
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 * * * *'
+    - cron: '7,37 * * * *'
   push:
     branches:
       - main
@@ -22,32 +22,89 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
+      - name: Validate engine syntax
+        run: python3 -m py_compile scripts/y_and_y_autonomous.py
+
       - name: Run autonomous ingestion
         run: python3 scripts/y_and_y_autonomous.py
 
-      - name: Validate generated JSON
+      - name: Validate generated data and signal bounds
         run: |
           python3 - <<'PY'
           import json
           from pathlib import Path
+
           expected = [
-              'autonomy-status.json','live-events.json','worldwatch-live.json',
-              'atlas-live.json','infrawatch-live.json','brief-live.json',
-              'threshold-live.json','wwt-live.json','trfk-live.json'
+              'autonomy-status.json','source-registry.json','live-events.json',
+              'worldwatch-live.json','atlas-live.json','infrawatch-live.json',
+              'brief-live.json','threshold-live.json','wwt-live.json','trfk-live.json'
           ]
+          docs = {}
           for name in expected:
               p = Path('data') / name
               if not p.exists():
                   raise SystemExit(f'missing generated file: {p}')
-              json.loads(p.read_text(encoding='utf-8'))
+              docs[name] = json.loads(p.read_text(encoding='utf-8'))
               print(f'OK {p}')
+
+          status = docs['autonomy-status.json']
+          if int(status.get('version', 0)) < 2:
+              raise SystemExit('autonomy-status version is not v2+')
+          if int(status.get('sources_total', 0)) < 8:
+              raise SystemExit('source registry unexpectedly small')
+          if not status.get('last_poll'):
+              raise SystemExit('missing last_poll')
+          if not 0 <= int(status.get('source_health_percent', -1)) <= 100:
+              raise SystemExit('invalid source health percentage')
+
+          registry = docs['source-registry.json'].get('sources', [])
+          ids = [s.get('id') for s in registry]
+          if len(ids) != len(set(ids)):
+              raise SystemExit('duplicate source IDs')
+
+          for name in ('threshold-live.json','wwt-live.json'):
+              score = docs[name].get('score')
+              if not isinstance(score, int) or not 0 <= score <= 100:
+                  raise SystemExit(f'invalid score in {name}: {score}')
+
+          events = docs['live-events.json'].get('events', [])
+          if len(events) > 700:
+              raise SystemExit('event archive exceeded safety cap')
+          seen = set()
+          for e in events:
+              eid = e.get('id')
+              if not eid or eid in seen:
+                  raise SystemExit(f'invalid/duplicate event id: {eid}')
+              seen.add(eid)
+              sev = e.get('effective_severity', e.get('severity'))
+              if not isinstance(sev, int) or not 0 <= sev <= 100:
+                  raise SystemExit(f'invalid severity for {eid}: {sev}')
+
+          print('Y&Y validation passed')
+          PY
+
+      - name: Check generated text integrity
+        run: git diff --check
+
+      - name: Write run summary
+        run: |
+          python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          s=json.load(open('data/autonomy-status.json'))
+          print('## Y&Y Autonomous Core')
+          print(f"- Mode: **{s['mode']}**")
+          print(f"- Source health: **{s['source_health_percent']}%** ({s['sources_ok']}/{s['sources_total']})")
+          print(f"- New events: **{s['new_events']}**")
+          print(f"- Strategic live events: **{s['strategic_live_events']}**")
+          print(f"- Corroborated live events: **{s['corroborated_live_events']}**")
+          print(f"- Poll: `{s['last_poll']}`")
           PY
 
       - name: Commit changed autonomous data
