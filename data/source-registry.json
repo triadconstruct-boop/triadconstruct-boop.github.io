@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-09-06T16:00:44Z",
+  "sources": [
+    {
+      "id": "iaea_topnews",
+      "name": "IAEA",
+      "url": "https://www.iaea.org/feeds/topnews",
+      "tier": "primary",
+      "weight": 1.0,
+      "default_domain": "NUCLEAR"
+    },
+    {
+      "id": "doj_nsd",
+      "name": "U.S. DOJ National Security Division",
+      "url": "https://www.justice.gov/news/rss?field_component=361&field_topic%5B0%5D=25321&field_topic%5B1%5D=44971&field_topic%5B2%5D=44956&field_topic%5B3%5D=7881&field_topic%5B4%5D=44951&field_topic%5B5%5D=45186&require_all=0&search_api_language=en&show_public_archived=0&type%5B0%5D=press_release&type%5B1%5D=speech&type%5B2%5D=youtube_video",
+      "tier": "primary",
+      "weight": 1.0,
+      "default_domain": "SECURITY"
+    },
+    {
+      "id": "fbi_national",
+      "name": "FBI National Press Releases",
+      "url": "https://www.fbi.gov/feeds/national-press-releases/rss.xml",
+      "tier": "primary",
+      "weight": 1.0,
+      "default_domain": "SECURITY"
+    },
+    {
+      "id": "nist_cyber",
+      "name": "NIST Cybersecurity",
+      "url": "https://www.nist.gov/news-events/cybersecurity/rss.xml",
+      "tier": "primary",
+      "weight": 0.9,
+      "default_domain": "CYBER"
+    },
+    {
+      "id": "noaa_news",
+      "name": "NOAA",
+      "url": "https://www.noaa.gov/rss.xml",
+      "tier": "primary",
+      "weight": 0.85,
+      "default_domain": "CLIMATE"
+    },
+    {
+      "id": "whitehouse_actions",
+      "name": "White House Presidential Actions",
+      "url": "https://www.whitehouse.gov/presidential-actions/feed/",
+      "tier": "primary",
+      "weight": 0.95,
+      "default_domain": "POLITICAL"
+    },
+    {
+      "id": "noaa_spc",
+      "name": "NOAA Storm Prediction Center",
+      "url": "https://www.spc.noaa.gov/products/spcrss.xml",
+      "tier": "primary",
+      "weight": 0.85,
+      "default_domain": "CLIMATE"
+    },
+    {
+      "id": "cisa_kev",
+      "name": "CISA Known Exploited Vulnerabilities",
+      "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+      "tier": "primary",
+      "weight": 1.0,
+      "default_domain": "CYBER"
+    },
+    {
+      "id": "usgs_significant",
+      "name": "USGS Significant Earthquakes",
+      "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.geojson",
+      "tier": "primary",
+      "weight": 0.9,
+      "default_domain": "CLIMATE"
+    },
+    {
+      "id": "federal_register",
+      "name": "U.S. Federal Register",
+      "url": "https://www.federalregister.gov/api/v1/documents.json?per_page=100&order=newest",
+      "tier": "primary",
+      "weight": 0.8,
+      "default_domain": "POLITICAL"
+    }
+  ]
+}
