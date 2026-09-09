@@ -41,6 +41,10 @@ jobs:
           dig +short AAAA yyrv.net
           echo 'CAA records:'
           dig +short CAA yyrv.net
+          echo 'NS records:'
+          dig +short NS yyrv.net
+          echo 'SOA record:'
+          dig +short SOA yyrv.net
           echo 'GitHub verification TXT:'
           dig +short TXT _github-pages-challenge-triadconstruct-boop.yyrv.net
           echo 'Presented certificate:'
