@@ -48,5 +48,6 @@
     document.getElementById("clear").addEventListener("click",()=>{form.reset();record=null;download.disabled=true;copy.disabled=true;document.getElementById("case-id").textContent="CASE // NOT GENERATED";document.getElementById("preview-title").textContent="AWAITING REQUIRED FIELDS";["p-type","p-urgency","p-observed","p-location","p-source","p-confidence"].forEach(id=>setPreview(id,""));document.getElementById("preview-copy").textContent="No record has been generated.";document.getElementById("preview-state").textContent="EMPTY";status.textContent="LOCAL FORM CLEARED";document.getElementById("count").textContent="0"});document.getElementById("summary").addEventListener("input",e=>document.getElementById("count").textContent=e.target.value.length);
     function clock(){document.getElementById("clock").textContent=`${new Intl.DateTimeFormat("en-GB",{timeZone:"UTC",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false}).format(new Date())} UTC`}clock();setInterval(clock,1000);
   </script>
+  <script src="/assets/y-and-y-live.js" defer></script>
 </body>
 </html>

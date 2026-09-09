@@ -1,29 +1,31 @@
-name: Y&Y Autonomous Core
+name: Y&Y Intelligence Engine
 
 on:
   workflow_dispatch:
   schedule:
     - cron: '7,37 * * * *'
   push:
-    branches:
-      - main
+    branches: [main]
     paths:
-      - 'scripts/y_and_y_autonomous.py'
-      - 'scripts/y_and_y_signal_refiner.py'
+      - 'scripts/**'
+      - 'config/**'
+      - 'tests/**'
       - 'assets/y-and-y-live.js'
+      - '**/index.html'
+      - 'docs/**'
       - '.github/workflows/y-and-y-autonomous.yml'
 
 permissions:
   contents: write
 
 concurrency:
-  group: y-and-y-autonomous
+  group: y-and-y-intelligence-engine
   cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 18
     steps:
       - name: Checkout latest main
         uses: actions/checkout@v4
@@ -31,81 +33,22 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Sync latest main
+      - name: Validate code and interface syntax
         run: |
-          git fetch origin main
-          git reset --hard origin/main
+          python3 -m py_compile scripts/y_and_y_autonomous.py scripts/y_and_y_signal_refiner.py scripts/yy_engine/*.py
+          node --check assets/y-and-y-live.js
 
-      - name: Validate engine syntax
-        run: |
-          python3 -m py_compile scripts/y_and_y_autonomous.py
-          python3 -m py_compile scripts/y_and_y_signal_refiner.py
+      - name: Run historical and regression tests
+        run: python3 -m unittest discover -s tests -v
 
-      - name: Run autonomous ingestion
+      - name: Collect and analyze public sources
         run: python3 scripts/y_and_y_autonomous.py
 
-      - name: Apply evidence-gated strategic signals
-        run: python3 scripts/y_and_y_signal_refiner.py
-
-      - name: Validate generated data and signal bounds
+      - name: Validate generated intelligence products
         run: |
-          python3 - <<'PY'
-          import json
-          from pathlib import Path
-
-          expected = [
-              'autonomy-status.json','source-registry.json','live-events.json',
-              'worldwatch-live.json','atlas-live.json','infrawatch-live.json',
-              'brief-live.json','threshold-live.json','wwt-live.json','trfk-live.json'
-          ]
-          docs = {}
-          for name in expected:
-              p = Path('data') / name
-              if not p.exists():
-                  raise SystemExit(f'missing generated file: {p}')
-              docs[name] = json.loads(p.read_text(encoding='utf-8'))
-              print(f'OK {p}')
-
-          status = docs['autonomy-status.json']
-          if float(status.get('version', 0)) < 2.1:
-              raise SystemExit('autonomy-status version is not v2.1+')
-          if int(status.get('sources_total', 0)) < 8:
-              raise SystemExit('source registry unexpectedly small')
-          if not status.get('last_poll'):
-              raise SystemExit('missing last_poll')
-          if not 0 <= int(status.get('source_health_percent', -1)) <= 100:
-              raise SystemExit('invalid source health percentage')
-
-          registry = docs['source-registry.json'].get('sources', [])
-          ids = [s.get('id') for s in registry]
-          if len(ids) != len(set(ids)):
-              raise SystemExit('duplicate source IDs')
-
-          for name in ('threshold-live.json','wwt-live.json'):
-              score = docs[name].get('score')
-              if not isinstance(score, int) or not 0 <= score <= 100:
-                  raise SystemExit(f'invalid score in {name}: {score}')
-              if docs[name].get('rules_version') != '2.2-evidence-gated':
-                  raise SystemExit(f'evidence-gated refiner missing from {name}')
-
-          events = docs['live-events.json'].get('events', [])
-          if len(events) > 700:
-              raise SystemExit('event archive exceeded safety cap')
-          seen = set()
-          for e in events:
-              eid = e.get('id')
-              if not eid or eid in seen:
-                  raise SystemExit(f'invalid/duplicate event id: {eid}')
-              seen.add(eid)
-              sev = e.get('effective_severity', e.get('severity'))
-              if not isinstance(sev, int) or not 0 <= sev <= 100:
-                  raise SystemExit(f'invalid severity for {eid}: {sev}')
-
-          print('Y&Y validation passed')
-          PY
-
-      - name: Check generated text integrity
-        run: git diff --check
+          python3 scripts/validate_generated.py
+          python3 scripts/validate_site.py
+          git diff --check
 
       - name: Write run summary
         run: |
@@ -114,59 +57,50 @@ jobs:
           s=json.load(open('data/autonomy-status.json'))
           t=json.load(open('data/threshold-live.json'))
           w=json.load(open('data/wwt-live.json'))
-          print('## Y&Y Autonomous Core')
-          print(f"- Mode: **{s['mode']}**")
-          print(f"- Source health: **{s['source_health_percent']}%** ({s['sources_ok']}/{s['sources_total']})")
-          print(f"- New events: **{s['new_events']}**")
-          print(f"- Strategic live events: **{s['strategic_live_events']}**")
-          print(f"- Corroborated live events: **{s['corroborated_live_events']}**")
-          print(f"- THRESHOLD machine signal: **{t['score']}** ({t['basis_event_count']} gated events)")
-          print(f"- WWT machine signal: **{w['score']}** ({w['basis_event_count']} systemic events)")
+          print('## Y&Y Intelligence Engine v3')
+          print(f"- Situation: **{s['situation']}**")
+          print(f"- Source coverage: **{s['source_health_percent']}%** ({s['sources_ok']}/{s['sources_total']})")
+          print(f"- New observations: **{s['new_observations']}**")
+          print(f"- Preserved claims: **{s['claim_count']}**")
+          print(f"- States: `{s['claim_status_counts']}`")
+          print(f"- THRESHOLD confirmed / precursor: **{t['confirmed_homeland_signal']['score']} / {t['precursor_speculative_signal']['score']}**")
+          print(f"- WWT verified / early warning: **{w['verified_pressure']['score']} / {w['early_warning_pressure']['score']}**")
           print(f"- Poll: `{s['last_poll']}`")
           PY
 
-      - name: Commit and publish autonomous data
+      - name: Commit and publish generated data
         run: |
           set -euo pipefail
-          git config user.name "Y&Y Autonomous Core"
+          git config user.name "Y&Y Intelligence Engine"
           git config user.email "actions@users.noreply.github.com"
 
           stage_and_commit() {
-            git add data/ assets/y-and-y-live.js index.html worldwatch/index.html atlas/index.html infrawatch/index.html brief/index.html threshold/index.html wwt/index.html trfk/index.html
+            git add data/
             if git diff --cached --quiet; then
-              echo "No Y&Y data changes."
+              echo "No generated data changes."
               return 1
             fi
-            git commit -m "Y&Y: autonomous public-source refresh"
-            return 0
+            git commit -m "Y&Y: layered intelligence refresh"
           }
 
           regenerate() {
-            python3 -m py_compile scripts/y_and_y_autonomous.py
-            python3 -m py_compile scripts/y_and_y_signal_refiner.py
             python3 scripts/y_and_y_autonomous.py
-            python3 scripts/y_and_y_signal_refiner.py
+            python3 scripts/validate_generated.py
+            python3 scripts/validate_site.py
             git diff --check
           }
 
-          if ! stage_and_commit; then
-            exit 0
-          fi
-
+          if ! stage_and_commit; then exit 0; fi
           for attempt in 1 2 3; do
             if git push origin HEAD:main; then
               echo "Y&Y publish succeeded on attempt $attempt."
               exit 0
             fi
-
-            echo "Remote changed during publish; regenerating from latest main (attempt $attempt)."
+            echo "Remote changed; regenerating against current main."
             git fetch origin main
             git reset --hard origin/main
             regenerate
-            if ! stage_and_commit; then
-              exit 0
-            fi
+            if ! stage_and_commit; then exit 0; fi
           done
-
-          echo "Y&Y publish failed after 3 race-safe attempts." >&2
+          echo "Y&Y publish failed after three race-safe attempts." >&2
           exit 1
