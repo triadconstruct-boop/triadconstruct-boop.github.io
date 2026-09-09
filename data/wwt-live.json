@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-09T16:21:14Z",
+  "generated_at": "2026-09-09T16:40:10Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 32,
   "verified_pressure": {
     "score": 32,
-    "claim_count": 20,
+    "claim_count": 22,
     "top_claims": [
       {
         "id": "claim-406d2c9a578f4eaa4b",
@@ -28,7 +28,7 @@
           "0aed901b36cfa5fba34b"
         ],
         "first_seen": "2026-09-09T16:18:05Z",
-        "last_seen": "2026-09-09T16:21:14Z",
+        "last_seen": "2026-09-09T16:40:10Z",
         "material_time": "2026-09-09T04:27:18Z",
         "domains": [
           "ECONOMIC",
@@ -451,7 +451,7 @@
           "2c45841548652da226fa"
         ],
         "first_seen": "2026-09-09T16:18:05Z",
-        "last_seen": "2026-09-09T16:21:14Z",
+        "last_seen": "2026-09-09T16:40:10Z",
         "material_time": "2026-09-09T05:46:18Z",
         "domains": [
           "ECONOMIC",
@@ -799,7 +799,7 @@
           "df6249f8be5f8e5cbddb"
         ],
         "first_seen": "2026-09-09T16:18:05Z",
-        "last_seen": "2026-09-09T16:21:14Z",
+        "last_seen": "2026-09-09T16:40:10Z",
         "material_time": "2026-09-08T18:23:16Z",
         "domains": [
           "ECONOMIC",
@@ -906,20 +906,6 @@
           }
         ],
         "cross_domain_links": [
-          {
-            "claim_id": "claim-87cb9c4253a9358b11",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "TERRORISM"
-            ]
-          },
           {
             "claim_id": "claim-246cbddebc73324995",
             "shared_actors": [
@@ -1051,6 +1037,19 @@
             "domains": [
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-95e8176bee341c4cf7",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "TERRORISM",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
@@ -1068,323 +1067,6 @@
         }
       },
       {
-        "id": "claim-87cb9c4253a9358b11",
-        "headline": "Iran claims to have attacked 10 ships near strait of Hormuz after US strikes",
-        "signature_tokens": [
-          "attacked",
-          "claims",
-          "hormuz",
-          "iran",
-          "near",
-          "ships",
-          "strait",
-          "strikes"
-        ],
-        "observation_ids": [
-          "97db3a4225b7900ab20a"
-        ],
-        "first_seen": "2026-09-09T16:18:05Z",
-        "last_seen": "2026-09-09T16:21:14Z",
-        "material_time": "2026-09-09T15:32:03Z",
-        "domains": [
-          "INFRA",
-          "POLITICAL",
-          "TERRORISM"
-        ],
-        "regions": [
-          "IRAN"
-        ],
-        "actors": [
-          "IRAN",
-          "ISIS"
-        ],
-        "state": "CREDIBLE REPORT",
-        "confidence": 66,
-        "confidence_direction": "STABLE",
-        "confidence_components": {
-          "source_quality": 84,
-          "independence": 25,
-          "corroboration": 22,
-          "contradiction": 0,
-          "specificity": 91,
-          "recency": 100,
-          "evidence_type": 79,
-          "historical_reliability": 84,
-          "claim_maturity": 35
-        },
-        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "supporting_observation_ids": [
-          "97db3a4225b7900ab20a"
-        ],
-        "contradictory_observation_ids": [],
-        "source_count": 1,
-        "independent_provenance_count": 1,
-        "sources": [
-          "The Guardian World"
-        ],
-        "provenance_roots": [
-          "guardian_world"
-        ],
-        "evidence": [
-          {
-            "observation_id": "97db3a4225b7900ab20a",
-            "title": "Iran claims to have attacked 10 ships near strait of Hormuz after US strikes",
-            "source": "The Guardian World",
-            "source_class": "established_media",
-            "provenance_root": "guardian_world",
-            "stance": "report",
-            "published": "2026-09-09T15:32:03Z",
-            "url": "https://www.theguardian.com/world/2026/sep/09/iran-claims-to-have-attacked-10-ships-near-strait-of-hormuz-after-us-strikes",
-            "discovery_only": false
-          }
-        ],
-        "state_affiliated_reporting": false,
-        "discovery_only": false,
-        "branch_analysis": {
-          "current_observation": "Iran claims to have attacked 10 ships near strait of Hormuz after US strikes",
-          "plausible_explanations": [
-            "A genuine INFRA/POLITICAL/TERRORISM development involving IRAN, ISIS is unfolding as reported.",
-            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-          ],
-          "escalation_branch": "Related INFRA/POLITICAL/TERRORISM indicators spread, become operational, or draw additional actors into the event.",
-          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-          "confirm_indicators": [
-            "A primary record, sensor observation, or on-record official confirmation.",
-            "Matching detail from a genuinely independent provenance root.",
-            "Observable follow-on action consistent with the reported event."
-          ],
-          "falsify_indicators": [
-            "Time-stamped primary evidence incompatible with the claim.",
-            "Independent, technically specific refutation from credible sources.",
-            "Predicted follow-on indicators fail to occur inside the stated window."
-          ],
-          "contradictory_evidence_present": false
-        },
-        "historical_matches": [
-          {
-            "claim_id": "claim-7bf080d5d0604d497d",
-            "headline": "Journalist targeted by Iran says U.K.'s crackdown on IRGC is \"the happiest day\"",
-            "material_time": "2026-07-17T20:56:00Z",
-            "shared_domains": [
-              "POLITICAL"
-            ],
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ]
-          },
-          {
-            "claim_id": "claim-d555e4d2e467f5fc66",
-            "headline": "Massachusetts Man Convicted of Violating U.S. Sanctions Against Iran",
-            "material_time": "2026-07-14T12:00:00Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ]
-          },
-          {
-            "claim_id": "claim-f9781e8a8f711fa0cd",
-            "headline": "Maryland Man Sentenced for Attempting to Provide Material Support to ISIS",
-            "material_time": "2026-07-08T12:00:00Z",
-            "shared_domains": [
-              "INFRA",
-              "TERRORISM"
-            ],
-            "shared_actors": [
-              "ISIS"
-            ],
-            "shared_regions": []
-          },
-          {
-            "claim_id": "claim-a32995db0403bbdba3",
-            "headline": "Following the Money, Shutting Down Exploitation",
-            "material_time": "2025-09-24T20:55:29Z",
-            "shared_domains": [
-              "INFRA",
-              "TERRORISM"
-            ],
-            "shared_actors": [
-              "ISIS"
-            ],
-            "shared_regions": []
-          }
-        ],
-        "cross_domain_links": [
-          {
-            "claim_id": "claim-246cbddebc73324995",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-13b6dde9e0f54326b7",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-249fb4a4db150ee2ad",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-55478eaebf7037050e",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-66f1f60efa22300341",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-ac77b4ac8c42edf07b",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-d0eeb9e4f7e2e66680",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-95e8176bee341c4cf7",
-            "shared_actors": [
-              "IRAN",
-              "ISIS"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "TERRORISM",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-88116d502deaac2145",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "NUCLEAR"
-            ]
-          },
-          {
-            "claim_id": "claim-1838943a45cb5ac7a6",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "CYBER",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-4a0ccf5eaebae19a4a",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-e56967faba5849ff6a",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "INFRA",
-              "SECURITY"
-            ]
-          }
-        ],
-        "anomaly_ids": [
-          "anomaly-064fe3c0da1045cd",
-          "anomaly-9956878b12a3e1dc"
-        ],
-        "threat_score": 14,
-        "watch_priority": 54,
-        "audit": {
-          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 1,
-          "contradiction_count": 0,
-          "independent_roots": 1,
-          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-09T15:32:03Z"
-        }
-      },
-      {
         "id": "claim-88116d502deaac2145",
         "headline": "Statutory guidance: Iran nuclear sanctions: guidance",
         "signature_tokens": [
@@ -1399,7 +1081,7 @@
           "456519d9f79e76d15a7b"
         ],
         "first_seen": "2026-09-09T16:18:05Z",
-        "last_seen": "2026-09-09T16:21:14Z",
+        "last_seen": "2026-09-09T16:40:10Z",
         "material_time": "2026-09-09T14:50:49Z",
         "domains": [
           "ECONOMIC",
@@ -1515,18 +1197,6 @@
             ],
             "domains": [
               "CYBER",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-4a0ccf5eaebae19a4a",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
               "WAR"
             ]
           },
@@ -1652,6 +1322,17 @@
             "domains": [
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-6ecd0d69a3e64cfa98",
+            "shared_actors": [],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
@@ -1688,7 +1369,7 @@
           "18b3324f20ceaae66edb"
         ],
         "first_seen": "2026-09-09T16:18:05Z",
-        "last_seen": "2026-09-09T16:21:14Z",
+        "last_seen": "2026-09-09T16:40:10Z",
         "material_time": "2026-09-09T01:38:02Z",
         "domains": [
           "ECONOMIC",
@@ -1943,7 +1624,7 @@
           "709c6db14e537e39cd2b"
         ],
         "first_seen": "2026-09-09T16:18:05Z",
-        "last_seen": "2026-09-09T16:21:14Z",
+        "last_seen": "2026-09-09T16:40:10Z",
         "material_time": "2026-09-08T12:25:14Z",
         "domains": [
           "ECONOMIC",
@@ -2047,7 +1728,7 @@
           "5e37d49c453cf5ddf121"
         ],
         "first_seen": "2026-09-09T16:18:05Z",
-        "last_seen": "2026-09-09T16:21:14Z",
+        "last_seen": "2026-09-09T16:40:10Z",
         "material_time": "2026-09-09T15:41:43Z",
         "domains": [
           "ECONOMIC",
@@ -2173,6 +1854,18 @@
             ]
           },
           {
+            "claim_id": "claim-e72c29f681ae663f47",
+            "shared_actors": [
+              "ISRAEL"
+            ],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-e1dfb7c493145bc518",
             "shared_actors": [
               "ISRAEL"
@@ -2206,6 +1899,18 @@
             ],
             "domains": [
               "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-bca2fd7a0127e5861f",
+            "shared_actors": [
+              "ISRAEL"
+            ],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
+            ],
+            "domains": [
+              "ECONOMIC"
             ]
           },
           {
@@ -2255,30 +1960,6 @@
             "domains": [
               "INFRA"
             ]
-          },
-          {
-            "claim_id": "claim-b3382a41dcefd39825",
-            "shared_actors": [
-              "ISRAEL"
-            ],
-            "shared_regions": [
-              "ISRAEL/PALESTINE"
-            ],
-            "domains": [
-              "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-8ff5a53b7c4e2f0b05",
-            "shared_actors": [
-              "ISRAEL"
-            ],
-            "shared_regions": [
-              "ISRAEL/PALESTINE"
-            ],
-            "domains": [
-              "POLITICAL"
-            ]
           }
         ],
         "anomaly_ids": [
@@ -2311,7 +1992,7 @@
           "1987b9fd4f44bf6aa0b5"
         ],
         "first_seen": "2026-09-09T16:18:05Z",
-        "last_seen": "2026-09-09T16:21:14Z",
+        "last_seen": "2026-09-09T16:40:10Z",
         "material_time": "2026-09-09T05:57:00Z",
         "domains": [
           "WAR"
@@ -2331,7 +2012,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 98,
+          "recency": 97,
           "evidence_type": 79,
           "historical_reliability": 86,
           "claim_maturity": 36
@@ -2513,7 +2194,7 @@
           "6a6ee4c1729e393f6c3e"
         ],
         "first_seen": "2026-09-09T16:18:05Z",
-        "last_seen": "2026-09-09T16:21:14Z",
+        "last_seen": "2026-09-09T16:40:10Z",
         "material_time": "2026-09-08T18:16:40Z",
         "domains": [
           "INFRA"
@@ -2837,7 +2518,7 @@
           "69bd3957fbe2c2f5c246"
         ],
         "first_seen": "2026-09-09T16:18:05Z",
-        "last_seen": "2026-09-09T16:21:14Z",
+        "last_seen": "2026-09-09T16:40:10Z",
         "material_time": "2026-09-08T16:47:35Z",
         "domains": [
           "ECONOMIC"
@@ -3023,6 +2704,16 @@
             ]
           },
           {
+            "claim_id": "claim-679d632e2502769752",
+            "shared_actors": [],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "SECURITY"
+            ]
+          },
+          {
             "claim_id": "claim-a4e176209390df5989",
             "shared_actors": [],
             "shared_regions": [
@@ -3089,18 +2780,6 @@
             "domains": [
               "SECURITY"
             ]
-          },
-          {
-            "claim_id": "claim-6fcaf54ef7d286d8ab",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "SECURITY"
-            ]
           }
         ],
         "anomaly_ids": [
@@ -3135,7 +2814,7 @@
           "97fe0acafa56c0d9d27a"
         ],
         "first_seen": "2026-09-09T16:18:05Z",
-        "last_seen": "2026-09-09T16:21:14Z",
+        "last_seen": "2026-09-09T16:40:10Z",
         "material_time": "2026-09-09T15:43:29Z",
         "domains": [
           "ECONOMIC"
@@ -3381,6 +3060,272 @@
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-09T15:43:29Z"
         }
+      },
+      {
+        "id": "claim-81ab7666221d2fba94",
+        "headline": "Israel Orders UK Consulate Closure in Jerusalem Over Settlement Sanctions - Deccan Chronicle",
+        "signature_tokens": [
+          "chronicle",
+          "closure",
+          "consulate",
+          "deccan",
+          "israel",
+          "jerusalem",
+          "orders",
+          "sanctions",
+          "settlement"
+        ],
+        "observation_ids": [
+          "050353e3a5758b20f30c",
+          "1d110f59c7431b32f075"
+        ],
+        "first_seen": "2026-09-09T16:18:05Z",
+        "last_seen": "2026-09-09T16:40:10Z",
+        "material_time": "2026-09-09T12:17:50Z",
+        "domains": [
+          "ECONOMIC"
+        ],
+        "regions": [
+          "ISRAEL/PALESTINE"
+        ],
+        "actors": [
+          "ISRAEL"
+        ],
+        "state": "CONFIRMED",
+        "confidence": 74,
+        "confidence_direction": "STABLE",
+        "confidence_components": {
+          "source_quality": 88,
+          "independence": 52,
+          "corroboration": 52,
+          "contradiction": 0,
+          "specificity": 73,
+          "recency": 100,
+          "evidence_type": 79,
+          "historical_reliability": 88,
+          "claim_maturity": 46
+        },
+        "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
+        "supporting_observation_ids": [
+          "050353e3a5758b20f30c",
+          "1d110f59c7431b32f075"
+        ],
+        "contradictory_observation_ids": [],
+        "source_count": 2,
+        "independent_provenance_count": 2,
+        "sources": [
+          "Agence France-Presse",
+          "Al Jazeera English"
+        ],
+        "provenance_roots": [
+          "aljazeera",
+          "wire:afp_world"
+        ],
+        "evidence": [
+          {
+            "observation_id": "1d110f59c7431b32f075",
+            "title": "How has Israel hit back against sanctions by the UK, others?",
+            "source": "Al Jazeera English",
+            "source_class": "established_media",
+            "provenance_root": "aljazeera",
+            "stance": "report",
+            "published": "2026-09-09T12:17:50Z",
+            "url": "https://www.aljazeera.com/news/2026/9/9/how-has-israel-hit-back-against-sanctions-by-the-uk-others?traffic_source=rss",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "050353e3a5758b20f30c",
+            "title": "Israel Orders UK Consulate Closure in Jerusalem Over Settlement Sanctions - Deccan Chronicle",
+            "source": "Agence France-Presse",
+            "source_class": "wire",
+            "provenance_root": "wire:afp_world",
+            "stance": "report",
+            "published": "2026-09-08T17:41:11Z",
+            "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSnlRUHByNkJ0dWw2UFF1aXR4UjZCVFREMndoZ3NKNFIyTXhGWGdnU2JCYUl1bGtuazltQ0I1VXdFU2pSb3hMQkdoTzg2bGtpUmtQQ1huZWxoNFIwd25DeURZUU5Zc2pwQ1FILWJYSjlyaWFrNW5KNnRSeHFxclNSQm1ydHlLbE16cGZRd1g4Tng4bWFxVWlhcDhTYkNtZjRCbGt1cVdOZTZQVDNlYUxVVmxObkRnRjJzRGJr0gHAAUFVX3lxTE5xQkwwVEhxbm9DNjRoenF1cjlhbUx3VWNOaGRwLXotUll0YXE2dEtSNTVoY1Vkb1AtOGxDQ1R6NS1VM3RNSERwbmpXQVVJMm1NbEdDN2R3TnBIdTNBeDNvRXNrWlF2MHdOU1VQVG5GUEowTDNvNGpkMUxVRGczOFlHb0dJcmI1TmY4by1TX1FpTkFzekhvQ0dITjZzNmNGOHV1dzJYR0NFaUhucmpoWGhGQVpOMGxHNzYwQ0tRbDBocg?oc=5",
+            "discovery_only": false
+          }
+        ],
+        "state_affiliated_reporting": false,
+        "discovery_only": false,
+        "branch_analysis": {
+          "current_observation": "Israel Orders UK Consulate Closure in Jerusalem Over Settlement Sanctions - Deccan Chronicle",
+          "plausible_explanations": [
+            "A genuine ECONOMIC development involving ISRAEL is unfolding as reported.",
+            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+          ],
+          "escalation_branch": "Related ECONOMIC indicators spread, become operational, or draw additional actors into the event.",
+          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+          "confirm_indicators": [
+            "A primary record, sensor observation, or on-record official confirmation.",
+            "Matching detail from a genuinely independent provenance root.",
+            "Observable follow-on action consistent with the reported event."
+          ],
+          "falsify_indicators": [
+            "Time-stamped primary evidence incompatible with the claim.",
+            "Independent, technically specific refutation from credible sources.",
+            "Predicted follow-on indicators fail to occur inside the stated window."
+          ],
+          "contradictory_evidence_present": false
+        },
+        "historical_matches": [],
+        "cross_domain_links": [
+          {
+            "claim_id": "claim-3fa500a3f5a5ba4859",
+            "shared_actors": [
+              "ISRAEL"
+            ],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
+            ],
+            "domains": [
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-6d5ddcc069875fb4e3",
+            "shared_actors": [
+              "ISRAEL"
+            ],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-a0b33965f6801d02a2",
+            "shared_actors": [
+              "ISRAEL"
+            ],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-b3382a41dcefd39825",
+            "shared_actors": [
+              "ISRAEL"
+            ],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
+            ],
+            "domains": [
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-8ff5a53b7c4e2f0b05",
+            "shared_actors": [
+              "ISRAEL"
+            ],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
+            ],
+            "domains": [
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-3525ecda7e1731c0d0",
+            "shared_actors": [],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
+            ],
+            "domains": [
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-f8f4edbb08042ffa35",
+            "shared_actors": [
+              "ISRAEL"
+            ],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-0df160f4e00e996009",
+            "shared_actors": [
+              "ISRAEL"
+            ],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
+            ],
+            "domains": [
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-48776d7f9f5953bdb9",
+            "shared_actors": [
+              "ISRAEL"
+            ],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
+            ],
+            "domains": [
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-345b8875a693f6f089",
+            "shared_actors": [
+              "ISRAEL"
+            ],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
+            ],
+            "domains": [
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-330ff7e27884c2ddbb",
+            "shared_actors": [
+              "ISRAEL"
+            ],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
+            ],
+            "domains": [
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-eb87e9f2bb587fb21d",
+            "shared_actors": [
+              "ISRAEL"
+            ],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
+            ],
+            "domains": [
+              "POLITICAL"
+            ]
+          }
+        ],
+        "anomaly_ids": [
+          "anomaly-50b8f39570d55e70"
+        ],
+        "threat_score": 19,
+        "watch_priority": 26,
+        "audit": {
+          "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
+          "support_count": 2,
+          "contradiction_count": 0,
+          "independent_roots": 2,
+          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+          "material_time_used_for_decay": "2026-09-09T12:17:50Z"
+        }
       }
     ]
   },
@@ -3408,7 +3353,7 @@
           "015c1a426bcb26a0c977"
         ],
         "first_seen": "2026-09-09T16:18:05Z",
-        "last_seen": "2026-09-09T16:21:14Z",
+        "last_seen": "2026-09-09T16:40:10Z",
         "material_time": "2026-09-09T13:08:42Z",
         "domains": [
           "INFRA"
@@ -3462,7 +3407,7 @@
           },
           {
             "observation_id": "c114aca2a3a4e7fdbf9d",
-            "title": "Germany: Police arrest suspect in power grid sabotage case - dw.com",
+            "title": "Germany: Police arrest suspect in power grid sabotage case - DW.com",
             "source": "GDELT Global Discovery",
             "source_class": "discovery",
             "provenance_root": "gdelt_global",
@@ -3682,7 +3627,7 @@
           "edc474b52cffc1cdc99a"
         ],
         "first_seen": "2026-09-09T16:18:05Z",
-        "last_seen": "2026-09-09T16:21:14Z",
+        "last_seen": "2026-09-09T16:40:10Z",
         "material_time": "2026-09-09T11:31:49Z",
         "domains": [
           "ECONOMIC"
@@ -3948,7 +3893,7 @@
           "6319ec601d9bd15b49e1"
         ],
         "first_seen": "2026-09-09T16:18:05Z",
-        "last_seen": "2026-09-09T16:21:14Z",
+        "last_seen": "2026-09-09T16:40:10Z",
         "material_time": "2026-09-09T15:32:57Z",
         "domains": [
           "SECURITY"
@@ -4242,10 +4187,10 @@
     "alliance_entanglement": 0,
     "multi_theater_coupling": 0,
     "nuclear_escalation": 3,
-    "military_mobilization": 3,
-    "economic_warfare": 24,
+    "military_mobilization": 4,
+    "economic_warfare": 26,
     "crisis_control_failure": 0,
-    "hybrid_preparation": 26
+    "hybrid_preparation": 27
   },
   "formula": "Independent-provenance-capped claim contributions; verified and early-warning pressure remain separate.",
   "safeguard": "Republished stories sharing one provenance root cannot multiply pressure; speculative claims never enter Verified Pressure.",
@@ -4273,7 +4218,7 @@
         "0aed901b36cfa5fba34b"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-09T16:21:14Z",
+      "last_seen": "2026-09-09T16:40:10Z",
       "material_time": "2026-09-09T04:27:18Z",
       "domains": [
         "ECONOMIC",
@@ -4696,7 +4641,7 @@
         "2c45841548652da226fa"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-09T16:21:14Z",
+      "last_seen": "2026-09-09T16:40:10Z",
       "material_time": "2026-09-09T05:46:18Z",
       "domains": [
         "ECONOMIC",
@@ -5044,7 +4989,7 @@
         "df6249f8be5f8e5cbddb"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-09T16:21:14Z",
+      "last_seen": "2026-09-09T16:40:10Z",
       "material_time": "2026-09-08T18:23:16Z",
       "domains": [
         "ECONOMIC",
@@ -5151,20 +5096,6 @@
         }
       ],
       "cross_domain_links": [
-        {
-          "claim_id": "claim-87cb9c4253a9358b11",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "TERRORISM"
-          ]
-        },
         {
           "claim_id": "claim-246cbddebc73324995",
           "shared_actors": [
@@ -5296,6 +5227,19 @@
           "domains": [
             "WAR"
           ]
+        },
+        {
+          "claim_id": "claim-95e8176bee341c4cf7",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "TERRORISM",
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -5313,323 +5257,6 @@
       }
     },
     {
-      "id": "claim-87cb9c4253a9358b11",
-      "headline": "Iran claims to have attacked 10 ships near strait of Hormuz after US strikes",
-      "signature_tokens": [
-        "attacked",
-        "claims",
-        "hormuz",
-        "iran",
-        "near",
-        "ships",
-        "strait",
-        "strikes"
-      ],
-      "observation_ids": [
-        "97db3a4225b7900ab20a"
-      ],
-      "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-09T16:21:14Z",
-      "material_time": "2026-09-09T15:32:03Z",
-      "domains": [
-        "INFRA",
-        "POLITICAL",
-        "TERRORISM"
-      ],
-      "regions": [
-        "IRAN"
-      ],
-      "actors": [
-        "IRAN",
-        "ISIS"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 66,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 84,
-        "independence": 25,
-        "corroboration": 22,
-        "contradiction": 0,
-        "specificity": 91,
-        "recency": 100,
-        "evidence_type": 79,
-        "historical_reliability": 84,
-        "claim_maturity": 35
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "97db3a4225b7900ab20a"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 1,
-      "independent_provenance_count": 1,
-      "sources": [
-        "The Guardian World"
-      ],
-      "provenance_roots": [
-        "guardian_world"
-      ],
-      "evidence": [
-        {
-          "observation_id": "97db3a4225b7900ab20a",
-          "title": "Iran claims to have attacked 10 ships near strait of Hormuz after US strikes",
-          "source": "The Guardian World",
-          "source_class": "established_media",
-          "provenance_root": "guardian_world",
-          "stance": "report",
-          "published": "2026-09-09T15:32:03Z",
-          "url": "https://www.theguardian.com/world/2026/sep/09/iran-claims-to-have-attacked-10-ships-near-strait-of-hormuz-after-us-strikes",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Iran claims to have attacked 10 ships near strait of Hormuz after US strikes",
-        "plausible_explanations": [
-          "A genuine INFRA/POLITICAL/TERRORISM development involving IRAN, ISIS is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related INFRA/POLITICAL/TERRORISM indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [
-        {
-          "claim_id": "claim-7bf080d5d0604d497d",
-          "headline": "Journalist targeted by Iran says U.K.'s crackdown on IRGC is \"the happiest day\"",
-          "material_time": "2026-07-17T20:56:00Z",
-          "shared_domains": [
-            "POLITICAL"
-          ],
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ]
-        },
-        {
-          "claim_id": "claim-d555e4d2e467f5fc66",
-          "headline": "Massachusetts Man Convicted of Violating U.S. Sanctions Against Iran",
-          "material_time": "2026-07-14T12:00:00Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ]
-        },
-        {
-          "claim_id": "claim-f9781e8a8f711fa0cd",
-          "headline": "Maryland Man Sentenced for Attempting to Provide Material Support to ISIS",
-          "material_time": "2026-07-08T12:00:00Z",
-          "shared_domains": [
-            "INFRA",
-            "TERRORISM"
-          ],
-          "shared_actors": [
-            "ISIS"
-          ],
-          "shared_regions": []
-        },
-        {
-          "claim_id": "claim-a32995db0403bbdba3",
-          "headline": "Following the Money, Shutting Down Exploitation",
-          "material_time": "2025-09-24T20:55:29Z",
-          "shared_domains": [
-            "INFRA",
-            "TERRORISM"
-          ],
-          "shared_actors": [
-            "ISIS"
-          ],
-          "shared_regions": []
-        }
-      ],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-246cbddebc73324995",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-13b6dde9e0f54326b7",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-249fb4a4db150ee2ad",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-55478eaebf7037050e",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-66f1f60efa22300341",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-ac77b4ac8c42edf07b",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-d0eeb9e4f7e2e66680",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-95e8176bee341c4cf7",
-          "shared_actors": [
-            "IRAN",
-            "ISIS"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "TERRORISM",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-88116d502deaac2145",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "NUCLEAR"
-          ]
-        },
-        {
-          "claim_id": "claim-1838943a45cb5ac7a6",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "CYBER",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-4a0ccf5eaebae19a4a",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-e56967faba5849ff6a",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "SECURITY"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-064fe3c0da1045cd",
-        "anomaly-9956878b12a3e1dc"
-      ],
-      "threat_score": 14,
-      "watch_priority": 54,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 1,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-09T15:32:03Z"
-      }
-    },
-    {
       "id": "claim-88116d502deaac2145",
       "headline": "Statutory guidance: Iran nuclear sanctions: guidance",
       "signature_tokens": [
@@ -5644,7 +5271,7 @@
         "456519d9f79e76d15a7b"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-09T16:21:14Z",
+      "last_seen": "2026-09-09T16:40:10Z",
       "material_time": "2026-09-09T14:50:49Z",
       "domains": [
         "ECONOMIC",
@@ -5760,18 +5387,6 @@
           ],
           "domains": [
             "CYBER",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-4a0ccf5eaebae19a4a",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
             "WAR"
           ]
         },
@@ -5897,6 +5512,17 @@
           "domains": [
             "WAR"
           ]
+        },
+        {
+          "claim_id": "claim-6ecd0d69a3e64cfa98",
+          "shared_actors": [],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -5933,7 +5559,7 @@
         "18b3324f20ceaae66edb"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-09T16:21:14Z",
+      "last_seen": "2026-09-09T16:40:10Z",
       "material_time": "2026-09-09T01:38:02Z",
       "domains": [
         "ECONOMIC",
@@ -6188,7 +5814,7 @@
         "709c6db14e537e39cd2b"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-09T16:21:14Z",
+      "last_seen": "2026-09-09T16:40:10Z",
       "material_time": "2026-09-08T12:25:14Z",
       "domains": [
         "ECONOMIC",
@@ -6292,7 +5918,7 @@
         "5e37d49c453cf5ddf121"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-09T16:21:14Z",
+      "last_seen": "2026-09-09T16:40:10Z",
       "material_time": "2026-09-09T15:41:43Z",
       "domains": [
         "ECONOMIC",
@@ -6418,6 +6044,18 @@
           ]
         },
         {
+          "claim_id": "claim-e72c29f681ae663f47",
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-e1dfb7c493145bc518",
           "shared_actors": [
             "ISRAEL"
@@ -6451,6 +6089,18 @@
           ],
           "domains": [
             "POLITICAL"
+          ]
+        },
+        {
+          "claim_id": "claim-bca2fd7a0127e5861f",
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "ECONOMIC"
           ]
         },
         {
@@ -6500,30 +6150,6 @@
           "domains": [
             "INFRA"
           ]
-        },
-        {
-          "claim_id": "claim-b3382a41dcefd39825",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-8ff5a53b7c4e2f0b05",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
         }
       ],
       "anomaly_ids": [
@@ -6556,7 +6182,7 @@
         "1987b9fd4f44bf6aa0b5"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-09T16:21:14Z",
+      "last_seen": "2026-09-09T16:40:10Z",
       "material_time": "2026-09-09T05:57:00Z",
       "domains": [
         "WAR"
@@ -6576,7 +6202,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 98,
+        "recency": 97,
         "evidence_type": 79,
         "historical_reliability": 86,
         "claim_maturity": 36
@@ -6758,7 +6384,7 @@
         "6a6ee4c1729e393f6c3e"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-09T16:21:14Z",
+      "last_seen": "2026-09-09T16:40:10Z",
       "material_time": "2026-09-08T18:16:40Z",
       "domains": [
         "INFRA"
@@ -7082,7 +6708,7 @@
         "69bd3957fbe2c2f5c246"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-09T16:21:14Z",
+      "last_seen": "2026-09-09T16:40:10Z",
       "material_time": "2026-09-08T16:47:35Z",
       "domains": [
         "ECONOMIC"
@@ -7268,6 +6894,16 @@
           ]
         },
         {
+          "claim_id": "claim-679d632e2502769752",
+          "shared_actors": [],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "SECURITY"
+          ]
+        },
+        {
           "claim_id": "claim-a4e176209390df5989",
           "shared_actors": [],
           "shared_regions": [
@@ -7334,18 +6970,6 @@
           "domains": [
             "SECURITY"
           ]
-        },
-        {
-          "claim_id": "claim-6fcaf54ef7d286d8ab",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY"
-          ]
         }
       ],
       "anomaly_ids": [
@@ -7380,7 +7004,7 @@
         "97fe0acafa56c0d9d27a"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-09T16:21:14Z",
+      "last_seen": "2026-09-09T16:40:10Z",
       "material_time": "2026-09-09T15:43:29Z",
       "domains": [
         "ECONOMIC"
@@ -7646,7 +7270,7 @@
         "1d110f59c7431b32f075"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-09T16:21:14Z",
+      "last_seen": "2026-09-09T16:40:10Z",
       "material_time": "2026-09-09T12:17:50Z",
       "domains": [
         "ECONOMIC"
@@ -7910,7 +7534,7 @@
         "89bdee501282d7a1dffc"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-09T16:21:14Z",
+      "last_seen": "2026-09-09T16:40:10Z",
       "material_time": "2026-09-09T11:29:59Z",
       "domains": [
         "NUCLEAR"
@@ -8013,7 +7637,7 @@
         "6bc9a1b6382fef835124"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-09T16:21:14Z",
+      "last_seen": "2026-09-09T16:40:10Z",
       "material_time": "2026-09-09T07:17:00Z",
       "domains": [
         "NUCLEAR"
@@ -8165,22 +7789,130 @@
       }
     },
     {
-      "id": "claim-06446f022e4c4c3d80",
-      "headline": "Statutory guidance: Iran sanctions: guidance",
+      "id": "claim-254d7f0040f4ff1cbc",
+      "headline": "Carrier HMS Queen Elizabeth Returns to Sea After Extended Repair Period",
       "signature_tokens": [
-        "guidance",
-        "iran",
-        "sanctions",
-        "statutory"
+        "carrier",
+        "elizabeth",
+        "extended",
+        "hms",
+        "period",
+        "queen",
+        "repair",
+        "returns",
+        "sea"
       ],
       "observation_ids": [
-        "bfb52788abdb8622f13b"
+        "64178ce29a71d884aecc"
+      ],
+      "first_seen": "2026-09-09T16:40:10Z",
+      "last_seen": "2026-09-09T16:40:10Z",
+      "material_time": "2026-09-09T16:38:49Z",
+      "domains": [
+        "INFRA"
+      ],
+      "regions": [
+        "GLOBAL"
+      ],
+      "actors": [],
+      "state": "CREDIBLE REPORT",
+      "confidence": 62,
+      "confidence_direction": "NEW",
+      "confidence_components": {
+        "source_quality": 86,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 56,
+        "recency": 100,
+        "evidence_type": 73,
+        "historical_reliability": 86,
+        "claim_maturity": 35
+      },
+      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+      "supporting_observation_ids": [
+        "64178ce29a71d884aecc"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 1,
+      "independent_provenance_count": 1,
+      "sources": [
+        "USNI News"
+      ],
+      "provenance_roots": [
+        "usni_news"
+      ],
+      "evidence": [
+        {
+          "observation_id": "64178ce29a71d884aecc",
+          "title": "Carrier HMS Queen Elizabeth Returns to Sea After Extended Repair Period",
+          "source": "USNI News",
+          "source_class": "specialist",
+          "provenance_root": "usni_news",
+          "stance": "warning",
+          "published": "2026-09-09T16:38:49Z",
+          "url": "https://news.usni.org/2026/09/09/carrier-hms-queen-elizabeth-returns-to-sea-after-extended-repair-period",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Carrier HMS Queen Elizabeth Returns to Sea After Extended Repair Period",
+        "plausible_explanations": [
+          "A genuine INFRA development involving the reported actors is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related INFRA indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [],
+      "cross_domain_links": [],
+      "anomaly_ids": [],
+      "threat_score": 12,
+      "watch_priority": 17,
+      "audit": {
+        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "support_count": 1,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-09T16:38:49Z"
+      }
+    },
+    {
+      "id": "claim-87cb9c4253a9358b11",
+      "headline": "Iran claims to have attacked 10 ships near strait of Hormuz after US strikes",
+      "signature_tokens": [
+        "attacked",
+        "claims",
+        "hormuz",
+        "iran",
+        "near",
+        "ships",
+        "strait",
+        "strikes"
+      ],
+      "observation_ids": [
+        "97db3a4225b7900ab20a"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-09T16:21:14Z",
-      "material_time": "2026-09-09T14:51:49Z",
+      "last_seen": "2026-09-09T16:40:10Z",
+      "material_time": "2026-09-09T16:18:15Z",
       "domains": [
-        "ECONOMIC"
+        "INFRA"
       ],
       "regions": [
         "IRAN"
@@ -8189,55 +7921,55 @@
         "IRAN"
       ],
       "state": "CREDIBLE REPORT",
-      "confidence": 67,
+      "confidence": 66,
       "confidence_direction": "STABLE",
       "confidence_components": {
-        "source_quality": 95,
+        "source_quality": 84,
         "independence": 25,
         "corroboration": 22,
         "contradiction": 0,
-        "specificity": 66,
+        "specificity": 91,
         "recency": 100,
-        "evidence_type": 86,
-        "historical_reliability": 95,
+        "evidence_type": 79,
+        "historical_reliability": 84,
         "claim_maturity": 35
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
-        "bfb52788abdb8622f13b"
+        "97db3a4225b7900ab20a"
       ],
       "contradictory_observation_ids": [],
       "source_count": 1,
       "independent_provenance_count": 1,
       "sources": [
-        "UK Foreign, Commonwealth & Development Office"
+        "The Guardian World"
       ],
       "provenance_roots": [
-        "fcdo"
+        "guardian_world"
       ],
       "evidence": [
         {
-          "observation_id": "bfb52788abdb8622f13b",
-          "title": "Statutory guidance: Iran sanctions: guidance",
-          "source": "UK Foreign, Commonwealth & Development Office",
-          "source_class": "primary_official",
-          "provenance_root": "fcdo",
+          "observation_id": "97db3a4225b7900ab20a",
+          "title": "Iran claims to have attacked 10 ships near strait of Hormuz after US strikes",
+          "source": "The Guardian World",
+          "source_class": "established_media",
+          "provenance_root": "guardian_world",
           "stance": "report",
-          "published": "2026-09-09T14:51:49Z",
-          "url": "https://www.gov.uk/government/publications/iran-sanctions-guidance",
+          "published": "2026-09-09T16:18:15Z",
+          "url": "https://www.theguardian.com/world/2026/sep/09/iran-claims-to-have-attacked-10-ships-near-strait-of-hormuz-after-us-strikes",
           "discovery_only": false
         }
       ],
       "state_affiliated_reporting": false,
       "discovery_only": false,
       "branch_analysis": {
-        "current_observation": "Statutory guidance: Iran sanctions: guidance",
+        "current_observation": "Iran claims to have attacked 10 ships near strait of Hormuz after US strikes",
         "plausible_explanations": [
-          "A genuine ECONOMIC development involving IRAN is unfolding as reported.",
+          "A genuine INFRA development involving IRAN is unfolding as reported.",
           "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
           "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
         ],
-        "escalation_branch": "Related ECONOMIC indicators spread, become operational, or draw additional actors into the event.",
+        "escalation_branch": "Related INFRA indicators spread, become operational, or draw additional actors into the event.",
         "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
         "confirm_indicators": [
           "A primary record, sensor observation, or on-record official confirmation.",
@@ -8257,7 +7989,7 @@
           "headline": "Massachusetts Man Convicted of Violating U.S. Sanctions Against Iran",
           "material_time": "2026-07-14T12:00:00Z",
           "shared_domains": [
-            "ECONOMIC"
+            "INFRA"
           ],
           "shared_actors": [
             "IRAN"
@@ -8269,6 +8001,18 @@
       ],
       "cross_domain_links": [
         {
+          "claim_id": "claim-06446f022e4c4c3d80",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "ECONOMIC"
+          ]
+        },
+        {
           "claim_id": "claim-73e32aa7c38514570e",
           "shared_actors": [
             "IRAN"
@@ -8278,18 +8022,6 @@
           ],
           "domains": [
             "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-53abba7ac300025fc4",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA"
           ]
         },
         {
@@ -8414,7 +8146,7 @@
       "anomaly_ids": [
         "anomaly-9956878b12a3e1dc"
       ],
-      "threat_score": 13,
+      "threat_score": 12,
       "watch_priority": 27,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
@@ -8422,7 +8154,7 @@
         "contradiction_count": 0,
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-09T14:51:49Z"
+        "material_time_used_for_decay": "2026-09-09T16:18:15Z"
       }
     }
   ]
