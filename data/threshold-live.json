@@ -1,11 +1,19 @@
 {
-  "generated_at": "2026-09-09T15:47:34Z",
-  "rules_version": "2.2-evidence-gated",
+  "generated_at": "2026-09-09T16:18:05Z",
+  "rules_version": "3.0-layered-early-warning",
   "score": 0,
-  "band": "BASELINE SIGNAL",
-  "basis_event_count": 0,
-  "evidence_gate": "Requires both explicit U.S.-homeland relevance and a concrete attack, terror, cyber-infrastructure or biological pathway.",
-  "method": "Evidence-gated public-source homeland signal weighted by severity, source authority and corroboration; not a probability.",
-  "disclaimer": "Machine-generated public-source signal only. It is not a calibrated probability forecast and does not replace the curated THRESHOLD assessment.",
-  "top_events": []
+  "confirmed_homeland_signal": {
+    "score": 0,
+    "claim_count": 0,
+    "top_claims": []
+  },
+  "precursor_speculative_signal": {
+    "score": 0,
+    "claim_count": 0,
+    "top_claims": []
+  },
+  "evidence_gate": "Requires an explicit U.S. location or target and a concrete attack, terror, cyber-infrastructure, biological, or critical-infrastructure pathway; historical retrospectives are excluded.",
+  "safeguard": "Credible, early-warning, speculative, and unverified material cannot enter Confirmed Homeland Signal.",
+  "disclaimer": "Machine-generated public-source signal, not a calibrated probability or official homeland warning.",
+  "top_claims": []
 }
