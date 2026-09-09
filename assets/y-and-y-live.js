@@ -3,7 +3,9 @@
 
   const route = (window.location.pathname || "/").toLowerCase();
   const remoteProject = /\/ronin-(atlas|intake|infrawatch|academy|brief)\.github\.io\//.test(route);
-  const BASE = remoteProject ? "https://yyrv.net/data/" : "/data/";
+  const BASE = remoteProject
+    ? "https://raw.githubusercontent.com/triadconstruct-boop/triadconstruct-boop.github.io/main/data/"
+    : "/data/";
   const endpoint = route.includes("/threshold") ? "threshold-live.json"
     : route.includes("/wwt") ? "wwt-live.json"
     : route.includes("/trfk") ? "trfk-live.json"
