@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T15:20:18Z",
+  "generated_at": "2026-09-10T15:45:37Z",
   "top_claims": [
     {
       "id": "claim-eed4f2d45ec0891918",
@@ -21,7 +21,7 @@
         "e63e84c4a2f51d2dc3b3"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:20:18Z",
+      "last_seen": "2026-09-10T15:45:37Z",
       "material_time": "2026-09-01T22:45:46Z",
       "domains": [
         "INFRA",
@@ -144,7 +144,7 @@
         "8ff4f8ec9ebffeeae46f"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:20:18Z",
+      "last_seen": "2026-09-10T15:45:37Z",
       "material_time": "2026-09-08T04:00:27Z",
       "domains": [
         "CYBER",
@@ -277,19 +277,6 @@
           ]
         },
         {
-          "claim_id": "claim-bcd5312bd3ea087149",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-f4b8c2f1f4852f63b3",
           "shared_actors": [
             "IRAN"
@@ -380,6 +367,20 @@
           "domains": [
             "INFRA"
           ]
+        },
+        {
+          "claim_id": "claim-48bb1e939c6035253b",
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "HUMANITARIAN",
+            "INFRA",
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -413,7 +414,7 @@
         "9d747e68e4ae6d3395bf"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:20:18Z",
+      "last_seen": "2026-09-10T15:45:37Z",
       "material_time": "2026-08-31T16:36:51Z",
       "domains": [
         "INFRA",
@@ -576,6 +577,109 @@
       }
     },
     {
+      "id": "claim-cdf8227203b69f6fc8",
+      "headline": "Cisco FMC flaws exploited by ransomware gang, state-sponsored hackers",
+      "signature_tokens": [
+        "cisco",
+        "exploited",
+        "flaws",
+        "fmc",
+        "gang",
+        "hackers",
+        "ransomware",
+        "state-sponsored"
+      ],
+      "observation_ids": [
+        "dc08bb800270cfe47a3e"
+      ],
+      "first_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T15:45:37Z",
+      "material_time": "2026-09-10T15:43:58Z",
+      "domains": [
+        "CYBER"
+      ],
+      "regions": [
+        "GLOBAL"
+      ],
+      "actors": [],
+      "state": "EARLY WARNING",
+      "confidence": 58,
+      "confidence_direction": "NEW",
+      "confidence_components": {
+        "source_quality": 84,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 35,
+        "recency": 100,
+        "evidence_type": 73,
+        "historical_reliability": 84,
+        "claim_maturity": 35
+      },
+      "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
+      "supporting_observation_ids": [
+        "dc08bb800270cfe47a3e"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 1,
+      "independent_provenance_count": 1,
+      "sources": [
+        "BleepingComputer"
+      ],
+      "provenance_roots": [
+        "bleepingcomputer"
+      ],
+      "evidence": [
+        {
+          "observation_id": "dc08bb800270cfe47a3e",
+          "title": "Cisco FMC flaws exploited by ransomware gang, state-sponsored hackers",
+          "source": "BleepingComputer",
+          "source_class": "specialist",
+          "provenance_root": "bleepingcomputer",
+          "stance": "warning",
+          "published": "2026-09-10T15:43:58Z",
+          "url": "https://www.bleepingcomputer.com/news/security/cisco-fmc-flaws-exploited-by-ransomware-gang-state-sponsored-hackers",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Cisco FMC flaws exploited by ransomware gang, state-sponsored hackers",
+        "plausible_explanations": [
+          "A genuine CYBER development involving the reported actors is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related CYBER indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [],
+      "cross_domain_links": [],
+      "anomaly_ids": [],
+      "threat_score": 8,
+      "watch_priority": 47,
+      "audit": {
+        "reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
+        "support_count": 1,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-10T15:43:58Z"
+      }
+    },
+    {
       "id": "claim-be0b8fb2e654957453",
       "headline": "Policing the Bangsamoro: Peace in the Southern Philippines",
       "signature_tokens": [
@@ -589,7 +693,7 @@
         "82ee6a1b9061c5aa88ea"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:20:18Z",
+      "last_seen": "2026-09-10T15:45:37Z",
       "material_time": "2026-09-02T22:00:00Z",
       "domains": [
         "BIO",
@@ -1101,7 +1205,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 47,
-        "recency": 79,
+        "recency": 78,
         "evidence_type": 86,
         "historical_reliability": 85,
         "claim_maturity": 39
@@ -1587,7 +1691,7 @@
         "a572a5f4f059615ba926"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:20:18Z",
+      "last_seen": "2026-09-10T15:45:37Z",
       "material_time": "2026-09-03T15:06:33Z",
       "domains": [
         "CYBER",
@@ -1707,7 +1811,7 @@
         "831b072ef5c33cf0625d"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:20:18Z",
+      "last_seen": "2026-09-10T15:45:37Z",
       "material_time": "2026-09-03T13:44:23Z",
       "domains": [
         "INFRA",
@@ -1886,7 +1990,7 @@
         "358b77362dc79d573c70"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:20:18Z",
+      "last_seen": "2026-09-10T15:45:37Z",
       "material_time": "2026-09-01T20:15:51Z",
       "domains": [
         "INFRA",
@@ -1908,7 +2012,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 87,
-        "recency": 49,
+        "recency": 48,
         "evidence_type": 64,
         "historical_reliability": 86,
         "claim_maturity": 49
@@ -2078,7 +2182,7 @@
         "IRAN"
       ],
       "state": "EARLY WARNING",
-      "confidence": 41,
+      "confidence": 40,
       "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 32,
@@ -2166,19 +2270,6 @@
           "domains": [
             "INFRA",
             "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-bcd5312bd3ea087149",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
           ]
         },
         {
@@ -2300,6 +2391,19 @@
             "SECURITY",
             "WAR"
           ]
+        },
+        {
+          "claim_id": "claim-c666c729ddf0e38124",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -2339,7 +2443,7 @@
         "087e25be47e525ba8ecc"
       ],
       "first_seen": "2026-09-09T17:23:40Z",
-      "last_seen": "2026-09-10T15:20:18Z",
+      "last_seen": "2026-09-10T15:45:37Z",
       "material_time": "2026-09-10T00:00:00Z",
       "domains": [
         "INFRA",
@@ -2516,19 +2620,6 @@
       ],
       "cross_domain_links": [
         {
-          "claim_id": "claim-bcd5312bd3ea087149",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-f4b8c2f1f4852f63b3",
           "shared_actors": [
             "IRAN"
@@ -2670,6 +2761,18 @@
           "domains": [
             "INFRA"
           ]
+        },
+        {
+          "claim_id": "claim-246cbddebc73324995",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "SECURITY"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -2698,7 +2801,7 @@
         "c3a5ca91eda1b751f7c1"
       ],
       "first_seen": "2026-09-10T00:25:17Z",
-      "last_seen": "2026-09-10T15:20:18Z",
+      "last_seen": "2026-09-10T15:45:37Z",
       "material_time": "2026-09-09T21:00:00Z",
       "domains": [
         "ECONOMIC",
@@ -2888,128 +2991,30 @@
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-09T00:39:09Z"
       }
-    },
-    {
-      "id": "claim-13d714bf1940a1d8eb",
-      "headline": "SPC MD 2261",
-      "signature_tokens": [
-        "2261",
-        "spc"
-      ],
-      "observation_ids": [
-        "bfb1ca594afd7e45c33e"
-      ],
-      "first_seen": "2026-09-07T04:19:42Z",
-      "last_seen": "2026-09-07T04:46:08Z",
-      "material_time": "2026-09-07T04:21:05Z",
-      "domains": [
-        "INFRA",
-        "POLITICAL"
-      ],
-      "regions": [
-        "GLOBAL"
-      ],
-      "actors": [],
-      "state": "EARLY WARNING",
-      "confidence": 58,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 85,
-        "independence": 25,
-        "corroboration": 22,
-        "contradiction": 0,
-        "specificity": 47,
-        "recency": 73,
-        "evidence_type": 86,
-        "historical_reliability": 85,
-        "claim_maturity": 41
-      },
-      "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
-      "supporting_observation_ids": [
-        "bfb1ca594afd7e45c33e"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 1,
-      "independent_provenance_count": 1,
-      "sources": [
-        "NOAA Storm Prediction Center"
-      ],
-      "provenance_roots": [
-        "noaa_spc"
-      ],
-      "evidence": [
-        {
-          "observation_id": "bfb1ca594afd7e45c33e",
-          "title": "SPC MD 2261",
-          "source": "NOAA Storm Prediction Center",
-          "source_class": "primary_official",
-          "provenance_root": "noaa_spc",
-          "stance": "warning",
-          "published": "2026-09-07T04:21:05Z",
-          "url": "https://www.spc.noaa.gov/products/md/md2261.html",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "SPC MD 2261",
-        "plausible_explanations": [
-          "A genuine INFRA/POLITICAL development involving the reported actors is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related INFRA/POLITICAL indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [],
-      "cross_domain_links": [],
-      "anomaly_ids": [],
-      "threat_score": 5,
-      "watch_priority": 42,
-      "audit": {
-        "reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
-        "support_count": 1,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-07T04:21:05Z"
-      }
     }
   ],
   "state_counts": {
     "CONFIRMED": 94,
-    "CREDIBLE REPORT": 887,
-    "EARLY WARNING": 140,
-    "SPECULATIVE": 170,
-    "UNVERIFIED CLAIM": 2144,
+    "CREDIBLE REPORT": 900,
+    "EARLY WARNING": 142,
+    "SPECULATIVE": 173,
+    "UNVERIFIED CLAIM": 2287,
     "REFUTED": 12,
     "DORMANT": 397
   },
   "domain_counts": {
-    "CYBER": 194,
-    "WAR": 276,
-    "CLIMATE": 106,
-    "INFRA": 601,
-    "SECURITY": 888,
+    "CYBER": 198,
+    "WAR": 282,
+    "CLIMATE": 108,
+    "INFRA": 613,
+    "SECURITY": 1011,
     "ECONOMIC": 69,
-    "POLITICAL": 1158,
+    "POLITICAL": 1172,
     "TERRORISM": 82,
     "HUMANITARIAN": 28,
-    "NUCLEAR": 52,
+    "NUCLEAR": 54,
     "SPACE": 26,
-    "BIO": 145,
+    "BIO": 147,
     "TRAFFICKING": 1
   },
   "note": "Layered machine brief: every item retains its explicit claim state and confidence."
