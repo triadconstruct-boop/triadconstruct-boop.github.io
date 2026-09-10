@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T15:45:37Z",
+  "generated_at": "2026-09-10T16:19:05Z",
   "claims": [
     {
       "id": "claim-eed4f2d45ec0891918",
@@ -21,7 +21,7 @@
         "e63e84c4a2f51d2dc3b3"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-01T22:45:46Z",
       "domains": [
         "INFRA",
@@ -144,7 +144,7 @@
         "8ff4f8ec9ebffeeae46f"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-08T04:00:27Z",
       "domains": [
         "CYBER",
@@ -414,7 +414,7 @@
         "9d747e68e4ae6d3395bf"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-08-31T16:36:51Z",
       "domains": [
         "INFRA",
@@ -590,10 +590,11 @@
         "state-sponsored"
       ],
       "observation_ids": [
-        "dc08bb800270cfe47a3e"
+        "dc08bb800270cfe47a3e",
+        "53ae09cf773122e1b60f"
       ],
       "first_seen": "2026-09-10T15:45:37Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T15:43:58Z",
       "domains": [
         "CYBER"
@@ -604,7 +605,7 @@
       "actors": [],
       "state": "EARLY WARNING",
       "confidence": 58,
-      "confidence_direction": "NEW",
+      "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 84,
         "independence": 25,
@@ -618,16 +619,19 @@
       },
       "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
       "supporting_observation_ids": [
-        "dc08bb800270cfe47a3e"
+        "dc08bb800270cfe47a3e",
+        "53ae09cf773122e1b60f"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 1,
+      "source_count": 2,
       "independent_provenance_count": 1,
       "sources": [
-        "BleepingComputer"
+        "BleepingComputer",
+        "GDELT Global Discovery"
       ],
       "provenance_roots": [
-        "bleepingcomputer"
+        "bleepingcomputer",
+        "gdelt_global"
       ],
       "evidence": [
         {
@@ -640,6 +644,17 @@
           "published": "2026-09-10T15:43:58Z",
           "url": "https://www.bleepingcomputer.com/news/security/cisco-fmc-flaws-exploited-by-ransomware-gang-state-sponsored-hackers",
           "discovery_only": false
+        },
+        {
+          "observation_id": "53ae09cf773122e1b60f",
+          "title": "Cisco FMC flaws exploited by ransomware gang, state-sponsored hackers - BleepingComputer",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-10T15:43:58Z",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNbFpuLWotNHZuUjE1aFRrcWJhbDFQSS1YeEE5V0Q0SGkyLUl1Um9ydE9vSzVCODBoTXc3aUdnM041WHpXU3g1X1J6S2plOGV2b3NSTnFXX1c2VldMb0kyNlZBUmRDRWRrMnBlOWRLXzhRaWZCSlJXejdaaUVEQzlxaEhkaVFzU294U21VRkViUDF3UURtcTF1bWdTcGZZRG0xSzRSV0RydVh4UW01TGxqWWUzemxSRUHSAbwBQVVfeXFMTTR2eHZmLTI4VGgtT0ZyWm1zVHNuUHE3LTRueFltSHdKazd2c2RzMGRQb2x1eEZkTTRMY1VtU0dURFJvZThYTTV4UHVEMjFsZXdDNnk2dEtqVmlXM1VoUFdCVnBDQkxITDdyZTQzUTFoOXdrd092N1N2dzc5MHVCNl9FN1pOZmFwNkI5cEFSOE1HUWVpdWFlaXhBajBZRndkd2ZFSDBjWFl3UmVBWEN0QXZfem9iSE0xal9qV1Q?oc=5",
+          "discovery_only": true
         }
       ],
       "state_affiliated_reporting": false,
@@ -672,7 +687,7 @@
       "watch_priority": 47,
       "audit": {
         "reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
-        "support_count": 1,
+        "support_count": 2,
         "contradiction_count": 0,
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
@@ -693,7 +708,7 @@
         "82ee6a1b9061c5aa88ea"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-02T22:00:00Z",
       "domains": [
         "BIO",
@@ -1506,7 +1521,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 47,
-        "recency": 73,
+        "recency": 72,
         "evidence_type": 86,
         "historical_reliability": 85,
         "claim_maturity": 41
@@ -1691,7 +1706,7 @@
         "a572a5f4f059615ba926"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-03T15:06:33Z",
       "domains": [
         "CYBER",
@@ -1811,7 +1826,7 @@
         "831b072ef5c33cf0625d"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-03T13:44:23Z",
       "domains": [
         "INFRA",
@@ -1990,7 +2005,7 @@
         "358b77362dc79d573c70"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-01T20:15:51Z",
       "domains": [
         "INFRA",
@@ -2175,7 +2190,7 @@
         "087e25be47e525ba8ecc"
       ],
       "first_seen": "2026-09-09T17:23:40Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T00:00:00Z",
       "domains": [
         "INFRA",
@@ -2196,7 +2211,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 62,
-        "recency": 95,
+        "recency": 94,
         "evidence_type": 73,
         "historical_reliability": 81,
         "claim_maturity": 36
@@ -2533,7 +2548,7 @@
         "c3a5ca91eda1b751f7c1"
       ],
       "first_seen": "2026-09-10T00:25:17Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-09T21:00:00Z",
       "domains": [
         "ECONOMIC",
@@ -2754,7 +2769,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 47,
-        "recency": 73,
+        "recency": 72,
         "evidence_type": 86,
         "historical_reliability": 85,
         "claim_maturity": 41
@@ -2839,7 +2854,7 @@
         "72051318ff8b9bb30163"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-04T12:57:35Z",
       "domains": [
         "INFRA",
@@ -3027,7 +3042,7 @@
         "2278632126fcb42a1c3d"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-08-31T21:44:07Z",
       "domains": [
         "INFRA",
@@ -3727,7 +3742,7 @@
         "a20357c6e272121b3565"
       ],
       "first_seen": "2026-09-10T07:46:33Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T10:02:34Z",
       "domains": [
         "CLIMATE",
@@ -4150,7 +4165,7 @@
         "ef8ad0a5153a80dedc2b"
       ],
       "first_seen": "2026-09-10T02:19:23Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T09:18:31Z",
       "domains": [
         "CYBER"
@@ -4168,7 +4183,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 61,
-        "recency": 100,
+        "recency": 99,
         "evidence_type": 67,
         "historical_reliability": 80,
         "claim_maturity": 35
@@ -4661,13 +4676,12 @@
           ]
         },
         {
-          "claim_id": "claim-55478eaebf7037050e",
+          "claim_id": "claim-66f1f60efa22300341",
           "shared_actors": [],
           "shared_regions": [
             "MIDDLE EAST"
           ],
           "domains": [
-            "POLITICAL",
             "WAR"
           ]
         }
@@ -5065,7 +5079,7 @@
         "0aed901b36cfa5fba34b"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-09T04:27:18Z",
       "domains": [
         "ECONOMIC",
@@ -5474,7 +5488,7 @@
         "792764c99eaee70b5eca"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-03T22:00:00Z",
       "domains": [
         "INFRA",
@@ -5664,7 +5678,7 @@
         "e3a6c9487e641599f38b"
       ],
       "first_seen": "2026-09-10T15:20:18Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T14:58:27Z",
       "domains": [
         "INFRA"
@@ -5871,6 +5885,17 @@
           ]
         },
         {
+          "claim_id": "claim-3d2d768bf72ae15a9e",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-a2b7fa581a67a3f3bc",
           "shared_actors": [
             "NATO"
@@ -5906,23 +5931,10 @@
           "domains": [
             "POLITICAL"
           ]
-        },
-        {
-          "claim_id": "claim-4dd8d108c471681286",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL"
-          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-928d6697130957d3",
+        "anomaly-3339b8949ffecba2",
         "anomaly-51025f8eff1afc9e"
       ],
       "threat_score": 5,
@@ -5981,7 +5993,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 97,
+        "recency": 96,
         "evidence_type": 67,
         "historical_reliability": 79,
         "claim_maturity": 36
@@ -6331,7 +6343,7 @@
         "recency": 91,
         "evidence_type": 67,
         "historical_reliability": 79,
-        "claim_maturity": 69
+        "claim_maturity": 70
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
@@ -6639,7 +6651,7 @@
         "recency": 91,
         "evidence_type": 67,
         "historical_reliability": 79,
-        "claim_maturity": 47
+        "claim_maturity": 48
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
@@ -7150,7 +7162,7 @@
         "13e76c817e9a8ea382e0"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-06T17:50:53Z",
       "domains": [
         "INFRA"
@@ -7505,7 +7517,7 @@
         "cd5c309f6227886f124a"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-04T15:38:54Z",
       "domains": [
         "INFRA"
@@ -7681,7 +7693,7 @@
         "aee74d875a018ceafccd"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-03T14:47:04Z",
       "domains": [
         "INFRA",
@@ -7873,7 +7885,7 @@
         "8418fcfad0db45c4fe7c"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:20:18Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T15:00:00Z",
       "domains": [
         "HUMANITARIAN",
@@ -8890,7 +8902,7 @@
         "21f47d277e6035665071"
       ],
       "first_seen": "2026-09-10T04:46:14Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T04:43:51Z",
       "domains": [
         "CYBER"
@@ -8906,7 +8918,7 @@
         "UNITED STATES"
       ],
       "state": "EARLY WARNING",
-      "confidence": 50,
+      "confidence": 49,
       "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 50,
@@ -9163,7 +9175,7 @@
         "1f24d902c42feba8a635"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T02:26:59Z",
       "domains": [
         "INFRA",
@@ -9725,7 +9737,7 @@
         "4b70ccd7851897a063c7"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-08-31T20:27:36Z",
       "domains": [
         "ECONOMIC",
@@ -9903,7 +9915,7 @@
         "480ffb3e64f55a1155a8"
       ],
       "first_seen": "2026-09-10T15:20:18Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T14:52:07Z",
       "domains": [
         "CYBER"
@@ -10006,7 +10018,7 @@
         "9769fa42ebc2dee4173e"
       ],
       "first_seen": "2026-09-10T11:45:20Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T14:32:53Z",
       "domains": [
         "INFRA"
@@ -10104,7 +10116,7 @@
         "b7f2a3eea17bd15c1db1"
       ],
       "first_seen": "2026-09-10T13:45:49Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T13:30:40Z",
       "domains": [
         "INFRA"
@@ -10211,7 +10223,7 @@
         "8fabb2a902d6dcd6e552"
       ],
       "first_seen": "2026-09-10T02:19:23Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T10:55:00Z",
       "domains": [
         "INFRA",
@@ -10571,7 +10583,7 @@
         "8be0d7a112acee0a65ed"
       ],
       "first_seen": "2026-09-10T08:21:52Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T07:53:00Z",
       "domains": [
         "INFRA"
@@ -10795,6 +10807,18 @@
           ]
         },
         {
+          "claim_id": "claim-66f1f60efa22300341",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-55478eaebf7037050e",
           "shared_actors": [
             "UNITED STATES"
@@ -10858,18 +10882,6 @@
             "SPACE",
             "WAR"
           ]
-        },
-        {
-          "claim_id": "claim-66f1f60efa22300341",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
@@ -10906,7 +10918,7 @@
         "3cd605ce415b1f22117e"
       ],
       "first_seen": "2026-09-10T08:21:52Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T07:42:24Z",
       "domains": [
         "INFRA"
@@ -11035,7 +11047,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 48,
-        "recency": 99,
+        "recency": 98,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 36
@@ -11120,7 +11132,7 @@
         "47babe0459e816ace856"
       ],
       "first_seen": "2026-09-10T07:21:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T06:56:33Z",
       "domains": [
         "CYBER"
@@ -11465,7 +11477,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 48,
-        "recency": 96,
+        "recency": 95,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 36
@@ -11576,7 +11588,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 48,
-        "recency": 96,
+        "recency": 95,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 36
@@ -12017,7 +12029,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 48,
-        "recency": 94,
+        "recency": 93,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 36
@@ -12103,7 +12115,7 @@
         "8b5260c50d23f34b0230"
       ],
       "first_seen": "2026-09-09T21:44:21Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-09T21:30:36Z",
       "domains": [
         "CYBER"
@@ -12231,7 +12243,7 @@
         "919da6afcec38836c8b7"
       ],
       "first_seen": "2026-09-09T21:17:06Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-09T21:02:14Z",
       "domains": [
         "CYBER"
@@ -12355,7 +12367,7 @@
         "recency": 91,
         "evidence_type": 79,
         "historical_reliability": 82,
-        "claim_maturity": 36
+        "claim_maturity": 37
       },
       "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
       "supporting_observation_ids": [
@@ -12460,7 +12472,7 @@
         "recency": 91,
         "evidence_type": 73,
         "historical_reliability": 80,
-        "claim_maturity": 36
+        "claim_maturity": 37
       },
       "classification_reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
       "supporting_observation_ids": [
@@ -12544,7 +12556,7 @@
         "e775395e345400a15113"
       ],
       "first_seen": "2026-09-09T18:23:11Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-09T17:26:31Z",
       "domains": [
         "CLIMATE",
@@ -12566,7 +12578,7 @@
         "recency": 91,
         "evidence_type": 73,
         "historical_reliability": 80,
-        "claim_maturity": 36
+        "claim_maturity": 37
       },
       "classification_reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
       "supporting_observation_ids": [
@@ -12647,7 +12659,7 @@
         "92b9d0f22bb7bf81913f"
       ],
       "first_seen": "2026-09-09T19:17:24Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-09T17:21:35Z",
       "domains": [
         "INFRA",
@@ -12669,7 +12681,7 @@
         "recency": 91,
         "evidence_type": 73,
         "historical_reliability": 78,
-        "claim_maturity": 36
+        "claim_maturity": 37
       },
       "classification_reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
       "supporting_observation_ids": [
@@ -12750,7 +12762,7 @@
         "c0523f06067a942e57a6"
       ],
       "first_seen": "2026-09-09T19:17:24Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-09T17:12:29Z",
       "domains": [
         "INFRA"
@@ -12854,7 +12866,7 @@
         "64178ce29a71d884aecc"
       ],
       "first_seen": "2026-09-09T16:40:10Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-09T16:38:49Z",
       "domains": [
         "INFRA"
@@ -12872,7 +12884,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 56,
-        "recency": 91,
+        "recency": 90,
         "evidence_type": 73,
         "historical_reliability": 86,
         "claim_maturity": 37
@@ -12938,6 +12950,253 @@
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-09T16:38:49Z"
+      }
+    },
+    {
+      "id": "claim-3d2d768bf72ae15a9e",
+      "headline": "US finalizes $4 billion military financing loan for Poland",
+      "signature_tokens": [
+        "billion",
+        "finalizes",
+        "financing",
+        "loan",
+        "military",
+        "poland"
+      ],
+      "observation_ids": [
+        "d503d85bc6e6cb0da53f"
+      ],
+      "first_seen": "2026-09-09T16:18:05Z",
+      "last_seen": "2026-09-10T16:19:05Z",
+      "material_time": "2026-09-09T15:52:22Z",
+      "domains": [
+        "INFRA",
+        "WAR"
+      ],
+      "regions": [
+        "EUROPE"
+      ],
+      "actors": [],
+      "state": "SPECULATIVE",
+      "confidence": 60,
+      "confidence_direction": "STABLE",
+      "confidence_components": {
+        "source_quality": 84,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 62,
+        "recency": 90,
+        "evidence_type": 73,
+        "historical_reliability": 84,
+        "claim_maturity": 37
+      },
+      "classification_reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
+      "supporting_observation_ids": [
+        "d503d85bc6e6cb0da53f"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 1,
+      "independent_provenance_count": 1,
+      "sources": [
+        "Breaking Defense"
+      ],
+      "provenance_roots": [
+        "breaking_defense"
+      ],
+      "evidence": [
+        {
+          "observation_id": "d503d85bc6e6cb0da53f",
+          "title": "US finalizes $4 billion military financing loan for Poland",
+          "source": "Breaking Defense",
+          "source_class": "specialist",
+          "provenance_root": "breaking_defense",
+          "stance": "speculation",
+          "published": "2026-09-09T15:52:22Z",
+          "url": "https://breakingdefense.com/2026/09/us-finalizes-4-billion-military-financing-loan-for-poland",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "US finalizes $4 billion military financing loan for Poland",
+        "plausible_explanations": [
+          "A genuine INFRA/WAR development involving the reported actors is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related INFRA/WAR indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-cf7625f8b461238993",
+          "headline": "Shahed-Type Drones Filmed During Mali Village Attacks",
+          "material_time": "2026-07-24T15:39:05Z",
+          "shared_domains": [
+            "INFRA"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ]
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-a2b7fa581a67a3f3bc",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
+        },
+        {
+          "claim_id": "claim-a52f77daa082ccb914",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "CYBER",
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-2cffdb1b35277ed713",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "INFRA",
+            "NUCLEAR"
+          ]
+        },
+        {
+          "claim_id": "claim-31ef41fee37abe303a",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-afe09eb1decd3133e8",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "SPACE",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f00b9ad5ba144e4fb2",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "HUMANITARIAN",
+            "POLITICAL",
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-03bd70e30f1dcc2d3b",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "INFRA",
+            "POLITICAL"
+          ]
+        },
+        {
+          "claim_id": "claim-5e08cfb7c40496ba9e",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-7e2218567da98f940f",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "CYBER",
+            "ECONOMIC"
+          ]
+        },
+        {
+          "claim_id": "claim-d6774e2431d0fbf25f",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-0fd9831e14dae1dd08",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "HUMANITARIAN",
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-f074fb7a6a84e0b5aa",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-cbc303aa61022128"
+      ],
+      "threat_score": 3,
+      "watch_priority": 46,
+      "audit": {
+        "reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
+        "support_count": 1,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-09T15:52:22Z"
       }
     },
     {
@@ -13060,7 +13319,7 @@
         "7d14b11b80e929ffe805"
       ],
       "first_seen": "2026-09-10T10:46:07Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-09T13:48:35Z",
       "domains": [
         "INFRA"
@@ -13263,7 +13522,7 @@
         "dc1282d3d21341715c10"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-08T22:01:55Z",
       "domains": [
         "INFRA"
@@ -13281,7 +13540,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 35,
-        "recency": 85,
+        "recency": 84,
         "evidence_type": 73,
         "historical_reliability": 81,
         "claim_maturity": 38
@@ -13368,7 +13627,7 @@
         "58adf0e1b19da33771e6"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-08T21:58:52Z",
       "domains": [
         "INFRA"
@@ -13621,7 +13880,7 @@
         "ac7a944d5447c31743cb"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-08T21:16:02Z",
       "domains": [
         "INFRA",
@@ -13762,6 +14021,16 @@
           ]
         },
         {
+          "claim_id": "claim-66f1f60efa22300341",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-55478eaebf7037050e",
           "shared_actors": [],
           "shared_regions": [
@@ -13811,18 +14080,6 @@
           "domains": [
             "WAR"
           ]
-        },
-        {
-          "claim_id": "claim-03bd70e30f1dcc2d3b",
-          "shared_actors": [],
-          "shared_regions": [
-            "MIDDLE EAST"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA",
-            "POLITICAL"
-          ]
         }
       ],
       "anomaly_ids": [
@@ -13856,7 +14113,7 @@
         "6f6326d2ca11ca7282f6"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-08T18:49:03Z",
       "domains": [
         "INFRA"
@@ -13874,7 +14131,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 47,
-        "recency": 84,
+        "recency": 83,
         "evidence_type": 73,
         "historical_reliability": 81,
         "claim_maturity": 38
@@ -13976,7 +14233,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 47,
-        "recency": 83,
+        "recency": 82,
         "evidence_type": 73,
         "historical_reliability": 78,
         "claim_maturity": 38
@@ -14208,6 +14465,16 @@
           ]
         },
         {
+          "claim_id": "claim-442f8aee752428735d",
+          "shared_actors": [],
+          "shared_regions": [
+            "INDO-PACIFIC"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
+        },
+        {
           "claim_id": "claim-85a0c07233d03f2af1",
           "shared_actors": [],
           "shared_regions": [
@@ -14239,16 +14506,6 @@
         },
         {
           "claim_id": "claim-1041bf7105cfa65c89",
-          "shared_actors": [],
-          "shared_regions": [
-            "INDO-PACIFIC"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-d1824bb9caf35810c5",
           "shared_actors": [],
           "shared_regions": [
             "INDO-PACIFIC"
@@ -14301,7 +14558,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 47,
-        "recency": 80,
+        "recency": 79,
         "evidence_type": 86,
         "historical_reliability": 85,
         "claim_maturity": 39
@@ -14802,7 +15059,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 56,
-        "recency": 73,
+        "recency": 72,
         "evidence_type": 86,
         "historical_reliability": 85,
         "claim_maturity": 41
@@ -15297,7 +15554,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 47,
-        "recency": 72,
+        "recency": 71,
         "evidence_type": 86,
         "historical_reliability": 85,
         "claim_maturity": 41
@@ -15877,7 +16134,7 @@
         "d356552e5baff8d8c727"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-05T05:00:38Z",
       "domains": [
         "HUMANITARIAN",
@@ -16250,7 +16507,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 62,
-        "recency": 57,
+        "recency": 56,
         "evidence_type": 86,
         "historical_reliability": 70,
         "claim_maturity": 46
@@ -16421,7 +16678,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 62,
-        "recency": 57,
+        "recency": 56,
         "evidence_type": 86,
         "historical_reliability": 70,
         "claim_maturity": 46
@@ -16568,7 +16825,7 @@
         "f06281090a7c588ea218"
       ],
       "first_seen": "2026-09-10T14:18:49Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-03T11:32:45Z",
       "domains": [
         "INFRA",
@@ -16592,7 +16849,7 @@
         "recency": 54,
         "evidence_type": 79,
         "historical_reliability": 84,
-        "claim_maturity": 46
+        "claim_maturity": 47
       },
       "classification_reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
       "supporting_observation_ids": [
@@ -16762,7 +17019,7 @@
         "recency": 54,
         "evidence_type": 86,
         "historical_reliability": 90,
-        "claim_maturity": 46
+        "claim_maturity": 47
       },
       "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
       "supporting_observation_ids": [
@@ -16845,7 +17102,7 @@
         "a581ee011488d874b61b"
       ],
       "first_seen": "2026-09-10T14:47:30Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T14:44:38Z",
       "domains": [
         "INFRA"
@@ -17108,7 +17365,7 @@
         "f68ce351dec5b8c07a95"
       ],
       "first_seen": "2026-09-10T11:18:56Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T10:33:35Z",
       "domains": [
         "INFRA",
@@ -17379,6 +17636,19 @@
           ]
         },
         {
+          "claim_id": "claim-66f1f60efa22300341",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN",
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-55478eaebf7037050e",
           "shared_actors": [
             "IRAN"
@@ -17390,19 +17660,6 @@
           "domains": [
             "POLITICAL",
             "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-2cffdb1b35277ed713",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "NUCLEAR"
           ]
         }
       ],
@@ -17748,7 +18005,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 90,
+        "recency": 89,
         "evidence_type": 40,
         "historical_reliability": 50,
         "claim_maturity": 37
@@ -17884,6 +18141,18 @@
           ]
         },
         {
+          "claim_id": "claim-66f1f60efa22300341",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-55478eaebf7037050e",
           "shared_actors": [
             "IRAN"
@@ -17958,18 +18227,6 @@
           "domains": [
             "SECURITY"
           ]
-        },
-        {
-          "claim_id": "claim-64a21b46598b97f3e9",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY"
-          ]
         }
       ],
       "anomaly_ids": [
@@ -18003,7 +18260,7 @@
         "050e902c4adb1f68c8d5"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-09T12:10:43Z",
       "domains": [
         "CLIMATE",
@@ -18215,6 +18472,16 @@
           ]
         },
         {
+          "claim_id": "claim-66f1f60efa22300341",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-55478eaebf7037050e",
           "shared_actors": [],
           "shared_regions": [
@@ -18278,16 +18545,6 @@
           ]
         },
         {
-          "claim_id": "claim-66f1f60efa22300341",
-          "shared_actors": [],
-          "shared_regions": [
-            "MIDDLE EAST"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-e447702be1a31e3ba7",
           "shared_actors": [],
           "shared_regions": [
@@ -18338,7 +18595,7 @@
         "12f07b3fc3aa77d30857"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-07T14:41:28Z",
       "domains": [
         "INFRA"
@@ -18458,7 +18715,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 35,
-        "recency": 75,
+        "recency": 74,
         "evidence_type": 67,
         "historical_reliability": 72,
         "claim_maturity": 40
@@ -18829,7 +19086,7 @@
         "d8d46d986cde2d24872c"
       ],
       "first_seen": "2026-09-10T12:25:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T11:50:14Z",
       "domains": [
         "INFRA",
@@ -19214,7 +19471,7 @@
         "fc166600dcbc17cd8d46"
       ],
       "first_seen": "2026-09-10T10:20:08Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T08:14:43Z",
       "domains": [
         "INFRA",
@@ -19323,7 +19580,7 @@
         "0570fbc0bbcfead33c6d"
       ],
       "first_seen": "2026-09-10T03:20:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T06:34:00Z",
       "domains": [
         "INFRA",
@@ -19567,6 +19824,21 @@
           ]
         },
         {
+          "claim_id": "claim-66f1f60efa22300341",
+          "shared_actors": [
+            "IRAN",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "IRAN",
+            "MIDDLE EAST",
+            "UNITED STATES"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-55478eaebf7037050e",
           "shared_actors": [
             "IRAN",
@@ -19651,19 +19923,6 @@
           "domains": [
             "SECURITY"
           ]
-        },
-        {
-          "claim_id": "claim-3698ef354ddf8f8ac9",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN",
-            "MIDDLE EAST"
-          ],
-          "domains": [
-            "SECURITY"
-          ]
         }
       ],
       "anomaly_ids": [
@@ -19701,7 +19960,7 @@
         "df42f07e7dcf9d5cab4a"
       ],
       "first_seen": "2026-09-09T21:44:21Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-09T21:40:16Z",
       "domains": [
         "CYBER",
@@ -19852,7 +20111,7 @@
         "recency": 91,
         "evidence_type": 24,
         "historical_reliability": 32,
-        "claim_maturity": 36
+        "claim_maturity": 37
       },
       "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
       "supporting_observation_ids": [
@@ -20154,7 +20413,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-96bb87d41cbf2714"
+        "anomaly-cbc303aa61022128"
       ],
       "threat_score": 2,
       "watch_priority": 44,
@@ -20386,7 +20645,7 @@
         "b721abcae0e11ffe1023"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-03T19:50:30Z",
       "domains": [
         "INFRA",
@@ -20508,7 +20767,7 @@
         "df030c072d7634a4f3b5"
       ],
       "first_seen": "2026-09-10T10:46:07Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T10:43:00Z",
       "domains": [
         "CYBER",
@@ -20745,7 +21004,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-928d6697130957d3",
+        "anomaly-3339b8949ffecba2",
         "anomaly-51025f8eff1afc9e",
         "anomaly-c3e2b848d0e25025"
       ],
@@ -20882,7 +21141,7 @@
         "286492595c578ba41ce2"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-09T15:50:34Z",
       "domains": [
         "INFRA",
@@ -21166,7 +21425,7 @@
         "3bc2efbbb0931d8e8dcf"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-09T14:48:12Z",
       "domains": [
         "BIO",
@@ -21270,7 +21529,7 @@
         "451f1a32bd8807fe9c27"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-09T12:29:22Z",
       "domains": [
         "INFRA",
@@ -21376,7 +21635,7 @@
         "cb28a25dcd2178008e53"
       ],
       "first_seen": "2026-09-10T10:46:07Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-08T15:03:38Z",
       "domains": [
         "ECONOMIC",
@@ -21764,7 +22023,7 @@
         "5ca10d284910a4ae0456"
       ],
       "first_seen": "2026-09-10T10:46:07Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-08T15:02:30Z",
       "domains": [
         "INFRA",
@@ -21983,7 +22242,7 @@
         "5627e1fd52e0e016e2c4"
       ],
       "first_seen": "2026-09-09T18:23:11Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T15:27:53Z",
       "domains": [
         "INFRA",
@@ -22002,7 +22261,7 @@
       ],
       "state": "CONFIRMED",
       "confidence": 90,
-      "confidence_direction": "UP",
+      "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 89,
         "independence": 100,
@@ -22430,7 +22689,7 @@
         "b439a803710b5fa0c3a1"
       ],
       "first_seen": "2026-09-10T02:19:23Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T14:28:17Z",
       "domains": [
         "INFRA",
@@ -22915,21 +23174,6 @@
           ]
         },
         {
-          "claim_id": "claim-66f1f60efa22300341",
-          "shared_actors": [
-            "IRAN",
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "IRAN",
-            "MIDDLE EAST",
-            "UNITED STATES"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-e447702be1a31e3ba7",
           "shared_actors": [
             "ISRAEL"
@@ -22940,6 +23184,19 @@
           ],
           "domains": [
             "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-45e0072e086172029a",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "CLIMATE",
+            "NUCLEAR"
           ]
         }
       ],
@@ -23002,7 +23259,7 @@
         "recency": 99,
         "evidence_type": 12,
         "historical_reliability": 20,
-        "claim_maturity": 24
+        "claim_maturity": 25
       },
       "classification_reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
       "supporting_observation_ids": [
@@ -23447,16 +23704,6 @@
           ]
         },
         {
-          "claim_id": "claim-66f1f60efa22300341",
-          "shared_actors": [],
-          "shared_regions": [
-            "MIDDLE EAST"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-e447702be1a31e3ba7",
           "shared_actors": [],
           "shared_regions": [
@@ -23516,6 +23763,16 @@
             "POLITICAL",
             "SECURITY"
           ]
+        },
+        {
+          "claim_id": "claim-42ed5d011ad5776807",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -23569,7 +23826,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 56,
-        "recency": 98,
+        "recency": 97,
         "evidence_type": 98,
         "historical_reliability": 98,
         "claim_maturity": 36
@@ -24002,7 +24259,7 @@
     },
     {
       "id": "claim-0eade293b62fd65d74",
-      "headline": "eAssist Dental reportedly struck by ransomware attack - drbicuspid.com",
+      "headline": "eAssist Dental reportedly struck by ransomware attack - DrBicuspid.com",
       "signature_tokens": [
         "attack",
         "com",
@@ -24018,7 +24275,7 @@
         "f9f5a864b396c540fc78"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-09T20:56:09Z",
       "domains": [
         "CYBER",
@@ -24061,7 +24318,7 @@
       "evidence": [
         {
           "observation_id": "308ed616543f3bb3870c",
-          "title": "eAssist Dental reportedly struck by ransomware attack - drbicuspid.com",
+          "title": "eAssist Dental reportedly struck by ransomware attack - DrBicuspid.com",
           "source": "Google News Weak-Signal Discovery",
           "source_class": "low_confidence",
           "provenance_root": "google_weak_signal",
@@ -24085,7 +24342,7 @@
       "state_affiliated_reporting": false,
       "discovery_only": true,
       "branch_analysis": {
-        "current_observation": "eAssist Dental reportedly struck by ransomware attack - drbicuspid.com",
+        "current_observation": "eAssist Dental reportedly struck by ransomware attack - DrBicuspid.com",
         "plausible_explanations": [
           "A genuine CYBER/INFRA development involving the reported actors is unfolding as reported.",
           "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
@@ -24418,7 +24675,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 47,
-        "recency": 87,
+        "recency": 86,
         "evidence_type": 79,
         "historical_reliability": 89,
         "claim_maturity": 37
@@ -24731,7 +24988,7 @@
         "954d7c3c6f0252179623"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-02T16:30:29Z",
       "domains": [
         "ECONOMIC",
@@ -24754,7 +25011,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 100,
-        "recency": 52,
+        "recency": 51,
         "evidence_type": 73,
         "historical_reliability": 86,
         "claim_maturity": 48
@@ -24845,7 +25102,7 @@
         "de61a0035117310a2ee0"
       ],
       "first_seen": "2026-09-10T12:50:49Z",
-      "last_seen": "2026-09-10T14:47:30Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T12:41:33Z",
       "domains": [
         "CYBER",
@@ -25243,7 +25500,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 92,
+        "recency": 91,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 36
@@ -25381,18 +25638,6 @@
           ]
         },
         {
-          "claim_id": "claim-66f1f60efa22300341",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-5fb027caf3e1bc78ed",
           "shared_actors": [
             "UNITED STATES"
@@ -25482,6 +25727,21 @@
           ],
           "domains": [
             "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-5e08cfb7c40496ba9e",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA"
           ]
         }
       ],
@@ -25625,16 +25885,6 @@
       ],
       "cross_domain_links": [
         {
-          "claim_id": "claim-66f1f60efa22300341",
-          "shared_actors": [],
-          "shared_regions": [
-            "MIDDLE EAST"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-e447702be1a31e3ba7",
           "shared_actors": [
             "ISRAEL"
@@ -25761,6 +26011,19 @@
           "domains": [
             "HUMANITARIAN",
             "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-c7a9309389923fded5",
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL"
           ]
         }
       ],
@@ -26182,7 +26445,7 @@
         "f8b217482cdfa7236950"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-09T09:25:33Z",
       "domains": [
         "CLIMATE",
@@ -26675,7 +26938,7 @@
         "recency": 81,
         "evidence_type": 79,
         "historical_reliability": 83,
-        "claim_maturity": 38
+        "claim_maturity": 39
       },
       "classification_reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
       "supporting_observation_ids": [
@@ -26981,7 +27244,7 @@
         "7253450660018a918a8c"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-07T19:51:09Z",
       "domains": [
         "BIO",
@@ -27340,7 +27603,7 @@
         "1a2b7bbf7769948a56aa"
       ],
       "first_seen": "2026-09-10T15:20:18Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T15:17:03Z",
       "domains": [
         "CLIMATE",
@@ -27437,6 +27700,19 @@
           ],
           "shared_regions": [],
           "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-18e230b9a5e7d21898",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "INFRA",
             "WAR"
           ]
         },
@@ -27552,18 +27828,6 @@
           "domains": [
             "CYBER"
           ]
-        },
-        {
-          "claim_id": "claim-e1a77ae0f4f358adce",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
@@ -27599,7 +27863,7 @@
         "74240cd6c5502dc60207"
       ],
       "first_seen": "2026-09-10T11:18:56Z",
-      "last_seen": "2026-09-10T15:45:37Z",
+      "last_seen": "2026-09-10T16:19:05Z",
       "material_time": "2026-09-10T13:09:57Z",
       "domains": [
         "INFRA",
@@ -27853,254 +28117,6 @@
         "independent_roots": 2,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-10T13:09:57Z"
-      }
-    },
-    {
-      "id": "claim-5cf97ff9e5755f75e5",
-      "headline": "Ethiopia's Tigray rebels accuse govt of new drone strike",
-      "signature_tokens": [
-        "accuse",
-        "drone",
-        "ethiopia",
-        "govt",
-        "rebels",
-        "strike",
-        "tigray"
-      ],
-      "observation_ids": [
-        "564336cc80581a3f1702"
-      ],
-      "first_seen": "2026-09-10T11:45:20Z",
-      "last_seen": "2026-09-10T15:45:37Z",
-      "material_time": "2026-09-10T11:23:38Z",
-      "domains": [
-        "INFRA",
-        "WAR"
-      ],
-      "regions": [
-        "AFRICA",
-        "EUROPE"
-      ],
-      "actors": [],
-      "state": "CREDIBLE REPORT",
-      "confidence": 63,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 84,
-        "independence": 25,
-        "corroboration": 22,
-        "contradiction": 0,
-        "specificity": 71,
-        "recency": 100,
-        "evidence_type": 79,
-        "historical_reliability": 84,
-        "claim_maturity": 35
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "564336cc80581a3f1702"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 1,
-      "independent_provenance_count": 1,
-      "sources": [
-        "France 24 World"
-      ],
-      "provenance_roots": [
-        "france24"
-      ],
-      "evidence": [
-        {
-          "observation_id": "564336cc80581a3f1702",
-          "title": "Ethiopia's Tigray rebels accuse govt of new drone strike",
-          "source": "France 24 World",
-          "source_class": "established_media",
-          "provenance_root": "france24",
-          "stance": "allegation",
-          "published": "2026-09-10T11:23:38Z",
-          "url": "https://www.france24.com/en/video/20260910-ethiopia-s-tigray-rebels-accuse-govt-of-new-drone-strike",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Ethiopia's Tigray rebels accuse govt of new drone strike",
-        "plausible_explanations": [
-          "A genuine INFRA/WAR development involving the reported actors is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related INFRA/WAR indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [
-        {
-          "claim_id": "claim-cf7625f8b461238993",
-          "headline": "Shahed-Type Drones Filmed During Mali Village Attacks",
-          "material_time": "2026-07-24T15:39:05Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ]
-        }
-      ],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-5e08cfb7c40496ba9e",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-7e2218567da98f940f",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "CYBER",
-            "ECONOMIC"
-          ]
-        },
-        {
-          "claim_id": "claim-d6774e2431d0fbf25f",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-77eb2063b8c3beb87f",
-          "shared_actors": [],
-          "shared_regions": [
-            "AFRICA"
-          ],
-          "domains": [
-            "BIO",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-0fd9831e14dae1dd08",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "HUMANITARIAN",
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-9d349435fc9d7ebdb4",
-          "shared_actors": [],
-          "shared_regions": [
-            "AFRICA"
-          ],
-          "domains": [
-            "BIO",
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-f074fb7a6a84e0b5aa",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-26d68642f2a9bf5913",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "INFRA",
-            "TERRORISM"
-          ]
-        },
-        {
-          "claim_id": "claim-7619adc249380decf6",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "TERRORISM"
-          ]
-        },
-        {
-          "claim_id": "claim-2b96e0f09d58cd84dc",
-          "shared_actors": [],
-          "shared_regions": [
-            "AFRICA"
-          ],
-          "domains": [
-            "TERRORISM",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-d00a48ba4d5b23261c",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-bf21c954834d6a9956",
-          "shared_actors": [],
-          "shared_regions": [
-            "AFRICA"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-94ebe36e63687120",
-        "anomaly-96bb87d41cbf2714"
-      ],
-      "threat_score": 17,
-      "watch_priority": 48,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 1,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-10T11:23:38Z"
       }
     }
   ]
