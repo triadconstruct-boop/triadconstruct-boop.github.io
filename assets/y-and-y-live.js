@@ -9,6 +9,7 @@
   const endpoint = route.includes("/threshold") ? "threshold-live.json"
     : route.includes("/wwt") ? "wwt-live.json"
     : route.includes("/trfk") ? "trfk-live.json"
+    : route.includes("/edges") ? "edges-live.json"
     : route.includes("/infrawatch") ? "infrawatch-live.json"
     : route.includes("/atlas") ? "atlas-live.json"
     : route.includes("/brief") ? "brief-live.json"
@@ -16,6 +17,7 @@
   const routeLabel = route.includes("/threshold") ? "THRESHOLD"
     : route.includes("/wwt") ? "WWT"
     : route.includes("/trfk") ? "TRFK"
+    : route.includes("/edges") ? "EDGES"
     : route.includes("/infrawatch") ? "INFRAWATCH"
     : route.includes("/atlas") ? "ATLAS"
     : route.includes("/brief") ? "BRIEF"
@@ -66,6 +68,15 @@
       @media print{#yy-live-panel{display:none!important}}
     `;
     document.head.appendChild(style);
+  }
+
+  function registerPortalRoute() {
+    const selector = document.getElementById("tool");
+    if (!selector || selector.querySelector('option[value="/edges/"]')) return;
+    const option = node("option", "", "EDGES");
+    option.value = "/edges/";
+    const atlas = selector.querySelector('option[value="/atlas/"]');
+    selector.insertBefore(option, atlas);
   }
 
   function addRow(parent, key, value, className = "") {
@@ -237,6 +248,7 @@
 
   async function boot() {
     addStyles();
+    registerPortalRoute();
     try {
       const [statusResponse, dataResponse] = await Promise.all([
         fetch(`${BASE}autonomy-status.json`, {cache: "no-store"}),

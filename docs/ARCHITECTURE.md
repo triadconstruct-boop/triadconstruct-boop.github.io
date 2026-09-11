@@ -54,5 +54,6 @@ Any state can lose confidence as evidence ages or contradictions appear. Dormanc
 - `audit-log.json`: one explicit classification record per current claim evaluation.
 - `historical-memory.json`: compact retained recurring-pattern memory.
 - `anomalies.json`: cross-domain near-time convergence cues.
+- `edges-live.json`: a bounded graph of claim, actor, region, domain, provenance, anomaly, and historical-memory nodes. Every relationship is labeled `DIRECT`, `REPORTED`, `ANALYTICAL`, or `HISTORICAL`; identity masking never changes the underlying evidence state.
 - `autonomy-status.json` and `source-registry.json`: ingestion, source, coverage, state, confidence, and freshness diagnostics.
 - Page-specific files are views of the same claims; they do not create a second truth system.

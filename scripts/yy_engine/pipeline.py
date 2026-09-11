@@ -21,6 +21,7 @@ from .analysis import (
     update_historical_memory,
 )
 from .ingest import collect_sources, load_catalog
+from .relationships import build_edges_product
 from .util import iso_z, load_json, parse_time, utcnow, write_json
 
 
@@ -118,6 +119,7 @@ def run(root: Path, offline: bool = False, now: dt.datetime | None = None) -> di
     add_cross_domain_links(claims, now)
     add_historical_matches(claims, prior_memory, now)
     anomalies = detect_anomalies(claims, now)
+    edges_product = build_edges_product(claims, anomalies, now)
     memory = update_historical_memory(claims, prior_memory, now)
     threshold = build_threshold(claims, observations, now)
     wwt = build_wwt(claims, observations, now)
@@ -197,6 +199,7 @@ def run(root: Path, offline: bool = False, now: dt.datetime | None = None) -> di
     write_json(data / "historical-memory.json", {"generated_at": iso_z(now), "retention_policy": "retained until explicit reviewed removal", "claims": memory})
     write_json(data / "audit-log.json", {"generated_at": iso_z(now), "records": audit_log(claims, now)})
     write_json(data / "anomalies.json", {"generated_at": iso_z(now), "anomalies": anomalies})
+    write_json(data / "edges-live.json", edges_product)
     write_json(data / "autonomy-status.json", status)
     write_json(data / "live-events.json", {"generated_at": iso_z(now), "events": live_observations})
     write_json(data / "worldwatch-live.json", {"generated_at": iso_z(now), "claims": strategic_claims, "state_counts": state_counts})

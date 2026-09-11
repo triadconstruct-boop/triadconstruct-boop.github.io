@@ -16,6 +16,7 @@ from scripts.yy_engine.analysis import (
     enrich_item,
 )
 from scripts.yy_engine.ingest import _health
+from scripts.yy_engine.relationships import build_edges_product
 
 UTC = dt.timezone.utc
 NOW = dt.datetime(2026, 9, 9, 12, 0, tzinfo=UTC)
@@ -148,6 +149,23 @@ class EngineRegressionTests(unittest.TestCase):
         anomalies = detect_anomalies(claims, NOW)
         self.assertTrue(anomalies)
         self.assertTrue(any(claim["cross_domain_links"] for claim in claims))
+
+    def test_edges_preserve_evidence_boundaries(self):
+        cyber = raw("Russian malware intrusion targets banks in Ukraine", "cyber-source", "specialist", .82, "specialist_report")
+        war = raw("Russian troops mobilize near Ukraine border", "war-source", "regional_local", .72, "regional_report")
+        claims, _ = claims_for(cyber, war)
+        add_cross_domain_links(claims, NOW)
+        anomalies = detect_anomalies(claims, NOW)
+        product = build_edges_product(claims, anomalies, NOW, claim_limit=20)
+        layers = {edge["layer"] for edge in product["edges"]}
+        relationships = {edge["relationship"] for edge in product["edges"]}
+        self.assertTrue({"DIRECT", "REPORTED", "ANALYTICAL"}.issubset(layers))
+        self.assertIn("MENTIONS_ACTOR", relationships)
+        self.assertIn("CROSS_DOMAIN_OVERLAP", relationships)
+        self.assertIn("not prove", product["safeguard"].lower())
+        self.assertTrue(all(node.get("masked_label") for node in product["nodes"]))
+        node_ids = {node["id"] for node in product["nodes"]}
+        self.assertTrue(all(edge["source"] in node_ids and edge["target"] in node_ids for edge in product["edges"]))
 
     def test_historical_recurrence_is_attached(self):
         current = raw("Russian troops mobilize near Ukraine border", "current", "regional_local", .72, "regional_report")

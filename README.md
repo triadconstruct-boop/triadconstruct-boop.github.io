@@ -24,6 +24,7 @@ The system never equates collection with truth. Every visible claim is labeled a
 - Weak signals can raise watch priority without materially inflating hard threat scores.
 - Refuted and dormant records remain available for pattern analysis.
 - Cross-domain convergence, anomaly cues, retained historical memory, and branch/falsifier generation are included.
+- EDGES turns the same retained claims into a live, evidence-layered relationship map with named, stably masked, and edges-only views.
 - WORLDWATCH accepts immediate speculative reporting but labels it at every presentation point.
 - THRESHOLD separates `Confirmed Homeland Signal` from `Precursor / Speculative Signal`.
 - WWT separates `Verified Pressure` from `Early-Warning Pressure`.
@@ -38,6 +39,7 @@ python3 -m unittest discover -s tests -v
 python3 scripts/validate_generated.py
 python3 scripts/validate_site.py
 node --check assets/y-and-y-live.js
+node --check assets/edges.js
 ```
 
 The scheduled GitHub workflow runs every 30 minutes, validates the engine and interface, executes the regression suite, collects sources, validates every generated product, and commits only `data/`.
@@ -54,9 +56,13 @@ The scheduled GitHub workflow runs every 30 minutes, validates the engine and in
 | `tests/` | Historical replay and regression cases |
 | `data/` | Machine-generated observations, claims, audits, diagnostics, and interfaces |
 | `assets/y-and-y-live.js` | Shared red/black terminal intelligence layer |
+| `scripts/yy_engine/relationships.py` | Bounded relationship graph with explicit direct, reported, analytical, and historical edge layers |
+| `edges/` and `data/edges-live.json` | Interactive structural map and its autonomous data product |
 | `system/` | Source, ingestion, state, confidence, anomaly, and blind-spot console |
 | `docs/` | Architecture, scoring, source policy, operations, and audit record |
 
 ## Boundaries
 
 Y&Y uses public sources and deterministic rules. It is not an intelligence service, emergency authority, calibrated probability model, or substitute for expert review. No public-source system can literally ingest every source: private channels, paywalled/licensed feeds, access-controlled platforms, deleted material, and collection outages remain blind spots. Version 3 makes those gaps visible instead of treating absent data as evidence that nothing is happening.
+
+EDGES is a discovery surface, not a conspiracy generator. A line means direct attribution, reported association, machine-detected overlap, or historical resemblance exactly as labeled; shared structure does not by itself establish coordination, control, intent, partnership, or guilt.

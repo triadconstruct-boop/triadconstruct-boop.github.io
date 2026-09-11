@@ -48,6 +48,7 @@ def main() -> int:
     audits = load("audit-log.json").get("records", [])
     memory = load("historical-memory.json").get("claims", [])
     load("anomalies.json")
+    edges_product = load("edges-live.json")
     worldwatch = load("worldwatch-live.json")
     threshold = load("threshold-live.json")
     wwt = load("wwt-live.json")
@@ -95,6 +96,25 @@ def main() -> int:
         raise SystemExit("historical memory failed to preserve current claims")
     if not isinstance(worldwatch.get("claims"), list):
         raise SystemExit("WORLDWATCH layered claim stream missing")
+    graph_nodes = edges_product.get("nodes", [])
+    graph_edges = edges_product.get("edges", [])
+    node_ids = [node.get("id") for node in graph_nodes]
+    node_id_set = set(node_ids)
+    edge_ids = [edge.get("id") for edge in graph_edges]
+    if not graph_nodes or not graph_edges:
+        raise SystemExit("EDGES relationship product is empty")
+    if None in node_ids or len(node_ids) != len(set(node_ids)):
+        raise SystemExit("EDGES node IDs are missing or duplicated")
+    if None in edge_ids or len(edge_ids) != len(set(edge_ids)):
+        raise SystemExit("EDGES edge IDs are missing or duplicated")
+    if any(not node.get("masked_label") for node in graph_nodes):
+        raise SystemExit("EDGES stable masked labels are incomplete")
+    if any(edge.get("source") not in node_id_set or edge.get("target") not in node_id_set for edge in graph_edges):
+        raise SystemExit("EDGES contains a dangling relationship")
+    if any(edge.get("layer") not in {"DIRECT", "REPORTED", "ANALYTICAL", "HISTORICAL"} for edge in graph_edges):
+        raise SystemExit("EDGES contains an unlabeled evidence layer")
+    if "not prove" not in str(edges_product.get("safeguard", "")).lower():
+        raise SystemExit("EDGES coordination/culpability safeguard is missing")
     for document, hard_key, early_key in (
         (threshold, "confirmed_homeland_signal", "precursor_speculative_signal"),
         (wwt, "verified_pressure", "early_warning_pressure"),

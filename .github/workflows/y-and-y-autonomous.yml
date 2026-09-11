@@ -10,7 +10,7 @@ on:
       - 'scripts/**'
       - 'config/**'
       - 'tests/**'
-      - 'assets/y-and-y-live.js'
+      - 'assets/**'
       - '**/index.html'
       - 'docs/**'
       - '.github/workflows/y-and-y-autonomous.yml'
@@ -37,6 +37,7 @@ jobs:
         run: |
           python3 -m py_compile scripts/y_and_y_autonomous.py scripts/y_and_y_signal_refiner.py scripts/yy_engine/*.py
           node --check assets/y-and-y-live.js
+          node --check assets/edges.js
 
       - name: Run historical and regression tests
         run: python3 -m unittest discover -s tests -v
