@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T14:46:38Z",
+  "generated_at": "2026-09-11T15:18:47Z",
   "top_claims": [
     {
       "id": "claim-eed4f2d45ec0891918",
@@ -21,7 +21,7 @@
         "e63e84c4a2f51d2dc3b3"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-11T14:46:38Z",
+      "last_seen": "2026-09-11T15:18:47Z",
       "material_time": "2026-09-01T22:45:46Z",
       "domains": [
         "INFRA",
@@ -48,7 +48,7 @@
         "recency": 45,
         "evidence_type": 73,
         "historical_reliability": 80,
-        "claim_maturity": 50
+        "claim_maturity": 51
       },
       "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
       "supporting_observation_ids": [
@@ -127,6 +127,110 @@
       }
     },
     {
+      "id": "claim-988ce47c066aaa4635",
+      "headline": "Anthropic blocks possible attempt to use AI to make biological weapons",
+      "signature_tokens": [
+        "anthropic",
+        "attempt",
+        "biological",
+        "blocks",
+        "make",
+        "possible",
+        "use",
+        "weapons"
+      ],
+      "observation_ids": [
+        "344dcbb5d73b459183e1"
+      ],
+      "first_seen": "2026-09-11T09:19:28Z",
+      "last_seen": "2026-09-11T15:18:47Z",
+      "material_time": "2026-09-11T08:15:25Z",
+      "domains": [
+        "BIO",
+        "INFRA"
+      ],
+      "regions": [
+        "GLOBAL"
+      ],
+      "actors": [],
+      "state": "EARLY WARNING",
+      "confidence": 60,
+      "confidence_direction": "STABLE",
+      "confidence_components": {
+        "source_quality": 89,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 35,
+        "recency": 99,
+        "evidence_type": 79,
+        "historical_reliability": 89,
+        "claim_maturity": 35
+      },
+      "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
+      "supporting_observation_ids": [
+        "344dcbb5d73b459183e1"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 1,
+      "independent_provenance_count": 1,
+      "sources": [
+        "BBC World"
+      ],
+      "provenance_roots": [
+        "bbc_world"
+      ],
+      "evidence": [
+        {
+          "observation_id": "344dcbb5d73b459183e1",
+          "title": "Anthropic blocks possible attempt to use AI to make biological weapons",
+          "source": "BBC World",
+          "source_class": "established_media",
+          "provenance_root": "bbc_world",
+          "stance": "warning",
+          "published": "2026-09-11T08:15:25Z",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zrrpkx20o?at_medium=RSS&at_campaign=rss",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Anthropic blocks possible attempt to use AI to make biological weapons",
+        "plausible_explanations": [
+          "A genuine BIO/INFRA development involving the reported actors is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related BIO/INFRA indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [],
+      "cross_domain_links": [],
+      "anomaly_ids": [],
+      "threat_score": 7,
+      "watch_priority": 49,
+      "audit": {
+        "reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
+        "support_count": 1,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-11T08:15:25Z"
+      }
+    },
+    {
       "id": "claim-c8663dec3ef7108942",
       "headline": "Iran resumes ballistic missile production - WSJ",
       "signature_tokens": [
@@ -164,7 +268,7 @@
         "corroboration": 25,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 94,
+        "recency": 93,
         "evidence_type": 24,
         "historical_reliability": 32,
         "claim_maturity": 47
@@ -458,7 +562,7 @@
         "8ff4f8ec9ebffeeae46f"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-11T14:46:38Z",
+      "last_seen": "2026-09-11T15:18:47Z",
       "material_time": "2026-09-08T04:00:27Z",
       "domains": [
         "CYBER",
@@ -538,6 +642,20 @@
       },
       "historical_matches": [],
       "cross_domain_links": [
+        {
+          "claim_id": "claim-5e92946c9b84171880",
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "INFRA",
+            "TERRORISM"
+          ]
+        },
         {
           "claim_id": "claim-8502fc721ea6d8ba11",
           "shared_actors": [
@@ -692,22 +810,11 @@
             "SECURITY",
             "WAR"
           ]
-        },
-        {
-          "claim_id": "claim-22683d53a21abde4b3",
-          "shared_actors": [],
-          "shared_regions": [
-            "AFRICA"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
         "anomaly-d5a273c7739b49a5",
-        "anomaly-be5f9fcb2f914d50"
+        "anomaly-a9491eba3f016c67"
       ],
       "threat_score": 7,
       "watch_priority": 65,
@@ -761,7 +868,7 @@
         "recency": 41,
         "evidence_type": 73,
         "historical_reliability": 86,
-        "claim_maturity": 52
+        "claim_maturity": 53
       },
       "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
       "supporting_observation_ids": [
@@ -917,7 +1024,7 @@
         "05b7da7a48977d7afefc"
       ],
       "first_seen": "2026-09-10T15:45:37Z",
-      "last_seen": "2026-09-11T14:46:38Z",
+      "last_seen": "2026-09-11T15:18:47Z",
       "material_time": "2026-09-10T15:43:58Z",
       "domains": [
         "CYBER"
@@ -935,7 +1042,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 35,
-        "recency": 91,
+        "recency": 90,
         "evidence_type": 73,
         "historical_reliability": 84,
         "claim_maturity": 37
@@ -1043,7 +1150,7 @@
         "82ee6a1b9061c5aa88ea"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-11T14:46:38Z",
+      "last_seen": "2026-09-11T15:18:47Z",
       "material_time": "2026-09-02T22:00:00Z",
       "domains": [
         "BIO",
@@ -1211,6 +1318,288 @@
       }
     },
     {
+      "id": "claim-5e92946c9b84171880",
+      "headline": "11 European nations and Canada announce trade sanctions on Israeli settlements in the West Bank",
+      "signature_tokens": [
+        "announce",
+        "bank",
+        "canada",
+        "european",
+        "israeli",
+        "nations",
+        "sanctions",
+        "settlements",
+        "trade",
+        "west"
+      ],
+      "observation_ids": [
+        "cb28a25dcd2178008e53"
+      ],
+      "first_seen": "2026-09-10T10:46:07Z",
+      "last_seen": "2026-09-11T09:45:33Z",
+      "material_time": "2026-09-08T15:03:38Z",
+      "domains": [
+        "ECONOMIC",
+        "INFRA",
+        "TERRORISM"
+      ],
+      "regions": [
+        "ISRAEL/PALESTINE"
+      ],
+      "actors": [
+        "ISRAEL"
+      ],
+      "state": "SPECULATIVE",
+      "confidence": 60,
+      "confidence_direction": "STABLE",
+      "confidence_components": {
+        "source_quality": 80,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 91,
+        "recency": 75,
+        "evidence_type": 67,
+        "historical_reliability": 80,
+        "claim_maturity": 40
+      },
+      "classification_reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
+      "supporting_observation_ids": [
+        "cb28a25dcd2178008e53"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 1,
+      "independent_provenance_count": 1,
+      "sources": [
+        "Euronews"
+      ],
+      "provenance_roots": [
+        "euronews"
+      ],
+      "evidence": [
+        {
+          "observation_id": "cb28a25dcd2178008e53",
+          "title": "11 European nations and Canada announce trade sanctions on Israeli settlements in the West Bank",
+          "source": "Euronews",
+          "source_class": "regional_local",
+          "provenance_root": "euronews",
+          "stance": "allegation",
+          "published": "2026-09-08T15:03:38Z",
+          "url": "https://www.euronews.com/2026/09/08/12-nations-announce-trade-sanctions-on-israeli-settlements-in-the-west-bank",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "11 European nations and Canada announce trade sanctions on Israeli settlements in the West Bank",
+        "plausible_explanations": [
+          "A genuine ECONOMIC/INFRA/TERRORISM development involving ISRAEL is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related ECONOMIC/INFRA/TERRORISM indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-1453116f3488b77a21",
+          "headline": "Turkey-Based Global Director of Sham Charity Arrested and Charged with Conspiring to Provide Material Support to Hamas",
+          "material_time": "2026-07-31T12:00:00Z",
+          "shared_domains": [
+            "INFRA",
+            "TERRORISM"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ]
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-e56967faba5849ff6a",
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "INFRA",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-7feef0a02f02ec5599",
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "INFRA",
+            "TERRORISM",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-2c1b0e5f977c034fe9",
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-48bb1e939c6035253b",
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "HUMANITARIAN",
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-d46015a2e382b4902d",
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "TERRORISM",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8b99785a28ac6f03ba",
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "INFRA",
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-0161a0d7b8e34ae4fb",
+          "shared_actors": [],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
+        },
+        {
+          "claim_id": "claim-7d587850dc0d30da87",
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "INFRA",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-fa68bf6ebbead9da62",
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "CLIMATE",
+            "INFRA",
+            "POLITICAL"
+          ]
+        },
+        {
+          "claim_id": "claim-c18f0436dd7737e8a1",
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-2170ff1c024ea8efc8",
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-2cffdb1b35277ed713",
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "INFRA",
+            "NUCLEAR"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-a9491eba3f016c67"
+      ],
+      "threat_score": 3,
+      "watch_priority": 55,
+      "audit": {
+        "reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
+        "support_count": 1,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-08T15:03:38Z"
+      }
+    },
+    {
       "id": "claim-3f839bd47842057fd9",
       "headline": "SPC Severe Thunderstorm Watch 664",
       "signature_tokens": [
@@ -1246,7 +1635,7 @@
         "recency": 73,
         "evidence_type": 86,
         "historical_reliability": 85,
-        "claim_maturity": 40
+        "claim_maturity": 41
       },
       "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
       "supporting_observation_ids": [
@@ -1464,8 +1853,8 @@
         "ef96995ce22c8eacd1f9"
       ],
       "first_seen": "2026-09-10T09:19:47Z",
-      "last_seen": "2026-09-11T14:46:38Z",
-      "material_time": "2026-09-11T14:38:10Z",
+      "last_seen": "2026-09-11T15:18:47Z",
+      "material_time": "2026-09-11T14:59:00Z",
       "domains": [
         "INFRA",
         "POLITICAL",
@@ -1592,7 +1981,7 @@
           "source_class": "established_media",
           "provenance_root": "cbs_world",
           "stance": "report",
-          "published": "2026-09-11T14:38:10Z",
+          "published": "2026-09-11T14:59:00Z",
           "url": "https://www.cbsnews.com/live-updates/iran-war-diesel-price-record-houthis-red-sea",
           "discovery_only": false
         },
@@ -2043,7 +2432,7 @@
         "contradiction_count": 0,
         "independent_roots": 8,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-11T14:38:10Z"
+        "material_time_used_for_decay": "2026-09-11T14:59:00Z"
       }
     },
     {
@@ -2191,7 +2580,7 @@
         "recency": 73,
         "evidence_type": 86,
         "historical_reliability": 85,
-        "claim_maturity": 40
+        "claim_maturity": 41
       },
       "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
       "supporting_observation_ids": [
@@ -2675,7 +3064,7 @@
         "a572a5f4f059615ba926"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-11T14:46:38Z",
+      "last_seen": "2026-09-11T15:18:47Z",
       "material_time": "2026-09-03T15:06:33Z",
       "domains": [
         "CYBER",
@@ -2795,7 +3184,7 @@
         "831b072ef5c33cf0625d"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-11T14:46:38Z",
+      "last_seen": "2026-09-11T15:18:47Z",
       "material_time": "2026-09-03T13:44:23Z",
       "domains": [
         "INFRA",
@@ -2974,7 +3363,7 @@
         "358b77362dc79d573c70"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-11T14:46:38Z",
+      "last_seen": "2026-09-11T15:18:47Z",
       "material_time": "2026-09-01T20:15:51Z",
       "domains": [
         "INFRA",
@@ -3135,724 +3524,30 @@
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-01T20:15:51Z"
       }
-    },
-    {
-      "id": "claim-9c999303ac7595b90d",
-      "headline": "Iran strikes two US destroyers with ballistic missiles — IRGC",
-      "signature_tokens": [
-        "ballistic",
-        "destroyers",
-        "iran",
-        "irgc",
-        "missiles",
-        "strikes",
-        "two"
-      ],
-      "observation_ids": [
-        "a1a67b97baceed420bb3",
-        "cff309dff29a8e2ee01f",
-        "dcf1f8a4d34adf64b479"
-      ],
-      "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-11T14:46:38Z",
-      "material_time": "2026-09-10T18:07:14Z",
-      "domains": [
-        "INFRA",
-        "WAR"
-      ],
-      "regions": [
-        "IRAN",
-        "MIDDLE EAST"
-      ],
-      "actors": [
-        "IRAN"
-      ],
-      "state": "SPECULATIVE",
-      "confidence": 47,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 50,
-        "independence": 25,
-        "corroboration": 22,
-        "contradiction": 0,
-        "specificity": 66,
-        "recency": 92,
-        "evidence_type": 40,
-        "historical_reliability": 50,
-        "claim_maturity": 36
-      },
-      "classification_reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
-      "supporting_observation_ids": [
-        "a1a67b97baceed420bb3",
-        "cff309dff29a8e2ee01f",
-        "dcf1f8a4d34adf64b479"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 3,
-      "independent_provenance_count": 1,
-      "sources": [
-        "Google News Weak-Signal Discovery",
-        "TASS World",
-        "washingtonexaminer.com"
-      ],
-      "provenance_roots": [
-        "google_weak_signal",
-        "tass",
-        "washingtonexaminer.com"
-      ],
-      "evidence": [
-        {
-          "observation_id": "dcf1f8a4d34adf64b479",
-          "title": "Iran reportedly resumes ballistic missiles production underground - Daily Times",
-          "source": "Google News Weak-Signal Discovery",
-          "source_class": "low_confidence",
-          "provenance_root": "google_weak_signal",
-          "stance": "speculation",
-          "published": "2026-09-10T18:07:14Z",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZHZJTnNyeWtrbjVBVzJVanFDN3h2UDV4M1U2UW1PbU05NFN0T2RocTFNTm10N2g2cnpNYzNmdzNSMlB3em45RWlVcWpHNE9YN3lFQVhlZnVZbW0xNGwxM1dhVklQbHRzZk9ZODB5dXFwNy1Hc1FjOWFXV3BTZWF3TjU1MmF3Y0ZlcFVhdGFIQUFPRE5TeUlqVTNlVWlvYThEOGc?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "cff309dff29a8e2ee01f",
-          "title": "Iranian ballistic missiles hit US aircraft at Jordanian air base",
-          "source": "washingtonexaminer.com",
-          "source_class": "low_confidence",
-          "provenance_root": "washingtonexaminer.com",
-          "stance": "report",
-          "published": "2026-09-10T11:00:00Z",
-          "url": "http://www.washingtonexaminer.com/news/4720612/iranian-ballistic-missiles-hit-us-aircraft-at-jordanian-air-base",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "a1a67b97baceed420bb3",
-          "title": "Iran strikes two US destroyers with ballistic missiles — IRGC",
-          "source": "TASS World",
-          "source_class": "state_media",
-          "provenance_root": "tass",
-          "stance": "report",
-          "published": "2026-09-09T00:09:49Z",
-          "url": "https://tass.com/world/2184537",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": true,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Iran strikes two US destroyers with ballistic missiles — IRGC",
-        "plausible_explanations": [
-          "A genuine INFRA/WAR development involving IRAN is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related INFRA/WAR indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [
-        {
-          "claim_id": "claim-d555e4d2e467f5fc66",
-          "headline": "Massachusetts Man Convicted of Violating U.S. Sanctions Against Iran",
-          "material_time": "2026-07-14T12:00:00Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ]
-        }
-      ],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-1fb55409ebfc292a9b",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-f4b8c2f1f4852f63b3",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "NUCLEAR",
-            "POLITICAL",
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-e56967faba5849ff6a",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN",
-            "MIDDLE EAST"
-          ],
-          "domains": [
-            "INFRA",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-ec5e759faffe59f7c4",
-          "shared_actors": [],
-          "shared_regions": [
-            "MIDDLE EAST"
-          ],
-          "domains": [
-            "CYBER",
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-7566c8da4276d747ad",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN",
-            "MIDDLE EAST"
-          ],
-          "domains": [
-            "TERRORISM"
-          ]
-        },
-        {
-          "claim_id": "claim-624f3c741fb6d2bde5",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "HUMANITARIAN",
-            "INFRA",
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-7feef0a02f02ec5599",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA",
-            "TERRORISM",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-6692682573a6da2d90",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN",
-            "MIDDLE EAST"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-0467a728c16df454ac",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "NUCLEAR"
-          ]
-        },
-        {
-          "claim_id": "claim-745c23662bddceaa05",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-fc1738c22ea7506839",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN",
-            "MIDDLE EAST"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-2c1b0e5f977c034fe9",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-d5a273c7739b49a5"
-      ],
-      "threat_score": 3,
-      "watch_priority": 52,
-      "audit": {
-        "reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
-        "support_count": 3,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-10T18:07:14Z"
-      }
-    },
-    {
-      "id": "claim-1fb55409ebfc292a9b",
-      "headline": "Iran Threatens Tankers in Kuwait and Bahrain as IRGC Responds to US Attacks",
-      "signature_tokens": [
-        "attacks",
-        "bahrain",
-        "iran",
-        "irgc",
-        "kuwait",
-        "responds",
-        "tankers",
-        "threatens"
-      ],
-      "observation_ids": [
-        "4c7639f94b9d89e18861",
-        "5c5c36f891b2c8367ba2",
-        "7fb13279eed51bd4189f",
-        "d227ebd11f4f1e5a3b88",
-        "690963441966f27c2b1d",
-        "81584c3eadca818988ae",
-        "087e25be47e525ba8ecc"
-      ],
-      "first_seen": "2026-09-09T17:23:40Z",
-      "last_seen": "2026-09-11T14:46:38Z",
-      "material_time": "2026-09-10T00:00:00Z",
-      "domains": [
-        "INFRA",
-        "SECURITY"
-      ],
-      "regions": [
-        "IRAN"
-      ],
-      "actors": [
-        "IRAN"
-      ],
-      "state": "EARLY WARNING",
-      "confidence": 59,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 81,
-        "independence": 25,
-        "corroboration": 22,
-        "contradiction": 0,
-        "specificity": 62,
-        "recency": 85,
-        "evidence_type": 73,
-        "historical_reliability": 81,
-        "claim_maturity": 38
-      },
-      "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
-      "supporting_observation_ids": [
-        "4c7639f94b9d89e18861",
-        "5c5c36f891b2c8367ba2",
-        "7fb13279eed51bd4189f",
-        "d227ebd11f4f1e5a3b88",
-        "690963441966f27c2b1d",
-        "81584c3eadca818988ae",
-        "087e25be47e525ba8ecc"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 7,
-      "independent_provenance_count": 1,
-      "sources": [
-        "The Maritime Executive",
-        "aninews.in",
-        "batonrougepost.com",
-        "bignewsnetwork.com",
-        "iranherald.com",
-        "iraqsun.com",
-        "maritime-executive.com"
-      ],
-      "provenance_roots": [
-        "aninews.in",
-        "batonrougepost.com",
-        "bignewsnetwork.com",
-        "iranherald.com",
-        "iraqsun.com",
-        "maritime-executive.com",
-        "maritime_exec"
-      ],
-      "evidence": [
-        {
-          "observation_id": "087e25be47e525ba8ecc",
-          "title": "Iran condemns US attacks on oil tankers , calls for UN action over",
-          "source": "batonrougepost.com",
-          "source_class": "low_confidence",
-          "provenance_root": "batonrougepost.com",
-          "stance": "report",
-          "published": "2026-09-10T00:00:00Z",
-          "url": "http://www.batonrougepost.com/news/279297078/iran-condemns-us-attacks-on-oil-tankers-calls-for-un-action-over-grave-violation-of-security",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "d227ebd11f4f1e5a3b88",
-          "title": "Iran condemns US attacks on oil tankers , calls for UN action over",
-          "source": "iraqsun.com",
-          "source_class": "low_confidence",
-          "provenance_root": "iraqsun.com",
-          "stance": "report",
-          "published": "2026-09-09T23:45:00Z",
-          "url": "http://www.iraqsun.com/news/279297078/iran-condemns-us-attacks-on-oil-tankers-calls-for-un-action-over-grave-violation-of-security",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "690963441966f27c2b1d",
-          "title": "Iran condemns US attacks on oil tankers , calls for UN action over grave violation of security",
-          "source": "aninews.in",
-          "source_class": "low_confidence",
-          "provenance_root": "aninews.in",
-          "stance": "report",
-          "published": "2026-09-09T23:45:00Z",
-          "url": "https://aninews.in/news/world/middle-east/iran-condemns-us-attacks-on-oil-tankers-calls-for-un-action-over-grave-violation-of-security20260910032418",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "81584c3eadca818988ae",
-          "title": "Iran condemns US attacks on oil tankers , calls for UN action over",
-          "source": "iranherald.com",
-          "source_class": "low_confidence",
-          "provenance_root": "iranherald.com",
-          "stance": "report",
-          "published": "2026-09-09T23:45:00Z",
-          "url": "http://www.iranherald.com/news/279297078/iran-condemns-us-attacks-on-oil-tankers-calls-for-un-action-over-grave-violation-of-security",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "7fb13279eed51bd4189f",
-          "title": "Iran condemns US attacks on oil tankers , calls for UN action over",
-          "source": "bignewsnetwork.com",
-          "source_class": "low_confidence",
-          "provenance_root": "bignewsnetwork.com",
-          "stance": "report",
-          "published": "2026-09-09T23:00:00Z",
-          "url": "http://www.bignewsnetwork.com/news/279297078/iran-condemns-us-attacks-on-oil-tankers-calls-for-un-action-over-grave-violation-of-security",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "5c5c36f891b2c8367ba2",
-          "title": "Iran Threatens Tankers in Kuwait and Bahrain as IRGC Responds to US Attacks",
-          "source": "maritime-executive.com",
-          "source_class": "low_confidence",
-          "provenance_root": "maritime-executive.com",
-          "stance": "warning",
-          "published": "2026-09-09T18:45:00Z",
-          "url": "https://maritime-executive.com/article/iran-threatens-tankers-in-kuwait-and-bahrain-as-irgc-responds-to-us-attacks",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "4c7639f94b9d89e18861",
-          "title": "Iran Threatens Tankers in Kuwait and Bahrain as IRGC Responds to US Attacks",
-          "source": "The Maritime Executive",
-          "source_class": "specialist",
-          "provenance_root": "maritime_exec",
-          "stance": "warning",
-          "published": "2026-09-09T16:48:00Z",
-          "url": "https://maritime-executive.com/article/iran-threatens-tankers-in-kuwait-and-bahrain-as-irgc-responds-to-us-attacks",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Iran Threatens Tankers in Kuwait and Bahrain as IRGC Responds to US Attacks",
-        "plausible_explanations": [
-          "A genuine INFRA/SECURITY development involving IRAN is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related INFRA/SECURITY indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [
-        {
-          "claim_id": "claim-d555e4d2e467f5fc66",
-          "headline": "Massachusetts Man Convicted of Violating U.S. Sanctions Against Iran",
-          "material_time": "2026-07-14T12:00:00Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ]
-        }
-      ],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-f4b8c2f1f4852f63b3",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "NUCLEAR",
-            "POLITICAL",
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-7566c8da4276d747ad",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "TERRORISM"
-          ]
-        },
-        {
-          "claim_id": "claim-624f3c741fb6d2bde5",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "HUMANITARIAN",
-            "INFRA",
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-7feef0a02f02ec5599",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA",
-            "TERRORISM",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-6692682573a6da2d90",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-0467a728c16df454ac",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "NUCLEAR"
-          ]
-        },
-        {
-          "claim_id": "claim-745c23662bddceaa05",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-fc1738c22ea7506839",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-2c1b0e5f977c034fe9",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-46610f59e06ce3b59b",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA",
-            "NUCLEAR",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-189f8d93243aa9c226",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-534b7c6b868f5b6e31",
-          "shared_actors": [],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-d5a273c7739b49a5"
-      ],
-      "threat_score": 5,
-      "watch_priority": 52,
-      "audit": {
-        "reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
-        "support_count": 7,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-10T00:00:00Z"
-      }
     }
   ],
   "state_counts": {
     "CONFIRMED": 124,
-    "CREDIBLE REPORT": 1114,
-    "EARLY WARNING": 191,
-    "SPECULATIVE": 269,
-    "UNVERIFIED CLAIM": 3826,
+    "CREDIBLE REPORT": 1126,
+    "EARLY WARNING": 195,
+    "SPECULATIVE": 271,
+    "UNVERIFIED CLAIM": 3841,
     "REFUTED": 17,
     "DORMANT": 398
   },
   "domain_counts": {
-    "INFRA": 844,
-    "WAR": 369,
-    "CYBER": 288,
+    "BIO": 235,
+    "INFRA": 850,
+    "WAR": 372,
+    "CYBER": 289,
+    "ECONOMIC": 89,
+    "TERRORISM": 139,
     "CLIMATE": 128,
-    "POLITICAL": 1802,
-    "SECURITY": 1771,
-    "ECONOMIC": 90,
-    "SPACE": 40,
+    "POLITICAL": 1818,
+    "SECURITY": 1773,
+    "SPACE": 42,
     "NUCLEAR": 65,
-    "BIO": 232,
-    "HUMANITARIAN": 38,
-    "TERRORISM": 135,
+    "HUMANITARIAN": 39,
     "TRAFFICKING": 2
   },
   "note": "Layered machine brief: every item retains its explicit claim state and confidence."
