@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T12:22:32Z",
+  "generated_at": "2026-09-12T12:46:52Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 44,
   "verified_pressure": {
@@ -987,7 +987,7 @@
         ],
         "anomaly_ids": [
           "anomaly-e2c8addc70109abf",
-          "anomaly-8187aee12e975f71",
+          "anomaly-485c8afb42cb5789",
           "anomaly-5a30f1a45a54e828"
         ],
         "threat_score": 17,
@@ -1408,7 +1408,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-8187aee12e975f71",
+          "anomaly-485c8afb42cb5789",
           "anomaly-5a30f1a45a54e828"
         ],
         "threat_score": 21,
@@ -1442,7 +1442,7 @@
           "a552f68b25a76bd6a5a9"
         ],
         "first_seen": "2026-09-11T11:18:39Z",
-        "last_seen": "2026-09-12T12:22:32Z",
+        "last_seen": "2026-09-12T12:46:52Z",
         "material_time": "2026-09-11T18:06:11Z",
         "domains": [
           "ECONOMIC",
@@ -1758,10 +1758,12 @@
           "8e62edeef69116ad1c88",
           "2dea7995677d891c1fb3",
           "0131fddcf728cc955f6e",
-          "1f2e0fa22be6ab29fe9d"
+          "1f2e0fa22be6ab29fe9d",
+          "4f9bb3ef25c54e45e9b6",
+          "afdf51af31916f9ca0af"
         ],
         "first_seen": "2026-09-11T08:20:46Z",
-        "last_seen": "2026-09-12T12:22:32Z",
+        "last_seen": "2026-09-12T12:46:52Z",
         "material_time": "2026-09-12T12:15:50Z",
         "domains": [
           "INFRA",
@@ -1769,6 +1771,7 @@
           "WAR"
         ],
         "regions": [
+          "GLOBAL",
           "IRAN",
           "MIDDLE EAST"
         ],
@@ -1776,14 +1779,14 @@
           "IRAN"
         ],
         "state": "CONFIRMED",
-        "confidence": 90,
+        "confidence": 89,
         "confidence_direction": "STABLE",
         "confidence_components": {
           "source_quality": 87,
           "independence": 100,
           "corroboration": 100,
           "contradiction": 0,
-          "specificity": 66,
+          "specificity": 64,
           "recency": 100,
           "evidence_type": 79,
           "historical_reliability": 84,
@@ -1812,26 +1815,32 @@
           "8e62edeef69116ad1c88",
           "2dea7995677d891c1fb3",
           "0131fddcf728cc955f6e",
-          "1f2e0fa22be6ab29fe9d"
+          "1f2e0fa22be6ab29fe9d",
+          "4f9bb3ef25c54e45e9b6",
+          "afdf51af31916f9ca0af"
         ],
         "contradictory_observation_ids": [],
-        "source_count": 8,
-        "independent_provenance_count": 4,
+        "source_count": 10,
+        "independent_provenance_count": 5,
         "sources": [
           "ABC Australia World",
+          "Al Jazeera",
           "Al Jazeera English",
           "BBC World",
           "GDELT Global Discovery",
           "NPR World",
           "business-standard.com",
+          "edition.cnn.com",
           "timesofearth.com",
           "wgauradio.com"
         ],
         "provenance_roots": [
           "abc_australia",
           "aljazeera",
+          "aljazeera.com",
           "bbc_world",
           "business-standard.com",
+          "edition.cnn.com",
           "gdelt_global",
           "npr_world",
           "timesofearth.com",
@@ -1858,6 +1867,28 @@
             "stance": "report",
             "published": "2026-09-12T12:10:13Z",
             "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/trump-iran-probably-behind-saudi-oil-pipeline-attack?traffic_source=rss",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "4f9bb3ef25c54e45e9b6",
+            "title": "Trump says Iran probably responsible for attack on Saudi pipeline",
+            "source": "edition.cnn.com",
+            "source_class": "low_confidence",
+            "provenance_root": "edition.cnn.com",
+            "stance": "report",
+            "published": "2026-09-12T11:45:00Z",
+            "url": "https://edition.cnn.com/2026/09/12/middleeast/trump-iran-saudi-pipeline-intl",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "afdf51af31916f9ca0af",
+            "title": "Saudi Arabia shuts critical oil pipeline after drone attack : What it means",
+            "source": "Al Jazeera",
+            "source_class": "established_media",
+            "provenance_root": "aljazeera.com",
+            "stance": "report",
+            "published": "2026-09-12T11:45:00Z",
+            "url": "https://www.aljazeera.com/news/2026/9/12/saudi-arabia-shuts-critical-oil-pipeline-after-drone-attack-what-happened",
             "discovery_only": false
           },
           {
@@ -1990,28 +2021,6 @@
             "stance": "report",
             "published": "2026-09-11T07:28:21Z",
             "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQNzdvT1FiM01XMFhKUk5zUFM1bTVaU3dUU3hnNGlCQmpTYndmd0NyUHJwTkJKMTlwWTVUaXp0SEs3ODZZbFFkZDljYW05SDFsM0JvbU5URHFrNjRqU2xaWHN6Y1NPVVdBRDdlRTB2UTJSbEN5TDFEMnB3VVJHRVpRMFp4dkxjTnd1ZWczVHpXZ1ZjdXo4N2c?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "8a0a66fa2218e107613e",
-            "title": "Iran seeks end to Saudi blockade of Yemen after Tehran-backed rebels take key port - Goshen News",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-11T07:28:21Z",
-            "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOa1pNaEQ3b0QyeHE5cjJvN1NzX0I5NlNTQmhuNWNQUUpOZEF3eUNTRUM4WUZobGduMGZiS3h5QmxiVjl4em9aTU1SaUNjMUFuaFhFY2YzMkFhU1lpUFZMSUxEVVFOOXV3SWtCcFAyLVAzOF9SYkd5NDltOUp6amVJMnNqSjRjWWRRRXFRNnllQ0F0eWdod0t0N05CZVYwUlpNUGFVV0hqWFBobVF3NnR2dGdVQXBXSm5QLXpyRXg2SnR0d0JvYVpQVXAxZllTWThTbUVBYXF2bC1jNm5VZUloVnRDbkdYaktqWVRZOXRfdXhzd2praC14eGo1eXR5N1B3djBLRVpTaVVfZw?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "e8b880280151d2bd9782",
-            "title": "Iran seeks end to Saudi blockade of Yemen after Tehran-backed rebels take key port - ottumwacourier.com",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-11T07:28:21Z",
-            "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOZXMwdTF6U1V1SjdIcmZOem5rYXNERTRJT2EwWl8xbVFOcWhreDhWTzFYU1F4cVNkdmRrRU5Pa1JYbUNLd3dzY0dWX0FNdUdRUzMzcnpkUnNPSXlpUWFkR0JReXJLWnYxOE9zSlBnS0lJQ0hEc2s4bkRnWEVpX2ZwYWpXTUk2OGtZWmdldmFEVlc3Zmt4ZE9RSE9nVWh6VGVfWTJYNkxlN0ktbXJpWHpnazhLRW1tOHhUOTBEb0tibWJ4T1pTaC1QbkhlQzFHMkZSc0pHYUswNVU1TWJ5UEw4T2VlTlAxQ3N3czVpOEw2VFoyUlI0YjRZUFZ6S2xVaVh2ZjRVUnRPLXI4YkhpYnBn?oc=5",
             "discovery_only": true
           }
         ],
@@ -2210,13 +2219,13 @@
         "anomaly_ids": [
           "anomaly-e2c8addc70109abf"
         ],
-        "threat_score": 30,
+        "threat_score": 29,
         "watch_priority": 47,
         "audit": {
           "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-          "support_count": 22,
+          "support_count": 24,
           "contradiction_count": 0,
-          "independent_roots": 4,
+          "independent_roots": 5,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-12T12:15:50Z"
         }
@@ -2477,33 +2486,6 @@
             ]
           },
           {
-            "claim_id": "claim-1aeb4b419c5de60967",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-91fb93fe7028281cab",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "MIDDLE EAST"
-            ],
-            "domains": [
-              "INFRA",
-              "NUCLEAR",
-              "POLITICAL"
-            ]
-          },
-          {
             "claim_id": "claim-246cbddebc73324995",
             "shared_actors": [
               "IRAN"
@@ -2511,6 +2493,31 @@
             "shared_regions": [
               "IRAN",
               "MIDDLE EAST"
+            ],
+            "domains": [
+              "SECURITY"
+            ]
+          },
+          {
+            "claim_id": "claim-678a2c3ac2fd8a1507",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "SECURITY",
+              "TERRORISM"
+            ]
+          },
+          {
+            "claim_id": "claim-1aeb4b419c5de60967",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
             ],
             "domains": [
               "SECURITY"
@@ -2554,7 +2561,7 @@
           "71fb93d4a747fdfe6f23"
         ],
         "first_seen": "2026-09-10T03:20:05Z",
-        "last_seen": "2026-09-12T12:22:32Z",
+        "last_seen": "2026-09-12T12:46:52Z",
         "material_time": "2026-09-12T03:42:17Z",
         "domains": [
           "INFRA",
@@ -2579,7 +2586,7 @@
           "corroboration": 85,
           "contradiction": 0,
           "specificity": 80,
-          "recency": 99,
+          "recency": 98,
           "evidence_type": 79,
           "historical_reliability": 70,
           "claim_maturity": 69
@@ -2748,21 +2755,6 @@
         ],
         "cross_domain_links": [
           {
-            "claim_id": "claim-246cbddebc73324995",
-            "shared_actors": [
-              "IRAN",
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "MIDDLE EAST",
-              "UNITED STATES"
-            ],
-            "domains": [
-              "SECURITY"
-            ]
-          },
-          {
             "claim_id": "claim-81a209d676796588f3",
             "shared_actors": [],
             "shared_regions": [
@@ -2898,6 +2890,18 @@
             "domains": [
               "INFRA",
               "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-bf2b92ae5406f98c59",
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ],
+            "domains": [
+              "POLITICAL"
             ]
           }
         ],
@@ -3102,7 +3106,7 @@
           "corroboration": 55,
           "contradiction": 0,
           "specificity": 68,
-          "recency": 92,
+          "recency": 91,
           "evidence_type": 79,
           "historical_reliability": 83,
           "claim_maturity": 58
@@ -3897,23 +3901,20 @@
             ]
           },
           {
-            "claim_id": "claim-678a2c3ac2fd8a1507",
-            "shared_actors": [
-              "IRAN",
-              "ISRAEL"
-            ],
+            "claim_id": "claim-b0fd4d7f385df12bc6",
+            "shared_actors": [],
             "shared_regions": [
-              "IRAN",
-              "ISRAEL/PALESTINE"
+              "IRAN"
             ],
             "domains": [
-              "TERRORISM"
+              "INFRA",
+              "SECURITY"
             ]
           }
         ],
         "anomaly_ids": [
           "anomaly-e2c8addc70109abf",
-          "anomaly-8187aee12e975f71",
+          "anomaly-485c8afb42cb5789",
           "anomaly-bce24169dcc8ea22"
         ],
         "threat_score": 16,
@@ -3965,7 +3966,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 87,
-          "recency": 81,
+          "recency": 80,
           "evidence_type": 79,
           "historical_reliability": 84,
           "claim_maturity": 39
@@ -4095,18 +4096,6 @@
             ]
           },
           {
-            "claim_id": "claim-678a2c3ac2fd8a1507",
-            "shared_actors": [
-              "ISRAEL"
-            ],
-            "shared_regions": [
-              "ISRAEL/PALESTINE"
-            ],
-            "domains": [
-              "TERRORISM"
-            ]
-          },
-          {
             "claim_id": "claim-2c1b0e5f977c034fe9",
             "shared_actors": [
               "ISRAEL"
@@ -4181,10 +4170,23 @@
               "INFRA",
               "SECURITY"
             ]
+          },
+          {
+            "claim_id": "claim-ce1770ce8f0ed28095",
+            "shared_actors": [
+              "ISRAEL"
+            ],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
+            ],
+            "domains": [
+              "NUCLEAR",
+              "SPACE"
+            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-8187aee12e975f71"
+          "anomaly-485c8afb42cb5789"
         ],
         "threat_score": 14,
         "watch_priority": 41,
@@ -4222,7 +4224,7 @@
           "a02f3b0447b22b80197c"
         ],
         "first_seen": "2026-09-09T16:18:05Z",
-        "last_seen": "2026-09-12T12:22:32Z",
+        "last_seen": "2026-09-12T12:46:52Z",
         "material_time": "2026-09-12T07:43:00Z",
         "domains": [
           "ECONOMIC",
@@ -4400,18 +4402,6 @@
             ]
           },
           {
-            "claim_id": "claim-678a2c3ac2fd8a1507",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "TERRORISM"
-            ]
-          },
-          {
             "claim_id": "claim-b0fd4d7f385df12bc6",
             "shared_actors": [],
             "shared_regions": [
@@ -4535,6 +4525,19 @@
             "domains": [
               "TERRORISM"
             ]
+          },
+          {
+            "claim_id": "claim-2a0f73abe33f0d6f10",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL"
+            ]
           }
         ],
         "anomaly_ids": [
@@ -4577,7 +4580,7 @@
           "05b7da7a48977d7afefc"
         ],
         "first_seen": "2026-09-10T15:45:37Z",
-        "last_seen": "2026-09-12T12:22:32Z",
+        "last_seen": "2026-09-12T12:46:52Z",
         "material_time": "2026-09-10T15:43:58Z",
         "domains": [
           "CYBER"
@@ -4595,7 +4598,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 35,
-          "recency": 84,
+          "recency": 83,
           "evidence_type": 73,
           "historical_reliability": 84,
           "claim_maturity": 38
@@ -4730,7 +4733,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 91,
-          "recency": 71,
+          "recency": 70,
           "evidence_type": 67,
           "historical_reliability": 80,
           "claim_maturity": 41
@@ -4868,6 +4871,19 @@
             ]
           },
           {
+            "claim_id": "claim-678a2c3ac2fd8a1507",
+            "shared_actors": [
+              "ISRAEL"
+            ],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
+            ],
+            "domains": [
+              "SECURITY",
+              "TERRORISM"
+            ]
+          },
+          {
             "claim_id": "claim-d46015a2e382b4902d",
             "shared_actors": [
               "ISRAEL"
@@ -4941,23 +4957,10 @@
               "INFRA",
               "SECURITY"
             ]
-          },
-          {
-            "claim_id": "claim-8b99785a28ac6f03ba",
-            "shared_actors": [
-              "ISRAEL"
-            ],
-            "shared_regions": [
-              "ISRAEL/PALESTINE"
-            ],
-            "domains": [
-              "INFRA",
-              "TERRORISM"
-            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-8187aee12e975f71"
+          "anomaly-485c8afb42cb5789"
         ],
         "threat_score": 3,
         "watch_priority": 55,
@@ -4990,7 +4993,7 @@
           "e5d5aa6d2a9c42b2e291"
         ],
         "first_seen": "2026-09-11T23:16:30Z",
-        "last_seen": "2026-09-12T12:22:32Z",
+        "last_seen": "2026-09-12T12:46:52Z",
         "material_time": "2026-09-11T22:55:22Z",
         "domains": [
           "CYBER",
@@ -5275,7 +5278,7 @@
           "1213767b17fd78c42b05"
         ],
         "first_seen": "2026-09-11T21:42:26Z",
-        "last_seen": "2026-09-12T12:22:32Z",
+        "last_seen": "2026-09-12T12:46:52Z",
         "material_time": "2026-09-11T21:33:16Z",
         "domains": [
           "POLITICAL",
@@ -5908,7 +5911,7 @@
           "74f4d6c73c6de1bebbe6"
         ],
         "first_seen": "2026-09-09T22:17:52Z",
-        "last_seen": "2026-09-12T12:22:32Z",
+        "last_seen": "2026-09-12T12:46:52Z",
         "material_time": "2026-09-11T16:05:24Z",
         "domains": [
           "WAR"
@@ -6058,19 +6061,6 @@
             ]
           },
           {
-            "claim_id": "claim-ba6748b523b2b991f9",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-6ce17e1d666c1108ab",
             "shared_actors": [
               "RUSSIA"
@@ -6145,6 +6135,19 @@
             "domains": [
               "ECONOMIC",
               "NUCLEAR"
+            ]
+          },
+          {
+            "claim_id": "claim-4dd8d108c471681286",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL"
             ]
           }
         ],
@@ -6440,6 +6443,34 @@
             ]
           },
           {
+            "claim_id": "claim-246cbddebc73324995",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN",
+              "ISRAEL/PALESTINE",
+              "MIDDLE EAST"
+            ],
+            "domains": [
+              "SECURITY"
+            ]
+          },
+          {
+            "claim_id": "claim-678a2c3ac2fd8a1507",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN",
+              "ISRAEL/PALESTINE"
+            ],
+            "domains": [
+              "SECURITY",
+              "TERRORISM"
+            ]
+          },
+          {
             "claim_id": "claim-1aeb4b419c5de60967",
             "shared_actors": [
               "IRAN"
@@ -6467,20 +6498,6 @@
             ]
           },
           {
-            "claim_id": "claim-246cbddebc73324995",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "ISRAEL/PALESTINE",
-              "MIDDLE EAST"
-            ],
-            "domains": [
-              "SECURITY"
-            ]
-          },
-          {
             "claim_id": "claim-81a209d676796588f3",
             "shared_actors": [],
             "shared_regions": [
@@ -6488,17 +6505,6 @@
             ],
             "domains": [
               "INFRA",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-d46015a2e382b4902d",
-            "shared_actors": [],
-            "shared_regions": [
-              "ISRAEL/PALESTINE"
-            ],
-            "domains": [
-              "TERRORISM",
               "WAR"
             ]
           }
@@ -6900,7 +6906,7 @@
           "64178ce29a71d884aecc"
         ],
         "first_seen": "2026-09-09T16:40:10Z",
-        "last_seen": "2026-09-12T12:22:32Z",
+        "last_seen": "2026-09-12T12:46:52Z",
         "material_time": "2026-09-09T16:38:49Z",
         "domains": [
           "INFRA"
@@ -7003,7 +7009,7 @@
           "9e0e4aaf69c40f71278b"
         ],
         "first_seen": "2026-09-11T18:22:08Z",
-        "last_seen": "2026-09-12T12:22:32Z",
+        "last_seen": "2026-09-12T12:46:52Z",
         "material_time": "2026-09-11T17:58:37Z",
         "domains": [
           "ECONOMIC",
@@ -7344,7 +7350,7 @@
     "multi_theater_coupling": 1,
     "nuclear_escalation": 8,
     "military_mobilization": 6,
-    "economic_warfare": 119,
+    "economic_warfare": 120,
     "crisis_control_failure": 0,
     "hybrid_preparation": 117
   },
@@ -8333,7 +8339,7 @@
       ],
       "anomaly_ids": [
         "anomaly-e2c8addc70109abf",
-        "anomaly-8187aee12e975f71",
+        "anomaly-485c8afb42cb5789",
         "anomaly-5a30f1a45a54e828"
       ],
       "threat_score": 17,
@@ -8754,7 +8760,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-8187aee12e975f71",
+        "anomaly-485c8afb42cb5789",
         "anomaly-5a30f1a45a54e828"
       ],
       "threat_score": 21,
@@ -8788,7 +8794,7 @@
         "a552f68b25a76bd6a5a9"
       ],
       "first_seen": "2026-09-11T11:18:39Z",
-      "last_seen": "2026-09-12T12:22:32Z",
+      "last_seen": "2026-09-12T12:46:52Z",
       "material_time": "2026-09-11T18:06:11Z",
       "domains": [
         "ECONOMIC",
@@ -9104,10 +9110,12 @@
         "8e62edeef69116ad1c88",
         "2dea7995677d891c1fb3",
         "0131fddcf728cc955f6e",
-        "1f2e0fa22be6ab29fe9d"
+        "1f2e0fa22be6ab29fe9d",
+        "4f9bb3ef25c54e45e9b6",
+        "afdf51af31916f9ca0af"
       ],
       "first_seen": "2026-09-11T08:20:46Z",
-      "last_seen": "2026-09-12T12:22:32Z",
+      "last_seen": "2026-09-12T12:46:52Z",
       "material_time": "2026-09-12T12:15:50Z",
       "domains": [
         "INFRA",
@@ -9115,6 +9123,7 @@
         "WAR"
       ],
       "regions": [
+        "GLOBAL",
         "IRAN",
         "MIDDLE EAST"
       ],
@@ -9122,14 +9131,14 @@
         "IRAN"
       ],
       "state": "CONFIRMED",
-      "confidence": 90,
+      "confidence": 89,
       "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 87,
         "independence": 100,
         "corroboration": 100,
         "contradiction": 0,
-        "specificity": 66,
+        "specificity": 64,
         "recency": 100,
         "evidence_type": 79,
         "historical_reliability": 84,
@@ -9158,26 +9167,32 @@
         "8e62edeef69116ad1c88",
         "2dea7995677d891c1fb3",
         "0131fddcf728cc955f6e",
-        "1f2e0fa22be6ab29fe9d"
+        "1f2e0fa22be6ab29fe9d",
+        "4f9bb3ef25c54e45e9b6",
+        "afdf51af31916f9ca0af"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 8,
-      "independent_provenance_count": 4,
+      "source_count": 10,
+      "independent_provenance_count": 5,
       "sources": [
         "ABC Australia World",
+        "Al Jazeera",
         "Al Jazeera English",
         "BBC World",
         "GDELT Global Discovery",
         "NPR World",
         "business-standard.com",
+        "edition.cnn.com",
         "timesofearth.com",
         "wgauradio.com"
       ],
       "provenance_roots": [
         "abc_australia",
         "aljazeera",
+        "aljazeera.com",
         "bbc_world",
         "business-standard.com",
+        "edition.cnn.com",
         "gdelt_global",
         "npr_world",
         "timesofearth.com",
@@ -9204,6 +9219,28 @@
           "stance": "report",
           "published": "2026-09-12T12:10:13Z",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/trump-iran-probably-behind-saudi-oil-pipeline-attack?traffic_source=rss",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "4f9bb3ef25c54e45e9b6",
+          "title": "Trump says Iran probably responsible for attack on Saudi pipeline",
+          "source": "edition.cnn.com",
+          "source_class": "low_confidence",
+          "provenance_root": "edition.cnn.com",
+          "stance": "report",
+          "published": "2026-09-12T11:45:00Z",
+          "url": "https://edition.cnn.com/2026/09/12/middleeast/trump-iran-saudi-pipeline-intl",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "afdf51af31916f9ca0af",
+          "title": "Saudi Arabia shuts critical oil pipeline after drone attack : What it means",
+          "source": "Al Jazeera",
+          "source_class": "established_media",
+          "provenance_root": "aljazeera.com",
+          "stance": "report",
+          "published": "2026-09-12T11:45:00Z",
+          "url": "https://www.aljazeera.com/news/2026/9/12/saudi-arabia-shuts-critical-oil-pipeline-after-drone-attack-what-happened",
           "discovery_only": false
         },
         {
@@ -9336,28 +9373,6 @@
           "stance": "report",
           "published": "2026-09-11T07:28:21Z",
           "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQNzdvT1FiM01XMFhKUk5zUFM1bTVaU3dUU3hnNGlCQmpTYndmd0NyUHJwTkJKMTlwWTVUaXp0SEs3ODZZbFFkZDljYW05SDFsM0JvbU5URHFrNjRqU2xaWHN6Y1NPVVdBRDdlRTB2UTJSbEN5TDFEMnB3VVJHRVpRMFp4dkxjTnd1ZWczVHpXZ1ZjdXo4N2c?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "8a0a66fa2218e107613e",
-          "title": "Iran seeks end to Saudi blockade of Yemen after Tehran-backed rebels take key port - Goshen News",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "report",
-          "published": "2026-09-11T07:28:21Z",
-          "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOa1pNaEQ3b0QyeHE5cjJvN1NzX0I5NlNTQmhuNWNQUUpOZEF3eUNTRUM4WUZobGduMGZiS3h5QmxiVjl4em9aTU1SaUNjMUFuaFhFY2YzMkFhU1lpUFZMSUxEVVFOOXV3SWtCcFAyLVAzOF9SYkd5NDltOUp6amVJMnNqSjRjWWRRRXFRNnllQ0F0eWdod0t0N05CZVYwUlpNUGFVV0hqWFBobVF3NnR2dGdVQXBXSm5QLXpyRXg2SnR0d0JvYVpQVXAxZllTWThTbUVBYXF2bC1jNm5VZUloVnRDbkdYaktqWVRZOXRfdXhzd2praC14eGo1eXR5N1B3djBLRVpTaVVfZw?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "e8b880280151d2bd9782",
-          "title": "Iran seeks end to Saudi blockade of Yemen after Tehran-backed rebels take key port - ottumwacourier.com",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "report",
-          "published": "2026-09-11T07:28:21Z",
-          "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOZXMwdTF6U1V1SjdIcmZOem5rYXNERTRJT2EwWl8xbVFOcWhreDhWTzFYU1F4cVNkdmRrRU5Pa1JYbUNLd3dzY0dWX0FNdUdRUzMzcnpkUnNPSXlpUWFkR0JReXJLWnYxOE9zSlBnS0lJQ0hEc2s4bkRnWEVpX2ZwYWpXTUk2OGtZWmdldmFEVlc3Zmt4ZE9RSE9nVWh6VGVfWTJYNkxlN0ktbXJpWHpnazhLRW1tOHhUOTBEb0tibWJ4T1pTaC1QbkhlQzFHMkZSc0pHYUswNVU1TWJ5UEw4T2VlTlAxQ3N3czVpOEw2VFoyUlI0YjRZUFZ6S2xVaVh2ZjRVUnRPLXI4YkhpYnBn?oc=5",
           "discovery_only": true
         }
       ],
@@ -9556,13 +9571,13 @@
       "anomaly_ids": [
         "anomaly-e2c8addc70109abf"
       ],
-      "threat_score": 30,
+      "threat_score": 29,
       "watch_priority": 47,
       "audit": {
         "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-        "support_count": 22,
+        "support_count": 24,
         "contradiction_count": 0,
-        "independent_roots": 4,
+        "independent_roots": 5,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-12T12:15:50Z"
       }
@@ -9823,33 +9838,6 @@
           ]
         },
         {
-          "claim_id": "claim-1aeb4b419c5de60967",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-91fb93fe7028281cab",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN",
-            "MIDDLE EAST"
-          ],
-          "domains": [
-            "INFRA",
-            "NUCLEAR",
-            "POLITICAL"
-          ]
-        },
-        {
           "claim_id": "claim-246cbddebc73324995",
           "shared_actors": [
             "IRAN"
@@ -9857,6 +9845,31 @@
           "shared_regions": [
             "IRAN",
             "MIDDLE EAST"
+          ],
+          "domains": [
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-678a2c3ac2fd8a1507",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "SECURITY",
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-1aeb4b419c5de60967",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
           ],
           "domains": [
             "SECURITY"
@@ -9900,7 +9913,7 @@
         "71fb93d4a747fdfe6f23"
       ],
       "first_seen": "2026-09-10T03:20:05Z",
-      "last_seen": "2026-09-12T12:22:32Z",
+      "last_seen": "2026-09-12T12:46:52Z",
       "material_time": "2026-09-12T03:42:17Z",
       "domains": [
         "INFRA",
@@ -9925,7 +9938,7 @@
         "corroboration": 85,
         "contradiction": 0,
         "specificity": 80,
-        "recency": 99,
+        "recency": 98,
         "evidence_type": 79,
         "historical_reliability": 70,
         "claim_maturity": 69
@@ -10094,21 +10107,6 @@
       ],
       "cross_domain_links": [
         {
-          "claim_id": "claim-246cbddebc73324995",
-          "shared_actors": [
-            "IRAN",
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "IRAN",
-            "MIDDLE EAST",
-            "UNITED STATES"
-          ],
-          "domains": [
-            "SECURITY"
-          ]
-        },
-        {
           "claim_id": "claim-81a209d676796588f3",
           "shared_actors": [],
           "shared_regions": [
@@ -10244,6 +10242,18 @@
           "domains": [
             "INFRA",
             "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-bf2b92ae5406f98c59",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "POLITICAL"
           ]
         }
       ],
@@ -10448,7 +10458,7 @@
         "corroboration": 55,
         "contradiction": 0,
         "specificity": 68,
-        "recency": 92,
+        "recency": 91,
         "evidence_type": 79,
         "historical_reliability": 83,
         "claim_maturity": 58
@@ -11243,23 +11253,20 @@
           ]
         },
         {
-          "claim_id": "claim-678a2c3ac2fd8a1507",
-          "shared_actors": [
-            "IRAN",
-            "ISRAEL"
-          ],
+          "claim_id": "claim-b0fd4d7f385df12bc6",
+          "shared_actors": [],
           "shared_regions": [
-            "IRAN",
-            "ISRAEL/PALESTINE"
+            "IRAN"
           ],
           "domains": [
-            "TERRORISM"
+            "INFRA",
+            "SECURITY"
           ]
         }
       ],
       "anomaly_ids": [
         "anomaly-e2c8addc70109abf",
-        "anomaly-8187aee12e975f71",
+        "anomaly-485c8afb42cb5789",
         "anomaly-bce24169dcc8ea22"
       ],
       "threat_score": 16,
@@ -11311,7 +11318,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 87,
-        "recency": 81,
+        "recency": 80,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 39
@@ -11441,18 +11448,6 @@
           ]
         },
         {
-          "claim_id": "claim-678a2c3ac2fd8a1507",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "TERRORISM"
-          ]
-        },
-        {
           "claim_id": "claim-2c1b0e5f977c034fe9",
           "shared_actors": [
             "ISRAEL"
@@ -11527,10 +11522,23 @@
             "INFRA",
             "SECURITY"
           ]
+        },
+        {
+          "claim_id": "claim-ce1770ce8f0ed28095",
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "NUCLEAR",
+            "SPACE"
+          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-8187aee12e975f71"
+        "anomaly-485c8afb42cb5789"
       ],
       "threat_score": 14,
       "watch_priority": 41,
@@ -11568,7 +11576,7 @@
         "a02f3b0447b22b80197c"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-12T12:22:32Z",
+      "last_seen": "2026-09-12T12:46:52Z",
       "material_time": "2026-09-12T07:43:00Z",
       "domains": [
         "ECONOMIC",
@@ -11746,18 +11754,6 @@
           ]
         },
         {
-          "claim_id": "claim-678a2c3ac2fd8a1507",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "TERRORISM"
-          ]
-        },
-        {
           "claim_id": "claim-b0fd4d7f385df12bc6",
           "shared_actors": [],
           "shared_regions": [
@@ -11880,6 +11876,19 @@
           ],
           "domains": [
             "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-2a0f73abe33f0d6f10",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL"
           ]
         }
       ],
@@ -12086,18 +12095,6 @@
       ],
       "cross_domain_links": [
         {
-          "claim_id": "claim-678a2c3ac2fd8a1507",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "TERRORISM"
-          ]
-        },
-        {
           "claim_id": "claim-7aead61977227240e0",
           "shared_actors": [
             "RUSSIA",
@@ -12243,6 +12240,21 @@
             "UKRAINE"
           ],
           "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-b489ac9c3b81e7da7c",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
             "WAR"
           ]
         }
@@ -12577,7 +12589,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-8187aee12e975f71"
+        "anomaly-485c8afb42cb5789"
       ],
       "threat_score": 17,
       "watch_priority": 37,
