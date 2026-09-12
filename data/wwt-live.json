@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T14:43:55Z",
+  "generated_at": "2026-09-12T15:17:18Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 44,
   "verified_pressure": {
@@ -86,7 +86,7 @@
           "corroboration": 100,
           "contradiction": 0,
           "specificity": 73,
-          "recency": 93,
+          "recency": 92,
           "evidence_type": 79,
           "historical_reliability": 86,
           "claim_maturity": 100
@@ -989,8 +989,8 @@
         ],
         "anomaly_ids": [
           "anomaly-e2c8addc70109abf",
-          "anomaly-485c8afb42cb5789",
-          "anomaly-5a30f1a45a54e828"
+          "anomaly-5a30f1a45a54e828",
+          "anomaly-5708e36c8c63d859"
         ],
         "threat_score": 17,
         "watch_priority": 68,
@@ -1410,8 +1410,8 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-485c8afb42cb5789",
-          "anomaly-5a30f1a45a54e828"
+          "anomaly-5a30f1a45a54e828",
+          "anomaly-5708e36c8c63d859"
         ],
         "threat_score": 21,
         "watch_priority": 60,
@@ -1422,305 +1422,6 @@
           "independent_roots": 6,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-09T04:27:18Z"
-        }
-      },
-      {
-        "id": "claim-cf04e9a4fef1c2d3ec",
-        "headline": "Ukrainian Flamingo missiles strike chemical plant in Russia's Volgograd, Fire Point says",
-        "signature_tokens": [
-          "chemical",
-          "fire",
-          "flamingo",
-          "missiles",
-          "plant",
-          "point",
-          "russia",
-          "strike",
-          "ukrainian",
-          "volgograd"
-        ],
-        "observation_ids": [
-          "84a0be10993fa8162cf6",
-          "a552f68b25a76bd6a5a9"
-        ],
-        "first_seen": "2026-09-11T11:18:39Z",
-        "last_seen": "2026-09-12T14:43:55Z",
-        "material_time": "2026-09-11T18:06:11Z",
-        "domains": [
-          "ECONOMIC",
-          "INFRA",
-          "WAR"
-        ],
-        "regions": [
-          "RUSSIA",
-          "UKRAINE"
-        ],
-        "actors": [
-          "RUSSIA",
-          "UKRAINE"
-        ],
-        "state": "CREDIBLE REPORT",
-        "confidence": 62,
-        "confidence_direction": "STABLE",
-        "confidence_components": {
-          "source_quality": 79,
-          "independence": 25,
-          "corroboration": 25,
-          "contradiction": 0,
-          "specificity": 78,
-          "recency": 92,
-          "evidence_type": 67,
-          "historical_reliability": 79,
-          "claim_maturity": 47
-        },
-        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "supporting_observation_ids": [
-          "84a0be10993fa8162cf6",
-          "a552f68b25a76bd6a5a9"
-        ],
-        "contradictory_observation_ids": [],
-        "source_count": 1,
-        "independent_provenance_count": 1,
-        "sources": [
-          "Kyiv Independent"
-        ],
-        "provenance_roots": [
-          "kyiv_independent"
-        ],
-        "evidence": [
-          {
-            "observation_id": "a552f68b25a76bd6a5a9",
-            "title": "Ukraine war latest: Russia targets Kyiv gas stations for second day",
-            "source": "Kyiv Independent",
-            "source_class": "regional_local",
-            "provenance_root": "kyiv_independent",
-            "stance": "speculation",
-            "published": "2026-09-11T18:06:11Z",
-            "url": "https://kyivindependent.com/ukraine-war-latest-russia-targets-kyiv-gas-stations-for-second-day",
-            "discovery_only": false
-          },
-          {
-            "observation_id": "84a0be10993fa8162cf6",
-            "title": "Ukrainian Flamingo missiles strike chemical plant in Russia's Volgograd, Fire Point says",
-            "source": "Kyiv Independent",
-            "source_class": "regional_local",
-            "provenance_root": "kyiv_independent",
-            "stance": "report",
-            "published": "2026-09-11T11:00:33Z",
-            "url": "https://kyivindependent.com/ukrainian-flamingo-missiles-strike-chemical-plant-in-russias-volgograd-fire-point-says",
-            "discovery_only": false
-          }
-        ],
-        "state_affiliated_reporting": false,
-        "discovery_only": false,
-        "branch_analysis": {
-          "current_observation": "Ukrainian Flamingo missiles strike chemical plant in Russia's Volgograd, Fire Point says",
-          "plausible_explanations": [
-            "A genuine ECONOMIC/INFRA/WAR development involving RUSSIA, UKRAINE is unfolding as reported.",
-            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-          ],
-          "escalation_branch": "Related ECONOMIC/INFRA/WAR indicators spread, become operational, or draw additional actors into the event.",
-          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-          "confirm_indicators": [
-            "A primary record, sensor observation, or on-record official confirmation.",
-            "Matching detail from a genuinely independent provenance root.",
-            "Observable follow-on action consistent with the reported event."
-          ],
-          "falsify_indicators": [
-            "Time-stamped primary evidence incompatible with the claim.",
-            "Independent, technically specific refutation from credible sources.",
-            "Predicted follow-on indicators fail to occur inside the stated window."
-          ],
-          "contradictory_evidence_present": false
-        },
-        "historical_matches": [],
-        "cross_domain_links": [
-          {
-            "claim_id": "claim-5adee8bd29380abb5a",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-a59ff04656d2b6a6ea",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-aeea6c84fe48c3c03d",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-84bb7b2d493e2a14f8",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-6fb2e005df47f2c0dc",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "TERRORISM"
-            ]
-          },
-          {
-            "claim_id": "claim-afe09eb1decd3133e8",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "SPACE",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-078e43c73495121d6b",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-d8a38ed762e2e27e4f",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-af58d209a63aa2d253",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-df76c756ed1724c566",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-595e44069b36c943ea",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-6692682573a6da2d90",
-            "shared_actors": [
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "UKRAINE"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "SECURITY",
-              "WAR"
-            ]
-          }
-        ],
-        "anomaly_ids": [
-          "anomaly-97676c1982ce8fb5",
-          "anomaly-83bd0649b37f74a3"
-        ],
-        "threat_score": 17,
-        "watch_priority": 54,
-        "audit": {
-          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 2,
-          "contradiction_count": 0,
-          "independent_roots": 1,
-          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-11T18:06:11Z"
         }
       },
       {
@@ -1765,7 +1466,7 @@
           "afdf51af31916f9ca0af"
         ],
         "first_seen": "2026-09-11T08:20:46Z",
-        "last_seen": "2026-09-12T14:43:55Z",
+        "last_seen": "2026-09-12T15:17:18Z",
         "material_time": "2026-09-12T12:15:50Z",
         "domains": [
           "INFRA",
@@ -2230,6 +1931,285 @@
           "independent_roots": 5,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-12T12:15:50Z"
+        }
+      },
+      {
+        "id": "claim-cf04e9a4fef1c2d3ec",
+        "headline": "Ukrainian Flamingo missiles strike chemical plant in Russia's Volgograd, Fire Point says",
+        "signature_tokens": [
+          "chemical",
+          "fire",
+          "flamingo",
+          "missiles",
+          "plant",
+          "point",
+          "russia",
+          "strike",
+          "ukrainian",
+          "volgograd"
+        ],
+        "observation_ids": [
+          "84a0be10993fa8162cf6",
+          "a552f68b25a76bd6a5a9"
+        ],
+        "first_seen": "2026-09-11T11:18:39Z",
+        "last_seen": "2026-09-12T15:17:18Z",
+        "material_time": "2026-09-11T18:06:11Z",
+        "domains": [
+          "ECONOMIC",
+          "INFRA",
+          "WAR"
+        ],
+        "regions": [
+          "RUSSIA",
+          "UKRAINE"
+        ],
+        "actors": [
+          "RUSSIA",
+          "UKRAINE"
+        ],
+        "state": "CREDIBLE REPORT",
+        "confidence": 61,
+        "confidence_direction": "STABLE",
+        "confidence_components": {
+          "source_quality": 79,
+          "independence": 25,
+          "corroboration": 25,
+          "contradiction": 0,
+          "specificity": 78,
+          "recency": 92,
+          "evidence_type": 67,
+          "historical_reliability": 79,
+          "claim_maturity": 47
+        },
+        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "supporting_observation_ids": [
+          "84a0be10993fa8162cf6",
+          "a552f68b25a76bd6a5a9"
+        ],
+        "contradictory_observation_ids": [],
+        "source_count": 1,
+        "independent_provenance_count": 1,
+        "sources": [
+          "Kyiv Independent"
+        ],
+        "provenance_roots": [
+          "kyiv_independent"
+        ],
+        "evidence": [
+          {
+            "observation_id": "a552f68b25a76bd6a5a9",
+            "title": "Ukraine war latest: Russia targets Kyiv gas stations for second day",
+            "source": "Kyiv Independent",
+            "source_class": "regional_local",
+            "provenance_root": "kyiv_independent",
+            "stance": "speculation",
+            "published": "2026-09-11T18:06:11Z",
+            "url": "https://kyivindependent.com/ukraine-war-latest-russia-targets-kyiv-gas-stations-for-second-day",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "84a0be10993fa8162cf6",
+            "title": "Ukrainian Flamingo missiles strike chemical plant in Russia's Volgograd, Fire Point says",
+            "source": "Kyiv Independent",
+            "source_class": "regional_local",
+            "provenance_root": "kyiv_independent",
+            "stance": "report",
+            "published": "2026-09-11T11:00:33Z",
+            "url": "https://kyivindependent.com/ukrainian-flamingo-missiles-strike-chemical-plant-in-russias-volgograd-fire-point-says",
+            "discovery_only": false
+          }
+        ],
+        "state_affiliated_reporting": false,
+        "discovery_only": false,
+        "branch_analysis": {
+          "current_observation": "Ukrainian Flamingo missiles strike chemical plant in Russia's Volgograd, Fire Point says",
+          "plausible_explanations": [
+            "A genuine ECONOMIC/INFRA/WAR development involving RUSSIA, UKRAINE is unfolding as reported.",
+            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+          ],
+          "escalation_branch": "Related ECONOMIC/INFRA/WAR indicators spread, become operational, or draw additional actors into the event.",
+          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+          "confirm_indicators": [
+            "A primary record, sensor observation, or on-record official confirmation.",
+            "Matching detail from a genuinely independent provenance root.",
+            "Observable follow-on action consistent with the reported event."
+          ],
+          "falsify_indicators": [
+            "Time-stamped primary evidence incompatible with the claim.",
+            "Independent, technically specific refutation from credible sources.",
+            "Predicted follow-on indicators fail to occur inside the stated window."
+          ],
+          "contradictory_evidence_present": false
+        },
+        "historical_matches": [],
+        "cross_domain_links": [
+          {
+            "claim_id": "claim-4305084e7db57ae283",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-7527bd13dff5dc001b",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "CYBER"
+            ]
+          },
+          {
+            "claim_id": "claim-be23bda180cadc34c6",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-189f8d93243aa9c226",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-a2b7fa581a67a3f3bc",
+            "shared_actors": [
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "UKRAINE"
+            ],
+            "domains": [
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-affa7d1c8b62d707fa",
+            "shared_actors": [
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "UKRAINE"
+            ],
+            "domains": [
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-a45789afae7c227191",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-1aeb4b419c5de60967",
+            "shared_actors": [
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "UKRAINE"
+            ],
+            "domains": [
+              "SECURITY"
+            ]
+          },
+          {
+            "claim_id": "claim-72b6e94d3697ab2cbf",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "NUCLEAR"
+            ]
+          },
+          {
+            "claim_id": "claim-8122df229e4267532d",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-6ce17e1d666c1108ab",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-aac9052f6b2c14937e",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          }
+        ],
+        "anomaly_ids": [
+          "anomaly-3b41720bdbf5f304",
+          "anomaly-13edee7a00f28186"
+        ],
+        "threat_score": 16,
+        "watch_priority": 53,
+        "audit": {
+          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+          "support_count": 2,
+          "contradiction_count": 0,
+          "independent_roots": 1,
+          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+          "material_time_used_for_decay": "2026-09-11T18:06:11Z"
         }
       },
       {
@@ -3539,7 +3519,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-97676c1982ce8fb5"
+          "anomaly-3b41720bdbf5f304"
         ],
         "threat_score": 15,
         "watch_priority": 40,
@@ -3916,7 +3896,7 @@
         ],
         "anomaly_ids": [
           "anomaly-e2c8addc70109abf",
-          "anomaly-485c8afb42cb5789",
+          "anomaly-5708e36c8c63d859",
           "anomaly-bce24169dcc8ea22"
         ],
         "threat_score": 16,
@@ -4188,7 +4168,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-485c8afb42cb5789"
+          "anomaly-5708e36c8c63d859"
         ],
         "threat_score": 14,
         "watch_priority": 41,
@@ -4226,7 +4206,7 @@
           "a02f3b0447b22b80197c"
         ],
         "first_seen": "2026-09-09T16:18:05Z",
-        "last_seen": "2026-09-12T14:43:55Z",
+        "last_seen": "2026-09-12T15:17:18Z",
         "material_time": "2026-09-12T07:43:00Z",
         "domains": [
           "ECONOMIC",
@@ -4252,7 +4232,7 @@
           "recency": 99,
           "evidence_type": 79,
           "historical_reliability": 87,
-          "claim_maturity": 46
+          "claim_maturity": 47
         },
         "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
         "supporting_observation_ids": [
@@ -4559,7 +4539,7 @@
     ]
   },
   "early_warning_pressure": {
-    "score": 100,
+    "score": 99,
     "claim_count": 34,
     "top_claims": [
       {
@@ -4959,11 +4939,9 @@
             ]
           }
         ],
-        "anomaly_ids": [
-          "anomaly-485c8afb42cb5789"
-        ],
+        "anomaly_ids": [],
         "threat_score": 3,
-        "watch_priority": 55,
+        "watch_priority": 47,
         "audit": {
           "reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
           "support_count": 1,
@@ -4993,7 +4971,7 @@
           "e5d5aa6d2a9c42b2e291"
         ],
         "first_seen": "2026-09-11T23:16:30Z",
-        "last_seen": "2026-09-12T14:43:55Z",
+        "last_seen": "2026-09-12T15:17:18Z",
         "material_time": "2026-09-11T22:55:22Z",
         "domains": [
           "CYBER",
@@ -5018,7 +4996,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 95,
+          "recency": 94,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 36
@@ -5088,6 +5066,20 @@
             ]
           },
           {
+            "claim_id": "claim-037e933640785f82cc",
+            "shared_actors": [
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "NUCLEAR",
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-61b7ecd42b8e0dd001",
             "shared_actors": [
               "UKRAINE"
@@ -5138,22 +5130,6 @@
               "CYBER",
               "INFRA",
               "TERRORISM"
-            ]
-          },
-          {
-            "claim_id": "claim-cf04e9a4fef1c2d3ec",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA",
-              "WAR"
             ]
           },
           {
@@ -5244,8 +5220,8 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-97676c1982ce8fb5",
-          "anomaly-83bd0649b37f74a3"
+          "anomaly-3b41720bdbf5f304",
+          "anomaly-13edee7a00f28186"
         ],
         "threat_score": 2,
         "watch_priority": 58,
@@ -5278,7 +5254,7 @@
           "1213767b17fd78c42b05"
         ],
         "first_seen": "2026-09-11T21:42:26Z",
-        "last_seen": "2026-09-12T14:43:55Z",
+        "last_seen": "2026-09-12T15:17:18Z",
         "material_time": "2026-09-11T21:33:16Z",
         "domains": [
           "POLITICAL",
@@ -5380,20 +5356,6 @@
               "CYBER",
               "INFRA",
               "TERRORISM"
-            ]
-          },
-          {
-            "claim_id": "claim-cf04e9a4fef1c2d3ec",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA",
-              "WAR"
             ]
           },
           {
@@ -5508,10 +5470,22 @@
             "domains": [
               "INFRA"
             ]
+          },
+          {
+            "claim_id": "claim-df76c756ed1724c566",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "SECURITY"
+            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-97676c1982ce8fb5"
+          "anomaly-3b41720bdbf5f304"
         ],
         "threat_score": 5,
         "watch_priority": 50,
@@ -5573,7 +5547,7 @@
           "recency": 99,
           "evidence_type": 40,
           "historical_reliability": 50,
-          "claim_maturity": 35
+          "claim_maturity": 36
         },
         "classification_reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
         "supporting_observation_ids": [
@@ -6018,22 +5992,6 @@
             ]
           },
           {
-            "claim_id": "claim-cf04e9a4fef1c2d3ec",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-5adee8bd29380abb5a",
             "shared_actors": [
               "RUSSIA"
@@ -6159,11 +6117,25 @@
             "domains": [
               "INFRA"
             ]
+          },
+          {
+            "claim_id": "claim-df76c756ed1724c566",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "SECURITY"
+            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-97676c1982ce8fb5",
-          "anomaly-83bd0649b37f74a3"
+          "anomaly-3b41720bdbf5f304",
+          "anomaly-13edee7a00f28186"
         ],
         "threat_score": 3,
         "watch_priority": 55,
@@ -6191,7 +6163,7 @@
           "74f4d6c73c6de1bebbe6"
         ],
         "first_seen": "2026-09-09T22:17:52Z",
-        "last_seen": "2026-09-12T14:43:55Z",
+        "last_seen": "2026-09-12T15:17:18Z",
         "material_time": "2026-09-11T16:05:24Z",
         "domains": [
           "WAR"
@@ -6432,7 +6404,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-97676c1982ce8fb5"
+          "anomaly-3b41720bdbf5f304"
         ],
         "threat_score": 5,
         "watch_priority": 45,
@@ -6468,7 +6440,7 @@
           "f69cbb5bc47379bdc001"
         ],
         "first_seen": "2026-09-11T03:45:41Z",
-        "last_seen": "2026-09-12T14:43:55Z",
+        "last_seen": "2026-09-12T15:17:18Z",
         "material_time": "2026-09-12T07:58:22Z",
         "domains": [
           "INFRA",
@@ -6492,7 +6464,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 71,
-          "recency": 100,
+          "recency": 99,
           "evidence_type": 12,
           "historical_reliability": 20,
           "claim_maturity": 24
@@ -7186,7 +7158,7 @@
           "64178ce29a71d884aecc"
         ],
         "first_seen": "2026-09-09T16:40:10Z",
-        "last_seen": "2026-09-12T14:43:55Z",
+        "last_seen": "2026-09-12T15:17:18Z",
         "material_time": "2026-09-09T16:38:49Z",
         "domains": [
           "INFRA"
@@ -7290,7 +7262,7 @@
     "multi_theater_coupling": 1,
     "nuclear_escalation": 8,
     "military_mobilization": 6,
-    "economic_warfare": 123,
+    "economic_warfare": 124,
     "crisis_control_failure": 0,
     "hybrid_preparation": 118
   },
@@ -7378,7 +7350,7 @@
         "corroboration": 100,
         "contradiction": 0,
         "specificity": 73,
-        "recency": 93,
+        "recency": 92,
         "evidence_type": 79,
         "historical_reliability": 86,
         "claim_maturity": 100
@@ -8281,8 +8253,8 @@
       ],
       "anomaly_ids": [
         "anomaly-e2c8addc70109abf",
-        "anomaly-485c8afb42cb5789",
-        "anomaly-5a30f1a45a54e828"
+        "anomaly-5a30f1a45a54e828",
+        "anomaly-5708e36c8c63d859"
       ],
       "threat_score": 17,
       "watch_priority": 68,
@@ -8702,8 +8674,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-485c8afb42cb5789",
-        "anomaly-5a30f1a45a54e828"
+        "anomaly-5a30f1a45a54e828",
+        "anomaly-5708e36c8c63d859"
       ],
       "threat_score": 21,
       "watch_priority": 60,
@@ -8714,305 +8686,6 @@
         "independent_roots": 6,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-09T04:27:18Z"
-      }
-    },
-    {
-      "id": "claim-cf04e9a4fef1c2d3ec",
-      "headline": "Ukrainian Flamingo missiles strike chemical plant in Russia's Volgograd, Fire Point says",
-      "signature_tokens": [
-        "chemical",
-        "fire",
-        "flamingo",
-        "missiles",
-        "plant",
-        "point",
-        "russia",
-        "strike",
-        "ukrainian",
-        "volgograd"
-      ],
-      "observation_ids": [
-        "84a0be10993fa8162cf6",
-        "a552f68b25a76bd6a5a9"
-      ],
-      "first_seen": "2026-09-11T11:18:39Z",
-      "last_seen": "2026-09-12T14:43:55Z",
-      "material_time": "2026-09-11T18:06:11Z",
-      "domains": [
-        "ECONOMIC",
-        "INFRA",
-        "WAR"
-      ],
-      "regions": [
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "actors": [
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 62,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 79,
-        "independence": 25,
-        "corroboration": 25,
-        "contradiction": 0,
-        "specificity": 78,
-        "recency": 92,
-        "evidence_type": 67,
-        "historical_reliability": 79,
-        "claim_maturity": 47
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "84a0be10993fa8162cf6",
-        "a552f68b25a76bd6a5a9"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 1,
-      "independent_provenance_count": 1,
-      "sources": [
-        "Kyiv Independent"
-      ],
-      "provenance_roots": [
-        "kyiv_independent"
-      ],
-      "evidence": [
-        {
-          "observation_id": "a552f68b25a76bd6a5a9",
-          "title": "Ukraine war latest: Russia targets Kyiv gas stations for second day",
-          "source": "Kyiv Independent",
-          "source_class": "regional_local",
-          "provenance_root": "kyiv_independent",
-          "stance": "speculation",
-          "published": "2026-09-11T18:06:11Z",
-          "url": "https://kyivindependent.com/ukraine-war-latest-russia-targets-kyiv-gas-stations-for-second-day",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "84a0be10993fa8162cf6",
-          "title": "Ukrainian Flamingo missiles strike chemical plant in Russia's Volgograd, Fire Point says",
-          "source": "Kyiv Independent",
-          "source_class": "regional_local",
-          "provenance_root": "kyiv_independent",
-          "stance": "report",
-          "published": "2026-09-11T11:00:33Z",
-          "url": "https://kyivindependent.com/ukrainian-flamingo-missiles-strike-chemical-plant-in-russias-volgograd-fire-point-says",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Ukrainian Flamingo missiles strike chemical plant in Russia's Volgograd, Fire Point says",
-        "plausible_explanations": [
-          "A genuine ECONOMIC/INFRA/WAR development involving RUSSIA, UKRAINE is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related ECONOMIC/INFRA/WAR indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-5adee8bd29380abb5a",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-a59ff04656d2b6a6ea",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-aeea6c84fe48c3c03d",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-84bb7b2d493e2a14f8",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-6fb2e005df47f2c0dc",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "TERRORISM"
-          ]
-        },
-        {
-          "claim_id": "claim-afe09eb1decd3133e8",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "SPACE",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-078e43c73495121d6b",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-d8a38ed762e2e27e4f",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-af58d209a63aa2d253",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-df76c756ed1724c566",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-595e44069b36c943ea",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-6692682573a6da2d90",
-          "shared_actors": [
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "SECURITY",
-            "WAR"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-97676c1982ce8fb5",
-        "anomaly-83bd0649b37f74a3"
-      ],
-      "threat_score": 17,
-      "watch_priority": 54,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 2,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-11T18:06:11Z"
       }
     },
     {
@@ -9057,7 +8730,7 @@
         "afdf51af31916f9ca0af"
       ],
       "first_seen": "2026-09-11T08:20:46Z",
-      "last_seen": "2026-09-12T14:43:55Z",
+      "last_seen": "2026-09-12T15:17:18Z",
       "material_time": "2026-09-12T12:15:50Z",
       "domains": [
         "INFRA",
@@ -9522,6 +9195,285 @@
         "independent_roots": 5,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-12T12:15:50Z"
+      }
+    },
+    {
+      "id": "claim-cf04e9a4fef1c2d3ec",
+      "headline": "Ukrainian Flamingo missiles strike chemical plant in Russia's Volgograd, Fire Point says",
+      "signature_tokens": [
+        "chemical",
+        "fire",
+        "flamingo",
+        "missiles",
+        "plant",
+        "point",
+        "russia",
+        "strike",
+        "ukrainian",
+        "volgograd"
+      ],
+      "observation_ids": [
+        "84a0be10993fa8162cf6",
+        "a552f68b25a76bd6a5a9"
+      ],
+      "first_seen": "2026-09-11T11:18:39Z",
+      "last_seen": "2026-09-12T15:17:18Z",
+      "material_time": "2026-09-11T18:06:11Z",
+      "domains": [
+        "ECONOMIC",
+        "INFRA",
+        "WAR"
+      ],
+      "regions": [
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "actors": [
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "state": "CREDIBLE REPORT",
+      "confidence": 61,
+      "confidence_direction": "STABLE",
+      "confidence_components": {
+        "source_quality": 79,
+        "independence": 25,
+        "corroboration": 25,
+        "contradiction": 0,
+        "specificity": 78,
+        "recency": 92,
+        "evidence_type": 67,
+        "historical_reliability": 79,
+        "claim_maturity": 47
+      },
+      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+      "supporting_observation_ids": [
+        "84a0be10993fa8162cf6",
+        "a552f68b25a76bd6a5a9"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 1,
+      "independent_provenance_count": 1,
+      "sources": [
+        "Kyiv Independent"
+      ],
+      "provenance_roots": [
+        "kyiv_independent"
+      ],
+      "evidence": [
+        {
+          "observation_id": "a552f68b25a76bd6a5a9",
+          "title": "Ukraine war latest: Russia targets Kyiv gas stations for second day",
+          "source": "Kyiv Independent",
+          "source_class": "regional_local",
+          "provenance_root": "kyiv_independent",
+          "stance": "speculation",
+          "published": "2026-09-11T18:06:11Z",
+          "url": "https://kyivindependent.com/ukraine-war-latest-russia-targets-kyiv-gas-stations-for-second-day",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "84a0be10993fa8162cf6",
+          "title": "Ukrainian Flamingo missiles strike chemical plant in Russia's Volgograd, Fire Point says",
+          "source": "Kyiv Independent",
+          "source_class": "regional_local",
+          "provenance_root": "kyiv_independent",
+          "stance": "report",
+          "published": "2026-09-11T11:00:33Z",
+          "url": "https://kyivindependent.com/ukrainian-flamingo-missiles-strike-chemical-plant-in-russias-volgograd-fire-point-says",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Ukrainian Flamingo missiles strike chemical plant in Russia's Volgograd, Fire Point says",
+        "plausible_explanations": [
+          "A genuine ECONOMIC/INFRA/WAR development involving RUSSIA, UKRAINE is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related ECONOMIC/INFRA/WAR indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-4305084e7db57ae283",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-7527bd13dff5dc001b",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "CYBER"
+          ]
+        },
+        {
+          "claim_id": "claim-be23bda180cadc34c6",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-189f8d93243aa9c226",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-a2b7fa581a67a3f3bc",
+          "shared_actors": [
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "UKRAINE"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
+        },
+        {
+          "claim_id": "claim-affa7d1c8b62d707fa",
+          "shared_actors": [
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "UKRAINE"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
+        },
+        {
+          "claim_id": "claim-a45789afae7c227191",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-1aeb4b419c5de60967",
+          "shared_actors": [
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "UKRAINE"
+          ],
+          "domains": [
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-72b6e94d3697ab2cbf",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "NUCLEAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8122df229e4267532d",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
+        },
+        {
+          "claim_id": "claim-6ce17e1d666c1108ab",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-aac9052f6b2c14937e",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-3b41720bdbf5f304",
+        "anomaly-13edee7a00f28186"
+      ],
+      "threat_score": 16,
+      "watch_priority": 53,
+      "audit": {
+        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "support_count": 2,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-11T18:06:11Z"
       }
     },
     {
@@ -10831,7 +10783,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-97676c1982ce8fb5"
+        "anomaly-3b41720bdbf5f304"
       ],
       "threat_score": 15,
       "watch_priority": 40,
@@ -11208,7 +11160,7 @@
       ],
       "anomaly_ids": [
         "anomaly-e2c8addc70109abf",
-        "anomaly-485c8afb42cb5789",
+        "anomaly-5708e36c8c63d859",
         "anomaly-bce24169dcc8ea22"
       ],
       "threat_score": 16,
@@ -11480,7 +11432,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-485c8afb42cb5789"
+        "anomaly-5708e36c8c63d859"
       ],
       "threat_score": 14,
       "watch_priority": 41,
@@ -11518,7 +11470,7 @@
         "a02f3b0447b22b80197c"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-12T14:43:55Z",
+      "last_seen": "2026-09-12T15:17:18Z",
       "material_time": "2026-09-12T07:43:00Z",
       "domains": [
         "ECONOMIC",
@@ -11544,7 +11496,7 @@
         "recency": 99,
         "evidence_type": 79,
         "historical_reliability": 87,
-        "claim_maturity": 46
+        "claim_maturity": 47
       },
       "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
       "supporting_observation_ids": [
@@ -12202,8 +12154,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-97676c1982ce8fb5",
-        "anomaly-83bd0649b37f74a3",
+        "anomaly-3b41720bdbf5f304",
+        "anomaly-13edee7a00f28186",
         "anomaly-5a30f1a45a54e828"
       ],
       "threat_score": 13,
@@ -12530,7 +12482,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-485c8afb42cb5789"
+        "anomaly-5708e36c8c63d859"
       ],
       "threat_score": 17,
       "watch_priority": 37,
@@ -12590,7 +12542,7 @@
         "recency": 81,
         "evidence_type": 67,
         "historical_reliability": 79,
-        "claim_maturity": 38
+        "claim_maturity": 39
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
@@ -12825,8 +12777,8 @@
       ],
       "anomaly_ids": [
         "anomaly-e2c8addc70109abf",
-        "anomaly-97676c1982ce8fb5",
-        "anomaly-83bd0649b37f74a3"
+        "anomaly-3b41720bdbf5f304",
+        "anomaly-13edee7a00f28186"
       ],
       "threat_score": 13,
       "watch_priority": 55,
