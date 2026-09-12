@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T17:16:32Z",
+  "generated_at": "2026-09-12T17:42:06Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 43,
   "verified_pressure": {
@@ -469,6 +469,16 @@
             ]
           },
           {
+            "claim_id": "claim-8fcbbd23d5e43e57da",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          },
+          {
             "claim_id": "claim-9c999303ac7595b90d",
             "shared_actors": [
               "IRAN"
@@ -600,23 +610,6 @@
               "INFRA",
               "WAR"
             ]
-          },
-          {
-            "claim_id": "claim-7feef0a02f02ec5599",
-            "shared_actors": [
-              "IRAN",
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "UNITED STATES"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA",
-              "TERRORISM",
-              "WAR"
-            ]
           }
         ],
         "anomaly_ids": [
@@ -678,7 +671,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 88,
-          "recency": 73,
+          "recency": 72,
           "evidence_type": 79,
           "historical_reliability": 84,
           "claim_maturity": 41
@@ -1470,11 +1463,17 @@
           "b9795ead1c098501f3b6",
           "8488174676870ec23ee1",
           "15c3fad7834e62bbd430",
-          "792f3962f1b5f7afb2fd"
+          "792f3962f1b5f7afb2fd",
+          "3e7032902315eadf7ed5",
+          "cce42b6e50b175fea3bf",
+          "27166b9f965d9f21dd05",
+          "357a4673e13ac8a5fcad",
+          "f3c7d898a9b74350fdca",
+          "1504639d43ec8baf1ca4"
         ],
         "first_seen": "2026-09-11T08:20:46Z",
-        "last_seen": "2026-09-12T17:16:32Z",
-        "material_time": "2026-09-12T16:45:00Z",
+        "last_seen": "2026-09-12T17:42:06Z",
+        "material_time": "2026-09-12T17:15:00Z",
         "domains": [
           "INFRA",
           "SPACE",
@@ -1535,10 +1534,16 @@
           "b9795ead1c098501f3b6",
           "8488174676870ec23ee1",
           "15c3fad7834e62bbd430",
-          "792f3962f1b5f7afb2fd"
+          "792f3962f1b5f7afb2fd",
+          "3e7032902315eadf7ed5",
+          "cce42b6e50b175fea3bf",
+          "27166b9f965d9f21dd05",
+          "357a4673e13ac8a5fcad",
+          "f3c7d898a9b74350fdca",
+          "1504639d43ec8baf1ca4"
         ],
         "contradictory_observation_ids": [],
-        "source_count": 18,
+        "source_count": 24,
         "independent_provenance_count": 5,
         "sources": [
           "4029tv.com",
@@ -1548,20 +1553,27 @@
           "BBC World",
           "GDELT Global Discovery",
           "NPR World",
+          "abc7.com",
           "business-standard.com",
           "edition.cnn.com",
+          "gulfcoastnewsnow.com",
           "idahopress.com",
           "kcra.com",
+          "kesq.com",
           "ketv.com",
           "ktvz.com",
           "mynbc5.com",
           "timesofearth.com",
           "wbaltv.com",
+          "wgal.com",
           "wgauradio.com",
+          "wisn.com",
+          "wlwt.com",
           "wmur.com"
         ],
         "provenance_roots": [
           "4029tv.com",
+          "abc7.com",
           "abc_australia",
           "aljazeera",
           "aljazeera.com",
@@ -1569,18 +1581,89 @@
           "business-standard.com",
           "edition.cnn.com",
           "gdelt_global",
+          "gulfcoastnewsnow.com",
           "idahopress.com",
           "kcra.com",
+          "kesq.com",
           "ketv.com",
           "ktvz.com",
           "mynbc5.com",
           "npr_world",
           "timesofearth.com",
           "wbaltv.com",
+          "wgal.com",
           "wgauradio.com",
+          "wisn.com",
+          "wlwt.com",
           "wmur.com"
         ],
         "evidence": [
+          {
+            "observation_id": "f3c7d898a9b74350fdca",
+            "title": "Attack on Saudi pipeline blamed on Iran - backed militias in Iraq",
+            "source": "wgal.com",
+            "source_class": "low_confidence",
+            "provenance_root": "wgal.com",
+            "stance": "report",
+            "published": "2026-09-12T17:15:00Z",
+            "url": "https://www.wgal.com/article/iraq-iran-militias-attack-key-saudi-pipeline-oil/73698794",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "1504639d43ec8baf1ca4",
+            "title": "Attack on Saudi pipeline blamed on Iran - backed militias in Iraq",
+            "source": "wisn.com",
+            "source_class": "low_confidence",
+            "provenance_root": "wisn.com",
+            "stance": "report",
+            "published": "2026-09-12T17:15:00Z",
+            "url": "https://www.wisn.com/article/iraq-iran-militias-attack-key-saudi-pipeline-oil/73698794",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "3e7032902315eadf7ed5",
+            "title": "Attack on Saudi pipeline blamed on Iran - backed militias in Iraq",
+            "source": "wlwt.com",
+            "source_class": "low_confidence",
+            "provenance_root": "wlwt.com",
+            "stance": "report",
+            "published": "2026-09-12T17:00:00Z",
+            "url": "https://www.wlwt.com/article/iraq-iran-militias-attack-key-saudi-pipeline-oil/73698794",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "cce42b6e50b175fea3bf",
+            "title": "Attack on Saudi pipeline blamed on Iran - backed militias in Iraq",
+            "source": "gulfcoastnewsnow.com",
+            "source_class": "low_confidence",
+            "provenance_root": "gulfcoastnewsnow.com",
+            "stance": "report",
+            "published": "2026-09-12T17:00:00Z",
+            "url": "https://www.gulfcoastnewsnow.com/article/iraq-iran-militias-attack-key-saudi-pipeline-oil/73698794",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "27166b9f965d9f21dd05",
+            "title": "Saudi pipeline attack update : East - west Saudi oil pipeline attack is blamed on Iran - backed militias in Iraq",
+            "source": "abc7.com",
+            "source_class": "low_confidence",
+            "provenance_root": "abc7.com",
+            "stance": "report",
+            "published": "2026-09-12T17:00:00Z",
+            "url": "https://abc7.com/post/saudi-pipeline-attack-iraq-races-contain-fallout-iran-backed-militias-accused-attacking-east-west-oil/19823178",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "357a4673e13ac8a5fcad",
+            "title": "Trump says Iran likely responsible for attack that shut vital Saudi oil pipeline",
+            "source": "kesq.com",
+            "source_class": "low_confidence",
+            "provenance_root": "kesq.com",
+            "stance": "report",
+            "published": "2026-09-12T17:00:00Z",
+            "url": "https://kesq.com/news/national-world/cnn-world/2026/09/12/trump-says-iran-likely-responsible-for-attack-on-vital-saudi-oil-pipeline",
+            "discovery_only": true
+          },
           {
             "observation_id": "8488174676870ec23ee1",
             "title": "Trump says Iran likely responsible for attack that shut vital Saudi oil pipeline",
@@ -1689,72 +1772,6 @@
             "stance": "report",
             "published": "2026-09-12T12:10:13Z",
             "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/trump-iran-probably-behind-saudi-oil-pipeline-attack?traffic_source=rss",
-            "discovery_only": false
-          },
-          {
-            "observation_id": "4f9bb3ef25c54e45e9b6",
-            "title": "Trump says Iran probably responsible for attack on Saudi pipeline",
-            "source": "edition.cnn.com",
-            "source_class": "low_confidence",
-            "provenance_root": "edition.cnn.com",
-            "stance": "report",
-            "published": "2026-09-12T11:45:00Z",
-            "url": "https://edition.cnn.com/2026/09/12/middleeast/trump-iran-saudi-pipeline-intl",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "afdf51af31916f9ca0af",
-            "title": "Saudi Arabia shuts critical oil pipeline after drone attack : What it means",
-            "source": "Al Jazeera",
-            "source_class": "established_media",
-            "provenance_root": "aljazeera.com",
-            "stance": "report",
-            "published": "2026-09-12T11:45:00Z",
-            "url": "https://www.aljazeera.com/news/2026/9/12/saudi-arabia-shuts-critical-oil-pipeline-after-drone-attack-what-happened",
-            "discovery_only": false
-          },
-          {
-            "observation_id": "0131fddcf728cc955f6e",
-            "title": "Saudi Arabia shuts critical oil pipeline after drone attack: What it means",
-            "source": "Al Jazeera English",
-            "source_class": "established_media",
-            "provenance_root": "aljazeera",
-            "stance": "report",
-            "published": "2026-09-12T10:36:18Z",
-            "url": "https://www.aljazeera.com/news/2026/9/12/saudi-arabia-shuts-critical-oil-pipeline-after-drone-attack-what-happened?traffic_source=rss",
-            "discovery_only": false
-          },
-          {
-            "observation_id": "8e62edeef69116ad1c88",
-            "title": "Yemen's Houthis capture a Red Sea island in threat to shipping",
-            "source": "NPR World",
-            "source_class": "established_media",
-            "provenance_root": "npr_world",
-            "stance": "warning",
-            "published": "2026-09-12T05:57:08Z",
-            "url": "https://www.npr.org/2026/09/12/g-s1-143044/yemens-houthis-capture-red-sea-island",
-            "discovery_only": false
-          },
-          {
-            "observation_id": "071885682dc5e434891e",
-            "title": "Satellite image shows critical Saudi pipeline damaged in drone attack",
-            "source": "Al Jazeera English",
-            "source_class": "established_media",
-            "provenance_root": "aljazeera",
-            "stance": "report",
-            "published": "2026-09-12T02:18:52Z",
-            "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/saudi-arabia-east-west-oil-pipeline-drone-attack-iraq?traffic_source=rss",
-            "discovery_only": false
-          },
-          {
-            "observation_id": "2dea7995677d891c1fb3",
-            "title": "Iran war live: Yemen government counterattacks Houthis with air strikes",
-            "source": "Al Jazeera English",
-            "source_class": "established_media",
-            "provenance_root": "aljazeera",
-            "stance": "report",
-            "published": "2026-09-12T00:00:00Z",
-            "url": "https://www.aljazeera.com/news/liveblog/2026/9/12/iran-war-live-houthis-control-red-sea-coast-saudi-pipeline-shut-down?traffic_source=rss",
             "discovery_only": false
           }
         ],
@@ -1957,11 +1974,11 @@
         "watch_priority": 47,
         "audit": {
           "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-          "support_count": 32,
+          "support_count": 38,
           "contradiction_count": 0,
           "independent_roots": 5,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-12T16:45:00Z"
+          "material_time_used_for_decay": "2026-09-12T17:15:00Z"
         }
       },
       {
@@ -2008,7 +2025,7 @@
           "corroboration": 25,
           "contradiction": 0,
           "specificity": 78,
-          "recency": 91,
+          "recency": 90,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 48
@@ -2229,8 +2246,8 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-75d2e460fb60f71a",
-          "anomaly-75e12c487c26e4a1"
+          "anomaly-95192cd06841cf7e",
+          "anomaly-5e0052e73ab5d832"
         ],
         "threat_score": 16,
         "watch_priority": 53,
@@ -3447,7 +3464,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-75d2e460fb60f71a"
+          "anomaly-95192cd06841cf7e"
         ],
         "threat_score": 15,
         "watch_priority": 40,
@@ -4152,7 +4169,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 78,
-          "recency": 96,
+          "recency": 95,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 36
@@ -4461,8 +4478,8 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-75d2e460fb60f71a",
-          "anomaly-75e12c487c26e4a1",
+          "anomaly-95192cd06841cf7e",
+          "anomaly-5e0052e73ab5d832",
           "anomaly-5a30f1a45a54e828"
         ],
         "threat_score": 13,
@@ -4805,7 +4822,7 @@
     ]
   },
   "early_warning_pressure": {
-    "score": 98,
+    "score": 100,
     "claim_count": 35,
     "top_claims": [
       {
@@ -5237,7 +5254,7 @@
           "e5d5aa6d2a9c42b2e291"
         ],
         "first_seen": "2026-09-11T23:16:30Z",
-        "last_seen": "2026-09-12T17:16:32Z",
+        "last_seen": "2026-09-12T17:42:06Z",
         "material_time": "2026-09-11T22:55:22Z",
         "domains": [
           "CYBER",
@@ -5485,8 +5502,8 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-75d2e460fb60f71a",
-          "anomaly-75e12c487c26e4a1"
+          "anomaly-95192cd06841cf7e",
+          "anomaly-5e0052e73ab5d832"
         ],
         "threat_score": 2,
         "watch_priority": 58,
@@ -5519,7 +5536,7 @@
           "1213767b17fd78c42b05"
         ],
         "first_seen": "2026-09-11T21:42:26Z",
-        "last_seen": "2026-09-12T17:16:32Z",
+        "last_seen": "2026-09-12T17:42:06Z",
         "material_time": "2026-09-11T21:33:16Z",
         "domains": [
           "POLITICAL",
@@ -5750,7 +5767,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-75d2e460fb60f71a"
+          "anomaly-95192cd06841cf7e"
         ],
         "threat_score": 4,
         "watch_priority": 50,
@@ -5888,11 +5905,12 @@
           "09ad4128c9e89c03126e",
           "bd976c027e0eaf071483",
           "dbd6ddb3c760fe1a4c5d",
-          "a7e7614de11c615bac12"
+          "a7e7614de11c615bac12",
+          "a921e2c8ffa610cb84a2"
         ],
         "first_seen": "2026-09-10T18:21:06Z",
-        "last_seen": "2026-09-12T17:16:32Z",
-        "material_time": "2026-09-12T15:57:27Z",
+        "last_seen": "2026-09-12T17:42:06Z",
+        "material_time": "2026-09-12T17:15:00Z",
         "domains": [
           "HUMANITARIAN",
           "INFRA",
@@ -5928,22 +5946,36 @@
           "09ad4128c9e89c03126e",
           "bd976c027e0eaf071483",
           "dbd6ddb3c760fe1a4c5d",
-          "a7e7614de11c615bac12"
+          "a7e7614de11c615bac12",
+          "a921e2c8ffa610cb84a2"
         ],
         "contradictory_observation_ids": [],
-        "source_count": 3,
+        "source_count": 4,
         "independent_provenance_count": 1,
         "sources": [
           "GDELT Global Discovery",
           "TASS World",
+          "en.apa.az",
           "khaama.com"
         ],
         "provenance_roots": [
+          "en.apa.az",
           "gdelt_global",
           "khaama.com",
           "tass"
         ],
         "evidence": [
+          {
+            "observation_id": "a921e2c8ffa610cb84a2",
+            "title": "US redirected 100 commercial ships to enforce blockade on Iran CENTCOM",
+            "source": "en.apa.az",
+            "source_class": "low_confidence",
+            "provenance_root": "en.apa.az",
+            "stance": "report",
+            "published": "2026-09-12T17:15:00Z",
+            "url": "https://en.apa.az/america/us-redirected-100-commercial-ships-to-enforce-blockade-on-iran-centcom-524013",
+            "discovery_only": true
+          },
           {
             "observation_id": "a7e7614de11c615bac12",
             "title": "US redirected 100 commercial ships to enforce blockade on Iran — CENTCOM",
@@ -6248,11 +6280,11 @@
         "watch_priority": 49,
         "audit": {
           "reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
-          "support_count": 8,
+          "support_count": 9,
           "contradiction_count": 0,
           "independent_roots": 1,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-12T15:57:27Z"
+          "material_time_used_for_decay": "2026-09-12T17:15:00Z"
         }
       },
       {
@@ -6294,7 +6326,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 78,
-          "recency": 91,
+          "recency": 90,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 37
@@ -6519,8 +6551,8 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-75d2e460fb60f71a",
-          "anomaly-75e12c487c26e4a1"
+          "anomaly-95192cd06841cf7e",
+          "anomaly-5e0052e73ab5d832"
         ],
         "threat_score": 3,
         "watch_priority": 55,
@@ -6789,7 +6821,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-75d2e460fb60f71a"
+          "anomaly-95192cd06841cf7e"
         ],
         "threat_score": 5,
         "watch_priority": 45,
@@ -7212,7 +7244,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 42,
-          "recency": 95,
+          "recency": 94,
           "evidence_type": 79,
           "historical_reliability": 84,
           "claim_maturity": 36
@@ -7559,7 +7591,7 @@
     "military_mobilization": 6,
     "economic_warfare": 125,
     "crisis_control_failure": 0,
-    "hybrid_preparation": 119
+    "hybrid_preparation": 120
   },
   "formula": "Independent-provenance-capped claim contributions; verified and early-warning pressure remain separate.",
   "safeguard": "Republished stories sharing one provenance root cannot multiply pressure; speculative claims never enter Verified Pressure.",
@@ -8028,6 +8060,16 @@
           ]
         },
         {
+          "claim_id": "claim-8fcbbd23d5e43e57da",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "INFRA"
+          ]
+        },
+        {
           "claim_id": "claim-9c999303ac7595b90d",
           "shared_actors": [
             "IRAN"
@@ -8159,23 +8201,6 @@
             "INFRA",
             "WAR"
           ]
-        },
-        {
-          "claim_id": "claim-7feef0a02f02ec5599",
-          "shared_actors": [
-            "IRAN",
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "IRAN",
-            "UNITED STATES"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA",
-            "TERRORISM",
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
@@ -8237,7 +8262,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 88,
-        "recency": 73,
+        "recency": 72,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 41
@@ -9029,11 +9054,17 @@
         "b9795ead1c098501f3b6",
         "8488174676870ec23ee1",
         "15c3fad7834e62bbd430",
-        "792f3962f1b5f7afb2fd"
+        "792f3962f1b5f7afb2fd",
+        "3e7032902315eadf7ed5",
+        "cce42b6e50b175fea3bf",
+        "27166b9f965d9f21dd05",
+        "357a4673e13ac8a5fcad",
+        "f3c7d898a9b74350fdca",
+        "1504639d43ec8baf1ca4"
       ],
       "first_seen": "2026-09-11T08:20:46Z",
-      "last_seen": "2026-09-12T17:16:32Z",
-      "material_time": "2026-09-12T16:45:00Z",
+      "last_seen": "2026-09-12T17:42:06Z",
+      "material_time": "2026-09-12T17:15:00Z",
       "domains": [
         "INFRA",
         "SPACE",
@@ -9094,10 +9125,16 @@
         "b9795ead1c098501f3b6",
         "8488174676870ec23ee1",
         "15c3fad7834e62bbd430",
-        "792f3962f1b5f7afb2fd"
+        "792f3962f1b5f7afb2fd",
+        "3e7032902315eadf7ed5",
+        "cce42b6e50b175fea3bf",
+        "27166b9f965d9f21dd05",
+        "357a4673e13ac8a5fcad",
+        "f3c7d898a9b74350fdca",
+        "1504639d43ec8baf1ca4"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 18,
+      "source_count": 24,
       "independent_provenance_count": 5,
       "sources": [
         "4029tv.com",
@@ -9107,20 +9144,27 @@
         "BBC World",
         "GDELT Global Discovery",
         "NPR World",
+        "abc7.com",
         "business-standard.com",
         "edition.cnn.com",
+        "gulfcoastnewsnow.com",
         "idahopress.com",
         "kcra.com",
+        "kesq.com",
         "ketv.com",
         "ktvz.com",
         "mynbc5.com",
         "timesofearth.com",
         "wbaltv.com",
+        "wgal.com",
         "wgauradio.com",
+        "wisn.com",
+        "wlwt.com",
         "wmur.com"
       ],
       "provenance_roots": [
         "4029tv.com",
+        "abc7.com",
         "abc_australia",
         "aljazeera",
         "aljazeera.com",
@@ -9128,18 +9172,89 @@
         "business-standard.com",
         "edition.cnn.com",
         "gdelt_global",
+        "gulfcoastnewsnow.com",
         "idahopress.com",
         "kcra.com",
+        "kesq.com",
         "ketv.com",
         "ktvz.com",
         "mynbc5.com",
         "npr_world",
         "timesofearth.com",
         "wbaltv.com",
+        "wgal.com",
         "wgauradio.com",
+        "wisn.com",
+        "wlwt.com",
         "wmur.com"
       ],
       "evidence": [
+        {
+          "observation_id": "f3c7d898a9b74350fdca",
+          "title": "Attack on Saudi pipeline blamed on Iran - backed militias in Iraq",
+          "source": "wgal.com",
+          "source_class": "low_confidence",
+          "provenance_root": "wgal.com",
+          "stance": "report",
+          "published": "2026-09-12T17:15:00Z",
+          "url": "https://www.wgal.com/article/iraq-iran-militias-attack-key-saudi-pipeline-oil/73698794",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "1504639d43ec8baf1ca4",
+          "title": "Attack on Saudi pipeline blamed on Iran - backed militias in Iraq",
+          "source": "wisn.com",
+          "source_class": "low_confidence",
+          "provenance_root": "wisn.com",
+          "stance": "report",
+          "published": "2026-09-12T17:15:00Z",
+          "url": "https://www.wisn.com/article/iraq-iran-militias-attack-key-saudi-pipeline-oil/73698794",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "3e7032902315eadf7ed5",
+          "title": "Attack on Saudi pipeline blamed on Iran - backed militias in Iraq",
+          "source": "wlwt.com",
+          "source_class": "low_confidence",
+          "provenance_root": "wlwt.com",
+          "stance": "report",
+          "published": "2026-09-12T17:00:00Z",
+          "url": "https://www.wlwt.com/article/iraq-iran-militias-attack-key-saudi-pipeline-oil/73698794",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "cce42b6e50b175fea3bf",
+          "title": "Attack on Saudi pipeline blamed on Iran - backed militias in Iraq",
+          "source": "gulfcoastnewsnow.com",
+          "source_class": "low_confidence",
+          "provenance_root": "gulfcoastnewsnow.com",
+          "stance": "report",
+          "published": "2026-09-12T17:00:00Z",
+          "url": "https://www.gulfcoastnewsnow.com/article/iraq-iran-militias-attack-key-saudi-pipeline-oil/73698794",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "27166b9f965d9f21dd05",
+          "title": "Saudi pipeline attack update : East - west Saudi oil pipeline attack is blamed on Iran - backed militias in Iraq",
+          "source": "abc7.com",
+          "source_class": "low_confidence",
+          "provenance_root": "abc7.com",
+          "stance": "report",
+          "published": "2026-09-12T17:00:00Z",
+          "url": "https://abc7.com/post/saudi-pipeline-attack-iraq-races-contain-fallout-iran-backed-militias-accused-attacking-east-west-oil/19823178",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "357a4673e13ac8a5fcad",
+          "title": "Trump says Iran likely responsible for attack that shut vital Saudi oil pipeline",
+          "source": "kesq.com",
+          "source_class": "low_confidence",
+          "provenance_root": "kesq.com",
+          "stance": "report",
+          "published": "2026-09-12T17:00:00Z",
+          "url": "https://kesq.com/news/national-world/cnn-world/2026/09/12/trump-says-iran-likely-responsible-for-attack-on-vital-saudi-oil-pipeline",
+          "discovery_only": true
+        },
         {
           "observation_id": "8488174676870ec23ee1",
           "title": "Trump says Iran likely responsible for attack that shut vital Saudi oil pipeline",
@@ -9248,72 +9363,6 @@
           "stance": "report",
           "published": "2026-09-12T12:10:13Z",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/trump-iran-probably-behind-saudi-oil-pipeline-attack?traffic_source=rss",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "4f9bb3ef25c54e45e9b6",
-          "title": "Trump says Iran probably responsible for attack on Saudi pipeline",
-          "source": "edition.cnn.com",
-          "source_class": "low_confidence",
-          "provenance_root": "edition.cnn.com",
-          "stance": "report",
-          "published": "2026-09-12T11:45:00Z",
-          "url": "https://edition.cnn.com/2026/09/12/middleeast/trump-iran-saudi-pipeline-intl",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "afdf51af31916f9ca0af",
-          "title": "Saudi Arabia shuts critical oil pipeline after drone attack : What it means",
-          "source": "Al Jazeera",
-          "source_class": "established_media",
-          "provenance_root": "aljazeera.com",
-          "stance": "report",
-          "published": "2026-09-12T11:45:00Z",
-          "url": "https://www.aljazeera.com/news/2026/9/12/saudi-arabia-shuts-critical-oil-pipeline-after-drone-attack-what-happened",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "0131fddcf728cc955f6e",
-          "title": "Saudi Arabia shuts critical oil pipeline after drone attack: What it means",
-          "source": "Al Jazeera English",
-          "source_class": "established_media",
-          "provenance_root": "aljazeera",
-          "stance": "report",
-          "published": "2026-09-12T10:36:18Z",
-          "url": "https://www.aljazeera.com/news/2026/9/12/saudi-arabia-shuts-critical-oil-pipeline-after-drone-attack-what-happened?traffic_source=rss",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "8e62edeef69116ad1c88",
-          "title": "Yemen's Houthis capture a Red Sea island in threat to shipping",
-          "source": "NPR World",
-          "source_class": "established_media",
-          "provenance_root": "npr_world",
-          "stance": "warning",
-          "published": "2026-09-12T05:57:08Z",
-          "url": "https://www.npr.org/2026/09/12/g-s1-143044/yemens-houthis-capture-red-sea-island",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "071885682dc5e434891e",
-          "title": "Satellite image shows critical Saudi pipeline damaged in drone attack",
-          "source": "Al Jazeera English",
-          "source_class": "established_media",
-          "provenance_root": "aljazeera",
-          "stance": "report",
-          "published": "2026-09-12T02:18:52Z",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/saudi-arabia-east-west-oil-pipeline-drone-attack-iraq?traffic_source=rss",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "2dea7995677d891c1fb3",
-          "title": "Iran war live: Yemen government counterattacks Houthis with air strikes",
-          "source": "Al Jazeera English",
-          "source_class": "established_media",
-          "provenance_root": "aljazeera",
-          "stance": "report",
-          "published": "2026-09-12T00:00:00Z",
-          "url": "https://www.aljazeera.com/news/liveblog/2026/9/12/iran-war-live-houthis-control-red-sea-coast-saudi-pipeline-shut-down?traffic_source=rss",
           "discovery_only": false
         }
       ],
@@ -9516,11 +9565,11 @@
       "watch_priority": 47,
       "audit": {
         "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-        "support_count": 32,
+        "support_count": 38,
         "contradiction_count": 0,
         "independent_roots": 5,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-12T16:45:00Z"
+        "material_time_used_for_decay": "2026-09-12T17:15:00Z"
       }
     },
     {
@@ -9567,7 +9616,7 @@
         "corroboration": 25,
         "contradiction": 0,
         "specificity": 78,
-        "recency": 91,
+        "recency": 90,
         "evidence_type": 67,
         "historical_reliability": 79,
         "claim_maturity": 48
@@ -9788,8 +9837,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-75d2e460fb60f71a",
-        "anomaly-75e12c487c26e4a1"
+        "anomaly-95192cd06841cf7e",
+        "anomaly-5e0052e73ab5d832"
       ],
       "threat_score": 16,
       "watch_priority": 53,
@@ -11006,7 +11055,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-75d2e460fb60f71a"
+        "anomaly-95192cd06841cf7e"
       ],
       "threat_score": 15,
       "watch_priority": 40,
@@ -11711,7 +11760,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 78,
-        "recency": 96,
+        "recency": 95,
         "evidence_type": 67,
         "historical_reliability": 79,
         "claim_maturity": 36
@@ -12020,8 +12069,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-75d2e460fb60f71a",
-        "anomaly-75e12c487c26e4a1",
+        "anomaly-95192cd06841cf7e",
+        "anomaly-5e0052e73ab5d832",
         "anomaly-5a30f1a45a54e828"
       ],
       "threat_score": 13,
@@ -12643,8 +12692,8 @@
       ],
       "anomaly_ids": [
         "anomaly-a8ed2e954a74ca73",
-        "anomaly-75d2e460fb60f71a",
-        "anomaly-75e12c487c26e4a1"
+        "anomaly-95192cd06841cf7e",
+        "anomaly-5e0052e73ab5d832"
       ],
       "threat_score": 13,
       "watch_priority": 55,
@@ -12970,7 +13019,7 @@
         "a02f3b0447b22b80197c"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-12T17:16:32Z",
+      "last_seen": "2026-09-12T17:42:06Z",
       "material_time": "2026-09-12T07:43:00Z",
       "domains": [
         "ECONOMIC",
