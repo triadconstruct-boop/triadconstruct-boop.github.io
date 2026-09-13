@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-13T20:43:33Z",
+  "generated_at": "2026-09-13T21:17:32Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 39,
   "verified_pressure": {
     "score": 39,
-    "claim_count": 49,
+    "claim_count": 50,
     "top_claims": [
       {
         "id": "claim-8502fc721ea6d8ba11",
@@ -87,7 +87,7 @@
           "corroboration": 100,
           "contradiction": 0,
           "specificity": 72,
-          "recency": 90,
+          "recency": 89,
           "evidence_type": 79,
           "historical_reliability": 86,
           "claim_maturity": 100
@@ -1046,7 +1046,7 @@
           "corroboration": 100,
           "contradiction": 0,
           "specificity": 71,
-          "recency": 67,
+          "recency": 66,
           "evidence_type": 79,
           "historical_reliability": 87,
           "claim_maturity": 100
@@ -1420,6 +1420,315 @@
         }
       },
       {
+        "id": "claim-cf04e9a4fef1c2d3ec",
+        "headline": "Ukrainian Flamingo missiles strike chemical plant in Russia's Volgograd, Fire Point says",
+        "signature_tokens": [
+          "chemical",
+          "fire",
+          "flamingo",
+          "missiles",
+          "plant",
+          "point",
+          "russia",
+          "strike",
+          "ukrainian",
+          "volgograd"
+        ],
+        "observation_ids": [
+          "84a0be10993fa8162cf6",
+          "a552f68b25a76bd6a5a9",
+          "61eba67e95998c0d88e2"
+        ],
+        "first_seen": "2026-09-11T11:18:39Z",
+        "last_seen": "2026-09-13T21:17:32Z",
+        "material_time": "2026-09-13T20:43:05Z",
+        "domains": [
+          "ECONOMIC",
+          "INFRA",
+          "WAR"
+        ],
+        "regions": [
+          "RUSSIA",
+          "UKRAINE"
+        ],
+        "actors": [
+          "RUSSIA",
+          "UKRAINE"
+        ],
+        "state": "CREDIBLE REPORT",
+        "confidence": 62,
+        "confidence_direction": "UP",
+        "confidence_components": {
+          "source_quality": 79,
+          "independence": 25,
+          "corroboration": 25,
+          "contradiction": 0,
+          "specificity": 74,
+          "recency": 100,
+          "evidence_type": 67,
+          "historical_reliability": 79,
+          "claim_maturity": 46
+        },
+        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "supporting_observation_ids": [
+          "84a0be10993fa8162cf6",
+          "a552f68b25a76bd6a5a9",
+          "61eba67e95998c0d88e2"
+        ],
+        "contradictory_observation_ids": [],
+        "source_count": 2,
+        "independent_provenance_count": 1,
+        "sources": [
+          "Google News Weak-Signal Discovery",
+          "Kyiv Independent"
+        ],
+        "provenance_roots": [
+          "google_weak_signal",
+          "kyiv_independent"
+        ],
+        "evidence": [
+          {
+            "observation_id": "61eba67e95998c0d88e2",
+            "title": "Ukrainian forces reportedly strike energy infrastructure in occupied Mariupol as fire burns in Russia's Taganrog - The Kyiv Independent",
+            "source": "Google News Weak-Signal Discovery",
+            "source_class": "low_confidence",
+            "provenance_root": "google_weak_signal",
+            "stance": "speculation",
+            "published": "2026-09-13T20:43:05Z",
+            "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOaDRmZ2NjQ05VdWRybUdiWWVXRE5mbUd2aTdXSWVrSlhkbTB6elE1YWRiODZYWWx2NzRLdGF6bkw0WEV3LWIweXBTNXZHX3V2RmgzRkt2Ym1vUnljMVQwNEljWmxGdU9taWdSZ0xvb3J1UDlVZ05HZ2tCZTFuVHBKNS1Ia082V0dEZGNicF9iV3BCdF9XakJiRWFVdkFyZjMzY0pDdVFKeFJzbno5V0FZV3VKdm8wUXVIU285aVRMa1l2QU10eFlHSUVfUjM3UTg3M0JMZVMwbw?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "a552f68b25a76bd6a5a9",
+            "title": "Ukraine war latest: Russia targets Kyiv gas stations for second day",
+            "source": "Kyiv Independent",
+            "source_class": "regional_local",
+            "provenance_root": "kyiv_independent",
+            "stance": "speculation",
+            "published": "2026-09-11T18:06:11Z",
+            "url": "https://kyivindependent.com/ukraine-war-latest-russia-targets-kyiv-gas-stations-for-second-day",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "84a0be10993fa8162cf6",
+            "title": "Ukrainian Flamingo missiles strike chemical plant in Russia's Volgograd, Fire Point says",
+            "source": "Kyiv Independent",
+            "source_class": "regional_local",
+            "provenance_root": "kyiv_independent",
+            "stance": "report",
+            "published": "2026-09-11T11:00:33Z",
+            "url": "https://kyivindependent.com/ukrainian-flamingo-missiles-strike-chemical-plant-in-russias-volgograd-fire-point-says",
+            "discovery_only": false
+          }
+        ],
+        "state_affiliated_reporting": false,
+        "discovery_only": false,
+        "branch_analysis": {
+          "current_observation": "Ukrainian Flamingo missiles strike chemical plant in Russia's Volgograd, Fire Point says",
+          "plausible_explanations": [
+            "A genuine ECONOMIC/INFRA/WAR development involving RUSSIA, UKRAINE is unfolding as reported.",
+            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+          ],
+          "escalation_branch": "Related ECONOMIC/INFRA/WAR indicators spread, become operational, or draw additional actors into the event.",
+          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+          "confirm_indicators": [
+            "A primary record, sensor observation, or on-record official confirmation.",
+            "Matching detail from a genuinely independent provenance root.",
+            "Observable follow-on action consistent with the reported event."
+          ],
+          "falsify_indicators": [
+            "Time-stamped primary evidence incompatible with the claim.",
+            "Independent, technically specific refutation from credible sources.",
+            "Predicted follow-on indicators fail to occur inside the stated window."
+          ],
+          "contradictory_evidence_present": false
+        },
+        "historical_matches": [],
+        "cross_domain_links": [
+          {
+            "claim_id": "claim-173066baeecd50f810",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-9a85b3b72dff0a983d",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-ca1ae8bfa80f2f057e",
+            "shared_actors": [
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "UKRAINE"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-14d960854e93a7512c",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-5adee8bd29380abb5a",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-a59ff04656d2b6a6ea",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-aeea6c84fe48c3c03d",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-84bb7b2d493e2a14f8",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-6fb2e005df47f2c0dc",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "TERRORISM"
+            ]
+          },
+          {
+            "claim_id": "claim-078e43c73495121d6b",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-d8a38ed762e2e27e4f",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-fd234aa37a6d3d8edc",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "TERRORISM",
+              "WAR"
+            ]
+          }
+        ],
+        "anomaly_ids": [
+          "anomaly-3b63f52f35812501",
+          "anomaly-5bff00f82e2b4a3d"
+        ],
+        "threat_score": 17,
+        "watch_priority": 54,
+        "audit": {
+          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+          "support_count": 3,
+          "contradiction_count": 0,
+          "independent_roots": 1,
+          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+          "material_time_used_for_decay": "2026-09-13T20:43:05Z"
+        }
+      },
+      {
         "id": "claim-309a220f8087c51afb",
         "headline": "Attack that closed key Saudi pipeline blamed on Iran-backed militias in Iraq - 1News",
         "signature_tokens": [
@@ -1479,7 +1788,7 @@
           "378e5073a70f666029f4"
         ],
         "first_seen": "2026-09-11T08:20:46Z",
-        "last_seen": "2026-09-13T20:43:33Z",
+        "last_seen": "2026-09-13T21:17:32Z",
         "material_time": "2026-09-13T07:15:03Z",
         "domains": [
           "INFRA",
@@ -2045,7 +2354,7 @@
           "corroboration": 25,
           "contradiction": 0,
           "specificity": 73,
-          "recency": 75,
+          "recency": 74,
           "evidence_type": 86,
           "historical_reliability": 95,
           "claim_maturity": 51
@@ -3209,7 +3518,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-a1f314e6b181ad9c"
+          "anomaly-3b63f52f35812501"
         ],
         "threat_score": 15,
         "watch_priority": 40,
@@ -4479,591 +4788,13 @@
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-09T14:50:49Z"
         }
-      },
-      {
-        "id": "claim-d21acc7559de44b03e",
-        "headline": "'Immoral and self-destructive' — Zelensky blasts EU for considering lifting sanctions on Russian oligarchs",
-        "signature_tokens": [
-          "blasts",
-          "considering",
-          "immoral",
-          "lifting",
-          "oligarchs",
-          "russian",
-          "sanctions",
-          "self-destructive",
-          "zelensky"
-        ],
-        "observation_ids": [
-          "85ddc6876c9671d93a82",
-          "5c1073016cb8492e5c94"
-        ],
-        "first_seen": "2026-09-13T20:18:17Z",
-        "last_seen": "2026-09-13T20:43:33Z",
-        "material_time": "2026-09-12T21:08:16Z",
-        "domains": [
-          "ECONOMIC",
-          "INFRA"
-        ],
-        "regions": [
-          "EUROPE",
-          "RUSSIA"
-        ],
-        "actors": [
-          "RUSSIA"
-        ],
-        "state": "CREDIBLE REPORT",
-        "confidence": 62,
-        "confidence_direction": "STABLE",
-        "confidence_components": {
-          "source_quality": 56,
-          "independence": 52,
-          "corroboration": 52,
-          "contradiction": 0,
-          "specificity": 78,
-          "recency": 90,
-          "evidence_type": 67,
-          "historical_reliability": 56,
-          "claim_maturity": 48
-        },
-        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "supporting_observation_ids": [
-          "85ddc6876c9671d93a82",
-          "5c1073016cb8492e5c94"
-        ],
-        "contradictory_observation_ids": [],
-        "source_count": 2,
-        "independent_provenance_count": 2,
-        "sources": [
-          "Kyiv Independent",
-          "Reddit WorldNews Signal"
-        ],
-        "provenance_roots": [
-          "kyiv_independent",
-          "reddit_worldnews"
-        ],
-        "evidence": [
-          {
-            "observation_id": "5c1073016cb8492e5c94",
-            "title": "'Immoral and self-destructive' — Zelensky blasts EU for considering lifting sanctions on Russian oligarchs",
-            "source": "Reddit WorldNews Signal",
-            "source_class": "low_confidence",
-            "provenance_root": "reddit_worldnews",
-            "stance": "speculation",
-            "published": "2026-09-12T21:08:16Z",
-            "url": "https://www.reddit.com/r/worldnews/comments/1weobao/immoral_and_selfdestructive_zelensky_blasts_eu",
-            "discovery_only": false
-          },
-          {
-            "observation_id": "85ddc6876c9671d93a82",
-            "title": "'Immoral and self-destructive' — Zelensky blasts EU for considering lifting sanctions on Russian oligarchs",
-            "source": "Kyiv Independent",
-            "source_class": "regional_local",
-            "provenance_root": "kyiv_independent",
-            "stance": "speculation",
-            "published": "2026-09-12T20:37:03Z",
-            "url": "https://kyivindependent.com/immoral-and-self-destructive-zelensky-blasts-eus-failure-to-renew-sanctions-on-russian-oligarchs",
-            "discovery_only": false
-          }
-        ],
-        "state_affiliated_reporting": false,
-        "discovery_only": false,
-        "branch_analysis": {
-          "current_observation": "'Immoral and self-destructive' — Zelensky blasts EU for considering lifting sanctions on Russian oligarchs",
-          "plausible_explanations": [
-            "A genuine ECONOMIC/INFRA development involving RUSSIA is unfolding as reported.",
-            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-          ],
-          "escalation_branch": "Related ECONOMIC/INFRA indicators spread, become operational, or draw additional actors into the event.",
-          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-          "confirm_indicators": [
-            "A primary record, sensor observation, or on-record official confirmation.",
-            "Matching detail from a genuinely independent provenance root.",
-            "Observable follow-on action consistent with the reported event."
-          ],
-          "falsify_indicators": [
-            "Time-stamped primary evidence incompatible with the claim.",
-            "Independent, technically specific refutation from credible sources.",
-            "Predicted follow-on indicators fail to occur inside the stated window."
-          ],
-          "contradictory_evidence_present": false
-        },
-        "historical_matches": [
-          {
-            "claim_id": "claim-cf7625f8b461238993",
-            "headline": "Shahed-Type Drones Filmed During Mali Village Attacks",
-            "material_time": "2026-07-24T15:39:05Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ]
-          }
-        ],
-        "cross_domain_links": [
-          {
-            "claim_id": "claim-fc183859b5a5e7d04b",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-634bf2a8b822a8fca7",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-5da507c02c1362e90f",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-6e7c34d2aedb03c9ec",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-d4acff36f43d0dde16",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-e0602a6ad661d05fd3",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-b77c0bf8bbe71827cc",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-9c4f6d41fa080bb5f0",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-e2a9429eceba7174e0",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-c701bfbc9b97e818b1",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-82ed4c9b23838227c0",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "BIO",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-4f3decaf4ee5fe40a0",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          }
-        ],
-        "anomaly_ids": [
-          "anomaly-a1f314e6b181ad9c"
-        ],
-        "threat_score": 15,
-        "watch_priority": 38,
-        "audit": {
-          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 2,
-          "contradiction_count": 0,
-          "independent_roots": 2,
-          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-12T21:08:16Z"
-        }
       }
     ]
   },
   "early_warning_pressure": {
     "score": 100,
-    "claim_count": 31,
+    "claim_count": 30,
     "top_claims": [
-      {
-        "id": "claim-cf04e9a4fef1c2d3ec",
-        "headline": "Ukrainian Flamingo missiles strike chemical plant in Russia's Volgograd, Fire Point says",
-        "signature_tokens": [
-          "chemical",
-          "fire",
-          "flamingo",
-          "missiles",
-          "plant",
-          "point",
-          "russia",
-          "strike",
-          "ukrainian",
-          "volgograd"
-        ],
-        "observation_ids": [
-          "84a0be10993fa8162cf6",
-          "a552f68b25a76bd6a5a9"
-        ],
-        "first_seen": "2026-09-11T11:18:39Z",
-        "last_seen": "2026-09-12T15:42:52Z",
-        "material_time": "2026-09-11T18:06:11Z",
-        "domains": [
-          "ECONOMIC",
-          "INFRA",
-          "WAR"
-        ],
-        "regions": [
-          "RUSSIA",
-          "UKRAINE"
-        ],
-        "actors": [
-          "RUSSIA",
-          "UKRAINE"
-        ],
-        "state": "SPECULATIVE",
-        "confidence": 60,
-        "confidence_direction": "STABLE",
-        "confidence_components": {
-          "source_quality": 79,
-          "independence": 25,
-          "corroboration": 25,
-          "contradiction": 0,
-          "specificity": 78,
-          "recency": 82,
-          "evidence_type": 67,
-          "historical_reliability": 79,
-          "claim_maturity": 49
-        },
-        "classification_reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
-        "supporting_observation_ids": [
-          "84a0be10993fa8162cf6",
-          "a552f68b25a76bd6a5a9"
-        ],
-        "contradictory_observation_ids": [],
-        "source_count": 1,
-        "independent_provenance_count": 1,
-        "sources": [
-          "Kyiv Independent"
-        ],
-        "provenance_roots": [
-          "kyiv_independent"
-        ],
-        "evidence": [
-          {
-            "observation_id": "a552f68b25a76bd6a5a9",
-            "title": "Ukraine war latest: Russia targets Kyiv gas stations for second day",
-            "source": "Kyiv Independent",
-            "source_class": "regional_local",
-            "provenance_root": "kyiv_independent",
-            "stance": "speculation",
-            "published": "2026-09-11T18:06:11Z",
-            "url": "https://kyivindependent.com/ukraine-war-latest-russia-targets-kyiv-gas-stations-for-second-day",
-            "discovery_only": false
-          },
-          {
-            "observation_id": "84a0be10993fa8162cf6",
-            "title": "Ukrainian Flamingo missiles strike chemical plant in Russia's Volgograd, Fire Point says",
-            "source": "Kyiv Independent",
-            "source_class": "regional_local",
-            "provenance_root": "kyiv_independent",
-            "stance": "report",
-            "published": "2026-09-11T11:00:33Z",
-            "url": "https://kyivindependent.com/ukrainian-flamingo-missiles-strike-chemical-plant-in-russias-volgograd-fire-point-says",
-            "discovery_only": false
-          }
-        ],
-        "state_affiliated_reporting": false,
-        "discovery_only": false,
-        "branch_analysis": {
-          "current_observation": "Ukrainian Flamingo missiles strike chemical plant in Russia's Volgograd, Fire Point says",
-          "plausible_explanations": [
-            "A genuine ECONOMIC/INFRA/WAR development involving RUSSIA, UKRAINE is unfolding as reported.",
-            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-          ],
-          "escalation_branch": "Related ECONOMIC/INFRA/WAR indicators spread, become operational, or draw additional actors into the event.",
-          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-          "confirm_indicators": [
-            "A primary record, sensor observation, or on-record official confirmation.",
-            "Matching detail from a genuinely independent provenance root.",
-            "Observable follow-on action consistent with the reported event."
-          ],
-          "falsify_indicators": [
-            "Time-stamped primary evidence incompatible with the claim.",
-            "Independent, technically specific refutation from credible sources.",
-            "Predicted follow-on indicators fail to occur inside the stated window."
-          ],
-          "contradictory_evidence_present": false
-        },
-        "historical_matches": [],
-        "cross_domain_links": [
-          {
-            "claim_id": "claim-0c022699e2311e72e3",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-873f871656fe6bad54",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "INFRA",
-              "SECURITY",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-fdad203b3ac1516a92",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-8fcbbd23d5e43e57da",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-7a719204e6b80e41f1",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "CYBER",
-              "ECONOMIC",
-              "INFRA",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-1787337597e4765201",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-ba6748b523b2b991f9",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-037e933640785f82cc",
-            "shared_actors": [
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "UKRAINE"
-            ],
-            "domains": [
-              "INFRA",
-              "NUCLEAR",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-61b7ecd42b8e0dd001",
-            "shared_actors": [
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "UKRAINE"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-1bfaea0ab709cccb81",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-173066baeecd50f810",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-9a85b3b72dff0a983d",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "WAR"
-            ]
-          }
-        ],
-        "anomaly_ids": [
-          "anomaly-a1f314e6b181ad9c",
-          "anomaly-2ec475fadf0d296a"
-        ],
-        "threat_score": 4,
-        "watch_priority": 65,
-        "audit": {
-          "reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
-          "support_count": 2,
-          "contradiction_count": 0,
-          "independent_roots": 1,
-          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-11T18:06:11Z"
-        }
-      },
       {
         "id": "claim-cdf8227203b69f6fc8",
         "headline": "Cisco FMC flaws exploited by ransomware gang, state-sponsored hackers",
@@ -5093,7 +4824,7 @@
         ],
         "actors": [],
         "state": "EARLY WARNING",
-        "confidence": 56,
+        "confidence": 55,
         "confidence_direction": "STABLE",
         "confidence_components": {
           "source_quality": 84,
@@ -5185,7 +4916,7 @@
         "cross_domain_links": [],
         "anomaly_ids": [],
         "threat_score": 8,
-        "watch_priority": 47,
+        "watch_priority": 46,
         "audit": {
           "reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
           "support_count": 3,
@@ -5366,6 +5097,22 @@
             ]
           },
           {
+            "claim_id": "claim-cf04e9a4fef1c2d3ec",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-173066baeecd50f810",
             "shared_actors": [
               "RUSSIA"
@@ -5443,26 +5190,11 @@
               "INFRA",
               "WAR"
             ]
-          },
-          {
-            "claim_id": "claim-aeea6c84fe48c3c03d",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-a1f314e6b181ad9c",
-          "anomaly-2ec475fadf0d296a"
+          "anomaly-3b63f52f35812501",
+          "anomaly-5bff00f82e2b4a3d"
         ],
         "threat_score": 2,
         "watch_priority": 58,
@@ -5599,6 +5331,20 @@
             ]
           },
           {
+            "claim_id": "claim-cf04e9a4fef1c2d3ec",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-173066baeecd50f810",
             "shared_actors": [
               "RUSSIA"
@@ -5711,22 +5457,10 @@
               "INFRA",
               "WAR"
             ]
-          },
-          {
-            "claim_id": "claim-d8a38ed762e2e27e4f",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-a1f314e6b181ad9c"
+          "anomaly-3b63f52f35812501"
         ],
         "threat_score": 4,
         "watch_priority": 50,
@@ -5788,7 +5522,7 @@
           "corroboration": 25,
           "contradiction": 0,
           "specificity": 74,
-          "recency": 99,
+          "recency": 98,
           "evidence_type": 40,
           "historical_reliability": 50,
           "claim_maturity": 47
@@ -6360,6 +6094,22 @@
         "historical_matches": [],
         "cross_domain_links": [
           {
+            "claim_id": "claim-cf04e9a4fef1c2d3ec",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-173066baeecd50f810",
             "shared_actors": [
               "RUSSIA"
@@ -6508,27 +6258,11 @@
             "domains": [
               "WAR"
             ]
-          },
-          {
-            "claim_id": "claim-fd234aa37a6d3d8edc",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "INFRA",
-              "TERRORISM",
-              "WAR"
-            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-a1f314e6b181ad9c",
-          "anomaly-2ec475fadf0d296a"
+          "anomaly-3b63f52f35812501",
+          "anomaly-5bff00f82e2b4a3d"
         ],
         "threat_score": 3,
         "watch_priority": 55,
@@ -6799,7 +6533,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-a1f314e6b181ad9c"
+          "anomaly-3b63f52f35812501"
         ],
         "threat_score": 5,
         "watch_priority": 45,
@@ -7147,17 +6881,6 @@
             ]
           },
           {
-            "claim_id": "claim-1e02ec326e703a0d76",
-            "shared_actors": [],
-            "shared_regions": [
-              "MIDDLE EAST"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-d46015a2e382b4902d",
             "shared_actors": [],
             "shared_regions": [
@@ -7166,6 +6889,22 @@
             "domains": [
               "TERRORISM",
               "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-fa68bf6ebbead9da62",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN",
+              "ISRAEL/PALESTINE",
+              "MIDDLE EAST"
+            ],
+            "domains": [
+              "CLIMATE",
+              "INFRA",
+              "POLITICAL"
             ]
           }
         ],
@@ -7216,7 +6955,7 @@
           "93651c668b30d07b0a35"
         ],
         "first_seen": "2026-09-09T19:17:24Z",
-        "last_seen": "2026-09-13T20:43:33Z",
+        "last_seen": "2026-09-13T21:17:32Z",
         "material_time": "2026-09-12T07:58:22Z",
         "domains": [
           "INFRA",
@@ -7775,7 +7514,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 78,
-          "recency": 85,
+          "recency": 84,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 38
@@ -8074,8 +7813,8 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-a1f314e6b181ad9c",
-          "anomaly-2ec475fadf0d296a",
+          "anomaly-3b63f52f35812501",
+          "anomaly-5bff00f82e2b4a3d",
           "anomaly-bf959ba2d2a58035"
         ],
         "threat_score": 2,
@@ -8220,6 +7959,109 @@
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-12T01:37:17Z"
         }
+      },
+      {
+        "id": "claim-b81845c42fef3d5ef6",
+        "headline": "Time to check entire Belarusian army, including mobilization — Lukashenko",
+        "signature_tokens": [
+          "army",
+          "belarusian",
+          "check",
+          "entire",
+          "including",
+          "lukashenko",
+          "mobilization",
+          "time"
+        ],
+        "observation_ids": [
+          "512224d4189df39f9562"
+        ],
+        "first_seen": "2026-09-11T11:18:39Z",
+        "last_seen": "2026-09-12T11:16:44Z",
+        "material_time": "2026-09-11T11:13:50Z",
+        "domains": [
+          "WAR"
+        ],
+        "regions": [
+          "GLOBAL"
+        ],
+        "actors": [],
+        "state": "EARLY WARNING",
+        "confidence": 42,
+        "confidence_direction": "STABLE",
+        "confidence_components": {
+          "source_quality": 50,
+          "independence": 25,
+          "corroboration": 22,
+          "contradiction": 0,
+          "specificity": 35,
+          "recency": 79,
+          "evidence_type": 40,
+          "historical_reliability": 50,
+          "claim_maturity": 39
+        },
+        "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
+        "supporting_observation_ids": [
+          "512224d4189df39f9562"
+        ],
+        "contradictory_observation_ids": [],
+        "source_count": 1,
+        "independent_provenance_count": 1,
+        "sources": [
+          "TASS World"
+        ],
+        "provenance_roots": [
+          "tass"
+        ],
+        "evidence": [
+          {
+            "observation_id": "512224d4189df39f9562",
+            "title": "Time to check entire Belarusian army, including mobilization — Lukashenko",
+            "source": "TASS World",
+            "source_class": "state_media",
+            "provenance_root": "tass",
+            "stance": "warning",
+            "published": "2026-09-11T11:13:50Z",
+            "url": "https://tass.com/world/2186109",
+            "discovery_only": false
+          }
+        ],
+        "state_affiliated_reporting": true,
+        "discovery_only": false,
+        "branch_analysis": {
+          "current_observation": "Time to check entire Belarusian army, including mobilization — Lukashenko",
+          "plausible_explanations": [
+            "A genuine WAR development involving the reported actors is unfolding as reported.",
+            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+          ],
+          "escalation_branch": "Related WAR indicators spread, become operational, or draw additional actors into the event.",
+          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+          "confirm_indicators": [
+            "A primary record, sensor observation, or on-record official confirmation.",
+            "Matching detail from a genuinely independent provenance root.",
+            "Observable follow-on action consistent with the reported event."
+          ],
+          "falsify_indicators": [
+            "Time-stamped primary evidence incompatible with the claim.",
+            "Independent, technically specific refutation from credible sources.",
+            "Predicted follow-on indicators fail to occur inside the stated window."
+          ],
+          "contradictory_evidence_present": false
+        },
+        "historical_matches": [],
+        "cross_domain_links": [],
+        "anomaly_ids": [],
+        "threat_score": 4,
+        "watch_priority": 36,
+        "audit": {
+          "reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
+          "support_count": 1,
+          "contradiction_count": 0,
+          "independent_roots": 1,
+          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+          "material_time_used_for_decay": "2026-09-11T11:13:50Z"
+        }
       }
     ]
   },
@@ -8328,7 +8170,7 @@
         "corroboration": 100,
         "contradiction": 0,
         "specificity": 72,
-        "recency": 90,
+        "recency": 89,
         "evidence_type": 79,
         "historical_reliability": 86,
         "claim_maturity": 100
@@ -9287,7 +9129,7 @@
         "corroboration": 100,
         "contradiction": 0,
         "specificity": 71,
-        "recency": 67,
+        "recency": 66,
         "evidence_type": 79,
         "historical_reliability": 87,
         "claim_maturity": 100
@@ -9661,6 +9503,315 @@
       }
     },
     {
+      "id": "claim-cf04e9a4fef1c2d3ec",
+      "headline": "Ukrainian Flamingo missiles strike chemical plant in Russia's Volgograd, Fire Point says",
+      "signature_tokens": [
+        "chemical",
+        "fire",
+        "flamingo",
+        "missiles",
+        "plant",
+        "point",
+        "russia",
+        "strike",
+        "ukrainian",
+        "volgograd"
+      ],
+      "observation_ids": [
+        "84a0be10993fa8162cf6",
+        "a552f68b25a76bd6a5a9",
+        "61eba67e95998c0d88e2"
+      ],
+      "first_seen": "2026-09-11T11:18:39Z",
+      "last_seen": "2026-09-13T21:17:32Z",
+      "material_time": "2026-09-13T20:43:05Z",
+      "domains": [
+        "ECONOMIC",
+        "INFRA",
+        "WAR"
+      ],
+      "regions": [
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "actors": [
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "state": "CREDIBLE REPORT",
+      "confidence": 62,
+      "confidence_direction": "UP",
+      "confidence_components": {
+        "source_quality": 79,
+        "independence": 25,
+        "corroboration": 25,
+        "contradiction": 0,
+        "specificity": 74,
+        "recency": 100,
+        "evidence_type": 67,
+        "historical_reliability": 79,
+        "claim_maturity": 46
+      },
+      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+      "supporting_observation_ids": [
+        "84a0be10993fa8162cf6",
+        "a552f68b25a76bd6a5a9",
+        "61eba67e95998c0d88e2"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 2,
+      "independent_provenance_count": 1,
+      "sources": [
+        "Google News Weak-Signal Discovery",
+        "Kyiv Independent"
+      ],
+      "provenance_roots": [
+        "google_weak_signal",
+        "kyiv_independent"
+      ],
+      "evidence": [
+        {
+          "observation_id": "61eba67e95998c0d88e2",
+          "title": "Ukrainian forces reportedly strike energy infrastructure in occupied Mariupol as fire burns in Russia's Taganrog - The Kyiv Independent",
+          "source": "Google News Weak-Signal Discovery",
+          "source_class": "low_confidence",
+          "provenance_root": "google_weak_signal",
+          "stance": "speculation",
+          "published": "2026-09-13T20:43:05Z",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOaDRmZ2NjQ05VdWRybUdiWWVXRE5mbUd2aTdXSWVrSlhkbTB6elE1YWRiODZYWWx2NzRLdGF6bkw0WEV3LWIweXBTNXZHX3V2RmgzRkt2Ym1vUnljMVQwNEljWmxGdU9taWdSZ0xvb3J1UDlVZ05HZ2tCZTFuVHBKNS1Ia082V0dEZGNicF9iV3BCdF9XakJiRWFVdkFyZjMzY0pDdVFKeFJzbno5V0FZV3VKdm8wUXVIU285aVRMa1l2QU10eFlHSUVfUjM3UTg3M0JMZVMwbw?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "a552f68b25a76bd6a5a9",
+          "title": "Ukraine war latest: Russia targets Kyiv gas stations for second day",
+          "source": "Kyiv Independent",
+          "source_class": "regional_local",
+          "provenance_root": "kyiv_independent",
+          "stance": "speculation",
+          "published": "2026-09-11T18:06:11Z",
+          "url": "https://kyivindependent.com/ukraine-war-latest-russia-targets-kyiv-gas-stations-for-second-day",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "84a0be10993fa8162cf6",
+          "title": "Ukrainian Flamingo missiles strike chemical plant in Russia's Volgograd, Fire Point says",
+          "source": "Kyiv Independent",
+          "source_class": "regional_local",
+          "provenance_root": "kyiv_independent",
+          "stance": "report",
+          "published": "2026-09-11T11:00:33Z",
+          "url": "https://kyivindependent.com/ukrainian-flamingo-missiles-strike-chemical-plant-in-russias-volgograd-fire-point-says",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Ukrainian Flamingo missiles strike chemical plant in Russia's Volgograd, Fire Point says",
+        "plausible_explanations": [
+          "A genuine ECONOMIC/INFRA/WAR development involving RUSSIA, UKRAINE is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related ECONOMIC/INFRA/WAR indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-173066baeecd50f810",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
+        },
+        {
+          "claim_id": "claim-9a85b3b72dff0a983d",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-ca1ae8bfa80f2f057e",
+          "shared_actors": [
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "UKRAINE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-14d960854e93a7512c",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-5adee8bd29380abb5a",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-a59ff04656d2b6a6ea",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-aeea6c84fe48c3c03d",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-84bb7b2d493e2a14f8",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL"
+          ]
+        },
+        {
+          "claim_id": "claim-6fb2e005df47f2c0dc",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-078e43c73495121d6b",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-d8a38ed762e2e27e4f",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-fd234aa37a6d3d8edc",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "TERRORISM",
+            "WAR"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-3b63f52f35812501",
+        "anomaly-5bff00f82e2b4a3d"
+      ],
+      "threat_score": 17,
+      "watch_priority": 54,
+      "audit": {
+        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "support_count": 3,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-13T20:43:05Z"
+      }
+    },
+    {
       "id": "claim-309a220f8087c51afb",
       "headline": "Attack that closed key Saudi pipeline blamed on Iran-backed militias in Iraq - 1News",
       "signature_tokens": [
@@ -9720,7 +9871,7 @@
         "378e5073a70f666029f4"
       ],
       "first_seen": "2026-09-11T08:20:46Z",
-      "last_seen": "2026-09-13T20:43:33Z",
+      "last_seen": "2026-09-13T21:17:32Z",
       "material_time": "2026-09-13T07:15:03Z",
       "domains": [
         "INFRA",
@@ -10286,7 +10437,7 @@
         "corroboration": 25,
         "contradiction": 0,
         "specificity": 73,
-        "recency": 75,
+        "recency": 74,
         "evidence_type": 86,
         "historical_reliability": 95,
         "claim_maturity": 51
@@ -11450,7 +11601,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-a1f314e6b181ad9c"
+        "anomaly-3b63f52f35812501"
       ],
       "threat_score": 15,
       "watch_priority": 40,
@@ -12740,7 +12891,7 @@
         "5c1073016cb8492e5c94"
       ],
       "first_seen": "2026-09-13T20:18:17Z",
-      "last_seen": "2026-09-13T20:43:33Z",
+      "last_seen": "2026-09-13T21:17:32Z",
       "material_time": "2026-09-12T21:08:16Z",
       "domains": [
         "ECONOMIC",
@@ -12986,7 +13137,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-a1f314e6b181ad9c"
+        "anomaly-3b63f52f35812501"
       ],
       "threat_score": 15,
       "watch_priority": 38,
@@ -13024,7 +13175,7 @@
         "a02f3b0447b22b80197c"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-13T20:43:33Z",
+      "last_seen": "2026-09-13T21:17:32Z",
       "material_time": "2026-09-12T07:43:00Z",
       "domains": [
         "ECONOMIC",
@@ -13050,7 +13201,7 @@
         "recency": 86,
         "evidence_type": 79,
         "historical_reliability": 87,
-        "claim_maturity": 48
+        "claim_maturity": 49
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
@@ -13478,7 +13629,7 @@
         "e9eb30578be050598405"
       ],
       "first_seen": "2026-09-10T14:18:49Z",
-      "last_seen": "2026-09-13T20:43:33Z",
+      "last_seen": "2026-09-13T21:17:32Z",
       "material_time": "2026-09-10T14:00:53Z",
       "domains": [
         "ECONOMIC",
@@ -13499,7 +13650,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 51,
-        "recency": 74,
+        "recency": 73,
         "evidence_type": 86,
         "historical_reliability": 95,
         "claim_maturity": 40
@@ -13717,263 +13868,6 @@
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-10T14:00:53Z"
-      }
-    },
-    {
-      "id": "claim-7619adc249380decf6",
-      "headline": "Australia considers new Israel sanctions but won’t join UK in banning trade with ‘settler terrorists’",
-      "signature_tokens": [
-        "australia",
-        "banning",
-        "but",
-        "considers",
-        "israel",
-        "join",
-        "sanctions",
-        "settler",
-        "terrorists",
-        "trade",
-        "won"
-      ],
-      "observation_ids": [
-        "18b3324f20ceaae66edb"
-      ],
-      "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-09T17:23:40Z",
-      "material_time": "2026-09-09T01:38:02Z",
-      "domains": [
-        "ECONOMIC",
-        "TERRORISM"
-      ],
-      "regions": [
-        "EUROPE",
-        "ISRAEL/PALESTINE"
-      ],
-      "actors": [
-        "ISRAEL"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 61,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 84,
-        "independence": 25,
-        "corroboration": 22,
-        "contradiction": 0,
-        "specificity": 79,
-        "recency": 66,
-        "evidence_type": 79,
-        "historical_reliability": 84,
-        "claim_maturity": 43
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "18b3324f20ceaae66edb"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 1,
-      "independent_provenance_count": 1,
-      "sources": [
-        "The Guardian World"
-      ],
-      "provenance_roots": [
-        "guardian_world"
-      ],
-      "evidence": [
-        {
-          "observation_id": "18b3324f20ceaae66edb",
-          "title": "Australia considers new Israel sanctions but won’t join UK in banning trade with ‘settler terrorists’",
-          "source": "The Guardian World",
-          "source_class": "established_media",
-          "provenance_root": "guardian_world",
-          "stance": "warning",
-          "published": "2026-09-09T01:38:02Z",
-          "url": "https://www.theguardian.com/australia-news/2026/sep/09/australia-considers-new-israel-sanctions-but-wont-join-uk-in-banning-trade-with-settler-terrorists-ntwnfb",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Australia considers new Israel sanctions but won’t join UK in banning trade with ‘settler terrorists’",
-        "plausible_explanations": [
-          "A genuine ECONOMIC/TERRORISM development involving ISRAEL is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related ECONOMIC/TERRORISM indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [
-        {
-          "claim_id": "claim-1453116f3488b77a21",
-          "headline": "Turkey-Based Global Director of Sham Charity Arrested and Charged with Conspiring to Provide Material Support to Hamas",
-          "material_time": "2026-07-31T12:00:00Z",
-          "shared_domains": [
-            "TERRORISM"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ]
-        }
-      ],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-889e5cc0e2fa57ea01",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-9f4347ae2cb5ea093c",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-5b6fb3868e483b7ba9",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-0f4589593301bff13b",
-          "shared_actors": [],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "INFRA",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-a139ef3b960611fe35",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-728db647bbc396cc9e",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-42788e55dbcd5590c2",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-fb96ef09c63b34eab9",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-9d88efc2dd6559246b",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-ab7eee4fb07ccc7e9c",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-cc495f115b2531c930",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-26d68642f2a9bf5913",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "INFRA",
-            "TERRORISM"
-          ]
-        }
-      ],
-      "anomaly_ids": [],
-      "threat_score": 14,
-      "watch_priority": 29,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 1,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-09T01:38:02Z"
       }
     }
   ]
