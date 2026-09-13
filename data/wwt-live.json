@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-13T20:18:17Z",
+  "generated_at": "2026-09-13T20:23:04Z",
   "rules_version": "3.0-layered-early-warning",
-  "score": 41,
+  "score": 39,
   "verified_pressure": {
-    "score": 41,
+    "score": 39,
     "claim_count": 49,
     "top_claims": [
       {
@@ -1474,10 +1474,11 @@
           "f3c7d898a9b74350fdca",
           "1504639d43ec8baf1ca4",
           "fd7dc0229b9517c155a1",
-          "2db26ff2d023b4126dbf"
+          "2db26ff2d023b4126dbf",
+          "28f7fd854354575baf3e"
         ],
         "first_seen": "2026-09-11T08:20:46Z",
-        "last_seen": "2026-09-13T20:18:17Z",
+        "last_seen": "2026-09-13T20:23:04Z",
         "material_time": "2026-09-13T07:15:03Z",
         "domains": [
           "INFRA",
@@ -1492,7 +1493,7 @@
         "actors": [
           "IRAN"
         ],
-        "state": "CONFIRMED",
+        "state": "CREDIBLE REPORT",
         "confidence": 90,
         "confidence_direction": "STABLE",
         "confidence_components": {
@@ -1503,10 +1504,10 @@
           "specificity": 65,
           "recency": 96,
           "evidence_type": 79,
-          "historical_reliability": 85,
+          "historical_reliability": 84,
           "claim_maturity": 100
         },
-        "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
+        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
         "supporting_observation_ids": [
           "0d4d976597d4f3104353",
           "8a0a66fa2218e107613e",
@@ -1547,14 +1548,16 @@
           "f3c7d898a9b74350fdca",
           "1504639d43ec8baf1ca4",
           "fd7dc0229b9517c155a1",
-          "2db26ff2d023b4126dbf"
+          "2db26ff2d023b4126dbf",
+          "28f7fd854354575baf3e"
         ],
         "contradictory_observation_ids": [],
-        "source_count": 25,
-        "independent_provenance_count": 6,
+        "source_count": 26,
+        "independent_provenance_count": 7,
         "sources": [
           "4029tv.com",
           "ABC Australia World",
+          "ABC News International",
           "Al Jazeera",
           "Al Jazeera English",
           "Associated Press Top News",
@@ -1583,6 +1586,7 @@
           "4029tv.com",
           "abc7.com",
           "abc_australia",
+          "abc_intl",
           "aljazeera",
           "aljazeera.com",
           "bbc_world",
@@ -1627,6 +1631,17 @@
             "stance": "report",
             "published": "2026-09-12T18:53:31Z",
             "url": "https://www.aljazeera.com/news/2026/9/12/iraq-probes-drone-strikes-on-saudi-arabia-shuts-three-crossings-to-iran?traffic_source=rss",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "28f7fd854354575baf3e",
+            "title": "Attack that closed key Saudi pipeline is blamed on Iran-backed militias in Iraq",
+            "source": "ABC News International",
+            "source_class": "established_media",
+            "provenance_root": "abc_intl",
+            "stance": "allegation",
+            "published": "2026-09-12T17:22:21Z",
+            "url": "https://abcnews.com/International/wireStory/iraq-races-fallout-after-local-iran-backed-militias-136385727",
             "discovery_only": false
           },
           {
@@ -1770,17 +1785,6 @@
             "stance": "report",
             "published": "2026-09-12T16:00:00Z",
             "url": "https://www.mynbc5.com/article/iraq-iran-militias-attack-key-saudi-pipeline-oil/73698794",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "bdbaaf7438997d2a3723",
-            "title": "Attack on Saudi pipeline blamed on Iran - backed militias in Iraq",
-            "source": "wmur.com",
-            "source_class": "low_confidence",
-            "provenance_root": "wmur.com",
-            "stance": "report",
-            "published": "2026-09-12T16:00:00Z",
-            "url": "https://www.wmur.com/article/iraq-iran-militias-attack-key-saudi-pipeline-oil/73698794",
             "discovery_only": true
           }
         ],
@@ -1985,13 +1989,13 @@
         "anomaly_ids": [
           "anomaly-919455ee12af9552"
         ],
-        "threat_score": 30,
+        "threat_score": 21,
         "watch_priority": 47,
         "audit": {
-          "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-          "support_count": 40,
+          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+          "support_count": 41,
           "contradiction_count": 0,
-          "independent_roots": 6,
+          "independent_roots": 7,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-13T07:15:03Z"
         }
@@ -4493,7 +4497,7 @@
           "5c1073016cb8492e5c94"
         ],
         "first_seen": "2026-09-13T20:18:17Z",
-        "last_seen": "2026-09-13T20:18:17Z",
+        "last_seen": "2026-09-13T20:23:04Z",
         "material_time": "2026-09-12T21:08:16Z",
         "domains": [
           "ECONOMIC",
@@ -4508,7 +4512,7 @@
         ],
         "state": "CREDIBLE REPORT",
         "confidence": 62,
-        "confidence_direction": "NEW",
+        "confidence_direction": "STABLE",
         "confidence_components": {
           "source_quality": 56,
           "independence": 52,
@@ -5759,7 +5763,7 @@
           "1568ffeba46c955595bb"
         ],
         "first_seen": "2026-09-10T18:21:06Z",
-        "last_seen": "2026-09-13T20:18:17Z",
+        "last_seen": "2026-09-13T20:23:04Z",
         "material_time": "2026-09-13T12:12:00Z",
         "domains": [
           "HUMANITARIAN",
@@ -7210,7 +7214,7 @@
           "93651c668b30d07b0a35"
         ],
         "first_seen": "2026-09-09T19:17:24Z",
-        "last_seen": "2026-09-13T20:18:17Z",
+        "last_seen": "2026-09-13T20:23:04Z",
         "material_time": "2026-09-12T07:58:22Z",
         "domains": [
           "INFRA",
@@ -7228,7 +7232,7 @@
         ],
         "state": "SPECULATIVE",
         "confidence": 59,
-        "confidence_direction": "DOWN",
+        "confidence_direction": "STABLE",
         "confidence_components": {
           "source_quality": 81,
           "independence": 25,
@@ -8235,7 +8239,7 @@
     "military_mobilization": 5,
     "economic_warfare": 138,
     "crisis_control_failure": 0,
-    "hybrid_preparation": 124
+    "hybrid_preparation": 123
   },
   "formula": "Independent-provenance-capped claim contributions; verified and early-warning pressure remain separate.",
   "safeguard": "Republished stories sharing one provenance root cannot multiply pressure; speculative claims never enter Verified Pressure.",
@@ -9709,10 +9713,11 @@
         "f3c7d898a9b74350fdca",
         "1504639d43ec8baf1ca4",
         "fd7dc0229b9517c155a1",
-        "2db26ff2d023b4126dbf"
+        "2db26ff2d023b4126dbf",
+        "28f7fd854354575baf3e"
       ],
       "first_seen": "2026-09-11T08:20:46Z",
-      "last_seen": "2026-09-13T20:18:17Z",
+      "last_seen": "2026-09-13T20:23:04Z",
       "material_time": "2026-09-13T07:15:03Z",
       "domains": [
         "INFRA",
@@ -9727,7 +9732,7 @@
       "actors": [
         "IRAN"
       ],
-      "state": "CONFIRMED",
+      "state": "CREDIBLE REPORT",
       "confidence": 90,
       "confidence_direction": "STABLE",
       "confidence_components": {
@@ -9738,10 +9743,10 @@
         "specificity": 65,
         "recency": 96,
         "evidence_type": 79,
-        "historical_reliability": 85,
+        "historical_reliability": 84,
         "claim_maturity": 100
       },
-      "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
+      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
         "0d4d976597d4f3104353",
         "8a0a66fa2218e107613e",
@@ -9782,14 +9787,16 @@
         "f3c7d898a9b74350fdca",
         "1504639d43ec8baf1ca4",
         "fd7dc0229b9517c155a1",
-        "2db26ff2d023b4126dbf"
+        "2db26ff2d023b4126dbf",
+        "28f7fd854354575baf3e"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 25,
-      "independent_provenance_count": 6,
+      "source_count": 26,
+      "independent_provenance_count": 7,
       "sources": [
         "4029tv.com",
         "ABC Australia World",
+        "ABC News International",
         "Al Jazeera",
         "Al Jazeera English",
         "Associated Press Top News",
@@ -9818,6 +9825,7 @@
         "4029tv.com",
         "abc7.com",
         "abc_australia",
+        "abc_intl",
         "aljazeera",
         "aljazeera.com",
         "bbc_world",
@@ -9862,6 +9870,17 @@
           "stance": "report",
           "published": "2026-09-12T18:53:31Z",
           "url": "https://www.aljazeera.com/news/2026/9/12/iraq-probes-drone-strikes-on-saudi-arabia-shuts-three-crossings-to-iran?traffic_source=rss",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "28f7fd854354575baf3e",
+          "title": "Attack that closed key Saudi pipeline is blamed on Iran-backed militias in Iraq",
+          "source": "ABC News International",
+          "source_class": "established_media",
+          "provenance_root": "abc_intl",
+          "stance": "allegation",
+          "published": "2026-09-12T17:22:21Z",
+          "url": "https://abcnews.com/International/wireStory/iraq-races-fallout-after-local-iran-backed-militias-136385727",
           "discovery_only": false
         },
         {
@@ -10005,17 +10024,6 @@
           "stance": "report",
           "published": "2026-09-12T16:00:00Z",
           "url": "https://www.mynbc5.com/article/iraq-iran-militias-attack-key-saudi-pipeline-oil/73698794",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "bdbaaf7438997d2a3723",
-          "title": "Attack on Saudi pipeline blamed on Iran - backed militias in Iraq",
-          "source": "wmur.com",
-          "source_class": "low_confidence",
-          "provenance_root": "wmur.com",
-          "stance": "report",
-          "published": "2026-09-12T16:00:00Z",
-          "url": "https://www.wmur.com/article/iraq-iran-militias-attack-key-saudi-pipeline-oil/73698794",
           "discovery_only": true
         }
       ],
@@ -10220,13 +10228,13 @@
       "anomaly_ids": [
         "anomaly-919455ee12af9552"
       ],
-      "threat_score": 30,
+      "threat_score": 21,
       "watch_priority": 47,
       "audit": {
-        "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-        "support_count": 40,
+        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "support_count": 41,
         "contradiction_count": 0,
-        "independent_roots": 6,
+        "independent_roots": 7,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-13T07:15:03Z"
       }
@@ -12728,7 +12736,7 @@
         "5c1073016cb8492e5c94"
       ],
       "first_seen": "2026-09-13T20:18:17Z",
-      "last_seen": "2026-09-13T20:18:17Z",
+      "last_seen": "2026-09-13T20:23:04Z",
       "material_time": "2026-09-12T21:08:16Z",
       "domains": [
         "ECONOMIC",
@@ -12743,7 +12751,7 @@
       ],
       "state": "CREDIBLE REPORT",
       "confidence": 62,
-      "confidence_direction": "NEW",
+      "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 56,
         "independence": 52,
@@ -13012,7 +13020,7 @@
         "a02f3b0447b22b80197c"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-13T20:18:17Z",
+      "last_seen": "2026-09-13T20:23:04Z",
       "material_time": "2026-09-12T07:43:00Z",
       "domains": [
         "ECONOMIC",
@@ -13466,7 +13474,7 @@
         "e9eb30578be050598405"
       ],
       "first_seen": "2026-09-10T14:18:49Z",
-      "last_seen": "2026-09-13T20:18:17Z",
+      "last_seen": "2026-09-13T20:23:04Z",
       "material_time": "2026-09-10T14:00:53Z",
       "domains": [
         "ECONOMIC",
