@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-14T04:20:29Z",
+  "generated_at": "2026-09-14T04:47:32Z",
   "rules_version": "3.0-layered-early-warning",
-  "score": 39,
+  "score": 38,
   "verified_pressure": {
-    "score": 39,
-    "claim_count": 50,
+    "score": 38,
+    "claim_count": 49,
     "top_claims": [
       {
         "id": "claim-8502fc721ea6d8ba11",
@@ -815,22 +815,6 @@
         ],
         "cross_domain_links": [
           {
-            "claim_id": "claim-406d2c9a578f4eaa4b",
-            "shared_actors": [
-              "ISRAEL",
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "ISRAEL/PALESTINE",
-              "UNITED STATES"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA",
-              "TERRORISM"
-            ]
-          },
-          {
             "claim_id": "claim-173066baeecd50f810",
             "shared_actors": [
               "UNITED STATES"
@@ -987,6 +971,19 @@
             "domains": [
               "CYBER"
             ]
+          },
+          {
+            "claim_id": "claim-afe09eb1decd3133e8",
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ],
+            "domains": [
+              "SPACE",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [],
@@ -999,427 +996,6 @@
           "independent_roots": 1,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-09T05:46:18Z"
-        }
-      },
-      {
-        "id": "claim-406d2c9a578f4eaa4b",
-        "headline": "UK, France, Canada to ban imports from Israeli settlements - IOL",
-        "signature_tokens": [
-          "ban",
-          "canada",
-          "france",
-          "imports",
-          "iol",
-          "israeli",
-          "settlements"
-        ],
-        "observation_ids": [
-          "e21f0b4dea9ca73699d9",
-          "8d62281815a4112431a6",
-          "805cc70b53fa15e54b54",
-          "458cee9caf64423efaf9",
-          "3c7172fd8365a2dec75a",
-          "cb554e9afc6be87e9f31",
-          "0aed901b36cfa5fba34b"
-        ],
-        "first_seen": "2026-09-09T16:18:05Z",
-        "last_seen": "2026-09-10T17:18:10Z",
-        "material_time": "2026-09-09T04:27:18Z",
-        "domains": [
-          "ECONOMIC",
-          "INFRA",
-          "TERRORISM"
-        ],
-        "regions": [
-          "EUROPE",
-          "ISRAEL/PALESTINE",
-          "UNITED STATES"
-        ],
-        "actors": [
-          "ISRAEL",
-          "UNITED STATES"
-        ],
-        "state": "CREDIBLE REPORT",
-        "confidence": 87,
-        "confidence_direction": "STABLE",
-        "confidence_components": {
-          "source_quality": 90,
-          "independence": 100,
-          "corroboration": 100,
-          "contradiction": 0,
-          "specificity": 71,
-          "recency": 65,
-          "evidence_type": 79,
-          "historical_reliability": 87,
-          "claim_maturity": 100
-        },
-        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "supporting_observation_ids": [
-          "e21f0b4dea9ca73699d9",
-          "8d62281815a4112431a6",
-          "805cc70b53fa15e54b54",
-          "458cee9caf64423efaf9",
-          "3c7172fd8365a2dec75a",
-          "cb554e9afc6be87e9f31",
-          "0aed901b36cfa5fba34b"
-        ],
-        "contradictory_observation_ids": [],
-        "source_count": 6,
-        "independent_provenance_count": 6,
-        "sources": [
-          "Agence France-Presse",
-          "BBC UK",
-          "BBC World",
-          "CBS News World",
-          "Euronews",
-          "Washington Post World"
-        ],
-        "provenance_roots": [
-          "bbc_uk",
-          "bbc_world",
-          "cbs_world",
-          "euronews",
-          "washington_post_world",
-          "wire:afp_world"
-        ],
-        "evidence": [
-          {
-            "observation_id": "0aed901b36cfa5fba34b",
-            "title": "The Papers: 'Israel reacts with fury' and 'air traffic collapse'",
-            "source": "BBC UK",
-            "source_class": "established_media",
-            "provenance_root": "bbc_uk",
-            "stance": "report",
-            "published": "2026-09-09T04:27:18Z",
-            "url": "https://www.bbc.co.uk/news/articles/c1j4npw4wpxo?at_medium=RSS&at_campaign=rss",
-            "discovery_only": false
-          },
-          {
-            "observation_id": "3c7172fd8365a2dec75a",
-            "title": "British-Israeli relations at lowest ebb in decades",
-            "source": "BBC World",
-            "source_class": "established_media",
-            "provenance_root": "bbc_world",
-            "stance": "report",
-            "published": "2026-09-08T21:46:31Z",
-            "url": "https://www.bbc.co.uk/news/articles/c5ydlex9yn3o?at_medium=RSS&at_campaign=rss",
-            "discovery_only": false
-          },
-          {
-            "observation_id": "cb554e9afc6be87e9f31",
-            "title": "British-Israeli relations at lowest ebb in decades",
-            "source": "BBC UK",
-            "source_class": "established_media",
-            "provenance_root": "bbc_uk",
-            "stance": "report",
-            "published": "2026-09-08T21:46:31Z",
-            "url": "https://www.bbc.co.uk/news/articles/c5ydlex9yn3o?at_medium=RSS&at_campaign=rss",
-            "discovery_only": false
-          },
-          {
-            "observation_id": "458cee9caf64423efaf9",
-            "title": "UK, France, Canada to ban imports from Israeli settlements - IOL",
-            "source": "Agence France-Presse",
-            "source_class": "wire",
-            "provenance_root": "wire:afp_world",
-            "stance": "report",
-            "published": "2026-09-08T18:29:09Z",
-            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTlhIWGdEVWZ0QmhVWFRPWE13QVJkME5wcjRjblJFU3NVelBOdDNEZnJVcmhFY25VekN6RVdnNjNYX0k1YjRhbXc3Qnk1Wkk4bGdLcVZmZmpvbjcxVWFpS2lmcE9mU0xsSm1oWU14QzdDR1FxMi1tZ0ZJNTZIUzJpUVN2eV9zdk83NmlEc1d3ejN4S2o5YXBET0xxeFViZw?oc=5",
-            "discovery_only": false
-          },
-          {
-            "observation_id": "805cc70b53fa15e54b54",
-            "title": "Citing ‘ethnic cleansing,’ U.K. bars imports from Israeli West Bank settlements",
-            "source": "Washington Post World",
-            "source_class": "established_media",
-            "provenance_root": "washington_post_world",
-            "stance": "warning",
-            "published": "2026-09-08T17:37:55Z",
-            "url": "https://www.washingtonpost.com/world/2026/09/08/uk-bar-imports-west-bank-growing-rift-with-israel",
-            "discovery_only": false
-          },
-          {
-            "observation_id": "8d62281815a4112431a6",
-            "title": "U.S. envoy warns U.K. against new plan to sanction Israeli settlements",
-            "source": "CBS News World",
-            "source_class": "established_media",
-            "provenance_root": "cbs_world",
-            "stance": "report",
-            "published": "2026-09-08T15:18:51Z",
-            "url": "https://www.cbsnews.com/news/israel-uk-sanctions-west-bank-settlements-huckabee-us-repercussions",
-            "discovery_only": false
-          },
-          {
-            "observation_id": "e21f0b4dea9ca73699d9",
-            "title": "11 European nations and Canada announce trade sanctions on Israeli settlements in the West Bank",
-            "source": "Euronews",
-            "source_class": "regional_local",
-            "provenance_root": "euronews",
-            "stance": "allegation",
-            "published": "2026-09-08T15:03:38Z",
-            "url": "http://www.euronews.com/2026/09/08/12-nations-announce-trade-sanctions-on-israeli-settlements-in-the-west-bank",
-            "discovery_only": false
-          }
-        ],
-        "state_affiliated_reporting": false,
-        "discovery_only": false,
-        "branch_analysis": {
-          "current_observation": "UK, France, Canada to ban imports from Israeli settlements - IOL",
-          "plausible_explanations": [
-            "A genuine ECONOMIC/INFRA/TERRORISM development involving ISRAEL, UNITED STATES is unfolding as reported.",
-            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-          ],
-          "escalation_branch": "Related ECONOMIC/INFRA/TERRORISM indicators spread, become operational, or draw additional actors into the event.",
-          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-          "confirm_indicators": [
-            "A primary record, sensor observation, or on-record official confirmation.",
-            "Matching detail from a genuinely independent provenance root.",
-            "Observable follow-on action consistent with the reported event."
-          ],
-          "falsify_indicators": [
-            "Time-stamped primary evidence incompatible with the claim.",
-            "Independent, technically specific refutation from credible sources.",
-            "Predicted follow-on indicators fail to occur inside the stated window."
-          ],
-          "contradictory_evidence_present": false
-        },
-        "historical_matches": [
-          {
-            "claim_id": "claim-ab13de06ed03a68f0a",
-            "headline": "Chinese National Pleads Guilty to Trying to Obtain U.S. Military Equipment",
-            "material_time": "2026-08-10T12:00:00Z",
-            "shared_domains": [
-              "ECONOMIC",
-              "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-c63cb32ed106a31b1e",
-            "headline": "Homeland Security Task Force: Dual Dominican and French National Admits Role in Firearms Trafficking Scheme",
-            "material_time": "2026-08-05T12:00:00Z",
-            "shared_domains": [
-              "ECONOMIC",
-              "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-1453116f3488b77a21",
-            "headline": "Turkey-Based Global Director of Sham Charity Arrested and Charged with Conspiring to Provide Material Support to Hamas",
-            "material_time": "2026-07-31T12:00:00Z",
-            "shared_domains": [
-              "INFRA",
-              "TERRORISM"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "ISRAEL/PALESTINE",
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-a02fb9167c45d388fd",
-            "headline": "Department of Justice Files First Case in U.S. Alien Terrorist Removal Court to Deport Afghan Alien Who Supported Her Family’s Plans for Election-Day Shooting",
-            "material_time": "2026-07-30T12:00:00Z",
-            "shared_domains": [
-              "INFRA",
-              "TERRORISM"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-cf7625f8b461238993",
-            "headline": "Shahed-Type Drones Filmed During Mali Village Attacks",
-            "material_time": "2026-07-24T15:39:05Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ]
-          }
-        ],
-        "cross_domain_links": [
-          {
-            "claim_id": "claim-fd234aa37a6d3d8edc",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "TERRORISM",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-173066baeecd50f810",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-14d960854e93a7512c",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-5adee8bd29380abb5a",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-a59ff04656d2b6a6ea",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-84bb7b2d493e2a14f8",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-d8a38ed762e2e27e4f",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-632f1a5988763dc485",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-2170ff1c024ea8efc8",
-            "shared_actors": [
-              "ISRAEL",
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "ISRAEL/PALESTINE",
-              "UNITED STATES"
-            ],
-            "domains": [
-              "INFRA",
-              "SPACE",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-d10bbcf85de0cb92ad",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "INFRA",
-              "SPACE",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-6692682573a6da2d90",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "SECURITY",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-7527bd13dff5dc001b",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "CYBER"
-            ]
-          }
-        ],
-        "anomaly_ids": [],
-        "threat_score": 21,
-        "watch_priority": 44,
-        "audit": {
-          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 7,
-          "contradiction_count": 0,
-          "independent_roots": 6,
-          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-09T04:27:18Z"
         }
       },
       {
@@ -1443,7 +1019,7 @@
           "61eba67e95998c0d88e2"
         ],
         "first_seen": "2026-09-11T11:18:39Z",
-        "last_seen": "2026-09-14T04:20:29Z",
+        "last_seen": "2026-09-14T04:47:32Z",
         "material_time": "2026-09-13T20:43:05Z",
         "domains": [
           "ECONOMIC",
@@ -1792,7 +1368,7 @@
           "378e5073a70f666029f4"
         ],
         "first_seen": "2026-09-11T08:20:46Z",
-        "last_seen": "2026-09-14T04:20:29Z",
+        "last_seen": "2026-09-14T04:47:32Z",
         "material_time": "2026-09-13T07:15:03Z",
         "domains": [
           "INFRA",
@@ -1816,7 +1392,7 @@
           "corroboration": 100,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 92,
+          "recency": 91,
           "evidence_type": 79,
           "historical_reliability": 85,
           "claim_maturity": 100
@@ -2658,7 +2234,7 @@
           "3beae8ac68a7ebb4bcbe"
         ],
         "first_seen": "2026-09-09T19:17:24Z",
-        "last_seen": "2026-09-14T04:20:29Z",
+        "last_seen": "2026-09-14T04:47:32Z",
         "material_time": "2026-09-13T20:35:29Z",
         "domains": [
           "INFRA",
@@ -5037,6 +4613,285 @@
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-09T14:50:49Z"
         }
+      },
+      {
+        "id": "claim-d21acc7559de44b03e",
+        "headline": "'Immoral and self-destructive' — Zelensky blasts EU for considering lifting sanctions on Russian oligarchs",
+        "signature_tokens": [
+          "blasts",
+          "considering",
+          "immoral",
+          "lifting",
+          "oligarchs",
+          "russian",
+          "sanctions",
+          "self-destructive",
+          "zelensky"
+        ],
+        "observation_ids": [
+          "85ddc6876c9671d93a82",
+          "5c1073016cb8492e5c94"
+        ],
+        "first_seen": "2026-09-13T20:18:17Z",
+        "last_seen": "2026-09-13T21:17:32Z",
+        "material_time": "2026-09-12T21:08:16Z",
+        "domains": [
+          "ECONOMIC",
+          "INFRA"
+        ],
+        "regions": [
+          "EUROPE",
+          "RUSSIA"
+        ],
+        "actors": [
+          "RUSSIA"
+        ],
+        "state": "CREDIBLE REPORT",
+        "confidence": 62,
+        "confidence_direction": "STABLE",
+        "confidence_components": {
+          "source_quality": 56,
+          "independence": 52,
+          "corroboration": 52,
+          "contradiction": 0,
+          "specificity": 78,
+          "recency": 88,
+          "evidence_type": 67,
+          "historical_reliability": 56,
+          "claim_maturity": 48
+        },
+        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "supporting_observation_ids": [
+          "85ddc6876c9671d93a82",
+          "5c1073016cb8492e5c94"
+        ],
+        "contradictory_observation_ids": [],
+        "source_count": 2,
+        "independent_provenance_count": 2,
+        "sources": [
+          "Kyiv Independent",
+          "Reddit WorldNews Signal"
+        ],
+        "provenance_roots": [
+          "kyiv_independent",
+          "reddit_worldnews"
+        ],
+        "evidence": [
+          {
+            "observation_id": "5c1073016cb8492e5c94",
+            "title": "'Immoral and self-destructive' — Zelensky blasts EU for considering lifting sanctions on Russian oligarchs",
+            "source": "Reddit WorldNews Signal",
+            "source_class": "low_confidence",
+            "provenance_root": "reddit_worldnews",
+            "stance": "speculation",
+            "published": "2026-09-12T21:08:16Z",
+            "url": "https://www.reddit.com/r/worldnews/comments/1weobao/immoral_and_selfdestructive_zelensky_blasts_eu",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "85ddc6876c9671d93a82",
+            "title": "'Immoral and self-destructive' — Zelensky blasts EU for considering lifting sanctions on Russian oligarchs",
+            "source": "Kyiv Independent",
+            "source_class": "regional_local",
+            "provenance_root": "kyiv_independent",
+            "stance": "speculation",
+            "published": "2026-09-12T20:37:03Z",
+            "url": "https://kyivindependent.com/immoral-and-self-destructive-zelensky-blasts-eus-failure-to-renew-sanctions-on-russian-oligarchs",
+            "discovery_only": false
+          }
+        ],
+        "state_affiliated_reporting": false,
+        "discovery_only": false,
+        "branch_analysis": {
+          "current_observation": "'Immoral and self-destructive' — Zelensky blasts EU for considering lifting sanctions on Russian oligarchs",
+          "plausible_explanations": [
+            "A genuine ECONOMIC/INFRA development involving RUSSIA is unfolding as reported.",
+            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+          ],
+          "escalation_branch": "Related ECONOMIC/INFRA indicators spread, become operational, or draw additional actors into the event.",
+          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+          "confirm_indicators": [
+            "A primary record, sensor observation, or on-record official confirmation.",
+            "Matching detail from a genuinely independent provenance root.",
+            "Observable follow-on action consistent with the reported event."
+          ],
+          "falsify_indicators": [
+            "Time-stamped primary evidence incompatible with the claim.",
+            "Independent, technically specific refutation from credible sources.",
+            "Predicted follow-on indicators fail to occur inside the stated window."
+          ],
+          "contradictory_evidence_present": false
+        },
+        "historical_matches": [
+          {
+            "claim_id": "claim-cf7625f8b461238993",
+            "headline": "Shahed-Type Drones Filmed During Mali Village Attacks",
+            "material_time": "2026-07-24T15:39:05Z",
+            "shared_domains": [
+              "INFRA"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          }
+        ],
+        "cross_domain_links": [
+          {
+            "claim_id": "claim-fc183859b5a5e7d04b",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-634bf2a8b822a8fca7",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-5da507c02c1362e90f",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-6e7c34d2aedb03c9ec",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-d4acff36f43d0dde16",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-e0602a6ad661d05fd3",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-7e2218567da98f940f",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "CYBER",
+              "ECONOMIC"
+            ]
+          },
+          {
+            "claim_id": "claim-b77c0bf8bbe71827cc",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-9c4f6d41fa080bb5f0",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-e2a9429eceba7174e0",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-c701bfbc9b97e818b1",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-82ed4c9b23838227c0",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "BIO",
+              "SECURITY"
+            ]
+          }
+        ],
+        "anomaly_ids": [
+          "anomaly-3b63f52f35812501"
+        ],
+        "threat_score": 15,
+        "watch_priority": 38,
+        "audit": {
+          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+          "support_count": 2,
+          "contradiction_count": 0,
+          "independent_roots": 2,
+          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+          "material_time_used_for_decay": "2026-09-12T21:08:16Z"
+        }
       }
     ]
   },
@@ -5755,7 +5610,7 @@
           "35418a2dad17152a2e9e"
         ],
         "first_seen": "2026-09-10T18:21:06Z",
-        "last_seen": "2026-09-14T04:20:29Z",
+        "last_seen": "2026-09-14T04:47:32Z",
         "material_time": "2026-09-13T21:03:18Z",
         "domains": [
           "HUMANITARIAN",
@@ -5781,7 +5636,7 @@
           "recency": 99,
           "evidence_type": 40,
           "historical_reliability": 50,
-          "claim_maturity": 46
+          "claim_maturity": 47
         },
         "classification_reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
         "supporting_observation_ids": [
@@ -6597,7 +6452,7 @@
           "8d74bb4c297a9b990e42"
         ],
         "first_seen": "2026-09-11T03:45:41Z",
-        "last_seen": "2026-09-14T04:20:29Z",
+        "last_seen": "2026-09-14T04:47:32Z",
         "material_time": "2026-09-13T21:18:00Z",
         "domains": [
           "INFRA",
@@ -7272,20 +7127,6 @@
             ]
           },
           {
-            "claim_id": "claim-a2b7fa581a67a3f3bc",
-            "shared_actors": [
-              "UKRAINE",
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UKRAINE",
-              "UNITED STATES"
-            ],
-            "domains": [
-              "POLITICAL"
-            ]
-          },
-          {
             "claim_id": "claim-ddb3856e9fd1a3a0d6",
             "shared_actors": [
               "UNITED STATES"
@@ -7297,6 +7138,19 @@
               "INFRA",
               "SECURITY",
               "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-678a2c3ac2fd8a1507",
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ],
+            "domains": [
+              "SECURITY",
+              "TERRORISM"
             ]
           }
         ],
@@ -7939,18 +7793,6 @@
         ],
         "cross_domain_links": [
           {
-            "claim_id": "claim-a2b7fa581a67a3f3bc",
-            "shared_actors": [
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "UKRAINE"
-            ],
-            "domains": [
-              "POLITICAL"
-            ]
-          },
-          {
             "claim_id": "claim-ddb3856e9fd1a3a0d6",
             "shared_actors": [
               "IRAN"
@@ -8100,6 +7942,19 @@
               "INFRA",
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-96ef234b5182b3c586",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "INFRA",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
@@ -8136,7 +7991,7 @@
     "multi_theater_coupling": 1,
     "nuclear_escalation": 9,
     "military_mobilization": 5,
-    "economic_warfare": 141,
+    "economic_warfare": 140,
     "crisis_control_failure": 0,
     "hybrid_preparation": 123
   },
@@ -8953,22 +8808,6 @@
       ],
       "cross_domain_links": [
         {
-          "claim_id": "claim-406d2c9a578f4eaa4b",
-          "shared_actors": [
-            "ISRAEL",
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE",
-            "UNITED STATES"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA",
-            "TERRORISM"
-          ]
-        },
-        {
           "claim_id": "claim-173066baeecd50f810",
           "shared_actors": [
             "UNITED STATES"
@@ -9125,6 +8964,19 @@
           "domains": [
             "CYBER"
           ]
+        },
+        {
+          "claim_id": "claim-afe09eb1decd3133e8",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "SPACE",
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [],
@@ -9137,427 +8989,6 @@
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-09T05:46:18Z"
-      }
-    },
-    {
-      "id": "claim-406d2c9a578f4eaa4b",
-      "headline": "UK, France, Canada to ban imports from Israeli settlements - IOL",
-      "signature_tokens": [
-        "ban",
-        "canada",
-        "france",
-        "imports",
-        "iol",
-        "israeli",
-        "settlements"
-      ],
-      "observation_ids": [
-        "e21f0b4dea9ca73699d9",
-        "8d62281815a4112431a6",
-        "805cc70b53fa15e54b54",
-        "458cee9caf64423efaf9",
-        "3c7172fd8365a2dec75a",
-        "cb554e9afc6be87e9f31",
-        "0aed901b36cfa5fba34b"
-      ],
-      "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-10T17:18:10Z",
-      "material_time": "2026-09-09T04:27:18Z",
-      "domains": [
-        "ECONOMIC",
-        "INFRA",
-        "TERRORISM"
-      ],
-      "regions": [
-        "EUROPE",
-        "ISRAEL/PALESTINE",
-        "UNITED STATES"
-      ],
-      "actors": [
-        "ISRAEL",
-        "UNITED STATES"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 87,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 90,
-        "independence": 100,
-        "corroboration": 100,
-        "contradiction": 0,
-        "specificity": 71,
-        "recency": 65,
-        "evidence_type": 79,
-        "historical_reliability": 87,
-        "claim_maturity": 100
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "e21f0b4dea9ca73699d9",
-        "8d62281815a4112431a6",
-        "805cc70b53fa15e54b54",
-        "458cee9caf64423efaf9",
-        "3c7172fd8365a2dec75a",
-        "cb554e9afc6be87e9f31",
-        "0aed901b36cfa5fba34b"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 6,
-      "independent_provenance_count": 6,
-      "sources": [
-        "Agence France-Presse",
-        "BBC UK",
-        "BBC World",
-        "CBS News World",
-        "Euronews",
-        "Washington Post World"
-      ],
-      "provenance_roots": [
-        "bbc_uk",
-        "bbc_world",
-        "cbs_world",
-        "euronews",
-        "washington_post_world",
-        "wire:afp_world"
-      ],
-      "evidence": [
-        {
-          "observation_id": "0aed901b36cfa5fba34b",
-          "title": "The Papers: 'Israel reacts with fury' and 'air traffic collapse'",
-          "source": "BBC UK",
-          "source_class": "established_media",
-          "provenance_root": "bbc_uk",
-          "stance": "report",
-          "published": "2026-09-09T04:27:18Z",
-          "url": "https://www.bbc.co.uk/news/articles/c1j4npw4wpxo?at_medium=RSS&at_campaign=rss",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "3c7172fd8365a2dec75a",
-          "title": "British-Israeli relations at lowest ebb in decades",
-          "source": "BBC World",
-          "source_class": "established_media",
-          "provenance_root": "bbc_world",
-          "stance": "report",
-          "published": "2026-09-08T21:46:31Z",
-          "url": "https://www.bbc.co.uk/news/articles/c5ydlex9yn3o?at_medium=RSS&at_campaign=rss",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "cb554e9afc6be87e9f31",
-          "title": "British-Israeli relations at lowest ebb in decades",
-          "source": "BBC UK",
-          "source_class": "established_media",
-          "provenance_root": "bbc_uk",
-          "stance": "report",
-          "published": "2026-09-08T21:46:31Z",
-          "url": "https://www.bbc.co.uk/news/articles/c5ydlex9yn3o?at_medium=RSS&at_campaign=rss",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "458cee9caf64423efaf9",
-          "title": "UK, France, Canada to ban imports from Israeli settlements - IOL",
-          "source": "Agence France-Presse",
-          "source_class": "wire",
-          "provenance_root": "wire:afp_world",
-          "stance": "report",
-          "published": "2026-09-08T18:29:09Z",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTlhIWGdEVWZ0QmhVWFRPWE13QVJkME5wcjRjblJFU3NVelBOdDNEZnJVcmhFY25VekN6RVdnNjNYX0k1YjRhbXc3Qnk1Wkk4bGdLcVZmZmpvbjcxVWFpS2lmcE9mU0xsSm1oWU14QzdDR1FxMi1tZ0ZJNTZIUzJpUVN2eV9zdk83NmlEc1d3ejN4S2o5YXBET0xxeFViZw?oc=5",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "805cc70b53fa15e54b54",
-          "title": "Citing ‘ethnic cleansing,’ U.K. bars imports from Israeli West Bank settlements",
-          "source": "Washington Post World",
-          "source_class": "established_media",
-          "provenance_root": "washington_post_world",
-          "stance": "warning",
-          "published": "2026-09-08T17:37:55Z",
-          "url": "https://www.washingtonpost.com/world/2026/09/08/uk-bar-imports-west-bank-growing-rift-with-israel",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "8d62281815a4112431a6",
-          "title": "U.S. envoy warns U.K. against new plan to sanction Israeli settlements",
-          "source": "CBS News World",
-          "source_class": "established_media",
-          "provenance_root": "cbs_world",
-          "stance": "report",
-          "published": "2026-09-08T15:18:51Z",
-          "url": "https://www.cbsnews.com/news/israel-uk-sanctions-west-bank-settlements-huckabee-us-repercussions",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "e21f0b4dea9ca73699d9",
-          "title": "11 European nations and Canada announce trade sanctions on Israeli settlements in the West Bank",
-          "source": "Euronews",
-          "source_class": "regional_local",
-          "provenance_root": "euronews",
-          "stance": "allegation",
-          "published": "2026-09-08T15:03:38Z",
-          "url": "http://www.euronews.com/2026/09/08/12-nations-announce-trade-sanctions-on-israeli-settlements-in-the-west-bank",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "UK, France, Canada to ban imports from Israeli settlements - IOL",
-        "plausible_explanations": [
-          "A genuine ECONOMIC/INFRA/TERRORISM development involving ISRAEL, UNITED STATES is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related ECONOMIC/INFRA/TERRORISM indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [
-        {
-          "claim_id": "claim-ab13de06ed03a68f0a",
-          "headline": "Chinese National Pleads Guilty to Trying to Obtain U.S. Military Equipment",
-          "material_time": "2026-08-10T12:00:00Z",
-          "shared_domains": [
-            "ECONOMIC",
-            "INFRA"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-c63cb32ed106a31b1e",
-          "headline": "Homeland Security Task Force: Dual Dominican and French National Admits Role in Firearms Trafficking Scheme",
-          "material_time": "2026-08-05T12:00:00Z",
-          "shared_domains": [
-            "ECONOMIC",
-            "INFRA"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-1453116f3488b77a21",
-          "headline": "Turkey-Based Global Director of Sham Charity Arrested and Charged with Conspiring to Provide Material Support to Hamas",
-          "material_time": "2026-07-31T12:00:00Z",
-          "shared_domains": [
-            "INFRA",
-            "TERRORISM"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE",
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-a02fb9167c45d388fd",
-          "headline": "Department of Justice Files First Case in U.S. Alien Terrorist Removal Court to Deport Afghan Alien Who Supported Her Family’s Plans for Election-Day Shooting",
-          "material_time": "2026-07-30T12:00:00Z",
-          "shared_domains": [
-            "INFRA",
-            "TERRORISM"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-cf7625f8b461238993",
-          "headline": "Shahed-Type Drones Filmed During Mali Village Attacks",
-          "material_time": "2026-07-24T15:39:05Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ]
-        }
-      ],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-fd234aa37a6d3d8edc",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "TERRORISM",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-173066baeecd50f810",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-14d960854e93a7512c",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-5adee8bd29380abb5a",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-a59ff04656d2b6a6ea",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-84bb7b2d493e2a14f8",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-d8a38ed762e2e27e4f",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-632f1a5988763dc485",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-2170ff1c024ea8efc8",
-          "shared_actors": [
-            "ISRAEL",
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE",
-            "UNITED STATES"
-          ],
-          "domains": [
-            "INFRA",
-            "SPACE",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-d10bbcf85de0cb92ad",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "INFRA",
-            "SPACE",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-6692682573a6da2d90",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-7527bd13dff5dc001b",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "CYBER"
-          ]
-        }
-      ],
-      "anomaly_ids": [],
-      "threat_score": 21,
-      "watch_priority": 44,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 7,
-        "contradiction_count": 0,
-        "independent_roots": 6,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-09T04:27:18Z"
       }
     },
     {
@@ -9581,7 +9012,7 @@
         "61eba67e95998c0d88e2"
       ],
       "first_seen": "2026-09-11T11:18:39Z",
-      "last_seen": "2026-09-14T04:20:29Z",
+      "last_seen": "2026-09-14T04:47:32Z",
       "material_time": "2026-09-13T20:43:05Z",
       "domains": [
         "ECONOMIC",
@@ -9930,7 +9361,7 @@
         "378e5073a70f666029f4"
       ],
       "first_seen": "2026-09-11T08:20:46Z",
-      "last_seen": "2026-09-14T04:20:29Z",
+      "last_seen": "2026-09-14T04:47:32Z",
       "material_time": "2026-09-13T07:15:03Z",
       "domains": [
         "INFRA",
@@ -9954,7 +9385,7 @@
         "corroboration": 100,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 92,
+        "recency": 91,
         "evidence_type": 79,
         "historical_reliability": 85,
         "claim_maturity": 100
@@ -10796,7 +10227,7 @@
         "3beae8ac68a7ebb4bcbe"
       ],
       "first_seen": "2026-09-09T19:17:24Z",
-      "last_seen": "2026-09-14T04:20:29Z",
+      "last_seen": "2026-09-14T04:47:32Z",
       "material_time": "2026-09-13T20:35:29Z",
       "domains": [
         "INFRA",
@@ -13503,7 +12934,7 @@
         "corroboration": 52,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 84,
+        "recency": 83,
         "evidence_type": 79,
         "historical_reliability": 87,
         "claim_maturity": 49
@@ -14240,6 +13671,261 @@
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-11T00:00:00Z"
+      }
+    },
+    {
+      "id": "claim-111dc07c9b59b4d688",
+      "headline": "ISIL (Da’esh) and Al-Qaida: list of designations and sanctions notices",
+      "signature_tokens": [
+        "al-qaida",
+        "designations",
+        "esh",
+        "isil",
+        "list",
+        "notices",
+        "sanctions"
+      ],
+      "observation_ids": [
+        "e9eb30578be050598405"
+      ],
+      "first_seen": "2026-09-10T14:18:49Z",
+      "last_seen": "2026-09-14T04:47:32Z",
+      "material_time": "2026-09-10T14:00:53Z",
+      "domains": [
+        "ECONOMIC",
+        "TERRORISM"
+      ],
+      "regions": [
+        "GLOBAL"
+      ],
+      "actors": [
+        "ISIS"
+      ],
+      "state": "CREDIBLE REPORT",
+      "confidence": 62,
+      "confidence_direction": "STABLE",
+      "confidence_components": {
+        "source_quality": 95,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 51,
+        "recency": 72,
+        "evidence_type": 86,
+        "historical_reliability": 95,
+        "claim_maturity": 41
+      },
+      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+      "supporting_observation_ids": [
+        "e9eb30578be050598405"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 1,
+      "independent_provenance_count": 1,
+      "sources": [
+        "UK Foreign, Commonwealth & Development Office"
+      ],
+      "provenance_roots": [
+        "fcdo"
+      ],
+      "evidence": [
+        {
+          "observation_id": "e9eb30578be050598405",
+          "title": "ISIL (Da’esh) and Al-Qaida: list of designations and sanctions notices",
+          "source": "UK Foreign, Commonwealth & Development Office",
+          "source_class": "primary_official",
+          "provenance_root": "fcdo",
+          "stance": "report",
+          "published": "2026-09-10T14:00:53Z",
+          "url": "https://www.gov.uk/guidance/isil-daesh-and-al-qaida-list-of-designations-and-sanctions-notices",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "ISIL (Da’esh) and Al-Qaida: list of designations and sanctions notices",
+        "plausible_explanations": [
+          "A genuine ECONOMIC/TERRORISM development involving ISIS is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related ECONOMIC/TERRORISM indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-f9781e8a8f711fa0cd",
+          "headline": "Maryland Man Sentenced for Attempting to Provide Material Support to ISIS",
+          "material_time": "2026-07-08T12:00:00Z",
+          "shared_domains": [
+            "TERRORISM"
+          ],
+          "shared_actors": [
+            "ISIS"
+          ],
+          "shared_regions": []
+        },
+        {
+          "claim_id": "claim-a32995db0403bbdba3",
+          "headline": "Following the Money, Shutting Down Exploitation",
+          "material_time": "2025-09-24T20:55:29Z",
+          "shared_domains": [
+            "TERRORISM"
+          ],
+          "shared_actors": [
+            "ISIS"
+          ],
+          "shared_regions": []
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-10016bc48a0cb97c68",
+          "shared_actors": [
+            "ISIS"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "HUMANITARIAN",
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-34caaed4661907a808",
+          "shared_actors": [
+            "ISIS"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-b02ba09d92dd62624e",
+          "shared_actors": [
+            "ISIS"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-a14d3a6f0835f9b7d0",
+          "shared_actors": [
+            "ISIS"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "INFRA",
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-c1b00c2e0936c364c5",
+          "shared_actors": [
+            "ISIS"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-ac729c6a2fc411416d",
+          "shared_actors": [
+            "ISIS"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-99291d97061aff4eb9",
+          "shared_actors": [
+            "ISIS"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-785a79b028e053ba2e",
+          "shared_actors": [
+            "ISIS"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-52031dea4a9ab37e2f",
+          "shared_actors": [
+            "ISIS"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-852b0337a78d8aad0b",
+          "shared_actors": [
+            "ISIS"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-afb82d251989478004",
+          "shared_actors": [
+            "ISIS"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-8d1384c87e7def68e7",
+          "shared_actors": [
+            "ISIS"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "TERRORISM"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-439c464a2436ddfc"
+      ],
+      "threat_score": 15,
+      "watch_priority": 39,
+      "audit": {
+        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "support_count": 1,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-10T14:00:53Z"
       }
     }
   ]
