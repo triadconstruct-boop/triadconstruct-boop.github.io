@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T14:21:55Z",
+  "generated_at": "2026-09-14T14:49:28Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 39,
   "verified_pressure": {
@@ -62,7 +62,7 @@
           "4f0e2276eef91cae5f2e"
         ],
         "first_seen": "2026-09-10T09:19:47Z",
-        "last_seen": "2026-09-14T14:21:55Z",
+        "last_seen": "2026-09-14T14:49:28Z",
         "material_time": "2026-09-14T09:36:56Z",
         "domains": [
           "INFRA",
@@ -644,10 +644,11 @@
         "observation_ids": [
           "84a0be10993fa8162cf6",
           "a552f68b25a76bd6a5a9",
-          "61eba67e95998c0d88e2"
+          "61eba67e95998c0d88e2",
+          "a02a8f1d78f213882de3"
         ],
         "first_seen": "2026-09-11T11:18:39Z",
-        "last_seen": "2026-09-14T14:21:55Z",
+        "last_seen": "2026-09-14T14:49:28Z",
         "material_time": "2026-09-13T20:43:05Z",
         "domains": [
           "ECONOMIC",
@@ -670,8 +671,8 @@
           "independence": 25,
           "corroboration": 25,
           "contradiction": 0,
-          "specificity": 74,
-          "recency": 94,
+          "specificity": 72,
+          "recency": 93,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 47
@@ -680,7 +681,8 @@
         "supporting_observation_ids": [
           "84a0be10993fa8162cf6",
           "a552f68b25a76bd6a5a9",
-          "61eba67e95998c0d88e2"
+          "61eba67e95998c0d88e2",
+          "a02a8f1d78f213882de3"
         ],
         "contradictory_observation_ids": [],
         "source_count": 2,
@@ -697,6 +699,17 @@
           {
             "observation_id": "61eba67e95998c0d88e2",
             "title": "Ukrainian forces reportedly strike energy infrastructure in occupied Mariupol as fire burns in Russia's Taganrog - The Kyiv Independent",
+            "source": "Google News Weak-Signal Discovery",
+            "source_class": "low_confidence",
+            "provenance_root": "google_weak_signal",
+            "stance": "speculation",
+            "published": "2026-09-13T20:43:05Z",
+            "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOaDRmZ2NjQ05VdWRybUdiWWVXRE5mbUd2aTdXSWVrSlhkbTB6elE1YWRiODZYWWx2NzRLdGF6bkw0WEV3LWIweXBTNXZHX3V2RmgzRkt2Ym1vUnljMVQwNEljWmxGdU9taWdSZ0xvb3J1UDlVZ05HZ2tCZTFuVHBKNS1Ia082V0dEZGNicF9iV3BCdF9XakJiRWFVdkFyZjMzY0pDdVFKeFJzbno5V0FZV3VKdm8wUXVIU285aVRMa1l2QU10eFlHSUVfUjM3UTg3M0JMZVMwbw?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "a02a8f1d78f213882de3",
+            "title": "Ukrainian forces reportedly strike energy infrastructure in occupied Mariupol as fire burns in Russia's Taganrog - kyivindependent.com",
             "source": "Google News Weak-Signal Discovery",
             "source_class": "low_confidence",
             "provenance_root": "google_weak_signal",
@@ -923,7 +936,7 @@
         "watch_priority": 53,
         "audit": {
           "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 3,
+          "support_count": 4,
           "contradiction_count": 0,
           "independent_roots": 1,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
@@ -2241,7 +2254,7 @@
           "7e002204c7963edff539"
         ],
         "first_seen": "2026-09-09T16:18:05Z",
-        "last_seen": "2026-09-14T14:21:55Z",
+        "last_seen": "2026-09-14T14:49:28Z",
         "material_time": "2026-09-14T09:45:43Z",
         "domains": [
           "ECONOMIC",
@@ -3134,20 +3147,6 @@
             ]
           },
           {
-            "claim_id": "claim-f00b9ad5ba144e4fb2",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "HUMANITARIAN",
-              "POLITICAL",
-              "TERRORISM"
-            ]
-          },
-          {
             "claim_id": "claim-64a43a6b753b34617f",
             "shared_actors": [
               "RUSSIA"
@@ -3157,6 +3156,19 @@
             ],
             "domains": [
               "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-baea64737b55cd6d63",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA",
+              "WAR"
             ]
           }
         ],
@@ -3432,16 +3444,6 @@
             ]
           },
           {
-            "claim_id": "claim-ff235fd9d205998166",
-            "shared_actors": [],
-            "shared_regions": [
-              "MIDDLE EAST"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-edfa245f1a6c821948",
             "shared_actors": [],
             "shared_regions": [
@@ -3482,6 +3484,18 @@
             ],
             "domains": [
               "INFRA",
+              "SECURITY"
+            ]
+          },
+          {
+            "claim_id": "claim-2c1b0e5f977c034fe9",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
               "SECURITY"
             ]
           }
@@ -3644,18 +3658,6 @@
             ]
           },
           {
-            "claim_id": "claim-ff235fd9d205998166",
-            "shared_actors": [
-              "ISRAEL"
-            ],
-            "shared_regions": [
-              "ISRAEL/PALESTINE"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-2b90db6cd4add57d28",
             "shared_actors": [
               "ISRAEL"
@@ -3731,6 +3733,18 @@
             ]
           },
           {
+            "claim_id": "claim-1cf2c86d741e83fa2c",
+            "shared_actors": [
+              "ISRAEL"
+            ],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          },
+          {
             "claim_id": "claim-3ea2ac95c63cd95fef",
             "shared_actors": [
               "ISRAEL"
@@ -3743,7 +3757,7 @@
             ]
           },
           {
-            "claim_id": "claim-1cf2c86d741e83fa2c",
+            "claim_id": "claim-30ac693af13d3da276",
             "shared_actors": [
               "ISRAEL"
             ],
@@ -4597,6 +4611,18 @@
             ]
           },
           {
+            "claim_id": "claim-1cf2c86d741e83fa2c",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          },
+          {
             "claim_id": "claim-b653ef7d1f4c2a7e0e",
             "shared_actors": [
               "IRAN"
@@ -4607,18 +4633,6 @@
             "domains": [
               "INFRA",
               "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-1cf2c86d741e83fa2c",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "INFRA"
             ]
           },
           {
@@ -4690,7 +4704,7 @@
   },
   "early_warning_pressure": {
     "score": 100,
-    "claim_count": 32,
+    "claim_count": 33,
     "top_claims": [
       {
         "id": "claim-ddb3856e9fd1a3a0d6",
@@ -4726,7 +4740,7 @@
           "3beae8ac68a7ebb4bcbe"
         ],
         "first_seen": "2026-09-09T19:17:24Z",
-        "last_seen": "2026-09-14T14:21:55Z",
+        "last_seen": "2026-09-14T14:49:28Z",
         "material_time": "2026-09-13T20:35:29Z",
         "domains": [
           "INFRA",
@@ -4752,7 +4766,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 64,
-          "recency": 94,
+          "recency": 93,
           "evidence_type": 73,
           "historical_reliability": 81,
           "claim_maturity": 36
@@ -6830,7 +6844,7 @@
           "644c686f1f32fcaf6184"
         ],
         "first_seen": "2026-09-11T03:45:41Z",
-        "last_seen": "2026-09-14T14:21:55Z",
+        "last_seen": "2026-09-14T14:49:28Z",
         "material_time": "2026-09-14T04:50:31Z",
         "domains": [
           "INFRA",
@@ -7673,7 +7687,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 42,
-          "recency": 79,
+          "recency": 78,
           "evidence_type": 79,
           "historical_reliability": 84,
           "claim_maturity": 39
@@ -8159,9 +8173,9 @@
     "multi_theater_coupling": 1,
     "nuclear_escalation": 8,
     "military_mobilization": 5,
-    "economic_warfare": 146,
+    "economic_warfare": 147,
     "crisis_control_failure": 0,
-    "hybrid_preparation": 114
+    "hybrid_preparation": 113
   },
   "formula": "Independent-provenance-capped claim contributions; verified and early-warning pressure remain separate.",
   "safeguard": "Republished stories sharing one provenance root cannot multiply pressure; speculative claims never enter Verified Pressure.",
@@ -8223,7 +8237,7 @@
         "4f0e2276eef91cae5f2e"
       ],
       "first_seen": "2026-09-10T09:19:47Z",
-      "last_seen": "2026-09-14T14:21:55Z",
+      "last_seen": "2026-09-14T14:49:28Z",
       "material_time": "2026-09-14T09:36:56Z",
       "domains": [
         "INFRA",
@@ -8805,10 +8819,11 @@
       "observation_ids": [
         "84a0be10993fa8162cf6",
         "a552f68b25a76bd6a5a9",
-        "61eba67e95998c0d88e2"
+        "61eba67e95998c0d88e2",
+        "a02a8f1d78f213882de3"
       ],
       "first_seen": "2026-09-11T11:18:39Z",
-      "last_seen": "2026-09-14T14:21:55Z",
+      "last_seen": "2026-09-14T14:49:28Z",
       "material_time": "2026-09-13T20:43:05Z",
       "domains": [
         "ECONOMIC",
@@ -8831,8 +8846,8 @@
         "independence": 25,
         "corroboration": 25,
         "contradiction": 0,
-        "specificity": 74,
-        "recency": 94,
+        "specificity": 72,
+        "recency": 93,
         "evidence_type": 67,
         "historical_reliability": 79,
         "claim_maturity": 47
@@ -8841,7 +8856,8 @@
       "supporting_observation_ids": [
         "84a0be10993fa8162cf6",
         "a552f68b25a76bd6a5a9",
-        "61eba67e95998c0d88e2"
+        "61eba67e95998c0d88e2",
+        "a02a8f1d78f213882de3"
       ],
       "contradictory_observation_ids": [],
       "source_count": 2,
@@ -8858,6 +8874,17 @@
         {
           "observation_id": "61eba67e95998c0d88e2",
           "title": "Ukrainian forces reportedly strike energy infrastructure in occupied Mariupol as fire burns in Russia's Taganrog - The Kyiv Independent",
+          "source": "Google News Weak-Signal Discovery",
+          "source_class": "low_confidence",
+          "provenance_root": "google_weak_signal",
+          "stance": "speculation",
+          "published": "2026-09-13T20:43:05Z",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOaDRmZ2NjQ05VdWRybUdiWWVXRE5mbUd2aTdXSWVrSlhkbTB6elE1YWRiODZYWWx2NzRLdGF6bkw0WEV3LWIweXBTNXZHX3V2RmgzRkt2Ym1vUnljMVQwNEljWmxGdU9taWdSZ0xvb3J1UDlVZ05HZ2tCZTFuVHBKNS1Ia082V0dEZGNicF9iV3BCdF9XakJiRWFVdkFyZjMzY0pDdVFKeFJzbno5V0FZV3VKdm8wUXVIU285aVRMa1l2QU10eFlHSUVfUjM3UTg3M0JMZVMwbw?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "a02a8f1d78f213882de3",
+          "title": "Ukrainian forces reportedly strike energy infrastructure in occupied Mariupol as fire burns in Russia's Taganrog - kyivindependent.com",
           "source": "Google News Weak-Signal Discovery",
           "source_class": "low_confidence",
           "provenance_root": "google_weak_signal",
@@ -9084,7 +9111,7 @@
       "watch_priority": 53,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 3,
+        "support_count": 4,
         "contradiction_count": 0,
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
@@ -10402,7 +10429,7 @@
         "7e002204c7963edff539"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-14T14:21:55Z",
+      "last_seen": "2026-09-14T14:49:28Z",
       "material_time": "2026-09-14T09:45:43Z",
       "domains": [
         "ECONOMIC",
@@ -11295,20 +11322,6 @@
           ]
         },
         {
-          "claim_id": "claim-f00b9ad5ba144e4fb2",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "HUMANITARIAN",
-            "POLITICAL",
-            "TERRORISM"
-          ]
-        },
-        {
           "claim_id": "claim-64a43a6b753b34617f",
           "shared_actors": [
             "RUSSIA"
@@ -11318,6 +11331,19 @@
           ],
           "domains": [
             "POLITICAL"
+          ]
+        },
+        {
+          "claim_id": "claim-baea64737b55cd6d63",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
           ]
         }
       ],
@@ -11593,16 +11619,6 @@
           ]
         },
         {
-          "claim_id": "claim-ff235fd9d205998166",
-          "shared_actors": [],
-          "shared_regions": [
-            "MIDDLE EAST"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-edfa245f1a6c821948",
           "shared_actors": [],
           "shared_regions": [
@@ -11643,6 +11659,18 @@
           ],
           "domains": [
             "INFRA",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-2c1b0e5f977c034fe9",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
             "SECURITY"
           ]
         }
@@ -11805,18 +11833,6 @@
           ]
         },
         {
-          "claim_id": "claim-ff235fd9d205998166",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-2b90db6cd4add57d28",
           "shared_actors": [
             "ISRAEL"
@@ -11892,6 +11908,18 @@
           ]
         },
         {
+          "claim_id": "claim-1cf2c86d741e83fa2c",
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "INFRA"
+          ]
+        },
+        {
           "claim_id": "claim-3ea2ac95c63cd95fef",
           "shared_actors": [
             "ISRAEL"
@@ -11904,7 +11932,7 @@
           ]
         },
         {
-          "claim_id": "claim-1cf2c86d741e83fa2c",
+          "claim_id": "claim-30ac693af13d3da276",
           "shared_actors": [
             "ISRAEL"
           ],
@@ -12758,6 +12786,18 @@
           ]
         },
         {
+          "claim_id": "claim-1cf2c86d741e83fa2c",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "INFRA"
+          ]
+        },
+        {
           "claim_id": "claim-b653ef7d1f4c2a7e0e",
           "shared_actors": [
             "IRAN"
@@ -12768,18 +12808,6 @@
           "domains": [
             "INFRA",
             "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-1cf2c86d741e83fa2c",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA"
           ]
         },
         {
@@ -13034,18 +13062,6 @@
           ]
         },
         {
-          "claim_id": "claim-3ea2ac95c63cd95fef",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-1cf2c86d741e83fa2c",
           "shared_actors": [
             "ISRAEL"
@@ -13055,6 +13071,18 @@
           ],
           "domains": [
             "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-3ea2ac95c63cd95fef",
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "WAR"
           ]
         },
         {
