@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T08:49:54Z",
+  "generated_at": "2026-09-15T09:26:48Z",
   "top_claims": [
     {
       "id": "claim-eed4f2d45ec0891918",
@@ -48,7 +48,7 @@
         "recency": 32,
         "evidence_type": 73,
         "historical_reliability": 80,
-        "claim_maturity": 56
+        "claim_maturity": 57
       },
       "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
       "supporting_observation_ids": [
@@ -259,6 +259,18 @@
           ]
         },
         {
+          "claim_id": "claim-bad8efc54139185d46",
+          "shared_actors": [
+            "ISIS"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "TERRORISM"
+          ]
+        },
+        {
           "claim_id": "claim-c073134beb789dafce",
           "shared_actors": [
             "ISIS"
@@ -270,18 +282,6 @@
             "POLITICAL",
             "TERRORISM",
             "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-bad8efc54139185d46",
-          "shared_actors": [
-            "ISIS"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "TERRORISM"
           ]
         },
         {
@@ -393,7 +393,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-831b6744b463d1c9"
+        "anomaly-22fd6c12605b4e1e"
       ],
       "threat_score": 7,
       "watch_priority": 65,
@@ -678,6 +678,22 @@
           ]
         },
         {
+          "claim_id": "claim-bad8efc54139185d46",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "TERRORISM"
+          ]
+        },
+        {
           "claim_id": "claim-72b6e94d3697ab2cbf",
           "shared_actors": [
             "RUSSIA"
@@ -706,26 +722,11 @@
             "TERRORISM",
             "WAR"
           ]
-        },
-        {
-          "claim_id": "claim-ba6748b523b2b991f9",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
         "anomaly-22d24f4a7edce5a7",
-        "anomaly-57a95d4f595f5d4d"
+        "anomaly-35967641437b7a3c"
       ],
       "threat_score": 4,
       "watch_priority": 65,
@@ -736,6 +737,236 @@
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-13T20:43:05Z"
+      }
+    },
+    {
+      "id": "claim-0c022699e2311e72e3",
+      "headline": "Russia plans final test of new ballistic missile with 800-kilometer range by end of 2026, Ukraine's military intelligence says",
+      "signature_tokens": [
+        "2026",
+        "800-kilometer",
+        "ballistic",
+        "end",
+        "final",
+        "intelligence",
+        "military",
+        "missile",
+        "plans",
+        "range",
+        "russia",
+        "test",
+        "ukraine"
+      ],
+      "observation_ids": [
+        "fdf4076b60b0a5f8d6a6",
+        "10a3929f5f3392194695"
+      ],
+      "first_seen": "2026-09-09T16:18:05Z",
+      "last_seen": "2026-09-09T21:17:06Z",
+      "material_time": "2026-09-09T17:47:09Z",
+      "domains": [
+        "INFRA",
+        "WAR"
+      ],
+      "regions": [
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "actors": [
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "state": "SPECULATIVE",
+      "confidence": 59,
+      "confidence_direction": "STABLE",
+      "confidence_components": {
+        "source_quality": 79,
+        "independence": 25,
+        "corroboration": 25,
+        "contradiction": 0,
+        "specificity": 84,
+        "recency": 62,
+        "evidence_type": 67,
+        "historical_reliability": 79,
+        "claim_maturity": 55
+      },
+      "classification_reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
+      "supporting_observation_ids": [
+        "fdf4076b60b0a5f8d6a6",
+        "10a3929f5f3392194695"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 1,
+      "independent_provenance_count": 1,
+      "sources": [
+        "Kyiv Independent"
+      ],
+      "provenance_roots": [
+        "kyiv_independent"
+      ],
+      "evidence": [
+        {
+          "observation_id": "10a3929f5f3392194695",
+          "title": "Ukraine war latest: Russia resumes drone attacks on Kyiv, kills 1, injures 16, damages residential buildings",
+          "source": "Kyiv Independent",
+          "source_class": "regional_local",
+          "provenance_root": "kyiv_independent",
+          "stance": "report",
+          "published": "2026-09-09T17:47:09Z",
+          "url": "https://kyivindependent.com/ukraine-war-latest-russia-resumes-drone-attacks-on-kyiv-kills-1-injures-16-damages-residential-buildings",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "fdf4076b60b0a5f8d6a6",
+          "title": "Russia plans final test of new ballistic missile with 800-kilometer range by end of 2026, Ukraine's military intelligence says",
+          "source": "Kyiv Independent",
+          "source_class": "regional_local",
+          "provenance_root": "kyiv_independent",
+          "stance": "speculation",
+          "published": "2026-09-09T12:21:39Z",
+          "url": "https://kyivindependent.com/russia-prepares-new-ballistic-missile-with-800-kilometer-range-ukrainian-intelligence-says",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Russia plans final test of new ballistic missile with 800-kilometer range by end of 2026, Ukraine's military intelligence says",
+        "plausible_explanations": [
+          "A genuine INFRA/WAR development involving RUSSIA, UKRAINE is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related INFRA/WAR indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [],
+      "cross_domain_links": [],
+      "anomaly_ids": [],
+      "threat_score": 4,
+      "watch_priority": 49,
+      "audit": {
+        "reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
+        "support_count": 2,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-09T17:47:09Z"
+      }
+    },
+    {
+      "id": "claim-988ce47c066aaa4635",
+      "headline": "Anthropic blocks possible attempt to use AI to make biological weapons",
+      "signature_tokens": [
+        "anthropic",
+        "attempt",
+        "biological",
+        "blocks",
+        "make",
+        "possible",
+        "use",
+        "weapons"
+      ],
+      "observation_ids": [
+        "344dcbb5d73b459183e1"
+      ],
+      "first_seen": "2026-09-11T09:19:28Z",
+      "last_seen": "2026-09-12T07:43:03Z",
+      "material_time": "2026-09-11T08:15:25Z",
+      "domains": [
+        "BIO",
+        "INFRA"
+      ],
+      "regions": [
+        "GLOBAL"
+      ],
+      "actors": [],
+      "state": "EARLY WARNING",
+      "confidence": 57,
+      "confidence_direction": "STABLE",
+      "confidence_components": {
+        "source_quality": 89,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 35,
+        "recency": 70,
+        "evidence_type": 79,
+        "historical_reliability": 89,
+        "claim_maturity": 41
+      },
+      "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
+      "supporting_observation_ids": [
+        "344dcbb5d73b459183e1"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 1,
+      "independent_provenance_count": 1,
+      "sources": [
+        "BBC World"
+      ],
+      "provenance_roots": [
+        "bbc_world"
+      ],
+      "evidence": [
+        {
+          "observation_id": "344dcbb5d73b459183e1",
+          "title": "Anthropic blocks possible attempt to use AI to make biological weapons",
+          "source": "BBC World",
+          "source_class": "established_media",
+          "provenance_root": "bbc_world",
+          "stance": "warning",
+          "published": "2026-09-11T08:15:25Z",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zrrpkx20o?at_medium=RSS&at_campaign=rss",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Anthropic blocks possible attempt to use AI to make biological weapons",
+        "plausible_explanations": [
+          "A genuine BIO/INFRA development involving the reported actors is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related BIO/INFRA indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [],
+      "cross_domain_links": [],
+      "anomaly_ids": [],
+      "threat_score": 7,
+      "watch_priority": 48,
+      "audit": {
+        "reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
+        "support_count": 1,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-11T08:15:25Z"
       }
     },
     {
@@ -768,7 +999,7 @@
         "IRAN"
       ],
       "state": "EARLY WARNING",
-      "confidence": 39,
+      "confidence": 38,
       "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 32,
@@ -776,7 +1007,7 @@
         "corroboration": 25,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 68,
+        "recency": 67,
         "evidence_type": 24,
         "historical_reliability": 32,
         "claim_maturity": 53
@@ -1045,8 +1276,8 @@
         }
       ],
       "anomaly_ids": [],
-      "threat_score": 6,
-      "watch_priority": 51,
+      "threat_score": 5,
+      "watch_priority": 50,
       "audit": {
         "reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
         "support_count": 3,
@@ -1054,236 +1285,6 @@
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-10T21:25:30Z"
-      }
-    },
-    {
-      "id": "claim-0c022699e2311e72e3",
-      "headline": "Russia plans final test of new ballistic missile with 800-kilometer range by end of 2026, Ukraine's military intelligence says",
-      "signature_tokens": [
-        "2026",
-        "800-kilometer",
-        "ballistic",
-        "end",
-        "final",
-        "intelligence",
-        "military",
-        "missile",
-        "plans",
-        "range",
-        "russia",
-        "test",
-        "ukraine"
-      ],
-      "observation_ids": [
-        "fdf4076b60b0a5f8d6a6",
-        "10a3929f5f3392194695"
-      ],
-      "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-09T21:17:06Z",
-      "material_time": "2026-09-09T17:47:09Z",
-      "domains": [
-        "INFRA",
-        "WAR"
-      ],
-      "regions": [
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "actors": [
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "state": "SPECULATIVE",
-      "confidence": 59,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 79,
-        "independence": 25,
-        "corroboration": 25,
-        "contradiction": 0,
-        "specificity": 84,
-        "recency": 62,
-        "evidence_type": 67,
-        "historical_reliability": 79,
-        "claim_maturity": 55
-      },
-      "classification_reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
-      "supporting_observation_ids": [
-        "fdf4076b60b0a5f8d6a6",
-        "10a3929f5f3392194695"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 1,
-      "independent_provenance_count": 1,
-      "sources": [
-        "Kyiv Independent"
-      ],
-      "provenance_roots": [
-        "kyiv_independent"
-      ],
-      "evidence": [
-        {
-          "observation_id": "10a3929f5f3392194695",
-          "title": "Ukraine war latest: Russia resumes drone attacks on Kyiv, kills 1, injures 16, damages residential buildings",
-          "source": "Kyiv Independent",
-          "source_class": "regional_local",
-          "provenance_root": "kyiv_independent",
-          "stance": "report",
-          "published": "2026-09-09T17:47:09Z",
-          "url": "https://kyivindependent.com/ukraine-war-latest-russia-resumes-drone-attacks-on-kyiv-kills-1-injures-16-damages-residential-buildings",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "fdf4076b60b0a5f8d6a6",
-          "title": "Russia plans final test of new ballistic missile with 800-kilometer range by end of 2026, Ukraine's military intelligence says",
-          "source": "Kyiv Independent",
-          "source_class": "regional_local",
-          "provenance_root": "kyiv_independent",
-          "stance": "speculation",
-          "published": "2026-09-09T12:21:39Z",
-          "url": "https://kyivindependent.com/russia-prepares-new-ballistic-missile-with-800-kilometer-range-ukrainian-intelligence-says",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Russia plans final test of new ballistic missile with 800-kilometer range by end of 2026, Ukraine's military intelligence says",
-        "plausible_explanations": [
-          "A genuine INFRA/WAR development involving RUSSIA, UKRAINE is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related INFRA/WAR indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [],
-      "cross_domain_links": [],
-      "anomaly_ids": [],
-      "threat_score": 4,
-      "watch_priority": 49,
-      "audit": {
-        "reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
-        "support_count": 2,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-09T17:47:09Z"
-      }
-    },
-    {
-      "id": "claim-988ce47c066aaa4635",
-      "headline": "Anthropic blocks possible attempt to use AI to make biological weapons",
-      "signature_tokens": [
-        "anthropic",
-        "attempt",
-        "biological",
-        "blocks",
-        "make",
-        "possible",
-        "use",
-        "weapons"
-      ],
-      "observation_ids": [
-        "344dcbb5d73b459183e1"
-      ],
-      "first_seen": "2026-09-11T09:19:28Z",
-      "last_seen": "2026-09-12T07:43:03Z",
-      "material_time": "2026-09-11T08:15:25Z",
-      "domains": [
-        "BIO",
-        "INFRA"
-      ],
-      "regions": [
-        "GLOBAL"
-      ],
-      "actors": [],
-      "state": "EARLY WARNING",
-      "confidence": 57,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 89,
-        "independence": 25,
-        "corroboration": 22,
-        "contradiction": 0,
-        "specificity": 35,
-        "recency": 70,
-        "evidence_type": 79,
-        "historical_reliability": 89,
-        "claim_maturity": 41
-      },
-      "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
-      "supporting_observation_ids": [
-        "344dcbb5d73b459183e1"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 1,
-      "independent_provenance_count": 1,
-      "sources": [
-        "BBC World"
-      ],
-      "provenance_roots": [
-        "bbc_world"
-      ],
-      "evidence": [
-        {
-          "observation_id": "344dcbb5d73b459183e1",
-          "title": "Anthropic blocks possible attempt to use AI to make biological weapons",
-          "source": "BBC World",
-          "source_class": "established_media",
-          "provenance_root": "bbc_world",
-          "stance": "warning",
-          "published": "2026-09-11T08:15:25Z",
-          "url": "https://www.bbc.co.uk/news/articles/cx2zrrpkx20o?at_medium=RSS&at_campaign=rss",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Anthropic blocks possible attempt to use AI to make biological weapons",
-        "plausible_explanations": [
-          "A genuine BIO/INFRA development involving the reported actors is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related BIO/INFRA indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [],
-      "cross_domain_links": [],
-      "anomaly_ids": [],
-      "threat_score": 7,
-      "watch_priority": 48,
-      "audit": {
-        "reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
-        "support_count": 1,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-11T08:15:25Z"
       }
     },
     {
@@ -1438,7 +1439,7 @@
         "corroboration": 28,
         "contradiction": 0,
         "specificity": 74,
-        "recency": 92,
+        "recency": 91,
         "evidence_type": 40,
         "historical_reliability": 50,
         "claim_maturity": 58
@@ -1635,6 +1636,22 @@
           ]
         },
         {
+          "claim_id": "claim-bad8efc54139185d46",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "TERRORISM"
+          ]
+        },
+        {
           "claim_id": "claim-72b6e94d3697ab2cbf",
           "shared_actors": [
             "RUSSIA"
@@ -1677,29 +1694,11 @@
             "NUCLEAR",
             "WAR"
           ]
-        },
-        {
-          "claim_id": "claim-c073134beb789dafce",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "NUCLEAR",
-            "POLITICAL",
-            "TERRORISM",
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
         "anomaly-22d24f4a7edce5a7",
-        "anomaly-57a95d4f595f5d4d"
+        "anomaly-35967641437b7a3c"
       ],
       "threat_score": 5,
       "watch_priority": 63,
@@ -2310,7 +2309,7 @@
         "cdff5feef383851a6f53"
       ],
       "first_seen": "2026-09-14T21:45:35Z",
-      "last_seen": "2026-09-15T08:49:54Z",
+      "last_seen": "2026-09-15T09:26:48Z",
       "material_time": "2026-09-14T21:39:35Z",
       "domains": [
         "ECONOMIC",
@@ -2851,6 +2850,22 @@
           ]
         },
         {
+          "claim_id": "claim-711c971a5e74813ed2",
+          "shared_actors": [
+            "IRAN",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "IRAN",
+            "MIDDLE EAST",
+            "UNITED STATES"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-624f3c741fb6d2bde5",
           "shared_actors": [
             "IRAN"
@@ -2924,22 +2939,6 @@
           ]
         },
         {
-          "claim_id": "claim-711c971a5e74813ed2",
-          "shared_actors": [
-            "IRAN",
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "IRAN",
-            "MIDDLE EAST",
-            "UNITED STATES"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-4d84a9999816928a02",
           "shared_actors": [
             "IRAN",
@@ -2971,8 +2970,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-48017055ebc74954",
-        "anomaly-11bc17cd6ffed835"
+        "anomaly-c5aa46038d0f7584",
+        "anomaly-0faf367c6e112d3c"
       ],
       "threat_score": 3,
       "watch_priority": 67,
@@ -3399,6 +3398,22 @@
           ]
         },
         {
+          "claim_id": "claim-bad8efc54139185d46",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "TERRORISM"
+          ]
+        },
+        {
           "claim_id": "claim-72b6e94d3697ab2cbf",
           "shared_actors": [
             "RUSSIA"
@@ -3456,29 +3471,11 @@
             "NUCLEAR",
             "WAR"
           ]
-        },
-        {
-          "claim_id": "claim-c073134beb789dafce",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "NUCLEAR",
-            "POLITICAL",
-            "TERRORISM",
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
         "anomaly-22d24f4a7edce5a7",
-        "anomaly-57a95d4f595f5d4d"
+        "anomaly-35967641437b7a3c"
       ],
       "threat_score": 22,
       "watch_priority": 61,
@@ -3716,6 +3713,22 @@
           ]
         },
         {
+          "claim_id": "claim-bad8efc54139185d46",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "TERRORISM"
+          ]
+        },
+        {
           "claim_id": "claim-72b6e94d3697ab2cbf",
           "shared_actors": [
             "RUSSIA"
@@ -3791,23 +3804,11 @@
             "TERRORISM",
             "WAR"
           ]
-        },
-        {
-          "claim_id": "claim-61b7ecd42b8e0dd001",
-          "shared_actors": [
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "UKRAINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
         "anomaly-22d24f4a7edce5a7",
-        "anomaly-57a95d4f595f5d4d"
+        "anomaly-35967641437b7a3c"
       ],
       "threat_score": 34,
       "watch_priority": 61,
@@ -3994,6 +3995,20 @@
           ]
         },
         {
+          "claim_id": "claim-bad8efc54139185d46",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "TERRORISM"
+          ]
+        },
+        {
           "claim_id": "claim-72b6e94d3697ab2cbf",
           "shared_actors": [
             "RUSSIA"
@@ -4059,21 +4074,6 @@
             "NUCLEAR",
             "POLITICAL",
             "TERRORISM",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-4d84a9999816928a02",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA",
-            "SPACE",
             "WAR"
           ]
         }
@@ -4309,7 +4309,7 @@
         "corroboration": 100,
         "contradiction": 0,
         "specificity": 72,
-        "recency": 91,
+        "recency": 90,
         "evidence_type": 79,
         "historical_reliability": 86,
         "claim_maturity": 100
@@ -4764,6 +4764,22 @@
           ]
         },
         {
+          "claim_id": "claim-711c971a5e74813ed2",
+          "shared_actors": [
+            "IRAN",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "IRAN",
+            "MIDDLE EAST",
+            "UNITED STATES"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-624f3c741fb6d2bde5",
           "shared_actors": [
             "IRAN"
@@ -4790,6 +4806,18 @@
           ]
         },
         {
+          "claim_id": "claim-bad8efc54139185d46",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "TERRORISM"
+          ]
+        },
+        {
           "claim_id": "claim-72b6e94d3697ab2cbf",
           "shared_actors": [],
           "shared_regions": [
@@ -4812,35 +4840,11 @@
             "TERRORISM",
             "WAR"
           ]
-        },
-        {
-          "claim_id": "claim-3f4552c17bce425d7b",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-78682c82594fbecc7d",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-48017055ebc74954",
-        "anomaly-11bc17cd6ffed835"
+        "anomaly-c5aa46038d0f7584",
+        "anomaly-0faf367c6e112d3c"
       ],
       "threat_score": 26,
       "watch_priority": 65,
@@ -4959,24 +4963,24 @@
     }
   ],
   "state_counts": {
-    "CONFIRMED": 171,
-    "CREDIBLE REPORT": 1395,
-    "EARLY WARNING": 360,
-    "SPECULATIVE": 592,
-    "UNVERIFIED CLAIM": 7623,
+    "CONFIRMED": 172,
+    "CREDIBLE REPORT": 1399,
+    "EARLY WARNING": 362,
+    "SPECULATIVE": 596,
+    "UNVERIFIED CLAIM": 7641,
     "REFUTED": 28,
-    "DORMANT": 419
+    "DORMANT": 420
   },
   "domain_counts": {
     "CLIMATE": 171,
-    "INFRA": 1436,
-    "TERRORISM": 239,
+    "INFRA": 1440,
+    "TERRORISM": 241,
     "ECONOMIC": 149,
-    "WAR": 610,
-    "BIO": 522,
-    "SECURITY": 3194,
-    "CYBER": 421,
-    "POLITICAL": 3533,
+    "WAR": 612,
+    "BIO": 524,
+    "SECURITY": 3197,
+    "CYBER": 422,
+    "POLITICAL": 3549,
     "HUMANITARIAN": 66,
     "SPACE": 68,
     "NUCLEAR": 112,
