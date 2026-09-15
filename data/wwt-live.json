@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T00:27:42Z",
+  "generated_at": "2026-09-15T00:50:41Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 40,
   "verified_pressure": {
@@ -658,7 +658,7 @@
           "8e212a656c7b0747bfd4"
         ],
         "first_seen": "2026-09-14T06:51:46Z",
-        "last_seen": "2026-09-15T00:27:42Z",
+        "last_seen": "2026-09-15T00:50:41Z",
         "material_time": "2026-09-14T23:17:04Z",
         "domains": [
           "INFRA",
@@ -2351,7 +2351,7 @@
           "861c1b176dc32338783a"
         ],
         "first_seen": "2026-09-09T16:18:05Z",
-        "last_seen": "2026-09-15T00:27:42Z",
+        "last_seen": "2026-09-15T00:50:41Z",
         "material_time": "2026-09-14T21:32:45Z",
         "domains": [
           "ECONOMIC",
@@ -2665,20 +2665,6 @@
             ]
           },
           {
-            "claim_id": "claim-484b52cf892585e914",
-            "shared_actors": [
-              "IRAN",
-              "ISRAEL"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "ISRAEL/PALESTINE"
-            ],
-            "domains": [
-              "NUCLEAR"
-            ]
-          },
-          {
             "claim_id": "claim-2fc06039b178702137",
             "shared_actors": [
               "CHINA"
@@ -2764,6 +2750,20 @@
             ],
             "domains": [
               "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-934b288ecf457a5979",
+            "shared_actors": [
+              "ISRAEL"
+            ],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "INFRA",
+              "POLITICAL"
             ]
           }
         ],
@@ -3181,18 +3181,6 @@
             ]
           },
           {
-            "claim_id": "claim-484b52cf892585e914",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR"
-            ]
-          },
-          {
             "claim_id": "claim-2fc06039b178702137",
             "shared_actors": [
               "RUSSIA"
@@ -3291,6 +3279,18 @@
             ],
             "domains": [
               "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-09f825b3a82468f624",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "TERRORISM"
             ]
           }
         ],
@@ -3918,11 +3918,12 @@
         "observation_ids": [
           "7b4f722ec66e96b0e982",
           "7c4815c67c0a4c8a84e3",
-          "1ec5c0c2f4605ca7a533"
+          "1ec5c0c2f4605ca7a533",
+          "bf318168d3cec2d9c88d"
         ],
         "first_seen": "2026-09-09T16:18:05Z",
-        "last_seen": "2026-09-15T00:27:42Z",
-        "material_time": "2026-09-14T12:00:00Z",
+        "last_seen": "2026-09-15T00:50:41Z",
+        "material_time": "2026-09-15T00:38:36Z",
         "domains": [
           "ECONOMIC",
           "INFRA"
@@ -3936,35 +3937,49 @@
           "UNITED STATES"
         ],
         "state": "CREDIBLE REPORT",
-        "confidence": 71,
-        "confidence_direction": "STABLE",
+        "confidence": 80,
+        "confidence_direction": "UP",
         "confidence_components": {
           "source_quality": 97,
-          "independence": 25,
-          "corroboration": 28,
+          "independence": 52,
+          "corroboration": 58,
           "contradiction": 0,
-          "specificity": 87,
-          "recency": 96,
+          "specificity": 85,
+          "recency": 100,
           "evidence_type": 86,
-          "historical_reliability": 97,
-          "claim_maturity": 58
+          "historical_reliability": 85,
+          "claim_maturity": 68
         },
         "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
         "supporting_observation_ids": [
           "7b4f722ec66e96b0e982",
           "7c4815c67c0a4c8a84e3",
-          "1ec5c0c2f4605ca7a533"
+          "1ec5c0c2f4605ca7a533",
+          "bf318168d3cec2d9c88d"
         ],
         "contradictory_observation_ids": [],
-        "source_count": 1,
-        "independent_provenance_count": 1,
+        "source_count": 2,
+        "independent_provenance_count": 2,
         "sources": [
+          "TASS World",
           "U.S. DOJ National Security Division"
         ],
         "provenance_roots": [
-          "doj_nsd"
+          "doj_nsd",
+          "tass"
         ],
         "evidence": [
+          {
+            "observation_id": "bf318168d3cec2d9c88d",
+            "title": "Russian national pleads guilty to illegally exporting aircraft parts — Justice Department",
+            "source": "TASS World",
+            "source_class": "state_media",
+            "provenance_root": "tass",
+            "stance": "report",
+            "published": "2026-09-15T00:38:36Z",
+            "url": "https://tass.com/world/2187593",
+            "discovery_only": false
+          },
           {
             "observation_id": "7c4815c67c0a4c8a84e3",
             "title": "Russian National Pleads Guilty to Smuggling U.S. Aerospace Goods to Russia",
@@ -3999,7 +4014,7 @@
             "discovery_only": false
           }
         ],
-        "state_affiliated_reporting": false,
+        "state_affiliated_reporting": true,
         "discovery_only": false,
         "branch_analysis": {
           "current_observation": "Russian National Pleads Guilty to Smuggling U.S. Aerospace Goods to Russia",
@@ -4099,47 +4114,28 @@
         ],
         "cross_domain_links": [
           {
-            "claim_id": "claim-5da507c02c1362e90f",
+            "claim_id": "claim-0d61754c68d7de6973",
             "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-b2c6511084a448b9c3",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-a43bc0e0f20f1aa6ae",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-c741a676efa686c4a7",
-            "shared_actors": [
+              "RUSSIA",
               "UNITED STATES"
             ],
             "shared_regions": [
+              "RUSSIA",
+              "UNITED STATES"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-64a43a6b753b34617f",
+            "shared_actors": [
+              "RUSSIA",
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "RUSSIA",
               "UNITED STATES"
             ],
             "domains": [
@@ -4147,22 +4143,20 @@
             ]
           },
           {
-            "claim_id": "claim-b1018e927a4942f90c",
+            "claim_id": "claim-1f69694f9161800108",
             "shared_actors": [
-              "RUSSIA",
               "UNITED STATES"
             ],
             "shared_regions": [
-              "RUSSIA",
               "UNITED STATES"
             ],
             "domains": [
-              "POLITICAL",
+              "INFRA",
               "WAR"
             ]
           },
           {
-            "claim_id": "claim-4769abfdbd63f532f5",
+            "claim_id": "claim-7e098b3fc8f7c7e6ee",
             "shared_actors": [
               "RUSSIA"
             ],
@@ -4171,11 +4165,11 @@
             ],
             "domains": [
               "POLITICAL",
-              "WAR"
+              "TERRORISM"
             ]
           },
           {
-            "claim_id": "claim-d692ffb7158fd7bdce",
+            "claim_id": "claim-7a28eb3358595f4f36",
             "shared_actors": [
               "UNITED STATES"
             ],
@@ -4183,36 +4177,25 @@
               "UNITED STATES"
             ],
             "domains": [
-              "BIO",
-              "INFRA"
+              "INFRA",
+              "POLITICAL",
+              "TERRORISM"
             ]
           },
           {
-            "claim_id": "claim-fc183859b5a5e7d04b",
+            "claim_id": "claim-026ea071c93a7a1bef",
             "shared_actors": [
-              "RUSSIA"
+              "UNITED STATES"
             ],
             "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-634bf2a8b822a8fca7",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
+              "UNITED STATES"
             ],
             "domains": [
               "WAR"
             ]
           },
           {
-            "claim_id": "claim-c02399019267b0d4a9",
+            "claim_id": "claim-6ec08c50526e0318b1",
             "shared_actors": [
               "UNITED STATES"
             ],
@@ -4220,11 +4203,36 @@
               "UNITED STATES"
             ],
             "domains": [
-              "INFRA"
+              "WAR"
             ]
           },
           {
-            "claim_id": "claim-6e3eb92f45df07cf9d",
+            "claim_id": "claim-736a632e6f34f2fb6f",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-9e38abff2b8deb67ec",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-61a41ffc4c4821b1df",
             "shared_actors": [
               "RUSSIA"
             ],
@@ -4236,7 +4244,7 @@
             ]
           },
           {
-            "claim_id": "claim-6e7c34d2aedb03c9ec",
+            "claim_id": "claim-e2a9429eceba7174e0",
             "shared_actors": [
               "RUSSIA"
             ],
@@ -4245,6 +4253,18 @@
             ],
             "domains": [
               "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-4d04dffa26be349677",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA"
             ]
           }
         ],
@@ -4252,15 +4272,15 @@
           "anomaly-7020d22aa0cf9088",
           "anomaly-6085588a66c43d1d"
         ],
-        "threat_score": 15,
-        "watch_priority": 49,
+        "threat_score": 17,
+        "watch_priority": 51,
         "audit": {
           "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 3,
+          "support_count": 4,
           "contradiction_count": 0,
-          "independent_roots": 1,
+          "independent_roots": 2,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-14T12:00:00Z"
+          "material_time_used_for_decay": "2026-09-15T00:38:36Z"
         }
       },
       {
@@ -4945,7 +4965,7 @@
   },
   "early_warning_pressure": {
     "score": 100,
-    "claim_count": 33,
+    "claim_count": 32,
     "top_claims": [
       {
         "id": "claim-cf04e9a4fef1c2d3ec",
@@ -5298,7 +5318,7 @@
           "cdff5feef383851a6f53"
         ],
         "first_seen": "2026-09-14T21:45:35Z",
-        "last_seen": "2026-09-15T00:27:42Z",
+        "last_seen": "2026-09-15T00:50:41Z",
         "material_time": "2026-09-14T21:39:35Z",
         "domains": [
           "ECONOMIC",
@@ -7355,16 +7375,15 @@
             ]
           },
           {
-            "claim_id": "claim-8ade9d06818965e2d6",
+            "claim_id": "claim-fe010403fa9615c5d9",
             "shared_actors": [
-              "RUSSIA"
+              "UKRAINE"
             ],
             "shared_regions": [
-              "RUSSIA"
+              "UKRAINE"
             ],
             "domains": [
-              "INFRA",
-              "NUCLEAR"
+              "WAR"
             ]
           }
         ],
@@ -7442,7 +7461,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 74,
-          "recency": 93,
+          "recency": 92,
           "evidence_type": 12,
           "historical_reliability": 20,
           "claim_maturity": 25
@@ -8632,7 +8651,7 @@
     "great_power_direct_clash": 14,
     "alliance_entanglement": 7,
     "multi_theater_coupling": 5,
-    "nuclear_escalation": 26,
+    "nuclear_escalation": 25,
     "military_mobilization": 26,
     "economic_warfare": 100,
     "crisis_control_failure": 0,
@@ -9304,7 +9323,7 @@
         "8e212a656c7b0747bfd4"
       ],
       "first_seen": "2026-09-14T06:51:46Z",
-      "last_seen": "2026-09-15T00:27:42Z",
+      "last_seen": "2026-09-15T00:50:41Z",
       "material_time": "2026-09-14T23:17:04Z",
       "domains": [
         "INFRA",
@@ -10997,7 +11016,7 @@
         "861c1b176dc32338783a"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-15T00:27:42Z",
+      "last_seen": "2026-09-15T00:50:41Z",
       "material_time": "2026-09-14T21:32:45Z",
       "domains": [
         "ECONOMIC",
@@ -11311,20 +11330,6 @@
           ]
         },
         {
-          "claim_id": "claim-484b52cf892585e914",
-          "shared_actors": [
-            "IRAN",
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "IRAN",
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "NUCLEAR"
-          ]
-        },
-        {
           "claim_id": "claim-2fc06039b178702137",
           "shared_actors": [
             "CHINA"
@@ -11410,6 +11415,20 @@
           ],
           "domains": [
             "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-934b288ecf457a5979",
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "INFRA",
+            "POLITICAL"
           ]
         }
       ],
@@ -11827,18 +11846,6 @@
           ]
         },
         {
-          "claim_id": "claim-484b52cf892585e914",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "NUCLEAR"
-          ]
-        },
-        {
           "claim_id": "claim-2fc06039b178702137",
           "shared_actors": [
             "RUSSIA"
@@ -11937,6 +11944,18 @@
           ],
           "domains": [
             "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-09f825b3a82468f624",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "TERRORISM"
           ]
         }
       ],
@@ -12564,11 +12583,12 @@
       "observation_ids": [
         "7b4f722ec66e96b0e982",
         "7c4815c67c0a4c8a84e3",
-        "1ec5c0c2f4605ca7a533"
+        "1ec5c0c2f4605ca7a533",
+        "bf318168d3cec2d9c88d"
       ],
       "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-15T00:27:42Z",
-      "material_time": "2026-09-14T12:00:00Z",
+      "last_seen": "2026-09-15T00:50:41Z",
+      "material_time": "2026-09-15T00:38:36Z",
       "domains": [
         "ECONOMIC",
         "INFRA"
@@ -12582,35 +12602,49 @@
         "UNITED STATES"
       ],
       "state": "CREDIBLE REPORT",
-      "confidence": 71,
-      "confidence_direction": "STABLE",
+      "confidence": 80,
+      "confidence_direction": "UP",
       "confidence_components": {
         "source_quality": 97,
-        "independence": 25,
-        "corroboration": 28,
+        "independence": 52,
+        "corroboration": 58,
         "contradiction": 0,
-        "specificity": 87,
-        "recency": 96,
+        "specificity": 85,
+        "recency": 100,
         "evidence_type": 86,
-        "historical_reliability": 97,
-        "claim_maturity": 58
+        "historical_reliability": 85,
+        "claim_maturity": 68
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
         "7b4f722ec66e96b0e982",
         "7c4815c67c0a4c8a84e3",
-        "1ec5c0c2f4605ca7a533"
+        "1ec5c0c2f4605ca7a533",
+        "bf318168d3cec2d9c88d"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 1,
-      "independent_provenance_count": 1,
+      "source_count": 2,
+      "independent_provenance_count": 2,
       "sources": [
+        "TASS World",
         "U.S. DOJ National Security Division"
       ],
       "provenance_roots": [
-        "doj_nsd"
+        "doj_nsd",
+        "tass"
       ],
       "evidence": [
+        {
+          "observation_id": "bf318168d3cec2d9c88d",
+          "title": "Russian national pleads guilty to illegally exporting aircraft parts — Justice Department",
+          "source": "TASS World",
+          "source_class": "state_media",
+          "provenance_root": "tass",
+          "stance": "report",
+          "published": "2026-09-15T00:38:36Z",
+          "url": "https://tass.com/world/2187593",
+          "discovery_only": false
+        },
         {
           "observation_id": "7c4815c67c0a4c8a84e3",
           "title": "Russian National Pleads Guilty to Smuggling U.S. Aerospace Goods to Russia",
@@ -12645,7 +12679,7 @@
           "discovery_only": false
         }
       ],
-      "state_affiliated_reporting": false,
+      "state_affiliated_reporting": true,
       "discovery_only": false,
       "branch_analysis": {
         "current_observation": "Russian National Pleads Guilty to Smuggling U.S. Aerospace Goods to Russia",
@@ -12745,47 +12779,28 @@
       ],
       "cross_domain_links": [
         {
-          "claim_id": "claim-5da507c02c1362e90f",
+          "claim_id": "claim-0d61754c68d7de6973",
           "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-b2c6511084a448b9c3",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-a43bc0e0f20f1aa6ae",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-c741a676efa686c4a7",
-          "shared_actors": [
+            "RUSSIA",
             "UNITED STATES"
           ],
           "shared_regions": [
+            "RUSSIA",
+            "UNITED STATES"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL"
+          ]
+        },
+        {
+          "claim_id": "claim-64a43a6b753b34617f",
+          "shared_actors": [
+            "RUSSIA",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "RUSSIA",
             "UNITED STATES"
           ],
           "domains": [
@@ -12793,22 +12808,20 @@
           ]
         },
         {
-          "claim_id": "claim-b1018e927a4942f90c",
+          "claim_id": "claim-1f69694f9161800108",
           "shared_actors": [
-            "RUSSIA",
             "UNITED STATES"
           ],
           "shared_regions": [
-            "RUSSIA",
             "UNITED STATES"
           ],
           "domains": [
-            "POLITICAL",
+            "INFRA",
             "WAR"
           ]
         },
         {
-          "claim_id": "claim-4769abfdbd63f532f5",
+          "claim_id": "claim-7e098b3fc8f7c7e6ee",
           "shared_actors": [
             "RUSSIA"
           ],
@@ -12817,11 +12830,11 @@
           ],
           "domains": [
             "POLITICAL",
-            "WAR"
+            "TERRORISM"
           ]
         },
         {
-          "claim_id": "claim-d692ffb7158fd7bdce",
+          "claim_id": "claim-7a28eb3358595f4f36",
           "shared_actors": [
             "UNITED STATES"
           ],
@@ -12829,36 +12842,25 @@
             "UNITED STATES"
           ],
           "domains": [
-            "BIO",
-            "INFRA"
+            "INFRA",
+            "POLITICAL",
+            "TERRORISM"
           ]
         },
         {
-          "claim_id": "claim-fc183859b5a5e7d04b",
+          "claim_id": "claim-026ea071c93a7a1bef",
           "shared_actors": [
-            "RUSSIA"
+            "UNITED STATES"
           ],
           "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-634bf2a8b822a8fca7",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
+            "UNITED STATES"
           ],
           "domains": [
             "WAR"
           ]
         },
         {
-          "claim_id": "claim-c02399019267b0d4a9",
+          "claim_id": "claim-6ec08c50526e0318b1",
           "shared_actors": [
             "UNITED STATES"
           ],
@@ -12866,11 +12868,36 @@
             "UNITED STATES"
           ],
           "domains": [
-            "INFRA"
+            "WAR"
           ]
         },
         {
-          "claim_id": "claim-6e3eb92f45df07cf9d",
+          "claim_id": "claim-736a632e6f34f2fb6f",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-9e38abff2b8deb67ec",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-61a41ffc4c4821b1df",
           "shared_actors": [
             "RUSSIA"
           ],
@@ -12882,7 +12909,7 @@
           ]
         },
         {
-          "claim_id": "claim-6e7c34d2aedb03c9ec",
+          "claim_id": "claim-e2a9429eceba7174e0",
           "shared_actors": [
             "RUSSIA"
           ],
@@ -12891,6 +12918,18 @@
           ],
           "domains": [
             "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-4d04dffa26be349677",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA"
           ]
         }
       ],
@@ -12898,15 +12937,15 @@
         "anomaly-7020d22aa0cf9088",
         "anomaly-6085588a66c43d1d"
       ],
-      "threat_score": 15,
-      "watch_priority": 49,
+      "threat_score": 17,
+      "watch_priority": 51,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 3,
+        "support_count": 4,
         "contradiction_count": 0,
-        "independent_roots": 1,
+        "independent_roots": 2,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-14T12:00:00Z"
+        "material_time_used_for_decay": "2026-09-15T00:38:36Z"
       }
     },
     {
@@ -13628,7 +13667,7 @@
         "corroboration": 52,
         "contradiction": 0,
         "specificity": 78,
-        "recency": 82,
+        "recency": 81,
         "evidence_type": 67,
         "historical_reliability": 56,
         "claim_maturity": 49
