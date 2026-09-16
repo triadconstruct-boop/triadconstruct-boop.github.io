@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T06:25:41Z",
+  "generated_at": "2026-09-16T06:51:12Z",
   "top_claims": [
     {
       "id": "claim-c073134beb789dafce",
@@ -17,7 +17,7 @@
         "220a6f161989099a838b"
       ],
       "first_seen": "2026-09-15T05:47:24Z",
-      "last_seen": "2026-09-16T06:25:41Z",
+      "last_seen": "2026-09-16T06:51:12Z",
       "material_time": "2026-09-11T14:59:58Z",
       "domains": [
         "INFRA",
@@ -212,6 +212,33 @@
           ]
         },
         {
+          "claim_id": "claim-4987d793014ffd52fc",
+          "shared_actors": [
+            "ISIS",
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "SECURITY",
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-53e18bb52cd1f89000",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "HUMANITARIAN",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-ddb3856e9fd1a3a0d6",
           "shared_actors": [
             "UNITED STATES"
@@ -325,35 +352,6 @@
           ],
           "domains": [
             "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-95b05688477d6a88f7",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-8502fc721ea6d8ba11",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "EUROPE",
-            "MIDDLE EAST",
-            "UNITED STATES"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
             "WAR"
           ]
         }
@@ -641,16 +639,14 @@
       ],
       "cross_domain_links": [
         {
-          "claim_id": "claim-f636e8ad85bca9243f",
+          "claim_id": "claim-4987d793014ffd52fc",
           "shared_actors": [
             "ISIS"
           ],
           "shared_regions": [],
           "domains": [
-            "INFRA",
-            "POLITICAL",
-            "TERRORISM",
-            "WAR"
+            "SECURITY",
+            "TERRORISM"
           ]
         },
         {
@@ -663,6 +659,19 @@
             "INFRA",
             "POLITICAL",
             "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-f636e8ad85bca9243f",
+          "shared_actors": [
+            "ISIS"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "TERRORISM",
+            "WAR"
           ]
         },
         {
@@ -771,21 +780,10 @@
             "POLITICAL",
             "TERRORISM"
           ]
-        },
-        {
-          "claim_id": "claim-9bfac776efa710df74",
-          "shared_actors": [
-            "ISIS"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "INFRA",
-            "TERRORISM"
-          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-44f512ba746544d2"
+        "anomaly-fb79568c1866fd3f"
       ],
       "threat_score": 6,
       "watch_priority": 64,
@@ -1036,7 +1034,7 @@
         "corroboration": 25,
         "contradiction": 0,
         "specificity": 72,
-        "recency": 80,
+        "recency": 79,
         "evidence_type": 67,
         "historical_reliability": 79,
         "claim_maturity": 50
@@ -1130,6 +1128,21 @@
       },
       "historical_matches": [],
       "cross_domain_links": [
+        {
+          "claim_id": "claim-4987d793014ffd52fc",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "SECURITY",
+            "TERRORISM"
+          ]
+        },
         {
           "claim_id": "claim-8190c234d4d6b9ed22",
           "shared_actors": [
@@ -1261,23 +1274,6 @@
           ]
         },
         {
-          "claim_id": "claim-f636e8ad85bca9243f",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "TERRORISM",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-bad8efc54139185d46",
           "shared_actors": [
             "RUSSIA",
@@ -1294,7 +1290,7 @@
           ]
         },
         {
-          "claim_id": "claim-9c6c39515f9cf6dfda",
+          "claim_id": "claim-f636e8ad85bca9243f",
           "shared_actors": [
             "RUSSIA",
             "UKRAINE"
@@ -1304,15 +1300,16 @@
             "UKRAINE"
           ],
           "domains": [
+            "INFRA",
             "POLITICAL",
-            "SECURITY",
+            "TERRORISM",
             "WAR"
           ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-0c0470f99e9ca8fd",
-        "anomaly-2b9639ea5fe3e585"
+        "anomaly-73e2869a284d04d0",
+        "anomaly-963f33d4cd623063"
       ],
       "threat_score": 3,
       "watch_priority": 65,
@@ -1449,6 +1446,380 @@
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-09T17:47:09Z"
+      }
+    },
+    {
+      "id": "claim-4987d793014ffd52fc",
+      "headline": "Why is Trump warning Zelenskyy not to hit Russian diesel refineries?",
+      "signature_tokens": [
+        "diesel",
+        "hit",
+        "refineries",
+        "russian",
+        "trump",
+        "warning",
+        "why",
+        "zelenskyy"
+      ],
+      "observation_ids": [
+        "0cce3cadb31e4e13fd20",
+        "3277973d79a5593becef",
+        "c7801621dac4bf122e00",
+        "9d829963c0decac67153",
+        "2962379c32b9ddbfecdd"
+      ],
+      "first_seen": "2026-09-14T14:21:55Z",
+      "last_seen": "2026-09-15T16:46:31Z",
+      "material_time": "2026-09-14T17:17:15Z",
+      "domains": [
+        "SECURITY",
+        "TERRORISM"
+      ],
+      "regions": [
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "actors": [
+        "ISIS",
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "state": "EARLY WARNING",
+      "confidence": 60,
+      "confidence_direction": "STABLE",
+      "confidence_components": {
+        "source_quality": 82,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 66,
+        "recency": 86,
+        "evidence_type": 79,
+        "historical_reliability": 82,
+        "claim_maturity": 38
+      },
+      "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
+      "supporting_observation_ids": [
+        "0cce3cadb31e4e13fd20",
+        "3277973d79a5593becef",
+        "c7801621dac4bf122e00",
+        "9d829963c0decac67153",
+        "2962379c32b9ddbfecdd"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 2,
+      "independent_provenance_count": 1,
+      "sources": [
+        "Al Jazeera English",
+        "Google News Weak-Signal Discovery"
+      ],
+      "provenance_roots": [
+        "aljazeera",
+        "google_weak_signal"
+      ],
+      "evidence": [
+        {
+          "observation_id": "3277973d79a5593becef",
+          "title": "Why is Trump warning Zelenskyy not to hit Russian diesel refineries? - Al Jazeera",
+          "source": "Google News Weak-Signal Discovery",
+          "source_class": "low_confidence",
+          "provenance_root": "google_weak_signal",
+          "stance": "warning",
+          "published": "2026-09-14T17:17:15Z",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxObzJXZU5PdWNpTDFWWmF0NDlsT2FtNkRHRWZoM0xDNVlhSmlwSkZDSzRpSXJ1VVZHcTBXX0YzRGNydHh2QmI3RUhOQ1gxaU1admVYT29YUmptRnU2ckdDLUpyY0ZNX3VYTHFBYzRPcHdVdWg4VUhyUVpyMlpFdzIwOXhndkhFZy1ZWkNxRk5pZEljblFtV3czVmctR3AyRkRGUHhfSFMwczdqRVFHNGJsSNIBtgFBVV95cUxNQjRQYUloRmR1Q2htUm9zNDNTY2VYeENzb1hDSUFCWjRYSDMzblVZTzNQVG5PYnUtU185a3Z1WUY3eXpXTTJ1a0JUNVJnX0lFNU1aX3V0c1lCNk5URTFzcDlzRmFYY29QUDRZOGZTdE1VSTFFWmhQeDlfRXc4U3VfbWZHZlZPdlhKMWZrMVZNV0RJNk9fUkRHUWRCbmE5Q245dWtzVmZoX2g4NHdSeVpKX0Q3WHJaQQ?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "c7801621dac4bf122e00",
+          "title": "Why is Trump warning Zelenskyy not to hit Russian diesel refineries? - aljazeera.com",
+          "source": "Google News Weak-Signal Discovery",
+          "source_class": "low_confidence",
+          "provenance_root": "google_weak_signal",
+          "stance": "warning",
+          "published": "2026-09-14T17:17:15Z",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxObzJXZU5PdWNpTDFWWmF0NDlsT2FtNkRHRWZoM0xDNVlhSmlwSkZDSzRpSXJ1VVZHcTBXX0YzRGNydHh2QmI3RUhOQ1gxaU1admVYT29YUmptRnU2ckdDLUpyY0ZNX3VYTHFBYzRPcHdVdWg4VUhyUVpyMlpFdzIwOXhndkhFZy1ZWkNxRk5pZEljblFtV3czVmctR3AyRkRGUHhfSFMwczdqRVFHNGJsSNIBtgFBVV95cUxNQjRQYUloRmR1Q2htUm9zNDNTY2VYeENzb1hDSUFCWjRYSDMzblVZTzNQVG5PYnUtU185a3Z1WUY3eXpXTTJ1a0JUNVJnX0lFNU1aX3V0c1lCNk5URTFzcDlzRmFYY29QUDRZOGZTdE1VSTFFWmhQeDlfRXc4U3VfbWZHZlZPdlhKMWZrMVZNV0RJNk9fUkRHUWRCbmE5Q245dWtzVmZoX2g4NHdSeVpKX0Q3WHJaQQ?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "0cce3cadb31e4e13fd20",
+          "title": "Why is Trump warning Zelenskyy not to hit Russian diesel refineries?",
+          "source": "Al Jazeera English",
+          "source_class": "established_media",
+          "provenance_root": "aljazeera",
+          "stance": "warning",
+          "published": "2026-09-14T14:04:55Z",
+          "url": "https://www.aljazeera.com/economy/2026/9/14/why-is-trump-warning-zelenskyy-not-to-hit-russian-diesel-refineries?traffic_source=rss",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "9d829963c0decac67153",
+          "title": "Trump Warning To Zelenskyy Over Russia Oil Strikes As Global Fuel Crisis Deepens - Dynamite News",
+          "source": "Google News Weak-Signal Discovery",
+          "source_class": "low_confidence",
+          "provenance_root": "google_weak_signal",
+          "stance": "warning",
+          "published": "2026-09-14T05:44:14Z",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMDRNbE04cFRzMFhxYU9laXhYZ25fUUlNRkdfSE5fTl80NnRHN0JldVVEYzVTWVFHa2k5ckpZWmxqWE9mR1Z3dElFLUhSTGI1QUVvSTRMbFpVaTdLcXR6cHBvaWRDMGZVRXVPaDVVNlQ3S2tiT05OTGRpUWU0YkM3eVN2WTBpd284QXI3blFTRktnOGRGNHVGQ3N6UzlQLXY3c1JLMjBDMkZHNDgzM0dBT3FBUGZfUTdQb3Z3LUR5dHPSAcYBQVVfeXFMTzUzWTFNdVRrYzhYdmd0ZlVnY01KOTB3NjJnM0NVZ2ptLWNHV2ZxWktrSE83ZEM4c19Xbk5mYUpDR3dQTHN5NnJLcGJrcEVzTmdDQ2lVSWZuUnVxRjVBa3lDVC1kMXRESWExbDlsVUdCV3FyZGpGUXNXSnZVdzhjS0ZvblNPSE9jX21KS1B4UXYzRFNlSWV3RzlCNW5UY2RYczRBZkN3Wk95NVV5bmdncGVreW5ISmZaNnN0Z2NTeXg4NmZITkR3?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "2962379c32b9ddbfecdd",
+          "title": "Trump Warning To Zelenskyy Over Russia Oil Strikes As Global Fuel Crisis Deepens - dynamitenews.com",
+          "source": "Google News Weak-Signal Discovery",
+          "source_class": "low_confidence",
+          "provenance_root": "google_weak_signal",
+          "stance": "warning",
+          "published": "2026-09-14T05:44:14Z",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMDRNbE04cFRzMFhxYU9laXhYZ25fUUlNRkdfSE5fTl80NnRHN0JldVVEYzVTWVFHa2k5ckpZWmxqWE9mR1Z3dElFLUhSTGI1QUVvSTRMbFpVaTdLcXR6cHBvaWRDMGZVRXVPaDVVNlQ3S2tiT05OTGRpUWU0YkM3eVN2WTBpd284QXI3blFTRktnOGRGNHVGQ3N6UzlQLXY3c1JLMjBDMkZHNDgzM0dBT3FBUGZfUTdQb3Z3LUR5dHPSAcYBQVVfeXFMTzUzWTFNdVRrYzhYdmd0ZlVnY01KOTB3NjJnM0NVZ2ptLWNHV2ZxWktrSE83ZEM4c19Xbk5mYUpDR3dQTHN5NnJLcGJrcEVzTmdDQ2lVSWZuUnVxRjVBa3lDVC1kMXRESWExbDlsVUdCV3FyZGpGUXNXSnZVdzhjS0ZvblNPSE9jX21KS1B4UXYzRFNlSWV3RzlCNW5UY2RYczRBZkN3Wk95NVV5bmdncGVreW5ISmZaNnN0Z2NTeXg4NmZITkR3?oc=5",
+          "discovery_only": true
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Why is Trump warning Zelenskyy not to hit Russian diesel refineries?",
+        "plausible_explanations": [
+          "A genuine SECURITY/TERRORISM development involving ISIS, RUSSIA, UKRAINE is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related SECURITY/TERRORISM indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-f9781e8a8f711fa0cd",
+          "headline": "Maryland Man Sentenced for Attempting to Provide Material Support to ISIS",
+          "material_time": "2026-07-08T12:00:00Z",
+          "shared_domains": [
+            "TERRORISM"
+          ],
+          "shared_actors": [
+            "ISIS"
+          ],
+          "shared_regions": []
+        },
+        {
+          "claim_id": "claim-a32995db0403bbdba3",
+          "headline": "Following the Money, Shutting Down Exploitation",
+          "material_time": "2025-09-24T20:55:29Z",
+          "shared_domains": [
+            "TERRORISM"
+          ],
+          "shared_actors": [
+            "ISIS"
+          ],
+          "shared_regions": []
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-8190c234d4d6b9ed22",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-873f871656fe6bad54",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-595e44069b36c943ea",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-c39151f0d522f4c1b9",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "CYBER"
+          ]
+        },
+        {
+          "claim_id": "claim-95b05688477d6a88f7",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-fdad203b3ac1516a92",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-aa3bc5ebc8c5f91dca",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-7a719204e6b80e41f1",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "CYBER",
+            "ECONOMIC",
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-1787337597e4765201",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-bad8efc54139185d46",
+          "shared_actors": [
+            "ISIS",
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-f636e8ad85bca9243f",
+          "shared_actors": [
+            "ISIS",
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "TERRORISM",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-9c6c39515f9cf6dfda",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY",
+            "WAR"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-fb79568c1866fd3f",
+        "anomaly-73e2869a284d04d0",
+        "anomaly-963f33d4cd623063"
+      ],
+      "threat_score": 6,
+      "watch_priority": 76,
+      "audit": {
+        "reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
+        "support_count": 5,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-14T17:17:15Z"
       }
     },
     {
@@ -1810,6 +2181,265 @@
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-08T04:00:27Z"
+      }
+    },
+    {
+      "id": "claim-53e18bb52cd1f89000",
+      "headline": "Surge in Yemen violence ends ceasefire and drives mass displacement",
+      "signature_tokens": [
+        "ceasefire",
+        "displacement",
+        "drives",
+        "ends",
+        "mass",
+        "surge",
+        "violence",
+        "yemen"
+      ],
+      "observation_ids": [
+        "b766dbbcabc3937c330d"
+      ],
+      "first_seen": "2026-09-16T06:51:12Z",
+      "last_seen": "2026-09-16T06:51:12Z",
+      "material_time": "2026-09-16T06:42:13Z",
+      "domains": [
+        "HUMANITARIAN",
+        "WAR"
+      ],
+      "regions": [
+        "MIDDLE EAST"
+      ],
+      "actors": [],
+      "state": "EARLY WARNING",
+      "confidence": 60,
+      "confidence_direction": "NEW",
+      "confidence_components": {
+        "source_quality": 80,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 62,
+        "recency": 100,
+        "evidence_type": 67,
+        "historical_reliability": 80,
+        "claim_maturity": 35
+      },
+      "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
+      "supporting_observation_ids": [
+        "b766dbbcabc3937c330d"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 1,
+      "independent_provenance_count": 1,
+      "sources": [
+        "Euronews"
+      ],
+      "provenance_roots": [
+        "euronews"
+      ],
+      "evidence": [
+        {
+          "observation_id": "b766dbbcabc3937c330d",
+          "title": "Surge in Yemen violence ends ceasefire and drives mass displacement",
+          "source": "Euronews",
+          "source_class": "regional_local",
+          "provenance_root": "euronews",
+          "stance": "warning",
+          "published": "2026-09-16T06:42:13Z",
+          "url": "https://www.euronews.com/video/2026/09/16/surge-in-yemen-violence-ends-ceasefire-and-drives-mass-displacement",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Surge in Yemen violence ends ceasefire and drives mass displacement",
+        "plausible_explanations": [
+          "A genuine HUMANITARIAN/WAR development involving the reported actors is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related HUMANITARIAN/WAR indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-b066c21f238db11a0f",
+          "headline": "WHO Director-General visits Jordan to recognize strong collaboration on health system delivery, emergency relief and advancing mental health",
+          "material_time": "2026-02-25T18:06:55Z",
+          "shared_domains": [
+            "HUMANITARIAN"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ]
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-ddb3856e9fd1a3a0d6",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "INFRA",
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-d9325a7cb83ec77f19",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "BIO",
+            "ECONOMIC",
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-8502fc721ea6d8ba11",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-6bcaf5ddb350eee1d6",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "SPACE",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-624f3c741fb6d2bde5",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "HUMANITARIAN",
+            "INFRA",
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-711c971a5e74813ed2",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-6130cc44f32ec7fcc9",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "NUCLEAR"
+          ]
+        },
+        {
+          "claim_id": "claim-4d84a9999816928a02",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "INFRA",
+            "SPACE",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-6ca64a0d6d9f52caba",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-d8a333a00fe0e9bbfa",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-cc051eadd94e742d81",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "BIO",
+            "INFRA",
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-14d960854e93a7512c",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-9688e15f820c8d71"
+      ],
+      "threat_score": 7,
+      "watch_priority": 57,
+      "audit": {
+        "reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
+        "support_count": 1,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-16T06:42:13Z"
       }
     },
     {
@@ -2296,6 +2926,18 @@
           ]
         },
         {
+          "claim_id": "claim-bad8efc54139185d46",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "TERRORISM"
+          ]
+        },
+        {
           "claim_id": "claim-f636e8ad85bca9243f",
           "shared_actors": [
             "UNITED STATES"
@@ -2308,18 +2950,6 @@
             "POLITICAL",
             "TERRORISM",
             "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-bad8efc54139185d46",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "TERRORISM"
           ]
         },
         {
@@ -2632,6 +3262,22 @@
           ]
         },
         {
+          "claim_id": "claim-bad8efc54139185d46",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "TERRORISM"
+          ]
+        },
+        {
           "claim_id": "claim-f636e8ad85bca9243f",
           "shared_actors": [
             "RUSSIA",
@@ -2646,22 +3292,6 @@
             "POLITICAL",
             "TERRORISM",
             "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-bad8efc54139185d46",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "TERRORISM"
           ]
         },
         {
@@ -2695,8 +3325,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-0c0470f99e9ca8fd",
-        "anomaly-2b9639ea5fe3e585"
+        "anomaly-73e2869a284d04d0",
+        "anomaly-963f33d4cd623063"
       ],
       "threat_score": 5,
       "watch_priority": 63,
@@ -2893,6 +3523,18 @@
           ]
         },
         {
+          "claim_id": "claim-883eb26d6317ca65aa",
+          "shared_actors": [
+            "NORTH KOREA"
+          ],
+          "shared_regions": [
+            "KOREAN PENINSULA"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
+        },
+        {
           "claim_id": "claim-8809c7469e2a612b57",
           "shared_actors": [
             "NORTH KOREA"
@@ -2956,18 +3598,6 @@
           ],
           "domains": [
             "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-2e7bc064539f334e6a",
-          "shared_actors": [
-            "NORTH KOREA"
-          ],
-          "shared_regions": [
-            "KOREAN PENINSULA"
-          ],
-          "domains": [
-            "INFRA"
           ]
         }
       ],
@@ -3184,7 +3814,7 @@
         "3bb7313af6e3fa11dba7"
       ],
       "first_seen": "2026-09-16T06:25:41Z",
-      "last_seen": "2026-09-16T06:25:41Z",
+      "last_seen": "2026-09-16T06:51:12Z",
       "material_time": "2026-09-16T00:00:00Z",
       "domains": [
         "BIO",
@@ -3200,7 +3830,7 @@
       ],
       "state": "CONFIRMED",
       "confidence": 70,
-      "confidence_direction": "NEW",
+      "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 98,
         "independence": 25,
@@ -3540,7 +4170,7 @@
         "62f08a84420230e14e59"
       ],
       "first_seen": "2026-09-10T15:20:18Z",
-      "last_seen": "2026-09-16T06:25:41Z",
+      "last_seen": "2026-09-16T06:51:12Z",
       "material_time": "2026-09-15T18:02:35Z",
       "domains": [
         "INFRA",
@@ -3555,7 +4185,7 @@
         "ISRAEL"
       ],
       "state": "SPECULATIVE",
-      "confidence": 35,
+      "confidence": 34,
       "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 15,
@@ -4239,749 +4869,29 @@
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-09T01:38:02Z"
       }
-    },
-    {
-      "id": "claim-873f871656fe6bad54",
-      "headline": "Russian forces kill 11, injure 64 across Ukraine over past day, hit diesel locomotive close to Polish border",
-      "signature_tokens": [
-        "across",
-        "border",
-        "close",
-        "day",
-        "diesel",
-        "forces",
-        "hit",
-        "injure",
-        "kill",
-        "locomotive",
-        "past",
-        "polish",
-        "russian",
-        "ukraine"
-      ],
-      "observation_ids": [
-        "e0380d421eaa4dfd5096",
-        "dba712575e1d4d7a0b58",
-        "be69ccad658f5a5eee0e",
-        "f0c39650b8a9977c12bb",
-        "6f095e78ac5c4eee797a",
-        "dbcfc73998bd527fd287",
-        "88a17d0c5f083c3bbe2b",
-        "b4dcc1694a785101d93c"
-      ],
-      "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-15T17:17:55Z",
-      "material_time": "2026-09-15T09:55:03Z",
-      "domains": [
-        "INFRA",
-        "SECURITY",
-        "WAR"
-      ],
-      "regions": [
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "actors": [
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 67,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 79,
-        "independence": 25,
-        "corroboration": 40,
-        "contradiction": 0,
-        "specificity": 83,
-        "recency": 92,
-        "evidence_type": 67,
-        "historical_reliability": 79,
-        "claim_maturity": 100
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "e0380d421eaa4dfd5096",
-        "dba712575e1d4d7a0b58",
-        "be69ccad658f5a5eee0e",
-        "f0c39650b8a9977c12bb",
-        "6f095e78ac5c4eee797a",
-        "dbcfc73998bd527fd287",
-        "88a17d0c5f083c3bbe2b",
-        "b4dcc1694a785101d93c"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 2,
-      "independent_provenance_count": 1,
-      "sources": [
-        "Kyiv Independent",
-        "kyivpost.com"
-      ],
-      "provenance_roots": [
-        "kyiv_independent",
-        "kyivpost.com"
-      ],
-      "evidence": [
-        {
-          "observation_id": "b4dcc1694a785101d93c",
-          "title": "Russian forces kill 11, injure 64 across Ukraine over past day, hit diesel locomotive close to Polish border",
-          "source": "Kyiv Independent",
-          "source_class": "regional_local",
-          "provenance_root": "kyiv_independent",
-          "stance": "report",
-          "published": "2026-09-15T09:55:03Z",
-          "url": "https://kyivindependent.com/russian-forces-kill-9-injure-145-across-ukraine-over-past-day-hit-diesel-locomotive-close-to-polish-border",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "88a17d0c5f083c3bbe2b",
-          "title": "Russian attacks kill 6, injure 43 across Ukraine over past day, Donetsk Oblast among hardest hit",
-          "source": "Kyiv Independent",
-          "source_class": "regional_local",
-          "provenance_root": "kyiv_independent",
-          "stance": "report",
-          "published": "2026-09-14T11:03:03Z",
-          "url": "https://kyivindependent.com/russian-attacks-kill-6-injure-43-across-ukraine-over-past-day-donetsk-oblast-among-hardest-hit",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "dbcfc73998bd527fd287",
-          "title": "Russian drones target Volyn, Rivne oblasts in rare mass attack in western Ukraine",
-          "source": "Kyiv Independent",
-          "source_class": "regional_local",
-          "provenance_root": "kyiv_independent",
-          "stance": "report",
-          "published": "2026-09-12T19:26:09Z",
-          "url": "https://kyivindependent.com/russian-drones-target-volyn-rivne-oblasts-in-rare-mass-attack-in-western-ukraine",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "6f095e78ac5c4eee797a",
-          "title": "Russian attacks kill 11, injure 96 across Ukraine as Odesa comes under mass overnight strike",
-          "source": "Kyiv Independent",
-          "source_class": "regional_local",
-          "provenance_root": "kyiv_independent",
-          "stance": "report",
-          "published": "2026-09-12T09:03:59Z",
-          "url": "https://kyivindependent.com/russian-attacks-kill-11-injure-96-across-ukraine-as-odesa-comes-under-mass-overnight-strike",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "be69ccad658f5a5eee0e",
-          "title": "Russian forces kill 9, injure 145 across Ukraine over past day as Moscow expands gas station strikes to Kyiv",
-          "source": "Kyiv Independent",
-          "source_class": "regional_local",
-          "provenance_root": "kyiv_independent",
-          "stance": "report",
-          "published": "2026-09-11T09:58:59Z",
-          "url": "https://kyivindependent.com/russian-forces-kill-9-injure-145-across-ukraine-over-past-day-as-moscow-expands-gas-station-strikes-to-kyiv",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "f0c39650b8a9977c12bb",
-          "title": "'There might be nothing left tomorrow' — Russia ramps up attacks on Kyiv's gas stations",
-          "source": "Kyiv Independent",
-          "source_class": "regional_local",
-          "provenance_root": "kyiv_independent",
-          "stance": "speculation",
-          "published": "2026-09-11T07:59:41Z",
-          "url": "https://kyivindependent.com/russia-strikes-2-gas-stations-injures-at-least-2-in-kyiv-during-morning-rush-hour",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "dba712575e1d4d7a0b58",
-          "title": "Russian Strikes Injure 80 , Kill 4 Across Ukraine",
-          "source": "kyivpost.com",
-          "source_class": "low_confidence",
-          "provenance_root": "kyivpost.com",
-          "stance": "report",
-          "published": "2026-09-10T18:00:00Z",
-          "url": "https://www.kyivpost.com/post/84232",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "e0380d421eaa4dfd5096",
-          "title": "Russian attacks kill at least 12, injure 72 across Ukraine as Russia continues relentless strikes on Kyiv",
-          "source": "Kyiv Independent",
-          "source_class": "regional_local",
-          "provenance_root": "kyiv_independent",
-          "stance": "report",
-          "published": "2026-09-09T09:39:28Z",
-          "url": "https://kyivindependent.com/russian-attacks-kill-at-least-injure-across-ukraine-as-russia-continues-relentless-strikes-on-kyiv",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Russian forces kill 11, injure 64 across Ukraine over past day, hit diesel locomotive close to Polish border",
-        "plausible_explanations": [
-          "A genuine INFRA/SECURITY/WAR development involving RUSSIA, UKRAINE is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related INFRA/SECURITY/WAR indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-595e44069b36c943ea",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-c39151f0d522f4c1b9",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "CYBER"
-          ]
-        },
-        {
-          "claim_id": "claim-95b05688477d6a88f7",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-fdad203b3ac1516a92",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-aa3bc5ebc8c5f91dca",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-7a719204e6b80e41f1",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "CYBER",
-            "ECONOMIC",
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-1787337597e4765201",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-f636e8ad85bca9243f",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "TERRORISM",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-bad8efc54139185d46",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "TERRORISM"
-          ]
-        },
-        {
-          "claim_id": "claim-9c6c39515f9cf6dfda",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-a53cde60c297791506",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-1149962d61889ceb84",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA",
-            "TERRORISM"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-0c0470f99e9ca8fd",
-        "anomaly-2b9639ea5fe3e585"
-      ],
-      "threat_score": 23,
-      "watch_priority": 61,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 8,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-15T09:55:03Z"
-      }
-    },
-    {
-      "id": "claim-595e44069b36c943ea",
-      "headline": "Half a million Russians killed in Ukraine war, British intelligence says",
-      "signature_tokens": [
-        "british",
-        "half",
-        "intelligence",
-        "killed",
-        "million",
-        "russians",
-        "ukraine",
-        "war"
-      ],
-      "observation_ids": [
-        "8f57eef73b859350a357",
-        "0fc4cfb87d08b954e58e",
-        "3dd9ed378889d2177f3d",
-        "765c522271956465377e"
-      ],
-      "first_seen": "2026-09-10T09:19:47Z",
-      "last_seen": "2026-09-14T11:20:28Z",
-      "material_time": "2026-09-14T05:41:48Z",
-      "domains": [
-        "INFRA",
-        "POLITICAL",
-        "WAR"
-      ],
-      "regions": [
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "actors": [
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "state": "CONFIRMED",
-      "confidence": 78,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 80,
-        "independence": 79,
-        "corroboration": 85,
-        "contradiction": 0,
-        "specificity": 82,
-        "recency": 82,
-        "evidence_type": 67,
-        "historical_reliability": 68,
-        "claim_maturity": 71
-      },
-      "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-      "supporting_observation_ids": [
-        "8f57eef73b859350a357",
-        "0fc4cfb87d08b954e58e",
-        "3dd9ed378889d2177f3d",
-        "765c522271956465377e"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 3,
-      "independent_provenance_count": 3,
-      "sources": [
-        "Kyiv Independent",
-        "Reddit WorldNews Signal",
-        "Sky News World"
-      ],
-      "provenance_roots": [
-        "kyiv_independent",
-        "reddit_worldnews",
-        "sky_world"
-      ],
-      "evidence": [
-        {
-          "observation_id": "765c522271956465377e",
-          "title": "Half a million Russians killed in Ukraine war, British intelligence says",
-          "source": "Reddit WorldNews Signal",
-          "source_class": "low_confidence",
-          "provenance_root": "reddit_worldnews",
-          "stance": "report",
-          "published": "2026-09-14T05:41:48Z",
-          "url": "https://www.reddit.com/r/worldnews/comments/1wfuskg/half_a_million_russians_killed_in_ukraine_war",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "3dd9ed378889d2177f3d",
-          "title": "Half a million Russian troops killed since start of full-scale invasion of Ukraine, British intel reports",
-          "source": "Kyiv Independent",
-          "source_class": "regional_local",
-          "provenance_root": "kyiv_independent",
-          "stance": "report",
-          "published": "2026-09-12T01:52:26Z",
-          "url": "https://kyivindependent.com/half-a-million-russian-troops-killed-since-start-of-full-scale-invasion-of-ukraine-british-intel-reports",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "0fc4cfb87d08b954e58e",
-          "title": "Half a million Russians killed in Ukraine war, British intelligence says",
-          "source": "Sky News World",
-          "source_class": "regional_local",
-          "provenance_root": "sky_world",
-          "stance": "report",
-          "published": "2026-09-11T10:52:00Z",
-          "url": "https://news.sky.com/story/half-a-million-russians-killed-in-ukraine-war-british-intelligence-says-13584379",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "8f57eef73b859350a357",
-          "title": "We asked Ukrainian soldiers about Russian losses passing 1.5 million",
-          "source": "Kyiv Independent",
-          "source_class": "regional_local",
-          "provenance_root": "kyiv_independent",
-          "stance": "report",
-          "published": "2026-09-10T09:08:04Z",
-          "url": "https://kyivindependent.com/russia-can-afford-to-lose-just-as-many-russian-losses-reach-1-5-million-as-casualty-rate-surges",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Half a million Russians killed in Ukraine war, British intelligence says",
-        "plausible_explanations": [
-          "A genuine INFRA/POLITICAL/WAR development involving RUSSIA, UKRAINE is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related INFRA/POLITICAL/WAR indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-c39151f0d522f4c1b9",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "CYBER"
-          ]
-        },
-        {
-          "claim_id": "claim-95b05688477d6a88f7",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-fdad203b3ac1516a92",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-aa3bc5ebc8c5f91dca",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-7a719204e6b80e41f1",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "CYBER",
-            "ECONOMIC",
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-1787337597e4765201",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-f636e8ad85bca9243f",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "TERRORISM",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-bad8efc54139185d46",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "TERRORISM"
-          ]
-        },
-        {
-          "claim_id": "claim-9c6c39515f9cf6dfda",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-a53cde60c297791506",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-1149962d61889ceb84",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA",
-            "TERRORISM"
-          ]
-        },
-        {
-          "claim_id": "claim-fd234aa37a6d3d8edc",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "SECURITY",
-            "TERRORISM",
-            "WAR"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-0c0470f99e9ca8fd",
-        "anomaly-2b9639ea5fe3e585"
-      ],
-      "threat_score": 34,
-      "watch_priority": 61,
-      "audit": {
-        "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-        "support_count": 4,
-        "contradiction_count": 0,
-        "independent_roots": 3,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-14T05:41:48Z"
-      }
     }
   ],
   "state_counts": {
     "CONFIRMED": 187,
-    "CREDIBLE REPORT": 1534,
-    "EARLY WARNING": 430,
-    "SPECULATIVE": 684,
-    "UNVERIFIED CLAIM": 8401,
+    "CREDIBLE REPORT": 1526,
+    "EARLY WARNING": 433,
+    "SPECULATIVE": 685,
+    "UNVERIFIED CLAIM": 8421,
     "REFUTED": 39,
     "DORMANT": 459
   },
   "domain_counts": {
-    "INFRA": 1611,
-    "NUCLEAR": 123,
-    "POLITICAL": 3968,
-    "TERRORISM": 265,
-    "WAR": 672,
-    "CLIMATE": 182,
-    "ECONOMIC": 151,
+    "INFRA": 1612,
+    "NUCLEAR": 124,
+    "POLITICAL": 3969,
+    "TERRORISM": 266,
+    "WAR": 675,
+    "CLIMATE": 180,
+    "ECONOMIC": 152,
+    "SECURITY": 3245,
     "BIO": 583,
-    "SECURITY": 3246,
+    "HUMANITARIAN": 75,
     "CYBER": 456,
-    "HUMANITARIAN": 74,
     "SPACE": 80,
     "TRAFFICKING": 4
   },
