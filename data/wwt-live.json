@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-17T19:44:05Z",
+  "generated_at": "2026-09-17T20:20:36Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 54,
   "verified_pressure": {
     "score": 54,
-    "claim_count": 63,
+    "claim_count": 64,
     "top_claims": [
       {
         "id": "claim-5b769a7c39f0b6d449",
@@ -36,7 +36,7 @@
           "f1efa7db87d845b15483"
         ],
         "first_seen": "2026-09-16T22:44:31Z",
-        "last_seen": "2026-09-17T19:44:05Z",
+        "last_seen": "2026-09-17T20:20:36Z",
         "material_time": "2026-09-17T16:35:32Z",
         "domains": [
           "ECONOMIC",
@@ -508,9 +508,9 @@
         ],
         "anomaly_ids": [
           "anomaly-57de7473d337991d",
-          "anomaly-7587e8fa7049f348",
+          "anomaly-95a57ed9a06ca2ba",
           "anomaly-34ed70e9cf88f31a",
-          "anomaly-7d881c6f1dcddafd"
+          "anomaly-04bf2c2f87098294"
         ],
         "threat_score": 26,
         "watch_priority": 82,
@@ -724,6 +724,20 @@
             ]
           },
           {
+            "claim_id": "claim-9e3287504758b9d3d0",
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-dc724e78d7f40f2117",
             "shared_actors": [],
             "shared_regions": [
@@ -838,25 +852,10 @@
               "TERRORISM",
               "WAR"
             ]
-          },
-          {
-            "claim_id": "claim-4360b38ce095fd229b",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "TERRORISM",
-              "WAR"
-            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-7d881c6f1dcddafd"
+          "anomaly-04bf2c2f87098294"
         ],
         "threat_score": 34,
         "watch_priority": 58,
@@ -1328,6 +1327,21 @@
         ],
         "cross_domain_links": [
           {
+            "claim_id": "claim-9e3287504758b9d3d0",
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "EUROPE",
+              "UNITED STATES"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-881b764dd3325c35ad",
             "shared_actors": [],
             "shared_regions": [
@@ -1388,16 +1402,6 @@
             "shared_regions": [
               "IRAN",
               "UNITED STATES"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-aa3bc5ebc8c5f91dca",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
             ],
             "domains": [
               "WAR"
@@ -1486,7 +1490,7 @@
         ],
         "anomaly_ids": [
           "anomaly-22e0201099800026",
-          "anomaly-7d881c6f1dcddafd"
+          "anomaly-04bf2c2f87098294"
         ],
         "threat_score": 25,
         "watch_priority": 65,
@@ -1497,6 +1501,361 @@
           "independent_roots": 10,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-14T09:36:56Z"
+        }
+      },
+      {
+        "id": "claim-9e3287504758b9d3d0",
+        "headline": "India vows to protect energy security after new US tariffs over Russian oil",
+        "signature_tokens": [
+          "energy",
+          "india",
+          "oil",
+          "protect",
+          "russian",
+          "security",
+          "tariffs",
+          "vows"
+        ],
+        "observation_ids": [
+          "0aee2fae2944a4b3f92a"
+        ],
+        "first_seen": "2026-09-17T20:20:36Z",
+        "last_seen": "2026-09-17T20:20:36Z",
+        "material_time": "2026-09-17T18:50:04Z",
+        "domains": [
+          "ECONOMIC",
+          "INFRA",
+          "WAR"
+        ],
+        "regions": [
+          "EUROPE",
+          "RUSSIA",
+          "UKRAINE",
+          "UNITED STATES"
+        ],
+        "actors": [
+          "RUSSIA",
+          "UKRAINE",
+          "UNITED STATES"
+        ],
+        "state": "CREDIBLE REPORT",
+        "confidence": 67,
+        "confidence_direction": "NEW",
+        "confidence_components": {
+          "source_quality": 84,
+          "independence": 25,
+          "corroboration": 22,
+          "contradiction": 0,
+          "specificity": 100,
+          "recency": 100,
+          "evidence_type": 79,
+          "historical_reliability": 84,
+          "claim_maturity": 35
+        },
+        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "supporting_observation_ids": [
+          "0aee2fae2944a4b3f92a"
+        ],
+        "contradictory_observation_ids": [],
+        "source_count": 1,
+        "independent_provenance_count": 1,
+        "sources": [
+          "France 24 World"
+        ],
+        "provenance_roots": [
+          "france24"
+        ],
+        "evidence": [
+          {
+            "observation_id": "0aee2fae2944a4b3f92a",
+            "title": "India vows to protect energy security after new US tariffs over Russian oil",
+            "source": "France 24 World",
+            "source_class": "established_media",
+            "provenance_root": "france24",
+            "stance": "speculation",
+            "published": "2026-09-17T18:50:04Z",
+            "url": "https://www.france24.com/en/india-vows-to-protect-energy-security-after-new-us-tariffs-over-russian-oil",
+            "discovery_only": false
+          }
+        ],
+        "state_affiliated_reporting": false,
+        "discovery_only": false,
+        "branch_analysis": {
+          "current_observation": "India vows to protect energy security after new US tariffs over Russian oil",
+          "plausible_explanations": [
+            "A genuine ECONOMIC/INFRA/WAR development involving RUSSIA, UKRAINE, UNITED STATES is unfolding as reported.",
+            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+          ],
+          "escalation_branch": "Related ECONOMIC/INFRA/WAR indicators spread, become operational, or draw additional actors into the event.",
+          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+          "confirm_indicators": [
+            "A primary record, sensor observation, or on-record official confirmation.",
+            "Matching detail from a genuinely independent provenance root.",
+            "Observable follow-on action consistent with the reported event."
+          ],
+          "falsify_indicators": [
+            "Time-stamped primary evidence incompatible with the claim.",
+            "Independent, technically specific refutation from credible sources.",
+            "Predicted follow-on indicators fail to occur inside the stated window."
+          ],
+          "contradictory_evidence_present": false
+        },
+        "historical_matches": [
+          {
+            "claim_id": "claim-ab13de06ed03a68f0a",
+            "headline": "Chinese National Pleads Guilty to Trying to Obtain U.S. Military Equipment",
+            "material_time": "2026-08-10T12:00:00Z",
+            "shared_domains": [
+              "ECONOMIC",
+              "INFRA",
+              "WAR"
+            ],
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ]
+          },
+          {
+            "claim_id": "claim-c63cb32ed106a31b1e",
+            "headline": "Homeland Security Task Force: Dual Dominican and French National Admits Role in Firearms Trafficking Scheme",
+            "material_time": "2026-08-05T12:00:00Z",
+            "shared_domains": [
+              "ECONOMIC",
+              "INFRA"
+            ],
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ]
+          },
+          {
+            "claim_id": "claim-1453116f3488b77a21",
+            "headline": "Turkey-Based Global Director of Sham Charity Arrested and Charged with Conspiring to Provide Material Support to Hamas",
+            "material_time": "2026-07-31T12:00:00Z",
+            "shared_domains": [
+              "INFRA"
+            ],
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ]
+          },
+          {
+            "claim_id": "claim-a02fb9167c45d388fd",
+            "headline": "Department of Justice Files First Case in U.S. Alien Terrorist Removal Court to Deport Afghan Alien Who Supported Her Family’s Plans for Election-Day Shooting",
+            "material_time": "2026-07-30T12:00:00Z",
+            "shared_domains": [
+              "INFRA"
+            ],
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ]
+          },
+          {
+            "claim_id": "claim-cf7625f8b461238993",
+            "headline": "Shahed-Type Drones Filmed During Mali Village Attacks",
+            "material_time": "2026-07-24T15:39:05Z",
+            "shared_domains": [
+              "INFRA"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          }
+        ],
+        "cross_domain_links": [
+          {
+            "claim_id": "claim-b0ae75efd76d19b55d",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "INFRA",
+              "NUCLEAR"
+            ]
+          },
+          {
+            "claim_id": "claim-95b05688477d6a88f7",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-fdad203b3ac1516a92",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-8925b642253e252edc",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-36702df4a2ad817d8b",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "INFRA",
+              "NUCLEAR"
+            ]
+          },
+          {
+            "claim_id": "claim-cec89370431878befe",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "EUROPE",
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-6bcaf5ddb350eee1d6",
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "SPACE",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-d7827b39d33dd83401",
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-a53cde60c297791506",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-ed7d5390f4be334436",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-581ffd16543e8f1f65",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "EUROPE",
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-711c971a5e74813ed2",
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ],
+            "domains": [
+              "INFRA",
+              "WAR"
+            ]
+          }
+        ],
+        "anomaly_ids": [
+          "anomaly-57de7473d337991d",
+          "anomaly-95a57ed9a06ca2ba",
+          "anomaly-04bf2c2f87098294"
+        ],
+        "threat_score": 21,
+        "watch_priority": 72,
+        "audit": {
+          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+          "support_count": 1,
+          "contradiction_count": 0,
+          "independent_roots": 1,
+          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+          "material_time_used_for_decay": "2026-09-17T18:50:04Z"
         }
       },
       {
@@ -1543,7 +1902,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 78,
-          "recency": 97,
+          "recency": 96,
           "evidence_type": 67,
           "historical_reliability": 84,
           "claim_maturity": 36
@@ -1681,18 +2040,6 @@
             ]
           },
           {
-            "claim_id": "claim-aa3bc5ebc8c5f91dca",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-a53cde60c297791506",
             "shared_actors": [
               "RUSSIA"
@@ -1767,6 +2114,20 @@
               "SECURITY",
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-2f153cb0c57cf3e025",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA",
+              "SPACE",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
@@ -1829,7 +2190,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 72,
-          "recency": 97,
+          "recency": 96,
           "evidence_type": 67,
           "historical_reliability": 84,
           "claim_maturity": 36
@@ -1939,18 +2300,6 @@
               "INFRA",
               "POLITICAL",
               "SPACE",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-aa3bc5ebc8c5f91dca",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
               "WAR"
             ]
           },
@@ -2070,6 +2419,20 @@
               "INFRA",
               "POLITICAL",
               "TERRORISM",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-9c6c39515f9cf6dfda",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "POLITICAL",
+              "SECURITY",
               "WAR"
             ]
           }
@@ -2506,7 +2869,7 @@
         "anomaly_ids": [
           "anomaly-22e0201099800026",
           "anomaly-34ed70e9cf88f31a",
-          "anomaly-7d881c6f1dcddafd"
+          "anomaly-04bf2c2f87098294"
         ],
         "threat_score": 20,
         "watch_priority": 71,
@@ -3213,7 +3576,7 @@
         ],
         "anomaly_ids": [
           "anomaly-57de7473d337991d",
-          "anomaly-7587e8fa7049f348"
+          "anomaly-95a57ed9a06ca2ba"
         ],
         "threat_score": 17,
         "watch_priority": 54,
@@ -3835,7 +4198,7 @@
           "a10357284f45396b40a0"
         ],
         "first_seen": "2026-09-09T19:17:24Z",
-        "last_seen": "2026-09-17T19:44:05Z",
+        "last_seen": "2026-09-17T20:20:36Z",
         "material_time": "2026-09-17T18:29:26Z",
         "domains": [
           "INFRA",
@@ -4354,7 +4717,7 @@
         "anomaly_ids": [
           "anomaly-57de7473d337991d",
           "anomaly-22e0201099800026",
-          "anomaly-7d881c6f1dcddafd"
+          "anomaly-04bf2c2f87098294"
         ],
         "threat_score": 14,
         "watch_priority": 65,
@@ -4394,7 +4757,7 @@
           "ace2714eb359959d2272"
         ],
         "first_seen": "2026-09-16T03:19:45Z",
-        "last_seen": "2026-09-17T19:44:05Z",
+        "last_seen": "2026-09-17T20:20:36Z",
         "material_time": "2026-09-17T17:09:40Z",
         "domains": [
           "CYBER",
@@ -4831,7 +5194,7 @@
         ],
         "anomaly_ids": [
           "anomaly-22e0201099800026",
-          "anomaly-7d881c6f1dcddafd"
+          "anomaly-04bf2c2f87098294"
         ],
         "threat_score": 23,
         "watch_priority": 56,
@@ -4842,342 +5205,6 @@
           "independent_roots": 3,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-17T17:09:40Z"
-        }
-      },
-      {
-        "id": "claim-3920472356aade513d",
-        "headline": "US could hit Putin's Arctic gas empire by sanctioning 14 LNG tankers",
-        "signature_tokens": [
-          "arctic",
-          "empire",
-          "gas",
-          "hit",
-          "lng",
-          "putin",
-          "sanctioning",
-          "tankers"
-        ],
-        "observation_ids": [
-          "b568db2f52f9e5213956"
-        ],
-        "first_seen": "2026-09-15T15:19:05Z",
-        "last_seen": "2026-09-16T04:20:08Z",
-        "material_time": "2026-09-15T14:47:27Z",
-        "domains": [
-          "ECONOMIC",
-          "INFRA",
-          "WAR"
-        ],
-        "regions": [
-          "UNITED STATES"
-        ],
-        "actors": [
-          "UNITED STATES"
-        ],
-        "state": "CREDIBLE REPORT",
-        "confidence": 61,
-        "confidence_direction": "STABLE",
-        "confidence_components": {
-          "source_quality": 79,
-          "independence": 25,
-          "corroboration": 22,
-          "contradiction": 0,
-          "specificity": 91,
-          "recency": 81,
-          "evidence_type": 67,
-          "historical_reliability": 79,
-          "claim_maturity": 39
-        },
-        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "supporting_observation_ids": [
-          "b568db2f52f9e5213956"
-        ],
-        "contradictory_observation_ids": [],
-        "source_count": 1,
-        "independent_provenance_count": 1,
-        "sources": [
-          "Kyiv Independent"
-        ],
-        "provenance_roots": [
-          "kyiv_independent"
-        ],
-        "evidence": [
-          {
-            "observation_id": "b568db2f52f9e5213956",
-            "title": "US could hit Putin's Arctic gas empire by sanctioning 14 LNG tankers",
-            "source": "Kyiv Independent",
-            "source_class": "regional_local",
-            "provenance_root": "kyiv_independent",
-            "stance": "speculation",
-            "published": "2026-09-15T14:47:27Z",
-            "url": "https://kyivindependent.com/us-could-hit-putins-arctic-gas-empire-by-sanctioning-14-lng-tankers",
-            "discovery_only": false
-          }
-        ],
-        "state_affiliated_reporting": false,
-        "discovery_only": false,
-        "branch_analysis": {
-          "current_observation": "US could hit Putin's Arctic gas empire by sanctioning 14 LNG tankers",
-          "plausible_explanations": [
-            "A genuine ECONOMIC/INFRA/WAR development involving UNITED STATES is unfolding as reported.",
-            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-          ],
-          "escalation_branch": "Related ECONOMIC/INFRA/WAR indicators spread, become operational, or draw additional actors into the event.",
-          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-          "confirm_indicators": [
-            "A primary record, sensor observation, or on-record official confirmation.",
-            "Matching detail from a genuinely independent provenance root.",
-            "Observable follow-on action consistent with the reported event."
-          ],
-          "falsify_indicators": [
-            "Time-stamped primary evidence incompatible with the claim.",
-            "Independent, technically specific refutation from credible sources.",
-            "Predicted follow-on indicators fail to occur inside the stated window."
-          ],
-          "contradictory_evidence_present": false
-        },
-        "historical_matches": [
-          {
-            "claim_id": "claim-ab13de06ed03a68f0a",
-            "headline": "Chinese National Pleads Guilty to Trying to Obtain U.S. Military Equipment",
-            "material_time": "2026-08-10T12:00:00Z",
-            "shared_domains": [
-              "ECONOMIC",
-              "INFRA",
-              "WAR"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-c63cb32ed106a31b1e",
-            "headline": "Homeland Security Task Force: Dual Dominican and French National Admits Role in Firearms Trafficking Scheme",
-            "material_time": "2026-08-05T12:00:00Z",
-            "shared_domains": [
-              "ECONOMIC",
-              "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-1453116f3488b77a21",
-            "headline": "Turkey-Based Global Director of Sham Charity Arrested and Charged with Conspiring to Provide Material Support to Hamas",
-            "material_time": "2026-07-31T12:00:00Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-a02fb9167c45d388fd",
-            "headline": "Department of Justice Files First Case in U.S. Alien Terrorist Removal Court to Deport Afghan Alien Who Supported Her Family’s Plans for Election-Day Shooting",
-            "material_time": "2026-07-30T12:00:00Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-d555e4d2e467f5fc66",
-            "headline": "Massachusetts Man Convicted of Violating U.S. Sanctions Against Iran",
-            "material_time": "2026-07-14T12:00:00Z",
-            "shared_domains": [
-              "ECONOMIC",
-              "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          }
-        ],
-        "cross_domain_links": [
-          {
-            "claim_id": "claim-9bfac776efa710df74",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "INFRA",
-              "TERRORISM"
-            ]
-          },
-          {
-            "claim_id": "claim-b1018e927a4942f90c",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-7d4a3bf08aabc7ca2b",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-09256c77181810adad",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA",
-              "SPACE"
-            ]
-          },
-          {
-            "claim_id": "claim-99b14625457299b353",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-0525e8acf548301b80",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-c70155fa251d41f7f7",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-f14b7e3e186fa695cf",
-            "shared_actors": [],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-a5aa51cc8213f31f8a",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "ECONOMIC"
-            ]
-          },
-          {
-            "claim_id": "claim-1902f07333a5f56d6f",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-55478eaebf7037050e",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-8cc151f2dd61bb7746",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
-          }
-        ],
-        "anomaly_ids": [
-          "anomaly-7d881c6f1dcddafd"
-        ],
-        "threat_score": 16,
-        "watch_priority": 48,
-        "audit": {
-          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 1,
-          "contradiction_count": 0,
-          "independent_roots": 1,
-          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-15T14:47:27Z"
         }
       }
     ]
@@ -5486,23 +5513,22 @@
             ]
           },
           {
-            "claim_id": "claim-aa3bc5ebc8c5f91dca",
+            "claim_id": "claim-a53cde60c297791506",
             "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
+              "RUSSIA"
             ],
             "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
+              "RUSSIA"
             ],
             "domains": [
-              "WAR"
+              "INFRA",
+              "POLITICAL"
             ]
           }
         ],
         "anomaly_ids": [
           "anomaly-57de7473d337991d",
-          "anomaly-7587e8fa7049f348"
+          "anomaly-95a57ed9a06ca2ba"
         ],
         "threat_score": 3,
         "watch_priority": 65,
@@ -5765,7 +5791,7 @@
           "recency": 81,
           "evidence_type": 24,
           "historical_reliability": 32,
-          "claim_maturity": 38
+          "claim_maturity": 39
         },
         "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
         "supporting_observation_ids": [
@@ -5870,18 +5896,6 @@
             ]
           },
           {
-            "claim_id": "claim-aa3bc5ebc8c5f91dca",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-a53cde60c297791506",
             "shared_actors": [
               "RUSSIA"
@@ -5974,6 +5988,20 @@
               "TERRORISM",
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-9c6c39515f9cf6dfda",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "POLITICAL",
+              "SECURITY",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
@@ -6030,7 +6058,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 79,
+          "recency": 78,
           "evidence_type": 79,
           "historical_reliability": 82,
           "claim_maturity": 39
@@ -7197,8 +7225,8 @@
         ],
         "anomaly_ids": [
           "anomaly-57de7473d337991d",
-          "anomaly-7587e8fa7049f348",
-          "anomaly-7d881c6f1dcddafd"
+          "anomaly-95a57ed9a06ca2ba",
+          "anomaly-04bf2c2f87098294"
         ],
         "threat_score": 3,
         "watch_priority": 69,
@@ -7821,7 +7849,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 60,
-          "recency": 83,
+          "recency": 82,
           "evidence_type": 73,
           "historical_reliability": 87,
           "claim_maturity": 38
@@ -8595,7 +8623,7 @@
     "multi_theater_coupling": 0,
     "nuclear_escalation": 10,
     "military_mobilization": 4,
-    "economic_warfare": 150,
+    "economic_warfare": 151,
     "crisis_control_failure": 0,
     "hybrid_preparation": 111
   },
@@ -8633,7 +8661,7 @@
         "f1efa7db87d845b15483"
       ],
       "first_seen": "2026-09-16T22:44:31Z",
-      "last_seen": "2026-09-17T19:44:05Z",
+      "last_seen": "2026-09-17T20:20:36Z",
       "material_time": "2026-09-17T16:35:32Z",
       "domains": [
         "ECONOMIC",
@@ -9105,9 +9133,9 @@
       ],
       "anomaly_ids": [
         "anomaly-57de7473d337991d",
-        "anomaly-7587e8fa7049f348",
+        "anomaly-95a57ed9a06ca2ba",
         "anomaly-34ed70e9cf88f31a",
-        "anomaly-7d881c6f1dcddafd"
+        "anomaly-04bf2c2f87098294"
       ],
       "threat_score": 26,
       "watch_priority": 82,
@@ -9321,6 +9349,20 @@
           ]
         },
         {
+          "claim_id": "claim-9e3287504758b9d3d0",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-dc724e78d7f40f2117",
           "shared_actors": [],
           "shared_regions": [
@@ -9435,25 +9477,10 @@
             "TERRORISM",
             "WAR"
           ]
-        },
-        {
-          "claim_id": "claim-4360b38ce095fd229b",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "TERRORISM",
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-7d881c6f1dcddafd"
+        "anomaly-04bf2c2f87098294"
       ],
       "threat_score": 34,
       "watch_priority": 58,
@@ -9925,6 +9952,21 @@
       ],
       "cross_domain_links": [
         {
+          "claim_id": "claim-9e3287504758b9d3d0",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "UNITED STATES"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-881b764dd3325c35ad",
           "shared_actors": [],
           "shared_regions": [
@@ -9985,16 +10027,6 @@
           "shared_regions": [
             "IRAN",
             "UNITED STATES"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-aa3bc5ebc8c5f91dca",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
           ],
           "domains": [
             "WAR"
@@ -10083,7 +10115,7 @@
       ],
       "anomaly_ids": [
         "anomaly-22e0201099800026",
-        "anomaly-7d881c6f1dcddafd"
+        "anomaly-04bf2c2f87098294"
       ],
       "threat_score": 25,
       "watch_priority": 65,
@@ -10094,6 +10126,361 @@
         "independent_roots": 10,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-14T09:36:56Z"
+      }
+    },
+    {
+      "id": "claim-9e3287504758b9d3d0",
+      "headline": "India vows to protect energy security after new US tariffs over Russian oil",
+      "signature_tokens": [
+        "energy",
+        "india",
+        "oil",
+        "protect",
+        "russian",
+        "security",
+        "tariffs",
+        "vows"
+      ],
+      "observation_ids": [
+        "0aee2fae2944a4b3f92a"
+      ],
+      "first_seen": "2026-09-17T20:20:36Z",
+      "last_seen": "2026-09-17T20:20:36Z",
+      "material_time": "2026-09-17T18:50:04Z",
+      "domains": [
+        "ECONOMIC",
+        "INFRA",
+        "WAR"
+      ],
+      "regions": [
+        "EUROPE",
+        "RUSSIA",
+        "UKRAINE",
+        "UNITED STATES"
+      ],
+      "actors": [
+        "RUSSIA",
+        "UKRAINE",
+        "UNITED STATES"
+      ],
+      "state": "CREDIBLE REPORT",
+      "confidence": 67,
+      "confidence_direction": "NEW",
+      "confidence_components": {
+        "source_quality": 84,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 100,
+        "recency": 100,
+        "evidence_type": 79,
+        "historical_reliability": 84,
+        "claim_maturity": 35
+      },
+      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+      "supporting_observation_ids": [
+        "0aee2fae2944a4b3f92a"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 1,
+      "independent_provenance_count": 1,
+      "sources": [
+        "France 24 World"
+      ],
+      "provenance_roots": [
+        "france24"
+      ],
+      "evidence": [
+        {
+          "observation_id": "0aee2fae2944a4b3f92a",
+          "title": "India vows to protect energy security after new US tariffs over Russian oil",
+          "source": "France 24 World",
+          "source_class": "established_media",
+          "provenance_root": "france24",
+          "stance": "speculation",
+          "published": "2026-09-17T18:50:04Z",
+          "url": "https://www.france24.com/en/india-vows-to-protect-energy-security-after-new-us-tariffs-over-russian-oil",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "India vows to protect energy security after new US tariffs over Russian oil",
+        "plausible_explanations": [
+          "A genuine ECONOMIC/INFRA/WAR development involving RUSSIA, UKRAINE, UNITED STATES is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related ECONOMIC/INFRA/WAR indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-ab13de06ed03a68f0a",
+          "headline": "Chinese National Pleads Guilty to Trying to Obtain U.S. Military Equipment",
+          "material_time": "2026-08-10T12:00:00Z",
+          "shared_domains": [
+            "ECONOMIC",
+            "INFRA",
+            "WAR"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-c63cb32ed106a31b1e",
+          "headline": "Homeland Security Task Force: Dual Dominican and French National Admits Role in Firearms Trafficking Scheme",
+          "material_time": "2026-08-05T12:00:00Z",
+          "shared_domains": [
+            "ECONOMIC",
+            "INFRA"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-1453116f3488b77a21",
+          "headline": "Turkey-Based Global Director of Sham Charity Arrested and Charged with Conspiring to Provide Material Support to Hamas",
+          "material_time": "2026-07-31T12:00:00Z",
+          "shared_domains": [
+            "INFRA"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-a02fb9167c45d388fd",
+          "headline": "Department of Justice Files First Case in U.S. Alien Terrorist Removal Court to Deport Afghan Alien Who Supported Her Family’s Plans for Election-Day Shooting",
+          "material_time": "2026-07-30T12:00:00Z",
+          "shared_domains": [
+            "INFRA"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-cf7625f8b461238993",
+          "headline": "Shahed-Type Drones Filmed During Mali Village Attacks",
+          "material_time": "2026-07-24T15:39:05Z",
+          "shared_domains": [
+            "INFRA"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ]
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-b0ae75efd76d19b55d",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "INFRA",
+            "NUCLEAR"
+          ]
+        },
+        {
+          "claim_id": "claim-95b05688477d6a88f7",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-fdad203b3ac1516a92",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8925b642253e252edc",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-36702df4a2ad817d8b",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "INFRA",
+            "NUCLEAR"
+          ]
+        },
+        {
+          "claim_id": "claim-cec89370431878befe",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-6bcaf5ddb350eee1d6",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "SPACE",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-d7827b39d33dd83401",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-a53cde60c297791506",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL"
+          ]
+        },
+        {
+          "claim_id": "claim-ed7d5390f4be334436",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-581ffd16543e8f1f65",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-711c971a5e74813ed2",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-57de7473d337991d",
+        "anomaly-95a57ed9a06ca2ba",
+        "anomaly-04bf2c2f87098294"
+      ],
+      "threat_score": 21,
+      "watch_priority": 72,
+      "audit": {
+        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "support_count": 1,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-17T18:50:04Z"
       }
     },
     {
@@ -10140,7 +10527,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 78,
-        "recency": 97,
+        "recency": 96,
         "evidence_type": 67,
         "historical_reliability": 84,
         "claim_maturity": 36
@@ -10278,18 +10665,6 @@
           ]
         },
         {
-          "claim_id": "claim-aa3bc5ebc8c5f91dca",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-a53cde60c297791506",
           "shared_actors": [
             "RUSSIA"
@@ -10364,6 +10739,20 @@
             "SECURITY",
             "WAR"
           ]
+        },
+        {
+          "claim_id": "claim-2f153cb0c57cf3e025",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "SPACE",
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -10426,7 +10815,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 72,
-        "recency": 97,
+        "recency": 96,
         "evidence_type": 67,
         "historical_reliability": 84,
         "claim_maturity": 36
@@ -10536,18 +10925,6 @@
             "INFRA",
             "POLITICAL",
             "SPACE",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-aa3bc5ebc8c5f91dca",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
             "WAR"
           ]
         },
@@ -10667,6 +11044,20 @@
             "INFRA",
             "POLITICAL",
             "TERRORISM",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-9c6c39515f9cf6dfda",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY",
             "WAR"
           ]
         }
@@ -11103,7 +11494,7 @@
       "anomaly_ids": [
         "anomaly-22e0201099800026",
         "anomaly-34ed70e9cf88f31a",
-        "anomaly-7d881c6f1dcddafd"
+        "anomaly-04bf2c2f87098294"
       ],
       "threat_score": 20,
       "watch_priority": 71,
@@ -11810,7 +12201,7 @@
       ],
       "anomaly_ids": [
         "anomaly-57de7473d337991d",
-        "anomaly-7587e8fa7049f348"
+        "anomaly-95a57ed9a06ca2ba"
       ],
       "threat_score": 17,
       "watch_priority": 54,
@@ -12432,7 +12823,7 @@
         "a10357284f45396b40a0"
       ],
       "first_seen": "2026-09-09T19:17:24Z",
-      "last_seen": "2026-09-17T19:44:05Z",
+      "last_seen": "2026-09-17T20:20:36Z",
       "material_time": "2026-09-17T18:29:26Z",
       "domains": [
         "INFRA",
@@ -12951,7 +13342,7 @@
       "anomaly_ids": [
         "anomaly-57de7473d337991d",
         "anomaly-22e0201099800026",
-        "anomaly-7d881c6f1dcddafd"
+        "anomaly-04bf2c2f87098294"
       ],
       "threat_score": 14,
       "watch_priority": 65,
@@ -12991,7 +13382,7 @@
         "ace2714eb359959d2272"
       ],
       "first_seen": "2026-09-16T03:19:45Z",
-      "last_seen": "2026-09-17T19:44:05Z",
+      "last_seen": "2026-09-17T20:20:36Z",
       "material_time": "2026-09-17T17:09:40Z",
       "domains": [
         "CYBER",
@@ -13428,7 +13819,7 @@
       ],
       "anomaly_ids": [
         "anomaly-22e0201099800026",
-        "anomaly-7d881c6f1dcddafd"
+        "anomaly-04bf2c2f87098294"
       ],
       "threat_score": 23,
       "watch_priority": 56,
@@ -13764,7 +14155,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-7d881c6f1dcddafd"
+        "anomaly-04bf2c2f87098294"
       ],
       "threat_score": 16,
       "watch_priority": 48,
@@ -13835,7 +14226,7 @@
         "corroboration": 100,
         "contradiction": 0,
         "specificity": 71,
-        "recency": 95,
+        "recency": 94,
         "evidence_type": 79,
         "historical_reliability": 87,
         "claim_maturity": 100
@@ -14251,7 +14642,7 @@
       ],
       "anomaly_ids": [
         "anomaly-22e0201099800026",
-        "anomaly-7d881c6f1dcddafd"
+        "anomaly-04bf2c2f87098294"
       ],
       "threat_score": 30,
       "watch_priority": 55,
@@ -14278,7 +14669,7 @@
         "65670a13ed775c0c8be8"
       ],
       "first_seen": "2026-09-17T17:45:18Z",
-      "last_seen": "2026-09-17T19:44:05Z",
+      "last_seen": "2026-09-17T20:20:36Z",
       "material_time": "2026-09-17T16:42:00Z",
       "domains": [
         "INFRA",
@@ -14539,7 +14930,7 @@
         "80b1904b72a9306c9613"
       ],
       "first_seen": "2026-09-16T16:46:36Z",
-      "last_seen": "2026-09-17T19:44:05Z",
+      "last_seen": "2026-09-17T20:20:36Z",
       "material_time": "2026-09-17T03:01:03Z",
       "domains": [
         "POLITICAL",
@@ -14842,483 +15233,6 @@
         "independent_roots": 2,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-17T03:01:03Z"
-      }
-    },
-    {
-      "id": "claim-60160fd8cfb948cdc1",
-      "headline": "China uses yttrium export controls as leverage ahead of Xi-Trump summit, sources say - The Standard (HK)",
-      "signature_tokens": [
-        "ahead",
-        "china",
-        "controls",
-        "export",
-        "leverage",
-        "say",
-        "sources",
-        "standard",
-        "summit",
-        "uses",
-        "xi-trump",
-        "yttrium"
-      ],
-      "observation_ids": [
-        "571b6552438e03604560",
-        "692974dd2129fe0a200a",
-        "fd82cfefdb5b35f2ed2b",
-        "967acd3cd8d763ae4aae",
-        "cc50a8b22fc41170cb0b",
-        "e635abac6c000c92a222",
-        "31500d0e6d31d6eea4f3",
-        "ca58d1037642dce8ac76",
-        "514d325912fb59bb68aa",
-        "7e002204c7963edff539",
-        "7066f975f3c3808c5919",
-        "861c1b176dc32338783a",
-        "2de0ea10cc765bdf9093"
-      ],
-      "first_seen": "2026-09-09T16:18:05Z",
-      "last_seen": "2026-09-15T21:18:22Z",
-      "material_time": "2026-09-14T21:32:45Z",
-      "domains": [
-        "ECONOMIC",
-        "INFRA"
-      ],
-      "regions": [
-        "CHINA",
-        "IRAN",
-        "ISRAEL/PALESTINE"
-      ],
-      "actors": [
-        "CHINA",
-        "IRAN",
-        "ISRAEL"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 79,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 94,
-        "independence": 52,
-        "corroboration": 82,
-        "contradiction": 0,
-        "specificity": 68,
-        "recency": 76,
-        "evidence_type": 79,
-        "historical_reliability": 93,
-        "claim_maturity": 100
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "571b6552438e03604560",
-        "692974dd2129fe0a200a",
-        "fd82cfefdb5b35f2ed2b",
-        "967acd3cd8d763ae4aae",
-        "cc50a8b22fc41170cb0b",
-        "e635abac6c000c92a222",
-        "31500d0e6d31d6eea4f3",
-        "ca58d1037642dce8ac76",
-        "514d325912fb59bb68aa",
-        "7e002204c7963edff539",
-        "7066f975f3c3808c5919",
-        "861c1b176dc32338783a",
-        "2de0ea10cc765bdf9093"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 3,
-      "independent_provenance_count": 2,
-      "sources": [
-        "France 24 World",
-        "Reuters World",
-        "timesofindia.indiatimes.com"
-      ],
-      "provenance_roots": [
-        "france24",
-        "timesofindia.indiatimes.com",
-        "wire:reuters_world"
-      ],
-      "evidence": [
-        {
-          "observation_id": "861c1b176dc32338783a",
-          "title": "China uses yttrium export controls as leverage ahead of Xi-Trump summit, sources say - The Standard (HK)",
-          "source": "Reuters World",
-          "source_class": "wire",
-          "provenance_root": "wire:reuters_world",
-          "stance": "speculation",
-          "published": "2026-09-14T21:32:45Z",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNdFhxbXpRSVNfTTl0SnZ3VzFWMDcxcDNiNExwRjlYVVVxMnVyeUU0TlJxTTlzcEx0Yy1NMF9lZWlpeVBrdGp3dllhWF9VTXNJWHRjMzhHY0kyMTh5V1FVR1lDTU1wTG51aDRmcmFOSi0wQjlkYUx6N1IxMkNfaDlZTl9WSGNMWEhldFUyQWlGS0d2TDVVVmdJX0lRMERUVE5RVmFVUXNYM29nNzNxN3ZQemtITkJRSWoyeHdWdzRLYUQtUURGOUNYSTVXVmR5NVZI?oc=5",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "2de0ea10cc765bdf9093",
-          "title": "China uses yttrium export controls as leverage ahead of Xi-Trump summit, sources say - thestandard.com.hk",
-          "source": "Reuters World",
-          "source_class": "wire",
-          "provenance_root": "wire:reuters_world",
-          "stance": "speculation",
-          "published": "2026-09-14T21:32:45Z",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNdFhxbXpRSVNfTTl0SnZ3VzFWMDcxcDNiNExwRjlYVVVxMnVyeUU0TlJxTTlzcEx0Yy1NMF9lZWlpeVBrdGp3dllhWF9VTXNJWHRjMzhHY0kyMTh5V1FVR1lDTU1wTG51aDRmcmFOSi0wQjlkYUx6N1IxMkNfaDlZTl9WSGNMWEhldFUyQWlGS0d2TDVVVmdJX0lRMERUVE5RVmFVUXNYM29nNzNxN3ZQemtITkJRSWoyeHdWdzRLYUQtUURGOUNYSTVXVmR5NVZI?oc=5",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "ca58d1037642dce8ac76",
-          "title": "China urges more FX hedging as strong yuan hits exporters, sources say - Reuters",
-          "source": "Reuters World",
-          "source_class": "wire",
-          "provenance_root": "wire:reuters_world",
-          "stance": "speculation",
-          "published": "2026-09-14T11:45:45Z",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTDE4VV9zWTdrT2lBdjFqY2NHeXhZd2pHUlpMRDd0ZXBRcGFFOWVzUmtVOU9JckVjVHBJaEt5cDI2bHFBUjlHbHJHdlllazQ3aWJFWC1JcFVKRWRCVXM4MjNPVG5HaTB5czBtX3ppdTdDRDNYZG9nX2JsbmFhQktnUUZEbmFQR2RYbE5vNENVTk1TQ05jNVZOb3V0cC0tYXdZbmotUlUxd0lwdTdaN0s2a2FCeWhFUWZwRlp3?oc=5",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "514d325912fb59bb68aa",
-          "title": "China urges more FX hedging as strong yuan hits exporters, sources say - reuters.com",
-          "source": "Reuters World",
-          "source_class": "wire",
-          "provenance_root": "wire:reuters_world",
-          "stance": "speculation",
-          "published": "2026-09-14T11:45:45Z",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTDE4VV9zWTdrT2lBdjFqY2NHeXhZd2pHUlpMRDd0ZXBRcGFFOWVzUmtVOU9JckVjVHBJaEt5cDI2bHFBUjlHbHJHdlllazQ3aWJFWC1JcFVKRWRCVXM4MjNPVG5HaTB5czBtX3ppdTdDRDNYZG9nX2JsbmFhQktnUUZEbmFQR2RYbE5vNENVTk1TQ05jNVZOb3V0cC0tYXdZbmotUlUxd0lwdTdaN0s2a2FCeWhFUWZwRlp3?oc=5",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "7e002204c7963edff539",
-          "title": "China urges more FX hedging as strong yuan hits exporters, sources say - The Standard (HK)",
-          "source": "Reuters World",
-          "source_class": "wire",
-          "provenance_root": "wire:reuters_world",
-          "stance": "speculation",
-          "published": "2026-09-14T09:37:58Z",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTWhlVzl4cU1oWDBkaEUzVTJCcWlsOGJKTHVuR095RUtjZlNsN1J4OFRoV1RjMVVQUy1iY0Z6OHNGcmt5YTlEMmdYZTZmeVhtYVhzdzE0QjZqcVdxZlVNXzRsWF9DQ1dGek1MNGlCY1VIdVBBZTR3aXdhTmlYWDVNRTJ2YlJXRnJwa2VCMFVSSXdYcXhOSXVMNEhVUHdIZW5zV290Y19weVVCWmhKZ2gtbTBxblZWSWNlcThaaDZhRW8?oc=5",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "31500d0e6d31d6eea4f3",
-          "title": "China urges more FX hedging as strong yuan hits exporters, sources say - TradingView",
-          "source": "Reuters World",
-          "source_class": "wire",
-          "provenance_root": "wire:reuters_world",
-          "stance": "speculation",
-          "published": "2026-09-14T09:32:40Z",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPWTJRT3R3cU8tY0JIVlI2amZRREFUaUJqaDZJQTFpQTNhcklTMExqc0x3OV9JUkV6M2xkV0Q2TXltSjgydmZUY0hOTWYtY0oxaUVVMGhSNFhheGNXcmtrcjZsbTRlUXprT3dBaTVBSVJnQkpYQVQwb1NSX2VPeTRORW1Vb1hUbEhUZ29hanVTUFlnTUw5T2F3N1FibGt2T21TODRiQjRhaXpnbi1JQWJnZ215Y2FSS1lYN3ZfMGFDbzZCa05zZzQzaVdESGhvblZzamVaeHZB?oc=5",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "7066f975f3c3808c5919",
-          "title": "China urges more FX hedging as strong yuan hits exporters, sources say - tradingview.com",
-          "source": "Reuters World",
-          "source_class": "wire",
-          "provenance_root": "wire:reuters_world",
-          "stance": "speculation",
-          "published": "2026-09-14T09:32:40Z",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPWTJRT3R3cU8tY0JIVlI2amZRREFUaUJqaDZJQTFpQTNhcklTMExqc0x3OV9JUkV6M2xkV0Q2TXltSjgydmZUY0hOTWYtY0oxaUVVMGhSNFhheGNXcmtrcjZsbTRlUXprT3dBaTVBSVJnQkpYQVQwb1NSX2VPeTRORW1Vb1hUbEhUZ29hanVTUFlnTUw5T2F3N1FibGt2T21TODRiQjRhaXpnbi1JQWJnZ215Y2FSS1lYN3ZfMGFDbzZCa05zZzQzaVdESGhvblZzamVaeHZB?oc=5",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "cc50a8b22fc41170cb0b",
-          "title": "Iran - China oil barter system keeps billions flowing despite US sanctions : Report",
-          "source": "timesofindia.indiatimes.com",
-          "source_class": "low_confidence",
-          "provenance_root": "timesofindia.indiatimes.com",
-          "stance": "report",
-          "published": "2026-09-10T17:00:00Z",
-          "url": "https://timesofindia.indiatimes.com/business/international-business/iran-china-oil-barter-system-keeps-billions-flowing-despite-us-sanctions-report/articleshow/134013535.cms",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "fd82cfefdb5b35f2ed2b",
-          "title": "Iran Used Oil-for-goods Deals With China to Bypass Sanctions, Sources Say - Haaretz",
-          "source": "Reuters World",
-          "source_class": "wire",
-          "provenance_root": "wire:reuters_world",
-          "stance": "speculation",
-          "published": "2026-09-10T12:02:00Z",
-          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPWnlGQjR4TlJkbFAzMGN6YlVyUWxCbnFpQ3Z5VlRQbUFRaGEyT0FtUWNFaFpXNUNEd2ViQ2J5WktCVXBQQ2YzTXpKbEtmN3BkbXFUbTkybnliZHJQLU5mZzcwT01xRVozZS04bTBJdUhKZkVxOERHY2FWeGVISExvUWpFRWh2QW5seHp2M3lOQnR6cEdvZUN4cUwtYi1nNG9QdEJKY1dnQS0tQTI0N0d2amFkWkd3d1lnbEFTbUJrWldxN0VKMXlQQjhPZEdTMG1aaUZlVDNCZVhUMXFLZDVYS3lzQUVuLVBSY0t6MVhXWkZLal8wSE9iVm82bjItU3pDZUFhc0dER1E?oc=5",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "967acd3cd8d763ae4aae",
-          "title": "Iran Used Oil-for-goods Deals With China to Bypass Sanctions, Sources Say - haaretz.com",
-          "source": "Reuters World",
-          "source_class": "wire",
-          "provenance_root": "wire:reuters_world",
-          "stance": "speculation",
-          "published": "2026-09-10T12:02:00Z",
-          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPWnlGQjR4TlJkbFAzMGN6YlVyUWxCbnFpQ3Z5VlRQbUFRaGEyT0FtUWNFaFpXNUNEd2ViQ2J5WktCVXBQQ2YzTXpKbEtmN3BkbXFUbTkybnliZHJQLU5mZzcwT01xRVozZS04bTBJdUhKZkVxOERHY2FWeGVISExvUWpFRWh2QW5seHp2M3lOQnR6cEdvZUN4cUwtYi1nNG9QdEJKY1dnQS0tQTI0N0d2amFkWkd3d1lnbEFTbUJrWldxN0VKMXlQQjhPZEdTMG1aaUZlVDNCZVhUMXFLZDVYS3lzQUVuLVBSY0t6MVhXWkZLal8wSE9iVm82bjItU3pDZUFhc0dER1E?oc=5",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "692974dd2129fe0a200a",
-          "title": "Iran using barter system with China to bypass sanctions, sources tell Reuters - The Times of Israel",
-          "source": "Reuters World",
-          "source_class": "wire",
-          "provenance_root": "wire:reuters_world",
-          "stance": "report",
-          "published": "2026-09-10T06:46:25Z",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPT2hSVVFZTVBmRVdUd3ZPT3JBVWFPekFrQTNHSl9nX2cyb2drWW9hZTdzblRPRW5ra1RoMy00QlBHMjdYNmxnck5LdlQ4bHFlVm8yaFIxZk5MdEw4MlduQkhnV0FXTU5sUFpSRzdLTGs2T1duN09fc1oyOVBtSmk5SUNXSWVvT0NjRTRlSW9wNDVlRzQtV1NTR19WZUlqYmJsWjJLcXdqNEtRQjBYX3JnQnhUQy1NMzNZeDBGaDAwVQ?oc=5",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "e635abac6c000c92a222",
-          "title": "Iran using barter system with China to bypass sanctions, sources tell Reuters - timesofisrael.com",
-          "source": "Reuters World",
-          "source_class": "wire",
-          "provenance_root": "wire:reuters_world",
-          "stance": "report",
-          "published": "2026-09-10T06:46:25Z",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPT2hSVVFZTVBmRVdUd3ZPT3JBVWFPekFrQTNHSl9nX2cyb2drWW9hZTdzblRPRW5ra1RoMy00QlBHMjdYNmxnck5LdlQ4bHFlVm8yaFIxZk5MdEw4MlduQkhnV0FXTU5sUFpSRzdLTGs2T1duN09fc1oyOVBtSmk5SUNXSWVvT0NjRTRlSW9wNDVlRzQtV1NTR19WZUlqYmJsWjJLcXdqNEtRQjBYX3JnQnhUQy1NMzNZeDBGaDAwVQ?oc=5",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "571b6552438e03604560",
-          "title": "The Times: 'Counterproductive' sanctions on Israel don't match the 'theatrical rhetoric'",
-          "source": "France 24 World",
-          "source_class": "established_media",
-          "provenance_root": "france24",
-          "stance": "report",
-          "published": "2026-09-09T13:35:52Z",
-          "url": "https://www.france24.com/en/tv-shows/press-review/20260909-the-times-counterproductive-sanctions-on-israel-don-t-match-the-theatrical-rhetoric",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "China uses yttrium export controls as leverage ahead of Xi-Trump summit, sources say - The Standard (HK)",
-        "plausible_explanations": [
-          "A genuine ECONOMIC/INFRA development involving CHINA, IRAN, ISRAEL is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related ECONOMIC/INFRA indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [
-        {
-          "claim_id": "claim-ab13de06ed03a68f0a",
-          "headline": "Chinese National Pleads Guilty to Trying to Obtain U.S. Military Equipment",
-          "material_time": "2026-08-10T12:00:00Z",
-          "shared_domains": [
-            "ECONOMIC",
-            "INFRA"
-          ],
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ]
-        },
-        {
-          "claim_id": "claim-1453116f3488b77a21",
-          "headline": "Turkey-Based Global Director of Sham Charity Arrested and Charged with Conspiring to Provide Material Support to Hamas",
-          "material_time": "2026-07-31T12:00:00Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ]
-        },
-        {
-          "claim_id": "claim-d555e4d2e467f5fc66",
-          "headline": "Massachusetts Man Convicted of Violating U.S. Sanctions Against Iran",
-          "material_time": "2026-07-14T12:00:00Z",
-          "shared_domains": [
-            "ECONOMIC",
-            "INFRA"
-          ],
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ]
-        }
-      ],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-e952e4ba5613fadad1",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-0e4ee8b8ff8c0849e1",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-3db3ff4f3667b5d902",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-947cf56c713ad7dfed",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "TERRORISM",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-ab2f47081ba77335c1",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-6c6df280357b4eef6b",
-          "shared_actors": [
-            "IRAN",
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "IRAN",
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "INFRA",
-            "SPACE"
-          ]
-        },
-        {
-          "claim_id": "claim-1decb642cefb72c24d",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "SPACE",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-cf9f9e1f794bfc96b2",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-0d61754c68d7de6973",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-4e977fcbaa0f7ad613",
-          "shared_actors": [
-            "IRAN",
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-cb0676d138ea7d84af",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-9c4b4956483450ac5a",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-f08d5edc4ebeef27",
-        "anomaly-22e0201099800026",
-        "anomaly-34ed70e9cf88f31a"
-      ],
-      "threat_score": 17,
-      "watch_priority": 60,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 13,
-        "contradiction_count": 0,
-        "independent_roots": 2,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-14T21:32:45Z"
       }
     }
   ]
