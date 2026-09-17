@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T17:45:18Z",
+  "generated_at": "2026-09-17T18:23:33Z",
   "claims": [
     {
       "id": "claim-1594bae9789b6c7637",
@@ -27,10 +27,11 @@
         "edc417c4449219e2527e",
         "473eae62dd4f00c72c36",
         "8bf1e87ac07e783fe081",
-        "8972cedddfeacf1f0880"
+        "8972cedddfeacf1f0880",
+        "794669eb29434f5f8db6"
       ],
       "first_seen": "2026-09-10T15:20:18Z",
-      "last_seen": "2026-09-17T17:45:18Z",
+      "last_seen": "2026-09-17T18:23:33Z",
       "material_time": "2026-09-17T13:07:30Z",
       "domains": [
         "INFRA",
@@ -75,19 +76,22 @@
         "edc417c4449219e2527e",
         "473eae62dd4f00c72c36",
         "8bf1e87ac07e783fe081",
-        "8972cedddfeacf1f0880"
+        "8972cedddfeacf1f0880",
+        "794669eb29434f5f8db6"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 5,
+      "source_count": 6,
       "independent_provenance_count": 5,
       "sources": [
         "Agence France-Presse",
+        "Google News Weak-Signal Discovery",
         "Kyiv Independent",
         "Reddit WorldNews Signal",
         "Reuters World",
         "TASS World"
       ],
       "provenance_roots": [
+        "google_weak_signal",
         "kyiv_independent",
         "reddit_worldnews",
         "tass",
@@ -160,6 +164,17 @@
           "published": "2026-09-17T01:45:33Z",
           "url": "https://kyivindependent.com/ukrainian-forces-reportedly-strike-russian-oil-refinery-military-airfield",
           "discovery_only": false
+        },
+        {
+          "observation_id": "794669eb29434f5f8db6",
+          "title": "Ukraine strikes Yaroslavl oil refinery, Russian military airfield, General Staff confirms - The Kyiv Independent",
+          "source": "Google News Weak-Signal Discovery",
+          "source_class": "low_confidence",
+          "provenance_root": "google_weak_signal",
+          "stance": "report",
+          "published": "2026-09-17T01:45:33Z",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPd29yZUtabG8tR3lKcWxtYVp1bXRlbDJnNExrcWtDV21Bbk1TVXg5UnRES29wbFlPQ25JZ2o2U0FUZ0RzcWQ1SWJQdG1BT3dlSGtJcm1uRGdrclRYZDQ2Ri1PcS1uR1FBWmVmLS1WSm9idWMtd0QtZURGcWx5SWxRbGpscldjOTlHUDJpSHh6WDljVmdjdndCM0xzSTc3TzhTN2RVVw?oc=5",
+          "discovery_only": true
         },
         {
           "observation_id": "2cb4d4ecb66196a00d85",
@@ -369,6 +384,19 @@
           ]
         },
         {
+          "claim_id": "claim-b1202d101c4383cd14",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-aa23d2bdddc19490f6",
           "shared_actors": [
             "IRAN"
@@ -440,25 +468,11 @@
           "domains": [
             "INFRA"
           ]
-        },
-        {
-          "claim_id": "claim-309a220f8087c51afb",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "SPACE",
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
         "anomaly-815fd8f90fae61b4",
-        "anomaly-98279dfb0277f7d5",
+        "anomaly-b3b2622ffeff7d4d",
         "anomaly-feda54538d9f0dfd",
         "anomaly-679de4fa4b3262ec"
       ],
@@ -466,7 +480,7 @@
       "watch_priority": 75,
       "audit": {
         "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-        "support_count": 11,
+        "support_count": 12,
         "contradiction_count": 0,
         "independent_roots": 5,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
