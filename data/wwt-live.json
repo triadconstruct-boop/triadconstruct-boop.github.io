@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T07:20:11Z",
+  "generated_at": "2026-09-18T07:45:36Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 54,
   "verified_pressure": {
@@ -36,7 +36,7 @@
           "f1efa7db87d845b15483"
         ],
         "first_seen": "2026-09-16T22:44:31Z",
-        "last_seen": "2026-09-18T07:20:11Z",
+        "last_seen": "2026-09-18T07:45:36Z",
         "material_time": "2026-09-17T16:35:32Z",
         "domains": [
           "ECONOMIC",
@@ -508,8 +508,8 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-fd9721704bb7257a",
-          "anomaly-c2012ea2b9c60853",
+          "anomaly-182038db5162174d",
+          "anomaly-345ebdffcc136866",
           "anomaly-70ec454922f7f718",
           "anomaly-f8d6cb844095a96d"
         ],
@@ -890,7 +890,7 @@
           "89b88b52a37aabdb811b"
         ],
         "first_seen": "2026-09-17T20:44:37Z",
-        "last_seen": "2026-09-18T07:20:11Z",
+        "last_seen": "2026-09-18T07:45:36Z",
         "material_time": "2026-09-18T04:27:18Z",
         "domains": [
           "ECONOMIC",
@@ -1244,7 +1244,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-fd9721704bb7257a",
+          "anomaly-182038db5162174d",
           "anomaly-70ec454922f7f718",
           "anomaly-7b8daadf5e9a4b58",
           "anomaly-f8d6cb844095a96d"
@@ -1911,7 +1911,7 @@
           "0aee2fae2944a4b3f92a"
         ],
         "first_seen": "2026-09-17T20:20:36Z",
-        "last_seen": "2026-09-18T07:20:11Z",
+        "last_seen": "2026-09-18T07:45:36Z",
         "material_time": "2026-09-17T18:50:04Z",
         "domains": [
           "ECONOMIC",
@@ -2237,8 +2237,8 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-fd9721704bb7257a",
-          "anomaly-c2012ea2b9c60853",
+          "anomaly-182038db5162174d",
+          "anomaly-345ebdffcc136866",
           "anomaly-70ec454922f7f718"
         ],
         "threat_score": 20,
@@ -2532,7 +2532,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-fd9721704bb7257a",
+          "anomaly-182038db5162174d",
           "anomaly-f8d6cb844095a96d",
           "anomaly-897d4c64468e166c"
         ],
@@ -2841,7 +2841,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-fd9721704bb7257a",
+          "anomaly-182038db5162174d",
           "anomaly-f8d6cb844095a96d",
           "anomaly-897d4c64468e166c"
         ],
@@ -3604,6 +3604,20 @@
             ]
           },
           {
+            "claim_id": "claim-ddb3856e9fd1a3a0d6",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "INFRA",
+              "SECURITY",
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-c18f0436dd7737e8a1",
             "shared_actors": [
               "IRAN"
@@ -3627,20 +3641,6 @@
             "domains": [
               "CYBER",
               "INFRA",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-ddb3856e9fd1a3a0d6",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "INFRA",
-              "SECURITY",
               "WAR"
             ]
           },
@@ -3895,22 +3895,6 @@
             ]
           },
           {
-            "claim_id": "claim-111303caf9d2f56925",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "HUMANITARIAN",
-              "TERRORISM",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-4572605179824de245",
             "shared_actors": [
               "RUSSIA",
@@ -3976,11 +3960,23 @@
             "domains": [
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-b830ca7139f0c25c29",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "POLITICAL"
+            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-fd9721704bb7257a",
-          "anomaly-c2012ea2b9c60853"
+          "anomaly-182038db5162174d",
+          "anomaly-345ebdffcc136866"
         ],
         "threat_score": 17,
         "watch_priority": 54,
@@ -3991,6 +3987,590 @@
           "independent_roots": 1,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-17T05:24:20Z"
+        }
+      },
+      {
+        "id": "claim-ddb3856e9fd1a3a0d6",
+        "headline": "Iran Battles to Beat the Blockade",
+        "signature_tokens": [
+          "battles",
+          "beat",
+          "blockade",
+          "iran"
+        ],
+        "observation_ids": [
+          "d4a02c6629496a0c79a5",
+          "f4d1cdfe0d3cd92593a5",
+          "690af4d1113132f1df2f",
+          "4e27d93b52e8e19195d3",
+          "f4f7cfeec5fa7c77acbb",
+          "400be0fa88e4cf4d72c6",
+          "084ecc00c49a8b5a2327",
+          "356188847b2023bddc32",
+          "70872a53d91f63729b3f",
+          "44ceef9c887d01ccdebb",
+          "f827b5c74294a7d8ce0d",
+          "dac97b5d4f3d4ab7d1be",
+          "a38e0bb5638c4617ed5c",
+          "6a34a661053e2a2dcdbf",
+          "bb69207632cf011c63ba",
+          "491bedd0b06437f8dc11",
+          "676f12fd02dfd01ef5ea",
+          "f3e841819de4cc3ff652",
+          "7e413d6670a2056e6c7c",
+          "438890cd117b473a378d",
+          "93651c668b30d07b0a35",
+          "3beae8ac68a7ebb4bcbe",
+          "78d84dc9c7bd316435d2",
+          "f64f8d1ce3e6d3155265",
+          "6c395791080ca254cb9a",
+          "e5bc12bbd2f93272a1a7",
+          "060559ecfeace873b17c",
+          "38f810a7b17acac05b30",
+          "a10357284f45396b40a0",
+          "0c0860d82d94482ef115",
+          "b49e69421f420fae2a35",
+          "935d8a3f5c1ef68320ad"
+        ],
+        "first_seen": "2026-09-09T19:17:24Z",
+        "last_seen": "2026-09-18T07:45:36Z",
+        "material_time": "2026-09-18T07:28:42Z",
+        "domains": [
+          "INFRA",
+          "SECURITY",
+          "WAR"
+        ],
+        "regions": [
+          "EUROPE",
+          "IRAN",
+          "MIDDLE EAST",
+          "RUSSIA",
+          "TAIWAN",
+          "UNITED STATES"
+        ],
+        "actors": [
+          "IRAN",
+          "RUSSIA",
+          "UNITED STATES"
+        ],
+        "state": "CREDIBLE REPORT",
+        "confidence": 61,
+        "confidence_direction": "STABLE",
+        "confidence_components": {
+          "source_quality": 81,
+          "independence": 25,
+          "corroboration": 22,
+          "contradiction": 0,
+          "specificity": 64,
+          "recency": 100,
+          "evidence_type": 73,
+          "historical_reliability": 81,
+          "claim_maturity": 35
+        },
+        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "supporting_observation_ids": [
+          "d4a02c6629496a0c79a5",
+          "f4d1cdfe0d3cd92593a5",
+          "690af4d1113132f1df2f",
+          "4e27d93b52e8e19195d3",
+          "f4f7cfeec5fa7c77acbb",
+          "400be0fa88e4cf4d72c6",
+          "084ecc00c49a8b5a2327",
+          "356188847b2023bddc32",
+          "70872a53d91f63729b3f",
+          "44ceef9c887d01ccdebb",
+          "f827b5c74294a7d8ce0d",
+          "dac97b5d4f3d4ab7d1be",
+          "a38e0bb5638c4617ed5c",
+          "6a34a661053e2a2dcdbf",
+          "bb69207632cf011c63ba",
+          "491bedd0b06437f8dc11",
+          "676f12fd02dfd01ef5ea",
+          "f3e841819de4cc3ff652",
+          "7e413d6670a2056e6c7c",
+          "438890cd117b473a378d",
+          "93651c668b30d07b0a35",
+          "3beae8ac68a7ebb4bcbe",
+          "78d84dc9c7bd316435d2",
+          "f64f8d1ce3e6d3155265",
+          "6c395791080ca254cb9a",
+          "e5bc12bbd2f93272a1a7",
+          "060559ecfeace873b17c",
+          "38f810a7b17acac05b30",
+          "a10357284f45396b40a0",
+          "0c0860d82d94482ef115",
+          "b49e69421f420fae2a35",
+          "935d8a3f5c1ef68320ad"
+        ],
+        "contradictory_observation_ids": [],
+        "source_count": 9,
+        "independent_provenance_count": 1,
+        "sources": [
+          "GDELT Global Discovery",
+          "The Maritime Executive",
+          "baomoi.com",
+          "economictimes.indiatimes.com",
+          "maritime-executive.com",
+          "niacouncil.org",
+          "presstv.co.uk",
+          "vietbao.vn",
+          "vnexpress.net"
+        ],
+        "provenance_roots": [
+          "baomoi.com",
+          "economictimes.indiatimes.com",
+          "gdelt_global",
+          "maritime-executive.com",
+          "maritime_exec",
+          "niacouncil.org",
+          "presstv.co.uk",
+          "vietbao.vn",
+          "vnexpress.net"
+        ],
+        "evidence": [
+          {
+            "observation_id": "38f810a7b17acac05b30",
+            "title": "Iran’s Attempts to Get Around the Hormuz Blockade Are Hitting a Wall - WSJ",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-18T07:28:42Z",
+            "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQVFpaVFWblczeEhpQXpHSHQ0VFotUDB3UFJQQTV4RXpBX2dSVllZejV2aGdvZ2QyN1BPSkNQWkFQd1JTenY2anhwR2lZdTE5dnNLUl9KSHVFZ25qYmR6TlB1QUZSSWxBSktTaFFBWGQzTlBlWS1hTHh6cTgwUHBLbExuYjNtOE9ra3RJdmdOT19HLUp4blNFdDlEX0VEa2lvTl9LcEROdkRxRXk5cnNvaFlmMVg?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "0c0860d82d94482ef115",
+            "title": "Iran trade plummeting under US blockade, bureaucratic errors - New York Post",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-17T20:56:00Z",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdlBuLXBBSjhKUi1Idi1ESFctZjVRdnM4bk44QXFVLWJEaURxRXQxdEJJbE56S1B0TTl5eV85clppWFo4enVPa0ozZWFWaDhiYkxPSkpfTTlQSVJJX2l3blpGNC1jUlA2R1lUMVJMLVJBMUtSdWtvNks2YlhPRUdod2hrOXdYZWFwVUE4TEt6NVhUZUFlRVBKUDV0UWFfNTVjQ3Nv?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "935d8a3f5c1ef68320ad",
+            "title": "Iran trade plummeting under US blockade, bureaucratic errors - nypost.com",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-17T20:56:00Z",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdlBuLXBBSjhKUi1Idi1ESFctZjVRdnM4bk44QXFVLWJEaURxRXQxdEJJbE56S1B0TTl5eV85clppWFo4enVPa0ozZWFWaDhiYkxPSkpfTTlQSVJJX2l3blpGNC1jUlA2R1lUMVJMLVJBMUtSdWtvNks2YlhPRUdod2hrOXdYZWFwVUE4TEt6NVhUZUFlRVBKUDV0UWFfNTVjQ3Nv?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "a10357284f45396b40a0",
+            "title": "Iran struggles to reroute trade as U.S. blockade disrupts supply lines - JNS.org",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-17T18:29:26Z",
+            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMnUwSkJtNlp1akl3T3FIRjkwd0JJMVpPMDRTTWc5bUpMandoSGVpZXhzalVPdjFJb0pJSUxuQUo5UDBOR1FZdEpPYk4zaUdKYnFOd05PWGRwMW00UDhfNko3a1Q3R2dLT1NBZ0RkcGR6NzlmLW1EUWM2X2xOVDlOLXE1MzY5TUNvRU5QZm1xOGZmRzFxQ1dGcFRBa0MxU3Mycmc?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "b49e69421f420fae2a35",
+            "title": "Iran’s Attempts to Get Around the Hormuz Blockade Are Hitting a Wall - wsj.com",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-17T02:52:00Z",
+            "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQVFpaVFWblczeEhpQXpHSHQ0VFotUDB3UFJQQTV4RXpBX2dSVllZejV2aGdvZ2QyN1BPSkNQWkFQd1JTenY2anhwR2lZdTE5dnNLUl9KSHVFZ25qYmR6TlB1QUZSSWxBSktTaFFBWGQzTlBlWS1hTHh6cTgwUHBLbExuYjNtOE9ra3RJdmdOT19HLUp4blNFdDlEX0VEa2lvTl9LcEROdkRxRXk5cnNvaFlmMVg?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "060559ecfeace873b17c",
+            "title": "Russia denounces US naval blockade of Iran as ‘completely unacceptable and illegal’ - Tehran Times",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-16T17:56:41Z",
+            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORGE1Wm5XTU5raXViRlpyT0l1X3d2b01xQVgtb1pDUjZOWTBEMzB4eklaSkVKUEFDT21NNmFNU09HYmMwbThjcUhsV2I1bnJiRDJqdEltZExlVDRJOU5yZVpRZlNtY0dVLVBncnZrOE9HaldJblA0UVN6YzVmSXlMellVNnRoRDFfY2FQNWRScTdCZ0xRSThrSXBpOXlTM1ZCdXlXWXNCLTlxZWE5TVE?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "e5bc12bbd2f93272a1a7",
+            "title": "Zakharova: US Naval Blockade against Iran Violates International Law - اسلام تايمز",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-16T09:25:32Z",
+            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQckM1Unl6U3hYTEdnZEQ5X3hQREVmdnhONV9EWHg2VnhlZkZxWUY2Q0VzNVpFQlVTSlVIM0l0V0FVOUxrcXA0aEd5MUF0NXl6R0ZpZ1BiSzVwWEIxaDVyY1BTNE9mbkg5d29CU1gtbHAtTEFqRjAwMTY1QlVLTDJobURyOUpmal9sMXNFem0tQmd1UVNVcURWZmZralZHX2wtUmloYzY2SUpVb1FjZXpz?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "6c395791080ca254cb9a",
+            "title": "US naval blockade against Iran violates international law - Mehr News Agency",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-16T07:23:00Z",
+            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ0xJSmhyNUlueFctdlBvZUpRREJIMGZkSmFnNE1peHBTM3BfU29tVWNOWnozN0MzTUpNOGRpNjhTZi1oMUVkcWE4cEtuaXcwOVFVR2laVFQwT2l5UEY3QkM4STRvQVh6Y2ItTDRSMkhfTzJhVmhiTUpELTk3NmxSalp0NmJaRks5cGhUQU9BLTlJZzFoNkRhVg?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "78d84dc9c7bd316435d2",
+            "title": "Germany's Merz urges Iran not to carry conflict into Iraq, end Hormuz blockade - aa.com.tr",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-15T16:03:49Z",
+            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTUhKRXNZQzNFTzl5ME4tbTI1djZSRVBGazBZQWJLQUE5cXVjN0ZvWmdhbEZNSUtoeGdOYWw3d2lQdnBsUmNONkFfUFRVdUM5bS1UYnVia0xpNkhIT2JHLUN6UDVpSFZocGlFblJTcFVib0t6UWlSejItb1pITGlCQTBUYnI4S2hyQUtVMmtkaVlyekhWa2VtaXQxLXpvOFRvZ3N4YjlXLUdOR214cmg4ekUxd2NDQWpr?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "f64f8d1ce3e6d3155265",
+            "title": "USS George Washington Enforces Iran Blockade in Arabian Sea - 조선일보",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-15T15:47:36Z",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSzUwRVItS0Q5YXEyREk5LW9zMlJPemFlVFNsX3JTQjlyemRTMGhrbnR2ZmxzSUJMUmp1MWlNcFhfcTlTY2twY3FKemk1WmRRQkZ0bXpiZWJSMGtZbU1DakhEcDZjTjhXbHlMaUg3V3Rid0tycmwxYXlUZ3BIR3Zkdm1SV0s?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "3beae8ac68a7ebb4bcbe",
+            "title": "Iran’s Bushehr exports $2.36 billion amid US naval blockade - state media - Iran International",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-13T20:35:29Z",
+            "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE13QXBUdkFxRWdYMEJCSklWOElzNkRnSU5zRUlldDl2YWVrRFNnOGNPTXBCNjFDRXc1NlRNZkx3OWN2Q0V4NU0zWnBWcXo?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "438890cd117b473a378d",
+            "title": "Live - Iran ties Hormuz reopening to end of blockade as Washington vows to fight on - Iran International",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-12T07:58:22Z",
+            "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBWUkFCaXFNOVJFN2ZucUJZTEIyTW1YS2owX21jVGhhS2V4VFlLVXRvdkR5aURSZmlTX0hSRFRQeGlrNlZqWGRnb0hMb2JJdklBQzIzdlctdERIc2RPSUE?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "93651c668b30d07b0a35",
+            "title": "Iraq đóng cửa khẩu biên giới với Iran sau vụ tấn công Ả Rập Xê Út",
+            "source": "baomoi.com",
+            "source_class": "low_confidence",
+            "provenance_root": "baomoi.com",
+            "stance": "report",
+            "published": "2026-09-12T06:45:00Z",
+            "url": "https://baomoi.com/iraq-dong-cua-khau-bien-gioi-voi-iran-sau-vu-tan-cong-a-rap-xe-ut-c56033493.epi",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "7e413d6670a2056e6c7c",
+            "title": "Iran sắp hết xăng",
+            "source": "vietbao.vn",
+            "source_class": "low_confidence",
+            "provenance_root": "vietbao.vn",
+            "stance": "report",
+            "published": "2026-09-12T02:15:00Z",
+            "url": "https://vietbao.vn/iran-sap-het-xang-606890.html",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "f3e841819de4cc3ff652",
+            "title": "Iran đang thiếu xăng",
+            "source": "vnexpress.net",
+            "source_class": "low_confidence",
+            "provenance_root": "vnexpress.net",
+            "stance": "report",
+            "published": "2026-09-12T01:45:00Z",
+            "url": "https://vnexpress.net/iran-dang-thieu-xang-5119303.html",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "491bedd0b06437f8dc11",
+            "title": "Iran seeks end to blockade of Yemen - Taipei Times",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-11T16:00:00Z",
+            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5NMXFfM0d4R2hNMHpSOTZjMXBHdEhzU1ZUTTZHTkpoQm1fb3BRbHM0ZXB0cnd2eEQxU3hsWXViQjd1d1VzdlljTUt0LU5qeUpWb2FDT0d3NGx4ZWhoaS0tRDVCemlwdWJ2UjdSSmhWcHlYZ2ZKdzhTRg?oc=5",
+            "discovery_only": true
+          }
+        ],
+        "state_affiliated_reporting": false,
+        "discovery_only": false,
+        "branch_analysis": {
+          "current_observation": "Iran Battles to Beat the Blockade",
+          "plausible_explanations": [
+            "A genuine INFRA/SECURITY/WAR development involving IRAN, RUSSIA, UNITED STATES is unfolding as reported.",
+            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+          ],
+          "escalation_branch": "Related INFRA/SECURITY/WAR indicators spread, become operational, or draw additional actors into the event.",
+          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+          "confirm_indicators": [
+            "A primary record, sensor observation, or on-record official confirmation.",
+            "Matching detail from a genuinely independent provenance root.",
+            "Observable follow-on action consistent with the reported event."
+          ],
+          "falsify_indicators": [
+            "Time-stamped primary evidence incompatible with the claim.",
+            "Independent, technically specific refutation from credible sources.",
+            "Predicted follow-on indicators fail to occur inside the stated window."
+          ],
+          "contradictory_evidence_present": false
+        },
+        "historical_matches": [
+          {
+            "claim_id": "claim-ab13de06ed03a68f0a",
+            "headline": "Chinese National Pleads Guilty to Trying to Obtain U.S. Military Equipment",
+            "material_time": "2026-08-10T12:00:00Z",
+            "shared_domains": [
+              "INFRA",
+              "WAR"
+            ],
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ]
+          },
+          {
+            "claim_id": "claim-c63cb32ed106a31b1e",
+            "headline": "Homeland Security Task Force: Dual Dominican and French National Admits Role in Firearms Trafficking Scheme",
+            "material_time": "2026-08-05T12:00:00Z",
+            "shared_domains": [
+              "INFRA"
+            ],
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ]
+          },
+          {
+            "claim_id": "claim-1453116f3488b77a21",
+            "headline": "Turkey-Based Global Director of Sham Charity Arrested and Charged with Conspiring to Provide Material Support to Hamas",
+            "material_time": "2026-07-31T12:00:00Z",
+            "shared_domains": [
+              "INFRA"
+            ],
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ]
+          },
+          {
+            "claim_id": "claim-a02fb9167c45d388fd",
+            "headline": "Department of Justice Files First Case in U.S. Alien Terrorist Removal Court to Deport Afghan Alien Who Supported Her Family’s Plans for Election-Day Shooting",
+            "material_time": "2026-07-30T12:00:00Z",
+            "shared_domains": [
+              "INFRA"
+            ],
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ]
+          },
+          {
+            "claim_id": "claim-02f5d588ef155ffda6",
+            "headline": "Will Ronaldo Cry​? World Cup Fans Bet Billions Through Prediction Markets",
+            "material_time": "2026-07-30T11:17:38Z",
+            "shared_domains": [
+              "SECURITY"
+            ],
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ]
+          }
+        ],
+        "cross_domain_links": [
+          {
+            "claim_id": "claim-c18f0436dd7737e8a1",
+            "shared_actors": [
+              "IRAN",
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "IRAN",
+              "UNITED STATES"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-9c559a33b194ea9361",
+            "shared_actors": [
+              "IRAN",
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "IRAN",
+              "UNITED STATES"
+            ],
+            "domains": [
+              "CYBER",
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-4572605179824de245",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-90165ffac8e5154b97",
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-6f75ba1268f64c4a48",
+            "shared_actors": [
+              "RUSSIA",
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UNITED STATES"
+            ],
+            "domains": [
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-972526aa6b43f8ffcf",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN",
+              "MIDDLE EAST"
+            ],
+            "domains": [
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-26a7f266a7aebd61ba",
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ],
+            "domains": [
+              "CYBER"
+            ]
+          },
+          {
+            "claim_id": "claim-6db9bf9646c0b19696",
+            "shared_actors": [
+              "IRAN",
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "IRAN",
+              "UNITED STATES"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-333a1e4c60d352608a",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "CYBER"
+            ]
+          },
+          {
+            "claim_id": "claim-a7e58102415aae5f2f",
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-73aa52d8fbf9a5a08d",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-88aa5e1bd539393692",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          }
+        ],
+        "anomaly_ids": [
+          "anomaly-182038db5162174d",
+          "anomaly-70ec454922f7f718",
+          "anomaly-7b8daadf5e9a4b58"
+        ],
+        "threat_score": 14,
+        "watch_priority": 65,
+        "audit": {
+          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+          "support_count": 32,
+          "contradiction_count": 0,
+          "independent_roots": 1,
+          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+          "material_time_used_for_decay": "2026-09-18T07:28:42Z"
         }
       },
       {
@@ -4021,7 +4601,7 @@
           "36a560c152273c7f3cbc"
         ],
         "first_seen": "2026-09-16T03:19:45Z",
-        "last_seen": "2026-09-18T07:20:11Z",
+        "last_seen": "2026-09-18T07:45:36Z",
         "material_time": "2026-09-17T21:36:57Z",
         "domains": [
           "CYBER",
@@ -4305,22 +4885,6 @@
         ],
         "cross_domain_links": [
           {
-            "claim_id": "claim-ddb3856e9fd1a3a0d6",
-            "shared_actors": [
-              "IRAN",
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "UNITED STATES"
-            ],
-            "domains": [
-              "INFRA",
-              "SECURITY",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-90165ffac8e5154b97",
             "shared_actors": [
               "UNITED STATES"
@@ -4456,6 +5020,18 @@
               "INFRA",
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-9595e2777d20fc7008",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "INFRA"
+            ]
           }
         ],
         "anomaly_ids": [
@@ -4471,585 +5047,6 @@
           "independent_roots": 4,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-17T21:36:57Z"
-        }
-      },
-      {
-        "id": "claim-ddb3856e9fd1a3a0d6",
-        "headline": "Iran Battles to Beat the Blockade",
-        "signature_tokens": [
-          "battles",
-          "beat",
-          "blockade",
-          "iran"
-        ],
-        "observation_ids": [
-          "d4a02c6629496a0c79a5",
-          "f4d1cdfe0d3cd92593a5",
-          "690af4d1113132f1df2f",
-          "4e27d93b52e8e19195d3",
-          "f4f7cfeec5fa7c77acbb",
-          "400be0fa88e4cf4d72c6",
-          "084ecc00c49a8b5a2327",
-          "356188847b2023bddc32",
-          "70872a53d91f63729b3f",
-          "44ceef9c887d01ccdebb",
-          "f827b5c74294a7d8ce0d",
-          "dac97b5d4f3d4ab7d1be",
-          "a38e0bb5638c4617ed5c",
-          "6a34a661053e2a2dcdbf",
-          "bb69207632cf011c63ba",
-          "491bedd0b06437f8dc11",
-          "676f12fd02dfd01ef5ea",
-          "f3e841819de4cc3ff652",
-          "7e413d6670a2056e6c7c",
-          "438890cd117b473a378d",
-          "93651c668b30d07b0a35",
-          "3beae8ac68a7ebb4bcbe",
-          "78d84dc9c7bd316435d2",
-          "f64f8d1ce3e6d3155265",
-          "6c395791080ca254cb9a",
-          "e5bc12bbd2f93272a1a7",
-          "060559ecfeace873b17c",
-          "38f810a7b17acac05b30",
-          "a10357284f45396b40a0",
-          "0c0860d82d94482ef115",
-          "b49e69421f420fae2a35",
-          "935d8a3f5c1ef68320ad"
-        ],
-        "first_seen": "2026-09-09T19:17:24Z",
-        "last_seen": "2026-09-18T07:20:11Z",
-        "material_time": "2026-09-17T20:56:00Z",
-        "domains": [
-          "INFRA",
-          "SECURITY",
-          "WAR"
-        ],
-        "regions": [
-          "EUROPE",
-          "IRAN",
-          "MIDDLE EAST",
-          "RUSSIA",
-          "TAIWAN",
-          "UNITED STATES"
-        ],
-        "actors": [
-          "IRAN",
-          "RUSSIA",
-          "UNITED STATES"
-        ],
-        "state": "CREDIBLE REPORT",
-        "confidence": 61,
-        "confidence_direction": "STABLE",
-        "confidence_components": {
-          "source_quality": 81,
-          "independence": 25,
-          "corroboration": 22,
-          "contradiction": 0,
-          "specificity": 64,
-          "recency": 98,
-          "evidence_type": 73,
-          "historical_reliability": 81,
-          "claim_maturity": 36
-        },
-        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "supporting_observation_ids": [
-          "d4a02c6629496a0c79a5",
-          "f4d1cdfe0d3cd92593a5",
-          "690af4d1113132f1df2f",
-          "4e27d93b52e8e19195d3",
-          "f4f7cfeec5fa7c77acbb",
-          "400be0fa88e4cf4d72c6",
-          "084ecc00c49a8b5a2327",
-          "356188847b2023bddc32",
-          "70872a53d91f63729b3f",
-          "44ceef9c887d01ccdebb",
-          "f827b5c74294a7d8ce0d",
-          "dac97b5d4f3d4ab7d1be",
-          "a38e0bb5638c4617ed5c",
-          "6a34a661053e2a2dcdbf",
-          "bb69207632cf011c63ba",
-          "491bedd0b06437f8dc11",
-          "676f12fd02dfd01ef5ea",
-          "f3e841819de4cc3ff652",
-          "7e413d6670a2056e6c7c",
-          "438890cd117b473a378d",
-          "93651c668b30d07b0a35",
-          "3beae8ac68a7ebb4bcbe",
-          "78d84dc9c7bd316435d2",
-          "f64f8d1ce3e6d3155265",
-          "6c395791080ca254cb9a",
-          "e5bc12bbd2f93272a1a7",
-          "060559ecfeace873b17c",
-          "38f810a7b17acac05b30",
-          "a10357284f45396b40a0",
-          "0c0860d82d94482ef115",
-          "b49e69421f420fae2a35",
-          "935d8a3f5c1ef68320ad"
-        ],
-        "contradictory_observation_ids": [],
-        "source_count": 9,
-        "independent_provenance_count": 1,
-        "sources": [
-          "GDELT Global Discovery",
-          "The Maritime Executive",
-          "baomoi.com",
-          "economictimes.indiatimes.com",
-          "maritime-executive.com",
-          "niacouncil.org",
-          "presstv.co.uk",
-          "vietbao.vn",
-          "vnexpress.net"
-        ],
-        "provenance_roots": [
-          "baomoi.com",
-          "economictimes.indiatimes.com",
-          "gdelt_global",
-          "maritime-executive.com",
-          "maritime_exec",
-          "niacouncil.org",
-          "presstv.co.uk",
-          "vietbao.vn",
-          "vnexpress.net"
-        ],
-        "evidence": [
-          {
-            "observation_id": "0c0860d82d94482ef115",
-            "title": "Iran trade plummeting under US blockade, bureaucratic errors - New York Post",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-17T20:56:00Z",
-            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdlBuLXBBSjhKUi1Idi1ESFctZjVRdnM4bk44QXFVLWJEaURxRXQxdEJJbE56S1B0TTl5eV85clppWFo4enVPa0ozZWFWaDhiYkxPSkpfTTlQSVJJX2l3blpGNC1jUlA2R1lUMVJMLVJBMUtSdWtvNks2YlhPRUdod2hrOXdYZWFwVUE4TEt6NVhUZUFlRVBKUDV0UWFfNTVjQ3Nv?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "935d8a3f5c1ef68320ad",
-            "title": "Iran trade plummeting under US blockade, bureaucratic errors - nypost.com",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-17T20:56:00Z",
-            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdlBuLXBBSjhKUi1Idi1ESFctZjVRdnM4bk44QXFVLWJEaURxRXQxdEJJbE56S1B0TTl5eV85clppWFo4enVPa0ozZWFWaDhiYkxPSkpfTTlQSVJJX2l3blpGNC1jUlA2R1lUMVJMLVJBMUtSdWtvNks2YlhPRUdod2hrOXdYZWFwVUE4TEt6NVhUZUFlRVBKUDV0UWFfNTVjQ3Nv?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "a10357284f45396b40a0",
-            "title": "Iran struggles to reroute trade as U.S. blockade disrupts supply lines - JNS.org",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-17T18:29:26Z",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMnUwSkJtNlp1akl3T3FIRjkwd0JJMVpPMDRTTWc5bUpMandoSGVpZXhzalVPdjFJb0pJSUxuQUo5UDBOR1FZdEpPYk4zaUdKYnFOd05PWGRwMW00UDhfNko3a1Q3R2dLT1NBZ0RkcGR6NzlmLW1EUWM2X2xOVDlOLXE1MzY5TUNvRU5QZm1xOGZmRzFxQ1dGcFRBa0MxU3Mycmc?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "38f810a7b17acac05b30",
-            "title": "Iran’s Attempts to Get Around the Hormuz Blockade Are Hitting a Wall - WSJ",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-17T02:52:00Z",
-            "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQVFpaVFWblczeEhpQXpHSHQ0VFotUDB3UFJQQTV4RXpBX2dSVllZejV2aGdvZ2QyN1BPSkNQWkFQd1JTenY2anhwR2lZdTE5dnNLUl9KSHVFZ25qYmR6TlB1QUZSSWxBSktTaFFBWGQzTlBlWS1hTHh6cTgwUHBLbExuYjNtOE9ra3RJdmdOT19HLUp4blNFdDlEX0VEa2lvTl9LcEROdkRxRXk5cnNvaFlmMVg?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "b49e69421f420fae2a35",
-            "title": "Iran’s Attempts to Get Around the Hormuz Blockade Are Hitting a Wall - wsj.com",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-17T02:52:00Z",
-            "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQVFpaVFWblczeEhpQXpHSHQ0VFotUDB3UFJQQTV4RXpBX2dSVllZejV2aGdvZ2QyN1BPSkNQWkFQd1JTenY2anhwR2lZdTE5dnNLUl9KSHVFZ25qYmR6TlB1QUZSSWxBSktTaFFBWGQzTlBlWS1hTHh6cTgwUHBLbExuYjNtOE9ra3RJdmdOT19HLUp4blNFdDlEX0VEa2lvTl9LcEROdkRxRXk5cnNvaFlmMVg?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "060559ecfeace873b17c",
-            "title": "Russia denounces US naval blockade of Iran as ‘completely unacceptable and illegal’ - Tehran Times",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-16T17:56:41Z",
-            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORGE1Wm5XTU5raXViRlpyT0l1X3d2b01xQVgtb1pDUjZOWTBEMzB4eklaSkVKUEFDT21NNmFNU09HYmMwbThjcUhsV2I1bnJiRDJqdEltZExlVDRJOU5yZVpRZlNtY0dVLVBncnZrOE9HaldJblA0UVN6YzVmSXlMellVNnRoRDFfY2FQNWRScTdCZ0xRSThrSXBpOXlTM1ZCdXlXWXNCLTlxZWE5TVE?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "e5bc12bbd2f93272a1a7",
-            "title": "Zakharova: US Naval Blockade against Iran Violates International Law - اسلام تايمز",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-16T09:25:32Z",
-            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQckM1Unl6U3hYTEdnZEQ5X3hQREVmdnhONV9EWHg2VnhlZkZxWUY2Q0VzNVpFQlVTSlVIM0l0V0FVOUxrcXA0aEd5MUF0NXl6R0ZpZ1BiSzVwWEIxaDVyY1BTNE9mbkg5d29CU1gtbHAtTEFqRjAwMTY1QlVLTDJobURyOUpmal9sMXNFem0tQmd1UVNVcURWZmZralZHX2wtUmloYzY2SUpVb1FjZXpz?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "6c395791080ca254cb9a",
-            "title": "US naval blockade against Iran violates international law - Mehr News Agency",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-16T07:23:00Z",
-            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ0xJSmhyNUlueFctdlBvZUpRREJIMGZkSmFnNE1peHBTM3BfU29tVWNOWnozN0MzTUpNOGRpNjhTZi1oMUVkcWE4cEtuaXcwOVFVR2laVFQwT2l5UEY3QkM4STRvQVh6Y2ItTDRSMkhfTzJhVmhiTUpELTk3NmxSalp0NmJaRks5cGhUQU9BLTlJZzFoNkRhVg?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "78d84dc9c7bd316435d2",
-            "title": "Germany's Merz urges Iran not to carry conflict into Iraq, end Hormuz blockade - aa.com.tr",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-15T16:03:49Z",
-            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTUhKRXNZQzNFTzl5ME4tbTI1djZSRVBGazBZQWJLQUE5cXVjN0ZvWmdhbEZNSUtoeGdOYWw3d2lQdnBsUmNONkFfUFRVdUM5bS1UYnVia0xpNkhIT2JHLUN6UDVpSFZocGlFblJTcFVib0t6UWlSejItb1pITGlCQTBUYnI4S2hyQUtVMmtkaVlyekhWa2VtaXQxLXpvOFRvZ3N4YjlXLUdOR214cmg4ekUxd2NDQWpr?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "f64f8d1ce3e6d3155265",
-            "title": "USS George Washington Enforces Iran Blockade in Arabian Sea - 조선일보",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-15T15:47:36Z",
-            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSzUwRVItS0Q5YXEyREk5LW9zMlJPemFlVFNsX3JTQjlyemRTMGhrbnR2ZmxzSUJMUmp1MWlNcFhfcTlTY2twY3FKemk1WmRRQkZ0bXpiZWJSMGtZbU1DakhEcDZjTjhXbHlMaUg3V3Rid0tycmwxYXlUZ3BIR3Zkdm1SV0s?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "3beae8ac68a7ebb4bcbe",
-            "title": "Iran’s Bushehr exports $2.36 billion amid US naval blockade - state media - Iran International",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-13T20:35:29Z",
-            "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE13QXBUdkFxRWdYMEJCSklWOElzNkRnSU5zRUlldDl2YWVrRFNnOGNPTXBCNjFDRXc1NlRNZkx3OWN2Q0V4NU0zWnBWcXo?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "438890cd117b473a378d",
-            "title": "Live - Iran ties Hormuz reopening to end of blockade as Washington vows to fight on - Iran International",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-12T07:58:22Z",
-            "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBWUkFCaXFNOVJFN2ZucUJZTEIyTW1YS2owX21jVGhhS2V4VFlLVXRvdkR5aURSZmlTX0hSRFRQeGlrNlZqWGRnb0hMb2JJdklBQzIzdlctdERIc2RPSUE?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "93651c668b30d07b0a35",
-            "title": "Iraq đóng cửa khẩu biên giới với Iran sau vụ tấn công Ả Rập Xê Út",
-            "source": "baomoi.com",
-            "source_class": "low_confidence",
-            "provenance_root": "baomoi.com",
-            "stance": "report",
-            "published": "2026-09-12T06:45:00Z",
-            "url": "https://baomoi.com/iraq-dong-cua-khau-bien-gioi-voi-iran-sau-vu-tan-cong-a-rap-xe-ut-c56033493.epi",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "7e413d6670a2056e6c7c",
-            "title": "Iran sắp hết xăng",
-            "source": "vietbao.vn",
-            "source_class": "low_confidence",
-            "provenance_root": "vietbao.vn",
-            "stance": "report",
-            "published": "2026-09-12T02:15:00Z",
-            "url": "https://vietbao.vn/iran-sap-het-xang-606890.html",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "f3e841819de4cc3ff652",
-            "title": "Iran đang thiếu xăng",
-            "source": "vnexpress.net",
-            "source_class": "low_confidence",
-            "provenance_root": "vnexpress.net",
-            "stance": "report",
-            "published": "2026-09-12T01:45:00Z",
-            "url": "https://vnexpress.net/iran-dang-thieu-xang-5119303.html",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "491bedd0b06437f8dc11",
-            "title": "Iran seeks end to blockade of Yemen - Taipei Times",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-11T16:00:00Z",
-            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5NMXFfM0d4R2hNMHpSOTZjMXBHdEhzU1ZUTTZHTkpoQm1fb3BRbHM0ZXB0cnd2eEQxU3hsWXViQjd1d1VzdlljTUt0LU5qeUpWb2FDT0d3NGx4ZWhoaS0tRDVCemlwdWJ2UjdSSmhWcHlYZ2ZKdzhTRg?oc=5",
-            "discovery_only": true
-          }
-        ],
-        "state_affiliated_reporting": false,
-        "discovery_only": false,
-        "branch_analysis": {
-          "current_observation": "Iran Battles to Beat the Blockade",
-          "plausible_explanations": [
-            "A genuine INFRA/SECURITY/WAR development involving IRAN, RUSSIA, UNITED STATES is unfolding as reported.",
-            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-          ],
-          "escalation_branch": "Related INFRA/SECURITY/WAR indicators spread, become operational, or draw additional actors into the event.",
-          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-          "confirm_indicators": [
-            "A primary record, sensor observation, or on-record official confirmation.",
-            "Matching detail from a genuinely independent provenance root.",
-            "Observable follow-on action consistent with the reported event."
-          ],
-          "falsify_indicators": [
-            "Time-stamped primary evidence incompatible with the claim.",
-            "Independent, technically specific refutation from credible sources.",
-            "Predicted follow-on indicators fail to occur inside the stated window."
-          ],
-          "contradictory_evidence_present": false
-        },
-        "historical_matches": [
-          {
-            "claim_id": "claim-ab13de06ed03a68f0a",
-            "headline": "Chinese National Pleads Guilty to Trying to Obtain U.S. Military Equipment",
-            "material_time": "2026-08-10T12:00:00Z",
-            "shared_domains": [
-              "INFRA",
-              "WAR"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-c63cb32ed106a31b1e",
-            "headline": "Homeland Security Task Force: Dual Dominican and French National Admits Role in Firearms Trafficking Scheme",
-            "material_time": "2026-08-05T12:00:00Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-1453116f3488b77a21",
-            "headline": "Turkey-Based Global Director of Sham Charity Arrested and Charged with Conspiring to Provide Material Support to Hamas",
-            "material_time": "2026-07-31T12:00:00Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-a02fb9167c45d388fd",
-            "headline": "Department of Justice Files First Case in U.S. Alien Terrorist Removal Court to Deport Afghan Alien Who Supported Her Family’s Plans for Election-Day Shooting",
-            "material_time": "2026-07-30T12:00:00Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-02f5d588ef155ffda6",
-            "headline": "Will Ronaldo Cry​? World Cup Fans Bet Billions Through Prediction Markets",
-            "material_time": "2026-07-30T11:17:38Z",
-            "shared_domains": [
-              "SECURITY"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          }
-        ],
-        "cross_domain_links": [
-          {
-            "claim_id": "claim-111303caf9d2f56925",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "HUMANITARIAN",
-              "TERRORISM",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-4572605179824de245",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-90165ffac8e5154b97",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-6f75ba1268f64c4a48",
-            "shared_actors": [
-              "RUSSIA",
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UNITED STATES"
-            ],
-            "domains": [
-              "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-972526aa6b43f8ffcf",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "MIDDLE EAST"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-26a7f266a7aebd61ba",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "CYBER"
-            ]
-          },
-          {
-            "claim_id": "claim-6db9bf9646c0b19696",
-            "shared_actors": [
-              "IRAN",
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "UNITED STATES"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-333a1e4c60d352608a",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "CYBER"
-            ]
-          },
-          {
-            "claim_id": "claim-a7e58102415aae5f2f",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-73aa52d8fbf9a5a08d",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-88aa5e1bd539393692",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-9f33de7a0b4956eb20",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "CYBER"
-            ]
-          }
-        ],
-        "anomaly_ids": [
-          "anomaly-fd9721704bb7257a",
-          "anomaly-70ec454922f7f718",
-          "anomaly-7b8daadf5e9a4b58"
-        ],
-        "threat_score": 14,
-        "watch_priority": 65,
-        "audit": {
-          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 32,
-          "contradiction_count": 0,
-          "independent_roots": 1,
-          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-17T20:56:00Z"
         }
       }
     ]
@@ -6190,7 +6187,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-fd9721704bb7257a"
+          "anomaly-182038db5162174d"
         ],
         "threat_score": 4,
         "watch_priority": 51,
@@ -6487,7 +6484,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-7699f3e8250354da",
+          "anomaly-2d92916dc7ff476b",
           "anomaly-9cb5e80ba5cf920b"
         ],
         "threat_score": 2,
@@ -6539,7 +6536,7 @@
           "661dc3c8a766fcbc9b27"
         ],
         "first_seen": "2026-09-10T18:21:06Z",
-        "last_seen": "2026-09-18T07:20:11Z",
+        "last_seen": "2026-09-18T07:45:36Z",
         "material_time": "2026-09-18T04:03:29Z",
         "domains": [
           "HUMANITARIAN",
@@ -7058,7 +7055,7 @@
           "UNITED STATES"
         ],
         "state": "SPECULATIVE",
-        "confidence": 60,
+        "confidence": 59,
         "confidence_direction": "STABLE",
         "confidence_components": {
           "source_quality": 79,
@@ -7414,8 +7411,8 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-fd9721704bb7257a",
-          "anomaly-c2012ea2b9c60853",
+          "anomaly-182038db5162174d",
+          "anomaly-345ebdffcc136866",
           "anomaly-70ec454922f7f718"
         ],
         "threat_score": 3,
@@ -7728,8 +7725,8 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-7699f3e8250354da",
-          "anomaly-fd9721704bb7257a"
+          "anomaly-2d92916dc7ff476b",
+          "anomaly-182038db5162174d"
         ],
         "threat_score": 2,
         "watch_priority": 61,
@@ -8524,7 +8521,7 @@
     "military_mobilization": 4,
     "economic_warfare": 151,
     "crisis_control_failure": 0,
-    "hybrid_preparation": 123
+    "hybrid_preparation": 122
   },
   "formula": "Independent-provenance-capped claim contributions; verified and early-warning pressure remain separate.",
   "safeguard": "Republished stories sharing one provenance root cannot multiply pressure; speculative claims never enter Verified Pressure.",
@@ -8560,7 +8557,7 @@
         "f1efa7db87d845b15483"
       ],
       "first_seen": "2026-09-16T22:44:31Z",
-      "last_seen": "2026-09-18T07:20:11Z",
+      "last_seen": "2026-09-18T07:45:36Z",
       "material_time": "2026-09-17T16:35:32Z",
       "domains": [
         "ECONOMIC",
@@ -9032,8 +9029,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-fd9721704bb7257a",
-        "anomaly-c2012ea2b9c60853",
+        "anomaly-182038db5162174d",
+        "anomaly-345ebdffcc136866",
         "anomaly-70ec454922f7f718",
         "anomaly-f8d6cb844095a96d"
       ],
@@ -9414,7 +9411,7 @@
         "89b88b52a37aabdb811b"
       ],
       "first_seen": "2026-09-17T20:44:37Z",
-      "last_seen": "2026-09-18T07:20:11Z",
+      "last_seen": "2026-09-18T07:45:36Z",
       "material_time": "2026-09-18T04:27:18Z",
       "domains": [
         "ECONOMIC",
@@ -9768,7 +9765,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-fd9721704bb7257a",
+        "anomaly-182038db5162174d",
         "anomaly-70ec454922f7f718",
         "anomaly-7b8daadf5e9a4b58",
         "anomaly-f8d6cb844095a96d"
@@ -10435,7 +10432,7 @@
         "0aee2fae2944a4b3f92a"
       ],
       "first_seen": "2026-09-17T20:20:36Z",
-      "last_seen": "2026-09-18T07:20:11Z",
+      "last_seen": "2026-09-18T07:45:36Z",
       "material_time": "2026-09-17T18:50:04Z",
       "domains": [
         "ECONOMIC",
@@ -10761,8 +10758,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-fd9721704bb7257a",
-        "anomaly-c2012ea2b9c60853",
+        "anomaly-182038db5162174d",
+        "anomaly-345ebdffcc136866",
         "anomaly-70ec454922f7f718"
       ],
       "threat_score": 20,
@@ -11056,7 +11053,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-fd9721704bb7257a",
+        "anomaly-182038db5162174d",
         "anomaly-f8d6cb844095a96d",
         "anomaly-897d4c64468e166c"
       ],
@@ -11365,7 +11362,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-fd9721704bb7257a",
+        "anomaly-182038db5162174d",
         "anomaly-f8d6cb844095a96d",
         "anomaly-897d4c64468e166c"
       ],
@@ -12128,6 +12125,20 @@
           ]
         },
         {
+          "claim_id": "claim-ddb3856e9fd1a3a0d6",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "INFRA",
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-c18f0436dd7737e8a1",
           "shared_actors": [
             "IRAN"
@@ -12151,20 +12162,6 @@
           "domains": [
             "CYBER",
             "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-ddb3856e9fd1a3a0d6",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "SECURITY",
             "WAR"
           ]
         },
@@ -12419,22 +12416,6 @@
           ]
         },
         {
-          "claim_id": "claim-111303caf9d2f56925",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "HUMANITARIAN",
-            "TERRORISM",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-4572605179824de245",
           "shared_actors": [
             "RUSSIA",
@@ -12500,11 +12481,23 @@
           "domains": [
             "WAR"
           ]
+        },
+        {
+          "claim_id": "claim-b830ca7139f0c25c29",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-fd9721704bb7257a",
-        "anomaly-c2012ea2b9c60853"
+        "anomaly-182038db5162174d",
+        "anomaly-345ebdffcc136866"
       ],
       "threat_score": 17,
       "watch_priority": 54,
@@ -12515,6 +12508,590 @@
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-17T05:24:20Z"
+      }
+    },
+    {
+      "id": "claim-ddb3856e9fd1a3a0d6",
+      "headline": "Iran Battles to Beat the Blockade",
+      "signature_tokens": [
+        "battles",
+        "beat",
+        "blockade",
+        "iran"
+      ],
+      "observation_ids": [
+        "d4a02c6629496a0c79a5",
+        "f4d1cdfe0d3cd92593a5",
+        "690af4d1113132f1df2f",
+        "4e27d93b52e8e19195d3",
+        "f4f7cfeec5fa7c77acbb",
+        "400be0fa88e4cf4d72c6",
+        "084ecc00c49a8b5a2327",
+        "356188847b2023bddc32",
+        "70872a53d91f63729b3f",
+        "44ceef9c887d01ccdebb",
+        "f827b5c74294a7d8ce0d",
+        "dac97b5d4f3d4ab7d1be",
+        "a38e0bb5638c4617ed5c",
+        "6a34a661053e2a2dcdbf",
+        "bb69207632cf011c63ba",
+        "491bedd0b06437f8dc11",
+        "676f12fd02dfd01ef5ea",
+        "f3e841819de4cc3ff652",
+        "7e413d6670a2056e6c7c",
+        "438890cd117b473a378d",
+        "93651c668b30d07b0a35",
+        "3beae8ac68a7ebb4bcbe",
+        "78d84dc9c7bd316435d2",
+        "f64f8d1ce3e6d3155265",
+        "6c395791080ca254cb9a",
+        "e5bc12bbd2f93272a1a7",
+        "060559ecfeace873b17c",
+        "38f810a7b17acac05b30",
+        "a10357284f45396b40a0",
+        "0c0860d82d94482ef115",
+        "b49e69421f420fae2a35",
+        "935d8a3f5c1ef68320ad"
+      ],
+      "first_seen": "2026-09-09T19:17:24Z",
+      "last_seen": "2026-09-18T07:45:36Z",
+      "material_time": "2026-09-18T07:28:42Z",
+      "domains": [
+        "INFRA",
+        "SECURITY",
+        "WAR"
+      ],
+      "regions": [
+        "EUROPE",
+        "IRAN",
+        "MIDDLE EAST",
+        "RUSSIA",
+        "TAIWAN",
+        "UNITED STATES"
+      ],
+      "actors": [
+        "IRAN",
+        "RUSSIA",
+        "UNITED STATES"
+      ],
+      "state": "CREDIBLE REPORT",
+      "confidence": 61,
+      "confidence_direction": "STABLE",
+      "confidence_components": {
+        "source_quality": 81,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 64,
+        "recency": 100,
+        "evidence_type": 73,
+        "historical_reliability": 81,
+        "claim_maturity": 35
+      },
+      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+      "supporting_observation_ids": [
+        "d4a02c6629496a0c79a5",
+        "f4d1cdfe0d3cd92593a5",
+        "690af4d1113132f1df2f",
+        "4e27d93b52e8e19195d3",
+        "f4f7cfeec5fa7c77acbb",
+        "400be0fa88e4cf4d72c6",
+        "084ecc00c49a8b5a2327",
+        "356188847b2023bddc32",
+        "70872a53d91f63729b3f",
+        "44ceef9c887d01ccdebb",
+        "f827b5c74294a7d8ce0d",
+        "dac97b5d4f3d4ab7d1be",
+        "a38e0bb5638c4617ed5c",
+        "6a34a661053e2a2dcdbf",
+        "bb69207632cf011c63ba",
+        "491bedd0b06437f8dc11",
+        "676f12fd02dfd01ef5ea",
+        "f3e841819de4cc3ff652",
+        "7e413d6670a2056e6c7c",
+        "438890cd117b473a378d",
+        "93651c668b30d07b0a35",
+        "3beae8ac68a7ebb4bcbe",
+        "78d84dc9c7bd316435d2",
+        "f64f8d1ce3e6d3155265",
+        "6c395791080ca254cb9a",
+        "e5bc12bbd2f93272a1a7",
+        "060559ecfeace873b17c",
+        "38f810a7b17acac05b30",
+        "a10357284f45396b40a0",
+        "0c0860d82d94482ef115",
+        "b49e69421f420fae2a35",
+        "935d8a3f5c1ef68320ad"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 9,
+      "independent_provenance_count": 1,
+      "sources": [
+        "GDELT Global Discovery",
+        "The Maritime Executive",
+        "baomoi.com",
+        "economictimes.indiatimes.com",
+        "maritime-executive.com",
+        "niacouncil.org",
+        "presstv.co.uk",
+        "vietbao.vn",
+        "vnexpress.net"
+      ],
+      "provenance_roots": [
+        "baomoi.com",
+        "economictimes.indiatimes.com",
+        "gdelt_global",
+        "maritime-executive.com",
+        "maritime_exec",
+        "niacouncil.org",
+        "presstv.co.uk",
+        "vietbao.vn",
+        "vnexpress.net"
+      ],
+      "evidence": [
+        {
+          "observation_id": "38f810a7b17acac05b30",
+          "title": "Iran’s Attempts to Get Around the Hormuz Blockade Are Hitting a Wall - WSJ",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-18T07:28:42Z",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQVFpaVFWblczeEhpQXpHSHQ0VFotUDB3UFJQQTV4RXpBX2dSVllZejV2aGdvZ2QyN1BPSkNQWkFQd1JTenY2anhwR2lZdTE5dnNLUl9KSHVFZ25qYmR6TlB1QUZSSWxBSktTaFFBWGQzTlBlWS1hTHh6cTgwUHBLbExuYjNtOE9ra3RJdmdOT19HLUp4blNFdDlEX0VEa2lvTl9LcEROdkRxRXk5cnNvaFlmMVg?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "0c0860d82d94482ef115",
+          "title": "Iran trade plummeting under US blockade, bureaucratic errors - New York Post",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-17T20:56:00Z",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdlBuLXBBSjhKUi1Idi1ESFctZjVRdnM4bk44QXFVLWJEaURxRXQxdEJJbE56S1B0TTl5eV85clppWFo4enVPa0ozZWFWaDhiYkxPSkpfTTlQSVJJX2l3blpGNC1jUlA2R1lUMVJMLVJBMUtSdWtvNks2YlhPRUdod2hrOXdYZWFwVUE4TEt6NVhUZUFlRVBKUDV0UWFfNTVjQ3Nv?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "935d8a3f5c1ef68320ad",
+          "title": "Iran trade plummeting under US blockade, bureaucratic errors - nypost.com",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-17T20:56:00Z",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdlBuLXBBSjhKUi1Idi1ESFctZjVRdnM4bk44QXFVLWJEaURxRXQxdEJJbE56S1B0TTl5eV85clppWFo4enVPa0ozZWFWaDhiYkxPSkpfTTlQSVJJX2l3blpGNC1jUlA2R1lUMVJMLVJBMUtSdWtvNks2YlhPRUdod2hrOXdYZWFwVUE4TEt6NVhUZUFlRVBKUDV0UWFfNTVjQ3Nv?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "a10357284f45396b40a0",
+          "title": "Iran struggles to reroute trade as U.S. blockade disrupts supply lines - JNS.org",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-17T18:29:26Z",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMnUwSkJtNlp1akl3T3FIRjkwd0JJMVpPMDRTTWc5bUpMandoSGVpZXhzalVPdjFJb0pJSUxuQUo5UDBOR1FZdEpPYk4zaUdKYnFOd05PWGRwMW00UDhfNko3a1Q3R2dLT1NBZ0RkcGR6NzlmLW1EUWM2X2xOVDlOLXE1MzY5TUNvRU5QZm1xOGZmRzFxQ1dGcFRBa0MxU3Mycmc?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "b49e69421f420fae2a35",
+          "title": "Iran’s Attempts to Get Around the Hormuz Blockade Are Hitting a Wall - wsj.com",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-17T02:52:00Z",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQVFpaVFWblczeEhpQXpHSHQ0VFotUDB3UFJQQTV4RXpBX2dSVllZejV2aGdvZ2QyN1BPSkNQWkFQd1JTenY2anhwR2lZdTE5dnNLUl9KSHVFZ25qYmR6TlB1QUZSSWxBSktTaFFBWGQzTlBlWS1hTHh6cTgwUHBLbExuYjNtOE9ra3RJdmdOT19HLUp4blNFdDlEX0VEa2lvTl9LcEROdkRxRXk5cnNvaFlmMVg?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "060559ecfeace873b17c",
+          "title": "Russia denounces US naval blockade of Iran as ‘completely unacceptable and illegal’ - Tehran Times",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-16T17:56:41Z",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORGE1Wm5XTU5raXViRlpyT0l1X3d2b01xQVgtb1pDUjZOWTBEMzB4eklaSkVKUEFDT21NNmFNU09HYmMwbThjcUhsV2I1bnJiRDJqdEltZExlVDRJOU5yZVpRZlNtY0dVLVBncnZrOE9HaldJblA0UVN6YzVmSXlMellVNnRoRDFfY2FQNWRScTdCZ0xRSThrSXBpOXlTM1ZCdXlXWXNCLTlxZWE5TVE?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "e5bc12bbd2f93272a1a7",
+          "title": "Zakharova: US Naval Blockade against Iran Violates International Law - اسلام تايمز",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-16T09:25:32Z",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQckM1Unl6U3hYTEdnZEQ5X3hQREVmdnhONV9EWHg2VnhlZkZxWUY2Q0VzNVpFQlVTSlVIM0l0V0FVOUxrcXA0aEd5MUF0NXl6R0ZpZ1BiSzVwWEIxaDVyY1BTNE9mbkg5d29CU1gtbHAtTEFqRjAwMTY1QlVLTDJobURyOUpmal9sMXNFem0tQmd1UVNVcURWZmZralZHX2wtUmloYzY2SUpVb1FjZXpz?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "6c395791080ca254cb9a",
+          "title": "US naval blockade against Iran violates international law - Mehr News Agency",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-16T07:23:00Z",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ0xJSmhyNUlueFctdlBvZUpRREJIMGZkSmFnNE1peHBTM3BfU29tVWNOWnozN0MzTUpNOGRpNjhTZi1oMUVkcWE4cEtuaXcwOVFVR2laVFQwT2l5UEY3QkM4STRvQVh6Y2ItTDRSMkhfTzJhVmhiTUpELTk3NmxSalp0NmJaRks5cGhUQU9BLTlJZzFoNkRhVg?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "78d84dc9c7bd316435d2",
+          "title": "Germany's Merz urges Iran not to carry conflict into Iraq, end Hormuz blockade - aa.com.tr",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-15T16:03:49Z",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTUhKRXNZQzNFTzl5ME4tbTI1djZSRVBGazBZQWJLQUE5cXVjN0ZvWmdhbEZNSUtoeGdOYWw3d2lQdnBsUmNONkFfUFRVdUM5bS1UYnVia0xpNkhIT2JHLUN6UDVpSFZocGlFblJTcFVib0t6UWlSejItb1pITGlCQTBUYnI4S2hyQUtVMmtkaVlyekhWa2VtaXQxLXpvOFRvZ3N4YjlXLUdOR214cmg4ekUxd2NDQWpr?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "f64f8d1ce3e6d3155265",
+          "title": "USS George Washington Enforces Iran Blockade in Arabian Sea - 조선일보",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-15T15:47:36Z",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSzUwRVItS0Q5YXEyREk5LW9zMlJPemFlVFNsX3JTQjlyemRTMGhrbnR2ZmxzSUJMUmp1MWlNcFhfcTlTY2twY3FKemk1WmRRQkZ0bXpiZWJSMGtZbU1DakhEcDZjTjhXbHlMaUg3V3Rid0tycmwxYXlUZ3BIR3Zkdm1SV0s?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "3beae8ac68a7ebb4bcbe",
+          "title": "Iran’s Bushehr exports $2.36 billion amid US naval blockade - state media - Iran International",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-13T20:35:29Z",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE13QXBUdkFxRWdYMEJCSklWOElzNkRnSU5zRUlldDl2YWVrRFNnOGNPTXBCNjFDRXc1NlRNZkx3OWN2Q0V4NU0zWnBWcXo?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "438890cd117b473a378d",
+          "title": "Live - Iran ties Hormuz reopening to end of blockade as Washington vows to fight on - Iran International",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-12T07:58:22Z",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBWUkFCaXFNOVJFN2ZucUJZTEIyTW1YS2owX21jVGhhS2V4VFlLVXRvdkR5aURSZmlTX0hSRFRQeGlrNlZqWGRnb0hMb2JJdklBQzIzdlctdERIc2RPSUE?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "93651c668b30d07b0a35",
+          "title": "Iraq đóng cửa khẩu biên giới với Iran sau vụ tấn công Ả Rập Xê Út",
+          "source": "baomoi.com",
+          "source_class": "low_confidence",
+          "provenance_root": "baomoi.com",
+          "stance": "report",
+          "published": "2026-09-12T06:45:00Z",
+          "url": "https://baomoi.com/iraq-dong-cua-khau-bien-gioi-voi-iran-sau-vu-tan-cong-a-rap-xe-ut-c56033493.epi",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "7e413d6670a2056e6c7c",
+          "title": "Iran sắp hết xăng",
+          "source": "vietbao.vn",
+          "source_class": "low_confidence",
+          "provenance_root": "vietbao.vn",
+          "stance": "report",
+          "published": "2026-09-12T02:15:00Z",
+          "url": "https://vietbao.vn/iran-sap-het-xang-606890.html",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "f3e841819de4cc3ff652",
+          "title": "Iran đang thiếu xăng",
+          "source": "vnexpress.net",
+          "source_class": "low_confidence",
+          "provenance_root": "vnexpress.net",
+          "stance": "report",
+          "published": "2026-09-12T01:45:00Z",
+          "url": "https://vnexpress.net/iran-dang-thieu-xang-5119303.html",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "491bedd0b06437f8dc11",
+          "title": "Iran seeks end to blockade of Yemen - Taipei Times",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-11T16:00:00Z",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5NMXFfM0d4R2hNMHpSOTZjMXBHdEhzU1ZUTTZHTkpoQm1fb3BRbHM0ZXB0cnd2eEQxU3hsWXViQjd1d1VzdlljTUt0LU5qeUpWb2FDT0d3NGx4ZWhoaS0tRDVCemlwdWJ2UjdSSmhWcHlYZ2ZKdzhTRg?oc=5",
+          "discovery_only": true
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Iran Battles to Beat the Blockade",
+        "plausible_explanations": [
+          "A genuine INFRA/SECURITY/WAR development involving IRAN, RUSSIA, UNITED STATES is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related INFRA/SECURITY/WAR indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-ab13de06ed03a68f0a",
+          "headline": "Chinese National Pleads Guilty to Trying to Obtain U.S. Military Equipment",
+          "material_time": "2026-08-10T12:00:00Z",
+          "shared_domains": [
+            "INFRA",
+            "WAR"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-c63cb32ed106a31b1e",
+          "headline": "Homeland Security Task Force: Dual Dominican and French National Admits Role in Firearms Trafficking Scheme",
+          "material_time": "2026-08-05T12:00:00Z",
+          "shared_domains": [
+            "INFRA"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-1453116f3488b77a21",
+          "headline": "Turkey-Based Global Director of Sham Charity Arrested and Charged with Conspiring to Provide Material Support to Hamas",
+          "material_time": "2026-07-31T12:00:00Z",
+          "shared_domains": [
+            "INFRA"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-a02fb9167c45d388fd",
+          "headline": "Department of Justice Files First Case in U.S. Alien Terrorist Removal Court to Deport Afghan Alien Who Supported Her Family’s Plans for Election-Day Shooting",
+          "material_time": "2026-07-30T12:00:00Z",
+          "shared_domains": [
+            "INFRA"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-02f5d588ef155ffda6",
+          "headline": "Will Ronaldo Cry​? World Cup Fans Bet Billions Through Prediction Markets",
+          "material_time": "2026-07-30T11:17:38Z",
+          "shared_domains": [
+            "SECURITY"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-c18f0436dd7737e8a1",
+          "shared_actors": [
+            "IRAN",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "IRAN",
+            "UNITED STATES"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-9c559a33b194ea9361",
+          "shared_actors": [
+            "IRAN",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "IRAN",
+            "UNITED STATES"
+          ],
+          "domains": [
+            "CYBER",
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-4572605179824de245",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-90165ffac8e5154b97",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-6f75ba1268f64c4a48",
+          "shared_actors": [
+            "RUSSIA",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UNITED STATES"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
+        },
+        {
+          "claim_id": "claim-972526aa6b43f8ffcf",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN",
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-26a7f266a7aebd61ba",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "CYBER"
+          ]
+        },
+        {
+          "claim_id": "claim-6db9bf9646c0b19696",
+          "shared_actors": [
+            "IRAN",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "IRAN",
+            "UNITED STATES"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-333a1e4c60d352608a",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "CYBER"
+          ]
+        },
+        {
+          "claim_id": "claim-a7e58102415aae5f2f",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-73aa52d8fbf9a5a08d",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-88aa5e1bd539393692",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "INFRA"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-182038db5162174d",
+        "anomaly-70ec454922f7f718",
+        "anomaly-7b8daadf5e9a4b58"
+      ],
+      "threat_score": 14,
+      "watch_priority": 65,
+      "audit": {
+        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "support_count": 32,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-18T07:28:42Z"
       }
     },
     {
@@ -12545,7 +13122,7 @@
         "36a560c152273c7f3cbc"
       ],
       "first_seen": "2026-09-16T03:19:45Z",
-      "last_seen": "2026-09-18T07:20:11Z",
+      "last_seen": "2026-09-18T07:45:36Z",
       "material_time": "2026-09-17T21:36:57Z",
       "domains": [
         "CYBER",
@@ -12829,22 +13406,6 @@
       ],
       "cross_domain_links": [
         {
-          "claim_id": "claim-ddb3856e9fd1a3a0d6",
-          "shared_actors": [
-            "IRAN",
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "IRAN",
-            "UNITED STATES"
-          ],
-          "domains": [
-            "INFRA",
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-90165ffac8e5154b97",
           "shared_actors": [
             "UNITED STATES"
@@ -12980,6 +13541,18 @@
             "INFRA",
             "WAR"
           ]
+        },
+        {
+          "claim_id": "claim-9595e2777d20fc7008",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "INFRA"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -12995,585 +13568,6 @@
         "independent_roots": 4,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-17T21:36:57Z"
-      }
-    },
-    {
-      "id": "claim-ddb3856e9fd1a3a0d6",
-      "headline": "Iran Battles to Beat the Blockade",
-      "signature_tokens": [
-        "battles",
-        "beat",
-        "blockade",
-        "iran"
-      ],
-      "observation_ids": [
-        "d4a02c6629496a0c79a5",
-        "f4d1cdfe0d3cd92593a5",
-        "690af4d1113132f1df2f",
-        "4e27d93b52e8e19195d3",
-        "f4f7cfeec5fa7c77acbb",
-        "400be0fa88e4cf4d72c6",
-        "084ecc00c49a8b5a2327",
-        "356188847b2023bddc32",
-        "70872a53d91f63729b3f",
-        "44ceef9c887d01ccdebb",
-        "f827b5c74294a7d8ce0d",
-        "dac97b5d4f3d4ab7d1be",
-        "a38e0bb5638c4617ed5c",
-        "6a34a661053e2a2dcdbf",
-        "bb69207632cf011c63ba",
-        "491bedd0b06437f8dc11",
-        "676f12fd02dfd01ef5ea",
-        "f3e841819de4cc3ff652",
-        "7e413d6670a2056e6c7c",
-        "438890cd117b473a378d",
-        "93651c668b30d07b0a35",
-        "3beae8ac68a7ebb4bcbe",
-        "78d84dc9c7bd316435d2",
-        "f64f8d1ce3e6d3155265",
-        "6c395791080ca254cb9a",
-        "e5bc12bbd2f93272a1a7",
-        "060559ecfeace873b17c",
-        "38f810a7b17acac05b30",
-        "a10357284f45396b40a0",
-        "0c0860d82d94482ef115",
-        "b49e69421f420fae2a35",
-        "935d8a3f5c1ef68320ad"
-      ],
-      "first_seen": "2026-09-09T19:17:24Z",
-      "last_seen": "2026-09-18T07:20:11Z",
-      "material_time": "2026-09-17T20:56:00Z",
-      "domains": [
-        "INFRA",
-        "SECURITY",
-        "WAR"
-      ],
-      "regions": [
-        "EUROPE",
-        "IRAN",
-        "MIDDLE EAST",
-        "RUSSIA",
-        "TAIWAN",
-        "UNITED STATES"
-      ],
-      "actors": [
-        "IRAN",
-        "RUSSIA",
-        "UNITED STATES"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 61,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 81,
-        "independence": 25,
-        "corroboration": 22,
-        "contradiction": 0,
-        "specificity": 64,
-        "recency": 98,
-        "evidence_type": 73,
-        "historical_reliability": 81,
-        "claim_maturity": 36
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "d4a02c6629496a0c79a5",
-        "f4d1cdfe0d3cd92593a5",
-        "690af4d1113132f1df2f",
-        "4e27d93b52e8e19195d3",
-        "f4f7cfeec5fa7c77acbb",
-        "400be0fa88e4cf4d72c6",
-        "084ecc00c49a8b5a2327",
-        "356188847b2023bddc32",
-        "70872a53d91f63729b3f",
-        "44ceef9c887d01ccdebb",
-        "f827b5c74294a7d8ce0d",
-        "dac97b5d4f3d4ab7d1be",
-        "a38e0bb5638c4617ed5c",
-        "6a34a661053e2a2dcdbf",
-        "bb69207632cf011c63ba",
-        "491bedd0b06437f8dc11",
-        "676f12fd02dfd01ef5ea",
-        "f3e841819de4cc3ff652",
-        "7e413d6670a2056e6c7c",
-        "438890cd117b473a378d",
-        "93651c668b30d07b0a35",
-        "3beae8ac68a7ebb4bcbe",
-        "78d84dc9c7bd316435d2",
-        "f64f8d1ce3e6d3155265",
-        "6c395791080ca254cb9a",
-        "e5bc12bbd2f93272a1a7",
-        "060559ecfeace873b17c",
-        "38f810a7b17acac05b30",
-        "a10357284f45396b40a0",
-        "0c0860d82d94482ef115",
-        "b49e69421f420fae2a35",
-        "935d8a3f5c1ef68320ad"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 9,
-      "independent_provenance_count": 1,
-      "sources": [
-        "GDELT Global Discovery",
-        "The Maritime Executive",
-        "baomoi.com",
-        "economictimes.indiatimes.com",
-        "maritime-executive.com",
-        "niacouncil.org",
-        "presstv.co.uk",
-        "vietbao.vn",
-        "vnexpress.net"
-      ],
-      "provenance_roots": [
-        "baomoi.com",
-        "economictimes.indiatimes.com",
-        "gdelt_global",
-        "maritime-executive.com",
-        "maritime_exec",
-        "niacouncil.org",
-        "presstv.co.uk",
-        "vietbao.vn",
-        "vnexpress.net"
-      ],
-      "evidence": [
-        {
-          "observation_id": "0c0860d82d94482ef115",
-          "title": "Iran trade plummeting under US blockade, bureaucratic errors - New York Post",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "report",
-          "published": "2026-09-17T20:56:00Z",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdlBuLXBBSjhKUi1Idi1ESFctZjVRdnM4bk44QXFVLWJEaURxRXQxdEJJbE56S1B0TTl5eV85clppWFo4enVPa0ozZWFWaDhiYkxPSkpfTTlQSVJJX2l3blpGNC1jUlA2R1lUMVJMLVJBMUtSdWtvNks2YlhPRUdod2hrOXdYZWFwVUE4TEt6NVhUZUFlRVBKUDV0UWFfNTVjQ3Nv?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "935d8a3f5c1ef68320ad",
-          "title": "Iran trade plummeting under US blockade, bureaucratic errors - nypost.com",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "report",
-          "published": "2026-09-17T20:56:00Z",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdlBuLXBBSjhKUi1Idi1ESFctZjVRdnM4bk44QXFVLWJEaURxRXQxdEJJbE56S1B0TTl5eV85clppWFo4enVPa0ozZWFWaDhiYkxPSkpfTTlQSVJJX2l3blpGNC1jUlA2R1lUMVJMLVJBMUtSdWtvNks2YlhPRUdod2hrOXdYZWFwVUE4TEt6NVhUZUFlRVBKUDV0UWFfNTVjQ3Nv?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "a10357284f45396b40a0",
-          "title": "Iran struggles to reroute trade as U.S. blockade disrupts supply lines - JNS.org",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "report",
-          "published": "2026-09-17T18:29:26Z",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMnUwSkJtNlp1akl3T3FIRjkwd0JJMVpPMDRTTWc5bUpMandoSGVpZXhzalVPdjFJb0pJSUxuQUo5UDBOR1FZdEpPYk4zaUdKYnFOd05PWGRwMW00UDhfNko3a1Q3R2dLT1NBZ0RkcGR6NzlmLW1EUWM2X2xOVDlOLXE1MzY5TUNvRU5QZm1xOGZmRzFxQ1dGcFRBa0MxU3Mycmc?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "38f810a7b17acac05b30",
-          "title": "Iran’s Attempts to Get Around the Hormuz Blockade Are Hitting a Wall - WSJ",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "report",
-          "published": "2026-09-17T02:52:00Z",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQVFpaVFWblczeEhpQXpHSHQ0VFotUDB3UFJQQTV4RXpBX2dSVllZejV2aGdvZ2QyN1BPSkNQWkFQd1JTenY2anhwR2lZdTE5dnNLUl9KSHVFZ25qYmR6TlB1QUZSSWxBSktTaFFBWGQzTlBlWS1hTHh6cTgwUHBLbExuYjNtOE9ra3RJdmdOT19HLUp4blNFdDlEX0VEa2lvTl9LcEROdkRxRXk5cnNvaFlmMVg?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "b49e69421f420fae2a35",
-          "title": "Iran’s Attempts to Get Around the Hormuz Blockade Are Hitting a Wall - wsj.com",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "report",
-          "published": "2026-09-17T02:52:00Z",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQVFpaVFWblczeEhpQXpHSHQ0VFotUDB3UFJQQTV4RXpBX2dSVllZejV2aGdvZ2QyN1BPSkNQWkFQd1JTenY2anhwR2lZdTE5dnNLUl9KSHVFZ25qYmR6TlB1QUZSSWxBSktTaFFBWGQzTlBlWS1hTHh6cTgwUHBLbExuYjNtOE9ra3RJdmdOT19HLUp4blNFdDlEX0VEa2lvTl9LcEROdkRxRXk5cnNvaFlmMVg?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "060559ecfeace873b17c",
-          "title": "Russia denounces US naval blockade of Iran as ‘completely unacceptable and illegal’ - Tehran Times",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "report",
-          "published": "2026-09-16T17:56:41Z",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORGE1Wm5XTU5raXViRlpyT0l1X3d2b01xQVgtb1pDUjZOWTBEMzB4eklaSkVKUEFDT21NNmFNU09HYmMwbThjcUhsV2I1bnJiRDJqdEltZExlVDRJOU5yZVpRZlNtY0dVLVBncnZrOE9HaldJblA0UVN6YzVmSXlMellVNnRoRDFfY2FQNWRScTdCZ0xRSThrSXBpOXlTM1ZCdXlXWXNCLTlxZWE5TVE?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "e5bc12bbd2f93272a1a7",
-          "title": "Zakharova: US Naval Blockade against Iran Violates International Law - اسلام تايمز",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "report",
-          "published": "2026-09-16T09:25:32Z",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQckM1Unl6U3hYTEdnZEQ5X3hQREVmdnhONV9EWHg2VnhlZkZxWUY2Q0VzNVpFQlVTSlVIM0l0V0FVOUxrcXA0aEd5MUF0NXl6R0ZpZ1BiSzVwWEIxaDVyY1BTNE9mbkg5d29CU1gtbHAtTEFqRjAwMTY1QlVLTDJobURyOUpmal9sMXNFem0tQmd1UVNVcURWZmZralZHX2wtUmloYzY2SUpVb1FjZXpz?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "6c395791080ca254cb9a",
-          "title": "US naval blockade against Iran violates international law - Mehr News Agency",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "report",
-          "published": "2026-09-16T07:23:00Z",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ0xJSmhyNUlueFctdlBvZUpRREJIMGZkSmFnNE1peHBTM3BfU29tVWNOWnozN0MzTUpNOGRpNjhTZi1oMUVkcWE4cEtuaXcwOVFVR2laVFQwT2l5UEY3QkM4STRvQVh6Y2ItTDRSMkhfTzJhVmhiTUpELTk3NmxSalp0NmJaRks5cGhUQU9BLTlJZzFoNkRhVg?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "78d84dc9c7bd316435d2",
-          "title": "Germany's Merz urges Iran not to carry conflict into Iraq, end Hormuz blockade - aa.com.tr",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "report",
-          "published": "2026-09-15T16:03:49Z",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTUhKRXNZQzNFTzl5ME4tbTI1djZSRVBGazBZQWJLQUE5cXVjN0ZvWmdhbEZNSUtoeGdOYWw3d2lQdnBsUmNONkFfUFRVdUM5bS1UYnVia0xpNkhIT2JHLUN6UDVpSFZocGlFblJTcFVib0t6UWlSejItb1pITGlCQTBUYnI4S2hyQUtVMmtkaVlyekhWa2VtaXQxLXpvOFRvZ3N4YjlXLUdOR214cmg4ekUxd2NDQWpr?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "f64f8d1ce3e6d3155265",
-          "title": "USS George Washington Enforces Iran Blockade in Arabian Sea - 조선일보",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "report",
-          "published": "2026-09-15T15:47:36Z",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSzUwRVItS0Q5YXEyREk5LW9zMlJPemFlVFNsX3JTQjlyemRTMGhrbnR2ZmxzSUJMUmp1MWlNcFhfcTlTY2twY3FKemk1WmRRQkZ0bXpiZWJSMGtZbU1DakhEcDZjTjhXbHlMaUg3V3Rid0tycmwxYXlUZ3BIR3Zkdm1SV0s?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "3beae8ac68a7ebb4bcbe",
-          "title": "Iran’s Bushehr exports $2.36 billion amid US naval blockade - state media - Iran International",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "report",
-          "published": "2026-09-13T20:35:29Z",
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE13QXBUdkFxRWdYMEJCSklWOElzNkRnSU5zRUlldDl2YWVrRFNnOGNPTXBCNjFDRXc1NlRNZkx3OWN2Q0V4NU0zWnBWcXo?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "438890cd117b473a378d",
-          "title": "Live - Iran ties Hormuz reopening to end of blockade as Washington vows to fight on - Iran International",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "report",
-          "published": "2026-09-12T07:58:22Z",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBWUkFCaXFNOVJFN2ZucUJZTEIyTW1YS2owX21jVGhhS2V4VFlLVXRvdkR5aURSZmlTX0hSRFRQeGlrNlZqWGRnb0hMb2JJdklBQzIzdlctdERIc2RPSUE?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "93651c668b30d07b0a35",
-          "title": "Iraq đóng cửa khẩu biên giới với Iran sau vụ tấn công Ả Rập Xê Út",
-          "source": "baomoi.com",
-          "source_class": "low_confidence",
-          "provenance_root": "baomoi.com",
-          "stance": "report",
-          "published": "2026-09-12T06:45:00Z",
-          "url": "https://baomoi.com/iraq-dong-cua-khau-bien-gioi-voi-iran-sau-vu-tan-cong-a-rap-xe-ut-c56033493.epi",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "7e413d6670a2056e6c7c",
-          "title": "Iran sắp hết xăng",
-          "source": "vietbao.vn",
-          "source_class": "low_confidence",
-          "provenance_root": "vietbao.vn",
-          "stance": "report",
-          "published": "2026-09-12T02:15:00Z",
-          "url": "https://vietbao.vn/iran-sap-het-xang-606890.html",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "f3e841819de4cc3ff652",
-          "title": "Iran đang thiếu xăng",
-          "source": "vnexpress.net",
-          "source_class": "low_confidence",
-          "provenance_root": "vnexpress.net",
-          "stance": "report",
-          "published": "2026-09-12T01:45:00Z",
-          "url": "https://vnexpress.net/iran-dang-thieu-xang-5119303.html",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "491bedd0b06437f8dc11",
-          "title": "Iran seeks end to blockade of Yemen - Taipei Times",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "report",
-          "published": "2026-09-11T16:00:00Z",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5NMXFfM0d4R2hNMHpSOTZjMXBHdEhzU1ZUTTZHTkpoQm1fb3BRbHM0ZXB0cnd2eEQxU3hsWXViQjd1d1VzdlljTUt0LU5qeUpWb2FDT0d3NGx4ZWhoaS0tRDVCemlwdWJ2UjdSSmhWcHlYZ2ZKdzhTRg?oc=5",
-          "discovery_only": true
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Iran Battles to Beat the Blockade",
-        "plausible_explanations": [
-          "A genuine INFRA/SECURITY/WAR development involving IRAN, RUSSIA, UNITED STATES is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related INFRA/SECURITY/WAR indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [
-        {
-          "claim_id": "claim-ab13de06ed03a68f0a",
-          "headline": "Chinese National Pleads Guilty to Trying to Obtain U.S. Military Equipment",
-          "material_time": "2026-08-10T12:00:00Z",
-          "shared_domains": [
-            "INFRA",
-            "WAR"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-c63cb32ed106a31b1e",
-          "headline": "Homeland Security Task Force: Dual Dominican and French National Admits Role in Firearms Trafficking Scheme",
-          "material_time": "2026-08-05T12:00:00Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-1453116f3488b77a21",
-          "headline": "Turkey-Based Global Director of Sham Charity Arrested and Charged with Conspiring to Provide Material Support to Hamas",
-          "material_time": "2026-07-31T12:00:00Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-a02fb9167c45d388fd",
-          "headline": "Department of Justice Files First Case in U.S. Alien Terrorist Removal Court to Deport Afghan Alien Who Supported Her Family’s Plans for Election-Day Shooting",
-          "material_time": "2026-07-30T12:00:00Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-02f5d588ef155ffda6",
-          "headline": "Will Ronaldo Cry​? World Cup Fans Bet Billions Through Prediction Markets",
-          "material_time": "2026-07-30T11:17:38Z",
-          "shared_domains": [
-            "SECURITY"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        }
-      ],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-111303caf9d2f56925",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "HUMANITARIAN",
-            "TERRORISM",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-4572605179824de245",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-90165ffac8e5154b97",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-6f75ba1268f64c4a48",
-          "shared_actors": [
-            "RUSSIA",
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UNITED STATES"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-972526aa6b43f8ffcf",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN",
-            "MIDDLE EAST"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-26a7f266a7aebd61ba",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "CYBER"
-          ]
-        },
-        {
-          "claim_id": "claim-6db9bf9646c0b19696",
-          "shared_actors": [
-            "IRAN",
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "IRAN",
-            "UNITED STATES"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-333a1e4c60d352608a",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "CYBER"
-          ]
-        },
-        {
-          "claim_id": "claim-a7e58102415aae5f2f",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-73aa52d8fbf9a5a08d",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-88aa5e1bd539393692",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-9f33de7a0b4956eb20",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "CYBER"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-fd9721704bb7257a",
-        "anomaly-70ec454922f7f718",
-        "anomaly-7b8daadf5e9a4b58"
-      ],
-      "threat_score": 14,
-      "watch_priority": 65,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 32,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-17T20:56:00Z"
       }
     },
     {
@@ -13620,7 +13614,7 @@
         "0167d0c7af2e73c628b4"
       ],
       "first_seen": "2026-09-09T19:17:24Z",
-      "last_seen": "2026-09-18T07:20:11Z",
+      "last_seen": "2026-09-18T07:45:36Z",
       "material_time": "2026-09-17T19:36:50Z",
       "domains": [
         "INFRA",
@@ -14645,7 +14639,7 @@
         "65670a13ed775c0c8be8"
       ],
       "first_seen": "2026-09-17T17:45:18Z",
-      "last_seen": "2026-09-18T07:20:11Z",
+      "last_seen": "2026-09-18T07:45:36Z",
       "material_time": "2026-09-17T16:42:00Z",
       "domains": [
         "INFRA",
@@ -14873,7 +14867,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-fd9721704bb7257a"
+        "anomaly-182038db5162174d"
       ],
       "threat_score": 15,
       "watch_priority": 41,
