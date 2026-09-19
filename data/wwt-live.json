@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-19T03:44:44Z",
+  "generated_at": "2026-09-19T04:19:12Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 55,
   "verified_pressure": {
     "score": 55,
-    "claim_count": 77,
+    "claim_count": 76,
     "top_claims": [
       {
         "id": "claim-5b769a7c39f0b6d449",
@@ -37,7 +37,7 @@
           "a5a0e4239fb643bb1498"
         ],
         "first_seen": "2026-09-16T22:44:31Z",
-        "last_seen": "2026-09-19T03:44:44Z",
+        "last_seen": "2026-09-19T04:19:12Z",
         "material_time": "2026-09-19T00:53:32Z",
         "domains": [
           "ECONOMIC",
@@ -390,6 +390,22 @@
             ]
           },
           {
+            "claim_id": "claim-b0ae75efd76d19b55d",
+            "shared_actors": [
+              "CHINA",
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "CHINA",
+              "RUSSIA"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "INFRA",
+              "NUCLEAR"
+            ]
+          },
+          {
             "claim_id": "claim-8092069659ec8ec0fd",
             "shared_actors": [
               "CHINA",
@@ -501,26 +517,12 @@
               "ECONOMIC",
               "WAR"
             ]
-          },
-          {
-            "claim_id": "claim-495a85d41a9822fd63",
-            "shared_actors": [
-              "RUSSIA",
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UNITED STATES"
-            ],
-            "domains": [
-              "WAR"
-            ]
           }
         ],
         "anomaly_ids": [
           "anomaly-da098608ba309c92",
           "anomaly-af888ffce595ba89",
-          "anomaly-330284a820d638fe",
+          "anomaly-977afa5160af4dbc",
           "anomaly-eb9e6018d6bc1e2d"
         ],
         "threat_score": 26,
@@ -878,6 +880,313 @@
         }
       },
       {
+        "id": "claim-b0ae75efd76d19b55d",
+        "headline": "North Korea accused of using overseas workers to finance nuclear weapons",
+        "signature_tokens": [
+          "accused",
+          "finance",
+          "korea",
+          "north",
+          "nuclear",
+          "overseas",
+          "using",
+          "weapons",
+          "workers"
+        ],
+        "observation_ids": [
+          "6d9a046cc743fc8d8e58",
+          "2284c7032cf9ed8cdd6e"
+        ],
+        "first_seen": "2026-09-17T08:22:11Z",
+        "last_seen": "2026-09-19T04:19:12Z",
+        "material_time": "2026-09-19T03:29:54Z",
+        "domains": [
+          "ECONOMIC",
+          "INFRA",
+          "NUCLEAR"
+        ],
+        "regions": [
+          "CHINA",
+          "KOREAN PENINSULA",
+          "RUSSIA"
+        ],
+        "actors": [
+          "CHINA",
+          "NORTH KOREA",
+          "RUSSIA"
+        ],
+        "state": "CREDIBLE REPORT",
+        "confidence": 72,
+        "confidence_direction": "UP",
+        "confidence_components": {
+          "source_quality": 83,
+          "independence": 52,
+          "corroboration": 52,
+          "contradiction": 0,
+          "specificity": 72,
+          "recency": 100,
+          "evidence_type": 79,
+          "historical_reliability": 83,
+          "claim_maturity": 46
+        },
+        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "supporting_observation_ids": [
+          "6d9a046cc743fc8d8e58",
+          "2284c7032cf9ed8cdd6e"
+        ],
+        "contradictory_observation_ids": [],
+        "source_count": 2,
+        "independent_provenance_count": 2,
+        "sources": [
+          "ABC Australia World",
+          "Al Jazeera English"
+        ],
+        "provenance_roots": [
+          "abc_australia",
+          "aljazeera"
+        ],
+        "evidence": [
+          {
+            "observation_id": "2284c7032cf9ed8cdd6e",
+            "title": "North Korea dismisses UN nuclear watchdog resolution",
+            "source": "Al Jazeera English",
+            "source_class": "established_media",
+            "provenance_root": "aljazeera",
+            "stance": "report",
+            "published": "2026-09-19T03:29:54Z",
+            "url": "https://www.aljazeera.com/news/2026/9/19/north-korea-dismisses-un-nuclear-watchdog-resolution?traffic_source=rss",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "6d9a046cc743fc8d8e58",
+            "title": "North Korea accused of using overseas workers to finance nuclear weapons",
+            "source": "ABC Australia World",
+            "source_class": "regional_local",
+            "provenance_root": "abc_australia",
+            "stance": "allegation",
+            "published": "2026-09-17T07:44:28Z",
+            "url": "https://www.abc.net.au/news/2026-09-17/north-korean-overseas-workers-financing-nukes/107165468",
+            "discovery_only": false
+          }
+        ],
+        "state_affiliated_reporting": false,
+        "discovery_only": false,
+        "branch_analysis": {
+          "current_observation": "North Korea accused of using overseas workers to finance nuclear weapons",
+          "plausible_explanations": [
+            "A genuine ECONOMIC/INFRA/NUCLEAR development involving CHINA, NORTH KOREA, RUSSIA is unfolding as reported.",
+            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+          ],
+          "escalation_branch": "Related ECONOMIC/INFRA/NUCLEAR indicators spread, become operational, or draw additional actors into the event.",
+          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+          "confirm_indicators": [
+            "A primary record, sensor observation, or on-record official confirmation.",
+            "Matching detail from a genuinely independent provenance root.",
+            "Observable follow-on action consistent with the reported event."
+          ],
+          "falsify_indicators": [
+            "Time-stamped primary evidence incompatible with the claim.",
+            "Independent, technically specific refutation from credible sources.",
+            "Predicted follow-on indicators fail to occur inside the stated window."
+          ],
+          "contradictory_evidence_present": false
+        },
+        "historical_matches": [
+          {
+            "claim_id": "claim-ab13de06ed03a68f0a",
+            "headline": "Chinese National Pleads Guilty to Trying to Obtain U.S. Military Equipment",
+            "material_time": "2026-08-10T12:00:00Z",
+            "shared_domains": [
+              "ECONOMIC",
+              "INFRA"
+            ],
+            "shared_actors": [
+              "CHINA"
+            ],
+            "shared_regions": [
+              "CHINA"
+            ]
+          }
+        ],
+        "cross_domain_links": [
+          {
+            "claim_id": "claim-8092069659ec8ec0fd",
+            "shared_actors": [
+              "CHINA",
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "CHINA",
+              "RUSSIA"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "NUCLEAR"
+            ]
+          },
+          {
+            "claim_id": "claim-05fafd90170193d8eb",
+            "shared_actors": [
+              "CHINA"
+            ],
+            "shared_regions": [
+              "CHINA"
+            ],
+            "domains": [
+              "SECURITY",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-873f871656fe6bad54",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA",
+              "SECURITY",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-6b10b556f405e9be10",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-9e3287504758b9d3d0",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-95b05688477d6a88f7",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-495a85d41a9822fd63",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-8925b642253e252edc",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-cec89370431878befe",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-b5aac27b4865942b33",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-a53cde60c297791506",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-546b5e6f6c880849f2",
+            "shared_actors": [
+              "CHINA",
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "CHINA",
+              "RUSSIA"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "INFRA",
+              "SPACE"
+            ]
+          }
+        ],
+        "anomaly_ids": [
+          "anomaly-da098608ba309c92",
+          "anomaly-977afa5160af4dbc",
+          "anomaly-7436581d86bc9a3e"
+        ],
+        "threat_score": 22,
+        "watch_priority": 70,
+        "audit": {
+          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+          "support_count": 2,
+          "contradiction_count": 0,
+          "independent_roots": 2,
+          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+          "material_time_used_for_decay": "2026-09-19T03:29:54Z"
+        }
+      },
+      {
         "id": "claim-8092069659ec8ec0fd",
         "headline": "Russia, China veto UN mandate to monitor Iran sanctions",
         "signature_tokens": [
@@ -897,7 +1206,7 @@
           "89b88b52a37aabdb811b"
         ],
         "first_seen": "2026-09-17T20:44:37Z",
-        "last_seen": "2026-09-19T03:44:44Z",
+        "last_seen": "2026-09-19T04:19:12Z",
         "material_time": "2026-09-18T04:27:18Z",
         "domains": [
           "ECONOMIC",
@@ -1247,7 +1556,7 @@
         ],
         "anomaly_ids": [
           "anomaly-da098608ba309c92",
-          "anomaly-330284a820d638fe",
+          "anomaly-977afa5160af4dbc",
           "anomaly-eb9e6018d6bc1e2d",
           "anomaly-fc158ff2d718067a"
         ],
@@ -2105,20 +2414,6 @@
             ]
           },
           {
-            "claim_id": "claim-b0ae75efd76d19b55d",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA",
-              "NUCLEAR"
-            ]
-          },
-          {
             "claim_id": "claim-cec89370431878befe",
             "shared_actors": [
               "RUSSIA",
@@ -2229,6 +2524,21 @@
               "INFRA",
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-6bcaf5ddb350eee1d6",
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "SPACE",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
@@ -2245,303 +2555,6 @@
           "independent_roots": 1,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-17T18:50:04Z"
-        }
-      },
-      {
-        "id": "claim-b0ae75efd76d19b55d",
-        "headline": "North Korea accused of using overseas workers to finance nuclear weapons",
-        "signature_tokens": [
-          "accused",
-          "finance",
-          "korea",
-          "north",
-          "nuclear",
-          "overseas",
-          "using",
-          "weapons",
-          "workers"
-        ],
-        "observation_ids": [
-          "6d9a046cc743fc8d8e58"
-        ],
-        "first_seen": "2026-09-17T08:22:11Z",
-        "last_seen": "2026-09-17T09:20:16Z",
-        "material_time": "2026-09-17T07:44:28Z",
-        "domains": [
-          "ECONOMIC",
-          "INFRA",
-          "NUCLEAR"
-        ],
-        "regions": [
-          "CHINA",
-          "KOREAN PENINSULA",
-          "RUSSIA"
-        ],
-        "actors": [
-          "CHINA",
-          "NORTH KOREA",
-          "RUSSIA"
-        ],
-        "state": "CREDIBLE REPORT",
-        "confidence": 61,
-        "confidence_direction": "STABLE",
-        "confidence_components": {
-          "source_quality": 84,
-          "independence": 25,
-          "corroboration": 22,
-          "contradiction": 0,
-          "specificity": 78,
-          "recency": 84,
-          "evidence_type": 67,
-          "historical_reliability": 84,
-          "claim_maturity": 38
-        },
-        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "supporting_observation_ids": [
-          "6d9a046cc743fc8d8e58"
-        ],
-        "contradictory_observation_ids": [],
-        "source_count": 1,
-        "independent_provenance_count": 1,
-        "sources": [
-          "ABC Australia World"
-        ],
-        "provenance_roots": [
-          "abc_australia"
-        ],
-        "evidence": [
-          {
-            "observation_id": "6d9a046cc743fc8d8e58",
-            "title": "North Korea accused of using overseas workers to finance nuclear weapons",
-            "source": "ABC Australia World",
-            "source_class": "regional_local",
-            "provenance_root": "abc_australia",
-            "stance": "allegation",
-            "published": "2026-09-17T07:44:28Z",
-            "url": "https://www.abc.net.au/news/2026-09-17/north-korean-overseas-workers-financing-nukes/107165468",
-            "discovery_only": false
-          }
-        ],
-        "state_affiliated_reporting": false,
-        "discovery_only": false,
-        "branch_analysis": {
-          "current_observation": "North Korea accused of using overseas workers to finance nuclear weapons",
-          "plausible_explanations": [
-            "A genuine ECONOMIC/INFRA/NUCLEAR development involving CHINA, NORTH KOREA, RUSSIA is unfolding as reported.",
-            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-          ],
-          "escalation_branch": "Related ECONOMIC/INFRA/NUCLEAR indicators spread, become operational, or draw additional actors into the event.",
-          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-          "confirm_indicators": [
-            "A primary record, sensor observation, or on-record official confirmation.",
-            "Matching detail from a genuinely independent provenance root.",
-            "Observable follow-on action consistent with the reported event."
-          ],
-          "falsify_indicators": [
-            "Time-stamped primary evidence incompatible with the claim.",
-            "Independent, technically specific refutation from credible sources.",
-            "Predicted follow-on indicators fail to occur inside the stated window."
-          ],
-          "contradictory_evidence_present": false
-        },
-        "historical_matches": [
-          {
-            "claim_id": "claim-ab13de06ed03a68f0a",
-            "headline": "Chinese National Pleads Guilty to Trying to Obtain U.S. Military Equipment",
-            "material_time": "2026-08-10T12:00:00Z",
-            "shared_domains": [
-              "ECONOMIC",
-              "INFRA"
-            ],
-            "shared_actors": [
-              "CHINA"
-            ],
-            "shared_regions": [
-              "CHINA"
-            ]
-          }
-        ],
-        "cross_domain_links": [
-          {
-            "claim_id": "claim-cec89370431878befe",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-b5aac27b4865942b33",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-a53cde60c297791506",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-546b5e6f6c880849f2",
-            "shared_actors": [
-              "CHINA",
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "CHINA",
-              "RUSSIA"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA",
-              "SPACE"
-            ]
-          },
-          {
-            "claim_id": "claim-b334a6d5a1a4cc7fe3",
-            "shared_actors": [
-              "CHINA"
-            ],
-            "shared_regions": [
-              "CHINA"
-            ],
-            "domains": [
-              "INFRA",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-09256c77181810adad",
-            "shared_actors": [
-              "CHINA",
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "CHINA",
-              "RUSSIA"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA",
-              "SPACE"
-            ]
-          },
-          {
-            "claim_id": "claim-581ffd16543e8f1f65",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-6bcaf5ddb350eee1d6",
-            "shared_actors": [
-              "CHINA"
-            ],
-            "shared_regions": [
-              "CHINA"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "SPACE",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-4ac9dbae4978734f6f",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-68444847bb948c36b4",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "HUMANITARIAN",
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-76e3b606d8db754926",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "HUMANITARIAN",
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-ed7d5390f4be334436",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
-          }
-        ],
-        "anomaly_ids": [
-          "anomaly-da098608ba309c92",
-          "anomaly-330284a820d638fe",
-          "anomaly-7436581d86bc9a3e"
-        ],
-        "threat_score": 19,
-        "watch_priority": 68,
-        "audit": {
-          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 1,
-          "contradiction_count": 0,
-          "independent_roots": 1,
-          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-17T07:44:28Z"
         }
       },
       {
@@ -3081,6 +3094,20 @@
         ],
         "cross_domain_links": [
           {
+            "claim_id": "claim-08b435b17d048f7b3c",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "BIO",
+              "INFRA",
+              "POLITICAL"
+            ]
+          },
+          {
             "claim_id": "claim-ed7d5390f4be334436",
             "shared_actors": [
               "RUSSIA"
@@ -3227,19 +3254,6 @@
             "domains": [
               "INFRA",
               "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-b073111828b505376a",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "INFRA",
-              "NUCLEAR"
             ]
           }
         ],
@@ -3385,6 +3399,20 @@
         ],
         "cross_domain_links": [
           {
+            "claim_id": "claim-08b435b17d048f7b3c",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "BIO",
+              "INFRA",
+              "POLITICAL"
+            ]
+          },
+          {
             "claim_id": "claim-ed7d5390f4be334436",
             "shared_actors": [
               "RUSSIA"
@@ -3532,19 +3560,6 @@
               "INFRA",
               "WAR"
             ]
-          },
-          {
-            "claim_id": "claim-b073111828b505376a",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "INFRA",
-              "NUCLEAR"
-            ]
           }
         ],
         "anomaly_ids": [
@@ -3614,7 +3629,7 @@
           "corroboration": 25,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 78,
+          "recency": 77,
           "evidence_type": 79,
           "historical_reliability": 93,
           "claim_maturity": 50
@@ -4295,7 +4310,7 @@
           "6e9d7e491fb1c8bbdade"
         ],
         "first_seen": "2026-09-18T22:18:44Z",
-        "last_seen": "2026-09-19T03:44:44Z",
+        "last_seen": "2026-09-19T04:19:12Z",
         "material_time": "2026-09-19T00:49:53Z",
         "domains": [
           "ECONOMIC",
@@ -4689,7 +4704,7 @@
         "anomaly_ids": [
           "anomaly-da098608ba309c92",
           "anomaly-af888ffce595ba89",
-          "anomaly-330284a820d638fe",
+          "anomaly-977afa5160af4dbc",
           "anomaly-eb9e6018d6bc1e2d",
           "anomaly-fc158ff2d718067a"
         ],
@@ -5009,7 +5024,7 @@
         ],
         "anomaly_ids": [
           "anomaly-da098608ba309c92",
-          "anomaly-330284a820d638fe",
+          "anomaly-977afa5160af4dbc",
           "anomaly-7436581d86bc9a3e"
         ],
         "threat_score": 4,
@@ -6042,20 +6057,6 @@
             ]
           },
           {
-            "claim_id": "claim-b0ae75efd76d19b55d",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA",
-              "NUCLEAR"
-            ]
-          },
-          {
             "claim_id": "claim-cec89370431878befe",
             "shared_actors": [
               "RUSSIA"
@@ -6173,6 +6174,20 @@
               "HUMANITARIAN",
               "INFRA"
             ]
+          },
+          {
+            "claim_id": "claim-08b435b17d048f7b3c",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "BIO",
+              "INFRA",
+              "POLITICAL"
+            ]
           }
         ],
         "anomaly_ids": [
@@ -6227,7 +6242,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 85,
+          "recency": 84,
           "evidence_type": 79,
           "historical_reliability": 82,
           "claim_maturity": 38
@@ -8283,7 +8298,7 @@
     "multi_theater_coupling": 0,
     "nuclear_escalation": 13,
     "military_mobilization": 9,
-    "economic_warfare": 152,
+    "economic_warfare": 153,
     "crisis_control_failure": 0,
     "hybrid_preparation": 129
   },
@@ -8322,7 +8337,7 @@
         "a5a0e4239fb643bb1498"
       ],
       "first_seen": "2026-09-16T22:44:31Z",
-      "last_seen": "2026-09-19T03:44:44Z",
+      "last_seen": "2026-09-19T04:19:12Z",
       "material_time": "2026-09-19T00:53:32Z",
       "domains": [
         "ECONOMIC",
@@ -8675,6 +8690,22 @@
           ]
         },
         {
+          "claim_id": "claim-b0ae75efd76d19b55d",
+          "shared_actors": [
+            "CHINA",
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "CHINA",
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "INFRA",
+            "NUCLEAR"
+          ]
+        },
+        {
           "claim_id": "claim-8092069659ec8ec0fd",
           "shared_actors": [
             "CHINA",
@@ -8786,26 +8817,12 @@
             "ECONOMIC",
             "WAR"
           ]
-        },
-        {
-          "claim_id": "claim-495a85d41a9822fd63",
-          "shared_actors": [
-            "RUSSIA",
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UNITED STATES"
-          ],
-          "domains": [
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
         "anomaly-da098608ba309c92",
         "anomaly-af888ffce595ba89",
-        "anomaly-330284a820d638fe",
+        "anomaly-977afa5160af4dbc",
         "anomaly-eb9e6018d6bc1e2d"
       ],
       "threat_score": 26,
@@ -9163,6 +9180,313 @@
       }
     },
     {
+      "id": "claim-b0ae75efd76d19b55d",
+      "headline": "North Korea accused of using overseas workers to finance nuclear weapons",
+      "signature_tokens": [
+        "accused",
+        "finance",
+        "korea",
+        "north",
+        "nuclear",
+        "overseas",
+        "using",
+        "weapons",
+        "workers"
+      ],
+      "observation_ids": [
+        "6d9a046cc743fc8d8e58",
+        "2284c7032cf9ed8cdd6e"
+      ],
+      "first_seen": "2026-09-17T08:22:11Z",
+      "last_seen": "2026-09-19T04:19:12Z",
+      "material_time": "2026-09-19T03:29:54Z",
+      "domains": [
+        "ECONOMIC",
+        "INFRA",
+        "NUCLEAR"
+      ],
+      "regions": [
+        "CHINA",
+        "KOREAN PENINSULA",
+        "RUSSIA"
+      ],
+      "actors": [
+        "CHINA",
+        "NORTH KOREA",
+        "RUSSIA"
+      ],
+      "state": "CREDIBLE REPORT",
+      "confidence": 72,
+      "confidence_direction": "UP",
+      "confidence_components": {
+        "source_quality": 83,
+        "independence": 52,
+        "corroboration": 52,
+        "contradiction": 0,
+        "specificity": 72,
+        "recency": 100,
+        "evidence_type": 79,
+        "historical_reliability": 83,
+        "claim_maturity": 46
+      },
+      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+      "supporting_observation_ids": [
+        "6d9a046cc743fc8d8e58",
+        "2284c7032cf9ed8cdd6e"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 2,
+      "independent_provenance_count": 2,
+      "sources": [
+        "ABC Australia World",
+        "Al Jazeera English"
+      ],
+      "provenance_roots": [
+        "abc_australia",
+        "aljazeera"
+      ],
+      "evidence": [
+        {
+          "observation_id": "2284c7032cf9ed8cdd6e",
+          "title": "North Korea dismisses UN nuclear watchdog resolution",
+          "source": "Al Jazeera English",
+          "source_class": "established_media",
+          "provenance_root": "aljazeera",
+          "stance": "report",
+          "published": "2026-09-19T03:29:54Z",
+          "url": "https://www.aljazeera.com/news/2026/9/19/north-korea-dismisses-un-nuclear-watchdog-resolution?traffic_source=rss",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "6d9a046cc743fc8d8e58",
+          "title": "North Korea accused of using overseas workers to finance nuclear weapons",
+          "source": "ABC Australia World",
+          "source_class": "regional_local",
+          "provenance_root": "abc_australia",
+          "stance": "allegation",
+          "published": "2026-09-17T07:44:28Z",
+          "url": "https://www.abc.net.au/news/2026-09-17/north-korean-overseas-workers-financing-nukes/107165468",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "North Korea accused of using overseas workers to finance nuclear weapons",
+        "plausible_explanations": [
+          "A genuine ECONOMIC/INFRA/NUCLEAR development involving CHINA, NORTH KOREA, RUSSIA is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related ECONOMIC/INFRA/NUCLEAR indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-ab13de06ed03a68f0a",
+          "headline": "Chinese National Pleads Guilty to Trying to Obtain U.S. Military Equipment",
+          "material_time": "2026-08-10T12:00:00Z",
+          "shared_domains": [
+            "ECONOMIC",
+            "INFRA"
+          ],
+          "shared_actors": [
+            "CHINA"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ]
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-8092069659ec8ec0fd",
+          "shared_actors": [
+            "CHINA",
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "CHINA",
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "NUCLEAR"
+          ]
+        },
+        {
+          "claim_id": "claim-05fafd90170193d8eb",
+          "shared_actors": [
+            "CHINA"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ],
+          "domains": [
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-873f871656fe6bad54",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-6b10b556f405e9be10",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-9e3287504758b9d3d0",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-95b05688477d6a88f7",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-495a85d41a9822fd63",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8925b642253e252edc",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-cec89370431878befe",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-b5aac27b4865942b33",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-a53cde60c297791506",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL"
+          ]
+        },
+        {
+          "claim_id": "claim-546b5e6f6c880849f2",
+          "shared_actors": [
+            "CHINA",
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "CHINA",
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "INFRA",
+            "SPACE"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-da098608ba309c92",
+        "anomaly-977afa5160af4dbc",
+        "anomaly-7436581d86bc9a3e"
+      ],
+      "threat_score": 22,
+      "watch_priority": 70,
+      "audit": {
+        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "support_count": 2,
+        "contradiction_count": 0,
+        "independent_roots": 2,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-19T03:29:54Z"
+      }
+    },
+    {
       "id": "claim-8092069659ec8ec0fd",
       "headline": "Russia, China veto UN mandate to monitor Iran sanctions",
       "signature_tokens": [
@@ -9182,7 +9506,7 @@
         "89b88b52a37aabdb811b"
       ],
       "first_seen": "2026-09-17T20:44:37Z",
-      "last_seen": "2026-09-19T03:44:44Z",
+      "last_seen": "2026-09-19T04:19:12Z",
       "material_time": "2026-09-18T04:27:18Z",
       "domains": [
         "ECONOMIC",
@@ -9532,7 +9856,7 @@
       ],
       "anomaly_ids": [
         "anomaly-da098608ba309c92",
-        "anomaly-330284a820d638fe",
+        "anomaly-977afa5160af4dbc",
         "anomaly-eb9e6018d6bc1e2d",
         "anomaly-fc158ff2d718067a"
       ],
@@ -10390,20 +10714,6 @@
           ]
         },
         {
-          "claim_id": "claim-b0ae75efd76d19b55d",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA",
-            "NUCLEAR"
-          ]
-        },
-        {
           "claim_id": "claim-cec89370431878befe",
           "shared_actors": [
             "RUSSIA",
@@ -10514,6 +10824,21 @@
             "INFRA",
             "WAR"
           ]
+        },
+        {
+          "claim_id": "claim-6bcaf5ddb350eee1d6",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "SPACE",
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -10530,303 +10855,6 @@
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-17T18:50:04Z"
-      }
-    },
-    {
-      "id": "claim-b0ae75efd76d19b55d",
-      "headline": "North Korea accused of using overseas workers to finance nuclear weapons",
-      "signature_tokens": [
-        "accused",
-        "finance",
-        "korea",
-        "north",
-        "nuclear",
-        "overseas",
-        "using",
-        "weapons",
-        "workers"
-      ],
-      "observation_ids": [
-        "6d9a046cc743fc8d8e58"
-      ],
-      "first_seen": "2026-09-17T08:22:11Z",
-      "last_seen": "2026-09-17T09:20:16Z",
-      "material_time": "2026-09-17T07:44:28Z",
-      "domains": [
-        "ECONOMIC",
-        "INFRA",
-        "NUCLEAR"
-      ],
-      "regions": [
-        "CHINA",
-        "KOREAN PENINSULA",
-        "RUSSIA"
-      ],
-      "actors": [
-        "CHINA",
-        "NORTH KOREA",
-        "RUSSIA"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 61,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 84,
-        "independence": 25,
-        "corroboration": 22,
-        "contradiction": 0,
-        "specificity": 78,
-        "recency": 84,
-        "evidence_type": 67,
-        "historical_reliability": 84,
-        "claim_maturity": 38
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "6d9a046cc743fc8d8e58"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 1,
-      "independent_provenance_count": 1,
-      "sources": [
-        "ABC Australia World"
-      ],
-      "provenance_roots": [
-        "abc_australia"
-      ],
-      "evidence": [
-        {
-          "observation_id": "6d9a046cc743fc8d8e58",
-          "title": "North Korea accused of using overseas workers to finance nuclear weapons",
-          "source": "ABC Australia World",
-          "source_class": "regional_local",
-          "provenance_root": "abc_australia",
-          "stance": "allegation",
-          "published": "2026-09-17T07:44:28Z",
-          "url": "https://www.abc.net.au/news/2026-09-17/north-korean-overseas-workers-financing-nukes/107165468",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "North Korea accused of using overseas workers to finance nuclear weapons",
-        "plausible_explanations": [
-          "A genuine ECONOMIC/INFRA/NUCLEAR development involving CHINA, NORTH KOREA, RUSSIA is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related ECONOMIC/INFRA/NUCLEAR indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [
-        {
-          "claim_id": "claim-ab13de06ed03a68f0a",
-          "headline": "Chinese National Pleads Guilty to Trying to Obtain U.S. Military Equipment",
-          "material_time": "2026-08-10T12:00:00Z",
-          "shared_domains": [
-            "ECONOMIC",
-            "INFRA"
-          ],
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ]
-        }
-      ],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-cec89370431878befe",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-b5aac27b4865942b33",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-a53cde60c297791506",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-546b5e6f6c880849f2",
-          "shared_actors": [
-            "CHINA",
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "CHINA",
-            "RUSSIA"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA",
-            "SPACE"
-          ]
-        },
-        {
-          "claim_id": "claim-b334a6d5a1a4cc7fe3",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "INFRA",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-09256c77181810adad",
-          "shared_actors": [
-            "CHINA",
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "CHINA",
-            "RUSSIA"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA",
-            "SPACE"
-          ]
-        },
-        {
-          "claim_id": "claim-581ffd16543e8f1f65",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-6bcaf5ddb350eee1d6",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "SPACE",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-4ac9dbae4978734f6f",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-68444847bb948c36b4",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "HUMANITARIAN",
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-76e3b606d8db754926",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "HUMANITARIAN",
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-ed7d5390f4be334436",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-da098608ba309c92",
-        "anomaly-330284a820d638fe",
-        "anomaly-7436581d86bc9a3e"
-      ],
-      "threat_score": 19,
-      "watch_priority": 68,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 1,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-17T07:44:28Z"
       }
     },
     {
@@ -11366,6 +11394,20 @@
       ],
       "cross_domain_links": [
         {
+          "claim_id": "claim-08b435b17d048f7b3c",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "BIO",
+            "INFRA",
+            "POLITICAL"
+          ]
+        },
+        {
           "claim_id": "claim-ed7d5390f4be334436",
           "shared_actors": [
             "RUSSIA"
@@ -11512,19 +11554,6 @@
           "domains": [
             "INFRA",
             "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-b073111828b505376a",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "INFRA",
-            "NUCLEAR"
           ]
         }
       ],
@@ -11670,6 +11699,20 @@
       ],
       "cross_domain_links": [
         {
+          "claim_id": "claim-08b435b17d048f7b3c",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "BIO",
+            "INFRA",
+            "POLITICAL"
+          ]
+        },
+        {
           "claim_id": "claim-ed7d5390f4be334436",
           "shared_actors": [
             "RUSSIA"
@@ -11817,19 +11860,6 @@
             "INFRA",
             "WAR"
           ]
-        },
-        {
-          "claim_id": "claim-b073111828b505376a",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "INFRA",
-            "NUCLEAR"
-          ]
         }
       ],
       "anomaly_ids": [
@@ -11899,7 +11929,7 @@
         "corroboration": 25,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 78,
+        "recency": 77,
         "evidence_type": 79,
         "historical_reliability": 93,
         "claim_maturity": 50
@@ -12580,7 +12610,7 @@
         "6e9d7e491fb1c8bbdade"
       ],
       "first_seen": "2026-09-18T22:18:44Z",
-      "last_seen": "2026-09-19T03:44:44Z",
+      "last_seen": "2026-09-19T04:19:12Z",
       "material_time": "2026-09-19T00:49:53Z",
       "domains": [
         "ECONOMIC",
@@ -12974,7 +13004,7 @@
       "anomaly_ids": [
         "anomaly-da098608ba309c92",
         "anomaly-af888ffce595ba89",
-        "anomaly-330284a820d638fe",
+        "anomaly-977afa5160af4dbc",
         "anomaly-eb9e6018d6bc1e2d",
         "anomaly-fc158ff2d718067a"
       ],
@@ -13035,7 +13065,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 99,
+        "recency": 98,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 36
@@ -13348,7 +13378,7 @@
         "a802048814a300aee565"
       ],
       "first_seen": "2026-09-18T20:44:44Z",
-      "last_seen": "2026-09-19T03:44:44Z",
+      "last_seen": "2026-09-19T04:19:12Z",
       "material_time": "2026-09-18T19:20:00Z",
       "domains": [
         "INFRA",
@@ -13375,7 +13405,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 99,
+        "recency": 98,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 36
@@ -14295,7 +14325,7 @@
         "36a560c152273c7f3cbc"
       ],
       "first_seen": "2026-09-16T03:19:45Z",
-      "last_seen": "2026-09-19T03:44:44Z",
+      "last_seen": "2026-09-19T04:19:12Z",
       "material_time": "2026-09-17T21:36:57Z",
       "domains": [
         "CYBER",
