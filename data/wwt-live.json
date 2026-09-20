@@ -1,26 +1,25 @@
 {
-  "generated_at": "2026-09-20T09:44:19Z",
+  "generated_at": "2026-09-20T10:19:00Z",
   "rules_version": "3.0-layered-early-warning",
-  "score": 58,
+  "score": 59,
   "verified_pressure": {
-    "score": 58,
-    "claim_count": 66,
+    "score": 59,
+    "claim_count": 65,
     "top_claims": [
       {
         "id": "claim-3d2711d0a85daf7ca1",
-        "headline": "North Korea fires short-range ballistic missile toward sea in latest weapons display",
+        "headline": "North Korea fires off second apparent ballistic missile - The Japan Times",
         "signature_tokens": [
+          "apparent",
           "ballistic",
-          "display",
           "fires",
+          "japan",
           "korea",
-          "latest",
           "missile",
           "north",
-          "sea",
-          "short-range",
-          "toward",
-          "weapons"
+          "off",
+          "second",
+          "times"
         ],
         "observation_ids": [
           "cd9ef9251bebd0065d82",
@@ -34,11 +33,14 @@
           "3d7e62b5a3218fcc6021",
           "c7e07c64486a165ecdc5",
           "e18be6ce1c43f0fc8172",
-          "d65e973a5cbe020afaa0"
+          "d65e973a5cbe020afaa0",
+          "ce9e7882445bba7d39e7",
+          "f1ca3e7ea12406ee77f9",
+          "ff167adf25fdbf6e2496"
         ],
         "first_seen": "2026-09-12T00:48:04Z",
-        "last_seen": "2026-09-20T09:44:19Z",
-        "material_time": "2026-09-20T09:15:00Z",
+        "last_seen": "2026-09-20T10:19:00Z",
+        "material_time": "2026-09-20T10:04:28Z",
         "domains": [
           "INFRA",
           "NUCLEAR",
@@ -52,18 +54,18 @@
           "NORTH KOREA"
         ],
         "state": "CONFIRMED",
-        "confidence": 83,
-        "confidence_direction": "STABLE",
+        "confidence": 90,
+        "confidence_direction": "UP",
         "confidence_components": {
-          "source_quality": 82,
-          "independence": 79,
-          "corroboration": 91,
+          "source_quality": 86,
+          "independence": 100,
+          "corroboration": 100,
           "contradiction": 0,
           "specificity": 69,
           "recency": 100,
           "evidence_type": 79,
-          "historical_reliability": 81,
-          "claim_maturity": 90
+          "historical_reliability": 83,
+          "claim_maturity": 100
         },
         "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
         "supporting_observation_ids": [
@@ -78,13 +80,17 @@
           "3d7e62b5a3218fcc6021",
           "c7e07c64486a165ecdc5",
           "e18be6ce1c43f0fc8172",
-          "d65e973a5cbe020afaa0"
+          "d65e973a5cbe020afaa0",
+          "ce9e7882445bba7d39e7",
+          "f1ca3e7ea12406ee77f9",
+          "ff167adf25fdbf6e2496"
         ],
         "contradictory_observation_ids": [],
-        "source_count": 4,
-        "independent_provenance_count": 3,
+        "source_count": 5,
+        "independent_provenance_count": 4,
         "sources": [
           "ABC News International",
+          "Agence France-Presse",
           "Euronews",
           "Google News Weak-Signal Discovery",
           "Japan Times"
@@ -93,9 +99,43 @@
           "abc_intl",
           "euronews",
           "google_weak_signal",
-          "japan_times"
+          "japan_times",
+          "wire:afp_world"
         ],
         "evidence": [
+          {
+            "observation_id": "ff167adf25fdbf6e2496",
+            "title": "North Korea fires ballistic missile after warning of stronger nuclear deterrence - India Today",
+            "source": "Google News Weak-Signal Discovery",
+            "source_class": "low_confidence",
+            "provenance_root": "google_weak_signal",
+            "stance": "warning",
+            "published": "2026-09-20T10:04:28Z",
+            "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZmo5UVY4UXg1SXY4VDlEV2JlVVRuYWpuU3ZXWERxVXhyM2RTMTZVYWZDRkpMejVEN0tLVldsdldCRVItMTc5S1dydS1MMmlfWHlrRjdwdGNyemJrR1VpbHFzdVpzNlRaWGNrazgwUjR1VjhFYktXbnlqbzlWX0JZdnZlaWM4dGZoaHdSeUtwNWRYQmRETE1RQmQ4SDFsMnNudTJ3S2gzVnlxOXFLRFlOQmwwUENXUTV2cWpJ0gHAAUFVX3lxTFBrTEdRMnBSZTcxVWNweVdMbTNfYmstSHVkUXI5ZUtRUTJuTk1HT3FnZVlTclJ5SkU0a3doVWdFZWo3OFdzMXVuVVZTc1RVQXdWaXFRTi1IWkhlRWk2Yl9COUdlNFNDY1I2RUZ6Skw3VUdRWVFabXBxWEdfWnNfTjRTS09OT1NJQ1g3V09XWGtoV3F5ZnFEQ215VTNRWmk2M3dxUFQ1WncyYnpNME1PUW1OdVdqYjdrVGRBMzl5U3ptTQ?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "f1ca3e7ea12406ee77f9",
+            "title": "North Korea has launched an additional projectile toward the sea, South Korea says",
+            "source": "ABC News International",
+            "source_class": "established_media",
+            "provenance_root": "abc_intl",
+            "stance": "report",
+            "published": "2026-09-20T09:49:51Z",
+            "url": "https://abcnews.com/International/wireStory/north-korea-fires-short-range-ballistic-missile-sea-136595740",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "ce9e7882445bba7d39e7",
+            "title": "North Korea fires off second apparent ballistic missile - The Japan Times",
+            "source": "Agence France-Presse",
+            "source_class": "wire",
+            "provenance_root": "wire:afp_world",
+            "stance": "report",
+            "published": "2026-09-20T09:18:19Z",
+            "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNWnZhUnVwOWRaWURkanJRM2JWM0NPbUZDTHItdkdkYUdza3NfVlBPUVlQSlhOT2hmVjlCeGFZQ1dXUS1QQjd2UTdGd1NxWmpld1U0YWpKRlNxMEMtMVVtT3NabEFDNjVuSWs3QmU5djdsclFMTjQ2Y2V4WVhBN2F3X3ZPamFLeUpyZjNDR0p3?oc=5",
+            "discovery_only": false
+          },
           {
             "observation_id": "d65e973a5cbe020afaa0",
             "title": "North Korea fires off second apparent ballistic missile",
@@ -232,7 +272,7 @@
         "state_affiliated_reporting": false,
         "discovery_only": false,
         "branch_analysis": {
-          "current_observation": "North Korea fires short-range ballistic missile toward sea in latest weapons display",
+          "current_observation": "North Korea fires off second apparent ballistic missile - The Japan Times",
           "plausible_explanations": [
             "A genuine INFRA/NUCLEAR/WAR development involving NORTH KOREA is unfolding as reported.",
             "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
@@ -399,15 +439,15 @@
         "anomaly_ids": [
           "anomaly-0be353629d45572b"
         ],
-        "threat_score": 44,
-        "watch_priority": 59,
+        "threat_score": 48,
+        "watch_priority": 61,
         "audit": {
           "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-          "support_count": 12,
+          "support_count": 15,
           "contradiction_count": 0,
-          "independent_roots": 3,
+          "independent_roots": 4,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-20T09:15:00Z"
+          "material_time_used_for_decay": "2026-09-20T10:04:28Z"
         }
       },
       {
@@ -890,6 +930,19 @@
             ]
           },
           {
+            "claim_id": "claim-204aac7ada049b40e7",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL"
+            ]
+          },
+          {
             "claim_id": "claim-b7b5c57721e52c761b",
             "shared_actors": [
               "RUSSIA",
@@ -932,20 +985,6 @@
             "domains": [
               "INFRA",
               "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-6b10b556f405e9be10",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "INFRA"
             ]
           }
         ],
@@ -1314,7 +1353,7 @@
           "145bf7bef277f752487e"
         ],
         "first_seen": "2026-09-17T20:44:37Z",
-        "last_seen": "2026-09-20T09:44:19Z",
+        "last_seen": "2026-09-20T10:19:00Z",
         "material_time": "2026-09-19T20:28:32Z",
         "domains": [
           "ECONOMIC",
@@ -1661,23 +1700,23 @@
             ]
           },
           {
-            "claim_id": "claim-a4209d947fc370febf",
+            "claim_id": "claim-204aac7ada049b40e7",
             "shared_actors": [
-              "IRAN"
+              "RUSSIA"
             ],
             "shared_regions": [
-              "IRAN"
+              "RUSSIA"
             ],
             "domains": [
               "INFRA",
-              "WAR"
+              "POLITICAL"
             ]
           }
         ],
         "anomaly_ids": [
           "anomaly-6cd674a40091ed7e",
           "anomaly-4f715bc2f954f1e7",
-          "anomaly-4b0985b17f6764d2",
+          "anomaly-742fd51e306431b8",
           "anomaly-592f929633d726af"
         ],
         "threat_score": 27,
@@ -1877,6 +1916,19 @@
             ]
           },
           {
+            "claim_id": "claim-204aac7ada049b40e7",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL"
+            ]
+          },
+          {
             "claim_id": "claim-b7b5c57721e52c761b",
             "shared_actors": [
               "RUSSIA"
@@ -1963,22 +2015,6 @@
             ],
             "domains": [
               "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-546b5e6f6c880849f2",
-            "shared_actors": [
-              "CHINA",
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "CHINA",
-              "RUSSIA"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA",
-              "SPACE"
             ]
           }
         ],
@@ -2186,6 +2222,19 @@
             ]
           },
           {
+            "claim_id": "claim-204aac7ada049b40e7",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL"
+            ]
+          },
+          {
             "claim_id": "claim-b7b5c57721e52c761b",
             "shared_actors": [
               "RUSSIA",
@@ -2329,21 +2378,6 @@
               "INFRA",
               "SPACE"
             ]
-          },
-          {
-            "claim_id": "claim-32845209291f4f65d1",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
           }
         ],
         "anomaly_ids": [
@@ -2391,7 +2425,7 @@
           "56f70dc1af5a68329707"
         ],
         "first_seen": "2026-09-19T09:43:58Z",
-        "last_seen": "2026-09-20T09:44:19Z",
+        "last_seen": "2026-09-20T10:19:00Z",
         "material_time": "2026-09-20T04:30:49Z",
         "domains": [
           "CYBER",
@@ -3774,7 +3808,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-4b0985b17f6764d2"
+          "anomaly-742fd51e306431b8"
         ],
         "threat_score": 18,
         "watch_priority": 52,
@@ -3812,7 +3846,7 @@
           "565255df09a43ef4c178"
         ],
         "first_seen": "2026-09-18T22:18:44Z",
-        "last_seen": "2026-09-20T09:44:19Z",
+        "last_seen": "2026-09-20T10:19:00Z",
         "material_time": "2026-09-19T09:09:00Z",
         "domains": [
           "ECONOMIC",
@@ -4236,14 +4270,12 @@
             ]
           },
           {
-            "claim_id": "claim-06a039999d573afe3c",
+            "claim_id": "claim-aa23d2bdddc19490f6",
             "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
+              "IRAN"
             ],
             "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
+              "IRAN"
             ],
             "domains": [
               "INFRA",
@@ -4256,7 +4288,7 @@
           "anomaly-6cd674a40091ed7e",
           "anomaly-a9afed833a0a2107",
           "anomaly-4f715bc2f954f1e7",
-          "anomaly-4b0985b17f6764d2",
+          "anomaly-742fd51e306431b8",
           "anomaly-592f929633d726af",
           "anomaly-35cf8732b017a345"
         ],
@@ -4507,22 +4539,6 @@
             ]
           },
           {
-            "claim_id": "claim-06a039999d573afe3c",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-24eaabe44727001ff0",
             "shared_actors": [
               "RUSSIA",
@@ -4576,6 +4592,21 @@
               "INFRA",
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-16bd6d5d078e5cbc8b",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
@@ -4597,7 +4628,7 @@
   },
   "early_warning_pressure": {
     "score": 100,
-    "claim_count": 63,
+    "claim_count": 64,
     "top_claims": [
       {
         "id": "claim-36702df4a2ad817d8b",
@@ -4643,7 +4674,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 72,
-          "recency": 75,
+          "recency": 74,
           "evidence_type": 67,
           "historical_reliability": 84,
           "claim_maturity": 40
@@ -4730,20 +4761,6 @@
         ],
         "cross_domain_links": [
           {
-            "claim_id": "claim-8190c234d4d6b9ed22",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "INFRA",
-              "SPACE",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-3d2711d0a85daf7ca1",
             "shared_actors": [
               "NORTH KOREA"
@@ -4754,6 +4771,20 @@
             "domains": [
               "INFRA",
               "NUCLEAR",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-8190c234d4d6b9ed22",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA",
+              "SPACE",
               "WAR"
             ]
           },
@@ -4954,7 +4985,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 78,
-          "recency": 78,
+          "recency": 77,
           "evidence_type": 73,
           "historical_reliability": 78,
           "claim_maturity": 39
@@ -5806,6 +5837,19 @@
         "historical_matches": [],
         "cross_domain_links": [
           {
+            "claim_id": "claim-204aac7ada049b40e7",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL"
+            ]
+          },
+          {
             "claim_id": "claim-b7b5c57721e52c761b",
             "shared_actors": [
               "RUSSIA"
@@ -5947,18 +5991,6 @@
               "ECONOMIC",
               "INFRA",
               "SPACE"
-            ]
-          },
-          {
-            "claim_id": "claim-581ffd16543e8f1f65",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
             ]
           }
         ],
@@ -6259,7 +6291,7 @@
           "ef2f258ec7d75a2f82b4"
         ],
         "first_seen": "2026-09-19T13:43:35Z",
-        "last_seen": "2026-09-20T09:44:19Z",
+        "last_seen": "2026-09-20T10:19:00Z",
         "material_time": "2026-09-20T04:56:24Z",
         "domains": [
           "ECONOMIC",
@@ -6617,7 +6649,7 @@
           "corroboration": 25,
           "contradiction": 0,
           "specificity": 73,
-          "recency": 94,
+          "recency": 93,
           "evidence_type": 40,
           "historical_reliability": 50,
           "claim_maturity": 47
@@ -7050,7 +7082,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-4b0985b17f6764d2"
+          "anomaly-742fd51e306431b8"
         ],
         "threat_score": 2,
         "watch_priority": 53,
@@ -7106,7 +7138,7 @@
           "corroboration": 52,
           "contradiction": 0,
           "specificity": 63,
-          "recency": 74,
+          "recency": 73,
           "evidence_type": 79,
           "historical_reliability": 58,
           "claim_maturity": 51
@@ -7379,7 +7411,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-4b0985b17f6764d2"
+          "anomaly-742fd51e306431b8"
         ],
         "threat_score": 2,
         "watch_priority": 50,
@@ -7836,7 +7868,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 79,
+          "recency": 78,
           "evidence_type": 79,
           "historical_reliability": 84,
           "claim_maturity": 39
@@ -7976,6 +8008,20 @@
             ]
           },
           {
+            "claim_id": "claim-06a039999d573afe3c",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-32e6fb6b527c4dd89b",
             "shared_actors": [
               "IRAN"
@@ -8054,24 +8100,11 @@
             "domains": [
               "WAR"
             ]
-          },
-          {
-            "claim_id": "claim-736a632e6f34f2fb6f",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
           }
         ],
         "anomaly_ids": [
           "anomaly-6cd674a40091ed7e",
-          "anomaly-4b0985b17f6764d2"
+          "anomaly-742fd51e306431b8"
         ],
         "threat_score": 3,
         "watch_priority": 57,
@@ -8263,6 +8296,20 @@
             ]
           },
           {
+            "claim_id": "claim-06a039999d573afe3c",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-77b34acb49d408e8ea",
             "shared_actors": [
               "RUSSIA"
@@ -8351,18 +8398,6 @@
               "INFRA",
               "WAR"
             ]
-          },
-          {
-            "claim_id": "claim-99241d764211d1a746",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "INFRA"
-            ]
           }
         ],
         "anomaly_ids": [
@@ -8386,7 +8421,7 @@
     "great_power_direct_clash": 28,
     "alliance_entanglement": 25,
     "multi_theater_coupling": 0,
-    "nuclear_escalation": 83,
+    "nuclear_escalation": 84,
     "military_mobilization": 60,
     "economic_warfare": 100,
     "crisis_control_failure": 0,
@@ -8398,9 +8433,9 @@
     "multi_theater_coupling": 0,
     "nuclear_escalation": 13,
     "military_mobilization": 11,
-    "economic_warfare": 150,
+    "economic_warfare": 151,
     "crisis_control_failure": 0,
-    "hybrid_preparation": 122
+    "hybrid_preparation": 121
   },
   "formula": "Independent-provenance-capped claim contributions; verified and early-warning pressure remain separate.",
   "safeguard": "Republished stories sharing one provenance root cannot multiply pressure; speculative claims never enter Verified Pressure.",
@@ -8408,19 +8443,18 @@
   "top_claims": [
     {
       "id": "claim-3d2711d0a85daf7ca1",
-      "headline": "North Korea fires short-range ballistic missile toward sea in latest weapons display",
+      "headline": "North Korea fires off second apparent ballistic missile - The Japan Times",
       "signature_tokens": [
+        "apparent",
         "ballistic",
-        "display",
         "fires",
+        "japan",
         "korea",
-        "latest",
         "missile",
         "north",
-        "sea",
-        "short-range",
-        "toward",
-        "weapons"
+        "off",
+        "second",
+        "times"
       ],
       "observation_ids": [
         "cd9ef9251bebd0065d82",
@@ -8434,11 +8468,14 @@
         "3d7e62b5a3218fcc6021",
         "c7e07c64486a165ecdc5",
         "e18be6ce1c43f0fc8172",
-        "d65e973a5cbe020afaa0"
+        "d65e973a5cbe020afaa0",
+        "ce9e7882445bba7d39e7",
+        "f1ca3e7ea12406ee77f9",
+        "ff167adf25fdbf6e2496"
       ],
       "first_seen": "2026-09-12T00:48:04Z",
-      "last_seen": "2026-09-20T09:44:19Z",
-      "material_time": "2026-09-20T09:15:00Z",
+      "last_seen": "2026-09-20T10:19:00Z",
+      "material_time": "2026-09-20T10:04:28Z",
       "domains": [
         "INFRA",
         "NUCLEAR",
@@ -8452,18 +8489,18 @@
         "NORTH KOREA"
       ],
       "state": "CONFIRMED",
-      "confidence": 83,
-      "confidence_direction": "STABLE",
+      "confidence": 90,
+      "confidence_direction": "UP",
       "confidence_components": {
-        "source_quality": 82,
-        "independence": 79,
-        "corroboration": 91,
+        "source_quality": 86,
+        "independence": 100,
+        "corroboration": 100,
         "contradiction": 0,
         "specificity": 69,
         "recency": 100,
         "evidence_type": 79,
-        "historical_reliability": 81,
-        "claim_maturity": 90
+        "historical_reliability": 83,
+        "claim_maturity": 100
       },
       "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
       "supporting_observation_ids": [
@@ -8478,13 +8515,17 @@
         "3d7e62b5a3218fcc6021",
         "c7e07c64486a165ecdc5",
         "e18be6ce1c43f0fc8172",
-        "d65e973a5cbe020afaa0"
+        "d65e973a5cbe020afaa0",
+        "ce9e7882445bba7d39e7",
+        "f1ca3e7ea12406ee77f9",
+        "ff167adf25fdbf6e2496"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 4,
-      "independent_provenance_count": 3,
+      "source_count": 5,
+      "independent_provenance_count": 4,
       "sources": [
         "ABC News International",
+        "Agence France-Presse",
         "Euronews",
         "Google News Weak-Signal Discovery",
         "Japan Times"
@@ -8493,9 +8534,43 @@
         "abc_intl",
         "euronews",
         "google_weak_signal",
-        "japan_times"
+        "japan_times",
+        "wire:afp_world"
       ],
       "evidence": [
+        {
+          "observation_id": "ff167adf25fdbf6e2496",
+          "title": "North Korea fires ballistic missile after warning of stronger nuclear deterrence - India Today",
+          "source": "Google News Weak-Signal Discovery",
+          "source_class": "low_confidence",
+          "provenance_root": "google_weak_signal",
+          "stance": "warning",
+          "published": "2026-09-20T10:04:28Z",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZmo5UVY4UXg1SXY4VDlEV2JlVVRuYWpuU3ZXWERxVXhyM2RTMTZVYWZDRkpMejVEN0tLVldsdldCRVItMTc5S1dydS1MMmlfWHlrRjdwdGNyemJrR1VpbHFzdVpzNlRaWGNrazgwUjR1VjhFYktXbnlqbzlWX0JZdnZlaWM4dGZoaHdSeUtwNWRYQmRETE1RQmQ4SDFsMnNudTJ3S2gzVnlxOXFLRFlOQmwwUENXUTV2cWpJ0gHAAUFVX3lxTFBrTEdRMnBSZTcxVWNweVdMbTNfYmstSHVkUXI5ZUtRUTJuTk1HT3FnZVlTclJ5SkU0a3doVWdFZWo3OFdzMXVuVVZTc1RVQXdWaXFRTi1IWkhlRWk2Yl9COUdlNFNDY1I2RUZ6Skw3VUdRWVFabXBxWEdfWnNfTjRTS09OT1NJQ1g3V09XWGtoV3F5ZnFEQ215VTNRWmk2M3dxUFQ1WncyYnpNME1PUW1OdVdqYjdrVGRBMzl5U3ptTQ?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "f1ca3e7ea12406ee77f9",
+          "title": "North Korea has launched an additional projectile toward the sea, South Korea says",
+          "source": "ABC News International",
+          "source_class": "established_media",
+          "provenance_root": "abc_intl",
+          "stance": "report",
+          "published": "2026-09-20T09:49:51Z",
+          "url": "https://abcnews.com/International/wireStory/north-korea-fires-short-range-ballistic-missile-sea-136595740",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "ce9e7882445bba7d39e7",
+          "title": "North Korea fires off second apparent ballistic missile - The Japan Times",
+          "source": "Agence France-Presse",
+          "source_class": "wire",
+          "provenance_root": "wire:afp_world",
+          "stance": "report",
+          "published": "2026-09-20T09:18:19Z",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNWnZhUnVwOWRaWURkanJRM2JWM0NPbUZDTHItdkdkYUdza3NfVlBPUVlQSlhOT2hmVjlCeGFZQ1dXUS1QQjd2UTdGd1NxWmpld1U0YWpKRlNxMEMtMVVtT3NabEFDNjVuSWs3QmU5djdsclFMTjQ2Y2V4WVhBN2F3X3ZPamFLeUpyZjNDR0p3?oc=5",
+          "discovery_only": false
+        },
         {
           "observation_id": "d65e973a5cbe020afaa0",
           "title": "North Korea fires off second apparent ballistic missile",
@@ -8632,7 +8707,7 @@
       "state_affiliated_reporting": false,
       "discovery_only": false,
       "branch_analysis": {
-        "current_observation": "North Korea fires short-range ballistic missile toward sea in latest weapons display",
+        "current_observation": "North Korea fires off second apparent ballistic missile - The Japan Times",
         "plausible_explanations": [
           "A genuine INFRA/NUCLEAR/WAR development involving NORTH KOREA is unfolding as reported.",
           "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
@@ -8799,15 +8874,15 @@
       "anomaly_ids": [
         "anomaly-0be353629d45572b"
       ],
-      "threat_score": 44,
-      "watch_priority": 59,
+      "threat_score": 48,
+      "watch_priority": 61,
       "audit": {
         "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-        "support_count": 12,
+        "support_count": 15,
         "contradiction_count": 0,
-        "independent_roots": 3,
+        "independent_roots": 4,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-20T09:15:00Z"
+        "material_time_used_for_decay": "2026-09-20T10:04:28Z"
       }
     },
     {
@@ -9290,6 +9365,19 @@
           ]
         },
         {
+          "claim_id": "claim-204aac7ada049b40e7",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL"
+          ]
+        },
+        {
           "claim_id": "claim-b7b5c57721e52c761b",
           "shared_actors": [
             "RUSSIA",
@@ -9332,20 +9420,6 @@
           "domains": [
             "INFRA",
             "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-6b10b556f405e9be10",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA"
           ]
         }
       ],
@@ -9714,7 +9788,7 @@
         "145bf7bef277f752487e"
       ],
       "first_seen": "2026-09-17T20:44:37Z",
-      "last_seen": "2026-09-20T09:44:19Z",
+      "last_seen": "2026-09-20T10:19:00Z",
       "material_time": "2026-09-19T20:28:32Z",
       "domains": [
         "ECONOMIC",
@@ -10061,23 +10135,23 @@
           ]
         },
         {
-          "claim_id": "claim-a4209d947fc370febf",
+          "claim_id": "claim-204aac7ada049b40e7",
           "shared_actors": [
-            "IRAN"
+            "RUSSIA"
           ],
           "shared_regions": [
-            "IRAN"
+            "RUSSIA"
           ],
           "domains": [
             "INFRA",
-            "WAR"
+            "POLITICAL"
           ]
         }
       ],
       "anomaly_ids": [
         "anomaly-6cd674a40091ed7e",
         "anomaly-4f715bc2f954f1e7",
-        "anomaly-4b0985b17f6764d2",
+        "anomaly-742fd51e306431b8",
         "anomaly-592f929633d726af"
       ],
       "threat_score": 27,
@@ -10277,6 +10351,19 @@
           ]
         },
         {
+          "claim_id": "claim-204aac7ada049b40e7",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL"
+          ]
+        },
+        {
           "claim_id": "claim-b7b5c57721e52c761b",
           "shared_actors": [
             "RUSSIA"
@@ -10363,22 +10450,6 @@
           ],
           "domains": [
             "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-546b5e6f6c880849f2",
-          "shared_actors": [
-            "CHINA",
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "CHINA",
-            "RUSSIA"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA",
-            "SPACE"
           ]
         }
       ],
@@ -10586,6 +10657,19 @@
           ]
         },
         {
+          "claim_id": "claim-204aac7ada049b40e7",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL"
+          ]
+        },
+        {
           "claim_id": "claim-b7b5c57721e52c761b",
           "shared_actors": [
             "RUSSIA",
@@ -10729,21 +10813,6 @@
             "INFRA",
             "SPACE"
           ]
-        },
-        {
-          "claim_id": "claim-32845209291f4f65d1",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
@@ -10791,7 +10860,7 @@
         "56f70dc1af5a68329707"
       ],
       "first_seen": "2026-09-19T09:43:58Z",
-      "last_seen": "2026-09-20T09:44:19Z",
+      "last_seen": "2026-09-20T10:19:00Z",
       "material_time": "2026-09-20T04:30:49Z",
       "domains": [
         "CYBER",
@@ -12174,7 +12243,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-4b0985b17f6764d2"
+        "anomaly-742fd51e306431b8"
       ],
       "threat_score": 18,
       "watch_priority": 52,
@@ -12212,7 +12281,7 @@
         "565255df09a43ef4c178"
       ],
       "first_seen": "2026-09-18T22:18:44Z",
-      "last_seen": "2026-09-20T09:44:19Z",
+      "last_seen": "2026-09-20T10:19:00Z",
       "material_time": "2026-09-19T09:09:00Z",
       "domains": [
         "ECONOMIC",
@@ -12636,14 +12705,12 @@
           ]
         },
         {
-          "claim_id": "claim-06a039999d573afe3c",
+          "claim_id": "claim-aa23d2bdddc19490f6",
           "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
+            "IRAN"
           ],
           "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
+            "IRAN"
           ],
           "domains": [
             "INFRA",
@@ -12656,7 +12723,7 @@
         "anomaly-6cd674a40091ed7e",
         "anomaly-a9afed833a0a2107",
         "anomaly-4f715bc2f954f1e7",
-        "anomaly-4b0985b17f6764d2",
+        "anomaly-742fd51e306431b8",
         "anomaly-592f929633d726af",
         "anomaly-35cf8732b017a345"
       ],
@@ -12907,22 +12974,6 @@
           ]
         },
         {
-          "claim_id": "claim-06a039999d573afe3c",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-24eaabe44727001ff0",
           "shared_actors": [
             "RUSSIA",
@@ -12974,6 +13025,21 @@
           ],
           "domains": [
             "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-16bd6d5d078e5cbc8b",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "POLITICAL",
             "WAR"
           ]
         }
@@ -13044,7 +13110,7 @@
         "3becd0b01fbb7bcefee9"
       ],
       "first_seen": "2026-09-09T19:17:24Z",
-      "last_seen": "2026-09-20T09:44:19Z",
+      "last_seen": "2026-09-20T10:19:00Z",
       "material_time": "2026-09-20T05:43:58Z",
       "domains": [
         "INFRA",
@@ -13593,7 +13659,7 @@
       ],
       "anomaly_ids": [
         "anomaly-6cd674a40091ed7e",
-        "anomaly-4b0985b17f6764d2",
+        "anomaly-742fd51e306431b8",
         "anomaly-592f929633d726af"
       ],
       "threat_score": 14,
@@ -13653,7 +13719,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 86,
+        "recency": 85,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 38
@@ -13931,7 +13997,7 @@
       "anomaly_ids": [
         "anomaly-ec95b79edfb0a34f",
         "anomaly-6cd674a40091ed7e",
-        "anomaly-4b0985b17f6764d2"
+        "anomaly-742fd51e306431b8"
       ],
       "threat_score": 14,
       "watch_priority": 65,
@@ -13990,7 +14056,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 86,
+        "recency": 85,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 38
@@ -14268,7 +14334,7 @@
       "anomaly_ids": [
         "anomaly-ec95b79edfb0a34f",
         "anomaly-6cd674a40091ed7e",
-        "anomaly-4b0985b17f6764d2"
+        "anomaly-742fd51e306431b8"
       ],
       "threat_score": 14,
       "watch_priority": 65,
@@ -14309,7 +14375,7 @@
         "36a560c152273c7f3cbc"
       ],
       "first_seen": "2026-09-16T03:19:45Z",
-      "last_seen": "2026-09-20T09:44:19Z",
+      "last_seen": "2026-09-20T10:19:00Z",
       "material_time": "2026-09-17T21:36:57Z",
       "domains": [
         "CYBER",
@@ -14750,7 +14816,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-4b0985b17f6764d2",
+        "anomaly-742fd51e306431b8",
         "anomaly-592f929633d726af"
       ],
       "threat_score": 25,
