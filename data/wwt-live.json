@@ -1,11 +1,402 @@
 {
-  "generated_at": "2026-09-20T07:44:29Z",
+  "generated_at": "2026-09-20T08:20:03Z",
   "rules_version": "3.0-layered-early-warning",
-  "score": 55,
+  "score": 57,
   "verified_pressure": {
-    "score": 55,
+    "score": 57,
     "claim_count": 66,
     "top_claims": [
+      {
+        "id": "claim-3d2711d0a85daf7ca1",
+        "headline": "North Korea fires short-range ballistic missile toward sea in latest weapons display",
+        "signature_tokens": [
+          "ballistic",
+          "display",
+          "fires",
+          "korea",
+          "latest",
+          "missile",
+          "north",
+          "sea",
+          "short-range",
+          "toward",
+          "weapons"
+        ],
+        "observation_ids": [
+          "cd9ef9251bebd0065d82",
+          "efb6c20768282cd4caa9",
+          "84658c20fc693ca822ad",
+          "f89447e243375d869ce6",
+          "c7b43dc40518b915f688",
+          "764aa21fe2b26ecaeafc",
+          "d9b07e8f923ee5ec48ba",
+          "2279067585ad2384c071",
+          "3d7e62b5a3218fcc6021",
+          "c7e07c64486a165ecdc5",
+          "e18be6ce1c43f0fc8172"
+        ],
+        "first_seen": "2026-09-12T00:48:04Z",
+        "last_seen": "2026-09-20T08:20:03Z",
+        "material_time": "2026-09-20T08:07:39Z",
+        "domains": [
+          "INFRA",
+          "NUCLEAR",
+          "WAR"
+        ],
+        "regions": [
+          "INDO-PACIFIC",
+          "KOREAN PENINSULA"
+        ],
+        "actors": [
+          "NORTH KOREA"
+        ],
+        "state": "CONFIRMED",
+        "confidence": 82,
+        "confidence_direction": "UP",
+        "confidence_components": {
+          "source_quality": 82,
+          "independence": 79,
+          "corroboration": 88,
+          "contradiction": 0,
+          "specificity": 67,
+          "recency": 100,
+          "evidence_type": 79,
+          "historical_reliability": 81,
+          "claim_maturity": 79
+        },
+        "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
+        "supporting_observation_ids": [
+          "cd9ef9251bebd0065d82",
+          "efb6c20768282cd4caa9",
+          "84658c20fc693ca822ad",
+          "f89447e243375d869ce6",
+          "c7b43dc40518b915f688",
+          "764aa21fe2b26ecaeafc",
+          "d9b07e8f923ee5ec48ba",
+          "2279067585ad2384c071",
+          "3d7e62b5a3218fcc6021",
+          "c7e07c64486a165ecdc5",
+          "e18be6ce1c43f0fc8172"
+        ],
+        "contradictory_observation_ids": [],
+        "source_count": 4,
+        "independent_provenance_count": 3,
+        "sources": [
+          "ABC News International",
+          "Euronews",
+          "Google News Weak-Signal Discovery",
+          "Japan Times"
+        ],
+        "provenance_roots": [
+          "abc_intl",
+          "euronews",
+          "google_weak_signal",
+          "japan_times"
+        ],
+        "evidence": [
+          {
+            "observation_id": "e18be6ce1c43f0fc8172",
+            "title": "North Korea launches 'suspected ballistic missile' into East Sea",
+            "source": "Euronews",
+            "source_class": "regional_local",
+            "provenance_root": "euronews",
+            "stance": "report",
+            "published": "2026-09-20T08:07:39Z",
+            "url": "https://www.euronews.com/2026/09/20/north-korea-launches-suspected-ballistic-missile-into-east-sea",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "c7e07c64486a165ecdc5",
+            "title": "North Korea fires short-range ballistic missile toward sea in latest weapons display",
+            "source": "ABC News International",
+            "source_class": "established_media",
+            "provenance_root": "abc_intl",
+            "stance": "report",
+            "published": "2026-09-20T07:56:50Z",
+            "url": "https://abcnews.com/International/wireStory/north-korea-fires-short-range-ballistic-missile-sea-136595740",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "2279067585ad2384c071",
+            "title": "North Korea fires off apparent ballistic missile",
+            "source": "Japan Times",
+            "source_class": "regional_local",
+            "provenance_root": "japan_times",
+            "stance": "report",
+            "published": "2026-09-20T06:14:00Z",
+            "url": "https://www.japantimes.co.jp/news/2026/09/20/japan/north-korea-missile-september-20",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "3d7e62b5a3218fcc6021",
+            "title": "North Korea fires ballistic missile into waters outside Japan EEZ",
+            "source": "Japan Times",
+            "source_class": "regional_local",
+            "provenance_root": "japan_times",
+            "stance": "report",
+            "published": "2026-09-20T06:14:00Z",
+            "url": "https://www.japantimes.co.jp/news/2026/09/20/japan/north-korea-missile-september-20",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "f89447e243375d869ce6",
+            "title": "North Korea Threatens Stronger Response to US-Led Military Drills - India News Network",
+            "source": "Google News Weak-Signal Discovery",
+            "source_class": "low_confidence",
+            "provenance_root": "google_weak_signal",
+            "stance": "warning",
+            "published": "2026-09-19T05:43:28Z",
+            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUS1JVlF5MXdXZ2V2dlhMcnNMZVc0a2VwbU51eUVRbW9pbk8xX0cxMUFVTmxybjZIaXBpSjduaE9Qb2xBcGVHTzc3ajB6RW1wYzd1aF9qYXNyUF9EOVNIRDVqQ096b3E0TzY4aF9veHpWaW1IMG1CNjg3eWg4ZXRpR2JWR3YyUEpJdGdkMlhjQVAyWnZ6LW9IV2NBQzdjN0RfXzhLcGVzcEwwd3c?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "c7b43dc40518b915f688",
+            "title": "North Korea Threatens Stronger Response to US-Led Military Drills - indianewsnetwork.com",
+            "source": "Google News Weak-Signal Discovery",
+            "source_class": "low_confidence",
+            "provenance_root": "google_weak_signal",
+            "stance": "warning",
+            "published": "2026-09-19T05:43:28Z",
+            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUS1JVlF5MXdXZ2V2dlhMcnNMZVc0a2VwbU51eUVRbW9pbk8xX0cxMUFVTmxybjZIaXBpSjduaE9Qb2xBcGVHTzc3ajB6RW1wYzd1aF9qYXNyUF9EOVNIRDVqQ096b3E0TzY4aF9veHpWaW1IMG1CNjg3eWg4ZXRpR2JWR3YyUEpJdGdkMlhjQVAyWnZ6LW9IV2NBQzdjN0RfXzhLcGVzcEwwd3c?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "764aa21fe2b26ecaeafc",
+            "title": "North Korea warns of stronger response to US-led military drills in Asia-Pacific - Latest news from Azerbaijan",
+            "source": "Google News Weak-Signal Discovery",
+            "source_class": "low_confidence",
+            "provenance_root": "google_weak_signal",
+            "stance": "report",
+            "published": "2026-09-18T08:41:38Z",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVVluc052bU1zN2dLaEJTTm5JbkNzMmNseFJTOUpFR0JoMUtDcDFHRjM0SkhWRW9YdWVBbEhoT0FZbmxIS3dxM29iLTYwMUtjVDlhazVScXR4ZV9iMWFOT01tLXpmYVg0RE9odWxURDJXUmlhN2NxbWdaSDd0UTIyVzY1bGhDX2VvZ0toLXBBd3QtYWNzSy1rSnVHblotQTQtbjY0?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "d9b07e8f923ee5ec48ba",
+            "title": "North Korea warns of stronger response to US-led military drills in Asia-Pacific - news.az",
+            "source": "Google News Weak-Signal Discovery",
+            "source_class": "low_confidence",
+            "provenance_root": "google_weak_signal",
+            "stance": "report",
+            "published": "2026-09-18T08:41:38Z",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVVluc052bU1zN2dLaEJTTm5JbkNzMmNseFJTOUpFR0JoMUtDcDFHRjM0SkhWRW9YdWVBbEhoT0FZbmxIS3dxM29iLTYwMUtjVDlhazVScXR4ZV9iMWFOT01tLXpmYVg0RE9odWxURDJXUmlhN2NxbWdaSDd0UTIyVzY1bGhDX2VvZ0toLXBBd3QtYWNzSy1rSnVHblotQTQtbjY0?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "efb6c20768282cd4caa9",
+            "title": "North Korea launches ballistic missiles toward sea after military drill it sees as threat - The Hindu",
+            "source": "Google News Weak-Signal Discovery",
+            "source_class": "low_confidence",
+            "provenance_root": "google_weak_signal",
+            "stance": "warning",
+            "published": "2026-09-12T00:57:13Z",
+            "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQeUc0SkNyLUJXYmpweGRUaTUtR0F0eUI2OVo5R0QxMmNZcklPeXozenhnSnRvUmJueVhPOVNwRW9KVWpZSk41b3ZwczhTbS0teHVpaEFtV01sVi1nX09RM0JnNnZFMmRqSVU2ak1idHNvcmpzT3lEeHZkbS1vajdNZ1NtV1ZGOWdYRm1kaDN6X0dxbkJZVi1HazlETC1mMVZ6dU1ndjRvQ1RSQ212ZjNyS2FUbmotUkhzTDdDc2pIUXpRNlRiVWp0b2tNRGVKVGd2ZTByaW5qQVJ6eEgwcldESlhHbURDdktXODB2cGM1QdIB7wFBVV95cUxQeUc0SkNyLUJXYmpweGRUaTUtR0F0eUI2OVo5R0QxMmNZcklPeXozenhnSnRvUmJueVhPOVNwRW9KVWpZSk41b3ZwczhTbS0teHVpaEFtV01sVi1nX09RM0JnNnZFMmRqSVU2ak1idHNvcmpzT3lEeHZkbS1vajdNZ1NtV1ZGOWdYRm1kaDN6X0dxbkJZVi1HazlETC1mMVZ6dU1ndjRvQ1RSQ212ZjNyS2FUbmotUkhzTDdDc2pIUXpRNlRiVWp0b2tNRGVKVGd2ZTByaW5qQVJ6eEgwcldESlhHbURDdktXODB2cGM1QQ?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "84658c20fc693ca822ad",
+            "title": "North Korea launches ballistic missiles toward sea after military drill it sees as threat - thehindu.com",
+            "source": "Google News Weak-Signal Discovery",
+            "source_class": "low_confidence",
+            "provenance_root": "google_weak_signal",
+            "stance": "warning",
+            "published": "2026-09-12T00:57:13Z",
+            "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQeUc0SkNyLUJXYmpweGRUaTUtR0F0eUI2OVo5R0QxMmNZcklPeXozenhnSnRvUmJueVhPOVNwRW9KVWpZSk41b3ZwczhTbS0teHVpaEFtV01sVi1nX09RM0JnNnZFMmRqSVU2ak1idHNvcmpzT3lEeHZkbS1vajdNZ1NtV1ZGOWdYRm1kaDN6X0dxbkJZVi1HazlETC1mMVZ6dU1ndjRvQ1RSQ212ZjNyS2FUbmotUkhzTDdDc2pIUXpRNlRiVWp0b2tNRGVKVGd2ZTByaW5qQVJ6eEgwcldESlhHbURDdktXODB2cGM1QdIB7wFBVV95cUxQeUc0SkNyLUJXYmpweGRUaTUtR0F0eUI2OVo5R0QxMmNZcklPeXozenhnSnRvUmJueVhPOVNwRW9KVWpZSk41b3ZwczhTbS0teHVpaEFtV01sVi1nX09RM0JnNnZFMmRqSVU2ak1idHNvcmpzT3lEeHZkbS1vajdNZ1NtV1ZGOWdYRm1kaDN6X0dxbkJZVi1HazlETC1mMVZ6dU1ndjRvQ1RSQ212ZjNyS2FUbmotUkhzTDdDc2pIUXpRNlRiVWp0b2tNRGVKVGd2ZTByaW5qQVJ6eEgwcldESlhHbURDdktXODB2cGM1QQ?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "cd9ef9251bebd0065d82",
+            "title": "North Korea launches ballistic missiles toward sea after military drill",
+            "source": "ABC News International",
+            "source_class": "established_media",
+            "provenance_root": "abc_intl",
+            "stance": "report",
+            "published": "2026-09-12T00:36:01Z",
+            "url": "https://abcnews.com/International/wireStory/north-korea-launches-ballistic-missiles-sea-military-drill-136379039",
+            "discovery_only": false
+          }
+        ],
+        "state_affiliated_reporting": false,
+        "discovery_only": false,
+        "branch_analysis": {
+          "current_observation": "North Korea fires short-range ballistic missile toward sea in latest weapons display",
+          "plausible_explanations": [
+            "A genuine INFRA/NUCLEAR/WAR development involving NORTH KOREA is unfolding as reported.",
+            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+          ],
+          "escalation_branch": "Related INFRA/NUCLEAR/WAR indicators spread, become operational, or draw additional actors into the event.",
+          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+          "confirm_indicators": [
+            "A primary record, sensor observation, or on-record official confirmation.",
+            "Matching detail from a genuinely independent provenance root.",
+            "Observable follow-on action consistent with the reported event."
+          ],
+          "falsify_indicators": [
+            "Time-stamped primary evidence incompatible with the claim.",
+            "Independent, technically specific refutation from credible sources.",
+            "Predicted follow-on indicators fail to occur inside the stated window."
+          ],
+          "contradictory_evidence_present": false
+        },
+        "historical_matches": [],
+        "cross_domain_links": [
+          {
+            "claim_id": "claim-da7193d8af38ed11bf",
+            "shared_actors": [],
+            "shared_regions": [
+              "INDO-PACIFIC"
+            ],
+            "domains": [
+              "NUCLEAR",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-b0ae75efd76d19b55d",
+            "shared_actors": [
+              "NORTH KOREA"
+            ],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "INFRA",
+              "NUCLEAR"
+            ]
+          },
+          {
+            "claim_id": "claim-05fafd90170193d8eb",
+            "shared_actors": [],
+            "shared_regions": [
+              "INDO-PACIFIC"
+            ],
+            "domains": [
+              "SECURITY",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-54e7bcd96f5a6b2b58",
+            "shared_actors": [],
+            "shared_regions": [
+              "INDO-PACIFIC"
+            ],
+            "domains": [
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-436eaeb0ef771bd854",
+            "shared_actors": [
+              "NORTH KOREA"
+            ],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ],
+            "domains": [
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-a942ff4cf48821d891",
+            "shared_actors": [],
+            "shared_regions": [
+              "INDO-PACIFIC"
+            ],
+            "domains": [
+              "TERRORISM"
+            ]
+          },
+          {
+            "claim_id": "claim-c18f0436dd7737e8a1",
+            "shared_actors": [
+              "NORTH KOREA"
+            ],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-9c559a33b194ea9361",
+            "shared_actors": [],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ],
+            "domains": [
+              "CYBER",
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-90165ffac8e5154b97",
+            "shared_actors": [],
+            "shared_regions": [
+              "INDO-PACIFIC"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-2dbaccf11e02dc41c7",
+            "shared_actors": [],
+            "shared_regions": [
+              "INDO-PACIFIC"
+            ],
+            "domains": [
+              "POLITICAL",
+              "TERRORISM",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-0c3454e26928e8bc46",
+            "shared_actors": [],
+            "shared_regions": [
+              "INDO-PACIFIC"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "SECURITY"
+            ]
+          },
+          {
+            "claim_id": "claim-2c8f1be4af21fc6970",
+            "shared_actors": [],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "INFRA",
+              "WAR"
+            ]
+          }
+        ],
+        "anomaly_ids": [
+          "anomaly-0be353629d45572b"
+        ],
+        "threat_score": 43,
+        "watch_priority": 59,
+        "audit": {
+          "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
+          "support_count": 11,
+          "contradiction_count": 0,
+          "independent_roots": 3,
+          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+          "material_time_used_for_decay": "2026-09-20T08:07:39Z"
+        }
+      },
       {
         "id": "claim-5b769a7c39f0b6d449",
         "headline": "Trump signs sweeping Russia sanctions law that could slap 100% tariffs on China, India - adaderana.lk",
@@ -60,7 +451,7 @@
           "UNITED STATES"
         ],
         "state": "CREDIBLE REPORT",
-        "confidence": 91,
+        "confidence": 90,
         "confidence_direction": "STABLE",
         "confidence_components": {
           "source_quality": 93,
@@ -547,11 +938,11 @@
         ],
         "anomaly_ids": [
           "anomaly-a762bebe22bbaaea",
-          "anomaly-adfb6dfbd4d52dba",
+          "anomaly-a9afed833a0a2107",
           "anomaly-4f715bc2f954f1e7",
           "anomaly-592f929633d726af"
         ],
-        "threat_score": 26,
+        "threat_score": 25,
         "watch_priority": 82,
         "audit": {
           "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
@@ -844,6 +1235,16 @@
             ]
           },
           {
+            "claim_id": "claim-52c9edf8b54bbde9d5",
+            "shared_actors": [],
+            "shared_regions": [
+              "MIDDLE EAST"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-624f3c741fb6d2bde5",
             "shared_actors": [],
             "shared_regions": [
@@ -864,20 +1265,6 @@
             ],
             "domains": [
               "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-546b5e6f6c880849f2",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA",
-              "SPACE"
             ]
           }
         ],
@@ -914,7 +1301,7 @@
           "145bf7bef277f752487e"
         ],
         "first_seen": "2026-09-17T20:44:37Z",
-        "last_seen": "2026-09-20T07:44:29Z",
+        "last_seen": "2026-09-20T08:20:03Z",
         "material_time": "2026-09-19T20:28:32Z",
         "domains": [
           "ECONOMIC",
@@ -1585,7 +1972,7 @@
         "anomaly_ids": [
           "anomaly-a762bebe22bbaaea",
           "anomaly-4f715bc2f954f1e7",
-          "anomaly-602f9e8dc8412984"
+          "anomaly-0be353629d45572b"
         ],
         "threat_score": 22,
         "watch_priority": 70,
@@ -1642,7 +2029,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 100,
-          "recency": 79,
+          "recency": 78,
           "evidence_type": 79,
           "historical_reliability": 84,
           "claim_maturity": 39
@@ -1948,7 +2335,7 @@
         ],
         "anomaly_ids": [
           "anomaly-a762bebe22bbaaea",
-          "anomaly-adfb6dfbd4d52dba",
+          "anomaly-a9afed833a0a2107",
           "anomaly-592f929633d726af"
         ],
         "threat_score": 20,
@@ -1991,7 +2378,7 @@
           "56f70dc1af5a68329707"
         ],
         "first_seen": "2026-09-19T09:43:58Z",
-        "last_seen": "2026-09-20T07:44:29Z",
+        "last_seen": "2026-09-20T08:20:03Z",
         "material_time": "2026-09-20T04:30:49Z",
         "domains": [
           "CYBER",
@@ -2390,7 +2777,7 @@
         ],
         "anomaly_ids": [
           "anomaly-a762bebe22bbaaea",
-          "anomaly-adfb6dfbd4d52dba"
+          "anomaly-a9afed833a0a2107"
         ],
         "threat_score": 29,
         "watch_priority": 58,
@@ -2530,6 +2917,18 @@
           }
         ],
         "cross_domain_links": [
+          {
+            "claim_id": "claim-b9d9f734fc6f361569",
+            "shared_actors": [],
+            "shared_regions": [
+              "MIDDLE EAST"
+            ],
+            "domains": [
+              "POLITICAL",
+              "SECURITY",
+              "WAR"
+            ]
+          },
           {
             "claim_id": "claim-ed7d5390f4be334436",
             "shared_actors": [
@@ -2673,19 +3072,6 @@
             "domains": [
               "INFRA",
               "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-7964acd3991c71ad80",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA"
             ]
           }
         ],
@@ -2831,6 +3217,18 @@
         ],
         "cross_domain_links": [
           {
+            "claim_id": "claim-b9d9f734fc6f361569",
+            "shared_actors": [],
+            "shared_regions": [
+              "MIDDLE EAST"
+            ],
+            "domains": [
+              "POLITICAL",
+              "SECURITY",
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-ed7d5390f4be334436",
             "shared_actors": [
               "RUSSIA"
@@ -2973,19 +3371,6 @@
             "domains": [
               "INFRA",
               "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-7964acd3991c71ad80",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA"
             ]
           }
         ],
@@ -3414,7 +3799,7 @@
           "565255df09a43ef4c178"
         ],
         "first_seen": "2026-09-18T22:18:44Z",
-        "last_seen": "2026-09-20T07:44:29Z",
+        "last_seen": "2026-09-20T08:20:03Z",
         "material_time": "2026-09-19T09:09:00Z",
         "domains": [
           "ECONOMIC",
@@ -3854,7 +4239,7 @@
         ],
         "anomaly_ids": [
           "anomaly-a762bebe22bbaaea",
-          "anomaly-adfb6dfbd4d52dba",
+          "anomaly-a9afed833a0a2107",
           "anomaly-4f715bc2f954f1e7",
           "anomaly-4b0985b17f6764d2",
           "anomaly-592f929633d726af",
@@ -3915,7 +4300,7 @@
           "corroboration": 25,
           "contradiction": 0,
           "specificity": 74,
-          "recency": 75,
+          "recency": 74,
           "evidence_type": 79,
           "historical_reliability": 84,
           "claim_maturity": 51
@@ -4179,7 +4564,7 @@
         ],
         "anomaly_ids": [
           "anomaly-a762bebe22bbaaea",
-          "anomaly-adfb6dfbd4d52dba"
+          "anomaly-a9afed833a0a2107"
         ],
         "threat_score": 17,
         "watch_priority": 54,
@@ -4191,626 +4576,12 @@
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-17T05:24:20Z"
         }
-      },
-      {
-        "id": "claim-ddb3856e9fd1a3a0d6",
-        "headline": "Iran Battles to Beat the Blockade",
-        "signature_tokens": [
-          "battles",
-          "beat",
-          "blockade",
-          "iran"
-        ],
-        "observation_ids": [
-          "d4a02c6629496a0c79a5",
-          "f4d1cdfe0d3cd92593a5",
-          "690af4d1113132f1df2f",
-          "4e27d93b52e8e19195d3",
-          "f4f7cfeec5fa7c77acbb",
-          "400be0fa88e4cf4d72c6",
-          "084ecc00c49a8b5a2327",
-          "356188847b2023bddc32",
-          "70872a53d91f63729b3f",
-          "44ceef9c887d01ccdebb",
-          "f827b5c74294a7d8ce0d",
-          "dac97b5d4f3d4ab7d1be",
-          "a38e0bb5638c4617ed5c",
-          "6a34a661053e2a2dcdbf",
-          "bb69207632cf011c63ba",
-          "491bedd0b06437f8dc11",
-          "676f12fd02dfd01ef5ea",
-          "f3e841819de4cc3ff652",
-          "7e413d6670a2056e6c7c",
-          "438890cd117b473a378d",
-          "93651c668b30d07b0a35",
-          "3beae8ac68a7ebb4bcbe",
-          "78d84dc9c7bd316435d2",
-          "f64f8d1ce3e6d3155265",
-          "6c395791080ca254cb9a",
-          "e5bc12bbd2f93272a1a7",
-          "060559ecfeace873b17c",
-          "38f810a7b17acac05b30",
-          "a10357284f45396b40a0",
-          "0c0860d82d94482ef115",
-          "b49e69421f420fae2a35",
-          "935d8a3f5c1ef68320ad",
-          "bec153bd56b6aa482c77",
-          "db18ffaee382e5bf73f1",
-          "fbddad128d75a70d448f",
-          "5e4f29a2f3ffcc97a7d9",
-          "6d4d950a2d03365ff247",
-          "189cb9b34ac444bcc1a4",
-          "3becd0b01fbb7bcefee9"
-        ],
-        "first_seen": "2026-09-09T19:17:24Z",
-        "last_seen": "2026-09-20T07:44:29Z",
-        "material_time": "2026-09-20T05:43:58Z",
-        "domains": [
-          "INFRA",
-          "SECURITY",
-          "WAR"
-        ],
-        "regions": [
-          "EUROPE",
-          "IRAN",
-          "MIDDLE EAST",
-          "RUSSIA",
-          "TAIWAN",
-          "UNITED STATES"
-        ],
-        "actors": [
-          "IRAN",
-          "RUSSIA",
-          "UNITED STATES"
-        ],
-        "state": "CREDIBLE REPORT",
-        "confidence": 61,
-        "confidence_direction": "STABLE",
-        "confidence_components": {
-          "source_quality": 81,
-          "independence": 25,
-          "corroboration": 22,
-          "contradiction": 0,
-          "specificity": 65,
-          "recency": 100,
-          "evidence_type": 73,
-          "historical_reliability": 81,
-          "claim_maturity": 35
-        },
-        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "supporting_observation_ids": [
-          "d4a02c6629496a0c79a5",
-          "f4d1cdfe0d3cd92593a5",
-          "690af4d1113132f1df2f",
-          "4e27d93b52e8e19195d3",
-          "f4f7cfeec5fa7c77acbb",
-          "400be0fa88e4cf4d72c6",
-          "084ecc00c49a8b5a2327",
-          "356188847b2023bddc32",
-          "70872a53d91f63729b3f",
-          "44ceef9c887d01ccdebb",
-          "f827b5c74294a7d8ce0d",
-          "dac97b5d4f3d4ab7d1be",
-          "a38e0bb5638c4617ed5c",
-          "6a34a661053e2a2dcdbf",
-          "bb69207632cf011c63ba",
-          "491bedd0b06437f8dc11",
-          "676f12fd02dfd01ef5ea",
-          "f3e841819de4cc3ff652",
-          "7e413d6670a2056e6c7c",
-          "438890cd117b473a378d",
-          "93651c668b30d07b0a35",
-          "3beae8ac68a7ebb4bcbe",
-          "78d84dc9c7bd316435d2",
-          "f64f8d1ce3e6d3155265",
-          "6c395791080ca254cb9a",
-          "e5bc12bbd2f93272a1a7",
-          "060559ecfeace873b17c",
-          "38f810a7b17acac05b30",
-          "a10357284f45396b40a0",
-          "0c0860d82d94482ef115",
-          "b49e69421f420fae2a35",
-          "935d8a3f5c1ef68320ad",
-          "bec153bd56b6aa482c77",
-          "db18ffaee382e5bf73f1",
-          "fbddad128d75a70d448f",
-          "5e4f29a2f3ffcc97a7d9",
-          "6d4d950a2d03365ff247",
-          "189cb9b34ac444bcc1a4",
-          "3becd0b01fbb7bcefee9"
-        ],
-        "contradictory_observation_ids": [],
-        "source_count": 9,
-        "independent_provenance_count": 1,
-        "sources": [
-          "GDELT Global Discovery",
-          "The Maritime Executive",
-          "baomoi.com",
-          "economictimes.indiatimes.com",
-          "maritime-executive.com",
-          "niacouncil.org",
-          "presstv.co.uk",
-          "vietbao.vn",
-          "vnexpress.net"
-        ],
-        "provenance_roots": [
-          "baomoi.com",
-          "economictimes.indiatimes.com",
-          "gdelt_global",
-          "maritime-executive.com",
-          "maritime_exec",
-          "niacouncil.org",
-          "presstv.co.uk",
-          "vietbao.vn",
-          "vnexpress.net"
-        ],
-        "evidence": [
-          {
-            "observation_id": "3becd0b01fbb7bcefee9",
-            "title": "Iran blockade pulls Guam-based attack submarines from western Pacific patrols - postguam.com",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-20T05:43:58Z",
-            "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNTVUyM0pOWTlucWJDb05JdkE0SVBveWJkYUw1Ukw3aGxhMU1IcEREQjRPRGVRa0JQNHdWY0tGV2t6dWVBb0NqMHM1WUZiQmZSWVA3QUViRzFMZjFHR2t0eThFM1l0T0hNZFllR25xcjl5Rm92RXRwV0s3UFgyYnlXZzZCeHB1Wk0wRGNIMzNWUEpQcFRubjQ0aFFIOUNMSDlpQlVzX01BTjhuUHlJalV1aEE2bVBRd3B4WW9kajVXUjJ4YlZqY1BnN1BtTk1uY2tIZExNdUxVMV9TYUNiQ2lxS3h0U3loNjJ3cHlnMWFoUVBKZE9HakE?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "6d4d950a2d03365ff247",
-            "title": "UNGA a 'bastion not to be abandoned', US maritime blockade an act of aggression: Iran FM spox - ISNA News Agency",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-20T02:37:30Z",
-            "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVDBSbTdMNHZ6ZjcwOURQaGlyOVJDdmkybGhNNDl5OExVdlI3SWNzOUU1N1JMWkczcE5aMmVXeGlQdF8wQmRkSUpMMnRYZmhfb09wa0NEXzRsbFJ4eUxqZHI0U1RDN25TRG5ubE85VTBGY3ZBQ1NYanV4Sm9JR3NlV2VBN3JHZEtKcndhckZaTXdmbnNhbUxQbk0yeGlXN2RRTEhaTXFqNVNqbXp50gFOQVVfeXFMTzREc2x6QU5PNGxsS0NwQTZva2U1VWtoa0EzQnh4SHpTLUdSZ3owdUQ5aUczWlVGcUU2Y3dYWGpveVVjVlQyWGp4ejJYbk5B?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "189cb9b34ac444bcc1a4",
-            "title": "UNGA a 'bastion not to be abandoned', US maritime blockade an act of aggression: Iran FM spox - en.isna.ir",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-20T02:37:30Z",
-            "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVDBSbTdMNHZ6ZjcwOURQaGlyOVJDdmkybGhNNDl5OExVdlI3SWNzOUU1N1JMWkczcE5aMmVXeGlQdF8wQmRkSUpMMnRYZmhfb09wa0NEXzRsbFJ4eUxqZHI0U1RDN25TRG5ubE85VTBGY3ZBQ1NYanV4Sm9JR3NlV2VBN3JHZEtKcndhckZaTXdmbnNhbUxQbk0yeGlXN2RRTEhaTXFqNVNqbXp50gFOQVVfeXFMTzREc2x6QU5PNGxsS0NwQTZva2U1VWtoa0EzQnh4SHpTLUdSZ3owdUQ5aUczWlVGcUU2Y3dYWGpveVVjVlQyWGp4ejJYbk5B?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "fbddad128d75a70d448f",
-            "title": "Will shutdowns forced by US blockade damage Iran’s oil wells? - Iran International",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-19T21:15:30Z",
-            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5jMnlyM3NLNHhoTTd6VzY3Q2N0LWhoS2lUTEVjWEZsdXhPUUdGLTUwT2NtYUY3cGlXR2hleU44bm4zTGpKRkV3YjVVLWp4WnQwMnc?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "5e4f29a2f3ffcc97a7d9",
-            "title": "Iran's oil revenue hits two-year high despite US blockade - middleeasteye.net",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-19T17:13:00Z",
-            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZTloOFVNZWEtY0NNNi1faUFWQ01lN0ktTmFuUnJyLTR6cm92VUJZc1JoOHpsVzU1WWM1VF9HeHVVc0RVVHlNTXA5Rmp0RDFjZW8ta3YtT0dYUVh3TzBsR3huSGxyYXRMdzN6ZVRiZW5wWGUyQUZzX1pvaElrTkxjZEFIRW5rb0x4dU5oUy10XzV1MHdCc0RiZklvVGxmTEZsTC1uMWs4YmtpSFI2OGJ3SS0wWQ?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "38f810a7b17acac05b30",
-            "title": "Iran’s Attempts to Get Around the Hormuz Blockade Are Hitting a Wall - WSJ",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-18T14:58:43Z",
-            "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQVFpaVFWblczeEhpQXpHSHQ0VFotUDB3UFJQQTV4RXpBX2dSVllZejV2aGdvZ2QyN1BPSkNQWkFQd1JTenY2anhwR2lZdTE5dnNLUl9KSHVFZ25qYmR6TlB1QUZSSWxBSktTaFFBWGQzTlBlWS1hTHh6cTgwUHBLbExuYjNtOE9ra3RJdmdOT19HLUp4blNFdDlEX0VEa2lvTl9LcEROdkRxRXk5cnNvaFlmMVg?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "db18ffaee382e5bf73f1",
-            "title": "Targeting Russian Diesel, and USS Boxer in the Iran Blockade (From FOX News) - Lexington Institute",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-17T22:18:48Z",
-            "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNnNaWHRNMXA1LTlZTDVyX2dlbUtJZzhyak9OOHdpTVZyWWk1OTlLUTV5TUtUQ3RTc3NpTmhkWVpXb2VCYm5fcXNFU01oNi1QUzE0ZE1xcmc1VVBqWS1UeDZDbjFTY2ZlX1BaS3NpMDR3eDZEZHR5UWdVLXlFai1xTi1IeVFtcUtvdkN0aDc0VEx4SG9ncm55ODg1X2JuNmxMUzNHc3dodEo?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "0c0860d82d94482ef115",
-            "title": "Iran trade plummeting under US blockade, bureaucratic errors - New York Post",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-17T20:56:00Z",
-            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdlBuLXBBSjhKUi1Idi1ESFctZjVRdnM4bk44QXFVLWJEaURxRXQxdEJJbE56S1B0TTl5eV85clppWFo4enVPa0ozZWFWaDhiYkxPSkpfTTlQSVJJX2l3blpGNC1jUlA2R1lUMVJMLVJBMUtSdWtvNks2YlhPRUdod2hrOXdYZWFwVUE4TEt6NVhUZUFlRVBKUDV0UWFfNTVjQ3Nv?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "935d8a3f5c1ef68320ad",
-            "title": "Iran trade plummeting under US blockade, bureaucratic errors - nypost.com",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-17T20:56:00Z",
-            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdlBuLXBBSjhKUi1Idi1ESFctZjVRdnM4bk44QXFVLWJEaURxRXQxdEJJbE56S1B0TTl5eV85clppWFo4enVPa0ozZWFWaDhiYkxPSkpfTTlQSVJJX2l3blpGNC1jUlA2R1lUMVJMLVJBMUtSdWtvNks2YlhPRUdod2hrOXdYZWFwVUE4TEt6NVhUZUFlRVBKUDV0UWFfNTVjQ3Nv?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "a10357284f45396b40a0",
-            "title": "Iran struggles to reroute trade as U.S. blockade disrupts supply lines - JNS.org",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-17T18:29:26Z",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMnUwSkJtNlp1akl3T3FIRjkwd0JJMVpPMDRTTWc5bUpMandoSGVpZXhzalVPdjFJb0pJSUxuQUo5UDBOR1FZdEpPYk4zaUdKYnFOd05PWGRwMW00UDhfNko3a1Q3R2dLT1NBZ0RkcGR6NzlmLW1EUWM2X2xOVDlOLXE1MzY5TUNvRU5QZm1xOGZmRzFxQ1dGcFRBa0MxU3Mycmc?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "bec153bd56b6aa482c77",
-            "title": "Iran struggles to reroute trade as US blockade disrupts supply lines - jns.org",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-17T18:29:26Z",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMnUwSkJtNlp1akl3T3FIRjkwd0JJMVpPMDRTTWc5bUpMandoSGVpZXhzalVPdjFJb0pJSUxuQUo5UDBOR1FZdEpPYk4zaUdKYnFOd05PWGRwMW00UDhfNko3a1Q3R2dLT1NBZ0RkcGR6NzlmLW1EUWM2X2xOVDlOLXE1MzY5TUNvRU5QZm1xOGZmRzFxQ1dGcFRBa0MxU3Mycmc?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "b49e69421f420fae2a35",
-            "title": "Iran’s Attempts to Get Around the Hormuz Blockade Are Hitting a Wall - wsj.com",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-17T02:52:00Z",
-            "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQVFpaVFWblczeEhpQXpHSHQ0VFotUDB3UFJQQTV4RXpBX2dSVllZejV2aGdvZ2QyN1BPSkNQWkFQd1JTenY2anhwR2lZdTE5dnNLUl9KSHVFZ25qYmR6TlB1QUZSSWxBSktTaFFBWGQzTlBlWS1hTHh6cTgwUHBLbExuYjNtOE9ra3RJdmdOT19HLUp4blNFdDlEX0VEa2lvTl9LcEROdkRxRXk5cnNvaFlmMVg?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "060559ecfeace873b17c",
-            "title": "Russia denounces US naval blockade of Iran as ‘completely unacceptable and illegal’ - Tehran Times",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-16T17:56:41Z",
-            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORGE1Wm5XTU5raXViRlpyT0l1X3d2b01xQVgtb1pDUjZOWTBEMzB4eklaSkVKUEFDT21NNmFNU09HYmMwbThjcUhsV2I1bnJiRDJqdEltZExlVDRJOU5yZVpRZlNtY0dVLVBncnZrOE9HaldJblA0UVN6YzVmSXlMellVNnRoRDFfY2FQNWRScTdCZ0xRSThrSXBpOXlTM1ZCdXlXWXNCLTlxZWE5TVE?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "e5bc12bbd2f93272a1a7",
-            "title": "Zakharova: US Naval Blockade against Iran Violates International Law - اسلام تايمز",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-16T09:25:32Z",
-            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQckM1Unl6U3hYTEdnZEQ5X3hQREVmdnhONV9EWHg2VnhlZkZxWUY2Q0VzNVpFQlVTSlVIM0l0V0FVOUxrcXA0aEd5MUF0NXl6R0ZpZ1BiSzVwWEIxaDVyY1BTNE9mbkg5d29CU1gtbHAtTEFqRjAwMTY1QlVLTDJobURyOUpmal9sMXNFem0tQmd1UVNVcURWZmZralZHX2wtUmloYzY2SUpVb1FjZXpz?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "6c395791080ca254cb9a",
-            "title": "US naval blockade against Iran violates international law - Mehr News Agency",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-16T07:23:00Z",
-            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ0xJSmhyNUlueFctdlBvZUpRREJIMGZkSmFnNE1peHBTM3BfU29tVWNOWnozN0MzTUpNOGRpNjhTZi1oMUVkcWE4cEtuaXcwOVFVR2laVFQwT2l5UEY3QkM4STRvQVh6Y2ItTDRSMkhfTzJhVmhiTUpELTk3NmxSalp0NmJaRks5cGhUQU9BLTlJZzFoNkRhVg?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "78d84dc9c7bd316435d2",
-            "title": "Germany's Merz urges Iran not to carry conflict into Iraq, end Hormuz blockade - aa.com.tr",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-15T16:03:49Z",
-            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTUhKRXNZQzNFTzl5ME4tbTI1djZSRVBGazBZQWJLQUE5cXVjN0ZvWmdhbEZNSUtoeGdOYWw3d2lQdnBsUmNONkFfUFRVdUM5bS1UYnVia0xpNkhIT2JHLUN6UDVpSFZocGlFblJTcFVib0t6UWlSejItb1pITGlCQTBUYnI4S2hyQUtVMmtkaVlyekhWa2VtaXQxLXpvOFRvZ3N4YjlXLUdOR214cmg4ekUxd2NDQWpr?oc=5",
-            "discovery_only": true
-          }
-        ],
-        "state_affiliated_reporting": false,
-        "discovery_only": false,
-        "branch_analysis": {
-          "current_observation": "Iran Battles to Beat the Blockade",
-          "plausible_explanations": [
-            "A genuine INFRA/SECURITY/WAR development involving IRAN, RUSSIA, UNITED STATES is unfolding as reported.",
-            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-          ],
-          "escalation_branch": "Related INFRA/SECURITY/WAR indicators spread, become operational, or draw additional actors into the event.",
-          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-          "confirm_indicators": [
-            "A primary record, sensor observation, or on-record official confirmation.",
-            "Matching detail from a genuinely independent provenance root.",
-            "Observable follow-on action consistent with the reported event."
-          ],
-          "falsify_indicators": [
-            "Time-stamped primary evidence incompatible with the claim.",
-            "Independent, technically specific refutation from credible sources.",
-            "Predicted follow-on indicators fail to occur inside the stated window."
-          ],
-          "contradictory_evidence_present": false
-        },
-        "historical_matches": [
-          {
-            "claim_id": "claim-685c7c00fd8defeb85",
-            "headline": "NOAA boosts weather data collection capabilities with new Mesonet contract",
-            "material_time": "2026-08-19T19:20:15Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-f2f896a8377745aae5",
-            "headline": "American tuna gets a boost: Increased bluefin tuna quotas mean more opportunities for U.S. fishermen",
-            "material_time": "2026-08-19T18:01:28Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-ab13de06ed03a68f0a",
-            "headline": "Chinese National Pleads Guilty to Trying to Obtain U.S. Military Equipment",
-            "material_time": "2026-08-10T12:00:00Z",
-            "shared_domains": [
-              "INFRA",
-              "WAR"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-c63cb32ed106a31b1e",
-            "headline": "Homeland Security Task Force: Dual Dominican and French National Admits Role in Firearms Trafficking Scheme",
-            "material_time": "2026-08-05T12:00:00Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-1453116f3488b77a21",
-            "headline": "Turkey-Based Global Director of Sham Charity Arrested and Charged with Conspiring to Provide Material Support to Hamas",
-            "material_time": "2026-07-31T12:00:00Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          }
-        ],
-        "cross_domain_links": [
-          {
-            "claim_id": "claim-b5a34b63d35be614cb",
-            "shared_actors": [],
-            "shared_regions": [
-              "MIDDLE EAST"
-            ],
-            "domains": [
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-3a9f80e6de87294b57",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-16bd6d5d078e5cbc8b",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-1fe736a572828d8ed0",
-            "shared_actors": [
-              "IRAN",
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "MIDDLE EAST",
-              "RUSSIA"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "TERRORISM",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-e8f0348100e183b71f",
-            "shared_actors": [
-              "IRAN",
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "MIDDLE EAST",
-              "RUSSIA"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "TERRORISM",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-4572605179824de245",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-49c1932cf4fc314afb",
-            "shared_actors": [
-              "IRAN",
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "EUROPE",
-              "IRAN",
-              "UNITED STATES"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-c18f0436dd7737e8a1",
-            "shared_actors": [
-              "IRAN",
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "UNITED STATES"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-9c559a33b194ea9361",
-            "shared_actors": [
-              "IRAN",
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "UNITED STATES"
-            ],
-            "domains": [
-              "CYBER",
-              "INFRA",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-a650ca25e0d7e45d68",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-b1202d101c4383cd14",
-            "shared_actors": [
-              "IRAN",
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "UNITED STATES"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-307028a883ce3d1015",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          }
-        ],
-        "anomaly_ids": [
-          "anomaly-a762bebe22bbaaea",
-          "anomaly-4b0985b17f6764d2",
-          "anomaly-592f929633d726af"
-        ],
-        "threat_score": 14,
-        "watch_priority": 65,
-        "audit": {
-          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 39,
-          "contradiction_count": 0,
-          "independent_roots": 1,
-          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-20T05:43:58Z"
-        }
       }
     ]
   },
   "early_warning_pressure": {
     "score": 100,
-    "claim_count": 63,
+    "claim_count": 64,
     "top_claims": [
       {
         "id": "claim-36702df4a2ad817d8b",
@@ -4957,6 +4728,20 @@
             ]
           },
           {
+            "claim_id": "claim-3d2711d0a85daf7ca1",
+            "shared_actors": [
+              "NORTH KOREA"
+            ],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ],
+            "domains": [
+              "INFRA",
+              "NUCLEAR",
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-eb84fadc41cd7b55f9",
             "shared_actors": [
               "CHINA"
@@ -5020,18 +4805,6 @@
             ],
             "domains": [
               "SECURITY",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-05ef3254f1a95e7c52",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
               "WAR"
             ]
           },
@@ -5111,7 +4884,7 @@
         "anomaly_ids": [
           "anomaly-a762bebe22bbaaea",
           "anomaly-4f715bc2f954f1e7",
-          "anomaly-602f9e8dc8412984"
+          "anomaly-0be353629d45572b"
         ],
         "threat_score": 4,
         "watch_priority": 80,
@@ -5960,10 +5733,10 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 67,
+          "recency": 66,
           "evidence_type": 24,
           "historical_reliability": 32,
-          "claim_maturity": 42
+          "claim_maturity": 43
         },
         "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
         "supporting_observation_ids": [
@@ -6471,7 +6244,7 @@
           "ef2f258ec7d75a2f82b4"
         ],
         "first_seen": "2026-09-19T13:43:35Z",
-        "last_seen": "2026-09-20T07:44:29Z",
+        "last_seen": "2026-09-20T08:20:03Z",
         "material_time": "2026-09-20T04:56:24Z",
         "domains": [
           "ECONOMIC",
@@ -6829,7 +6602,7 @@
           "corroboration": 25,
           "contradiction": 0,
           "specificity": 73,
-          "recency": 95,
+          "recency": 94,
           "evidence_type": 40,
           "historical_reliability": 50,
           "claim_maturity": 47
@@ -7165,6 +6938,271 @@
             ]
           },
           {
+            "claim_id": "claim-b9d9f734fc6f361569",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN",
+              "MIDDLE EAST"
+            ],
+            "domains": [
+              "POLITICAL",
+              "SECURITY",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-468751b3224a8e98d3",
+            "shared_actors": [],
+            "shared_regions": [
+              "MIDDLE EAST"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-3f76491a35cdc1617d",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "CYBER",
+              "INFRA",
+              "NUCLEAR",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-711c971a5e74813ed2",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN",
+              "MIDDLE EAST"
+            ],
+            "domains": [
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-4360b38ce095fd229b",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "TERRORISM",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-7964acd3991c71ad80",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-baa15862a5d8fc2bf5",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "INFRA",
+              "NUCLEAR",
+              "WAR"
+            ]
+          }
+        ],
+        "anomaly_ids": [
+          "anomaly-4b0985b17f6764d2"
+        ],
+        "threat_score": 2,
+        "watch_priority": 53,
+        "audit": {
+          "reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
+          "support_count": 27,
+          "contradiction_count": 0,
+          "independent_roots": 1,
+          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+          "material_time_used_for_decay": "2026-09-19T15:57:31Z"
+        }
+      },
+      {
+        "id": "claim-b9d9f734fc6f361569",
+        "headline": "US opts not to back Saudi Arabia in Yemen after meeting Houthi leaders",
+        "signature_tokens": [
+          "arabia",
+          "back",
+          "houthi",
+          "leaders",
+          "meeting",
+          "opts",
+          "saudi",
+          "yemen"
+        ],
+        "observation_ids": [
+          "d66084de4058454b735d",
+          "07a0e7f7bcb404c85e43",
+          "dd2637f3c2945197cd6e",
+          "80b1904b72a9306c9613"
+        ],
+        "first_seen": "2026-09-16T16:46:36Z",
+        "last_seen": "2026-09-18T03:19:24Z",
+        "material_time": "2026-09-17T03:01:03Z",
+        "domains": [
+          "POLITICAL",
+          "SECURITY",
+          "WAR"
+        ],
+        "regions": [
+          "IRAN",
+          "MIDDLE EAST"
+        ],
+        "actors": [
+          "IRAN"
+        ],
+        "state": "UNVERIFIED CLAIM",
+        "confidence": 60,
+        "confidence_direction": "STABLE",
+        "confidence_components": {
+          "source_quality": 58,
+          "independence": 52,
+          "corroboration": 52,
+          "contradiction": 0,
+          "specificity": 63,
+          "recency": 74,
+          "evidence_type": 79,
+          "historical_reliability": 58,
+          "claim_maturity": 51
+        },
+        "classification_reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
+        "supporting_observation_ids": [
+          "d66084de4058454b735d",
+          "07a0e7f7bcb404c85e43",
+          "dd2637f3c2945197cd6e",
+          "80b1904b72a9306c9613"
+        ],
+        "contradictory_observation_ids": [],
+        "source_count": 3,
+        "independent_provenance_count": 2,
+        "sources": [
+          "Google News Weak-Signal Discovery",
+          "Reddit WorldNews Signal",
+          "The Guardian World"
+        ],
+        "provenance_roots": [
+          "google_weak_signal",
+          "guardian_world",
+          "reddit_worldnews"
+        ],
+        "evidence": [
+          {
+            "observation_id": "07a0e7f7bcb404c85e43",
+            "title": "US opts not to back Saudi Arabia in Yemen after meeting Houthi leaders | Yemen",
+            "source": "Reddit WorldNews Signal",
+            "source_class": "low_confidence",
+            "provenance_root": "reddit_worldnews",
+            "stance": "report",
+            "published": "2026-09-17T03:01:03Z",
+            "url": "https://www.reddit.com/r/worldnews/comments/1wii3qh/us_opts_not_to_back_saudi_arabia_in_yemen_after",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "dd2637f3c2945197cd6e",
+            "title": "US opts not to back Saudi Arabia in Yemen after meeting Houthi leaders - The Guardian",
+            "source": "Google News Weak-Signal Discovery",
+            "source_class": "low_confidence",
+            "provenance_root": "google_weak_signal",
+            "stance": "report",
+            "published": "2026-09-17T01:30:00Z",
+            "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQQkJfRE11ZE5JVGZhWkpsblpLMTFwZm94OHExcFFCN2JCdFlYRVIyWFdDTkRVX2pWWFA4cnBoM20taGJSVXlQdHZwaEFWSEtqQ01jTm04T1RuajZiMzNCeUFqUXZsYWs2djZWUDd5NjBqcFF0YW8tMDc5SFlWcjkyY1RsVk9mQ1BYbU9XUkxsN2NyY1NPcm1XOWVXM3IwV3JLV1pjRnV0a2pnSEh4eS15cmdRMzJkN0NvWUMzTDJDbEw?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "80b1904b72a9306c9613",
+            "title": "US opts not to back Saudi Arabia in Yemen after meeting Houthi leaders - theguardian.com",
+            "source": "Google News Weak-Signal Discovery",
+            "source_class": "low_confidence",
+            "provenance_root": "google_weak_signal",
+            "stance": "report",
+            "published": "2026-09-17T01:30:00Z",
+            "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQQkJfRE11ZE5JVGZhWkpsblpLMTFwZm94OHExcFFCN2JCdFlYRVIyWFdDTkRVX2pWWFA4cnBoM20taGJSVXlQdHZwaEFWSEtqQ01jTm04T1RuajZiMzNCeUFqUXZsYWs2djZWUDd5NjBqcFF0YW8tMDc5SFlWcjkyY1RsVk9mQ1BYbU9XUkxsN2NyY1NPcm1XOWVXM3IwV3JLV1pjRnV0a2pnSEh4eS15cmdRMzJkN0NvWUMzTDJDbEw?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "d66084de4058454b735d",
+            "title": "US opts not to back Saudi Arabia in Yemen after meeting Houthi leaders",
+            "source": "The Guardian World",
+            "source_class": "established_media",
+            "provenance_root": "guardian_world",
+            "stance": "report",
+            "published": "2026-09-16T14:56:40Z",
+            "url": "https://www.theguardian.com/world/2026/sep/16/us-officials-decide-against-backing-saudi-arabia-yemen-meeting-houthi-leaders",
+            "discovery_only": false
+          }
+        ],
+        "state_affiliated_reporting": false,
+        "discovery_only": false,
+        "branch_analysis": {
+          "current_observation": "US opts not to back Saudi Arabia in Yemen after meeting Houthi leaders",
+          "plausible_explanations": [
+            "A genuine POLITICAL/SECURITY/WAR development involving IRAN is unfolding as reported.",
+            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+          ],
+          "escalation_branch": "Related POLITICAL/SECURITY/WAR indicators spread, become operational, or draw additional actors into the event.",
+          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+          "confirm_indicators": [
+            "A primary record, sensor observation, or on-record official confirmation.",
+            "Matching detail from a genuinely independent provenance root.",
+            "Observable follow-on action consistent with the reported event."
+          ],
+          "falsify_indicators": [
+            "Time-stamped primary evidence incompatible with the claim.",
+            "Independent, technically specific refutation from credible sources.",
+            "Predicted follow-on indicators fail to occur inside the stated window."
+          ],
+          "contradictory_evidence_present": false
+        },
+        "historical_matches": [
+          {
+            "claim_id": "claim-7bf080d5d0604d497d",
+            "headline": "Journalist targeted by Iran says U.K.'s crackdown on IRGC is \"the happiest day\"",
+            "material_time": "2026-07-17T20:56:00Z",
+            "shared_domains": [
+              "POLITICAL"
+            ],
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ]
+          }
+        ],
+        "cross_domain_links": [
+          {
             "claim_id": "claim-468751b3224a8e98d3",
             "shared_actors": [],
             "shared_regions": [
@@ -7259,20 +7297,84 @@
               "SECURITY",
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-036a9b651a3b582583",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-1594bae9789b6c7637",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "INFRA",
+              "TRAFFICKING",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-9365d79a8f474e60b9",
+            "shared_actors": [],
+            "shared_regions": [
+              "MIDDLE EAST"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-6692682573a6da2d90",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN",
+              "MIDDLE EAST"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "SECURITY",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-b8e53b9495a06ec7ae",
+            "shared_actors": [],
+            "shared_regions": [
+              "MIDDLE EAST"
+            ],
+            "domains": [
+              "CYBER",
+              "POLITICAL"
+            ]
           }
         ],
         "anomaly_ids": [
           "anomaly-4b0985b17f6764d2"
         ],
         "threat_score": 2,
-        "watch_priority": 53,
+        "watch_priority": 50,
         "audit": {
           "reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
-          "support_count": 27,
+          "support_count": 4,
           "contradiction_count": 0,
-          "independent_roots": 1,
+          "independent_roots": 2,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-19T15:57:31Z"
+          "material_time_used_for_decay": "2026-09-17T03:01:03Z"
         }
       },
       {
@@ -7671,7 +7773,7 @@
         ],
         "anomaly_ids": [
           "anomaly-a762bebe22bbaaea",
-          "anomaly-adfb6dfbd4d52dba",
+          "anomaly-a9afed833a0a2107",
           "anomaly-592f929633d726af"
         ],
         "threat_score": 3,
@@ -7863,18 +7965,6 @@
             ]
           },
           {
-            "claim_id": "claim-72b6e94d3697ab2cbf",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR"
-            ]
-          },
-          {
             "claim_id": "claim-32e6fb6b527c4dd89b",
             "shared_actors": [
               "IRAN"
@@ -7946,6 +8036,18 @@
           },
           {
             "claim_id": "claim-736bcaecf67a94793d",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-dfa0625785551f9cb0",
             "shared_actors": [
               "RUSSIA"
             ],
@@ -8151,18 +8253,6 @@
             ]
           },
           {
-            "claim_id": "claim-72b6e94d3697ab2cbf",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR"
-            ]
-          },
-          {
             "claim_id": "claim-06a039999d573afe3c",
             "shared_actors": [
               "RUSSIA"
@@ -8252,6 +8342,18 @@
               "INFRA",
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-99241d764211d1a746",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA"
+            ]
           }
         ],
         "anomaly_ids": [
@@ -8268,316 +8370,6 @@
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-17T12:59:36Z"
         }
-      },
-      {
-        "id": "claim-1149962d61889ceb84",
-        "headline": "Lukoil refinery crisis shows Europe cost of severing ties with Russia — expert",
-        "signature_tokens": [
-          "cost",
-          "crisis",
-          "europe",
-          "expert",
-          "lukoil",
-          "refinery",
-          "russia",
-          "severing",
-          "shows",
-          "ties"
-        ],
-        "observation_ids": [
-          "0261312cb3087640ceb7"
-        ],
-        "first_seen": "2026-09-15T18:20:37Z",
-        "last_seen": "2026-09-16T12:51:23Z",
-        "material_time": "2026-09-15T17:57:51Z",
-        "domains": [
-          "ECONOMIC",
-          "INFRA",
-          "TERRORISM"
-        ],
-        "regions": [
-          "EUROPE",
-          "RUSSIA"
-        ],
-        "actors": [
-          "ISIS",
-          "RUSSIA"
-        ],
-        "state": "UNVERIFIED CLAIM",
-        "confidence": 46,
-        "confidence_direction": "STABLE",
-        "confidence_components": {
-          "source_quality": 50,
-          "independence": 25,
-          "corroboration": 22,
-          "contradiction": 0,
-          "specificity": 79,
-          "recency": 67,
-          "evidence_type": 40,
-          "historical_reliability": 50,
-          "claim_maturity": 42
-        },
-        "classification_reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
-        "supporting_observation_ids": [
-          "0261312cb3087640ceb7"
-        ],
-        "contradictory_observation_ids": [],
-        "source_count": 1,
-        "independent_provenance_count": 1,
-        "sources": [
-          "TASS World"
-        ],
-        "provenance_roots": [
-          "tass"
-        ],
-        "evidence": [
-          {
-            "observation_id": "0261312cb3087640ceb7",
-            "title": "Lukoil refinery crisis shows Europe cost of severing ties with Russia — expert",
-            "source": "TASS World",
-            "source_class": "state_media",
-            "provenance_root": "tass",
-            "stance": "report",
-            "published": "2026-09-15T17:57:51Z",
-            "url": "https://tass.com/economy/2188065",
-            "discovery_only": false
-          }
-        ],
-        "state_affiliated_reporting": true,
-        "discovery_only": false,
-        "branch_analysis": {
-          "current_observation": "Lukoil refinery crisis shows Europe cost of severing ties with Russia — expert",
-          "plausible_explanations": [
-            "A genuine ECONOMIC/INFRA/TERRORISM development involving ISIS, RUSSIA is unfolding as reported.",
-            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-          ],
-          "escalation_branch": "Related ECONOMIC/INFRA/TERRORISM indicators spread, become operational, or draw additional actors into the event.",
-          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-          "confirm_indicators": [
-            "A primary record, sensor observation, or on-record official confirmation.",
-            "Matching detail from a genuinely independent provenance root.",
-            "Observable follow-on action consistent with the reported event."
-          ],
-          "falsify_indicators": [
-            "Time-stamped primary evidence incompatible with the claim.",
-            "Independent, technically specific refutation from credible sources.",
-            "Predicted follow-on indicators fail to occur inside the stated window."
-          ],
-          "contradictory_evidence_present": false
-        },
-        "historical_matches": [
-          {
-            "claim_id": "claim-c13be1899bbec8d248",
-            "headline": "Albany, New York Woman Charged with ISIS-Inspired Terror Plot Targeting New York State Capitol",
-            "material_time": "2026-08-20T12:00:00Z",
-            "shared_domains": [
-              "INFRA",
-              "TERRORISM"
-            ],
-            "shared_actors": [
-              "ISIS"
-            ],
-            "shared_regions": []
-          },
-          {
-            "claim_id": "claim-cf7625f8b461238993",
-            "headline": "Shahed-Type Drones Filmed During Mali Village Attacks",
-            "material_time": "2026-07-24T15:39:05Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ]
-          },
-          {
-            "claim_id": "claim-f9781e8a8f711fa0cd",
-            "headline": "Maryland Man Sentenced for Attempting to Provide Material Support to ISIS",
-            "material_time": "2026-07-08T12:00:00Z",
-            "shared_domains": [
-              "INFRA",
-              "TERRORISM"
-            ],
-            "shared_actors": [
-              "ISIS"
-            ],
-            "shared_regions": []
-          },
-          {
-            "claim_id": "claim-a32995db0403bbdba3",
-            "headline": "Following the Money, Shutting Down Exploitation",
-            "material_time": "2025-09-24T20:55:29Z",
-            "shared_domains": [
-              "INFRA",
-              "TERRORISM"
-            ],
-            "shared_actors": [
-              "ISIS"
-            ],
-            "shared_regions": []
-          }
-        ],
-        "cross_domain_links": [
-          {
-            "claim_id": "claim-72b6e94d3697ab2cbf",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "EUROPE",
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR"
-            ]
-          },
-          {
-            "claim_id": "claim-036a9b651a3b582583",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-06a039999d573afe3c",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-77b34acb49d408e8ea",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-1594bae9789b6c7637",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "EUROPE",
-              "RUSSIA"
-            ],
-            "domains": [
-              "INFRA",
-              "TRAFFICKING",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-1d2b5518ae3bf46d70",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-736bcaecf67a94793d",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-839e94e31351912eb6",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "CYBER"
-            ]
-          },
-          {
-            "claim_id": "claim-bc1bdb7d2bf03076d1",
-            "shared_actors": [
-              "ISIS"
-            ],
-            "shared_regions": [],
-            "domains": [
-              "TERRORISM"
-            ]
-          },
-          {
-            "claim_id": "claim-45038789af8412c49f",
-            "shared_actors": [
-              "ISIS"
-            ],
-            "shared_regions": [],
-            "domains": [
-              "TERRORISM"
-            ]
-          },
-          {
-            "claim_id": "claim-dfa0625785551f9cb0",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "EUROPE",
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-01255df0e9d84229ce",
-            "shared_actors": [
-              "ISIS"
-            ],
-            "shared_regions": [],
-            "domains": [
-              "TERRORISM"
-            ]
-          }
-        ],
-        "anomaly_ids": [],
-        "threat_score": 2,
-        "watch_priority": 44,
-        "audit": {
-          "reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
-          "support_count": 1,
-          "contradiction_count": 0,
-          "independent_roots": 1,
-          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-15T17:57:51Z"
-        }
       }
     ]
   },
@@ -8585,7 +8377,7 @@
     "great_power_direct_clash": 28,
     "alliance_entanglement": 25,
     "multi_theater_coupling": 0,
-    "nuclear_escalation": 77,
+    "nuclear_escalation": 83,
     "military_mobilization": 60,
     "economic_warfare": 100,
     "crisis_control_failure": 0,
@@ -8595,16 +8387,407 @@
     "great_power_direct_clash": 3,
     "alliance_entanglement": 4,
     "multi_theater_coupling": 0,
-    "nuclear_escalation": 12,
+    "nuclear_escalation": 13,
     "military_mobilization": 11,
     "economic_warfare": 149,
     "crisis_control_failure": 0,
-    "hybrid_preparation": 125
+    "hybrid_preparation": 123
   },
   "formula": "Independent-provenance-capped claim contributions; verified and early-warning pressure remain separate.",
   "safeguard": "Republished stories sharing one provenance root cannot multiply pressure; speculative claims never enter Verified Pressure.",
   "disclaimer": "Machine-generated public-source warning indicators, not a probability of world war or an official warning.",
   "top_claims": [
+    {
+      "id": "claim-3d2711d0a85daf7ca1",
+      "headline": "North Korea fires short-range ballistic missile toward sea in latest weapons display",
+      "signature_tokens": [
+        "ballistic",
+        "display",
+        "fires",
+        "korea",
+        "latest",
+        "missile",
+        "north",
+        "sea",
+        "short-range",
+        "toward",
+        "weapons"
+      ],
+      "observation_ids": [
+        "cd9ef9251bebd0065d82",
+        "efb6c20768282cd4caa9",
+        "84658c20fc693ca822ad",
+        "f89447e243375d869ce6",
+        "c7b43dc40518b915f688",
+        "764aa21fe2b26ecaeafc",
+        "d9b07e8f923ee5ec48ba",
+        "2279067585ad2384c071",
+        "3d7e62b5a3218fcc6021",
+        "c7e07c64486a165ecdc5",
+        "e18be6ce1c43f0fc8172"
+      ],
+      "first_seen": "2026-09-12T00:48:04Z",
+      "last_seen": "2026-09-20T08:20:03Z",
+      "material_time": "2026-09-20T08:07:39Z",
+      "domains": [
+        "INFRA",
+        "NUCLEAR",
+        "WAR"
+      ],
+      "regions": [
+        "INDO-PACIFIC",
+        "KOREAN PENINSULA"
+      ],
+      "actors": [
+        "NORTH KOREA"
+      ],
+      "state": "CONFIRMED",
+      "confidence": 82,
+      "confidence_direction": "UP",
+      "confidence_components": {
+        "source_quality": 82,
+        "independence": 79,
+        "corroboration": 88,
+        "contradiction": 0,
+        "specificity": 67,
+        "recency": 100,
+        "evidence_type": 79,
+        "historical_reliability": 81,
+        "claim_maturity": 79
+      },
+      "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
+      "supporting_observation_ids": [
+        "cd9ef9251bebd0065d82",
+        "efb6c20768282cd4caa9",
+        "84658c20fc693ca822ad",
+        "f89447e243375d869ce6",
+        "c7b43dc40518b915f688",
+        "764aa21fe2b26ecaeafc",
+        "d9b07e8f923ee5ec48ba",
+        "2279067585ad2384c071",
+        "3d7e62b5a3218fcc6021",
+        "c7e07c64486a165ecdc5",
+        "e18be6ce1c43f0fc8172"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 4,
+      "independent_provenance_count": 3,
+      "sources": [
+        "ABC News International",
+        "Euronews",
+        "Google News Weak-Signal Discovery",
+        "Japan Times"
+      ],
+      "provenance_roots": [
+        "abc_intl",
+        "euronews",
+        "google_weak_signal",
+        "japan_times"
+      ],
+      "evidence": [
+        {
+          "observation_id": "e18be6ce1c43f0fc8172",
+          "title": "North Korea launches 'suspected ballistic missile' into East Sea",
+          "source": "Euronews",
+          "source_class": "regional_local",
+          "provenance_root": "euronews",
+          "stance": "report",
+          "published": "2026-09-20T08:07:39Z",
+          "url": "https://www.euronews.com/2026/09/20/north-korea-launches-suspected-ballistic-missile-into-east-sea",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "c7e07c64486a165ecdc5",
+          "title": "North Korea fires short-range ballistic missile toward sea in latest weapons display",
+          "source": "ABC News International",
+          "source_class": "established_media",
+          "provenance_root": "abc_intl",
+          "stance": "report",
+          "published": "2026-09-20T07:56:50Z",
+          "url": "https://abcnews.com/International/wireStory/north-korea-fires-short-range-ballistic-missile-sea-136595740",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "2279067585ad2384c071",
+          "title": "North Korea fires off apparent ballistic missile",
+          "source": "Japan Times",
+          "source_class": "regional_local",
+          "provenance_root": "japan_times",
+          "stance": "report",
+          "published": "2026-09-20T06:14:00Z",
+          "url": "https://www.japantimes.co.jp/news/2026/09/20/japan/north-korea-missile-september-20",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "3d7e62b5a3218fcc6021",
+          "title": "North Korea fires ballistic missile into waters outside Japan EEZ",
+          "source": "Japan Times",
+          "source_class": "regional_local",
+          "provenance_root": "japan_times",
+          "stance": "report",
+          "published": "2026-09-20T06:14:00Z",
+          "url": "https://www.japantimes.co.jp/news/2026/09/20/japan/north-korea-missile-september-20",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "f89447e243375d869ce6",
+          "title": "North Korea Threatens Stronger Response to US-Led Military Drills - India News Network",
+          "source": "Google News Weak-Signal Discovery",
+          "source_class": "low_confidence",
+          "provenance_root": "google_weak_signal",
+          "stance": "warning",
+          "published": "2026-09-19T05:43:28Z",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUS1JVlF5MXdXZ2V2dlhMcnNMZVc0a2VwbU51eUVRbW9pbk8xX0cxMUFVTmxybjZIaXBpSjduaE9Qb2xBcGVHTzc3ajB6RW1wYzd1aF9qYXNyUF9EOVNIRDVqQ096b3E0TzY4aF9veHpWaW1IMG1CNjg3eWg4ZXRpR2JWR3YyUEpJdGdkMlhjQVAyWnZ6LW9IV2NBQzdjN0RfXzhLcGVzcEwwd3c?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "c7b43dc40518b915f688",
+          "title": "North Korea Threatens Stronger Response to US-Led Military Drills - indianewsnetwork.com",
+          "source": "Google News Weak-Signal Discovery",
+          "source_class": "low_confidence",
+          "provenance_root": "google_weak_signal",
+          "stance": "warning",
+          "published": "2026-09-19T05:43:28Z",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUS1JVlF5MXdXZ2V2dlhMcnNMZVc0a2VwbU51eUVRbW9pbk8xX0cxMUFVTmxybjZIaXBpSjduaE9Qb2xBcGVHTzc3ajB6RW1wYzd1aF9qYXNyUF9EOVNIRDVqQ096b3E0TzY4aF9veHpWaW1IMG1CNjg3eWg4ZXRpR2JWR3YyUEpJdGdkMlhjQVAyWnZ6LW9IV2NBQzdjN0RfXzhLcGVzcEwwd3c?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "764aa21fe2b26ecaeafc",
+          "title": "North Korea warns of stronger response to US-led military drills in Asia-Pacific - Latest news from Azerbaijan",
+          "source": "Google News Weak-Signal Discovery",
+          "source_class": "low_confidence",
+          "provenance_root": "google_weak_signal",
+          "stance": "report",
+          "published": "2026-09-18T08:41:38Z",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVVluc052bU1zN2dLaEJTTm5JbkNzMmNseFJTOUpFR0JoMUtDcDFHRjM0SkhWRW9YdWVBbEhoT0FZbmxIS3dxM29iLTYwMUtjVDlhazVScXR4ZV9iMWFOT01tLXpmYVg0RE9odWxURDJXUmlhN2NxbWdaSDd0UTIyVzY1bGhDX2VvZ0toLXBBd3QtYWNzSy1rSnVHblotQTQtbjY0?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "d9b07e8f923ee5ec48ba",
+          "title": "North Korea warns of stronger response to US-led military drills in Asia-Pacific - news.az",
+          "source": "Google News Weak-Signal Discovery",
+          "source_class": "low_confidence",
+          "provenance_root": "google_weak_signal",
+          "stance": "report",
+          "published": "2026-09-18T08:41:38Z",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVVluc052bU1zN2dLaEJTTm5JbkNzMmNseFJTOUpFR0JoMUtDcDFHRjM0SkhWRW9YdWVBbEhoT0FZbmxIS3dxM29iLTYwMUtjVDlhazVScXR4ZV9iMWFOT01tLXpmYVg0RE9odWxURDJXUmlhN2NxbWdaSDd0UTIyVzY1bGhDX2VvZ0toLXBBd3QtYWNzSy1rSnVHblotQTQtbjY0?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "efb6c20768282cd4caa9",
+          "title": "North Korea launches ballistic missiles toward sea after military drill it sees as threat - The Hindu",
+          "source": "Google News Weak-Signal Discovery",
+          "source_class": "low_confidence",
+          "provenance_root": "google_weak_signal",
+          "stance": "warning",
+          "published": "2026-09-12T00:57:13Z",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQeUc0SkNyLUJXYmpweGRUaTUtR0F0eUI2OVo5R0QxMmNZcklPeXozenhnSnRvUmJueVhPOVNwRW9KVWpZSk41b3ZwczhTbS0teHVpaEFtV01sVi1nX09RM0JnNnZFMmRqSVU2ak1idHNvcmpzT3lEeHZkbS1vajdNZ1NtV1ZGOWdYRm1kaDN6X0dxbkJZVi1HazlETC1mMVZ6dU1ndjRvQ1RSQ212ZjNyS2FUbmotUkhzTDdDc2pIUXpRNlRiVWp0b2tNRGVKVGd2ZTByaW5qQVJ6eEgwcldESlhHbURDdktXODB2cGM1QdIB7wFBVV95cUxQeUc0SkNyLUJXYmpweGRUaTUtR0F0eUI2OVo5R0QxMmNZcklPeXozenhnSnRvUmJueVhPOVNwRW9KVWpZSk41b3ZwczhTbS0teHVpaEFtV01sVi1nX09RM0JnNnZFMmRqSVU2ak1idHNvcmpzT3lEeHZkbS1vajdNZ1NtV1ZGOWdYRm1kaDN6X0dxbkJZVi1HazlETC1mMVZ6dU1ndjRvQ1RSQ212ZjNyS2FUbmotUkhzTDdDc2pIUXpRNlRiVWp0b2tNRGVKVGd2ZTByaW5qQVJ6eEgwcldESlhHbURDdktXODB2cGM1QQ?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "84658c20fc693ca822ad",
+          "title": "North Korea launches ballistic missiles toward sea after military drill it sees as threat - thehindu.com",
+          "source": "Google News Weak-Signal Discovery",
+          "source_class": "low_confidence",
+          "provenance_root": "google_weak_signal",
+          "stance": "warning",
+          "published": "2026-09-12T00:57:13Z",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQeUc0SkNyLUJXYmpweGRUaTUtR0F0eUI2OVo5R0QxMmNZcklPeXozenhnSnRvUmJueVhPOVNwRW9KVWpZSk41b3ZwczhTbS0teHVpaEFtV01sVi1nX09RM0JnNnZFMmRqSVU2ak1idHNvcmpzT3lEeHZkbS1vajdNZ1NtV1ZGOWdYRm1kaDN6X0dxbkJZVi1HazlETC1mMVZ6dU1ndjRvQ1RSQ212ZjNyS2FUbmotUkhzTDdDc2pIUXpRNlRiVWp0b2tNRGVKVGd2ZTByaW5qQVJ6eEgwcldESlhHbURDdktXODB2cGM1QdIB7wFBVV95cUxQeUc0SkNyLUJXYmpweGRUaTUtR0F0eUI2OVo5R0QxMmNZcklPeXozenhnSnRvUmJueVhPOVNwRW9KVWpZSk41b3ZwczhTbS0teHVpaEFtV01sVi1nX09RM0JnNnZFMmRqSVU2ak1idHNvcmpzT3lEeHZkbS1vajdNZ1NtV1ZGOWdYRm1kaDN6X0dxbkJZVi1HazlETC1mMVZ6dU1ndjRvQ1RSQ212ZjNyS2FUbmotUkhzTDdDc2pIUXpRNlRiVWp0b2tNRGVKVGd2ZTByaW5qQVJ6eEgwcldESlhHbURDdktXODB2cGM1QQ?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "cd9ef9251bebd0065d82",
+          "title": "North Korea launches ballistic missiles toward sea after military drill",
+          "source": "ABC News International",
+          "source_class": "established_media",
+          "provenance_root": "abc_intl",
+          "stance": "report",
+          "published": "2026-09-12T00:36:01Z",
+          "url": "https://abcnews.com/International/wireStory/north-korea-launches-ballistic-missiles-sea-military-drill-136379039",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "North Korea fires short-range ballistic missile toward sea in latest weapons display",
+        "plausible_explanations": [
+          "A genuine INFRA/NUCLEAR/WAR development involving NORTH KOREA is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related INFRA/NUCLEAR/WAR indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-da7193d8af38ed11bf",
+          "shared_actors": [],
+          "shared_regions": [
+            "INDO-PACIFIC"
+          ],
+          "domains": [
+            "NUCLEAR",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-b0ae75efd76d19b55d",
+          "shared_actors": [
+            "NORTH KOREA"
+          ],
+          "shared_regions": [
+            "KOREAN PENINSULA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "INFRA",
+            "NUCLEAR"
+          ]
+        },
+        {
+          "claim_id": "claim-05fafd90170193d8eb",
+          "shared_actors": [],
+          "shared_regions": [
+            "INDO-PACIFIC"
+          ],
+          "domains": [
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-54e7bcd96f5a6b2b58",
+          "shared_actors": [],
+          "shared_regions": [
+            "INDO-PACIFIC"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-436eaeb0ef771bd854",
+          "shared_actors": [
+            "NORTH KOREA"
+          ],
+          "shared_regions": [
+            "KOREAN PENINSULA"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-a942ff4cf48821d891",
+          "shared_actors": [],
+          "shared_regions": [
+            "INDO-PACIFIC"
+          ],
+          "domains": [
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-c18f0436dd7737e8a1",
+          "shared_actors": [
+            "NORTH KOREA"
+          ],
+          "shared_regions": [
+            "KOREAN PENINSULA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-9c559a33b194ea9361",
+          "shared_actors": [],
+          "shared_regions": [
+            "KOREAN PENINSULA"
+          ],
+          "domains": [
+            "CYBER",
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-90165ffac8e5154b97",
+          "shared_actors": [],
+          "shared_regions": [
+            "INDO-PACIFIC"
+          ],
+          "domains": [
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-2dbaccf11e02dc41c7",
+          "shared_actors": [],
+          "shared_regions": [
+            "INDO-PACIFIC"
+          ],
+          "domains": [
+            "POLITICAL",
+            "TERRORISM",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-0c3454e26928e8bc46",
+          "shared_actors": [],
+          "shared_regions": [
+            "INDO-PACIFIC"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-2c8f1be4af21fc6970",
+          "shared_actors": [],
+          "shared_regions": [
+            "KOREAN PENINSULA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "INFRA",
+            "WAR"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-0be353629d45572b"
+      ],
+      "threat_score": 43,
+      "watch_priority": 59,
+      "audit": {
+        "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
+        "support_count": 11,
+        "contradiction_count": 0,
+        "independent_roots": 3,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-20T08:07:39Z"
+      }
+    },
     {
       "id": "claim-5b769a7c39f0b6d449",
       "headline": "Trump signs sweeping Russia sanctions law that could slap 100% tariffs on China, India - adaderana.lk",
@@ -8659,7 +8842,7 @@
         "UNITED STATES"
       ],
       "state": "CREDIBLE REPORT",
-      "confidence": 91,
+      "confidence": 90,
       "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 93,
@@ -9146,11 +9329,11 @@
       ],
       "anomaly_ids": [
         "anomaly-a762bebe22bbaaea",
-        "anomaly-adfb6dfbd4d52dba",
+        "anomaly-a9afed833a0a2107",
         "anomaly-4f715bc2f954f1e7",
         "anomaly-592f929633d726af"
       ],
-      "threat_score": 26,
+      "threat_score": 25,
       "watch_priority": 82,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
@@ -9443,6 +9626,16 @@
           ]
         },
         {
+          "claim_id": "claim-52c9edf8b54bbde9d5",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-624f3c741fb6d2bde5",
           "shared_actors": [],
           "shared_regions": [
@@ -9463,20 +9656,6 @@
           ],
           "domains": [
             "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-546b5e6f6c880849f2",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA",
-            "SPACE"
           ]
         }
       ],
@@ -9513,7 +9692,7 @@
         "145bf7bef277f752487e"
       ],
       "first_seen": "2026-09-17T20:44:37Z",
-      "last_seen": "2026-09-20T07:44:29Z",
+      "last_seen": "2026-09-20T08:20:03Z",
       "material_time": "2026-09-19T20:28:32Z",
       "domains": [
         "ECONOMIC",
@@ -10184,7 +10363,7 @@
       "anomaly_ids": [
         "anomaly-a762bebe22bbaaea",
         "anomaly-4f715bc2f954f1e7",
-        "anomaly-602f9e8dc8412984"
+        "anomaly-0be353629d45572b"
       ],
       "threat_score": 22,
       "watch_priority": 70,
@@ -10241,7 +10420,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 100,
-        "recency": 79,
+        "recency": 78,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 39
@@ -10547,7 +10726,7 @@
       ],
       "anomaly_ids": [
         "anomaly-a762bebe22bbaaea",
-        "anomaly-adfb6dfbd4d52dba",
+        "anomaly-a9afed833a0a2107",
         "anomaly-592f929633d726af"
       ],
       "threat_score": 20,
@@ -10590,7 +10769,7 @@
         "56f70dc1af5a68329707"
       ],
       "first_seen": "2026-09-19T09:43:58Z",
-      "last_seen": "2026-09-20T07:44:29Z",
+      "last_seen": "2026-09-20T08:20:03Z",
       "material_time": "2026-09-20T04:30:49Z",
       "domains": [
         "CYBER",
@@ -10989,7 +11168,7 @@
       ],
       "anomaly_ids": [
         "anomaly-a762bebe22bbaaea",
-        "anomaly-adfb6dfbd4d52dba"
+        "anomaly-a9afed833a0a2107"
       ],
       "threat_score": 29,
       "watch_priority": 58,
@@ -11129,6 +11308,18 @@
         }
       ],
       "cross_domain_links": [
+        {
+          "claim_id": "claim-b9d9f734fc6f361569",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY",
+            "WAR"
+          ]
+        },
         {
           "claim_id": "claim-ed7d5390f4be334436",
           "shared_actors": [
@@ -11272,19 +11463,6 @@
           "domains": [
             "INFRA",
             "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-7964acd3991c71ad80",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA"
           ]
         }
       ],
@@ -11430,6 +11608,18 @@
       ],
       "cross_domain_links": [
         {
+          "claim_id": "claim-b9d9f734fc6f361569",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-ed7d5390f4be334436",
           "shared_actors": [
             "RUSSIA"
@@ -11572,19 +11762,6 @@
           "domains": [
             "INFRA",
             "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-7964acd3991c71ad80",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA"
           ]
         }
       ],
@@ -12013,7 +12190,7 @@
         "565255df09a43ef4c178"
       ],
       "first_seen": "2026-09-18T22:18:44Z",
-      "last_seen": "2026-09-20T07:44:29Z",
+      "last_seen": "2026-09-20T08:20:03Z",
       "material_time": "2026-09-19T09:09:00Z",
       "domains": [
         "ECONOMIC",
@@ -12453,7 +12630,7 @@
       ],
       "anomaly_ids": [
         "anomaly-a762bebe22bbaaea",
-        "anomaly-adfb6dfbd4d52dba",
+        "anomaly-a9afed833a0a2107",
         "anomaly-4f715bc2f954f1e7",
         "anomaly-4b0985b17f6764d2",
         "anomaly-592f929633d726af",
@@ -12514,7 +12691,7 @@
         "corroboration": 25,
         "contradiction": 0,
         "specificity": 74,
-        "recency": 75,
+        "recency": 74,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 51
@@ -12778,7 +12955,7 @@
       ],
       "anomaly_ids": [
         "anomaly-a762bebe22bbaaea",
-        "anomaly-adfb6dfbd4d52dba"
+        "anomaly-a9afed833a0a2107"
       ],
       "threat_score": 17,
       "watch_priority": 54,
@@ -12842,7 +13019,7 @@
         "3becd0b01fbb7bcefee9"
       ],
       "first_seen": "2026-09-09T19:17:24Z",
-      "last_seen": "2026-09-20T07:44:29Z",
+      "last_seen": "2026-09-20T08:20:03Z",
       "material_time": "2026-09-20T05:43:58Z",
       "domains": [
         "INFRA",
@@ -14119,7 +14296,7 @@
         "36a560c152273c7f3cbc"
       ],
       "first_seen": "2026-09-16T03:19:45Z",
-      "last_seen": "2026-09-20T07:44:29Z",
+      "last_seen": "2026-09-20T08:20:03Z",
       "material_time": "2026-09-17T21:36:57Z",
       "domains": [
         "CYBER",
@@ -14571,324 +14748,6 @@
         "independent_roots": 4,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-17T21:36:57Z"
-      }
-    },
-    {
-      "id": "claim-5e92946c9b84171880",
-      "headline": "Sources say Australia withdrew from West Bank sanctions talks ahead of statement",
-      "signature_tokens": [
-        "ahead",
-        "australia",
-        "bank",
-        "sanctions",
-        "say",
-        "sources",
-        "statement",
-        "talks",
-        "west",
-        "withdrew"
-      ],
-      "observation_ids": [
-        "cb28a25dcd2178008e53",
-        "2a7f535573d34d01682b",
-        "00e5dda75d478b4446ae",
-        "7ea5a41fba4817d549be"
-      ],
-      "first_seen": "2026-09-10T10:46:07Z",
-      "last_seen": "2026-09-18T22:18:44Z",
-      "material_time": "2026-09-18T18:47:19Z",
-      "domains": [
-        "ECONOMIC",
-        "INFRA",
-        "TERRORISM"
-      ],
-      "regions": [
-        "ISRAEL/PALESTINE"
-      ],
-      "actors": [
-        "ISRAEL"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 72,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 84,
-        "independence": 52,
-        "corroboration": 58,
-        "contradiction": 0,
-        "specificity": 72,
-        "recency": 86,
-        "evidence_type": 67,
-        "historical_reliability": 83,
-        "claim_maturity": 70
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "cb28a25dcd2178008e53",
-        "2a7f535573d34d01682b",
-        "00e5dda75d478b4446ae",
-        "7ea5a41fba4817d549be"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 2,
-      "independent_provenance_count": 2,
-      "sources": [
-        "ABC Australia World",
-        "Euronews"
-      ],
-      "provenance_roots": [
-        "abc_australia",
-        "euronews"
-      ],
-      "evidence": [
-        {
-          "observation_id": "2a7f535573d34d01682b",
-          "title": "Sources say Australia withdrew from West Bank sanctions talks ahead of statement",
-          "source": "ABC Australia World",
-          "source_class": "regional_local",
-          "provenance_root": "abc_australia",
-          "stance": "speculation",
-          "published": "2026-09-18T18:47:19Z",
-          "url": "https://www.abc.net.au/news/2026-09-19/uk-west-bank-sanctions-bloc-expected-australia-to-join/107159388",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "00e5dda75d478b4446ae",
-          "title": "Australia withdrew from sanctions statement, leaving EU states disappointed",
-          "source": "ABC Australia World",
-          "source_class": "regional_local",
-          "provenance_root": "abc_australia",
-          "stance": "report",
-          "published": "2026-09-18T18:47:19Z",
-          "url": "https://www.abc.net.au/news/2026-09-19/uk-west-bank-sanctions-bloc-expected-australia-to-join/107159388",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "7ea5a41fba4817d549be",
-          "title": "Australia's sanctions statement withdrawl leaves EU states 'disappointed'",
-          "source": "ABC Australia World",
-          "source_class": "regional_local",
-          "provenance_root": "abc_australia",
-          "stance": "report",
-          "published": "2026-09-18T18:47:19Z",
-          "url": "https://www.abc.net.au/news/2026-09-19/uk-west-bank-sanctions-bloc-expected-australia-to-join/107159388",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "cb28a25dcd2178008e53",
-          "title": "11 European nations and Canada announce trade sanctions on Israeli settlements in the West Bank",
-          "source": "Euronews",
-          "source_class": "regional_local",
-          "provenance_root": "euronews",
-          "stance": "allegation",
-          "published": "2026-09-08T15:03:38Z",
-          "url": "https://www.euronews.com/2026/09/08/12-nations-announce-trade-sanctions-on-israeli-settlements-in-the-west-bank",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Sources say Australia withdrew from West Bank sanctions talks ahead of statement",
-        "plausible_explanations": [
-          "A genuine ECONOMIC/INFRA/TERRORISM development involving ISRAEL is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related ECONOMIC/INFRA/TERRORISM indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [
-        {
-          "claim_id": "claim-1453116f3488b77a21",
-          "headline": "Turkey-Based Global Director of Sham Charity Arrested and Charged with Conspiring to Provide Material Support to Hamas",
-          "material_time": "2026-07-31T12:00:00Z",
-          "shared_domains": [
-            "INFRA",
-            "TERRORISM"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ]
-        }
-      ],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-0c3454e26928e8bc46",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-3d549bb9b40a00dde8",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "TERRORISM",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-8c2df0f0e4567bd041",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-79f3e8fdf653e5a865",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-4798e88fd18bfc6a27",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-c338956bce40982e95",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-b334a6d5a1a4cc7fe3",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "INFRA",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-d9079dc282dcf59bdb",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "HUMANITARIAN",
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-7d587850dc0d30da87",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "INFRA",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-263d0b0dd70192f6e4",
-          "shared_actors": [],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-2f3e3592c572b1d092",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-a0c4a25b191d18070f",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-012f3dc2f19453bb"
-      ],
-      "threat_score": 17,
-      "watch_priority": 45,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 4,
-        "contradiction_count": 0,
-        "independent_roots": 2,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-18T18:47:19Z"
       }
     }
   ]
