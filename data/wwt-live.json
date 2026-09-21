@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T18:49:32Z",
+  "generated_at": "2026-09-21T19:18:17Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 60,
   "verified_pressure": {
@@ -40,7 +40,7 @@
           "c568cfc8e151e8078205"
         ],
         "first_seen": "2026-09-12T00:48:04Z",
-        "last_seen": "2026-09-21T18:49:32Z",
+        "last_seen": "2026-09-21T19:18:17Z",
         "material_time": "2026-09-20T10:04:28Z",
         "domains": [
           "INFRA",
@@ -833,20 +833,17 @@
       },
       {
         "id": "claim-e7e81db966fe882c70",
-        "headline": "Early results show Russia's main Kremlin party dominating tightly controlled parliamentary vote - AP News",
+        "headline": "The main Kremlin party wins tighter control of parliament in Russia - 1News",
         "signature_tokens": [
-          "controlled",
-          "dominating",
-          "early",
+          "1news",
+          "control",
           "kremlin",
           "main",
-          "parliamentary",
+          "parliament",
           "party",
-          "results",
           "russia",
-          "show",
-          "tightly",
-          "vote"
+          "tighter",
+          "wins"
         ],
         "observation_ids": [
           "488b7a6c506f7369e21e",
@@ -865,11 +862,12 @@
           "6bcaae43e225acd13268",
           "0ccd661fb301467dbe78",
           "b0d514d3508cf8400d20",
-          "c37d847112bcb7e227c7"
+          "c37d847112bcb7e227c7",
+          "f545d3d4edfd33a7e2ba"
         ],
         "first_seen": "2026-09-18T06:24:32Z",
-        "last_seen": "2026-09-21T18:49:32Z",
-        "material_time": "2026-09-21T17:08:27Z",
+        "last_seen": "2026-09-21T19:18:17Z",
+        "material_time": "2026-09-21T18:59:36Z",
         "domains": [
           "CYBER",
           "INFRA",
@@ -888,14 +886,14 @@
         "confidence": 91,
         "confidence_direction": "STABLE",
         "confidence_components": {
-          "source_quality": 92,
+          "source_quality": 94,
           "independence": 100,
           "corroboration": 100,
           "contradiction": 0,
           "specificity": 73,
           "recency": 100,
           "evidence_type": 79,
-          "historical_reliability": 75,
+          "historical_reliability": 76,
           "claim_maturity": 100
         },
         "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
@@ -916,7 +914,8 @@
           "6bcaae43e225acd13268",
           "0ccd661fb301467dbe78",
           "b0d514d3508cf8400d20",
-          "c37d847112bcb7e227c7"
+          "c37d847112bcb7e227c7",
+          "f545d3d4edfd33a7e2ba"
         ],
         "contradictory_observation_ids": [],
         "source_count": 9,
@@ -944,6 +943,17 @@
           "wire:ap_top"
         ],
         "evidence": [
+          {
+            "observation_id": "f545d3d4edfd33a7e2ba",
+            "title": "The main Kremlin party wins tighter control of parliament in Russia - 1News",
+            "source": "Associated Press Top News",
+            "source_class": "wire",
+            "provenance_root": "wire:ap_top",
+            "stance": "report",
+            "published": "2026-09-21T18:59:36Z",
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSllqVEtOdjd0V21YenNyZEd5RVZ2czdBMHVyU3k3cTFab3JnQXlXMzBfQUhzVlVxbFA4aDJ6RTd3ZXRTT2xBV1J0MU96S2hucDZuM0xOalE5T0N3UlAwVE5TSEw3UmZtQi1KbXFkMkpCc09YcnZvTDNkbllFdENtbXQyejBmU2x2QVVxQnVUQTVFeUN3MTlQS1lULWd6VWQxQ3FhZVdR?oc=5",
+            "discovery_only": false
+          },
           {
             "observation_id": "c37d847112bcb7e227c7",
             "title": "Russia's election is over. Could mobilization be next?",
@@ -1108,23 +1118,12 @@
             "published": "2026-09-18T12:26:46Z",
             "url": "https://www.aljazeera.com/news/2026/9/18/the-view-from-russia-no-party-can-be-antiwar-in-parliamentary-election?traffic_source=rss",
             "discovery_only": false
-          },
-          {
-            "observation_id": "e392c559c29b23f182a1",
-            "title": "Ukraine fires drone barrage as Russia launches elections",
-            "source": "Al Jazeera English",
-            "source_class": "established_media",
-            "provenance_root": "aljazeera",
-            "stance": "report",
-            "published": "2026-09-18T10:28:17Z",
-            "url": "https://www.aljazeera.com/news/2026/9/18/ukraine-fires-drone-barrage-as-russia-launches-elections?traffic_source=rss",
-            "discovery_only": false
           }
         ],
         "state_affiliated_reporting": false,
         "discovery_only": false,
         "branch_analysis": {
-          "current_observation": "Early results show Russia's main Kremlin party dominating tightly controlled parliamentary vote - AP News",
+          "current_observation": "The main Kremlin party wins tighter control of parliament in Russia - 1News",
           "plausible_explanations": [
             "A genuine CYBER/INFRA/POLITICAL development involving RUSSIA, UKRAINE is unfolding as reported.",
             "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
@@ -1336,11 +1335,11 @@
         "watch_priority": 64,
         "audit": {
           "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-          "support_count": 17,
+          "support_count": 18,
           "contradiction_count": 0,
           "independent_roots": 8,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-21T17:08:27Z"
+          "material_time_used_for_decay": "2026-09-21T18:59:36Z"
         }
       },
       {
@@ -1366,7 +1365,7 @@
           "cfc8844172ddf5c21fc8"
         ],
         "first_seen": "2026-09-20T03:20:11Z",
-        "last_seen": "2026-09-21T18:49:32Z",
+        "last_seen": "2026-09-21T19:18:17Z",
         "material_time": "2026-09-21T11:04:47Z",
         "domains": [
           "CYBER",
@@ -1383,7 +1382,7 @@
           "UKRAINE"
         ],
         "state": "CONFIRMED",
-        "confidence": 89,
+        "confidence": 88,
         "confidence_direction": "STABLE",
         "confidence_components": {
           "source_quality": 84,
@@ -2268,7 +2267,7 @@
         "anomaly_ids": [
           "anomaly-630ea46d6544dc82",
           "anomaly-aea83e308f4e3dad",
-          "anomaly-2ec325dd9ae58bc4",
+          "anomaly-21c4ecba43457619",
           "anomaly-0a7e438a214e0370"
         ],
         "threat_score": 25,
@@ -2315,7 +2314,7 @@
           "00aeb2c5dd734bc61963"
         ],
         "first_seen": "2026-09-19T09:43:58Z",
-        "last_seen": "2026-09-21T18:49:32Z",
+        "last_seen": "2026-09-21T19:18:17Z",
         "material_time": "2026-09-21T10:42:53Z",
         "domains": [
           "CYBER",
@@ -2805,7 +2804,7 @@
           "02a4ba58268ac4c2befc"
         ],
         "first_seen": "2026-09-21T06:28:04Z",
-        "last_seen": "2026-09-21T18:49:32Z",
+        "last_seen": "2026-09-21T19:18:17Z",
         "material_time": "2026-09-21T09:38:13Z",
         "domains": [
           "CYBER",
@@ -3487,7 +3486,7 @@
         "anomaly_ids": [
           "anomaly-2c333f0532b4aeee",
           "anomaly-630ea46d6544dc82",
-          "anomaly-2ec325dd9ae58bc4",
+          "anomaly-21c4ecba43457619",
           "anomaly-0a7e438a214e0370"
         ],
         "threat_score": 26,
@@ -3738,6 +3737,21 @@
             ]
           },
           {
+            "claim_id": "claim-1478b763fc41b4f9a9",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "CYBER",
+              "ECONOMIC",
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-1f717d1259a59e0552",
             "shared_actors": [
               "RUSSIA"
@@ -3777,19 +3791,6 @@
               "INFRA",
               "POLITICAL",
               "TERRORISM",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-50b15fc983b1960d70",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "SECURITY",
               "WAR"
             ]
           }
@@ -4129,6 +4130,23 @@
             ]
           },
           {
+            "claim_id": "claim-1478b763fc41b4f9a9",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "CYBER",
+              "ECONOMIC",
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-1f717d1259a59e0552",
             "shared_actors": [
               "RUSSIA"
@@ -4142,14 +4160,305 @@
               "POLITICAL",
               "SECURITY"
             ]
+          }
+        ],
+        "anomaly_ids": [],
+        "threat_score": 20,
+        "watch_priority": 48,
+        "audit": {
+          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+          "support_count": 1,
+          "contradiction_count": 0,
+          "independent_roots": 1,
+          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+          "material_time_used_for_decay": "2026-09-17T18:50:04Z"
+        }
+      },
+      {
+        "id": "claim-1478b763fc41b4f9a9",
+        "headline": "Live: Putin's party dominates in elections, Moscow vows revenge after massive drone attack",
+        "signature_tokens": [
+          "attack",
+          "dominates",
+          "drone",
+          "elections",
+          "live",
+          "massive",
+          "moscow",
+          "party",
+          "putin",
+          "revenge",
+          "vows"
+        ],
+        "observation_ids": [
+          "333bb745105e938089ed",
+          "89cd6bbe9eb0f4ccd650"
+        ],
+        "first_seen": "2026-09-21T05:19:56Z",
+        "last_seen": "2026-09-21T19:18:17Z",
+        "material_time": "2026-09-21T19:17:03Z",
+        "domains": [
+          "CYBER",
+          "ECONOMIC",
+          "POLITICAL",
+          "WAR"
+        ],
+        "regions": [
+          "RUSSIA",
+          "UKRAINE"
+        ],
+        "actors": [
+          "RUSSIA",
+          "UKRAINE"
+        ],
+        "state": "CREDIBLE REPORT",
+        "confidence": 72,
+        "confidence_direction": "UP",
+        "confidence_components": {
+          "source_quality": 82,
+          "independence": 52,
+          "corroboration": 52,
+          "contradiction": 0,
+          "specificity": 77,
+          "recency": 100,
+          "evidence_type": 79,
+          "historical_reliability": 82,
+          "claim_maturity": 46
+        },
+        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "supporting_observation_ids": [
+          "333bb745105e938089ed",
+          "89cd6bbe9eb0f4ccd650"
+        ],
+        "contradictory_observation_ids": [],
+        "source_count": 2,
+        "independent_provenance_count": 2,
+        "sources": [
+          "Euronews",
+          "France 24 World"
+        ],
+        "provenance_roots": [
+          "euronews",
+          "france24"
+        ],
+        "evidence": [
+          {
+            "observation_id": "89cd6bbe9eb0f4ccd650",
+            "title": "Putin's party wins record Duma majority in Kremlin-controlled elections as EU vows sanctions",
+            "source": "Euronews",
+            "source_class": "regional_local",
+            "provenance_root": "euronews",
+            "stance": "report",
+            "published": "2026-09-21T19:17:03Z",
+            "url": "https://www.euronews.com/2026/09/21/putins-party-wins-record-duma-majority-in-kremlin-controlled-elections-as-eu-vows-sanction",
+            "discovery_only": false
           },
           {
-            "claim_id": "claim-91aa79217efbeb3fb3",
+            "observation_id": "333bb745105e938089ed",
+            "title": "Live: Putin's party dominates in elections, Moscow vows revenge after massive drone attack",
+            "source": "France 24 World",
+            "source_class": "established_media",
+            "provenance_root": "france24",
+            "stance": "report",
+            "published": "2026-09-21T02:28:32Z",
+            "url": "https://www.france24.com/en/europe/20260921-live-united-russia-dominates-in-elections-moscow-vows-revenge-after-massive-drone-attack",
+            "discovery_only": false
+          }
+        ],
+        "state_affiliated_reporting": false,
+        "discovery_only": false,
+        "branch_analysis": {
+          "current_observation": "Live: Putin's party dominates in elections, Moscow vows revenge after massive drone attack",
+          "plausible_explanations": [
+            "A genuine CYBER/ECONOMIC/POLITICAL development involving RUSSIA, UKRAINE is unfolding as reported.",
+            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+          ],
+          "escalation_branch": "Related CYBER/ECONOMIC/POLITICAL indicators spread, become operational, or draw additional actors into the event.",
+          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+          "confirm_indicators": [
+            "A primary record, sensor observation, or on-record official confirmation.",
+            "Matching detail from a genuinely independent provenance root.",
+            "Observable follow-on action consistent with the reported event."
+          ],
+          "falsify_indicators": [
+            "Time-stamped primary evidence incompatible with the claim.",
+            "Independent, technically specific refutation from credible sources.",
+            "Predicted follow-on indicators fail to occur inside the stated window."
+          ],
+          "contradictory_evidence_present": false
+        },
+        "historical_matches": [],
+        "cross_domain_links": [
+          {
+            "claim_id": "claim-1f717d1259a59e0552",
             "shared_actors": [
-              "UNITED STATES"
+              "RUSSIA"
             ],
             "shared_regions": [
-              "UNITED STATES"
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "SECURITY"
+            ]
+          },
+          {
+            "claim_id": "claim-2f153cb0c57cf3e025",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "SPACE",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-f636e8ad85bca9243f",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "TERRORISM",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-50b15fc983b1960d70",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "SECURITY",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-f85958cb4f628b09ef",
+            "shared_actors": [
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-4ac9dbae4978734f6f",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-2da01e6e34c4361dc6",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-68444847bb948c36b4",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "HUMANITARIAN",
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-76e3b606d8db754926",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "HUMANITARIAN",
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-546b5e6f6c880849f2",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "INFRA",
+              "SPACE"
+            ]
+          },
+          {
+            "claim_id": "claim-09256c77181810adad",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "INFRA",
+              "SPACE"
+            ]
+          },
+          {
+            "claim_id": "claim-06a039999d573afe3c",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
             ],
             "domains": [
               "INFRA",
@@ -4160,18 +4469,17 @@
         ],
         "anomaly_ids": [
           "anomaly-630ea46d6544dc82",
-          "anomaly-aea83e308f4e3dad",
-          "anomaly-2ec325dd9ae58bc4"
+          "anomaly-aea83e308f4e3dad"
         ],
-        "threat_score": 20,
-        "watch_priority": 72,
+        "threat_score": 19,
+        "watch_priority": 56,
         "audit": {
           "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 1,
+          "support_count": 2,
           "contradiction_count": 0,
-          "independent_roots": 1,
+          "independent_roots": 2,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-17T18:50:04Z"
+          "material_time_used_for_decay": "2026-09-21T19:17:03Z"
         }
       },
       {
@@ -4222,7 +4530,7 @@
         ],
         "state": "CREDIBLE REPORT",
         "confidence": 82,
-        "confidence_direction": "UP",
+        "confidence_direction": "STABLE",
         "confidence_components": {
           "source_quality": 86,
           "independence": 79,
@@ -4671,381 +4979,6 @@
           "independent_roots": 3,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-21T18:31:39Z"
-        }
-      },
-      {
-        "id": "claim-3f76491a35cdc1617d",
-        "headline": "Trump says he's 'willing to live with' final US report on deadly missile strike near Iranian girls' school - ABC News - Breaking News, Latest News and Videos",
-        "signature_tokens": [
-          "abc",
-          "breaking",
-          "deadly",
-          "final",
-          "girls",
-          "iranian",
-          "latest",
-          "live",
-          "missile",
-          "near",
-          "school",
-          "strike",
-          "trump",
-          "videos",
-          "willing"
-        ],
-        "observation_ids": [
-          "ec41c28909a2cd4a793d",
-          "eded3e5dd12f17c76d73",
-          "6feba3d07e7991937de8",
-          "fa277ff7668dbaa1ce94",
-          "2afeb53057a5345ba2cb",
-          "079d93e36952fa4ac9ad"
-        ],
-        "first_seen": "2026-09-11T03:19:12Z",
-        "last_seen": "2026-09-21T03:47:53Z",
-        "material_time": "2026-09-20T10:39:07Z",
-        "domains": [
-          "CYBER",
-          "INFRA",
-          "NUCLEAR",
-          "WAR"
-        ],
-        "regions": [
-          "IRAN"
-        ],
-        "actors": [
-          "IRAN"
-        ],
-        "state": "CREDIBLE REPORT",
-        "confidence": 65,
-        "confidence_direction": "STABLE",
-        "confidence_components": {
-          "source_quality": 93,
-          "independence": 25,
-          "corroboration": 25,
-          "contradiction": 0,
-          "specificity": 66,
-          "recency": 87,
-          "evidence_type": 79,
-          "historical_reliability": 93,
-          "claim_maturity": 48
-        },
-        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "supporting_observation_ids": [
-          "ec41c28909a2cd4a793d",
-          "eded3e5dd12f17c76d73",
-          "6feba3d07e7991937de8",
-          "fa277ff7668dbaa1ce94",
-          "2afeb53057a5345ba2cb",
-          "079d93e36952fa4ac9ad"
-        ],
-        "contradictory_observation_ids": [],
-        "source_count": 3,
-        "independent_provenance_count": 1,
-        "sources": [
-          "Agence France-Presse",
-          "GDELT Global Discovery",
-          "Google News Weak-Signal Discovery"
-        ],
-        "provenance_roots": [
-          "gdelt_global",
-          "google_weak_signal",
-          "wire:afp_world"
-        ],
-        "evidence": [
-          {
-            "observation_id": "2afeb53057a5345ba2cb",
-            "title": "Trump says he's 'willing to live with' final US report on deadly missile strike near Iranian girls' school - ABC News - Breaking News, Latest News and Videos",
-            "source": "Agence France-Presse",
-            "source_class": "wire",
-            "provenance_root": "wire:afp_world",
-            "stance": "report",
-            "published": "2026-09-20T10:39:07Z",
-            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOM3h1ZU5xZTdVZkctejZnVk93cGxRX3RqZndScThpVk0xdDlEc1NMX0JKbEJiUE9wbTdOMzJsR2lVOEtrUFA0alIwN0ZZRERDWTUzYm9EalRuM1NLWDkyR2ZJM1ZuamVtV2hIWm9Ib1RweXpveEx5OHpjSnUzUXZVamNVSm1fejlJMmJaWTRFLXR4Ni1EY3RpQ0UzRkbSAaIBQVVfeXFMUFN5MjYxeDVlckhhekM3OWZ6djZOanpPTW1FN3BWNWZITkdqV20tOFJnQkloRFJfVF9mMjRvM1EyNkFNazJwQzhLc00tNUxUYkxsbkhlTVdTc2psb3lvV2xGMWtjSld0bTI0RnNZV2NETmh5YVFrV2hCa3RsZmo2YkJWWXp1ajQxdG5yamNoczUzT1U2eDJRRWxCWkF0OUtTakZB?oc=5",
-            "discovery_only": false
-          },
-          {
-            "observation_id": "079d93e36952fa4ac9ad",
-            "title": "Trump says he's 'willing to live with' final US report on deadly missile strike near Iranian girls' school - abcnews.com",
-            "source": "Agence France-Presse",
-            "source_class": "wire",
-            "provenance_root": "wire:afp_world",
-            "stance": "report",
-            "published": "2026-09-16T11:37:16Z",
-            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOM3h1ZU5xZTdVZkctejZnVk93cGxRX3RqZndScThpVk0xdDlEc1NMX0JKbEJiUE9wbTdOMzJsR2lVOEtrUFA0alIwN0ZZRERDWTUzYm9EalRuM1NLWDkyR2ZJM1ZuamVtV2hIWm9Ib1RweXpveEx5OHpjSnUzUXZVamNVSm1fejlJMmJaWTRFLXR4Ni1EY3RpQ0UzRkbSAaIBQVVfeXFMUFN5MjYxeDVlckhhekM3OWZ6djZOanpPTW1FN3BWNWZITkdqV20tOFJnQkloRFJfVF9mMjRvM1EyNkFNazJwQzhLc00tNUxUYkxsbkhlTVdTc2psb3lvV2xGMWtjSld0bTI0RnNZV2NETmh5YVFrV2hCa3RsZmo2YkJWWXp1ajQxdG5yamNoczUzT1U2eDJRRWxCWkF0OUtTakZB?oc=5",
-            "discovery_only": false
-          },
-          {
-            "observation_id": "6feba3d07e7991937de8",
-            "title": "Trump issues warning to Iran on nuclear weapons in State of the Union address - ABC News - Breaking News, Latest News and Videos",
-            "source": "Google News Weak-Signal Discovery",
-            "source_class": "low_confidence",
-            "provenance_root": "google_weak_signal",
-            "stance": "warning",
-            "published": "2026-09-16T06:41:32Z",
-            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNS04cG84NmRfVVBOSWw5NW52cXVrTEpGOVFzSUs0V1ZDNHZISVlGTHd3ZGZXalhkMnp5MXpaNVpxVXpnRTNLZHpfSklfVk1BWEx5dUlJT2w1VkxEWEdMSnpNQ1dlVGtjMXJ3dTExNURuRFZVRTFYVjhIaGNnUEQ4UDZyRTVBU2YzaWpsbm9ieE9hYmxkWk1BSF9jWGdxUThpOTJJ0gGoAUFVX3lxTFBBWU5wNktLblZJSWF4dE1pUEtCYnFYbTRaV0pLcWI0cWVSeFFaT3NJY1NPY1o5V0FlUVV5cVVtdGNydkVfT1B0UlR2ajlicWtxUTRwM3MtY1FINHFzYmhqZWhGTnRkWWxER3hnQjQtTE82eDg3dGJaNVBnRWpLWldmUlNBODlrenFGRFd3NjFsbFBhbnRKbTRDaHBYYWtkenRENFpoZkxneA?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "fa277ff7668dbaa1ce94",
-            "title": "How the US Navy could enforce a blockade of Iran's ports in the Strait of Hormuz - ABC News - Breaking News, Latest News and Videos",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "speculation",
-            "published": "2026-09-16T06:22:34Z",
-            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQQnhwRldOZDVBVkV6aENhR2tlSHlCcjRaZG4tcjJoVXhqU0NuTnRONF92dGdXNHJ3WEhkcG9WeUJiUEozeWRuWnZCSTA3WEVJdU8xOG82OTZLWjZnRjFPUXJIaXF1RHBjUFNmQnh5WkdzS1ZlLUs4c3NVTlY3SWJIWHdrU09kNF9DZ3ZrRS1COGt2b19sZ1VYemJZdGFjSVXSAaQBQVVfeXFMTXBJQWpjeFNwQXkybFpBOTJpMndERnB6NGtsXzV4cTRZd2FCQXdTall6aXlvdVpWZjZod05rZkZxVlpwR0c1dUdDZTBvUjhRXzcxbHh4QmxNR1dXcjJtUU4tTUR1V3ZNbUxIcDd1TXJaVEFlWnNQc0N5cXdwcEt1WGhhbDVtck8xQWZSaXY5VURIMW9JZG82TVN3REs4Q0ZXbkNYZ2M?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "ec41c28909a2cd4a793d",
-            "title": "Trump blames Minnesota governor, not Iran, for cyberattacks on the state's water systems - ABC News - Breaking News, Latest News and Videos",
-            "source": "Google News Weak-Signal Discovery",
-            "source_class": "low_confidence",
-            "provenance_root": "google_weak_signal",
-            "stance": "report",
-            "published": "2026-09-10T23:58:43Z",
-            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZEdMZldscXowbHVadzFLRS0xajFnSHZ4M0hjVXNiMVRLVTlXZElQWDEyMm5zcV80ZkFuTm54Y2JySUJ0bV9rNDVWSXhHTlgtcFlvWm9JNDZnMnNoZTUyMV9xTGM5TXg3Q1Jwc1hCclhjSTRCNDJaSXVtRzVwTnRKc1hPMHpDMi1jcjNSR1dzOUpHMDh6UEpxR19ZbHY0X3ktbGFQcUs3U09YVGlrWjFJ?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "eded3e5dd12f17c76d73",
-            "title": "Trump blames Minnesota governor, not Iran, for cyberattacks on the state's water systems - abcnews.com",
-            "source": "Google News Weak-Signal Discovery",
-            "source_class": "low_confidence",
-            "provenance_root": "google_weak_signal",
-            "stance": "report",
-            "published": "2026-09-10T23:58:43Z",
-            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZEdMZldscXowbHVadzFLRS0xajFnSHZ4M0hjVXNiMVRLVTlXZElQWDEyMm5zcV80ZkFuTm54Y2JySUJ0bV9rNDVWSXhHTlgtcFlvWm9JNDZnMnNoZTUyMV9xTGM5TXg3Q1Jwc1hCclhjSTRCNDJaSXVtRzVwTnRKc1hPMHpDMi1jcjNSR1dzOUpHMDh6UEpxR19ZbHY0X3ktbGFQcUs3U09YVGlrWjFJ?oc=5",
-            "discovery_only": true
-          }
-        ],
-        "state_affiliated_reporting": false,
-        "discovery_only": false,
-        "branch_analysis": {
-          "current_observation": "Trump says he's 'willing to live with' final US report on deadly missile strike near Iranian girls' school - ABC News - Breaking News, Latest News and Videos",
-          "plausible_explanations": [
-            "A genuine CYBER/INFRA/NUCLEAR development involving IRAN is unfolding as reported.",
-            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-          ],
-          "escalation_branch": "Related CYBER/INFRA/NUCLEAR indicators spread, become operational, or draw additional actors into the event.",
-          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-          "confirm_indicators": [
-            "A primary record, sensor observation, or on-record official confirmation.",
-            "Matching detail from a genuinely independent provenance root.",
-            "Observable follow-on action consistent with the reported event."
-          ],
-          "falsify_indicators": [
-            "Time-stamped primary evidence incompatible with the claim.",
-            "Independent, technically specific refutation from credible sources.",
-            "Predicted follow-on indicators fail to occur inside the stated window."
-          ],
-          "contradictory_evidence_present": false
-        },
-        "historical_matches": [
-          {
-            "claim_id": "claim-e73886c410c52fb252",
-            "headline": "17 Iranians Charged with Conducting Massive Cyber Theft Campaign on Behalf of the Islamic Revolutionary Guard Corps and Other Iranian Entities",
-            "material_time": "2026-08-18T12:00:00Z",
-            "shared_domains": [
-              "CYBER"
-            ],
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ]
-          },
-          {
-            "claim_id": "claim-d555e4d2e467f5fc66",
-            "headline": "Massachusetts Man Convicted of Violating U.S. Sanctions Against Iran",
-            "material_time": "2026-07-14T12:00:00Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ]
-          }
-        ],
-        "cross_domain_links": [
-          {
-            "claim_id": "claim-dc37e6d448bc843520",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "NUCLEAR"
-            ]
-          },
-          {
-            "claim_id": "claim-4360b38ce095fd229b",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "TERRORISM",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-7964acd3991c71ad80",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-6692682573a6da2d90",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "SECURITY",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-036a9b651a3b582583",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-1594bae9789b6c7637",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "INFRA",
-              "TRAFFICKING",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-fcd8306c176277efcd",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-7b692e812d645711ef",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-aa23d2bdddc19490f6",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-ddb3856e9fd1a3a0d6",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "INFRA",
-              "SECURITY",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-2aad8df3200f21f495",
-            "shared_actors": [],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-953c2a45c5d6818373",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
-          }
-        ],
-        "anomaly_ids": [
-          "anomaly-2c333f0532b4aeee"
-        ],
-        "threat_score": 18,
-        "watch_priority": 52,
-        "audit": {
-          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 6,
-          "contradiction_count": 0,
-          "independent_roots": 1,
-          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-20T10:39:07Z"
         }
       }
     ]
@@ -6096,7 +6029,7 @@
           "4cda217256dbadad59ac"
         ],
         "first_seen": "2026-09-21T02:46:55Z",
-        "last_seen": "2026-09-21T18:49:32Z",
+        "last_seen": "2026-09-21T19:18:17Z",
         "material_time": "2026-09-21T02:38:24Z",
         "domains": [
           "INFRA",
@@ -6751,7 +6684,7 @@
           "recency": 70,
           "evidence_type": 73,
           "historical_reliability": 78,
-          "claim_maturity": 41
+          "claim_maturity": 42
         },
         "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
         "supporting_observation_ids": [
@@ -7092,7 +7025,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 70,
+          "recency": 69,
           "evidence_type": 79,
           "historical_reliability": 86,
           "claim_maturity": 42
@@ -7296,7 +7229,7 @@
             ]
           },
           {
-            "claim_id": "claim-1f717d1259a59e0552",
+            "claim_id": "claim-1478b763fc41b4f9a9",
             "shared_actors": [
               "RUSSIA"
             ],
@@ -7304,9 +7237,10 @@
               "RUSSIA"
             ],
             "domains": [
-              "INFRA",
+              "CYBER",
+              "ECONOMIC",
               "POLITICAL",
-              "SECURITY"
+              "WAR"
             ]
           }
         ],
@@ -7636,11 +7570,12 @@
           "2802bd056d3bca5ebb05",
           "ec3dde14e46a986c647f",
           "0d013df912eafa98b5d2",
-          "a2f1fa00f5cd9b8df534"
+          "a2f1fa00f5cd9b8df534",
+          "949d15ee872e6849e6d4"
         ],
         "first_seen": "2026-09-10T18:21:06Z",
-        "last_seen": "2026-09-21T18:49:32Z",
-        "material_time": "2026-09-21T17:42:00Z",
+        "last_seen": "2026-09-21T19:18:17Z",
+        "material_time": "2026-09-21T18:30:00Z",
         "domains": [
           "HUMANITARIAN",
           "INFRA",
@@ -7708,7 +7643,8 @@
           "2802bd056d3bca5ebb05",
           "ec3dde14e46a986c647f",
           "0d013df912eafa98b5d2",
-          "a2f1fa00f5cd9b8df534"
+          "a2f1fa00f5cd9b8df534",
+          "949d15ee872e6849e6d4"
         ],
         "contradictory_observation_ids": [],
         "source_count": 4,
@@ -7726,6 +7662,17 @@
           "tass"
         ],
         "evidence": [
+          {
+            "observation_id": "949d15ee872e6849e6d4",
+            "title": "US says it redirected 110 vessels in Iran blockade",
+            "source": "en.apa.az",
+            "source_class": "low_confidence",
+            "provenance_root": "en.apa.az",
+            "stance": "report",
+            "published": "2026-09-21T18:30:00Z",
+            "url": "https://en.apa.az/america/us-says-it-redirected-110-vessels-in-iran-blockade-525416",
+            "discovery_only": true
+          },
           {
             "observation_id": "a2f1fa00f5cd9b8df534",
             "title": "US Central Command: Our Forces Diverted 110 Commercial Ships to Ensure Compliance with Iran Blockade - صوت الإمارات",
@@ -7889,17 +7836,6 @@
             "stance": "report",
             "published": "2026-09-18T17:47:53Z",
             "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1hOXR0UHlKNlE3dFV2SlgtYUlfZF92UmlzRHd2TDJ2UEFPWFRGM2pMQ3JibzVkRWk2clJ6aDQtczhVYmM5VEZOdThSdmZkenF6Ym9ONFZRVnpRR1R1Nnd4VG96QUNXTE1BZVhNZkg4ZERvek9QTTdj?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "f3e04b81e4eeb71d4ae4",
-            "title": "Iran switches from ships to trucks to evade US blockade - Financial Times",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-18T04:03:29Z",
-            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOV2NGaXh4V3dyNGJEdjNCY29nbkV1TGJpUFdLZXVpNUI0VlNNVzF4NG9LeXVpTWNlcnZxZDVmM0lfWGlsVi1EN3k5aGVCZFY1Wk40SUxyTmx5bV92UjFrUU1sbFNGRFFsRy1WTFVFbzZLd296LTk1TlRqekwtMkdYTjVYMEw?oc=5",
             "discovery_only": true
           }
         ],
@@ -8161,17 +8097,17 @@
         ],
         "anomaly_ids": [
           "anomaly-2c333f0532b4aeee",
-          "anomaly-2ec325dd9ae58bc4"
+          "anomaly-21c4ecba43457619"
         ],
         "threat_score": 2,
         "watch_priority": 62,
         "audit": {
           "reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
-          "support_count": 37,
+          "support_count": 38,
           "contradiction_count": 0,
           "independent_roots": 1,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-21T17:42:00Z"
+          "material_time_used_for_decay": "2026-09-21T18:30:00Z"
         }
       },
       {
@@ -8326,6 +8262,21 @@
             ]
           },
           {
+            "claim_id": "claim-1478b763fc41b4f9a9",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "CYBER",
+              "ECONOMIC",
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-1f717d1259a59e0552",
             "shared_actors": [
               "RUSSIA"
@@ -8438,20 +8389,6 @@
           },
           {
             "claim_id": "claim-68444847bb948c36b4",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "HUMANITARIAN",
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-76e3b606d8db754926",
             "shared_actors": [
               "RUSSIA"
             ],
@@ -8892,7 +8829,7 @@
         "anomaly_ids": [
           "anomaly-630ea46d6544dc82",
           "anomaly-aea83e308f4e3dad",
-          "anomaly-2ec325dd9ae58bc4"
+          "anomaly-21c4ecba43457619"
         ],
         "threat_score": 3,
         "watch_priority": 69,
@@ -9207,9 +9144,9 @@
     "multi_theater_coupling": 1,
     "nuclear_escalation": 11,
     "military_mobilization": 16,
-    "economic_warfare": 163,
+    "economic_warfare": 164,
     "crisis_control_failure": 0,
-    "hybrid_preparation": 112
+    "hybrid_preparation": 111
   },
   "formula": "Independent-provenance-capped claim contributions; verified and early-warning pressure remain separate.",
   "safeguard": "Republished stories sharing one provenance root cannot multiply pressure; speculative claims never enter Verified Pressure.",
@@ -9249,7 +9186,7 @@
         "c568cfc8e151e8078205"
       ],
       "first_seen": "2026-09-12T00:48:04Z",
-      "last_seen": "2026-09-21T18:49:32Z",
+      "last_seen": "2026-09-21T19:18:17Z",
       "material_time": "2026-09-20T10:04:28Z",
       "domains": [
         "INFRA",
@@ -10042,20 +9979,17 @@
     },
     {
       "id": "claim-e7e81db966fe882c70",
-      "headline": "Early results show Russia's main Kremlin party dominating tightly controlled parliamentary vote - AP News",
+      "headline": "The main Kremlin party wins tighter control of parliament in Russia - 1News",
       "signature_tokens": [
-        "controlled",
-        "dominating",
-        "early",
+        "1news",
+        "control",
         "kremlin",
         "main",
-        "parliamentary",
+        "parliament",
         "party",
-        "results",
         "russia",
-        "show",
-        "tightly",
-        "vote"
+        "tighter",
+        "wins"
       ],
       "observation_ids": [
         "488b7a6c506f7369e21e",
@@ -10074,11 +10008,12 @@
         "6bcaae43e225acd13268",
         "0ccd661fb301467dbe78",
         "b0d514d3508cf8400d20",
-        "c37d847112bcb7e227c7"
+        "c37d847112bcb7e227c7",
+        "f545d3d4edfd33a7e2ba"
       ],
       "first_seen": "2026-09-18T06:24:32Z",
-      "last_seen": "2026-09-21T18:49:32Z",
-      "material_time": "2026-09-21T17:08:27Z",
+      "last_seen": "2026-09-21T19:18:17Z",
+      "material_time": "2026-09-21T18:59:36Z",
       "domains": [
         "CYBER",
         "INFRA",
@@ -10097,14 +10032,14 @@
       "confidence": 91,
       "confidence_direction": "STABLE",
       "confidence_components": {
-        "source_quality": 92,
+        "source_quality": 94,
         "independence": 100,
         "corroboration": 100,
         "contradiction": 0,
         "specificity": 73,
         "recency": 100,
         "evidence_type": 79,
-        "historical_reliability": 75,
+        "historical_reliability": 76,
         "claim_maturity": 100
       },
       "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
@@ -10125,7 +10060,8 @@
         "6bcaae43e225acd13268",
         "0ccd661fb301467dbe78",
         "b0d514d3508cf8400d20",
-        "c37d847112bcb7e227c7"
+        "c37d847112bcb7e227c7",
+        "f545d3d4edfd33a7e2ba"
       ],
       "contradictory_observation_ids": [],
       "source_count": 9,
@@ -10153,6 +10089,17 @@
         "wire:ap_top"
       ],
       "evidence": [
+        {
+          "observation_id": "f545d3d4edfd33a7e2ba",
+          "title": "The main Kremlin party wins tighter control of parliament in Russia - 1News",
+          "source": "Associated Press Top News",
+          "source_class": "wire",
+          "provenance_root": "wire:ap_top",
+          "stance": "report",
+          "published": "2026-09-21T18:59:36Z",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSllqVEtOdjd0V21YenNyZEd5RVZ2czdBMHVyU3k3cTFab3JnQXlXMzBfQUhzVlVxbFA4aDJ6RTd3ZXRTT2xBV1J0MU96S2hucDZuM0xOalE5T0N3UlAwVE5TSEw3UmZtQi1KbXFkMkpCc09YcnZvTDNkbllFdENtbXQyejBmU2x2QVVxQnVUQTVFeUN3MTlQS1lULWd6VWQxQ3FhZVdR?oc=5",
+          "discovery_only": false
+        },
         {
           "observation_id": "c37d847112bcb7e227c7",
           "title": "Russia's election is over. Could mobilization be next?",
@@ -10317,23 +10264,12 @@
           "published": "2026-09-18T12:26:46Z",
           "url": "https://www.aljazeera.com/news/2026/9/18/the-view-from-russia-no-party-can-be-antiwar-in-parliamentary-election?traffic_source=rss",
           "discovery_only": false
-        },
-        {
-          "observation_id": "e392c559c29b23f182a1",
-          "title": "Ukraine fires drone barrage as Russia launches elections",
-          "source": "Al Jazeera English",
-          "source_class": "established_media",
-          "provenance_root": "aljazeera",
-          "stance": "report",
-          "published": "2026-09-18T10:28:17Z",
-          "url": "https://www.aljazeera.com/news/2026/9/18/ukraine-fires-drone-barrage-as-russia-launches-elections?traffic_source=rss",
-          "discovery_only": false
         }
       ],
       "state_affiliated_reporting": false,
       "discovery_only": false,
       "branch_analysis": {
-        "current_observation": "Early results show Russia's main Kremlin party dominating tightly controlled parliamentary vote - AP News",
+        "current_observation": "The main Kremlin party wins tighter control of parliament in Russia - 1News",
         "plausible_explanations": [
           "A genuine CYBER/INFRA/POLITICAL development involving RUSSIA, UKRAINE is unfolding as reported.",
           "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
@@ -10545,11 +10481,11 @@
       "watch_priority": 64,
       "audit": {
         "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-        "support_count": 17,
+        "support_count": 18,
         "contradiction_count": 0,
         "independent_roots": 8,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-21T17:08:27Z"
+        "material_time_used_for_decay": "2026-09-21T18:59:36Z"
       }
     },
     {
@@ -10575,7 +10511,7 @@
         "cfc8844172ddf5c21fc8"
       ],
       "first_seen": "2026-09-20T03:20:11Z",
-      "last_seen": "2026-09-21T18:49:32Z",
+      "last_seen": "2026-09-21T19:18:17Z",
       "material_time": "2026-09-21T11:04:47Z",
       "domains": [
         "CYBER",
@@ -10592,7 +10528,7 @@
         "UKRAINE"
       ],
       "state": "CONFIRMED",
-      "confidence": 89,
+      "confidence": 88,
       "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 84,
@@ -11477,7 +11413,7 @@
       "anomaly_ids": [
         "anomaly-630ea46d6544dc82",
         "anomaly-aea83e308f4e3dad",
-        "anomaly-2ec325dd9ae58bc4",
+        "anomaly-21c4ecba43457619",
         "anomaly-0a7e438a214e0370"
       ],
       "threat_score": 25,
@@ -11524,7 +11460,7 @@
         "00aeb2c5dd734bc61963"
       ],
       "first_seen": "2026-09-19T09:43:58Z",
-      "last_seen": "2026-09-21T18:49:32Z",
+      "last_seen": "2026-09-21T19:18:17Z",
       "material_time": "2026-09-21T10:42:53Z",
       "domains": [
         "CYBER",
@@ -12014,7 +11950,7 @@
         "02a4ba58268ac4c2befc"
       ],
       "first_seen": "2026-09-21T06:28:04Z",
-      "last_seen": "2026-09-21T18:49:32Z",
+      "last_seen": "2026-09-21T19:18:17Z",
       "material_time": "2026-09-21T09:38:13Z",
       "domains": [
         "CYBER",
@@ -12696,7 +12632,7 @@
       "anomaly_ids": [
         "anomaly-2c333f0532b4aeee",
         "anomaly-630ea46d6544dc82",
-        "anomaly-2ec325dd9ae58bc4",
+        "anomaly-21c4ecba43457619",
         "anomaly-0a7e438a214e0370"
       ],
       "threat_score": 26,
@@ -12947,6 +12883,21 @@
           ]
         },
         {
+          "claim_id": "claim-1478b763fc41b4f9a9",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "CYBER",
+            "ECONOMIC",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-1f717d1259a59e0552",
           "shared_actors": [
             "RUSSIA"
@@ -12986,19 +12937,6 @@
             "INFRA",
             "POLITICAL",
             "TERRORISM",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-50b15fc983b1960d70",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "SECURITY",
             "WAR"
           ]
         }
@@ -13338,6 +13276,23 @@
           ]
         },
         {
+          "claim_id": "claim-1478b763fc41b4f9a9",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "CYBER",
+            "ECONOMIC",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-1f717d1259a59e0552",
           "shared_actors": [
             "RUSSIA"
@@ -13351,14 +13306,305 @@
             "POLITICAL",
             "SECURITY"
           ]
+        }
+      ],
+      "anomaly_ids": [],
+      "threat_score": 20,
+      "watch_priority": 48,
+      "audit": {
+        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "support_count": 1,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-17T18:50:04Z"
+      }
+    },
+    {
+      "id": "claim-1478b763fc41b4f9a9",
+      "headline": "Live: Putin's party dominates in elections, Moscow vows revenge after massive drone attack",
+      "signature_tokens": [
+        "attack",
+        "dominates",
+        "drone",
+        "elections",
+        "live",
+        "massive",
+        "moscow",
+        "party",
+        "putin",
+        "revenge",
+        "vows"
+      ],
+      "observation_ids": [
+        "333bb745105e938089ed",
+        "89cd6bbe9eb0f4ccd650"
+      ],
+      "first_seen": "2026-09-21T05:19:56Z",
+      "last_seen": "2026-09-21T19:18:17Z",
+      "material_time": "2026-09-21T19:17:03Z",
+      "domains": [
+        "CYBER",
+        "ECONOMIC",
+        "POLITICAL",
+        "WAR"
+      ],
+      "regions": [
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "actors": [
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "state": "CREDIBLE REPORT",
+      "confidence": 72,
+      "confidence_direction": "UP",
+      "confidence_components": {
+        "source_quality": 82,
+        "independence": 52,
+        "corroboration": 52,
+        "contradiction": 0,
+        "specificity": 77,
+        "recency": 100,
+        "evidence_type": 79,
+        "historical_reliability": 82,
+        "claim_maturity": 46
+      },
+      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+      "supporting_observation_ids": [
+        "333bb745105e938089ed",
+        "89cd6bbe9eb0f4ccd650"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 2,
+      "independent_provenance_count": 2,
+      "sources": [
+        "Euronews",
+        "France 24 World"
+      ],
+      "provenance_roots": [
+        "euronews",
+        "france24"
+      ],
+      "evidence": [
+        {
+          "observation_id": "89cd6bbe9eb0f4ccd650",
+          "title": "Putin's party wins record Duma majority in Kremlin-controlled elections as EU vows sanctions",
+          "source": "Euronews",
+          "source_class": "regional_local",
+          "provenance_root": "euronews",
+          "stance": "report",
+          "published": "2026-09-21T19:17:03Z",
+          "url": "https://www.euronews.com/2026/09/21/putins-party-wins-record-duma-majority-in-kremlin-controlled-elections-as-eu-vows-sanction",
+          "discovery_only": false
         },
         {
-          "claim_id": "claim-91aa79217efbeb3fb3",
+          "observation_id": "333bb745105e938089ed",
+          "title": "Live: Putin's party dominates in elections, Moscow vows revenge after massive drone attack",
+          "source": "France 24 World",
+          "source_class": "established_media",
+          "provenance_root": "france24",
+          "stance": "report",
+          "published": "2026-09-21T02:28:32Z",
+          "url": "https://www.france24.com/en/europe/20260921-live-united-russia-dominates-in-elections-moscow-vows-revenge-after-massive-drone-attack",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Live: Putin's party dominates in elections, Moscow vows revenge after massive drone attack",
+        "plausible_explanations": [
+          "A genuine CYBER/ECONOMIC/POLITICAL development involving RUSSIA, UKRAINE is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related CYBER/ECONOMIC/POLITICAL indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-1f717d1259a59e0552",
           "shared_actors": [
-            "UNITED STATES"
+            "RUSSIA"
           ],
           "shared_regions": [
-            "UNITED STATES"
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-2f153cb0c57cf3e025",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "SPACE",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f636e8ad85bca9243f",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "TERRORISM",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-50b15fc983b1960d70",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f85958cb4f628b09ef",
+          "shared_actors": [
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-4ac9dbae4978734f6f",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-2da01e6e34c4361dc6",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-68444847bb948c36b4",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "HUMANITARIAN",
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-76e3b606d8db754926",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "HUMANITARIAN",
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-546b5e6f6c880849f2",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "INFRA",
+            "SPACE"
+          ]
+        },
+        {
+          "claim_id": "claim-09256c77181810adad",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "INFRA",
+            "SPACE"
+          ]
+        },
+        {
+          "claim_id": "claim-06a039999d573afe3c",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
           ],
           "domains": [
             "INFRA",
@@ -13369,18 +13615,17 @@
       ],
       "anomaly_ids": [
         "anomaly-630ea46d6544dc82",
-        "anomaly-aea83e308f4e3dad",
-        "anomaly-2ec325dd9ae58bc4"
+        "anomaly-aea83e308f4e3dad"
       ],
-      "threat_score": 20,
-      "watch_priority": 72,
+      "threat_score": 19,
+      "watch_priority": 56,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 1,
+        "support_count": 2,
         "contradiction_count": 0,
-        "independent_roots": 1,
+        "independent_roots": 2,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-17T18:50:04Z"
+        "material_time_used_for_decay": "2026-09-21T19:17:03Z"
       }
     },
     {
@@ -13431,7 +13676,7 @@
       ],
       "state": "CREDIBLE REPORT",
       "confidence": 82,
-      "confidence_direction": "UP",
+      "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 86,
         "independence": 79,
@@ -14879,7 +15124,7 @@
         "565255df09a43ef4c178"
       ],
       "first_seen": "2026-09-18T22:18:44Z",
-      "last_seen": "2026-09-21T18:49:32Z",
+      "last_seen": "2026-09-21T19:18:17Z",
       "material_time": "2026-09-19T09:09:00Z",
       "domains": [
         "ECONOMIC",
@@ -14908,7 +15153,7 @@
         "corroboration": 100,
         "contradiction": 0,
         "specificity": 69,
-        "recency": 80,
+        "recency": 79,
         "evidence_type": 79,
         "historical_reliability": 77,
         "claim_maturity": 100
@@ -15230,6 +15475,22 @@
           ]
         },
         {
+          "claim_id": "claim-1beebca8dce8f6d706",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "CYBER",
+            "INFRA",
+            "POLITICAL"
+          ]
+        },
+        {
           "claim_id": "claim-cebd884a5037660e9b",
           "shared_actors": [
             "RUSSIA",
@@ -15301,30 +15562,13 @@
             "INFRA",
             "WAR"
           ]
-        },
-        {
-          "claim_id": "claim-ddb3856e9fd1a3a0d6",
-          "shared_actors": [
-            "IRAN",
-            "RUSSIA",
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "IRAN",
-            "RUSSIA"
-          ],
-          "domains": [
-            "INFRA",
-            "SECURITY",
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
         "anomaly-2c333f0532b4aeee",
         "anomaly-630ea46d6544dc82",
         "anomaly-aea83e308f4e3dad",
-        "anomaly-2ec325dd9ae58bc4",
+        "anomaly-21c4ecba43457619",
         "anomaly-cb6a5beca1165472",
         "anomaly-0a7e438a214e0370"
       ],
@@ -15337,331 +15581,6 @@
         "independent_roots": 7,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-19T09:09:00Z"
-      }
-    },
-    {
-      "id": "claim-1d2b5518ae3bf46d70",
-      "headline": "Live: Explosions shake Kyiv as US Congress advances new sanctions on Moscow",
-      "signature_tokens": [
-        "advances",
-        "congress",
-        "explosions",
-        "kyiv",
-        "live",
-        "moscow",
-        "sanctions",
-        "shake"
-      ],
-      "observation_ids": [
-        "116c160f19354f6a3031",
-        "24186b67e1a67894702a",
-        "df1d70e68fb397b7996f",
-        "366b553198feec266310"
-      ],
-      "first_seen": "2026-09-17T02:19:37Z",
-      "last_seen": "2026-09-18T04:20:00Z",
-      "material_time": "2026-09-17T05:24:20Z",
-      "domains": [
-        "ECONOMIC",
-        "INFRA",
-        "WAR"
-      ],
-      "regions": [
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "actors": [
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 61,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 84,
-        "independence": 25,
-        "corroboration": 25,
-        "contradiction": 0,
-        "specificity": 74,
-        "recency": 67,
-        "evidence_type": 79,
-        "historical_reliability": 84,
-        "claim_maturity": 53
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "116c160f19354f6a3031",
-        "24186b67e1a67894702a",
-        "df1d70e68fb397b7996f",
-        "366b553198feec266310"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 2,
-      "independent_provenance_count": 1,
-      "sources": [
-        "France 24 World",
-        "Google News Weak-Signal Discovery"
-      ],
-      "provenance_roots": [
-        "france24",
-        "google_weak_signal"
-      ],
-      "evidence": [
-        {
-          "observation_id": "24186b67e1a67894702a",
-          "title": "12 Strong Explosions Shake Kyiv After Warning of Missile Attack - dailybeirut.com",
-          "source": "Google News Weak-Signal Discovery",
-          "source_class": "low_confidence",
-          "provenance_root": "google_weak_signal",
-          "stance": "warning",
-          "published": "2026-09-17T05:24:20Z",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVjNyYTZGMjVLOTRQaWRjWl9TbEFUQWFHQWV4TjNoREN4dmk1R2FCZFpLcU1TamZySERHWUdOdmZUNDJtXzVoLTBCdkhDVjNDY2RvZWxHS0RmdWtLMF9KR2xxYUV5MG1MU21qQkVva3BSM0VlZ1g3WGFpZEZQODJGUk5kWmMxVGRIb1NTU2JVcUJUdXpIX3ZQdmtrR3ZxQQ?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "366b553198feec266310",
-          "title": "12 Strong Explosions in Kyiv After Missile Warning - dailybeirut.com",
-          "source": "Google News Weak-Signal Discovery",
-          "source_class": "low_confidence",
-          "provenance_root": "google_weak_signal",
-          "stance": "warning",
-          "published": "2026-09-17T05:24:20Z",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVjNyYTZGMjVLOTRQaWRjWl9TbEFUQWFHQWV4TjNoREN4dmk1R2FCZFpLcU1TamZySERHWUdOdmZUNDJtXzVoLTBCdkhDVjNDY2RvZWxHS0RmdWtLMF9KR2xxYUV5MG1MU21qQkVva3BSM0VlZ1g3WGFpZEZQODJGUk5kWmMxVGRIb1NTU2JVcUJUdXpIX3ZQdmtrR3ZxQQ?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "116c160f19354f6a3031",
-          "title": "Live: Explosions shake Kyiv as US Congress advances new sanctions on Moscow",
-          "source": "France 24 World",
-          "source_class": "established_media",
-          "provenance_root": "france24",
-          "stance": "warning",
-          "published": "2026-09-17T02:08:14Z",
-          "url": "http://www.france24.com/en/europe/20260917-live-explosions-kyiv-us-congress-sanctions-moscow",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "df1d70e68fb397b7996f",
-          "title": "Ukraine live: Explosions shake Kyiv as US Congress advances new sanctions on Moscow",
-          "source": "France 24 World",
-          "source_class": "established_media",
-          "provenance_root": "france24",
-          "stance": "warning",
-          "published": "2026-09-17T02:08:14Z",
-          "url": "http://www.france24.com/en/europe/20260917-live-explosions-kyiv-us-congress-sanctions-moscow",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Live: Explosions shake Kyiv as US Congress advances new sanctions on Moscow",
-        "plausible_explanations": [
-          "A genuine ECONOMIC/INFRA/WAR development involving RUSSIA, UKRAINE is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related ECONOMIC/INFRA/WAR indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-ddb3856e9fd1a3a0d6",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "INFRA",
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-459ce7d4a35d1cc712",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-3a9f80e6de87294b57",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-4572605179824de245",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-36a6828d7397fdbcaa",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-1beebca8dce8f6d706",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "CYBER",
-            "INFRA",
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-f7bcac82974a57c529",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-24eaabe44727001ff0",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-25cb0125347f5d6f78",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-1478b763fc41b4f9a9",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "CYBER",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-dd42a1a1cd1e25b13d",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-4e273803b4a15a677a",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "CYBER",
-            "INFRA",
-            "POLITICAL",
-            "TERRORISM"
-          ]
-        }
-      ],
-      "anomaly_ids": [],
-      "threat_score": 16,
-      "watch_priority": 37,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 4,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-17T05:24:20Z"
       }
     }
   ]
