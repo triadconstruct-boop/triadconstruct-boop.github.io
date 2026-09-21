@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-21T10:20:58Z",
+  "generated_at": "2026-09-21T10:45:25Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 60,
   "verified_pressure": {
     "score": 60,
-    "claim_count": 67,
+    "claim_count": 69,
     "top_claims": [
       {
         "id": "claim-3d2711d0a85daf7ca1",
@@ -40,7 +40,7 @@
           "c568cfc8e151e8078205"
         ],
         "first_seen": "2026-09-12T00:48:04Z",
-        "last_seen": "2026-09-21T10:20:58Z",
+        "last_seen": "2026-09-21T10:45:25Z",
         "material_time": "2026-09-20T10:04:28Z",
         "domains": [
           "INFRA",
@@ -865,7 +865,7 @@
           "0ccd661fb301467dbe78"
         ],
         "first_seen": "2026-09-18T06:24:32Z",
-        "last_seen": "2026-09-21T10:20:58Z",
+        "last_seen": "2026-09-21T10:45:25Z",
         "material_time": "2026-09-21T09:30:18Z",
         "domains": [
           "CYBER",
@@ -1343,7 +1343,7 @@
           "36e0f2cbf20cafc6fdc9"
         ],
         "first_seen": "2026-09-20T03:20:11Z",
-        "last_seen": "2026-09-21T10:20:58Z",
+        "last_seen": "2026-09-21T10:45:25Z",
         "material_time": "2026-09-21T05:39:59Z",
         "domains": [
           "CYBER",
@@ -2231,7 +2231,7 @@
         "anomaly_ids": [
           "anomaly-a6ea1ad18bf7168d",
           "anomaly-31b3256cce4bc3c5",
-          "anomaly-ff66e83bd5c7640f",
+          "anomaly-9eee196515f45c66",
           "anomaly-cfd582922210793c"
         ],
         "threat_score": 25,
@@ -2266,7 +2266,7 @@
           "02a4ba58268ac4c2befc"
         ],
         "first_seen": "2026-09-21T06:28:04Z",
-        "last_seen": "2026-09-21T10:20:58Z",
+        "last_seen": "2026-09-21T10:45:25Z",
         "material_time": "2026-09-21T09:38:13Z",
         "domains": [
           "CYBER",
@@ -2284,7 +2284,7 @@
         ],
         "state": "CONFIRMED",
         "confidence": 76,
-        "confidence_direction": "UP",
+        "confidence_direction": "STABLE",
         "confidence_components": {
           "source_quality": 83,
           "independence": 52,
@@ -2960,7 +2960,7 @@
         "anomaly_ids": [
           "anomaly-e7296b4e00fb709a",
           "anomaly-a6ea1ad18bf7168d",
-          "anomaly-ff66e83bd5c7640f",
+          "anomaly-9eee196515f45c66",
           "anomaly-cfd582922210793c"
         ],
         "threat_score": 27,
@@ -3271,7 +3271,7 @@
         "anomaly_ids": [
           "anomaly-a6ea1ad18bf7168d",
           "anomaly-1e71fde4db60441c",
-          "anomaly-ff66e83bd5c7640f"
+          "anomaly-9eee196515f45c66"
         ],
         "threat_score": 22,
         "watch_priority": 70,
@@ -3678,11 +3678,12 @@
           "ee5a466a0e97c362109c",
           "56f70dc1af5a68329707",
           "5bf783ce3e2efa907464",
-          "b2cd59c0c987d1c6c3c2"
+          "b2cd59c0c987d1c6c3c2",
+          "7a9f5ba9493d99756e0d"
         ],
         "first_seen": "2026-09-19T09:43:58Z",
-        "last_seen": "2026-09-21T09:46:48Z",
-        "material_time": "2026-09-20T13:27:44Z",
+        "last_seen": "2026-09-21T10:45:25Z",
+        "material_time": "2026-09-21T10:26:24Z",
         "domains": [
           "CYBER",
           "INFRA",
@@ -3698,18 +3699,18 @@
           "UKRAINE"
         ],
         "state": "CONFIRMED",
-        "confidence": 75,
+        "confidence": 76,
         "confidence_direction": "STABLE",
         "confidence_components": {
           "source_quality": 71,
           "independence": 79,
-          "corroboration": 82,
+          "corroboration": 85,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 92,
+          "recency": 100,
           "evidence_type": 67,
-          "historical_reliability": 71,
-          "claim_maturity": 58
+          "historical_reliability": 66,
+          "claim_maturity": 68
         },
         "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
         "supporting_observation_ids": [
@@ -3727,7 +3728,8 @@
           "ee5a466a0e97c362109c",
           "56f70dc1af5a68329707",
           "5bf783ce3e2efa907464",
-          "b2cd59c0c987d1c6c3c2"
+          "b2cd59c0c987d1c6c3c2",
+          "7a9f5ba9493d99756e0d"
         ],
         "contradictory_observation_ids": [],
         "source_count": 4,
@@ -3745,6 +3747,17 @@
           "tass"
         ],
         "evidence": [
+          {
+            "observation_id": "7a9f5ba9493d99756e0d",
+            "title": "Kremlin comments on Ukrainian attacks during elections, settlement process",
+            "source": "TASS World",
+            "source_class": "state_media",
+            "provenance_root": "tass",
+            "stance": "report",
+            "published": "2026-09-21T10:26:24Z",
+            "url": "https://tass.com/politics/2190587",
+            "discovery_only": false
+          },
           {
             "observation_id": "5bf783ce3e2efa907464",
             "title": "Russia Claims Election Systems Hit by Cyberattacks During First Parliamentary Vote Since 2022 - UNITED24 Media",
@@ -4115,15 +4128,15 @@
           "anomaly-a6ea1ad18bf7168d",
           "anomaly-31b3256cce4bc3c5"
         ],
-        "threat_score": 29,
+        "threat_score": 30,
         "watch_priority": 58,
         "audit": {
           "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-          "support_count": 15,
+          "support_count": 16,
           "contradiction_count": 0,
           "independent_roots": 3,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-20T13:27:44Z"
+          "material_time_used_for_decay": "2026-09-21T10:26:24Z"
         }
       },
       {
@@ -4553,7 +4566,7 @@
           "recency": 77,
           "evidence_type": 79,
           "historical_reliability": 84,
-          "claim_maturity": 39
+          "claim_maturity": 40
         },
         "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
         "supporting_observation_ids": [
@@ -4804,7 +4817,7 @@
   },
   "early_warning_pressure": {
     "score": 100,
-    "claim_count": 69,
+    "claim_count": 68,
     "top_claims": [
       {
         "id": "claim-1fe736a572828d8ed0",
@@ -5150,7 +5163,7 @@
         ],
         "anomaly_ids": [
           "anomaly-e7296b4e00fb709a",
-          "anomaly-0694e356c2255f85",
+          "anomaly-010c29e9a041963e",
           "anomaly-a6ea1ad18bf7168d"
         ],
         "threat_score": 7,
@@ -5508,7 +5521,7 @@
         ],
         "anomaly_ids": [
           "anomaly-e7296b4e00fb709a",
-          "anomaly-0694e356c2255f85",
+          "anomaly-010c29e9a041963e",
           "anomaly-a6ea1ad18bf7168d"
         ],
         "threat_score": 7,
@@ -5851,7 +5864,7 @@
           "4cda217256dbadad59ac"
         ],
         "first_seen": "2026-09-21T02:46:55Z",
-        "last_seen": "2026-09-21T10:20:58Z",
+        "last_seen": "2026-09-21T10:45:25Z",
         "material_time": "2026-09-21T02:38:24Z",
         "domains": [
           "INFRA",
@@ -6139,7 +6152,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-0694e356c2255f85",
+          "anomaly-010c29e9a041963e",
           "anomaly-31b3256cce4bc3c5"
         ],
         "threat_score": 5,
@@ -6549,7 +6562,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 64,
-          "recency": 95,
+          "recency": 94,
           "evidence_type": 73,
           "historical_reliability": 81,
           "claim_maturity": 36
@@ -7135,7 +7148,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 78,
-          "recency": 72,
+          "recency": 71,
           "evidence_type": 73,
           "historical_reliability": 78,
           "claim_maturity": 41
@@ -8017,18 +8030,6 @@
             ]
           },
           {
-            "claim_id": "claim-246cbddebc73324995",
-            "shared_actors": [
-              "ISRAEL"
-            ],
-            "shared_regions": [
-              "ISRAEL/PALESTINE"
-            ],
-            "domains": [
-              "SECURITY"
-            ]
-          },
-          {
             "claim_id": "claim-683041b816497dea1c",
             "shared_actors": [
               "ISRAEL"
@@ -8066,6 +8067,18 @@
               "ECONOMIC",
               "INFRA",
               "TERRORISM"
+            ]
+          },
+          {
+            "claim_id": "claim-6df51393447b176280",
+            "shared_actors": [
+              "ISRAEL"
+            ],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
+            ],
+            "domains": [
+              "SECURITY"
             ]
           }
         ],
@@ -8125,10 +8138,11 @@
           "9c65d812a3c193cc0e8b",
           "9b5a73d767adcae773a4",
           "bb93dd549c3bb02c4e2e",
-          "d43909762fac03d705cf"
+          "d43909762fac03d705cf",
+          "4091200909c9a3a44ebb"
         ],
         "first_seen": "2026-09-10T18:21:06Z",
-        "last_seen": "2026-09-21T09:46:48Z",
+        "last_seen": "2026-09-21T10:45:25Z",
         "material_time": "2026-09-21T04:48:33Z",
         "domains": [
           "HUMANITARIAN",
@@ -8189,7 +8203,8 @@
           "9c65d812a3c193cc0e8b",
           "9b5a73d767adcae773a4",
           "bb93dd549c3bb02c4e2e",
-          "d43909762fac03d705cf"
+          "d43909762fac03d705cf",
+          "4091200909c9a3a44ebb"
         ],
         "contradictory_observation_ids": [],
         "source_count": 4,
@@ -8210,6 +8225,17 @@
           {
             "observation_id": "d43909762fac03d705cf",
             "title": "CENTCOM Reports Rerouting of 109 Ships Amid Naval Blockade of Iran - 8am.media",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-21T04:48:33Z",
+            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQSFJiVWlhdUgyLVhBR1RDU2hpUExPTVVmQWM2eGFjcUlya0toR1cydXJnblBCZ3FpbTN0bXhCMFdNVm1SZHduOGxrQllOVnF2VWtNYlNMRlJBVHQ3cHd6dWRyZTFzN245djl1YURrcnEyd0NnS1liVUwtT2VnUWZLNVVqRDhsVGkxLUQwa18zdEJTakU?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "4091200909c9a3a44ebb",
+            "title": "CENTCOM Reports Rerouting of 109 Ships Amid Naval Blockade of Iran - 8AM Media",
             "source": "GDELT Global Discovery",
             "source_class": "discovery",
             "provenance_root": "gdelt_global",
@@ -8370,17 +8396,6 @@
             "stance": "report",
             "published": "2026-09-16T09:46:00Z",
             "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQMEdmSXNxSlNvRGpBalNvaE9pd3Iyek5jdzNsaTVGak94blFBdExhS3FaRlFIc3BIcFhnSHF0cXhBY0JvWDQ1NExDVmR6ZWxTdE1rSGtNTWRZaDdMd1Rhdl8yTDg4aml5OWtXdjUyd3ppTTY5R3dQaGxicW16M1VEV1dZek1VS0k1RW1JMkRfZXkxNWRsbE44LTl2cnhJWEZ6c1N1c0diRQ?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "9eb3940d636e7ed726a2",
-            "title": "US military says 103 commercial ships redirected in Iran blockade - Middle East Eye",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-15T21:39:00Z",
-            "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxONlFuNUFGdjNSaGJJXy1RZ3RwYTJuSV9lR0xOSmE4SjhDdS1LUUVKVlg5M2o1WmZ2Y2YtQnRtb1FWZlRkclc5cWRxZjl4RUhGRXg2YmdrOGUxU1p1bHJSOFZFV041TnRMMU1OQTJteHJPMzl5NjZnVXlTQnVJSEYzMnZ5dVdYTDVQc3JobWMtdElzR04zUURHZmlieGVCMS1PeG8tZUNUNVFQX18xVFdzUXVFMmZZai0yczY3T1BWZ1lmX2ZESnhmVjItelhVZnhtcjgtVWJReFlacnprV0hLcUhXVkxWZFYxWVozalN3cWFLaGV1YzR5Q2dJZw?oc=5",
             "discovery_only": true
           }
         ],
@@ -8585,7 +8600,7 @@
         "watch_priority": 53,
         "audit": {
           "reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
-          "support_count": 31,
+          "support_count": 32,
           "contradiction_count": 0,
           "independent_roots": 1,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
@@ -8889,7 +8904,7 @@
         ],
         "anomaly_ids": [
           "anomaly-a6ea1ad18bf7168d",
-          "anomaly-ff66e83bd5c7640f"
+          "anomaly-9eee196515f45c66"
         ],
         "threat_score": 2,
         "watch_priority": 59,
@@ -8962,7 +8977,7 @@
         "c568cfc8e151e8078205"
       ],
       "first_seen": "2026-09-12T00:48:04Z",
-      "last_seen": "2026-09-21T10:20:58Z",
+      "last_seen": "2026-09-21T10:45:25Z",
       "material_time": "2026-09-20T10:04:28Z",
       "domains": [
         "INFRA",
@@ -9787,7 +9802,7 @@
         "0ccd661fb301467dbe78"
       ],
       "first_seen": "2026-09-18T06:24:32Z",
-      "last_seen": "2026-09-21T10:20:58Z",
+      "last_seen": "2026-09-21T10:45:25Z",
       "material_time": "2026-09-21T09:30:18Z",
       "domains": [
         "CYBER",
@@ -10265,7 +10280,7 @@
         "36e0f2cbf20cafc6fdc9"
       ],
       "first_seen": "2026-09-20T03:20:11Z",
-      "last_seen": "2026-09-21T10:20:58Z",
+      "last_seen": "2026-09-21T10:45:25Z",
       "material_time": "2026-09-21T05:39:59Z",
       "domains": [
         "CYBER",
@@ -11153,7 +11168,7 @@
       "anomaly_ids": [
         "anomaly-a6ea1ad18bf7168d",
         "anomaly-31b3256cce4bc3c5",
-        "anomaly-ff66e83bd5c7640f",
+        "anomaly-9eee196515f45c66",
         "anomaly-cfd582922210793c"
       ],
       "threat_score": 25,
@@ -11188,7 +11203,7 @@
         "02a4ba58268ac4c2befc"
       ],
       "first_seen": "2026-09-21T06:28:04Z",
-      "last_seen": "2026-09-21T10:20:58Z",
+      "last_seen": "2026-09-21T10:45:25Z",
       "material_time": "2026-09-21T09:38:13Z",
       "domains": [
         "CYBER",
@@ -11206,7 +11221,7 @@
       ],
       "state": "CONFIRMED",
       "confidence": 76,
-      "confidence_direction": "UP",
+      "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 83,
         "independence": 52,
@@ -11882,7 +11897,7 @@
       "anomaly_ids": [
         "anomaly-e7296b4e00fb709a",
         "anomaly-a6ea1ad18bf7168d",
-        "anomaly-ff66e83bd5c7640f",
+        "anomaly-9eee196515f45c66",
         "anomaly-cfd582922210793c"
       ],
       "threat_score": 27,
@@ -12193,7 +12208,7 @@
       "anomaly_ids": [
         "anomaly-a6ea1ad18bf7168d",
         "anomaly-1e71fde4db60441c",
-        "anomaly-ff66e83bd5c7640f"
+        "anomaly-9eee196515f45c66"
       ],
       "threat_score": 22,
       "watch_priority": 70,
@@ -12600,11 +12615,12 @@
         "ee5a466a0e97c362109c",
         "56f70dc1af5a68329707",
         "5bf783ce3e2efa907464",
-        "b2cd59c0c987d1c6c3c2"
+        "b2cd59c0c987d1c6c3c2",
+        "7a9f5ba9493d99756e0d"
       ],
       "first_seen": "2026-09-19T09:43:58Z",
-      "last_seen": "2026-09-21T09:46:48Z",
-      "material_time": "2026-09-20T13:27:44Z",
+      "last_seen": "2026-09-21T10:45:25Z",
+      "material_time": "2026-09-21T10:26:24Z",
       "domains": [
         "CYBER",
         "INFRA",
@@ -12620,18 +12636,18 @@
         "UKRAINE"
       ],
       "state": "CONFIRMED",
-      "confidence": 75,
+      "confidence": 76,
       "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 71,
         "independence": 79,
-        "corroboration": 82,
+        "corroboration": 85,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 92,
+        "recency": 100,
         "evidence_type": 67,
-        "historical_reliability": 71,
-        "claim_maturity": 58
+        "historical_reliability": 66,
+        "claim_maturity": 68
       },
       "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
       "supporting_observation_ids": [
@@ -12649,7 +12665,8 @@
         "ee5a466a0e97c362109c",
         "56f70dc1af5a68329707",
         "5bf783ce3e2efa907464",
-        "b2cd59c0c987d1c6c3c2"
+        "b2cd59c0c987d1c6c3c2",
+        "7a9f5ba9493d99756e0d"
       ],
       "contradictory_observation_ids": [],
       "source_count": 4,
@@ -12667,6 +12684,17 @@
         "tass"
       ],
       "evidence": [
+        {
+          "observation_id": "7a9f5ba9493d99756e0d",
+          "title": "Kremlin comments on Ukrainian attacks during elections, settlement process",
+          "source": "TASS World",
+          "source_class": "state_media",
+          "provenance_root": "tass",
+          "stance": "report",
+          "published": "2026-09-21T10:26:24Z",
+          "url": "https://tass.com/politics/2190587",
+          "discovery_only": false
+        },
         {
           "observation_id": "5bf783ce3e2efa907464",
           "title": "Russia Claims Election Systems Hit by Cyberattacks During First Parliamentary Vote Since 2022 - UNITED24 Media",
@@ -13037,15 +13065,15 @@
         "anomaly-a6ea1ad18bf7168d",
         "anomaly-31b3256cce4bc3c5"
       ],
-      "threat_score": 29,
+      "threat_score": 30,
       "watch_priority": 58,
       "audit": {
         "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-        "support_count": 15,
+        "support_count": 16,
         "contradiction_count": 0,
         "independent_roots": 3,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-20T13:27:44Z"
+        "material_time_used_for_decay": "2026-09-21T10:26:24Z"
       }
     },
     {
@@ -13475,7 +13503,7 @@
         "recency": 77,
         "evidence_type": 79,
         "historical_reliability": 84,
-        "claim_maturity": 39
+        "claim_maturity": 40
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
@@ -13770,7 +13798,7 @@
         "recency": 77,
         "evidence_type": 79,
         "historical_reliability": 84,
-        "claim_maturity": 39
+        "claim_maturity": 40
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
@@ -14042,7 +14070,7 @@
         "565255df09a43ef4c178"
       ],
       "first_seen": "2026-09-18T22:18:44Z",
-      "last_seen": "2026-09-21T10:20:58Z",
+      "last_seen": "2026-09-21T10:45:25Z",
       "material_time": "2026-09-19T09:09:00Z",
       "domains": [
         "ECONOMIC",
@@ -14490,7 +14518,7 @@
         "anomaly-e7296b4e00fb709a",
         "anomaly-a6ea1ad18bf7168d",
         "anomaly-31b3256cce4bc3c5",
-        "anomaly-ff66e83bd5c7640f",
+        "anomaly-9eee196515f45c66",
         "anomaly-cfd582922210793c",
         "anomaly-1d3f5fe06f5e04d9"
       ],
@@ -14786,6 +14814,21 @@
           ]
         },
         {
+          "claim_id": "claim-25cb0125347f5d6f78",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-1478b763fc41b4f9a9",
           "shared_actors": [
             "RUSSIA",
@@ -14799,18 +14842,6 @@
             "CYBER",
             "POLITICAL",
             "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-dd42a1a1cd1e25b13d",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "POLITICAL"
           ]
         }
       ],
@@ -14874,7 +14905,7 @@
         "d82404e3902cd38a7de0"
       ],
       "first_seen": "2026-09-11T03:45:41Z",
-      "last_seen": "2026-09-21T10:20:58Z",
+      "last_seen": "2026-09-21T10:45:25Z",
       "material_time": "2026-09-21T09:15:00Z",
       "domains": [
         "INFRA",
@@ -15246,34 +15277,6 @@
       ],
       "cross_domain_links": [
         {
-          "claim_id": "claim-246cbddebc73324995",
-          "shared_actors": [
-            "IRAN",
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "IRAN",
-            "ISRAEL/PALESTINE",
-            "MIDDLE EAST",
-            "UNITED STATES"
-          ],
-          "domains": [
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-3353c568c74b06d836",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-683041b816497dea1c",
           "shared_actors": [],
           "shared_regions": [
@@ -15411,6 +15414,37 @@
           "domains": [
             "INFRA",
             "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-6db9bf9646c0b19696",
+          "shared_actors": [
+            "IRAN",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "IRAN",
+            "UNITED STATES"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-d088025ea44e33541f",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "SECURITY",
             "WAR"
           ]
         }
