@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-21T09:46:48Z",
+  "generated_at": "2026-09-21T10:20:58Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 60,
   "verified_pressure": {
     "score": 60,
-    "claim_count": 65,
+    "claim_count": 67,
     "top_claims": [
       {
         "id": "claim-3d2711d0a85daf7ca1",
@@ -40,7 +40,7 @@
           "c568cfc8e151e8078205"
         ],
         "first_seen": "2026-09-12T00:48:04Z",
-        "last_seen": "2026-09-21T09:46:48Z",
+        "last_seen": "2026-09-21T10:20:58Z",
         "material_time": "2026-09-20T10:04:28Z",
         "domains": [
           "INFRA",
@@ -860,10 +860,12 @@
           "27dc6ef336ded8fbff90",
           "e9638c0593dae02ba044",
           "15282b0d592015f89f0f",
-          "11cf33121534e67d3a06"
+          "11cf33121534e67d3a06",
+          "6bcaae43e225acd13268",
+          "0ccd661fb301467dbe78"
         ],
         "first_seen": "2026-09-18T06:24:32Z",
-        "last_seen": "2026-09-21T09:46:48Z",
+        "last_seen": "2026-09-21T10:20:58Z",
         "material_time": "2026-09-21T09:30:18Z",
         "domains": [
           "CYBER",
@@ -890,7 +892,7 @@
           "specificity": 73,
           "recency": 100,
           "evidence_type": 79,
-          "historical_reliability": 77,
+          "historical_reliability": 74,
           "claim_maturity": 100
         },
         "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
@@ -907,13 +909,16 @@
           "27dc6ef336ded8fbff90",
           "e9638c0593dae02ba044",
           "15282b0d592015f89f0f",
-          "11cf33121534e67d3a06"
+          "11cf33121534e67d3a06",
+          "6bcaae43e225acd13268",
+          "0ccd661fb301467dbe78"
         ],
         "contradictory_observation_ids": [],
-        "source_count": 6,
-        "independent_provenance_count": 6,
+        "source_count": 7,
+        "independent_provenance_count": 7,
         "sources": [
           "ABC News International",
+          "Al Jazeera",
           "Al Jazeera English",
           "Associated Press Top News",
           "France 24 World",
@@ -923,6 +928,7 @@
         "provenance_roots": [
           "abc_intl",
           "aljazeera",
+          "aljazeera.com",
           "france24",
           "npr_world",
           "reddit_worldnews",
@@ -938,6 +944,28 @@
             "stance": "report",
             "published": "2026-09-21T09:30:18Z",
             "url": "https://abcnews.com/International/wireStory/main-kremlin-party-control-russias-parliament-after-carefully-136611904",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "0ccd661fb301467dbe78",
+            "title": "Russia's ruling pro-Putin party wins wartime election with over 57% of vote, near complete results show",
+            "source": "Reddit WorldNews Signal",
+            "source_class": "low_confidence",
+            "provenance_root": "reddit_worldnews",
+            "stance": "report",
+            "published": "2026-09-21T09:30:10Z",
+            "url": "https://www.reddit.com/r/worldnews/comments/1wm7xt0/russias_ruling_proputin_party_wins_wartime",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "6bcaae43e225acd13268",
+            "title": "Russia election results show Putin party winning : What we know | Politics News",
+            "source": "Al Jazeera",
+            "source_class": "established_media",
+            "provenance_root": "aljazeera.com",
+            "stance": "report",
+            "published": "2026-09-21T09:15:00Z",
+            "url": "https://www.aljazeera.com/news/2026/9/21/russia-election-results-show-putins-party-winning-what-we-know",
             "discovery_only": false
           },
           {
@@ -1286,9 +1314,9 @@
         "watch_priority": 64,
         "audit": {
           "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-          "support_count": 13,
+          "support_count": 15,
           "contradiction_count": 0,
-          "independent_roots": 6,
+          "independent_roots": 7,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-21T09:30:18Z"
         }
@@ -1315,7 +1343,7 @@
           "36e0f2cbf20cafc6fdc9"
         ],
         "first_seen": "2026-09-20T03:20:11Z",
-        "last_seen": "2026-09-21T09:46:48Z",
+        "last_seen": "2026-09-21T10:20:58Z",
         "material_time": "2026-09-21T05:39:59Z",
         "domains": [
           "CYBER",
@@ -2234,17 +2262,19 @@
         ],
         "observation_ids": [
           "46d251e392e56c292c9a",
-          "83ca8f217dab8e7bf88e"
+          "83ca8f217dab8e7bf88e",
+          "02a4ba58268ac4c2befc"
         ],
         "first_seen": "2026-09-21T06:28:04Z",
-        "last_seen": "2026-09-21T09:46:48Z",
-        "material_time": "2026-09-21T05:39:59Z",
+        "last_seen": "2026-09-21T10:20:58Z",
+        "material_time": "2026-09-21T09:38:13Z",
         "domains": [
           "CYBER",
           "POLITICAL",
           "WAR"
         ],
         "regions": [
+          "EUROPE",
           "RUSSIA",
           "UKRAINE"
         ],
@@ -2253,23 +2283,24 @@
           "UKRAINE"
         ],
         "state": "CONFIRMED",
-        "confidence": 74,
-        "confidence_direction": "STABLE",
+        "confidence": 76,
+        "confidence_direction": "UP",
         "confidence_components": {
-          "source_quality": 82,
+          "source_quality": 83,
           "independence": 52,
-          "corroboration": 52,
+          "corroboration": 55,
           "contradiction": 0,
-          "specificity": 89,
+          "specificity": 93,
           "recency": 100,
           "evidence_type": 79,
-          "historical_reliability": 82,
-          "claim_maturity": 46
+          "historical_reliability": 83,
+          "claim_maturity": 57
         },
         "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
         "supporting_observation_ids": [
           "46d251e392e56c292c9a",
-          "83ca8f217dab8e7bf88e"
+          "83ca8f217dab8e7bf88e",
+          "02a4ba58268ac4c2befc"
         ],
         "contradictory_observation_ids": [],
         "source_count": 2,
@@ -2283,6 +2314,17 @@
           "france24"
         ],
         "evidence": [
+          {
+            "observation_id": "02a4ba58268ac4c2befc",
+            "title": "Putin party retains majority in first vote since 2022 invasion of Ukraine",
+            "source": "France 24 World",
+            "source_class": "established_media",
+            "provenance_root": "france24",
+            "stance": "report",
+            "published": "2026-09-21T09:38:13Z",
+            "url": "https://www.france24.com/en/putin-party-retains-majority-in-first-vote-since-2022-invasion-of-ukraine",
+            "discovery_only": false
+          },
           {
             "observation_id": "83ca8f217dab8e7bf88e",
             "title": "Putin's United Russia party wins record 355 parliament seats, election chief says",
@@ -2397,6 +2439,7 @@
               "UKRAINE"
             ],
             "shared_regions": [
+              "EUROPE",
               "RUSSIA",
               "UKRAINE"
             ],
@@ -2413,6 +2456,7 @@
               "UKRAINE"
             ],
             "shared_regions": [
+              "EUROPE",
               "RUSSIA",
               "UKRAINE"
             ],
@@ -2446,6 +2490,7 @@
               "UKRAINE"
             ],
             "shared_regions": [
+              "EUROPE",
               "RUSSIA",
               "UKRAINE"
             ],
@@ -2476,6 +2521,7 @@
               "UKRAINE"
             ],
             "shared_regions": [
+              "EUROPE",
               "UKRAINE"
             ],
             "domains": [
@@ -2490,6 +2536,7 @@
               "UKRAINE"
             ],
             "shared_regions": [
+              "EUROPE",
               "RUSSIA",
               "UKRAINE"
             ],
@@ -2503,6 +2550,7 @@
               "RUSSIA"
             ],
             "shared_regions": [
+              "EUROPE",
               "RUSSIA"
             ],
             "domains": [
@@ -2514,15 +2562,15 @@
           "anomaly-a6ea1ad18bf7168d",
           "anomaly-31b3256cce4bc3c5"
         ],
-        "threat_score": 32,
+        "threat_score": 33,
         "watch_priority": 60,
         "audit": {
           "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-          "support_count": 2,
+          "support_count": 3,
           "contradiction_count": 0,
           "independent_roots": 2,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-21T05:39:59Z"
+          "material_time_used_for_decay": "2026-09-21T09:38:13Z"
         }
       },
       {
@@ -2546,7 +2594,7 @@
           "145bf7bef277f752487e"
         ],
         "first_seen": "2026-09-17T20:44:37Z",
-        "last_seen": "2026-09-21T09:46:48Z",
+        "last_seen": "2026-09-21T10:20:58Z",
         "material_time": "2026-09-19T20:28:32Z",
         "domains": [
           "ECONOMIC",
@@ -2577,7 +2625,7 @@
           "recency": 86,
           "evidence_type": 79,
           "historical_reliability": 70,
-          "claim_maturity": 92
+          "claim_maturity": 93
         },
         "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
         "supporting_observation_ids": [
@@ -2971,7 +3019,7 @@
           "corroboration": 52,
           "contradiction": 0,
           "specificity": 72,
-          "recency": 81,
+          "recency": 80,
           "evidence_type": 79,
           "historical_reliability": 83,
           "claim_maturity": 50
@@ -4130,7 +4178,7 @@
           "corroboration": 25,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 91,
+          "recency": 90,
           "evidence_type": 79,
           "historical_reliability": 93,
           "claim_maturity": 48
@@ -4739,7 +4787,7 @@
         ],
         "anomaly_ids": [
           "anomaly-a6ea1ad18bf7168d",
-          "anomaly-be7cde93ac5dacab"
+          "anomaly-cfaf97938b672a46"
         ],
         "threat_score": 18,
         "watch_priority": 60,
@@ -5518,7 +5566,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 72,
-          "recency": 70,
+          "recency": 69,
           "evidence_type": 67,
           "historical_reliability": 84,
           "claim_maturity": 42
@@ -5803,7 +5851,7 @@
           "4cda217256dbadad59ac"
         ],
         "first_seen": "2026-09-21T02:46:55Z",
-        "last_seen": "2026-09-21T09:46:48Z",
+        "last_seen": "2026-09-21T10:20:58Z",
         "material_time": "2026-09-21T02:38:24Z",
         "domains": [
           "INFRA",
@@ -5829,7 +5877,7 @@
           "recency": 99,
           "evidence_type": 40,
           "historical_reliability": 50,
-          "claim_maturity": 35
+          "claim_maturity": 36
         },
         "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
         "supporting_observation_ids": [
@@ -6037,17 +6085,6 @@
             ]
           },
           {
-            "claim_id": "claim-2375c07c87b9e7f934",
-            "shared_actors": [
-              "ISIS"
-            ],
-            "shared_regions": [],
-            "domains": [
-              "TERRORISM",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-65cf54442a0ef86794",
             "shared_actors": [
               "UKRAINE"
@@ -6058,6 +6095,17 @@
             "domains": [
               "CYBER",
               "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-2375c07c87b9e7f934",
+            "shared_actors": [
+              "ISIS"
+            ],
+            "shared_regions": [],
+            "domains": [
+              "TERRORISM",
               "WAR"
             ]
           },
@@ -6987,6 +7035,21 @@
             ]
           },
           {
+            "claim_id": "claim-65cf54442a0ef86794",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "EUROPE",
+              "RUSSIA"
+            ],
+            "domains": [
+              "CYBER",
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-2375c07c87b9e7f934",
             "shared_actors": [
               "IRAN"
@@ -6997,20 +7060,6 @@
             ],
             "domains": [
               "TERRORISM",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-65cf54442a0ef86794",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "CYBER",
-              "POLITICAL",
               "WAR"
             ]
           },
@@ -8020,11 +8069,9 @@
             ]
           }
         ],
-        "anomaly_ids": [
-          "anomaly-be7cde93ac5dacab"
-        ],
+        "anomaly_ids": [],
         "threat_score": 5,
-        "watch_priority": 50,
+        "watch_priority": 42,
         "audit": {
           "reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
           "support_count": 1,
@@ -8915,7 +8962,7 @@
         "c568cfc8e151e8078205"
       ],
       "first_seen": "2026-09-12T00:48:04Z",
-      "last_seen": "2026-09-21T09:46:48Z",
+      "last_seen": "2026-09-21T10:20:58Z",
       "material_time": "2026-09-20T10:04:28Z",
       "domains": [
         "INFRA",
@@ -9735,10 +9782,12 @@
         "27dc6ef336ded8fbff90",
         "e9638c0593dae02ba044",
         "15282b0d592015f89f0f",
-        "11cf33121534e67d3a06"
+        "11cf33121534e67d3a06",
+        "6bcaae43e225acd13268",
+        "0ccd661fb301467dbe78"
       ],
       "first_seen": "2026-09-18T06:24:32Z",
-      "last_seen": "2026-09-21T09:46:48Z",
+      "last_seen": "2026-09-21T10:20:58Z",
       "material_time": "2026-09-21T09:30:18Z",
       "domains": [
         "CYBER",
@@ -9765,7 +9814,7 @@
         "specificity": 73,
         "recency": 100,
         "evidence_type": 79,
-        "historical_reliability": 77,
+        "historical_reliability": 74,
         "claim_maturity": 100
       },
       "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
@@ -9782,13 +9831,16 @@
         "27dc6ef336ded8fbff90",
         "e9638c0593dae02ba044",
         "15282b0d592015f89f0f",
-        "11cf33121534e67d3a06"
+        "11cf33121534e67d3a06",
+        "6bcaae43e225acd13268",
+        "0ccd661fb301467dbe78"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 6,
-      "independent_provenance_count": 6,
+      "source_count": 7,
+      "independent_provenance_count": 7,
       "sources": [
         "ABC News International",
+        "Al Jazeera",
         "Al Jazeera English",
         "Associated Press Top News",
         "France 24 World",
@@ -9798,6 +9850,7 @@
       "provenance_roots": [
         "abc_intl",
         "aljazeera",
+        "aljazeera.com",
         "france24",
         "npr_world",
         "reddit_worldnews",
@@ -9813,6 +9866,28 @@
           "stance": "report",
           "published": "2026-09-21T09:30:18Z",
           "url": "https://abcnews.com/International/wireStory/main-kremlin-party-control-russias-parliament-after-carefully-136611904",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "0ccd661fb301467dbe78",
+          "title": "Russia's ruling pro-Putin party wins wartime election with over 57% of vote, near complete results show",
+          "source": "Reddit WorldNews Signal",
+          "source_class": "low_confidence",
+          "provenance_root": "reddit_worldnews",
+          "stance": "report",
+          "published": "2026-09-21T09:30:10Z",
+          "url": "https://www.reddit.com/r/worldnews/comments/1wm7xt0/russias_ruling_proputin_party_wins_wartime",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "6bcaae43e225acd13268",
+          "title": "Russia election results show Putin party winning : What we know | Politics News",
+          "source": "Al Jazeera",
+          "source_class": "established_media",
+          "provenance_root": "aljazeera.com",
+          "stance": "report",
+          "published": "2026-09-21T09:15:00Z",
+          "url": "https://www.aljazeera.com/news/2026/9/21/russia-election-results-show-putins-party-winning-what-we-know",
           "discovery_only": false
         },
         {
@@ -10161,9 +10236,9 @@
       "watch_priority": 64,
       "audit": {
         "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-        "support_count": 13,
+        "support_count": 15,
         "contradiction_count": 0,
-        "independent_roots": 6,
+        "independent_roots": 7,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-21T09:30:18Z"
       }
@@ -10190,7 +10265,7 @@
         "36e0f2cbf20cafc6fdc9"
       ],
       "first_seen": "2026-09-20T03:20:11Z",
-      "last_seen": "2026-09-21T09:46:48Z",
+      "last_seen": "2026-09-21T10:20:58Z",
       "material_time": "2026-09-21T05:39:59Z",
       "domains": [
         "CYBER",
@@ -11109,17 +11184,19 @@
       ],
       "observation_ids": [
         "46d251e392e56c292c9a",
-        "83ca8f217dab8e7bf88e"
+        "83ca8f217dab8e7bf88e",
+        "02a4ba58268ac4c2befc"
       ],
       "first_seen": "2026-09-21T06:28:04Z",
-      "last_seen": "2026-09-21T09:46:48Z",
-      "material_time": "2026-09-21T05:39:59Z",
+      "last_seen": "2026-09-21T10:20:58Z",
+      "material_time": "2026-09-21T09:38:13Z",
       "domains": [
         "CYBER",
         "POLITICAL",
         "WAR"
       ],
       "regions": [
+        "EUROPE",
         "RUSSIA",
         "UKRAINE"
       ],
@@ -11128,23 +11205,24 @@
         "UKRAINE"
       ],
       "state": "CONFIRMED",
-      "confidence": 74,
-      "confidence_direction": "STABLE",
+      "confidence": 76,
+      "confidence_direction": "UP",
       "confidence_components": {
-        "source_quality": 82,
+        "source_quality": 83,
         "independence": 52,
-        "corroboration": 52,
+        "corroboration": 55,
         "contradiction": 0,
-        "specificity": 89,
+        "specificity": 93,
         "recency": 100,
         "evidence_type": 79,
-        "historical_reliability": 82,
-        "claim_maturity": 46
+        "historical_reliability": 83,
+        "claim_maturity": 57
       },
       "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
       "supporting_observation_ids": [
         "46d251e392e56c292c9a",
-        "83ca8f217dab8e7bf88e"
+        "83ca8f217dab8e7bf88e",
+        "02a4ba58268ac4c2befc"
       ],
       "contradictory_observation_ids": [],
       "source_count": 2,
@@ -11158,6 +11236,17 @@
         "france24"
       ],
       "evidence": [
+        {
+          "observation_id": "02a4ba58268ac4c2befc",
+          "title": "Putin party retains majority in first vote since 2022 invasion of Ukraine",
+          "source": "France 24 World",
+          "source_class": "established_media",
+          "provenance_root": "france24",
+          "stance": "report",
+          "published": "2026-09-21T09:38:13Z",
+          "url": "https://www.france24.com/en/putin-party-retains-majority-in-first-vote-since-2022-invasion-of-ukraine",
+          "discovery_only": false
+        },
         {
           "observation_id": "83ca8f217dab8e7bf88e",
           "title": "Putin's United Russia party wins record 355 parliament seats, election chief says",
@@ -11272,6 +11361,7 @@
             "UKRAINE"
           ],
           "shared_regions": [
+            "EUROPE",
             "RUSSIA",
             "UKRAINE"
           ],
@@ -11288,6 +11378,7 @@
             "UKRAINE"
           ],
           "shared_regions": [
+            "EUROPE",
             "RUSSIA",
             "UKRAINE"
           ],
@@ -11321,6 +11412,7 @@
             "UKRAINE"
           ],
           "shared_regions": [
+            "EUROPE",
             "RUSSIA",
             "UKRAINE"
           ],
@@ -11351,6 +11443,7 @@
             "UKRAINE"
           ],
           "shared_regions": [
+            "EUROPE",
             "UKRAINE"
           ],
           "domains": [
@@ -11365,6 +11458,7 @@
             "UKRAINE"
           ],
           "shared_regions": [
+            "EUROPE",
             "RUSSIA",
             "UKRAINE"
           ],
@@ -11378,6 +11472,7 @@
             "RUSSIA"
           ],
           "shared_regions": [
+            "EUROPE",
             "RUSSIA"
           ],
           "domains": [
@@ -11389,15 +11484,15 @@
         "anomaly-a6ea1ad18bf7168d",
         "anomaly-31b3256cce4bc3c5"
       ],
-      "threat_score": 32,
+      "threat_score": 33,
       "watch_priority": 60,
       "audit": {
         "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-        "support_count": 2,
+        "support_count": 3,
         "contradiction_count": 0,
         "independent_roots": 2,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-21T05:39:59Z"
+        "material_time_used_for_decay": "2026-09-21T09:38:13Z"
       }
     },
     {
@@ -11421,7 +11516,7 @@
         "145bf7bef277f752487e"
       ],
       "first_seen": "2026-09-17T20:44:37Z",
-      "last_seen": "2026-09-21T09:46:48Z",
+      "last_seen": "2026-09-21T10:20:58Z",
       "material_time": "2026-09-19T20:28:32Z",
       "domains": [
         "ECONOMIC",
@@ -11452,7 +11547,7 @@
         "recency": 86,
         "evidence_type": 79,
         "historical_reliability": 70,
-        "claim_maturity": 92
+        "claim_maturity": 93
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
@@ -11846,7 +11941,7 @@
         "corroboration": 52,
         "contradiction": 0,
         "specificity": 72,
-        "recency": 81,
+        "recency": 80,
         "evidence_type": 79,
         "historical_reliability": 83,
         "claim_maturity": 50
@@ -13005,7 +13100,7 @@
         "corroboration": 25,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 91,
+        "recency": 90,
         "evidence_type": 79,
         "historical_reliability": 93,
         "claim_maturity": 48
@@ -13614,7 +13709,7 @@
       ],
       "anomaly_ids": [
         "anomaly-a6ea1ad18bf7168d",
-        "anomaly-be7cde93ac5dacab"
+        "anomaly-cfaf97938b672a46"
       ],
       "threat_score": 18,
       "watch_priority": 60,
@@ -13909,7 +14004,7 @@
       ],
       "anomaly_ids": [
         "anomaly-a6ea1ad18bf7168d",
-        "anomaly-be7cde93ac5dacab"
+        "anomaly-cfaf97938b672a46"
       ],
       "threat_score": 18,
       "watch_priority": 60,
@@ -13947,7 +14042,7 @@
         "565255df09a43ef4c178"
       ],
       "first_seen": "2026-09-18T22:18:44Z",
-      "last_seen": "2026-09-21T09:46:48Z",
+      "last_seen": "2026-09-21T10:20:58Z",
       "material_time": "2026-09-19T09:09:00Z",
       "domains": [
         "ECONOMIC",
@@ -14266,6 +14361,21 @@
           ]
         },
         {
+          "claim_id": "claim-cebd884a5037660e9b",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-7b692e812d645711ef",
           "shared_actors": [
             "IRAN"
@@ -14372,21 +14482,6 @@
             "INFRA",
             "POLITICAL",
             "TERRORISM",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-459ce7d4a35d1cc712",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
             "WAR"
           ]
         }
@@ -14624,21 +14719,6 @@
           ]
         },
         {
-          "claim_id": "claim-cebd884a5037660e9b",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-3a9f80e6de87294b57",
           "shared_actors": [
             "RUSSIA",
@@ -14720,6 +14800,18 @@
             "POLITICAL",
             "WAR"
           ]
+        },
+        {
+          "claim_id": "claim-dd42a1a1cd1e25b13d",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
         }
       ],
       "anomaly_ids": [],
@@ -14776,11 +14868,14 @@
         "52042ead10bfb32e64a7",
         "eaed2fb2bc1b80bbe275",
         "4bce38516ff5aa77c903",
-        "ded9df1ced457c223467"
+        "ded9df1ced457c223467",
+        "141cda8ffb609f22876d",
+        "a06289a60b338c7de6f9",
+        "d82404e3902cd38a7de0"
       ],
       "first_seen": "2026-09-11T03:45:41Z",
-      "last_seen": "2026-09-21T09:46:48Z",
-      "material_time": "2026-09-21T06:30:00Z",
+      "last_seen": "2026-09-21T10:20:58Z",
+      "material_time": "2026-09-21T09:15:00Z",
       "domains": [
         "INFRA",
         "SECURITY",
@@ -14842,30 +14937,72 @@
         "52042ead10bfb32e64a7",
         "eaed2fb2bc1b80bbe275",
         "4bce38516ff5aa77c903",
-        "ded9df1ced457c223467"
+        "ded9df1ced457c223467",
+        "141cda8ffb609f22876d",
+        "a06289a60b338c7de6f9",
+        "d82404e3902cd38a7de0"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 7,
+      "source_count": 10,
       "independent_provenance_count": 2,
       "sources": [
         "GDELT Global Discovery",
         "Reddit WorldNews Signal",
         "Washington Post World",
+        "eng.chinamil.com.cn",
+        "express.co.uk",
         "middle-east-online.com",
         "middleeasteye.net",
         "newsroomamerica.com",
-        "newsweek.com"
+        "newsweek.com",
+        "timesrepublican.com"
       ],
       "provenance_roots": [
+        "eng.chinamil.com.cn",
+        "express.co.uk",
         "gdelt_global",
         "middle-east-online.com",
         "middleeasteye.net",
         "newsroomamerica.com",
         "newsweek.com",
         "reddit_worldnews",
+        "timesrepublican.com",
         "washington_post_world"
       ],
       "evidence": [
+        {
+          "observation_id": "d82404e3902cd38a7de0",
+          "title": "WW3 fears rise as Trump considers blowing up Iran | World | News",
+          "source": "express.co.uk",
+          "source_class": "low_confidence",
+          "provenance_root": "express.co.uk",
+          "stance": "report",
+          "published": "2026-09-21T09:15:00Z",
+          "url": "https://www.express.co.uk/news/world/2250233/ww3-fears-rise-trump-considers-blowing-up-iran",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "a06289a60b338c7de6f9",
+          "title": "US Sen . John Kennedy , in Iowa , predicts end of Iran war in 6 months",
+          "source": "timesrepublican.com",
+          "source_class": "low_confidence",
+          "provenance_root": "timesrepublican.com",
+          "stance": "report",
+          "published": "2026-09-21T08:30:00Z",
+          "url": "https://www.timesrepublican.com/news/todays-news/2026/09/us-sen-john-kennedy-in-iowa-predicts-end-of-iran-war-in-6-months",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "141cda8ffb609f22876d",
+          "title": "Trump says Houthis will not fight US as Iran deploys troops",
+          "source": "eng.chinamil.com.cn",
+          "source_class": "low_confidence",
+          "provenance_root": "eng.chinamil.com.cn",
+          "stance": "report",
+          "published": "2026-09-21T08:15:00Z",
+          "url": "http://eng.chinamil.com.cn/2025xb/W/N/16488044.html",
+          "discovery_only": true
+        },
         {
           "observation_id": "ded9df1ced457c223467",
           "title": "Tag : iran _ war",
@@ -15007,39 +15144,6 @@
           "stance": "report",
           "published": "2026-09-18T17:24:00Z",
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8zRFhybzNVQ3RRUVlONndFZjhtcGpFSUtfVy11ZEFMRV9WX0VCUjlqOGJXZkwwOG1WVVRxUGRTU1VSSWJFUWNzMFQ3NGFUZjlGVVE?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "c7200f23f29fdc210536",
-          "title": "US redirects 101 commercial vessels amid blockade against Iran - Report.az",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "report",
-          "published": "2026-09-14T04:50:31Z",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPXzFqWEF2cjhGYm82aDdzREYtU1g5VlplWkpHS3REVHNoYndzU1ZBZFlNbk9aSnc5M1pkZlpWcGFkNnZiWnBSWXhVbDF5aUFXQWtpSzQydHNqUG0tbjhCeV9aUHlBeTVHUm1xV0QwNWp3WEhvby1VXzVWZHAyOW1iWGt3RUJ3NVhodE1sWlppaUxOdDlzVTVLX0N6dWZuMlBw0gGmAUFVX3lxTE9GNHVCVkdDWUZtel92SlJEN0NNUlNuVnRMRjZhZEREajVTWS12QTZFb2JLX09rdElaQkVSNnliakcwZzVHZ3FmeFZKZWRFSkdVSVZ2dnNTX2NZYWdkVE9JYjR1VkNTamlRazdUTHJHQXB2YVhkT3pOZlZMNmo2N2JNdE1RSld1dVpTOG9uSXhxN2l3VGlvNFZybXdJZ2lLUFVoak1sWEE?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "ada713b3e6e65a3b39c9",
-          "title": "US redirects 101 commercial vessels amid blockade against Iran - report.az",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "report",
-          "published": "2026-09-14T04:50:31Z",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRjR1QlZHQ1lGbXpfdkpSRDdDTVJTblZ0TEY2YWRERGo1U1ktdkE2RW9iS19Pa3RJWkJFUjZ5YmpHMGc1R2dxZnhWSmVkRUpHVUlWdnZzU19jWWFnZFRPSWI0dVZDU2ppUWs3VExyR0FwdmFYZE96TmZWTDZqNjdiTXRNUUpXdXVaUzhvbkl4cTdpd1RpbzRWcm13SWdpS1BVaGpNbFhB0gGmAUFVX3lxTE9GNHVCVkdDWUZtel92SlJEN0NNUlNuVnRMRjZhZEREajVTWS12QTZFb2JLX09rdElaQkVSNnliakcwZzVHZ3FmeFZKZWRFSkdVSVZ2dnNTX2NZYWdkVE9JYjR1VkNTamlRazdUTHJHQXB2YVhkT3pOZlZMNmo2N2JNdE1RSld1dVpTOG9uSXhxN2l3VGlvNFZybXdJZ2lLUFVoak1sWEE?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "9fb3a53cb061240cd691",
-          "title": "Iran naval blockade: Centcom says 101 vessels redirected - middleeasteye.net",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "report",
-          "published": "2026-09-14T04:29:00Z",
-          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQQnJrNU16QUZlcGg4djF5UmxrcXBNY0R4RWNCWWRQUUNVaGZiX1BkTjNSa3h5eUxiUVdtRTdjeGh2a2JCZHRNMjJzN0ZWLWlQTjlmM2I0aU1zanpCMFlSWTItWEJkdzFLbUhVZTl0ZVlFdDd3VGRfRXN6eTRoc0JkT3BaYW5sV1NQWG0tcXQ4ZEVodzVEV0FIVWNBREpyT3Y0Y09zU2JwV201amdLZ293WHJJdmFUSVZtMkU0dHZZSlVjSFo0T1pHcWRYYmZVSW1jWk5RTnVIVmRmV29leXpZNXExWnVwSW9YLW1mZmd3YnMtZw?oc=5",
           "discovery_only": true
         }
       ],
@@ -15319,11 +15423,11 @@
       "watch_priority": 56,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 31,
+        "support_count": 34,
         "contradiction_count": 0,
         "independent_roots": 2,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-21T06:30:00Z"
+        "material_time_used_for_decay": "2026-09-21T09:15:00Z"
       }
     }
   ]
