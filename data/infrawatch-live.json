@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T23:19:37Z",
+  "generated_at": "2026-09-24T23:45:00Z",
   "claims": [
     {
       "id": "claim-8e693cdb42ba9f45fb",
@@ -21,7 +21,7 @@
         "25b4b34d8ff01195e04f"
       ],
       "first_seen": "2026-09-24T16:47:39Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T21:42:00Z",
       "domains": [
         "SECURITY",
@@ -385,7 +385,7 @@
         "efefb15d8670dd7749f3"
       ],
       "first_seen": "2026-09-21T11:20:43Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T09:51:00Z",
       "domains": [
         "INFRA",
@@ -404,7 +404,7 @@
         "UNITED STATES"
       ],
       "state": "CREDIBLE REPORT",
-      "confidence": 84,
+      "confidence": 83,
       "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 84,
@@ -765,7 +765,7 @@
       "anomaly_ids": [
         "anomaly-4a8b6a3edda5e431",
         "anomaly-3b3408792463e87c",
-        "anomaly-369982a0987bcafd"
+        "anomaly-56cc2c117d741f21"
       ],
       "threat_score": 16,
       "watch_priority": 58,
@@ -1077,6 +1077,270 @@
       }
     },
     {
+      "id": "claim-4635fd935a7a37336d",
+      "headline": "Saudi reports fresh Houthi attacks as France pledges to defend key oil port - france24.com",
+      "signature_tokens": [
+        "attacks",
+        "com",
+        "defend",
+        "france",
+        "france24",
+        "fresh",
+        "houthi",
+        "key",
+        "oil",
+        "pledges",
+        "port",
+        "saudi"
+      ],
+      "observation_ids": [
+        "7698d817857f0442e8c4",
+        "eb49e63ef2d123ae82d8"
+      ],
+      "first_seen": "2026-09-24T23:45:00Z",
+      "last_seen": "2026-09-24T23:45:00Z",
+      "material_time": "2026-09-24T23:34:29Z",
+      "domains": [
+        "INFRA",
+        "WAR"
+      ],
+      "regions": [
+        "EUROPE",
+        "MIDDLE EAST"
+      ],
+      "actors": [],
+      "state": "CONFIRMED",
+      "confidence": 73,
+      "confidence_direction": "NEW",
+      "confidence_components": {
+        "source_quality": 88,
+        "independence": 52,
+        "corroboration": 52,
+        "contradiction": 0,
+        "specificity": 67,
+        "recency": 100,
+        "evidence_type": 79,
+        "historical_reliability": 88,
+        "claim_maturity": 46
+      },
+      "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
+      "supporting_observation_ids": [
+        "7698d817857f0442e8c4",
+        "eb49e63ef2d123ae82d8"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 2,
+      "independent_provenance_count": 2,
+      "sources": [
+        "Agence France-Presse",
+        "France 24 World"
+      ],
+      "provenance_roots": [
+        "france24",
+        "wire:afp_world"
+      ],
+      "evidence": [
+        {
+          "observation_id": "eb49e63ef2d123ae82d8",
+          "title": "Saudi reports fresh Houthi attacks as France pledges to defend key oil port",
+          "source": "France 24 World",
+          "source_class": "established_media",
+          "provenance_root": "france24",
+          "stance": "warning",
+          "published": "2026-09-24T23:34:29Z",
+          "url": "https://www.france24.com/en/middle-east/20260924-saudi-houthi-attacks-france-oil-port",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "7698d817857f0442e8c4",
+          "title": "Saudi reports fresh Houthi attacks as France pledges to defend key oil port - france24.com",
+          "source": "Agence France-Presse",
+          "source_class": "wire",
+          "provenance_root": "wire:afp_world",
+          "stance": "report",
+          "published": "2026-09-24T23:34:00Z",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNd19MLUtMMVZaNGd5TlZ1MTNEc2dCNUlNUEUtTjVkOTNUbzVJOFFPUDhkaEhnQW41cm02Nnd2OTVGT3lVcXJISWN6WE5hOXFUTEZ0VmhldnpxNGNlVUVJY1BOYVBQVTlYTFA3NzhPSDROc3o5QlpSVW9PR1pGYVM2NlVPRVd4YklxcDF1akp3?oc=5",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Saudi reports fresh Houthi attacks as France pledges to defend key oil port - france24.com",
+        "plausible_explanations": [
+          "A genuine INFRA/WAR development involving the reported actors is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related INFRA/WAR indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-ddb28772ec8c980666",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-b8652c4cd84816c66b",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-3255efa7f65ee85bd5",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8b4542a6fdb7ba9c2e",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-c898ca6341e7ff4700",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "HUMANITARIAN",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-6e3f1a064b6e817fdd",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f33f1f8c33f3c3ff79",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-a12aa1754de927496a",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE",
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-bb5943baed259345b1",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-f5ea2c33a12ba4eeb7",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8e693cdb42ba9f45fb",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "SECURITY",
+            "SPACE",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-b3ca8bcc3b30366d1d",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "SECURITY",
+            "WAR"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-e5477b44c6f2855b",
+        "anomaly-780a2ed602ef599a"
+      ],
+      "threat_score": 31,
+      "watch_priority": 52,
+      "audit": {
+        "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
+        "support_count": 2,
+        "contradiction_count": 0,
+        "independent_roots": 2,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-24T23:34:29Z"
+      }
+    },
+    {
       "id": "claim-3631a61467cb004c04",
       "headline": "Poland says fire at Starlink station is sabotage as Denmark warns of rising Russian threat",
       "signature_tokens": [
@@ -1104,7 +1368,7 @@
         "dbba1601dea368227154"
       ],
       "first_seen": "2026-09-24T11:20:32Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T19:46:13Z",
       "domains": [
         "POLITICAL",
@@ -1814,7 +2078,7 @@
         "1b9fac2d146d9f740680"
       ],
       "first_seen": "2026-09-24T16:22:34Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T15:50:43Z",
       "domains": [
         "ECONOMIC"
@@ -1839,7 +2103,7 @@
         "recency": 99,
         "evidence_type": 67,
         "historical_reliability": 79,
-        "claim_maturity": 35
+        "claim_maturity": 36
       },
       "classification_reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
       "supporting_observation_ids": [
@@ -2147,7 +2411,7 @@
         "5858ef14d430866854ce"
       ],
       "first_seen": "2026-09-24T20:22:11Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T20:15:00Z",
       "domains": [
         "CYBER",
@@ -2444,7 +2708,7 @@
         "a2f5830fd0ce5b7e6f60"
       ],
       "first_seen": "2026-09-24T07:22:33Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T07:20:11Z",
       "domains": [
         "CLIMATE",
@@ -2463,7 +2727,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 62,
-        "recency": 95,
+        "recency": 94,
         "evidence_type": 67,
         "historical_reliability": 80,
         "claim_maturity": 36
@@ -2713,7 +2977,7 @@
         "b28fc75f2598899aa664"
       ],
       "first_seen": "2026-09-21T20:20:00Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T19:54:08Z",
       "domains": [
         "CLIMATE",
@@ -3196,7 +3460,7 @@
         "a818e6980982c839b9b3"
       ],
       "first_seen": "2026-09-24T13:49:22Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T13:41:04Z",
       "domains": [
         "ECONOMIC"
@@ -3484,7 +3748,7 @@
         "817ccf40de28d026ef41"
       ],
       "first_seen": "2026-09-24T23:19:37Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T14:44:00Z",
       "domains": [
         "CYBER"
@@ -3497,14 +3761,14 @@
       ],
       "state": "EARLY WARNING",
       "confidence": 34,
-      "confidence_direction": "NEW",
+      "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 15,
         "independence": 25,
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 99,
+        "recency": 98,
         "evidence_type": 12,
         "historical_reliability": 20,
         "claim_maturity": 25
@@ -3753,7 +4017,7 @@
         "976e6a9bf60d753c8c73"
       ],
       "first_seen": "2026-09-24T06:27:34Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T05:57:00Z",
       "domains": [
         "CYBER"
@@ -4009,7 +4273,7 @@
         "891d409229755388ef12"
       ],
       "first_seen": "2026-09-24T20:47:53Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T20:35:39Z",
       "domains": [
         "ECONOMIC"
@@ -4306,7 +4570,7 @@
         "5c7ddefc806063971270"
       ],
       "first_seen": "2026-09-24T20:22:11Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T20:19:30Z",
       "domains": [
         "INFRA"
@@ -4602,7 +4866,7 @@
         "60d7f03a309ae432ebeb"
       ],
       "first_seen": "2026-09-24T13:49:22Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T14:59:02Z",
       "domains": [
         "ECONOMIC"
@@ -4624,7 +4888,7 @@
         "corroboration": 52,
         "contradiction": 0,
         "specificity": 76,
-        "recency": 99,
+        "recency": 98,
         "evidence_type": 79,
         "historical_reliability": 82,
         "claim_maturity": 47
@@ -4926,7 +5190,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 98,
+        "recency": 97,
         "evidence_type": 12,
         "historical_reliability": 20,
         "claim_maturity": 25
@@ -5179,7 +5443,7 @@
         "d80491d0ecb3a6236149"
       ],
       "first_seen": "2026-09-24T22:20:49Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T21:57:34Z",
       "domains": [
         "ECONOMIC",
@@ -5418,15 +5682,13 @@
           ]
         },
         {
-          "claim_id": "claim-0dd8dc2e439df1f87a",
-          "shared_actors": [
-            "IRAN"
-          ],
+          "claim_id": "claim-4635fd935a7a37336d",
+          "shared_actors": [],
           "shared_regions": [
-            "IRAN"
+            "MIDDLE EAST"
           ],
           "domains": [
-            "POLITICAL",
+            "INFRA",
             "WAR"
           ]
         }
@@ -5462,7 +5724,7 @@
         "364eb60ca6dc98b7250f"
       ],
       "first_seen": "2026-09-24T15:22:27Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T15:01:53Z",
       "domains": [
         "CYBER"
@@ -5734,7 +5996,7 @@
         "736303087e020bb1e0ce"
       ],
       "first_seen": "2026-09-24T13:49:22Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T13:30:00Z",
       "domains": [
         "CYBER"
@@ -6025,7 +6287,7 @@
         "c675c8b201e1db44fe4f"
       ],
       "first_seen": "2026-09-24T12:26:29Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T12:31:08Z",
       "domains": [
         "ECONOMIC"
@@ -6362,7 +6624,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 50,
-        "recency": 96,
+        "recency": 95,
         "evidence_type": 79,
         "historical_reliability": 89,
         "claim_maturity": 36
@@ -6587,7 +6849,7 @@
         "6375a7fa7a15334910fe"
       ],
       "first_seen": "2026-09-24T16:47:39Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T16:07:07Z",
       "domains": [
         "CLIMATE"
@@ -6608,7 +6870,7 @@
         "recency": 99,
         "evidence_type": 67,
         "historical_reliability": 72,
-        "claim_maturity": 35
+        "claim_maturity": 36
       },
       "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
       "supporting_observation_ids": [
@@ -6691,7 +6953,7 @@
         "ef6daba1b8ed48ac84d0"
       ],
       "first_seen": "2026-09-24T15:48:17Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T15:30:36Z",
       "domains": [
         "CYBER"
@@ -6923,7 +7185,7 @@
         "b9fcda168ea28f09bb58"
       ],
       "first_seen": "2026-09-24T12:52:51Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T12:48:14Z",
       "domains": [
         "CYBER"
@@ -6941,7 +7203,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 35,
-        "recency": 98,
+        "recency": 97,
         "evidence_type": 73,
         "historical_reliability": 80,
         "claim_maturity": 36
@@ -7028,7 +7290,7 @@
         "e94c96b1cc969bffe40e"
       ],
       "first_seen": "2026-09-24T10:47:18Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T10:42:37Z",
       "domains": [
         "CYBER"
@@ -7269,7 +7531,7 @@
           ]
         },
         {
-          "claim_id": "claim-7f4c25ea7afd426c1f",
+          "claim_id": "claim-89fb45424c5952dfd2",
           "shared_actors": [
             "UNITED STATES"
           ],
@@ -7277,8 +7539,7 @@
             "UNITED STATES"
           ],
           "domains": [
-            "ECONOMIC",
-            "WAR"
+            "ECONOMIC"
           ]
         }
       ],
@@ -7323,7 +7584,7 @@
         "b3ee0bcc23c16e535a9c"
       ],
       "first_seen": "2026-09-24T11:20:32Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T10:04:57Z",
       "domains": [
         "CYBER",
@@ -7820,7 +8081,7 @@
         "c6842413acdd6150235a"
       ],
       "first_seen": "2026-09-24T21:45:03Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T21:27:17Z",
       "domains": [
         "SPACE"
@@ -8090,7 +8351,7 @@
         "bfe97fbdf224aa6a4d93"
       ],
       "first_seen": "2026-09-24T20:47:53Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T20:30:00Z",
       "domains": [
         "CYBER"
@@ -8366,7 +8627,7 @@
         "50ff8dd5293b25bda75a"
       ],
       "first_seen": "2026-09-24T12:52:51Z",
-      "last_seen": "2026-09-24T23:19:37Z",
+      "last_seen": "2026-09-24T23:45:00Z",
       "material_time": "2026-09-24T12:51:48Z",
       "domains": [
         "CLIMATE"
@@ -8376,7 +8637,7 @@
       ],
       "actors": [],
       "state": "UNVERIFIED CLAIM",
-      "confidence": 60,
+      "confidence": 59,
       "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 80,
@@ -8384,7 +8645,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 62,
-        "recency": 98,
+        "recency": 97,
         "evidence_type": 67,
         "historical_reliability": 80,
         "claim_maturity": 36
@@ -8644,7 +8905,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 97,
+        "recency": 96,
         "evidence_type": 79,
         "historical_reliability": 82,
         "claim_maturity": 36
@@ -9056,7 +9317,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 97,
+        "recency": 96,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 36
