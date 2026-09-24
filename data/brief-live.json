@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T19:45:39Z",
+  "generated_at": "2026-09-24T20:22:11Z",
   "top_claims": [
     {
       "id": "claim-2b0bbfb39360c0e162",
@@ -50,7 +50,7 @@
         "recency": 99,
         "evidence_type": 79,
         "historical_reliability": 84,
-        "claim_maturity": 35
+        "claim_maturity": 36
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
@@ -293,11 +293,11 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-854058efe66f9642",
-        "anomaly-c9b7c4f0a04daf15",
+        "anomaly-a560d6cfb04181df",
+        "anomaly-3f1d3a4362533580",
         "anomaly-ad0d89c0ded4d74e",
-        "anomaly-956b0c336054c8b8",
-        "anomaly-4bb04b1b5d029213",
+        "anomaly-3b6366e8cb2fc8ad",
+        "anomaly-057fd4dd9cfa6195",
         "anomaly-fae82170255d4574"
       ],
       "threat_score": 19,
@@ -649,9 +649,9 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-728bdbe5c1b546d1",
-        "anomaly-854058efe66f9642",
-        "anomaly-c9b7c4f0a04daf15"
+        "anomaly-2337ae4737dd5fd6",
+        "anomaly-a560d6cfb04181df",
+        "anomaly-3f1d3a4362533580"
       ],
       "threat_score": 4,
       "watch_priority": 68,
@@ -680,11 +680,12 @@
       "observation_ids": [
         "a6e9ed653455235a9e8b",
         "a4c5afb8741ee88f555f",
-        "25b4b34d8ff01195e04f"
+        "25b4b34d8ff01195e04f",
+        "30d84c4f45dbe394ec81"
       ],
       "first_seen": "2026-09-24T16:47:39Z",
-      "last_seen": "2026-09-24T19:45:39Z",
-      "material_time": "2026-09-24T16:22:00Z",
+      "last_seen": "2026-09-24T20:22:11Z",
+      "material_time": "2026-09-24T17:08:00Z",
       "domains": [
         "SECURITY",
         "SPACE",
@@ -701,37 +702,51 @@
         "UKRAINE"
       ],
       "state": "CREDIBLE REPORT",
-      "confidence": 64,
-      "confidence_direction": "STABLE",
+      "confidence": 72,
+      "confidence_direction": "UP",
       "confidence_components": {
-        "source_quality": 84,
-        "independence": 25,
-        "corroboration": 22,
+        "source_quality": 83,
+        "independence": 52,
+        "corroboration": 52,
         "contradiction": 0,
-        "specificity": 73,
+        "specificity": 72,
         "recency": 100,
         "evidence_type": 79,
-        "historical_reliability": 84,
-        "claim_maturity": 35
+        "historical_reliability": 83,
+        "claim_maturity": 46
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
         "a6e9ed653455235a9e8b",
         "a4c5afb8741ee88f555f",
-        "25b4b34d8ff01195e04f"
+        "25b4b34d8ff01195e04f",
+        "30d84c4f45dbe394ec81"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 2,
-      "independent_provenance_count": 1,
+      "source_count": 3,
+      "independent_provenance_count": 2,
       "sources": [
         "GDELT Global Discovery",
+        "Sky News World",
         "The Guardian World"
       ],
       "provenance_roots": [
         "gdelt_global",
-        "guardian_world"
+        "guardian_world",
+        "sky_world"
       ],
       "evidence": [
+        {
+          "observation_id": "30d84c4f45dbe394ec81",
+          "title": "Russia could attack a NATO country within months, Danish intelligence warns",
+          "source": "Sky News World",
+          "source_class": "regional_local",
+          "provenance_root": "sky_world",
+          "stance": "speculation",
+          "published": "2026-09-24T17:08:00Z",
+          "url": "https://news.sky.com/story/russia-likely-to-ramp-up-hybrid-warfare-against-the-west-in-coming-months-denmark-says-13591539",
+          "discovery_only": false
+        },
         {
           "observation_id": "25b4b34d8ff01195e04f",
           "title": "Russia could attack a Nato country within months, Danish intelligence says - The Guardian",
@@ -992,19 +1007,19 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-728bdbe5c1b546d1",
-        "anomaly-854058efe66f9642",
-        "anomaly-c9b7c4f0a04daf15"
+        "anomaly-2337ae4737dd5fd6",
+        "anomaly-a560d6cfb04181df",
+        "anomaly-3f1d3a4362533580"
       ],
-      "threat_score": 15,
-      "watch_priority": 64,
+      "threat_score": 17,
+      "watch_priority": 66,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 3,
+        "support_count": 4,
         "contradiction_count": 0,
-        "independent_roots": 1,
+        "independent_roots": 2,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-24T16:22:00Z"
+        "material_time_used_for_decay": "2026-09-24T17:08:00Z"
       }
     },
     {
@@ -1026,7 +1041,7 @@
         "7d8d8f9a02d4e86f6f6f"
       ],
       "first_seen": "2026-09-24T11:46:56Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T16:21:44Z",
       "domains": [
         "POLITICAL",
@@ -1254,6 +1269,22 @@
           ]
         },
         {
+          "claim_id": "claim-55b3e7d27136de8312",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "SECURITY",
+            "SPACE",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-8942ef1cfb0083913d",
           "shared_actors": [
             "UKRAINE"
@@ -1277,23 +1308,11 @@
             "NUCLEAR",
             "WAR"
           ]
-        },
-        {
-          "claim_id": "claim-c4fcb306d11a9ba695",
-          "shared_actors": [
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "UKRAINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-854058efe66f9642",
-        "anomaly-c9b7c4f0a04daf15",
+        "anomaly-a560d6cfb04181df",
+        "anomaly-3f1d3a4362533580",
         "anomaly-15404283b374ce42"
       ],
       "threat_score": 20,
@@ -1331,7 +1350,7 @@
         "efefb15d8670dd7749f3"
       ],
       "first_seen": "2026-09-21T11:20:43Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T09:51:00Z",
       "domains": [
         "INFRA",
@@ -1714,7 +1733,7 @@
       "anomaly_ids": [
         "anomaly-2c1e220c8787a2b1",
         "anomaly-ad0d89c0ded4d74e",
-        "anomaly-4bb04b1b5d029213"
+        "anomaly-057fd4dd9cfa6195"
       ],
       "threat_score": 16,
       "watch_priority": 58,
@@ -1759,7 +1778,7 @@
         "UNITED STATES"
       ],
       "state": "SPECULATIVE",
-      "confidence": 60,
+      "confidence": 59,
       "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 80,
@@ -2003,9 +2022,9 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-c9b7c4f0a04daf15",
+        "anomaly-3f1d3a4362533580",
         "anomaly-ad0d89c0ded4d74e",
-        "anomaly-956b0c336054c8b8"
+        "anomaly-3b6366e8cb2fc8ad"
       ],
       "threat_score": 2,
       "watch_priority": 56,
@@ -2037,7 +2056,7 @@
         "1bfbb364e0fb6fa110c0"
       ],
       "first_seen": "2026-09-24T12:52:51Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T13:40:25Z",
       "domains": [
         "SECURITY",
@@ -2292,8 +2311,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-728bdbe5c1b546d1",
-        "anomaly-854058efe66f9642"
+        "anomaly-2337ae4737dd5fd6",
+        "anomaly-a560d6cfb04181df"
       ],
       "threat_score": 3,
       "watch_priority": 54,
@@ -2577,8 +2596,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-854058efe66f9642",
-        "anomaly-c9b7c4f0a04daf15"
+        "anomaly-a560d6cfb04181df",
+        "anomaly-3f1d3a4362533580"
       ],
       "threat_score": 5,
       "watch_priority": 54,
@@ -2605,7 +2624,7 @@
         "ffacaa823b32a0848006"
       ],
       "first_seen": "2026-09-24T09:21:57Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T08:43:04Z",
       "domains": [
         "POLITICAL"
@@ -2877,10 +2896,10 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-854058efe66f9642",
-        "anomaly-c9b7c4f0a04daf15",
+        "anomaly-a560d6cfb04181df",
+        "anomaly-3f1d3a4362533580",
         "anomaly-2c1e220c8787a2b1",
-        "anomaly-4bb04b1b5d029213"
+        "anomaly-057fd4dd9cfa6195"
       ],
       "threat_score": 10,
       "watch_priority": 54,
@@ -2911,7 +2930,7 @@
         "13d6bd37eeeb3a4ad5ba"
       ],
       "first_seen": "2026-09-24T12:26:29Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T11:15:16Z",
       "domains": [
         "WAR"
@@ -2933,7 +2952,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 99,
+        "recency": 98,
         "evidence_type": 12,
         "historical_reliability": 20,
         "claim_maturity": 25
@@ -3166,8 +3185,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-854058efe66f9642",
-        "anomaly-c9b7c4f0a04daf15"
+        "anomaly-a560d6cfb04181df",
+        "anomaly-3f1d3a4362533580"
       ],
       "threat_score": 3,
       "watch_priority": 53,
@@ -3467,7 +3486,7 @@
       ],
       "anomaly_ids": [
         "anomaly-2c1e220c8787a2b1",
-        "anomaly-956b0c336054c8b8"
+        "anomaly-3b6366e8cb2fc8ad"
       ],
       "threat_score": 13,
       "watch_priority": 53,
@@ -3498,7 +3517,7 @@
         "e05863939a5b8939d5b2"
       ],
       "first_seen": "2026-09-24T16:22:34Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T19:02:50Z",
       "domains": [
         "POLITICAL"
@@ -3763,7 +3782,7 @@
       ],
       "anomaly_ids": [
         "anomaly-ad0d89c0ded4d74e",
-        "anomaly-4bb04b1b5d029213"
+        "anomaly-057fd4dd9cfa6195"
       ],
       "threat_score": 3,
       "watch_priority": 51,
@@ -3822,7 +3841,7 @@
         "9a97237d46a9617975a0"
       ],
       "first_seen": "2026-09-24T04:47:20Z",
-      "last_seen": "2026-09-24T19:18:59Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T15:47:20Z",
       "domains": [
         "SECURITY"
@@ -4321,7 +4340,7 @@
       "anomaly_ids": [
         "anomaly-2c1e220c8787a2b1",
         "anomaly-ad0d89c0ded4d74e",
-        "anomaly-4bb04b1b5d029213"
+        "anomaly-057fd4dd9cfa6195"
       ],
       "threat_score": 1,
       "watch_priority": 51,
@@ -4351,7 +4370,7 @@
         "7f91590282e4b3d83f05"
       ],
       "first_seen": "2026-09-24T18:24:45Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T18:15:55Z",
       "domains": [
         "WAR"
@@ -4612,9 +4631,9 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-728bdbe5c1b546d1",
-        "anomaly-854058efe66f9642",
-        "anomaly-c9b7c4f0a04daf15"
+        "anomaly-2337ae4737dd5fd6",
+        "anomaly-a560d6cfb04181df",
+        "anomaly-3f1d3a4362533580"
       ],
       "threat_score": 14,
       "watch_priority": 49,
@@ -4643,7 +4662,7 @@
         "f408e6249a19f24610ee"
       ],
       "first_seen": "2026-09-24T18:24:45Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T17:45:12Z",
       "domains": [
         "HUMANITARIAN",
@@ -4899,8 +4918,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-854058efe66f9642",
-        "anomaly-c9b7c4f0a04daf15"
+        "anomaly-a560d6cfb04181df",
+        "anomaly-3f1d3a4362533580"
       ],
       "threat_score": 18,
       "watch_priority": 49,
@@ -5188,8 +5207,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-854058efe66f9642",
-        "anomaly-c9b7c4f0a04daf15"
+        "anomaly-a560d6cfb04181df",
+        "anomaly-3f1d3a4362533580"
       ],
       "threat_score": 18,
       "watch_priority": 49,
@@ -5222,7 +5241,7 @@
         "69fcb89b62c1ddafa510"
       ],
       "first_seen": "2026-09-24T12:26:29Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T11:57:23Z",
       "domains": [
         "SECURITY"
@@ -5477,8 +5496,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-854058efe66f9642",
-        "anomaly-c9b7c4f0a04daf15"
+        "anomaly-a560d6cfb04181df",
+        "anomaly-3f1d3a4362533580"
       ],
       "threat_score": 2,
       "watch_priority": 49,
@@ -5722,6 +5741,22 @@
           ]
         },
         {
+          "claim_id": "claim-55b3e7d27136de8312",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "SECURITY",
+            "SPACE",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-b3ca8bcc3b30366d1d",
           "shared_actors": [
             "RUSSIA"
@@ -5761,26 +5796,11 @@
           "domains": [
             "CYBER"
           ]
-        },
-        {
-          "claim_id": "claim-a64839ea8d68cbf768",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-854058efe66f9642",
-        "anomaly-c9b7c4f0a04daf15"
+        "anomaly-a560d6cfb04181df",
+        "anomaly-3f1d3a4362533580"
       ],
       "threat_score": 18,
       "watch_priority": 49,
@@ -6068,8 +6088,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-854058efe66f9642",
-        "anomaly-c9b7c4f0a04daf15"
+        "anomaly-a560d6cfb04181df",
+        "anomaly-3f1d3a4362533580"
       ],
       "threat_score": 17,
       "watch_priority": 49,
@@ -6100,7 +6120,7 @@
         "19ecb35f787dd8ecb79a"
       ],
       "first_seen": "2026-09-24T16:47:39Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T19:00:00Z",
       "domains": [
         "SECURITY",
@@ -6391,6 +6411,20 @@
           ]
         },
         {
+          "claim_id": "claim-55b3e7d27136de8312",
+          "shared_actors": [
+            "NATO"
+          ],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "SECURITY",
+            "SPACE",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-ff33abb47597868373",
           "shared_actors": [],
           "shared_regions": [
@@ -6399,22 +6433,10 @@
           "domains": [
             "CYBER"
           ]
-        },
-        {
-          "claim_id": "claim-1c72a7046919ccd500",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "CYBER"
-          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-728bdbe5c1b546d1",
+        "anomaly-2337ae4737dd5fd6",
         "anomaly-ad0d89c0ded4d74e"
       ],
       "threat_score": 13,
@@ -6430,27 +6452,27 @@
     }
   ],
   "state_counts": {
-    "CONFIRMED": 172,
-    "CREDIBLE REPORT": 2090,
-    "EARLY WARNING": 565,
-    "SPECULATIVE": 1386,
-    "UNVERIFIED CLAIM": 16550,
-    "REFUTED": 81,
-    "DORMANT": 4461
+    "CONFIRMED": 175,
+    "CREDIBLE REPORT": 2083,
+    "EARLY WARNING": 568,
+    "SPECULATIVE": 1384,
+    "UNVERIFIED CLAIM": 16542,
+    "REFUTED": 82,
+    "DORMANT": 4499
   },
   "domain_counts": {
-    "ECONOMIC": 165,
-    "WAR": 887,
-    "SECURITY": 3676,
+    "ECONOMIC": 164,
+    "WAR": 881,
+    "SECURITY": 3678,
     "POLITICAL": 4038,
     "INFRA": 945,
     "NUCLEAR": 83,
-    "SPACE": 79,
+    "SPACE": 80,
     "HUMANITARIAN": 76,
-    "CYBER": 410,
+    "CYBER": 409,
     "TERRORISM": 124,
     "CLIMATE": 135,
-    "BIO": 495,
+    "BIO": 499,
     "TRAFFICKING": 5
   },
   "note": "Layered machine brief: every item retains its explicit claim state and confidence."

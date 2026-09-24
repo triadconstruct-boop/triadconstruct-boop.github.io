@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T19:45:39Z",
+  "generated_at": "2026-09-24T20:22:11Z",
   "claims": [
     {
       "id": "claim-55b3e7d27136de8312",
@@ -17,11 +17,12 @@
       "observation_ids": [
         "a6e9ed653455235a9e8b",
         "a4c5afb8741ee88f555f",
-        "25b4b34d8ff01195e04f"
+        "25b4b34d8ff01195e04f",
+        "30d84c4f45dbe394ec81"
       ],
       "first_seen": "2026-09-24T16:47:39Z",
-      "last_seen": "2026-09-24T19:45:39Z",
-      "material_time": "2026-09-24T16:22:00Z",
+      "last_seen": "2026-09-24T20:22:11Z",
+      "material_time": "2026-09-24T17:08:00Z",
       "domains": [
         "SECURITY",
         "SPACE",
@@ -38,37 +39,51 @@
         "UKRAINE"
       ],
       "state": "CREDIBLE REPORT",
-      "confidence": 64,
-      "confidence_direction": "STABLE",
+      "confidence": 72,
+      "confidence_direction": "UP",
       "confidence_components": {
-        "source_quality": 84,
-        "independence": 25,
-        "corroboration": 22,
+        "source_quality": 83,
+        "independence": 52,
+        "corroboration": 52,
         "contradiction": 0,
-        "specificity": 73,
+        "specificity": 72,
         "recency": 100,
         "evidence_type": 79,
-        "historical_reliability": 84,
-        "claim_maturity": 35
+        "historical_reliability": 83,
+        "claim_maturity": 46
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
         "a6e9ed653455235a9e8b",
         "a4c5afb8741ee88f555f",
-        "25b4b34d8ff01195e04f"
+        "25b4b34d8ff01195e04f",
+        "30d84c4f45dbe394ec81"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 2,
-      "independent_provenance_count": 1,
+      "source_count": 3,
+      "independent_provenance_count": 2,
       "sources": [
         "GDELT Global Discovery",
+        "Sky News World",
         "The Guardian World"
       ],
       "provenance_roots": [
         "gdelt_global",
-        "guardian_world"
+        "guardian_world",
+        "sky_world"
       ],
       "evidence": [
+        {
+          "observation_id": "30d84c4f45dbe394ec81",
+          "title": "Russia could attack a NATO country within months, Danish intelligence warns",
+          "source": "Sky News World",
+          "source_class": "regional_local",
+          "provenance_root": "sky_world",
+          "stance": "speculation",
+          "published": "2026-09-24T17:08:00Z",
+          "url": "https://news.sky.com/story/russia-likely-to-ramp-up-hybrid-warfare-against-the-west-in-coming-months-denmark-says-13591539",
+          "discovery_only": false
+        },
         {
           "observation_id": "25b4b34d8ff01195e04f",
           "title": "Russia could attack a Nato country within months, Danish intelligence says - The Guardian",
@@ -329,19 +344,19 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-728bdbe5c1b546d1",
-        "anomaly-854058efe66f9642",
-        "anomaly-c9b7c4f0a04daf15"
+        "anomaly-2337ae4737dd5fd6",
+        "anomaly-a560d6cfb04181df",
+        "anomaly-3f1d3a4362533580"
       ],
-      "threat_score": 15,
-      "watch_priority": 64,
+      "threat_score": 17,
+      "watch_priority": 66,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 3,
+        "support_count": 4,
         "contradiction_count": 0,
-        "independent_roots": 1,
+        "independent_roots": 2,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-24T16:22:00Z"
+        "material_time_used_for_decay": "2026-09-24T17:08:00Z"
       }
     },
     {
@@ -368,7 +383,7 @@
         "efefb15d8670dd7749f3"
       ],
       "first_seen": "2026-09-21T11:20:43Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T09:51:00Z",
       "domains": [
         "INFRA",
@@ -751,7 +766,7 @@
       "anomaly_ids": [
         "anomaly-2c1e220c8787a2b1",
         "anomaly-ad0d89c0ded4d74e",
-        "anomaly-4bb04b1b5d029213"
+        "anomaly-057fd4dd9cfa6195"
       ],
       "threat_score": 16,
       "watch_priority": 58,
@@ -1051,7 +1066,7 @@
       ],
       "anomaly_ids": [
         "anomaly-2c1e220c8787a2b1",
-        "anomaly-956b0c336054c8b8"
+        "anomaly-3b6366e8cb2fc8ad"
       ],
       "threat_score": 13,
       "watch_priority": 53,
@@ -1062,310 +1077,6 @@
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-24T01:48:47Z"
-      }
-    },
-    {
-      "id": "claim-3c29392fa4f653e6e7",
-      "headline": "Trump welcomes China's Xi to Washington",
-      "signature_tokens": [
-        "china",
-        "trump",
-        "washington",
-        "welcomes"
-      ],
-      "observation_ids": [
-        "51253d5716c9c727574e",
-        "182687d3cac08a6e83fa"
-      ],
-      "first_seen": "2026-09-24T01:46:54Z",
-      "last_seen": "2026-09-24T13:22:51Z",
-      "material_time": "2026-09-24T09:46:11Z",
-      "domains": [
-        "INFRA",
-        "POLITICAL"
-      ],
-      "regions": [
-        "CHINA"
-      ],
-      "actors": [
-        "CHINA",
-        "UNITED STATES"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 72,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 83,
-        "independence": 52,
-        "corroboration": 52,
-        "contradiction": 0,
-        "specificity": 76,
-        "recency": 98,
-        "evidence_type": 79,
-        "historical_reliability": 83,
-        "claim_maturity": 47
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "51253d5716c9c727574e",
-        "182687d3cac08a6e83fa"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 2,
-      "independent_provenance_count": 2,
-      "sources": [
-        "Al Jazeera English",
-        "France 24 World"
-      ],
-      "provenance_roots": [
-        "aljazeera",
-        "france24"
-      ],
-      "evidence": [
-        {
-          "observation_id": "182687d3cac08a6e83fa",
-          "title": "Trump welcomes China's Xi to Washington",
-          "source": "France 24 World",
-          "source_class": "established_media",
-          "provenance_root": "france24",
-          "stance": "report",
-          "published": "2026-09-24T09:46:11Z",
-          "url": "https://www.france24.com/en/video/20260924-trump-welcomes-china-s-xi-to-washington",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "51253d5716c9c727574e",
-          "title": "Trump welcomes Xi to Washington as US, China agree to extend trade truce",
-          "source": "Al Jazeera English",
-          "source_class": "established_media",
-          "provenance_root": "aljazeera",
-          "stance": "report",
-          "published": "2026-09-23T22:56:41Z",
-          "url": "https://www.aljazeera.com/news/2026/9/23/trump-meets-chinas-xi-jinping-at-us-airport-on-arrival-for-three-day-trip?traffic_source=rss",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Trump welcomes China's Xi to Washington",
-        "plausible_explanations": [
-          "A genuine INFRA/POLITICAL development involving CHINA, UNITED STATES is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related INFRA/POLITICAL indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [
-        {
-          "claim_id": "claim-685c7c00fd8defeb85",
-          "headline": "NOAA boosts weather data collection capabilities with new Mesonet contract",
-          "material_time": "2026-08-19T19:20:15Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": []
-        },
-        {
-          "claim_id": "claim-f2f896a8377745aae5",
-          "headline": "American tuna gets a boost: Increased bluefin tuna quotas mean more opportunities for U.S. fishermen",
-          "material_time": "2026-08-19T18:01:28Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": []
-        },
-        {
-          "claim_id": "claim-a02fb9167c45d388fd",
-          "headline": "Department of Justice Files First Case in U.S. Alien Terrorist Removal Court to Deport Afghan Alien Who Supported Her Family’s Plans for Election-Day Shooting",
-          "material_time": "2026-07-30T12:00:00Z",
-          "shared_domains": [
-            "POLITICAL"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": []
-        }
-      ],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-4c82b5bc892668be90",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "ECONOMIC",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-8f7efbd314043e6fe9",
-          "shared_actors": [
-            "CHINA",
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "NUCLEAR"
-          ]
-        },
-        {
-          "claim_id": "claim-7b3a8058f79a56f11d",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-6e3f1a064b6e817fdd",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-f40888e4d0a3c45580",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-55822d38b6dd761e34",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "CYBER"
-          ]
-        },
-        {
-          "claim_id": "claim-7556566e059b77d93a",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "CYBER"
-          ]
-        },
-        {
-          "claim_id": "claim-3eeda08926e459870d",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-1c72a7046919ccd500",
-          "shared_actors": [
-            "CHINA",
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "CYBER"
-          ]
-        },
-        {
-          "claim_id": "claim-2c1fd06eeec0b82f09",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "ECONOMIC",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-2b0bbfb39360c0e162",
-          "shared_actors": [
-            "CHINA",
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-89fb45424c5952dfd2",
-          "shared_actors": [
-            "CHINA",
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "ECONOMIC"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-ad0d89c0ded4d74e",
-        "anomaly-956b0c336054c8b8"
-      ],
-      "threat_score": 13,
-      "watch_priority": 47,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 2,
-        "contradiction_count": 0,
-        "independent_roots": 2,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-24T09:46:11Z"
       }
     },
     {
@@ -1391,11 +1102,13 @@
         "33a381a0ed2aec19f42f",
         "6fad06e4482965bfe143",
         "b177b52191fefcf6985a",
-        "b1be73c5d10351d3212b"
+        "b1be73c5d10351d3212b",
+        "bcbae599b89be65c44ff",
+        "dbba1601dea368227154"
       ],
       "first_seen": "2026-09-24T11:20:32Z",
-      "last_seen": "2026-09-24T19:45:39Z",
-      "material_time": "2026-09-24T16:39:50Z",
+      "last_seen": "2026-09-24T20:22:11Z",
+      "material_time": "2026-09-24T19:46:13Z",
       "domains": [
         "POLITICAL",
         "SECURITY",
@@ -1410,21 +1123,21 @@
         "RUSSIA",
         "UKRAINE"
       ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 64,
-      "confidence_direction": "STABLE",
+      "state": "CONFIRMED",
+      "confidence": 76,
+      "confidence_direction": "UP",
       "confidence_components": {
-        "source_quality": 60,
-        "independence": 52,
-        "corroboration": 52,
+        "source_quality": 68,
+        "independence": 79,
+        "corroboration": 82,
         "contradiction": 0,
         "specificity": 66,
         "recency": 100,
         "evidence_type": 79,
-        "historical_reliability": 60,
-        "claim_maturity": 46
+        "historical_reliability": 68,
+        "claim_maturity": 57
       },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+      "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
       "supporting_observation_ids": [
         "11041af71a97a460c7df",
         "5eca65f40d1e1bfc3044",
@@ -1433,24 +1146,50 @@
         "33a381a0ed2aec19f42f",
         "6fad06e4482965bfe143",
         "b177b52191fefcf6985a",
-        "b1be73c5d10351d3212b"
+        "b1be73c5d10351d3212b",
+        "bcbae599b89be65c44ff",
+        "dbba1601dea368227154"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 4,
-      "independent_provenance_count": 2,
+      "source_count": 5,
+      "independent_provenance_count": 3,
       "sources": [
+        "ABC Australia World",
         "BBC World",
         "GDELT Global Discovery",
         "Reddit WorldNews Signal",
         "breakingnews.ie"
       ],
       "provenance_roots": [
+        "abc_australia",
         "bbc_world",
         "breakingnews.ie",
         "gdelt_global",
         "reddit_worldnews"
       ],
       "evidence": [
+        {
+          "observation_id": "bcbae599b89be65c44ff",
+          "title": "Poland Starlink fire labelled 'sabotage' as Denmark warns of Russian threat",
+          "source": "ABC Australia World",
+          "source_class": "regional_local",
+          "provenance_root": "abc_australia",
+          "stance": "warning",
+          "published": "2026-09-24T19:46:13Z",
+          "url": "https://www.abc.net.au/news/2026-09-25/poland-starlink-station-sabotage-denmark-warning/107194146",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "dbba1601dea368227154",
+          "title": "Poland Starlink fire labelled 'sabotage' as Denmark warns of Russian threat - ABC News & Headlines – Australian Broadcasting Corporation",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "warning",
+          "published": "2026-09-24T19:46:13Z",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNOFZ1c200VklyMFQyMEF4ek04c0JlbTBEZHFoUGpHN3gwVV9NTzdIVHAxSXE0aDl5aXFKRHloNk04NlJVVU9nSzJBZ2czbWZFWGJTMkpkOWpXMlJpRERpejlnRDUtQmNXNUdrWUpxTU5iSDBxWGpUd09zU0hZM2o4R2ZIaC1wN2RWQThKbzdQWi1uLVhQZzAtbVVYQzgwdw?oc=5",
+          "discovery_only": true
+        },
         {
           "observation_id": "b177b52191fefcf6985a",
           "title": "Poland says Starlink station blaze was sabotage as Denmark warns of rising Russian threat - The Irish Times",
@@ -1749,18 +1488,322 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-854058efe66f9642",
-        "anomaly-c9b7c4f0a04daf15"
+        "anomaly-a560d6cfb04181df",
+        "anomaly-3f1d3a4362533580"
       ],
-      "threat_score": 10,
-      "watch_priority": 46,
+      "threat_score": 17,
+      "watch_priority": 47,
+      "audit": {
+        "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
+        "support_count": 10,
+        "contradiction_count": 0,
+        "independent_roots": 3,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-24T19:46:13Z"
+      }
+    },
+    {
+      "id": "claim-3c29392fa4f653e6e7",
+      "headline": "Trump welcomes China's Xi to Washington",
+      "signature_tokens": [
+        "china",
+        "trump",
+        "washington",
+        "welcomes"
+      ],
+      "observation_ids": [
+        "51253d5716c9c727574e",
+        "182687d3cac08a6e83fa"
+      ],
+      "first_seen": "2026-09-24T01:46:54Z",
+      "last_seen": "2026-09-24T13:22:51Z",
+      "material_time": "2026-09-24T09:46:11Z",
+      "domains": [
+        "INFRA",
+        "POLITICAL"
+      ],
+      "regions": [
+        "CHINA"
+      ],
+      "actors": [
+        "CHINA",
+        "UNITED STATES"
+      ],
+      "state": "CREDIBLE REPORT",
+      "confidence": 72,
+      "confidence_direction": "STABLE",
+      "confidence_components": {
+        "source_quality": 83,
+        "independence": 52,
+        "corroboration": 52,
+        "contradiction": 0,
+        "specificity": 76,
+        "recency": 97,
+        "evidence_type": 79,
+        "historical_reliability": 83,
+        "claim_maturity": 47
+      },
+      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+      "supporting_observation_ids": [
+        "51253d5716c9c727574e",
+        "182687d3cac08a6e83fa"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 2,
+      "independent_provenance_count": 2,
+      "sources": [
+        "Al Jazeera English",
+        "France 24 World"
+      ],
+      "provenance_roots": [
+        "aljazeera",
+        "france24"
+      ],
+      "evidence": [
+        {
+          "observation_id": "182687d3cac08a6e83fa",
+          "title": "Trump welcomes China's Xi to Washington",
+          "source": "France 24 World",
+          "source_class": "established_media",
+          "provenance_root": "france24",
+          "stance": "report",
+          "published": "2026-09-24T09:46:11Z",
+          "url": "https://www.france24.com/en/video/20260924-trump-welcomes-china-s-xi-to-washington",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "51253d5716c9c727574e",
+          "title": "Trump welcomes Xi to Washington as US, China agree to extend trade truce",
+          "source": "Al Jazeera English",
+          "source_class": "established_media",
+          "provenance_root": "aljazeera",
+          "stance": "report",
+          "published": "2026-09-23T22:56:41Z",
+          "url": "https://www.aljazeera.com/news/2026/9/23/trump-meets-chinas-xi-jinping-at-us-airport-on-arrival-for-three-day-trip?traffic_source=rss",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Trump welcomes China's Xi to Washington",
+        "plausible_explanations": [
+          "A genuine INFRA/POLITICAL development involving CHINA, UNITED STATES is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related INFRA/POLITICAL indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-685c7c00fd8defeb85",
+          "headline": "NOAA boosts weather data collection capabilities with new Mesonet contract",
+          "material_time": "2026-08-19T19:20:15Z",
+          "shared_domains": [
+            "INFRA"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": []
+        },
+        {
+          "claim_id": "claim-f2f896a8377745aae5",
+          "headline": "American tuna gets a boost: Increased bluefin tuna quotas mean more opportunities for U.S. fishermen",
+          "material_time": "2026-08-19T18:01:28Z",
+          "shared_domains": [
+            "INFRA"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": []
+        },
+        {
+          "claim_id": "claim-a02fb9167c45d388fd",
+          "headline": "Department of Justice Files First Case in U.S. Alien Terrorist Removal Court to Deport Afghan Alien Who Supported Her Family’s Plans for Election-Day Shooting",
+          "material_time": "2026-07-30T12:00:00Z",
+          "shared_domains": [
+            "POLITICAL"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": []
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-4c82b5bc892668be90",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8f7efbd314043e6fe9",
+          "shared_actors": [
+            "CHINA",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "NUCLEAR"
+          ]
+        },
+        {
+          "claim_id": "claim-7b3a8058f79a56f11d",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-6e3f1a064b6e817fdd",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f40888e4d0a3c45580",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-55822d38b6dd761e34",
+          "shared_actors": [
+            "CHINA"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ],
+          "domains": [
+            "CYBER"
+          ]
+        },
+        {
+          "claim_id": "claim-7556566e059b77d93a",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "CYBER"
+          ]
+        },
+        {
+          "claim_id": "claim-3eeda08926e459870d",
+          "shared_actors": [
+            "CHINA"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-1c72a7046919ccd500",
+          "shared_actors": [
+            "CHINA",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ],
+          "domains": [
+            "CYBER"
+          ]
+        },
+        {
+          "claim_id": "claim-2c1fd06eeec0b82f09",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-2b0bbfb39360c0e162",
+          "shared_actors": [
+            "CHINA",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-89fb45424c5952dfd2",
+          "shared_actors": [
+            "CHINA",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ],
+          "domains": [
+            "ECONOMIC"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-ad0d89c0ded4d74e",
+        "anomaly-3b6366e8cb2fc8ad"
+      ],
+      "threat_score": 13,
+      "watch_priority": 47,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 8,
+        "support_count": 2,
         "contradiction_count": 0,
         "independent_roots": 2,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-24T16:39:50Z"
+        "material_time_used_for_decay": "2026-09-24T09:46:11Z"
       }
     },
     {
@@ -1778,7 +1821,7 @@
         "1b9fac2d146d9f740680"
       ],
       "first_seen": "2026-09-24T16:22:34Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T15:50:43Z",
       "domains": [
         "ECONOMIC"
@@ -2079,7 +2122,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-854058efe66f9642",
+        "anomaly-a560d6cfb04181df",
         "anomaly-ad0d89c0ded4d74e"
       ],
       "threat_score": 2,
@@ -2381,8 +2424,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-854058efe66f9642",
-        "anomaly-c9b7c4f0a04daf15"
+        "anomaly-a560d6cfb04181df",
+        "anomaly-3f1d3a4362533580"
       ],
       "threat_score": 2,
       "watch_priority": 46,
@@ -2393,6 +2436,309 @@
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-23T22:14:00Z"
+      }
+    },
+    {
+      "id": "claim-0adf26bab1f70d5bef",
+      "headline": "Lawmakers introduce bill for voluntary telecom cyber rules after Salt Typhoon hacks",
+      "signature_tokens": [
+        "bill",
+        "cyber",
+        "hacks",
+        "introduce",
+        "lawmakers",
+        "rules",
+        "salt",
+        "telecom",
+        "typhoon",
+        "voluntary"
+      ],
+      "observation_ids": [
+        "5858ef14d430866854ce"
+      ],
+      "first_seen": "2026-09-24T20:22:11Z",
+      "last_seen": "2026-09-24T20:22:11Z",
+      "material_time": "2026-09-24T20:15:00Z",
+      "domains": [
+        "CYBER",
+        "INFRA"
+      ],
+      "regions": [
+        "CHINA",
+        "UNITED STATES"
+      ],
+      "actors": [
+        "CHINA",
+        "UNITED STATES"
+      ],
+      "state": "CREDIBLE REPORT",
+      "confidence": 64,
+      "confidence_direction": "NEW",
+      "confidence_components": {
+        "source_quality": 87,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 75,
+        "recency": 100,
+        "evidence_type": 73,
+        "historical_reliability": 87,
+        "claim_maturity": 35
+      },
+      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+      "supporting_observation_ids": [
+        "5858ef14d430866854ce"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 1,
+      "independent_provenance_count": 1,
+      "sources": [
+        "The Record"
+      ],
+      "provenance_roots": [
+        "recorded_future"
+      ],
+      "evidence": [
+        {
+          "observation_id": "5858ef14d430866854ce",
+          "title": "Lawmakers introduce bill for voluntary telecom cyber rules after Salt Typhoon hacks",
+          "source": "The Record",
+          "source_class": "specialist",
+          "provenance_root": "recorded_future",
+          "stance": "report",
+          "published": "2026-09-24T20:15:00Z",
+          "url": "https://therecord.media/lawmakers-introduce-bill-for-voluntary-telecom-cyber-rules",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Lawmakers introduce bill for voluntary telecom cyber rules after Salt Typhoon hacks",
+        "plausible_explanations": [
+          "A genuine CYBER/INFRA development involving CHINA, UNITED STATES is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related CYBER/INFRA indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-685c7c00fd8defeb85",
+          "headline": "NOAA boosts weather data collection capabilities with new Mesonet contract",
+          "material_time": "2026-08-19T19:20:15Z",
+          "shared_domains": [
+            "INFRA"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-f2f896a8377745aae5",
+          "headline": "American tuna gets a boost: Increased bluefin tuna quotas mean more opportunities for U.S. fishermen",
+          "material_time": "2026-08-19T18:01:28Z",
+          "shared_domains": [
+            "INFRA"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-4c82b5bc892668be90",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8f7efbd314043e6fe9",
+          "shared_actors": [
+            "CHINA",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "CHINA",
+            "UNITED STATES"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "NUCLEAR"
+          ]
+        },
+        {
+          "claim_id": "claim-7b3a8058f79a56f11d",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-6e3f1a064b6e817fdd",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f40888e4d0a3c45580",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-55822d38b6dd761e34",
+          "shared_actors": [
+            "CHINA"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ],
+          "domains": [
+            "CYBER"
+          ]
+        },
+        {
+          "claim_id": "claim-7556566e059b77d93a",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "CYBER"
+          ]
+        },
+        {
+          "claim_id": "claim-3eeda08926e459870d",
+          "shared_actors": [
+            "CHINA"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-1c72a7046919ccd500",
+          "shared_actors": [
+            "CHINA",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "CHINA",
+            "UNITED STATES"
+          ],
+          "domains": [
+            "CYBER"
+          ]
+        },
+        {
+          "claim_id": "claim-2c1fd06eeec0b82f09",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-2b0bbfb39360c0e162",
+          "shared_actors": [
+            "CHINA",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-89fb45424c5952dfd2",
+          "shared_actors": [
+            "CHINA",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "CHINA",
+            "UNITED STATES"
+          ],
+          "domains": [
+            "ECONOMIC"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-ad0d89c0ded4d74e",
+        "anomaly-3b6366e8cb2fc8ad"
+      ],
+      "threat_score": 12,
+      "watch_priority": 45,
+      "audit": {
+        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "support_count": 1,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-24T20:15:00Z"
       }
     },
     {
@@ -2412,7 +2758,7 @@
         "a2f5830fd0ce5b7e6f60"
       ],
       "first_seen": "2026-09-24T07:22:33Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T07:20:11Z",
       "domains": [
         "CLIMATE",
@@ -2676,11 +3022,12 @@
         "447230652ba9fec4c110",
         "de4d41caf00639b8a478",
         "f14e1708b2b580ca7fa9",
-        "be657edb1b4b24de26a6"
+        "be657edb1b4b24de26a6",
+        "b28fc75f2598899aa664"
       ],
       "first_seen": "2026-09-21T20:20:00Z",
-      "last_seen": "2026-09-24T19:45:39Z",
-      "material_time": "2026-09-24T17:31:04Z",
+      "last_seen": "2026-09-24T20:22:11Z",
+      "material_time": "2026-09-24T19:54:08Z",
       "domains": [
         "CLIMATE",
         "INFRA",
@@ -2700,9 +3047,9 @@
       "confidence_components": {
         "source_quality": 98,
         "independence": 25,
-        "corroboration": 61,
+        "corroboration": 64,
         "contradiction": 0,
-        "specificity": 60,
+        "specificity": 59,
         "recency": 100,
         "evidence_type": 98,
         "historical_reliability": 98,
@@ -2723,7 +3070,8 @@
         "447230652ba9fec4c110",
         "de4d41caf00639b8a478",
         "f14e1708b2b580ca7fa9",
-        "be657edb1b4b24de26a6"
+        "be657edb1b4b24de26a6",
+        "b28fc75f2598899aa664"
       ],
       "contradictory_observation_ids": [],
       "source_count": 1,
@@ -2735,6 +3083,17 @@
         "spc"
       ],
       "evidence": [
+        {
+          "observation_id": "b28fc75f2598899aa664",
+          "title": "SPC Sep 24, 2026 2000 UTC Day 1 Convective Outlook",
+          "source": "NOAA Storm Prediction Center",
+          "source_class": "primary_official",
+          "provenance_root": "spc",
+          "stance": "report",
+          "published": "2026-09-24T19:54:08Z",
+          "url": "https://www.spc.noaa.gov/products/outlook/day1otlk_2000.html",
+          "discovery_only": false
+        },
         {
           "observation_id": "be657edb1b4b24de26a6",
           "title": "SPC Sep 24, 2026 1730 UTC Day 2 Convective Outlook",
@@ -3126,11 +3485,11 @@
       "watch_priority": 43,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 14,
+        "support_count": 15,
         "contradiction_count": 0,
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-24T17:31:04Z"
+        "material_time_used_for_decay": "2026-09-24T19:54:08Z"
       }
     },
     {
@@ -3152,7 +3511,7 @@
         "a818e6980982c839b9b3"
       ],
       "first_seen": "2026-09-24T13:49:22Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T13:41:04Z",
       "domains": [
         "ECONOMIC"
@@ -3406,7 +3765,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-854058efe66f9642",
+        "anomaly-a560d6cfb04181df",
         "anomaly-15404283b374ce42"
       ],
       "threat_score": 1,
@@ -3439,7 +3798,7 @@
         "976e6a9bf60d753c8c73"
       ],
       "first_seen": "2026-09-24T06:27:34Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T05:57:00Z",
       "domains": [
         "CYBER"
@@ -3459,7 +3818,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 96,
+        "recency": 95,
         "evidence_type": 12,
         "historical_reliability": 20,
         "claim_maturity": 25
@@ -3678,6 +4037,306 @@
       }
     },
     {
+      "id": "claim-2dc46293e42646a7c4",
+      "headline": "Chinese Ports Had Busiest Week Ever for Containers, Says Bloomberg",
+      "signature_tokens": [
+        "bloomberg",
+        "busiest",
+        "chinese",
+        "containers",
+        "ever",
+        "had",
+        "ports",
+        "week"
+      ],
+      "observation_ids": [
+        "5c7ddefc806063971270"
+      ],
+      "first_seen": "2026-09-24T20:22:11Z",
+      "last_seen": "2026-09-24T20:22:11Z",
+      "material_time": "2026-09-24T20:19:30Z",
+      "domains": [
+        "INFRA"
+      ],
+      "regions": [
+        "CHINA",
+        "UNITED STATES"
+      ],
+      "actors": [
+        "CHINA",
+        "UNITED STATES"
+      ],
+      "state": "CREDIBLE REPORT",
+      "confidence": 61,
+      "confidence_direction": "NEW",
+      "confidence_components": {
+        "source_quality": 81,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 66,
+        "recency": 100,
+        "evidence_type": 73,
+        "historical_reliability": 81,
+        "claim_maturity": 35
+      },
+      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+      "supporting_observation_ids": [
+        "5c7ddefc806063971270"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 1,
+      "independent_provenance_count": 1,
+      "sources": [
+        "The Maritime Executive"
+      ],
+      "provenance_roots": [
+        "maritime_exec"
+      ],
+      "evidence": [
+        {
+          "observation_id": "5c7ddefc806063971270",
+          "title": "Chinese Ports Had Busiest Week Ever for Containers, Says Bloomberg",
+          "source": "The Maritime Executive",
+          "source_class": "specialist",
+          "provenance_root": "maritime_exec",
+          "stance": "report",
+          "published": "2026-09-24T20:19:30Z",
+          "url": "https://maritime-executive.com/article/chinese-ports-had-busiest-week-ever-for-containers-says-bloomberg",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Chinese Ports Had Busiest Week Ever for Containers, Says Bloomberg",
+        "plausible_explanations": [
+          "A genuine INFRA development involving CHINA, UNITED STATES is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related INFRA indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-685c7c00fd8defeb85",
+          "headline": "NOAA boosts weather data collection capabilities with new Mesonet contract",
+          "material_time": "2026-08-19T19:20:15Z",
+          "shared_domains": [
+            "INFRA"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-f2f896a8377745aae5",
+          "headline": "American tuna gets a boost: Increased bluefin tuna quotas mean more opportunities for U.S. fishermen",
+          "material_time": "2026-08-19T18:01:28Z",
+          "shared_domains": [
+            "INFRA"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-4c82b5bc892668be90",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8f7efbd314043e6fe9",
+          "shared_actors": [
+            "CHINA",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "CHINA",
+            "UNITED STATES"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "NUCLEAR"
+          ]
+        },
+        {
+          "claim_id": "claim-7b3a8058f79a56f11d",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-6e3f1a064b6e817fdd",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f40888e4d0a3c45580",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-55822d38b6dd761e34",
+          "shared_actors": [
+            "CHINA"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ],
+          "domains": [
+            "CYBER"
+          ]
+        },
+        {
+          "claim_id": "claim-7556566e059b77d93a",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "CYBER"
+          ]
+        },
+        {
+          "claim_id": "claim-3eeda08926e459870d",
+          "shared_actors": [
+            "CHINA"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-1c72a7046919ccd500",
+          "shared_actors": [
+            "CHINA",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "CHINA",
+            "UNITED STATES"
+          ],
+          "domains": [
+            "CYBER"
+          ]
+        },
+        {
+          "claim_id": "claim-2c1fd06eeec0b82f09",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-2b0bbfb39360c0e162",
+          "shared_actors": [
+            "CHINA",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-89fb45424c5952dfd2",
+          "shared_actors": [
+            "CHINA",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "CHINA",
+            "UNITED STATES"
+          ],
+          "domains": [
+            "ECONOMIC"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-ad0d89c0ded4d74e",
+        "anomaly-3b6366e8cb2fc8ad"
+      ],
+      "threat_score": 11,
+      "watch_priority": 38,
+      "audit": {
+        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "support_count": 1,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-24T20:19:30Z"
+      }
+    },
+    {
       "id": "claim-55a0f19a0a3f5a0fae",
       "headline": "EU sanctions Russian pundit Xenia Fedorova after expulsion from France",
       "signature_tokens": [
@@ -3694,7 +4353,7 @@
         "60d7f03a309ae432ebeb"
       ],
       "first_seen": "2026-09-24T13:49:22Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T14:59:02Z",
       "domains": [
         "ECONOMIC"
@@ -3964,7 +4623,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-854058efe66f9642",
+        "anomaly-a560d6cfb04181df",
         "anomaly-803b65350060b851"
       ],
       "threat_score": 13,
@@ -4018,7 +4677,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 100,
+        "recency": 99,
         "evidence_type": 12,
         "historical_reliability": 20,
         "claim_maturity": 24
@@ -4238,8 +4897,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-728bdbe5c1b546d1",
-        "anomaly-854058efe66f9642"
+        "anomaly-2337ae4737dd5fd6",
+        "anomaly-a560d6cfb04181df"
       ],
       "threat_score": 1,
       "watch_priority": 38,
@@ -4269,7 +4928,7 @@
         "364eb60ca6dc98b7250f"
       ],
       "first_seen": "2026-09-24T15:22:27Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T15:01:53Z",
       "domains": [
         "CYBER"
@@ -4484,7 +5143,7 @@
           ]
         },
         {
-          "claim_id": "claim-6279543b96670cf502",
+          "claim_id": "claim-a54b3c364ffda95467",
           "shared_actors": [
             "CHINA",
             "UNITED STATES"
@@ -4498,23 +5157,21 @@
           ]
         },
         {
-          "claim_id": "claim-a54b3c364ffda95467",
+          "claim_id": "claim-8597bc919627d8cb7d",
           "shared_actors": [
-            "CHINA",
-            "UNITED STATES"
+            "CHINA"
           ],
           "shared_regions": [
-            "CHINA",
-            "UNITED STATES"
+            "CHINA"
           ],
           "domains": [
-            "POLITICAL"
+            "TERRORISM"
           ]
         }
       ],
       "anomaly_ids": [
         "anomaly-ad0d89c0ded4d74e",
-        "anomaly-956b0c336054c8b8"
+        "anomaly-3b6366e8cb2fc8ad"
       ],
       "threat_score": 14,
       "watch_priority": 37,
@@ -4546,7 +5203,7 @@
         "736303087e020bb1e0ce"
       ],
       "first_seen": "2026-09-24T13:49:22Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T13:30:00Z",
       "domains": [
         "CYBER"
@@ -4801,8 +5458,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-854058efe66f9642",
-        "anomaly-c9b7c4f0a04daf15"
+        "anomaly-a560d6cfb04181df",
+        "anomaly-3f1d3a4362533580"
       ],
       "threat_score": 14,
       "watch_priority": 37,
@@ -4835,7 +5492,7 @@
         "c675c8b201e1db44fe4f"
       ],
       "first_seen": "2026-09-24T12:26:29Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T12:31:08Z",
       "domains": [
         "ECONOMIC"
@@ -4860,7 +5517,7 @@
         "recency": 99,
         "evidence_type": 67,
         "historical_reliability": 56,
-        "claim_maturity": 46
+        "claim_maturity": 47
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
@@ -5119,8 +5776,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-854058efe66f9642",
-        "anomaly-c9b7c4f0a04daf15"
+        "anomaly-a560d6cfb04181df",
+        "anomaly-3f1d3a4362533580"
       ],
       "threat_score": 12,
       "watch_priority": 37,
@@ -5170,7 +5827,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 50,
-        "recency": 98,
+        "recency": 97,
         "evidence_type": 79,
         "historical_reliability": 89,
         "claim_maturity": 36
@@ -5636,7 +6293,7 @@
         "6375a7fa7a15334910fe"
       ],
       "first_seen": "2026-09-24T16:47:39Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T16:07:07Z",
       "domains": [
         "CLIMATE"
@@ -5740,7 +6397,7 @@
         "ef6daba1b8ed48ac84d0"
       ],
       "first_seen": "2026-09-24T15:48:17Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T15:30:36Z",
       "domains": [
         "CYBER"
@@ -5971,7 +6628,7 @@
         "b9fcda168ea28f09bb58"
       ],
       "first_seen": "2026-09-24T12:52:51Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T12:48:14Z",
       "domains": [
         "CYBER"
@@ -5992,7 +6649,7 @@
         "recency": 99,
         "evidence_type": 73,
         "historical_reliability": 80,
-        "claim_maturity": 35
+        "claim_maturity": 36
       },
       "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
       "supporting_observation_ids": [
@@ -6058,6 +6715,292 @@
       }
     },
     {
+      "id": "claim-3f38878e6f890822c1",
+      "headline": "CISA: Ransomware gangs now exploiting critical TeamCity flaw",
+      "signature_tokens": [
+        "cisa",
+        "critical",
+        "exploiting",
+        "flaw",
+        "gangs",
+        "now",
+        "ransomware",
+        "teamcity"
+      ],
+      "observation_ids": [
+        "eab990039f6f3529a332",
+        "61844321b057e27e4fc9",
+        "e94c96b1cc969bffe40e"
+      ],
+      "first_seen": "2026-09-24T10:47:18Z",
+      "last_seen": "2026-09-24T20:22:11Z",
+      "material_time": "2026-09-24T10:42:37Z",
+      "domains": [
+        "CYBER"
+      ],
+      "regions": [
+        "GLOBAL",
+        "UNITED STATES"
+      ],
+      "actors": [
+        "UNITED STATES"
+      ],
+      "state": "UNVERIFIED CLAIM",
+      "confidence": 60,
+      "confidence_direction": "STABLE",
+      "confidence_components": {
+        "source_quality": 84,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 48,
+        "recency": 98,
+        "evidence_type": 73,
+        "historical_reliability": 84,
+        "claim_maturity": 36
+      },
+      "classification_reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
+      "supporting_observation_ids": [
+        "eab990039f6f3529a332",
+        "61844321b057e27e4fc9",
+        "e94c96b1cc969bffe40e"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 2,
+      "independent_provenance_count": 1,
+      "sources": [
+        "BleepingComputer",
+        "GDELT Global Discovery"
+      ],
+      "provenance_roots": [
+        "bleepingcomputer",
+        "gdelt_global"
+      ],
+      "evidence": [
+        {
+          "observation_id": "eab990039f6f3529a332",
+          "title": "CISA: Ransomware gangs now exploiting critical TeamCity flaw",
+          "source": "BleepingComputer",
+          "source_class": "specialist",
+          "provenance_root": "bleepingcomputer",
+          "stance": "report",
+          "published": "2026-09-24T10:42:37Z",
+          "url": "https://www.bleepingcomputer.com/news/security/cisa-ransomware-gangs-now-exploiting-critical-teamcity-flaw",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "61844321b057e27e4fc9",
+          "title": "CISA: Ransomware gangs now exploiting critical TeamCity flaw - BleepingComputer",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-24T10:42:37Z",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQi1sd2t2YUdzVHpIM0xVQU5qMjVJbk5iZTFzdUtwN3pTWDlDeENlN1Q3dW9KQjZBWXVlcHN1aGdBR296YUhqYmlwSkZsR2dJbFRQMDBQRlMzSEtpSHBfZVhSUENLVmlNTE4xa0Y0Zzl0bGxDR0M4NFVKTWJqUzdxUmlCVmVfQUJzY1RLZmxyQXZ3WkxtSWE1cUZ4QmFzT1JMZjNacG1sdUZiRVHSAbABQVVfeXFMTU5raHBwWHRnb0ZFeWFIZmd6eEhyLVNPVjVQYVlvZ2ZYdWdfQjBhTG1wWWV2c1AxTHo1TTkwaGp5RG9sX2Z3X3dJMjhONG1DNS1SVjdYNWJmLWxoTE5FdjB4TEM2VzQzSXNqNEJqQkNadTBFc3c4ZnVpTWpTVURGeFF2UWsyMWVaTUs4LVN3SklVTjAxUjR3eWxYMUotR3Ewb1VjRWk1d24wNUtjY2EyOXI?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "e94c96b1cc969bffe40e",
+          "title": "CISA: Ransomware gangs now exploiting critical TeamCity flaw - bleepingcomputer.com",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-24T10:42:37Z",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQi1sd2t2YUdzVHpIM0xVQU5qMjVJbk5iZTFzdUtwN3pTWDlDeENlN1Q3dW9KQjZBWXVlcHN1aGdBR296YUhqYmlwSkZsR2dJbFRQMDBQRlMzSEtpSHBfZVhSUENLVmlNTE4xa0Y0Zzl0bGxDR0M4NFVKTWJqUzdxUmlCVmVfQUJzY1RLZmxyQXZ3WkxtSWE1cUZ4QmFzT1JMZjNacG1sdUZiRVHSAbABQVVfeXFMTU5raHBwWHRnb0ZFeWFIZmd6eEhyLVNPVjVQYVlvZ2ZYdWdfQjBhTG1wWWV2c1AxTHo1TTkwaGp5RG9sX2Z3X3dJMjhONG1DNS1SVjdYNWJmLWxoTE5FdjB4TEM2VzQzSXNqNEJqQkNadTBFc3c4ZnVpTWpTVURGeFF2UWsyMWVaTUs4LVN3SklVTjAxUjR3eWxYMUotR3Ewb1VjRWk1d24wNUtjY2EyOXI?oc=5",
+          "discovery_only": true
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "CISA: Ransomware gangs now exploiting critical TeamCity flaw",
+        "plausible_explanations": [
+          "A genuine CYBER development involving UNITED STATES is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related CYBER indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-4c82b5bc892668be90",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8f7efbd314043e6fe9",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "NUCLEAR"
+          ]
+        },
+        {
+          "claim_id": "claim-7b3a8058f79a56f11d",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-6e3f1a064b6e817fdd",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f40888e4d0a3c45580",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-2c1fd06eeec0b82f09",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-2b0bbfb39360c0e162",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-89fb45424c5952dfd2",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "ECONOMIC"
+          ]
+        },
+        {
+          "claim_id": "claim-f4afdd1329f51d1558",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
+        },
+        {
+          "claim_id": "claim-a54b3c364ffda95467",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
+        },
+        {
+          "claim_id": "claim-7642f24d98b4c1fbb3",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f536f3fa32ed477fc3",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "WAR"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-ad0d89c0ded4d74e"
+      ],
+      "threat_score": 2,
+      "watch_priority": 36,
+      "audit": {
+        "reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
+        "support_count": 3,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-24T10:42:37Z"
+      }
+    },
+    {
       "id": "claim-22cf5b7c13f104741d",
       "headline": "Is the UK Preparing For War With Russia? Military Chief Warns Of ‘Most Dangerous’ Period As Cyber Attacks And Sabotage Raise Fears - The Sunday Guardian",
       "signature_tokens": [
@@ -6084,7 +7027,7 @@
         "b3ee0bcc23c16e535a9c"
       ],
       "first_seen": "2026-09-24T11:20:32Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T10:04:57Z",
       "domains": [
         "CYBER",
@@ -6346,7 +7289,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-854058efe66f9642"
+        "anomaly-a560d6cfb04181df"
       ],
       "threat_score": 1,
       "watch_priority": 36,
@@ -6584,7 +7527,7 @@
         "50ff8dd5293b25bda75a"
       ],
       "first_seen": "2026-09-24T12:52:51Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T12:51:48Z",
       "domains": [
         "CLIMATE"
@@ -6602,10 +7545,10 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 62,
-        "recency": 100,
+        "recency": 99,
         "evidence_type": 67,
         "historical_reliability": 80,
-        "claim_maturity": 35
+        "claim_maturity": 36
       },
       "classification_reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
       "supporting_observation_ids": [
@@ -6861,7 +7804,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 99,
+        "recency": 98,
         "evidence_type": 79,
         "historical_reliability": 82,
         "claim_maturity": 36
@@ -7140,7 +8083,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 99,
+        "recency": 98,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 36
@@ -7286,18 +8229,6 @@
           ]
         },
         {
-          "claim_id": "claim-6279543b96670cf502",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
           "claim_id": "claim-a54b3c364ffda95467",
           "shared_actors": [
             "CHINA"
@@ -7358,10 +8289,22 @@
             "POLITICAL",
             "WAR"
           ]
+        },
+        {
+          "claim_id": "claim-ed88bb6b9064b4c4fc",
+          "shared_actors": [
+            "CHINA"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ],
+          "domains": [
+            "ECONOMIC"
+          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-956b0c336054c8b8"
+        "anomaly-3b6366e8cb2fc8ad"
       ],
       "threat_score": 13,
       "watch_priority": 35,
@@ -7391,7 +8334,7 @@
         "8e6a7d43d1f28039ce3f"
       ],
       "first_seen": "2026-09-21T21:44:16Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-23T20:37:19Z",
       "domains": [
         "SPACE"
@@ -7413,7 +8356,7 @@
         "corroboration": 25,
         "contradiction": 0,
         "specificity": 92,
-        "recency": 91,
+        "recency": 90,
         "evidence_type": 86,
         "historical_reliability": 96,
         "claim_maturity": 48
@@ -7618,6 +8561,18 @@
           ]
         },
         {
+          "claim_id": "claim-55b3e7d27136de8312",
+          "shared_actors": [
+            "NATO"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "SECURITY",
+            "SPACE",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-b3ca8bcc3b30366d1d",
           "shared_actors": [
             "NATO"
@@ -7627,22 +8582,10 @@
             "SECURITY",
             "WAR"
           ]
-        },
-        {
-          "claim_id": "claim-1c72a7046919ccd500",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "CYBER"
-          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-728bdbe5c1b546d1",
+        "anomaly-2337ae4737dd5fd6",
         "anomaly-ad0d89c0ded4d74e"
       ],
       "threat_score": 11,
@@ -7809,7 +8752,7 @@
         "461dbdb18812deab0a1f"
       ],
       "first_seen": "2026-09-24T15:22:27Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T16:34:30Z",
       "domains": [
         "INFRA"
@@ -8062,7 +9005,7 @@
         "f654650ee475a6eea584"
       ],
       "first_seen": "2026-09-24T15:48:17Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T16:29:04Z",
       "domains": [
         "CYBER"
@@ -8282,6 +9225,20 @@
           ]
         },
         {
+          "claim_id": "claim-55b3e7d27136de8312",
+          "shared_actors": [
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "UKRAINE"
+          ],
+          "domains": [
+            "SECURITY",
+            "SPACE",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-989145b34a34dc9ab4",
           "shared_actors": [
             "UKRAINE"
@@ -8318,22 +9275,10 @@
             "INFRA",
             "WAR"
           ]
-        },
-        {
-          "claim_id": "claim-c360eb55c91ccfe2f9",
-          "shared_actors": [
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "UKRAINE"
-          ],
-          "domains": [
-            "ECONOMIC"
-          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-c9b7c4f0a04daf15"
+        "anomaly-3f1d3a4362533580"
       ],
       "threat_score": 1,
       "watch_priority": 33,
@@ -8363,7 +9308,7 @@
         "e6cf144003d7867b5533"
       ],
       "first_seen": "2026-09-24T11:20:32Z",
-      "last_seen": "2026-09-24T19:45:39Z",
+      "last_seen": "2026-09-24T20:22:11Z",
       "material_time": "2026-09-24T10:22:24Z",
       "domains": [
         "INFRA",
