@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T16:47:39Z",
+  "generated_at": "2026-09-24T17:20:10Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 38,
   "verified_pressure": {
@@ -679,7 +679,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-533f4d3c0a0aee59",
+          "anomaly-980437d0f5f3a9fc",
           "anomaly-62ae06362353d013"
         ],
         "threat_score": 22,
@@ -691,6 +691,336 @@
           "independent_roots": 2,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-21T05:39:59Z"
+        }
+      },
+      {
+        "id": "claim-8e693cdb42ba9f45fb",
+        "headline": "Russia could attack a Nato country within months, Danish intelligence says",
+        "signature_tokens": [
+          "attack",
+          "country",
+          "danish",
+          "intelligence",
+          "months",
+          "nato",
+          "russia",
+          "within"
+        ],
+        "observation_ids": [
+          "a4c5afb8741ee88f555f",
+          "25b4b34d8ff01195e04f"
+        ],
+        "first_seen": "2026-09-24T16:47:39Z",
+        "last_seen": "2026-09-24T17:20:10Z",
+        "material_time": "2026-09-24T16:12:00Z",
+        "domains": [
+          "SECURITY",
+          "SPACE",
+          "WAR"
+        ],
+        "regions": [
+          "EUROPE",
+          "RUSSIA",
+          "UKRAINE"
+        ],
+        "actors": [
+          "NATO",
+          "RUSSIA",
+          "UKRAINE"
+        ],
+        "state": "CREDIBLE REPORT",
+        "confidence": 64,
+        "confidence_direction": "STABLE",
+        "confidence_components": {
+          "source_quality": 84,
+          "independence": 25,
+          "corroboration": 22,
+          "contradiction": 0,
+          "specificity": 77,
+          "recency": 100,
+          "evidence_type": 79,
+          "historical_reliability": 84,
+          "claim_maturity": 35
+        },
+        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "supporting_observation_ids": [
+          "a4c5afb8741ee88f555f",
+          "25b4b34d8ff01195e04f"
+        ],
+        "contradictory_observation_ids": [],
+        "source_count": 2,
+        "independent_provenance_count": 1,
+        "sources": [
+          "GDELT Global Discovery",
+          "The Guardian World"
+        ],
+        "provenance_roots": [
+          "gdelt_global",
+          "guardian_world"
+        ],
+        "evidence": [
+          {
+            "observation_id": "25b4b34d8ff01195e04f",
+            "title": "Russia could attack a Nato country within months, Danish intelligence says - The Guardian",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "speculation",
+            "published": "2026-09-24T16:12:00Z",
+            "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONGNmbS1GdklXam8zQVF0N2ZFMTVGa0thQ1BoaTVQUC1SUVk0a0tvVDZnSlFsbTVZWDVlemFWN1B5ZFpqMmpqZzdpRW5jdmZ0X0xBNEN3cGJuLVA0RDctMHZQRzV0UG1zdVpLRERuX2lGNVBRaWt3MlZkLWNCMFladURIRWp0ZlJRSHRXcjBlWVJDU3dONGpBOWVIOXo2eEEzcEJFc053UlFTbjBNcXk5aFdFbGxzQ1pjMDVJ?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "a4c5afb8741ee88f555f",
+            "title": "Russia could attack a Nato country within months, Danish intelligence says",
+            "source": "The Guardian World",
+            "source_class": "established_media",
+            "provenance_root": "guardian_world",
+            "stance": "warning",
+            "published": "2026-09-24T16:05:44Z",
+            "url": "https://www.theguardian.com/world/2026/sep/24/russia-could-attack-a-nato-country-within-months-danish-intelligence-says",
+            "discovery_only": false
+          }
+        ],
+        "state_affiliated_reporting": false,
+        "discovery_only": false,
+        "branch_analysis": {
+          "current_observation": "Russia could attack a Nato country within months, Danish intelligence says",
+          "plausible_explanations": [
+            "A genuine SECURITY/SPACE/WAR development involving NATO, RUSSIA, UKRAINE is unfolding as reported.",
+            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+          ],
+          "escalation_branch": "Related SECURITY/SPACE/WAR indicators spread, become operational, or draw additional actors into the event.",
+          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+          "confirm_indicators": [
+            "A primary record, sensor observation, or on-record official confirmation.",
+            "Matching detail from a genuinely independent provenance root.",
+            "Observable follow-on action consistent with the reported event."
+          ],
+          "falsify_indicators": [
+            "Time-stamped primary evidence incompatible with the claim.",
+            "Independent, technically specific refutation from credible sources.",
+            "Predicted follow-on indicators fail to occur inside the stated window."
+          ],
+          "contradictory_evidence_present": false
+        },
+        "historical_matches": [
+          {
+            "claim_id": "claim-cf7625f8b461238993",
+            "headline": "Shahed-Type Drones Filmed During Mali Village Attacks",
+            "material_time": "2026-07-24T15:39:05Z",
+            "shared_domains": [
+              "SPACE"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
+            "claim_id": "claim-f682011ad23c14b910",
+            "headline": "Satellite Imagery Shows Scale of Venezuela Earthquake Damage",
+            "material_time": "2026-06-29T22:34:11Z",
+            "shared_domains": [
+              "SPACE"
+            ],
+            "shared_actors": [
+              "NATO"
+            ],
+            "shared_regions": []
+          }
+        ],
+        "cross_domain_links": [
+          {
+            "claim_id": "claim-ddb28772ec8c980666",
+            "shared_actors": [
+              "NATO",
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "EUROPE",
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-b8652c4cd84816c66b",
+            "shared_actors": [
+              "NATO",
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "EUROPE",
+              "RUSSIA"
+            ],
+            "domains": [
+              "SECURITY",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-3255efa7f65ee85bd5",
+            "shared_actors": [
+              "NATO"
+            ],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-9e788f9d628b9094be",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-8b4542a6fdb7ba9c2e",
+            "shared_actors": [
+              "NATO",
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "EUROPE",
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "POLITICAL",
+              "SECURITY"
+            ]
+          },
+          {
+            "claim_id": "claim-4c82b5bc892668be90",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-76ce02e84975e8ee01",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-5d036678dfa62043f7",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-575c03559c735b0df5",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-f04800b1b5d28b9558",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-8f7efbd314043e6fe9",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "NUCLEAR"
+            ]
+          },
+          {
+            "claim_id": "claim-a12aa1754de927496a",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          }
+        ],
+        "anomaly_ids": [
+          "anomaly-99d990add15c0b5b",
+          "anomaly-980437d0f5f3a9fc",
+          "anomaly-62ae06362353d013"
+        ],
+        "threat_score": 15,
+        "watch_priority": 64,
+        "audit": {
+          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+          "support_count": 2,
+          "contradiction_count": 0,
+          "independent_roots": 1,
+          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+          "material_time_used_for_decay": "2026-09-24T16:12:00Z"
         }
       },
       {
@@ -982,7 +1312,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-533f4d3c0a0aee59",
+          "anomaly-980437d0f5f3a9fc",
           "anomaly-62ae06362353d013"
         ],
         "threat_score": 20,
@@ -1296,12 +1626,12 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-24b71a1f4e0f73e4",
-          "anomaly-533f4d3c0a0aee59",
+          "anomaly-99d990add15c0b5b",
+          "anomaly-980437d0f5f3a9fc",
           "anomaly-62ae06362353d013",
           "anomaly-2c1e220c8787a2b1",
           "anomaly-ad0d89c0ded4d74e",
-          "anomaly-ed7f7e76df38c626"
+          "anomaly-8e1247db946ad9a5"
         ],
         "threat_score": 18,
         "watch_priority": 85,
@@ -1679,7 +2009,7 @@
         ],
         "anomaly_ids": [
           "anomaly-ad0d89c0ded4d74e",
-          "anomaly-ed7f7e76df38c626"
+          "anomaly-8e1247db946ad9a5"
         ],
         "threat_score": 21,
         "watch_priority": 56,
@@ -1690,320 +2020,6 @@
           "independent_roots": 3,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-22T02:46:42Z"
-        }
-      },
-      {
-        "id": "claim-8e693cdb42ba9f45fb",
-        "headline": "Russia could attack a Nato country within months, Danish intelligence says",
-        "signature_tokens": [
-          "attack",
-          "country",
-          "danish",
-          "intelligence",
-          "months",
-          "nato",
-          "russia",
-          "within"
-        ],
-        "observation_ids": [
-          "a4c5afb8741ee88f555f"
-        ],
-        "first_seen": "2026-09-24T16:47:39Z",
-        "last_seen": "2026-09-24T16:47:39Z",
-        "material_time": "2026-09-24T16:05:44Z",
-        "domains": [
-          "SPACE",
-          "WAR"
-        ],
-        "regions": [
-          "EUROPE",
-          "RUSSIA",
-          "UKRAINE"
-        ],
-        "actors": [
-          "NATO",
-          "RUSSIA",
-          "UKRAINE"
-        ],
-        "state": "CREDIBLE REPORT",
-        "confidence": 65,
-        "confidence_direction": "NEW",
-        "confidence_components": {
-          "source_quality": 84,
-          "independence": 25,
-          "corroboration": 22,
-          "contradiction": 0,
-          "specificity": 88,
-          "recency": 100,
-          "evidence_type": 79,
-          "historical_reliability": 84,
-          "claim_maturity": 35
-        },
-        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "supporting_observation_ids": [
-          "a4c5afb8741ee88f555f"
-        ],
-        "contradictory_observation_ids": [],
-        "source_count": 1,
-        "independent_provenance_count": 1,
-        "sources": [
-          "The Guardian World"
-        ],
-        "provenance_roots": [
-          "guardian_world"
-        ],
-        "evidence": [
-          {
-            "observation_id": "a4c5afb8741ee88f555f",
-            "title": "Russia could attack a Nato country within months, Danish intelligence says",
-            "source": "The Guardian World",
-            "source_class": "established_media",
-            "provenance_root": "guardian_world",
-            "stance": "warning",
-            "published": "2026-09-24T16:05:44Z",
-            "url": "https://www.theguardian.com/world/2026/sep/24/russia-could-attack-a-nato-country-within-months-danish-intelligence-says",
-            "discovery_only": false
-          }
-        ],
-        "state_affiliated_reporting": false,
-        "discovery_only": false,
-        "branch_analysis": {
-          "current_observation": "Russia could attack a Nato country within months, Danish intelligence says",
-          "plausible_explanations": [
-            "A genuine SPACE/WAR development involving NATO, RUSSIA, UKRAINE is unfolding as reported.",
-            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-          ],
-          "escalation_branch": "Related SPACE/WAR indicators spread, become operational, or draw additional actors into the event.",
-          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-          "confirm_indicators": [
-            "A primary record, sensor observation, or on-record official confirmation.",
-            "Matching detail from a genuinely independent provenance root.",
-            "Observable follow-on action consistent with the reported event."
-          ],
-          "falsify_indicators": [
-            "Time-stamped primary evidence incompatible with the claim.",
-            "Independent, technically specific refutation from credible sources.",
-            "Predicted follow-on indicators fail to occur inside the stated window."
-          ],
-          "contradictory_evidence_present": false
-        },
-        "historical_matches": [
-          {
-            "claim_id": "claim-cf7625f8b461238993",
-            "headline": "Shahed-Type Drones Filmed During Mali Village Attacks",
-            "material_time": "2026-07-24T15:39:05Z",
-            "shared_domains": [
-              "SPACE"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ]
-          },
-          {
-            "claim_id": "claim-f682011ad23c14b910",
-            "headline": "Satellite Imagery Shows Scale of Venezuela Earthquake Damage",
-            "material_time": "2026-06-29T22:34:11Z",
-            "shared_domains": [
-              "SPACE"
-            ],
-            "shared_actors": [
-              "NATO"
-            ],
-            "shared_regions": []
-          }
-        ],
-        "cross_domain_links": [
-          {
-            "claim_id": "claim-ddb28772ec8c980666",
-            "shared_actors": [
-              "NATO",
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "EUROPE",
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-b8652c4cd84816c66b",
-            "shared_actors": [
-              "NATO",
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "EUROPE",
-              "RUSSIA"
-            ],
-            "domains": [
-              "SECURITY",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-3255efa7f65ee85bd5",
-            "shared_actors": [
-              "NATO"
-            ],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-9e788f9d628b9094be",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-8b4542a6fdb7ba9c2e",
-            "shared_actors": [
-              "NATO",
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "EUROPE",
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "POLITICAL",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-4c82b5bc892668be90",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-76ce02e84975e8ee01",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-5d036678dfa62043f7",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-575c03559c735b0df5",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-f04800b1b5d28b9558",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-8f7efbd314043e6fe9",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "NUCLEAR"
-            ]
-          },
-          {
-            "claim_id": "claim-a12aa1754de927496a",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          }
-        ],
-        "anomaly_ids": [
-          "anomaly-24b71a1f4e0f73e4",
-          "anomaly-533f4d3c0a0aee59",
-          "anomaly-62ae06362353d013"
-        ],
-        "threat_score": 15,
-        "watch_priority": 59,
-        "audit": {
-          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 1,
-          "contradiction_count": 0,
-          "independent_roots": 1,
-          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-24T16:05:44Z"
         }
       },
       {
@@ -2282,7 +2298,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-533f4d3c0a0aee59",
+          "anomaly-980437d0f5f3a9fc",
           "anomaly-62ae06362353d013"
         ],
         "threat_score": 15,
@@ -2611,7 +2627,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 92,
+          "recency": 91,
           "evidence_type": 79,
           "historical_reliability": 82,
           "claim_maturity": 36
@@ -2910,7 +2926,7 @@
           "corroboration": 52,
           "contradiction": 0,
           "specificity": 52,
-          "recency": 83,
+          "recency": 82,
           "evidence_type": 73,
           "historical_reliability": 79,
           "claim_maturity": 49
@@ -3314,7 +3330,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-533f4d3c0a0aee59",
+          "anomaly-980437d0f5f3a9fc",
           "anomaly-62ae06362353d013"
         ],
         "threat_score": 12,
@@ -4193,8 +4209,8 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-24b71a1f4e0f73e4",
-          "anomaly-533f4d3c0a0aee59",
+          "anomaly-99d990add15c0b5b",
+          "anomaly-980437d0f5f3a9fc",
           "anomaly-62ae06362353d013"
         ],
         "threat_score": 7,
@@ -4481,12 +4497,9 @@
             ]
           }
         ],
-        "anomaly_ids": [
-          "anomaly-24b71a1f4e0f73e4",
-          "anomaly-533f4d3c0a0aee59"
-        ],
+        "anomaly_ids": [],
         "threat_score": 7,
-        "watch_priority": 67,
+        "watch_priority": 51,
         "audit": {
           "reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
           "support_count": 2,
@@ -5067,7 +5080,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-533f4d3c0a0aee59",
+          "anomaly-980437d0f5f3a9fc",
           "anomaly-62ae06362353d013",
           "anomaly-ad0d89c0ded4d74e"
         ],
@@ -5370,7 +5383,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-533f4d3c0a0aee59",
+          "anomaly-980437d0f5f3a9fc",
           "anomaly-62ae06362353d013"
         ],
         "threat_score": 2,
@@ -5633,7 +5646,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-533f4d3c0a0aee59"
+          "anomaly-980437d0f5f3a9fc"
         ],
         "threat_score": 6,
         "watch_priority": 52,
@@ -5900,7 +5913,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-533f4d3c0a0aee59"
+          "anomaly-980437d0f5f3a9fc"
         ],
         "threat_score": 6,
         "watch_priority": 52,
@@ -6227,6 +6240,7 @@
           "8fe30a896d7f5ad6afab",
           "c63126eb1423f1a7b7a2",
           "2a99f8696587da5c1678",
+          "8c06bf663a70a4d8b67e",
           "997e752134d51650a673",
           "b07376db23fab4a3161d",
           "b7ba7bb06d4b6ca66781",
@@ -6275,6 +6289,7 @@
           "8fe30a896d7f5ad6afab",
           "c63126eb1423f1a7b7a2",
           "2a99f8696587da5c1678",
+          "8c06bf663a70a4d8b67e",
           "997e752134d51650a673",
           "b07376db23fab4a3161d",
           "b7ba7bb06d4b6ca66781",
@@ -6341,6 +6356,17 @@
           {
             "observation_id": "2a99f8696587da5c1678",
             "title": "Iran offers to reopen Strait of Hormuz if US ends blockade: ‘Golden opportunity’ - New York Post",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-22T15:16:00Z",
+            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbEU0LUw0UmdsbUt2SEZxby1LTUxPRGlrV0hqY1QtWFdaVVRpSUU4TmVLUU04bXJYWXpTZTJOSU41b1NNa0pjZ2puRkItS01mc1pWc1ZQa09henJlektibk1EdDNObUVmMjVQYmZWNkhGbTRRaFQyUHVwUm1rQVlwM0hSTnlwNTFKNEZhUGNLSEZUTmlWSDVZUFRZdnQtMXVsQU4teml6X0J1dDVtT2Q4emdVWXVkWTA?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "8c06bf663a70a4d8b67e",
+            "title": "Iran offers to reopen Strait of Hormuz if US ends blockade: ‘Golden opportunity’ - nypost.com",
             "source": "GDELT Global Discovery",
             "source_class": "discovery",
             "provenance_root": "gdelt_global",
@@ -6727,7 +6753,7 @@
         "watch_priority": 61,
         "audit": {
           "reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
-          "support_count": 15,
+          "support_count": 16,
           "contradiction_count": 0,
           "independent_roots": 1,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
@@ -7345,7 +7371,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-533f4d3c0a0aee59",
+          "anomaly-980437d0f5f3a9fc",
           "anomaly-62ae06362353d013"
         ],
         "threat_score": 5,
@@ -7626,13 +7652,13 @@
   },
   "vectors": {
     "great_power_direct_clash": 21,
-    "alliance_entanglement": 23,
+    "alliance_entanglement": 20,
     "multi_theater_coupling": 7,
     "nuclear_escalation": 48,
     "military_mobilization": 60,
     "economic_warfare": 100,
     "crisis_control_failure": 0,
-    "hybrid_preparation": 88
+    "hybrid_preparation": 94
   },
   "vector_claim_counts": {
     "great_power_direct_clash": 2,
@@ -7640,7 +7666,7 @@
     "multi_theater_coupling": 1,
     "nuclear_escalation": 8,
     "military_mobilization": 13,
-    "economic_warfare": 200,
+    "economic_warfare": 199,
     "crisis_control_failure": 0,
     "hybrid_preparation": 71
   },
@@ -8321,7 +8347,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-533f4d3c0a0aee59",
+        "anomaly-980437d0f5f3a9fc",
         "anomaly-62ae06362353d013"
       ],
       "threat_score": 22,
@@ -8333,6 +8359,336 @@
         "independent_roots": 2,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-21T05:39:59Z"
+      }
+    },
+    {
+      "id": "claim-8e693cdb42ba9f45fb",
+      "headline": "Russia could attack a Nato country within months, Danish intelligence says",
+      "signature_tokens": [
+        "attack",
+        "country",
+        "danish",
+        "intelligence",
+        "months",
+        "nato",
+        "russia",
+        "within"
+      ],
+      "observation_ids": [
+        "a4c5afb8741ee88f555f",
+        "25b4b34d8ff01195e04f"
+      ],
+      "first_seen": "2026-09-24T16:47:39Z",
+      "last_seen": "2026-09-24T17:20:10Z",
+      "material_time": "2026-09-24T16:12:00Z",
+      "domains": [
+        "SECURITY",
+        "SPACE",
+        "WAR"
+      ],
+      "regions": [
+        "EUROPE",
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "actors": [
+        "NATO",
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "state": "CREDIBLE REPORT",
+      "confidence": 64,
+      "confidence_direction": "STABLE",
+      "confidence_components": {
+        "source_quality": 84,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 77,
+        "recency": 100,
+        "evidence_type": 79,
+        "historical_reliability": 84,
+        "claim_maturity": 35
+      },
+      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+      "supporting_observation_ids": [
+        "a4c5afb8741ee88f555f",
+        "25b4b34d8ff01195e04f"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 2,
+      "independent_provenance_count": 1,
+      "sources": [
+        "GDELT Global Discovery",
+        "The Guardian World"
+      ],
+      "provenance_roots": [
+        "gdelt_global",
+        "guardian_world"
+      ],
+      "evidence": [
+        {
+          "observation_id": "25b4b34d8ff01195e04f",
+          "title": "Russia could attack a Nato country within months, Danish intelligence says - The Guardian",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "speculation",
+          "published": "2026-09-24T16:12:00Z",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONGNmbS1GdklXam8zQVF0N2ZFMTVGa0thQ1BoaTVQUC1SUVk0a0tvVDZnSlFsbTVZWDVlemFWN1B5ZFpqMmpqZzdpRW5jdmZ0X0xBNEN3cGJuLVA0RDctMHZQRzV0UG1zdVpLRERuX2lGNVBRaWt3MlZkLWNCMFladURIRWp0ZlJRSHRXcjBlWVJDU3dONGpBOWVIOXo2eEEzcEJFc053UlFTbjBNcXk5aFdFbGxzQ1pjMDVJ?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "a4c5afb8741ee88f555f",
+          "title": "Russia could attack a Nato country within months, Danish intelligence says",
+          "source": "The Guardian World",
+          "source_class": "established_media",
+          "provenance_root": "guardian_world",
+          "stance": "warning",
+          "published": "2026-09-24T16:05:44Z",
+          "url": "https://www.theguardian.com/world/2026/sep/24/russia-could-attack-a-nato-country-within-months-danish-intelligence-says",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Russia could attack a Nato country within months, Danish intelligence says",
+        "plausible_explanations": [
+          "A genuine SECURITY/SPACE/WAR development involving NATO, RUSSIA, UKRAINE is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related SECURITY/SPACE/WAR indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-cf7625f8b461238993",
+          "headline": "Shahed-Type Drones Filmed During Mali Village Attacks",
+          "material_time": "2026-07-24T15:39:05Z",
+          "shared_domains": [
+            "SPACE"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ]
+        },
+        {
+          "claim_id": "claim-f682011ad23c14b910",
+          "headline": "Satellite Imagery Shows Scale of Venezuela Earthquake Damage",
+          "material_time": "2026-06-29T22:34:11Z",
+          "shared_domains": [
+            "SPACE"
+          ],
+          "shared_actors": [
+            "NATO"
+          ],
+          "shared_regions": []
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-ddb28772ec8c980666",
+          "shared_actors": [
+            "NATO",
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-b8652c4cd84816c66b",
+          "shared_actors": [
+            "NATO",
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA"
+          ],
+          "domains": [
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-3255efa7f65ee85bd5",
+          "shared_actors": [
+            "NATO"
+          ],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-9e788f9d628b9094be",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8b4542a6fdb7ba9c2e",
+          "shared_actors": [
+            "NATO",
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-4c82b5bc892668be90",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-76ce02e84975e8ee01",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-5d036678dfa62043f7",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-575c03559c735b0df5",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f04800b1b5d28b9558",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8f7efbd314043e6fe9",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "NUCLEAR"
+          ]
+        },
+        {
+          "claim_id": "claim-a12aa1754de927496a",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-99d990add15c0b5b",
+        "anomaly-980437d0f5f3a9fc",
+        "anomaly-62ae06362353d013"
+      ],
+      "threat_score": 15,
+      "watch_priority": 64,
+      "audit": {
+        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "support_count": 2,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-24T16:12:00Z"
       }
     },
     {
@@ -8624,7 +8980,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-533f4d3c0a0aee59",
+        "anomaly-980437d0f5f3a9fc",
         "anomaly-62ae06362353d013"
       ],
       "threat_score": 20,
@@ -8938,12 +9294,12 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-24b71a1f4e0f73e4",
-        "anomaly-533f4d3c0a0aee59",
+        "anomaly-99d990add15c0b5b",
+        "anomaly-980437d0f5f3a9fc",
         "anomaly-62ae06362353d013",
         "anomaly-2c1e220c8787a2b1",
         "anomaly-ad0d89c0ded4d74e",
-        "anomaly-ed7f7e76df38c626"
+        "anomaly-8e1247db946ad9a5"
       ],
       "threat_score": 18,
       "watch_priority": 85,
@@ -9321,7 +9677,7 @@
       ],
       "anomaly_ids": [
         "anomaly-ad0d89c0ded4d74e",
-        "anomaly-ed7f7e76df38c626"
+        "anomaly-8e1247db946ad9a5"
       ],
       "threat_score": 21,
       "watch_priority": 56,
@@ -9332,320 +9688,6 @@
         "independent_roots": 3,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-22T02:46:42Z"
-      }
-    },
-    {
-      "id": "claim-8e693cdb42ba9f45fb",
-      "headline": "Russia could attack a Nato country within months, Danish intelligence says",
-      "signature_tokens": [
-        "attack",
-        "country",
-        "danish",
-        "intelligence",
-        "months",
-        "nato",
-        "russia",
-        "within"
-      ],
-      "observation_ids": [
-        "a4c5afb8741ee88f555f"
-      ],
-      "first_seen": "2026-09-24T16:47:39Z",
-      "last_seen": "2026-09-24T16:47:39Z",
-      "material_time": "2026-09-24T16:05:44Z",
-      "domains": [
-        "SPACE",
-        "WAR"
-      ],
-      "regions": [
-        "EUROPE",
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "actors": [
-        "NATO",
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 65,
-      "confidence_direction": "NEW",
-      "confidence_components": {
-        "source_quality": 84,
-        "independence": 25,
-        "corroboration": 22,
-        "contradiction": 0,
-        "specificity": 88,
-        "recency": 100,
-        "evidence_type": 79,
-        "historical_reliability": 84,
-        "claim_maturity": 35
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "a4c5afb8741ee88f555f"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 1,
-      "independent_provenance_count": 1,
-      "sources": [
-        "The Guardian World"
-      ],
-      "provenance_roots": [
-        "guardian_world"
-      ],
-      "evidence": [
-        {
-          "observation_id": "a4c5afb8741ee88f555f",
-          "title": "Russia could attack a Nato country within months, Danish intelligence says",
-          "source": "The Guardian World",
-          "source_class": "established_media",
-          "provenance_root": "guardian_world",
-          "stance": "warning",
-          "published": "2026-09-24T16:05:44Z",
-          "url": "https://www.theguardian.com/world/2026/sep/24/russia-could-attack-a-nato-country-within-months-danish-intelligence-says",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Russia could attack a Nato country within months, Danish intelligence says",
-        "plausible_explanations": [
-          "A genuine SPACE/WAR development involving NATO, RUSSIA, UKRAINE is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related SPACE/WAR indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [
-        {
-          "claim_id": "claim-cf7625f8b461238993",
-          "headline": "Shahed-Type Drones Filmed During Mali Village Attacks",
-          "material_time": "2026-07-24T15:39:05Z",
-          "shared_domains": [
-            "SPACE"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ]
-        },
-        {
-          "claim_id": "claim-f682011ad23c14b910",
-          "headline": "Satellite Imagery Shows Scale of Venezuela Earthquake Damage",
-          "material_time": "2026-06-29T22:34:11Z",
-          "shared_domains": [
-            "SPACE"
-          ],
-          "shared_actors": [
-            "NATO"
-          ],
-          "shared_regions": []
-        }
-      ],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-ddb28772ec8c980666",
-          "shared_actors": [
-            "NATO",
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "EUROPE",
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-b8652c4cd84816c66b",
-          "shared_actors": [
-            "NATO",
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "EUROPE",
-            "RUSSIA"
-          ],
-          "domains": [
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-3255efa7f65ee85bd5",
-          "shared_actors": [
-            "NATO"
-          ],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-9e788f9d628b9094be",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-8b4542a6fdb7ba9c2e",
-          "shared_actors": [
-            "NATO",
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "EUROPE",
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-4c82b5bc892668be90",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-76ce02e84975e8ee01",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-5d036678dfa62043f7",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-575c03559c735b0df5",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-f04800b1b5d28b9558",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-8f7efbd314043e6fe9",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "NUCLEAR"
-          ]
-        },
-        {
-          "claim_id": "claim-a12aa1754de927496a",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-24b71a1f4e0f73e4",
-        "anomaly-533f4d3c0a0aee59",
-        "anomaly-62ae06362353d013"
-      ],
-      "threat_score": 15,
-      "watch_priority": 59,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 1,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-24T16:05:44Z"
       }
     },
     {
@@ -9924,7 +9966,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-533f4d3c0a0aee59",
+        "anomaly-980437d0f5f3a9fc",
         "anomaly-62ae06362353d013"
       ],
       "threat_score": 15,
@@ -10253,7 +10295,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 92,
+        "recency": 91,
         "evidence_type": 79,
         "historical_reliability": 82,
         "claim_maturity": 36
@@ -10552,7 +10594,7 @@
         "corroboration": 52,
         "contradiction": 0,
         "specificity": 52,
-        "recency": 83,
+        "recency": 82,
         "evidence_type": 73,
         "historical_reliability": 79,
         "claim_maturity": 49
@@ -10956,7 +10998,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-533f4d3c0a0aee59",
+        "anomaly-980437d0f5f3a9fc",
         "anomaly-62ae06362353d013"
       ],
       "threat_score": 12,
@@ -11828,7 +11870,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 79,
-        "recency": 71,
+        "recency": 70,
         "evidence_type": 79,
         "historical_reliability": 86,
         "claim_maturity": 41
@@ -12118,7 +12160,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 82,
+        "recency": 81,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 38
