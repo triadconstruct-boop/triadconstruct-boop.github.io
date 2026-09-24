@@ -30,6 +30,20 @@ STATES = (
 )
 ACTIVE_STATES = set(STATES) - {"REFUTED", "DORMANT"}
 HARD_STATES = {"CONFIRMED", "CREDIBLE REPORT"}
+EVENT_GENERIC = {
+    "attack", "attacks", "attacked", "strike", "strikes", "struck", "drone", "drones",
+    "hit", "hits", "target", "targets", "targeted", "launch", "launches", "launched",
+    "missile", "missiles", "war", "military", "report", "reports", "latest", "live",
+    "russia", "russian", "ukraine", "ukrainian", "iran", "israel", "saudi",
+    "united", "states", "north", "south", "korea", "houthi", "houthis",
+}
+EVENT_STAGES = {
+    "proposal": {"propose", "proposes", "proposed", "draft", "drafts", "drafted"},
+    "passage": {"pass", "passes", "passed", "approve", "approves", "approved", "vote", "votes", "voted"},
+    "signature": {"sign", "signs", "signed", "enact", "enacts", "enacted"},
+    "rejection": {"reject", "rejects", "rejected", "oppose", "opposes", "opposed"},
+    "implementation": {"impose", "imposes", "imposed", "lift", "lifts", "lifted"},
+}
 
 
 def _contains_any(text: str, terms: Iterable[str]) -> bool:
@@ -203,16 +217,29 @@ def merge_observations(items: list[dict], prior: list[dict], now: dt.datetime | 
 
 
 def _claim_similarity(observation: dict, claim: dict) -> float:
-    left = tokens(f"{observation.get('title', '')} {observation.get('summary', '')}")
+    left = tokens(observation.get("title", ""))
     right = set(claim.get("signature_tokens") or tokens(claim.get("headline", "")))
     overlap = jaccard(left, right)
+    distinctive = (left - EVENT_GENERIC) & (right - EVENT_GENERIC)
+    # Matching a country and a broad action does not establish one event.
+    if len(distinctive) < 2 and overlap < 0.8:
+        return 0.0
+    left_stages = {name for name, words in EVENT_STAGES.items() if left & words}
+    right_stages = {name for name, words in EVENT_STAGES.items() if right & words}
+    if left_stages and right_stages and not left_stages & right_stages:
+        return 0.0
+    date_pattern = r"\b\d{1,2}/\d{1,2}(?:/\d{2,4})?\b"
+    left_date = re.search(date_pattern, observation.get("title", ""))
+    right_date = re.search(date_pattern, claim.get("headline", ""))
+    if left_date and right_date and left_date.group() != right_date.group():
+        return 0.0
     shared_domain = bool(set(observation.get("domains", [])) & set(claim.get("domains", [])))
     shared_region = bool((set(observation.get("regions", [])) - {"GLOBAL"}) & (set(claim.get("regions", [])) - {"GLOBAL"}))
     shared_actor = bool(set(observation.get("actors", [])) & set(claim.get("actors", [])))
     material = parse_time(claim.get("material_time") or claim.get("last_seen"))
     age_days = abs((parse_time(observation.get("published")) - material).total_seconds()) / 86400
     time_score = 1.0 if age_days <= 2 else 0.7 if age_days <= 7 else 0.25 if age_days <= 30 else 0
-    return overlap * 0.62 + (0.12 if shared_domain else 0) + (0.10 if shared_region else 0) + (0.10 if shared_actor else 0) + time_score * 0.06
+    return overlap * 0.72 + (0.06 if shared_domain else 0) + (0.08 if shared_region else 0) + (0.08 if shared_actor else 0) + time_score * 0.06
 
 
 def _new_claim(observation: dict) -> dict:
@@ -354,33 +381,33 @@ def build_claims(observations: list[dict], prior_claims: list[dict], now: dt.dat
     now = now or utcnow()
     observation_by_id = {row["id"]: row for row in observations}
     claims: list[dict] = []
-    assigned: set[str] = set()
-    prior_by_id: dict[str, dict] = {}
-    for old in prior_claims:
-        ids = [oid for oid in old.get("observation_ids", []) if oid in observation_by_id and oid not in assigned]
-        if not ids:
-            continue
-        base = dict(old)
-        base["observation_ids"] = ids
-        claims.append(base)
-        prior_by_id[base["id"]] = old
-        assigned.update(ids)
+    prior_by_id = {old["id"]: old for old in prior_claims if old.get("id")}
+    # Recluster the complete preserved observation set. Retaining old assignments
+    # would carry unrelated evidence and stale corroboration into current claims.
+    by_term: dict[str, list[dict]] = collections.defaultdict(list)
     for observation in sorted(observations, key=lambda row: parse_time(row.get("published"))):
-        if observation["id"] in assigned:
-            continue
         candidates = []
-        for claim in claims:
+        title_terms = tokens(observation.get("title", ""))
+        published = parse_time(observation.get("published"))
+        possible = {}
+        for term in title_terms - EVENT_GENERIC:
+            for claim in reversed(by_term[term]):
+                if published - parse_time(claim.get("material_time")) > dt.timedelta(days=3):
+                    break
+                possible[claim["id"]] = claim
+        for claim in possible.values():
             material = parse_time(claim.get("material_time") or claim.get("last_seen"))
-            if abs((parse_time(observation.get("published")) - material).total_seconds()) > 35 * 86400:
+            if abs((published - material).total_seconds()) > 3 * 86400:
                 continue
             similarity = _claim_similarity(observation, claim)
-            if similarity >= 0.47:
+            if similarity >= 0.55:
                 candidates.append((similarity, claim))
         claim = max(candidates, key=lambda row: row[0])[1] if candidates else _new_claim(observation)
         if not candidates:
             claims.append(claim)
+            for term in set(claim.get("signature_tokens", [])) - EVENT_GENERIC:
+                by_term[term].append(claim)
         claim.setdefault("observation_ids", []).append(observation["id"])
-        assigned.add(observation["id"])
 
     for claim in claims:
         rows = [observation_by_id[oid] for oid in claim["observation_ids"]]
@@ -443,27 +470,36 @@ def build_claims(observations: list[dict], prior_claims: list[dict], now: dt.dat
 def add_cross_domain_links(claims: list[dict], now: dt.datetime | None = None) -> None:
     now = now or utcnow()
     active = [claim for claim in claims if claim.get("state") in ACTIVE_STATES and now - parse_time(claim.get("material_time")) <= dt.timedelta(hours=120)]
-    for index, left in enumerate(active):
-        links = []
-        for right in active[index + 1:]:
-            if set(left.get("domains", [])) == set(right.get("domains", [])):
+    by_actor: dict[str, list[int]] = collections.defaultdict(list)
+    by_region: dict[str, list[int]] = collections.defaultdict(list)
+    for index, claim in enumerate(active):
+        candidates = set()
+        for actor in claim.get("actors", []):
+            candidates.update(by_actor[actor][:48])
+        for region in set(claim.get("regions", [])) - {"GLOBAL"}:
+            candidates.update(by_region[region][:48])
+        for previous in sorted(candidates):
+            other = active[previous]
+            if set(claim.get("domains", [])) == set(other.get("domains", [])):
                 continue
-            shared_actors = sorted(set(left.get("actors", [])) & set(right.get("actors", [])))
-            shared_regions = sorted((set(left.get("regions", [])) & set(right.get("regions", []))) - {"GLOBAL"})
-            if not shared_actors and not shared_regions:
-                continue
-            link = {
-                "claim_id": right["id"],
-                "shared_actors": shared_actors,
-                "shared_regions": shared_regions,
-                "domains": right.get("domains", []),
-            }
-            links.append(link)
-            right.setdefault("cross_domain_links", []).append({
-                "claim_id": left["id"], "shared_actors": shared_actors,
-                "shared_regions": shared_regions, "domains": left.get("domains", []),
-            })
-        left["cross_domain_links"] = links[:12]
+            shared_actors = sorted(set(claim.get("actors", [])) & set(other.get("actors", [])))
+            shared_regions = sorted((set(claim.get("regions", [])) & set(other.get("regions", []))) - {"GLOBAL"})
+            if len(claim.get("cross_domain_links", [])) < 12:
+                claim.setdefault("cross_domain_links", []).append({
+                    "claim_id": other["id"], "shared_actors": shared_actors,
+                    "shared_regions": shared_regions, "domains": other.get("domains", []),
+                })
+            if len(other.get("cross_domain_links", [])) < 12:
+                other.setdefault("cross_domain_links", []).append({
+                    "claim_id": claim["id"], "shared_actors": shared_actors,
+                    "shared_regions": shared_regions, "domains": claim.get("domains", []),
+                })
+            if len(claim.get("cross_domain_links", [])) >= 12:
+                break
+        for actor in claim.get("actors", []):
+            by_actor[actor].append(index)
+        for region in set(claim.get("regions", [])) - {"GLOBAL"}:
+            by_region[region].append(index)
 
 
 def detect_anomalies(claims: list[dict], now: dt.datetime | None = None) -> list[dict]:
@@ -502,15 +538,30 @@ def detect_anomalies(claims: list[dict], now: dt.datetime | None = None) -> list
 
 def add_historical_matches(claims: list[dict], memory: list[dict], now: dt.datetime | None = None) -> None:
     now = now or utcnow()
+    by_actor: dict[tuple[str, str], list[int]] = collections.defaultdict(list)
+    by_region: dict[tuple[str, str], list[int]] = collections.defaultdict(list)
+    for index, historic in enumerate(memory):
+        age = now - parse_time(historic.get("material_time"))
+        if not dt.timedelta(days=30) <= age <= dt.timedelta(days=365):
+            continue
+        for domain in historic.get("domains", []):
+            for actor in historic.get("actors", []):
+                by_actor[(domain, actor)].append(index)
+            for region in set(historic.get("regions", [])) - {"GLOBAL"}:
+                by_region[(domain, region)].append(index)
     for claim in claims:
         if claim.get("state") not in ACTIVE_STATES:
             continue
+        positions = set()
+        for domain in claim.get("domains", []):
+            for actor in claim.get("actors", []):
+                positions.update(by_actor[(domain, actor)][:6])
+            for region in set(claim.get("regions", [])) - {"GLOBAL"}:
+                positions.update(by_region[(domain, region)][:6])
         matches = []
-        for historic in memory:
+        for index in sorted(positions):
+            historic = memory[index]
             if historic.get("id") == claim.get("id"):
-                continue
-            age = now - parse_time(historic.get("material_time"))
-            if age < dt.timedelta(days=30) or age > dt.timedelta(days=365):
                 continue
             domain_overlap = set(claim.get("domains", [])) & set(historic.get("domains", []))
             actor_overlap = set(claim.get("actors", [])) & set(historic.get("actors", []))
@@ -524,6 +575,8 @@ def add_historical_matches(claims: list[dict], memory: list[dict], now: dt.datet
                     "shared_actors": sorted(actor_overlap),
                     "shared_regions": sorted(region_overlap),
                 })
+                if len(matches) == 5:
+                    break
         claim["historical_matches"] = matches[:5]
         if matches:
             claim["watch_priority"] = round(clamp(claim.get("watch_priority", 0) + min(5, len(matches) * 2)))

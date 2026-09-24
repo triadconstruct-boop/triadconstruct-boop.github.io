@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import datetime as dt
 import email.utils
+import gzip
 import hashlib
 import html
 import json
@@ -87,6 +88,10 @@ def hostname(value: str) -> str:
 
 def load_json(path: Path, default):
     try:
+        archive = path.with_name(f"{path.name}.gz")
+        if archive.exists():
+            with gzip.open(archive, "rt", encoding="utf-8") as handle:
+                return json.load(handle)
         return json.loads(path.read_text(encoding="utf-8"))
     except (OSError, ValueError, TypeError):
         return default
@@ -100,6 +105,28 @@ def write_json(path: Path, value) -> None:
         with os.fdopen(fd, "w", encoding="utf-8") as handle:
             handle.write(payload)
         os.replace(temp_name, path)
+    finally:
+        try:
+            os.unlink(temp_name)
+        except FileNotFoundError:
+            pass
+
+
+def write_json_archive(path: Path, value) -> None:
+    """Keep complete engine history in a Git-safe compressed archive.
+
+    Public browser products remain ordinary JSON. The legacy plain JSON file is
+    removed only after the compressed replacement has been written atomically.
+    """
+    archive = path.with_name(f"{path.name}.gz")
+    archive.parent.mkdir(parents=True, exist_ok=True)
+    payload = json.dumps(value, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+    fd, temp_name = tempfile.mkstemp(prefix=f".{archive.name}.", dir=archive.parent)
+    try:
+        with os.fdopen(fd, "wb") as handle:
+            handle.write(gzip.compress(payload, compresslevel=6, mtime=0))
+        os.replace(temp_name, archive)
+        path.unlink(missing_ok=True)
     finally:
         try:
             os.unlink(temp_name)
@@ -121,4 +148,3 @@ def tokens(value: str) -> set[str]:
 
 def jaccard(left: set[str], right: set[str]) -> float:
     return len(left & right) / max(1, len(left | right))
-

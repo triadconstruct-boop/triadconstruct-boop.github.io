@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -17,6 +18,8 @@ from scripts.yy_engine.analysis import (
 )
 from scripts.yy_engine.ingest import _health
 from scripts.yy_engine.relationships import build_edges_product
+from scripts.yy_engine.rules import detect_domains, stance
+from scripts.yy_engine.util import load_json, tokens, write_json_archive
 
 UTC = dt.timezone.utc
 NOW = dt.datetime(2026, 9, 9, 12, 0, tzinfo=UTC)
@@ -67,6 +70,49 @@ class EngineRegressionTests(unittest.TestCase):
         self.assertEqual(len(claims), 1)
         self.assertEqual(claims[0]["independent_provenance_count"], 1)
         self.assertNotEqual(claims[0]["state"], "CONFIRMED")
+
+    def test_distinct_drone_strikes_are_not_one_claim_even_with_prior_assignment(self):
+        moscow = enrich_item(raw("Ukraine hits Moscow oil refinery with drone strike", summary="Russia and Ukraine war"), NOW)
+        kyiv = enrich_item(raw("Russian drone strike hits Kyiv gas stations and warehouses", "wire-b", summary="Russia and Ukraine war"), NOW)
+        prior = [{
+            "id": "old-merged-claim", "headline": moscow["title"],
+            "signature_tokens": sorted(tokens(moscow["title"])),
+            "observation_ids": [moscow["id"], kyiv["id"]],
+            "material_time": kyiv["published"],
+            "domains": moscow["domains"], "regions": moscow["regions"], "actors": moscow["actors"],
+        }]
+        claims = build_claims([moscow, kyiv], prior, NOW)
+        self.assertEqual(len(claims), 2)
+        self.assertEqual({tuple(claim["observation_ids"]) for claim in claims}, {(moscow["id"],), (kyiv["id"],)})
+
+    def test_older_bill_and_new_signature_are_not_false_corroboration(self):
+        passed = enrich_item(raw("Congress passes Russia sanctions bill targeting China and India", hours_ago=48), NOW)
+        signed = enrich_item(raw("Trump signs Russia sanctions law targeting China and India", "wire-b", hours_ago=1), NOW)
+        old = {"id": "old-combined", "headline": signed["title"], "observation_ids": [passed["id"], signed["id"]]}
+        claims = build_claims([passed, signed], [old], NOW)
+        self.assertEqual(len(claims), 2)
+        self.assertEqual(len({claim["id"] for claim in claims}), 2)
+        self.assertTrue(all(claim["source_count"] == 1 for claim in claims))
+
+    def test_dated_daily_programs_do_not_merge(self):
+        claims, _ = claims_for(raw("9/21: The Takeout with Major Garrett", hours_ago=48), raw("9/23: The Takeout with Major Garrett", "wire-b"))
+        self.assertEqual(len(claims), 2)
+
+    def test_domain_terms_do_not_match_unrelated_word_fragments(self):
+        title = "A crisis inspires portraits ahead of a cultural visit"
+        self.assertEqual(detect_domains(title, "POLITICAL"), ["POLITICAL"])
+        self.assertEqual(stance(title), "report")
+        self.assertEqual(detect_domains("Airport security responds to terrorist attack"), ["INFRA", "TERRORISM"])
+
+    def test_archive_migration_keeps_history_and_removes_oversized_plain_json(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "claims.json"
+            path.write_text('{"claims": []}', encoding="utf-8")
+            record = {"claims": [{"id": "preserved", "evidence": ["full history"]}]}
+            write_json_archive(path, record)
+            self.assertFalse(path.exists())
+            self.assertTrue((Path(folder) / "claims.json.gz").exists())
+            self.assertEqual(load_json(path, {}), record)
 
     def test_independent_corroboration_raises_confidence(self):
         one = raw("Russian military strike reported near Ukraine border", "wire-a")

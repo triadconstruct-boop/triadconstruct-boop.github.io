@@ -27,7 +27,7 @@ flowchart TD
 | Audit record | claim + evaluation time | Inputs, components, classification reason, scores, and direction |
 | Historical memory | claim ID | Retained compact pattern record including peak confidence/watch |
 
-Observations are never silently discarded by the analysis pipeline. Refuting observations attach to `contradictory_observation_ids`; refuted claims remain in claims, memory, and audit output. Material publication time—not feed polling time—drives decay and dormancy.
+Observations are never silently discarded by the analysis pipeline. Claim groups are rebuilt from the retained observations on each run with title, event-stage, and time checks; prior assignments cannot lend unrelated evidence to a new event. Historical memory retains prior claim IDs and peak scores when groups change. Refuting observations attach to `contradictory_observation_ids`; refuted claims remain in claims, memory, and audit output. Material publication time—not feed polling time—drives decay and dormancy.
 
 ## State machine
 
@@ -45,15 +45,17 @@ stateDiagram-v2
   EARLY_WARNING --> DORMANT: no material update for 14 days
 ```
 
-Any state can lose confidence as evidence ages or contradictions appear. Dormancy is archival, not deletion. A dormant claim can become active when a new matching observation arrives.
+Any state can lose confidence as evidence ages or contradictions appear. Dormancy is archival, not deletion. New reporting about an older development may form a new claim linked through historical memory rather than renew an old event.
 
 ## Products
 
-- `observations.json`: full retained evidence records.
-- `claims.json`: lifecycle claims with evidence, contradictions, confidence, branch analysis, links, and scores.
-- `audit-log.json`: one explicit classification record per current claim evaluation.
-- `historical-memory.json`: compact retained recurring-pattern memory.
+- `observations.json.gz`: full retained evidence records.
+- `claims.json.gz`: current lifecycle claims with evidence, contradictions, confidence, branch analysis, links, and scores.
+- `audit-log.json.gz`: one explicit classification record per current claim evaluation.
+- `historical-memory.json.gz`: compact retained recurring-pattern memory, including prior claim IDs.
 - `anomalies.json`: cross-domain near-time convergence cues.
 - `edges-live.json`: a bounded graph of claim, actor, region, domain, provenance, anomaly, and historical-memory nodes. Every relationship is labeled `DIRECT`, `REPORTED`, `ANALYTICAL`, or `HISTORICAL`; identity masking never changes the underlying evidence state.
 - `autonomy-status.json` and `source-registry.json`: ingestion, source, coverage, state, confidence, and freshness diagnostics.
 - Page-specific files are views of the same claims; they do not create a second truth system.
+
+The four complete stores are compressed to stay within GitHub's per-file limit. Browser-facing products remain ordinary JSON. During migration, the engine reads legacy `.json` files and replaces them with `.json.gz` archives after a successful write.

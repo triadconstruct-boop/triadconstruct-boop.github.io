@@ -39,7 +39,7 @@ DOMAIN_TERMS = {
     "NUCLEAR": ("nuclear", "uranium", "plutonium", "reactor", "iaea", "enrichment", "radiological", "warhead", "atomic"),
     "ECONOMIC": ("sanction", "tariff", "export control", "embargo", "shipping disruption", "supply chain", "asset freeze", "financial restriction", "energy price"),
     "POLITICAL": ("coup", "election", "government collapse", "martial law", "state of emergency", "constitutional crisis", "protest", "unrest", "diplomatic"),
-    "TERRORISM": ("terror", "isis", "isil", "al-qaeda", "al qaeda", "extremist", "bomb plot", "attack plot", "mass casualty"),
+    "TERRORISM": ("terror", "terrorist", "terrorism", "isis", "isil", "al-qaeda", "al qaeda", "extremist", "bomb plot", "attack plot", "mass casualty"),
     "TRAFFICKING": ("human trafficking", "sex trafficking", "labor trafficking", "labour trafficking", "forced labor", "forced labour", "modern slavery", "trafficking network", "exploitation ring"),
     "BIO": ("outbreak", "pathogen", "pandemic", "biosecurity", "biosafety", "biological", "public health emergency", "zoonotic", "epidemic"),
     "SPACE": ("satellite", "orbital", "space force", "anti-satellite", "asat", "spacecraft", "launch vehicle"),
@@ -80,7 +80,7 @@ ACTORS = {
 }
 
 SPECULATION_MARKERS = ("may ", "might ", "could ", "possibly", "potentially", "speculat", "scenario", "reportedly", "unconfirmed", "sources say", "considering")
-WARNING_MARKERS = ("warning", "alert", "buildup", "build-up", "prepar", "mobiliz", "evacuat", "heightened", "imminent", "threat", "indicators", "exercise", "surge")
+WARNING_MARKERS = ("warning", "alert", "buildup", "build-up", "mobiliz", "evacuat", "heightened", "imminent", "threat", "indicators")
 ALLEGATION_MARKERS = ("alleged", "claims that", "accused", "according to unnamed", "purported", "unverified", "rumor", "rumour")
 REFUTATION_MARKERS = ("false claim", "debunk", "denied", "refuted", "no evidence", "did not happen", "fabricated", "hoax", "misleading")
 HIGH_IMPACT = ("nuclear weapon", "ballistic missile", "invasion", "airstrike", "state-sponsored", "critical infrastructure", "terrorist attack", "power grid", "chemical weapon", "biological weapon", "military clash", "major earthquake", "tsunami warning")
@@ -99,14 +99,15 @@ RETROSPECTIVE_MARKERS = ("anniversary", "years ago", "history of", "retrospectiv
 
 
 def contains(text: str, term: str) -> bool:
-    if term.startswith(" ") or term.endswith(" ") or len(term) < 4:
-        return term in f" {text.lower()} "
-    return term in text.lower()
+    # Match words and simple inflections, never substrings of unrelated words
+    # such as "isis" in "crisis", "port" in "portraits", or "dam" in "damage".
+    pattern = rf"(?<![a-z0-9]){re.escape(term.strip())}(?:s|es|ed|ing)?(?![a-z0-9])"
+    return bool(re.search(pattern, text.lower()))
 
 
 def detect_domains(text: str, default: str = "SECURITY") -> list[str]:
     low = f" {text.lower()} "
-    scored = [(domain, sum(1 for term in terms if term in low)) for domain, terms in DOMAIN_TERMS.items()]
+    scored = [(domain, sum(1 for term in terms if contains(low, term))) for domain, terms in DOMAIN_TERMS.items()]
     result = [domain for domain, score in sorted(scored, key=lambda item: item[1], reverse=True) if score]
     return result or [default]
 
@@ -163,6 +164,6 @@ def attribution_root(text: str, fallback: str) -> str:
 
 def impact_score(text: str, domains: list[str]) -> int:
     low = f" {text.lower()} "
-    score = 20 + 10 * sum(term in low for term in HIGH_IMPACT) + 4 * sum(term in low for term in MEDIUM_IMPACT)
+    score = 20 + 10 * sum(contains(low, term) for term in HIGH_IMPACT) + 4 * sum(contains(low, term) for term in MEDIUM_IMPACT)
     score += 9 if set(domains) & {"WAR", "NUCLEAR", "TERRORISM"} else 6 if set(domains) & {"CYBER", "INFRA", "BIO"} else 2
     return max(0, min(100, score))

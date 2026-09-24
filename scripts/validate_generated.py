@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import gzip
 from collections import Counter
 from pathlib import Path
 
@@ -20,8 +21,12 @@ REQUIRED_CLASSES = {
 
 def load(name: str):
     path = DATA / name
-    if not path.exists():
+    archive = path.with_name(f"{path.name}.gz")
+    if not path.exists() and not archive.exists():
         raise SystemExit(f"missing generated file: {path}")
+    if archive.exists():
+        with gzip.open(archive, "rt", encoding="utf-8") as handle:
+            return json.load(handle)
     return json.loads(path.read_text(encoding="utf-8"))
 
 
@@ -31,6 +36,10 @@ def require_score(value, label: str) -> None:
 
 
 def main() -> int:
+    # GitHub rejects individual blobs above 100 MiB. Fail before attempting a push.
+    for path in DATA.iterdir():
+        if path.is_file() and path.stat().st_size >= 90 * 1024 * 1024:
+            raise SystemExit(f"generated file approaches GitHub's blob limit: {path}")
     catalog = json.loads((ROOT / "config" / "source-catalog.json").read_text(encoding="utf-8"))
     enabled = [source for source in catalog["sources"] if source.get("enabled", True)]
     classes = {source["source_class"] for source in enabled}

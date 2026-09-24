@@ -44,6 +44,8 @@ node --check assets/edges.js
 
 The scheduled GitHub workflow runs every 30 minutes, validates the engine and interface, executes the regression suite, collects sources, validates every generated product, and commits only `data/`.
 
+The complete observation, current-claim, historical-memory, and current-audit stores are committed as deterministic `.json.gz` archives. The engine transparently reads the previous `.json` files during migration, then removes them after writing the compressed replacements. Browser-facing `*-live.json` products stay ordinary JSON. All observations remain preserved, and historical memory retains prior claim IDs and peak scores as event groups are recalculated. Validation stops a run if any generated blob approaches GitHub's 100 MiB per-file limit. The last poll and source gaps are visible in the system console.
+
 ## Repository map
 
 | Path | Purpose |

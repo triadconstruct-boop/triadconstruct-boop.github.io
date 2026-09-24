@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import collections
 import datetime as dt
+import re
 from pathlib import Path
 
 from . import ENGINE_VERSION, RULES_VERSION
@@ -22,7 +23,7 @@ from .analysis import (
 )
 from .ingest import collect_sources, load_catalog
 from .relationships import build_edges_product
-from .util import iso_z, load_json, parse_time, utcnow, write_json
+from .util import iso_z, load_json, parse_time, utcnow, write_json, write_json_archive
 
 
 def _source_summary(catalog: dict, health: list[dict]) -> dict:
@@ -93,6 +94,15 @@ def _offline_health(catalog: dict, prior_registry: dict, prior_status: dict) -> 
 
 def _public_claim(claim: dict) -> dict:
     return claim
+
+
+def _is_reported_signal(claim: dict) -> bool:
+    title = str(claim.get("headline", ""))
+    return not (
+        "sponsored content" in title.lower()
+        or re.search(r"^/r/\w+ live thread:", title, re.I)
+        or re.search(r"^\d{1,2}/\d{1,2}:\s", title)
+    )
 
 
 def run(root: Path, offline: bool = False, now: dt.datetime | None = None) -> dict:
@@ -181,23 +191,35 @@ def run(root: Path, offline: bool = False, now: dt.datetime | None = None) -> di
         ],
     }
 
-    strategic_claims = [
+    recent_claims = [
         claim for claim in claims
-        if claim.get("watch_priority", 0) >= 24 or claim.get("state") in ("CONFIRMED", "REFUTED")
-    ][:250]
+        if now - parse_time(claim.get("material_time")) <= dt.timedelta(days=7)
+        and (claim.get("watch_priority", 0) >= 24 or claim.get("state") in ("CONFIRMED", "REFUTED"))
+        and _is_reported_signal(claim)
+    ]
+    strategic_claims = sorted(
+        recent_claims,
+        key=lambda claim: (
+            now - parse_time(claim.get("material_time")) <= dt.timedelta(hours=24),
+            now - parse_time(claim.get("material_time")) <= dt.timedelta(hours=72),
+            claim.get("watch_priority", 0), claim.get("material_time", ""),
+        ),
+        reverse=True,
+    )[:250]
+    observation_by_id = {row["id"]: row for row in observations}
     atlas_claims = [
         claim for claim in strategic_claims
-        if any(next((row for row in observations if row["id"] == oid and row.get("lat") is not None), None) for oid in claim.get("observation_ids", []))
+        if any(observation_by_id.get(oid, {}).get("lat") is not None for oid in claim.get("observation_ids", []))
     ][:200]
     infra_claims = [claim for claim in strategic_claims if set(claim.get("domains", [])) & {"INFRA", "CYBER", "ECONOMIC", "CLIMATE", "SPACE"}][:200]
     trafficking_claims = [claim for claim in strategic_claims if "TRAFFICKING" in claim.get("domains", [])][:200]
     live_observations = [row for row in observations if now - parse_time(row.get("published")) <= dt.timedelta(days=30)][:1200]
 
     write_json(data / "source-registry.json", {"generated_at": iso_z(now), "catalog_version": catalog.get("version"), "sources": registry_rows})
-    write_json(data / "observations.json", {"generated_at": iso_z(now), "observations": observations})
-    write_json(data / "claims.json", {"generated_at": iso_z(now), "states": list(STATES), "claims": claims})
-    write_json(data / "historical-memory.json", {"generated_at": iso_z(now), "retention_policy": "retained until explicit reviewed removal", "claims": memory})
-    write_json(data / "audit-log.json", {"generated_at": iso_z(now), "records": audit_log(claims, now)})
+    write_json_archive(data / "observations.json", {"generated_at": iso_z(now), "observations": observations})
+    write_json_archive(data / "claims.json", {"generated_at": iso_z(now), "states": list(STATES), "claims": claims})
+    write_json_archive(data / "historical-memory.json", {"generated_at": iso_z(now), "retention_policy": "retained until explicit reviewed removal", "claims": memory})
+    write_json_archive(data / "audit-log.json", {"generated_at": iso_z(now), "records": audit_log(claims, now)})
     write_json(data / "anomalies.json", {"generated_at": iso_z(now), "anomalies": anomalies})
     write_json(data / "edges-live.json", edges_product)
     write_json(data / "autonomy-status.json", status)
