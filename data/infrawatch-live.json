@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T13:49:22Z",
+  "generated_at": "2026-09-24T14:22:14Z",
   "claims": [
     {
       "id": "claim-ed88bb6b9064b4c4fc",
@@ -324,7 +324,7 @@
       "anomaly_ids": [
         "anomaly-8969aacc74345722",
         "anomaly-ad0d89c0ded4d74e",
-        "anomaly-367cce41ce4b12f3"
+        "anomaly-956b0c336054c8b8"
       ],
       "threat_score": 2,
       "watch_priority": 61,
@@ -361,7 +361,7 @@
         "efefb15d8670dd7749f3"
       ],
       "first_seen": "2026-09-21T11:20:43Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-24T09:51:00Z",
       "domains": [
         "INFRA",
@@ -803,7 +803,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 75,
-        "recency": 97,
+        "recency": 96,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 36
@@ -1048,7 +1048,7 @@
       ],
       "anomaly_ids": [
         "anomaly-2c1e220c8787a2b1",
-        "anomaly-367cce41ce4b12f3"
+        "anomaly-956b0c336054c8b8"
       ],
       "threat_score": 13,
       "watch_priority": 53,
@@ -1059,6 +1059,307 @@
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-24T01:48:47Z"
+      }
+    },
+    {
+      "id": "claim-2f086812f509724512",
+      "headline": "Ukraine war latest: Russian drone attacks on Kyiv kill 2, injure over 40 amid day of repeated strikes",
+      "signature_tokens": [
+        "attacks",
+        "day",
+        "drone",
+        "injure",
+        "kill",
+        "kyiv",
+        "latest",
+        "repeated",
+        "russian",
+        "strikes",
+        "ukraine",
+        "war"
+      ],
+      "observation_ids": [
+        "fcae5a81633e3bfcfa1e"
+      ],
+      "first_seen": "2026-09-24T01:38:48Z",
+      "last_seen": "2026-09-24T11:20:32Z",
+      "material_time": "2026-09-23T17:55:09Z",
+      "domains": [
+        "INFRA"
+      ],
+      "regions": [
+        "EUROPE",
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "actors": [
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "state": "SPECULATIVE",
+      "confidence": 60,
+      "confidence_direction": "STABLE",
+      "confidence_components": {
+        "source_quality": 79,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 78,
+        "recency": 92,
+        "evidence_type": 67,
+        "historical_reliability": 79,
+        "claim_maturity": 36
+      },
+      "classification_reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
+      "supporting_observation_ids": [
+        "fcae5a81633e3bfcfa1e"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 1,
+      "independent_provenance_count": 1,
+      "sources": [
+        "Kyiv Independent"
+      ],
+      "provenance_roots": [
+        "kyiv_independent"
+      ],
+      "evidence": [
+        {
+          "observation_id": "fcae5a81633e3bfcfa1e",
+          "title": "Ukraine war latest: Russian drone attacks on Kyiv kill 2, injure over 40 amid day of repeated strikes",
+          "source": "Kyiv Independent",
+          "source_class": "regional_local",
+          "provenance_root": "kyiv_independent",
+          "stance": "speculation",
+          "published": "2026-09-23T17:55:09Z",
+          "url": "https://kyivindependent.com/ukraine-war-latest-russian-drone-attacks-on-kyiv-kill-2-injure-over-40-amid-day-of-repeated-strikes",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Ukraine war latest: Russian drone attacks on Kyiv kill 2, injure over 40 amid day of repeated strikes",
+        "plausible_explanations": [
+          "A genuine INFRA development involving RUSSIA, UKRAINE is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related INFRA indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-5864ef41bab32e4ffd",
+          "headline": "Tracking a Sanctioned Russian Vessel’s West African Odyssey",
+          "material_time": "2026-08-25T08:52:50Z",
+          "shared_domains": [
+            "INFRA"
+          ],
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ]
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-ddb28772ec8c980666",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-b8652c4cd84816c66b",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA"
+          ],
+          "domains": [
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-5d683a9a94e0d94150",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-3255efa7f65ee85bd5",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-9e788f9d628b9094be",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8b4542a6fdb7ba9c2e",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-4c82b5bc892668be90",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-76ce02e84975e8ee01",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-5d036678dfa62043f7",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-575c03559c735b0df5",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f04800b1b5d28b9558",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8f7efbd314043e6fe9",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "NUCLEAR"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-8969aacc74345722",
+        "anomaly-599c597bfc275ed8"
+      ],
+      "threat_score": 3,
+      "watch_priority": 51,
+      "audit": {
+        "reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
+        "support_count": 1,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-23T17:55:09Z"
       }
     },
     {
@@ -1078,7 +1379,7 @@
         "278e2b8171b43ff305fd"
       ],
       "first_seen": "2026-09-24T13:22:51Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-24T13:02:43Z",
       "domains": [
         "CLIMATE"
@@ -1608,7 +1909,7 @@
       ],
       "anomaly_ids": [
         "anomaly-ad0d89c0ded4d74e",
-        "anomaly-367cce41ce4b12f3"
+        "anomaly-956b0c336054c8b8"
       ],
       "threat_score": 19,
       "watch_priority": 47,
@@ -1638,7 +1939,7 @@
         "a2f5830fd0ce5b7e6f60"
       ],
       "first_seen": "2026-09-24T07:22:33Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-24T07:20:11Z",
       "domains": [
         "CLIMATE",
@@ -1657,7 +1958,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 62,
-        "recency": 100,
+        "recency": 99,
         "evidence_type": 67,
         "historical_reliability": 80,
         "claim_maturity": 35
@@ -1914,7 +2215,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 95,
+        "recency": 94,
         "evidence_type": 67,
         "historical_reliability": 80,
         "claim_maturity": 36
@@ -2312,7 +2613,7 @@
         "40528b3455ff7db64276"
       ],
       "first_seen": "2026-09-24T01:38:48Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-23T17:45:11Z",
       "domains": [
         "INFRA"
@@ -2613,7 +2914,7 @@
         "9b22eee268fbf88188e3"
       ],
       "first_seen": "2026-09-24T01:38:48Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-23T16:15:48Z",
       "domains": [
         "INFRA",
@@ -2860,7 +3161,7 @@
         "a818e6980982c839b9b3"
       ],
       "first_seen": "2026-09-24T13:49:22Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-24T13:41:04Z",
       "domains": [
         "ECONOMIC"
@@ -2875,7 +3176,7 @@
       ],
       "state": "UNVERIFIED CLAIM",
       "confidence": 50,
-      "confidence_direction": "NEW",
+      "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 50,
         "independence": 25,
@@ -3522,7 +3823,7 @@
           ]
         },
         {
-          "claim_id": "claim-a54b3c364ffda95467",
+          "claim_id": "claim-6279543b96670cf502",
           "shared_actors": [
             "UNITED STATES"
           ],
@@ -3567,7 +3868,7 @@
         "976e6a9bf60d753c8c73"
       ],
       "first_seen": "2026-09-24T06:27:34Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-24T05:57:00Z",
       "domains": [
         "CYBER"
@@ -3820,12 +4121,13 @@
       ],
       "observation_ids": [
         "54abccc40bd03b11a797",
+        "50ff34ff5b53a45c9be1",
         "aabc14d7d36dbea7fd1a",
         "8369adaebea259d2fba8",
         "82e191b83eb6ebb05f2e"
       ],
       "first_seen": "2026-09-24T01:38:48Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-23T21:21:25Z",
       "domains": [
         "CYBER"
@@ -3854,6 +4156,7 @@
       "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
       "supporting_observation_ids": [
         "54abccc40bd03b11a797",
+        "50ff34ff5b53a45c9be1",
         "aabc14d7d36dbea7fd1a",
         "8369adaebea259d2fba8",
         "82e191b83eb6ebb05f2e"
@@ -3910,6 +4213,17 @@
           "stance": "warning",
           "published": "2026-09-23T18:06:00Z",
           "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNWmlyblNkUlV4NG1TTHRkeEhkMVYtcTA3S3ZtZ0JqbG1NNVA1TnpRUXBiU3lhQ2pzdTJrYi1wRXc0QjA1QmwzaVdRVGpxOUtxS1hONEwyU2hhY1h6Q09oSU1iUm9jVTJxWTRvOWt2a0wtX0hWOURnMnUzVUxBUVBQaFFmSE5TVVlQNEpOOVhYYzZUanBNQU9RRjhZa3pqTTFOYjZsWTluSmY?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "50ff34ff5b53a45c9be1",
+          "title": "New Zealand says China is its most persistent state-backed cyber threat - The Straits Times",
+          "source": "Google News Weak-Signal Discovery",
+          "source_class": "low_confidence",
+          "provenance_root": "google_weak_signal",
+          "stance": "warning",
+          "published": "2026-09-23T18:06:00Z",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSXBnVnkwb1lPdUhDazdaSVpwdnAzUUx3bTZ4ZmU2R1gyeW1vVUlCVmk3b3pCM0NPeTlVM3NFRjB5OGphMUpkTWZnNnZ2bzBKbEczU2lSYmRhS2QybU01dlBURGxpUUtGMjZkRzZleUx5a29MYkhYY2VXcUJfb2IwQVRmQU5ZMEQ1OTdyOUVIOWdja2dSWVlrZzJjMFJBcjhXOTRlTHNiVk1ickRzX0lJLXlBa0ZnSDFN?oc=5",
           "discovery_only": true
         }
       ],
@@ -4021,6 +4335,18 @@
           ]
         },
         {
+          "claim_id": "claim-6279543b96670cf502",
+          "shared_actors": [
+            "CHINA"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
+        },
+        {
           "claim_id": "claim-a54b3c364ffda95467",
           "shared_actors": [
             "CHINA"
@@ -4033,7 +4359,7 @@
           ]
         },
         {
-          "claim_id": "claim-55d0fda48dda7bab32",
+          "claim_id": "claim-8597bc919627d8cb7d",
           "shared_actors": [
             "CHINA"
           ],
@@ -4064,26 +4390,16 @@
             "ECONOMIC",
             "WAR"
           ]
-        },
-        {
-          "claim_id": "claim-298520663d09ebde38",
-          "shared_actors": [],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-367cce41ce4b12f3"
+        "anomaly-956b0c336054c8b8"
       ],
       "threat_score": 3,
       "watch_priority": 41,
       "audit": {
         "reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
-        "support_count": 4,
+        "support_count": 5,
         "contradiction_count": 0,
         "independent_roots": 0,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
@@ -4112,7 +4428,7 @@
         "b177b52191fefcf6985a"
       ],
       "first_seen": "2026-09-24T11:20:32Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-24T12:50:34Z",
       "domains": [
         "SECURITY",
@@ -4446,7 +4762,7 @@
         "4cd2aadbebcc426d4f5a"
       ],
       "first_seen": "2026-09-24T01:38:48Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-23T18:31:22Z",
       "domains": [
         "CYBER"
@@ -4464,7 +4780,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 47,
-        "recency": 93,
+        "recency": 92,
         "evidence_type": 73,
         "historical_reliability": 84,
         "claim_maturity": 36
@@ -4533,307 +4849,6 @@
       }
     },
     {
-      "id": "claim-2f086812f509724512",
-      "headline": "Ukraine war latest: Russian drone attacks on Kyiv kill 2, injure over 40 amid day of repeated strikes",
-      "signature_tokens": [
-        "attacks",
-        "day",
-        "drone",
-        "injure",
-        "kill",
-        "kyiv",
-        "latest",
-        "repeated",
-        "russian",
-        "strikes",
-        "ukraine",
-        "war"
-      ],
-      "observation_ids": [
-        "fcae5a81633e3bfcfa1e"
-      ],
-      "first_seen": "2026-09-24T01:38:48Z",
-      "last_seen": "2026-09-24T11:20:32Z",
-      "material_time": "2026-09-23T17:55:09Z",
-      "domains": [
-        "INFRA"
-      ],
-      "regions": [
-        "EUROPE",
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "actors": [
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 61,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 79,
-        "independence": 25,
-        "corroboration": 22,
-        "contradiction": 0,
-        "specificity": 78,
-        "recency": 92,
-        "evidence_type": 67,
-        "historical_reliability": 79,
-        "claim_maturity": 36
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "fcae5a81633e3bfcfa1e"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 1,
-      "independent_provenance_count": 1,
-      "sources": [
-        "Kyiv Independent"
-      ],
-      "provenance_roots": [
-        "kyiv_independent"
-      ],
-      "evidence": [
-        {
-          "observation_id": "fcae5a81633e3bfcfa1e",
-          "title": "Ukraine war latest: Russian drone attacks on Kyiv kill 2, injure over 40 amid day of repeated strikes",
-          "source": "Kyiv Independent",
-          "source_class": "regional_local",
-          "provenance_root": "kyiv_independent",
-          "stance": "speculation",
-          "published": "2026-09-23T17:55:09Z",
-          "url": "https://kyivindependent.com/ukraine-war-latest-russian-drone-attacks-on-kyiv-kill-2-injure-over-40-amid-day-of-repeated-strikes",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Ukraine war latest: Russian drone attacks on Kyiv kill 2, injure over 40 amid day of repeated strikes",
-        "plausible_explanations": [
-          "A genuine INFRA development involving RUSSIA, UKRAINE is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related INFRA indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [
-        {
-          "claim_id": "claim-5864ef41bab32e4ffd",
-          "headline": "Tracking a Sanctioned Russian Vessel’s West African Odyssey",
-          "material_time": "2026-08-25T08:52:50Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ]
-        }
-      ],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-ddb28772ec8c980666",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "EUROPE",
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-b8652c4cd84816c66b",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "EUROPE",
-            "RUSSIA"
-          ],
-          "domains": [
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-5d683a9a94e0d94150",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-3255efa7f65ee85bd5",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-9e788f9d628b9094be",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-8b4542a6fdb7ba9c2e",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "EUROPE",
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-4c82b5bc892668be90",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-76ce02e84975e8ee01",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-5d036678dfa62043f7",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-575c03559c735b0df5",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-f04800b1b5d28b9558",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-8f7efbd314043e6fe9",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "NUCLEAR"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-8969aacc74345722",
-        "anomaly-599c597bfc275ed8"
-      ],
-      "threat_score": 13,
-      "watch_priority": 39,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 1,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-23T17:55:09Z"
-      }
-    },
-    {
       "id": "claim-55a0f19a0a3f5a0fae",
       "headline": "EU sanctions Russian pundit Xenia Fedorova after expulsion from France",
       "signature_tokens": [
@@ -4849,7 +4864,7 @@
         "4fc67ea46cfe04e47da4"
       ],
       "first_seen": "2026-09-24T13:49:22Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-24T13:45:30Z",
       "domains": [
         "ECONOMIC"
@@ -4864,7 +4879,7 @@
       ],
       "state": "CREDIBLE REPORT",
       "confidence": 64,
-      "confidence_direction": "NEW",
+      "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 84,
         "independence": 25,
@@ -5137,7 +5152,7 @@
         "736303087e020bb1e0ce"
       ],
       "first_seen": "2026-09-24T13:49:22Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-24T13:30:00Z",
       "domains": [
         "CYBER"
@@ -5152,7 +5167,7 @@
       ],
       "state": "CREDIBLE REPORT",
       "confidence": 64,
-      "confidence_direction": "NEW",
+      "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 87,
         "independence": 25,
@@ -5426,7 +5441,7 @@
         "c675c8b201e1db44fe4f"
       ],
       "first_seen": "2026-09-24T12:26:29Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-24T12:31:08Z",
       "domains": [
         "ECONOMIC"
@@ -5995,7 +6010,7 @@
       ],
       "actors": [],
       "state": "CREDIBLE REPORT",
-      "confidence": 62,
+      "confidence": 61,
       "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 84,
@@ -6003,7 +6018,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 62,
-        "recency": 94,
+        "recency": 93,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 36
@@ -6201,7 +6216,7 @@
       "anomaly_ids": [
         "anomaly-65fe1a2e518da705"
       ],
-      "threat_score": 15,
+      "threat_score": 14,
       "watch_priority": 37,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
@@ -6228,7 +6243,7 @@
         "393e2e7d6d03b1130a51"
       ],
       "first_seen": "2026-09-24T01:38:48Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-23T17:14:20Z",
       "domains": [
         "INFRA"
@@ -6527,7 +6542,7 @@
         "b9fcda168ea28f09bb58"
       ],
       "first_seen": "2026-09-24T12:52:51Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-24T12:48:14Z",
       "domains": [
         "CYBER"
@@ -6640,7 +6655,7 @@
         "b3ee0bcc23c16e535a9c"
       ],
       "first_seen": "2026-09-24T11:20:32Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-24T10:04:57Z",
       "domains": [
         "CYBER",
@@ -6932,7 +6947,7 @@
         "e01c2d6d102cbe2ba88b"
       ],
       "first_seen": "2026-09-24T05:46:51Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-24T05:30:17Z",
       "domains": [
         "CYBER"
@@ -6950,7 +6965,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 35,
-        "recency": 99,
+        "recency": 98,
         "evidence_type": 67,
         "historical_reliability": 84,
         "claim_maturity": 36
@@ -7160,7 +7175,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 78,
-        "recency": 93,
+        "recency": 92,
         "evidence_type": 67,
         "historical_reliability": 79,
         "claim_maturity": 36
@@ -7441,7 +7456,7 @@
         "0148fabaee21da5ac42a"
       ],
       "first_seen": "2026-09-24T01:38:48Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-23T16:20:54Z",
       "domains": [
         "CYBER"
@@ -7546,7 +7561,7 @@
         "50ff8dd5293b25bda75a"
       ],
       "first_seen": "2026-09-24T12:52:51Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-24T12:51:48Z",
       "domains": [
         "CLIMATE"
@@ -7799,7 +7814,7 @@
         "43285cf6a83d5b77ee79"
       ],
       "first_seen": "2026-09-24T11:20:32Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-24T11:10:42Z",
       "domains": [
         "ECONOMIC",
@@ -8079,7 +8094,7 @@
         "e4423ac355ebf470e171"
       ],
       "first_seen": "2026-09-24T11:46:56Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-24T11:03:29Z",
       "domains": [
         "INFRA",
@@ -8246,6 +8261,18 @@
           ]
         },
         {
+          "claim_id": "claim-6279543b96670cf502",
+          "shared_actors": [
+            "CHINA"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
+        },
+        {
           "claim_id": "claim-a54b3c364ffda95467",
           "shared_actors": [
             "CHINA"
@@ -8258,7 +8285,7 @@
           ]
         },
         {
-          "claim_id": "claim-55d0fda48dda7bab32",
+          "claim_id": "claim-8597bc919627d8cb7d",
           "shared_actors": [
             "CHINA"
           ],
@@ -8306,22 +8333,10 @@
             "POLITICAL",
             "WAR"
           ]
-        },
-        {
-          "claim_id": "claim-c59cc73aa371e16920",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "CYBER"
-          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-367cce41ce4b12f3"
+        "anomaly-956b0c336054c8b8"
       ],
       "threat_score": 13,
       "watch_priority": 35,
@@ -8351,7 +8366,7 @@
         "8e6a7d43d1f28039ce3f"
       ],
       "first_seen": "2026-09-21T21:44:16Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-23T20:37:19Z",
       "domains": [
         "SPACE"
@@ -8916,10 +8931,11 @@
         "1bf5196764f21f5ad494",
         "56b3574c82c05e6eb533",
         "ddd77f636e102777de10",
-        "214e0753bc2a089de77e"
+        "214e0753bc2a089de77e",
+        "ae53b68790c0eb3001a7"
       ],
       "first_seen": "2026-09-24T01:38:48Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-23T15:38:47Z",
       "domains": [
         "INFRA"
@@ -8935,7 +8951,7 @@
       "confidence_components": {
         "source_quality": 93,
         "independence": 25,
-        "corroboration": 43,
+        "corroboration": 46,
         "contradiction": 0,
         "specificity": 53,
         "recency": 91,
@@ -8952,7 +8968,8 @@
         "1bf5196764f21f5ad494",
         "56b3574c82c05e6eb533",
         "ddd77f636e102777de10",
-        "214e0753bc2a089de77e"
+        "214e0753bc2a089de77e",
+        "ae53b68790c0eb3001a7"
       ],
       "contradictory_observation_ids": [],
       "source_count": 1,
@@ -8967,6 +8984,17 @@
         {
           "observation_id": "214e0753bc2a089de77e",
           "title": "Ethiopia's Tigray rebels seize airports, clash with govt forces - Yahoo News Singapore",
+          "source": "Agence France-Presse",
+          "source_class": "wire",
+          "provenance_root": "wire:afp_world",
+          "stance": "report",
+          "published": "2026-09-23T15:38:47Z",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPUUViTWhfazd5TW5ZMy10NG9qRUttR2k2S3pGdEw2U0p4Nm9lam5ONklUenVoZVp2cEhsMnhvRHF4MlBIRXBMdEFBSlliUExjXy1aclNRMUFsSU81aXdueFdaay1LQ1JPcG5BTmJCVnBqTlJTWGwxelZsd2VENkdTT0pfclM1UQ?oc=5",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "ae53b68790c0eb3001a7",
+          "title": "Ethiopia's Tigray rebels seize airports, clash with govt forces - sg.news.yahoo.com",
           "source": "Agence France-Presse",
           "source_class": "wire",
           "provenance_root": "wire:afp_world",
@@ -9228,7 +9256,7 @@
       "watch_priority": 35,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 8,
+        "support_count": 9,
         "contradiction_count": 0,
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
@@ -9253,7 +9281,7 @@
         "694d6d5fe214d00713f7"
       ],
       "first_seen": "2026-09-24T01:38:48Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-24T01:15:00Z",
       "domains": [
         "CYBER",
@@ -9475,7 +9503,7 @@
         "e6cf144003d7867b5533"
       ],
       "first_seen": "2026-09-24T11:20:32Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-24T10:22:24Z",
       "domains": [
         "INFRA",
@@ -9850,7 +9878,7 @@
           ]
         },
         {
-          "claim_id": "claim-a54b3c364ffda95467",
+          "claim_id": "claim-6279543b96670cf502",
           "shared_actors": [
             "UNITED STATES"
           ],
@@ -9896,7 +9924,7 @@
         "aa7e7fd25e4e2fd54411"
       ],
       "first_seen": "2026-09-24T04:21:20Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-24T12:00:18Z",
       "domains": [
         "INFRA",
@@ -9912,7 +9940,7 @@
       ],
       "state": "CREDIBLE REPORT",
       "confidence": 70,
-      "confidence_direction": "UP",
+      "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 79,
         "independence": 52,
@@ -10108,7 +10136,7 @@
           ]
         },
         {
-          "claim_id": "claim-a54b3c364ffda95467",
+          "claim_id": "claim-6279543b96670cf502",
           "shared_actors": [
             "CHINA"
           ],
@@ -10120,7 +10148,7 @@
           ]
         },
         {
-          "claim_id": "claim-55d0fda48dda7bab32",
+          "claim_id": "claim-a54b3c364ffda95467",
           "shared_actors": [
             "CHINA"
           ],
@@ -10128,12 +10156,12 @@
             "CHINA"
           ],
           "domains": [
-            "TERRORISM"
+            "POLITICAL"
           ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-367cce41ce4b12f3"
+        "anomaly-956b0c336054c8b8"
       ],
       "threat_score": 13,
       "watch_priority": 32,
@@ -10163,7 +10191,7 @@
         "3dcad878894690f56265"
       ],
       "first_seen": "2026-09-24T11:20:32Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-24T10:58:15Z",
       "domains": [
         "ECONOMIC"
@@ -10450,7 +10478,7 @@
         "da1bb5b7e830bfa76118"
       ],
       "first_seen": "2026-09-22T10:22:01Z",
-      "last_seen": "2026-09-24T13:49:22Z",
+      "last_seen": "2026-09-24T14:22:14Z",
       "material_time": "2026-09-23T20:25:54Z",
       "domains": [
         "INFRA",
@@ -10469,7 +10497,7 @@
         "corroboration": 55,
         "contradiction": 0,
         "specificity": 54,
-        "recency": 94,
+        "recency": 93,
         "evidence_type": 79,
         "historical_reliability": 89,
         "claim_maturity": 58
@@ -10726,7 +10754,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 92,
+        "recency": 91,
         "evidence_type": 40,
         "historical_reliability": 50,
         "claim_maturity": 36
@@ -11008,7 +11036,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 91,
+        "recency": 90,
         "evidence_type": 40,
         "historical_reliability": 50,
         "claim_maturity": 37
@@ -11251,273 +11279,6 @@
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-23T14:48:35Z"
-      }
-    },
-    {
-      "id": "claim-3311051e3c3036ece2",
-      "headline": "Supertanker Rally Lures Investors as War Squeezes Vessel Supply",
-      "signature_tokens": [
-        "investors",
-        "lures",
-        "rally",
-        "squeezes",
-        "supertanker",
-        "supply",
-        "vessel",
-        "war"
-      ],
-      "observation_ids": [
-        "3516538aa21069a2702c"
-      ],
-      "first_seen": "2026-09-24T13:49:22Z",
-      "last_seen": "2026-09-24T13:49:22Z",
-      "material_time": "2026-09-24T11:57:35Z",
-      "domains": [
-        "INFRA"
-      ],
-      "regions": [
-        "IRAN"
-      ],
-      "actors": [
-        "IRAN"
-      ],
-      "state": "UNVERIFIED CLAIM",
-      "confidence": 60,
-      "confidence_direction": "NEW",
-      "confidence_components": {
-        "source_quality": 78,
-        "independence": 25,
-        "corroboration": 22,
-        "contradiction": 0,
-        "specificity": 66,
-        "recency": 100,
-        "evidence_type": 73,
-        "historical_reliability": 78,
-        "claim_maturity": 35
-      },
-      "classification_reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
-      "supporting_observation_ids": [
-        "3516538aa21069a2702c"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 1,
-      "independent_provenance_count": 1,
-      "sources": [
-        "gCaptain"
-      ],
-      "provenance_roots": [
-        "gcaptain"
-      ],
-      "evidence": [
-        {
-          "observation_id": "3516538aa21069a2702c",
-          "title": "Supertanker Rally Lures Investors as War Squeezes Vessel Supply",
-          "source": "gCaptain",
-          "source_class": "specialist",
-          "provenance_root": "gcaptain",
-          "stance": "report",
-          "published": "2026-09-24T11:57:35Z",
-          "url": "https://gcaptain.com/supertanker-rally-lures-investors-as-war-squeezes-vessel-supply",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Supertanker Rally Lures Investors as War Squeezes Vessel Supply",
-        "plausible_explanations": [
-          "A genuine INFRA development involving IRAN is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related INFRA indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-5d683a9a94e0d94150",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-df8fa91bdf00195a47",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-8f7efbd314043e6fe9",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "NUCLEAR"
-          ]
-        },
-        {
-          "claim_id": "claim-7b3a8058f79a56f11d",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-480cb6ba382f404aae",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-6e3f1a064b6e817fdd",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-f33f1f8c33f3c3ff79",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "POLITICAL",
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-f40888e4d0a3c45580",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-bb5943baed259345b1",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-f5ea2c33a12ba4eeb7",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-637c5145af81acee6f",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-0dd8dc2e439df1f87a",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-2c1e220c8787a2b1"
-      ],
-      "threat_score": 2,
-      "watch_priority": 31,
-      "audit": {
-        "reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
-        "support_count": 1,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-24T11:57:35Z"
       }
     }
   ]
