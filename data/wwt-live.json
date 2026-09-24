@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-24T16:22:34Z",
+  "generated_at": "2026-09-24T16:47:39Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 38,
   "verified_pressure": {
     "score": 38,
-    "claim_count": 58,
+    "claim_count": 59,
     "top_claims": [
       {
         "id": "claim-8f7efbd314043e6fe9",
@@ -737,7 +737,7 @@
           "corroboration": 25,
           "contradiction": 0,
           "specificity": 100,
-          "recency": 74,
+          "recency": 73,
           "evidence_type": 79,
           "historical_reliability": 84,
           "claim_maturity": 51
@@ -938,16 +938,6 @@
             ]
           },
           {
-            "claim_id": "claim-e379855affe722d597",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-b3ca8bcc3b30366d1d",
             "shared_actors": [
               "RUSSIA"
@@ -973,6 +963,21 @@
             ],
             "domains": [
               "NUCLEAR"
+            ]
+          },
+          {
+            "claim_id": "claim-a64839ea8d68cbf768",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "WAR"
             ]
           }
         ],
@@ -1291,7 +1296,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-c76a97c85a12d3b1",
+          "anomaly-24b71a1f4e0f73e4",
           "anomaly-533f4d3c0a0aee59",
           "anomaly-62ae06362353d013",
           "anomaly-2c1e220c8787a2b1",
@@ -1685,6 +1690,320 @@
           "independent_roots": 3,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-22T02:46:42Z"
+        }
+      },
+      {
+        "id": "claim-8e693cdb42ba9f45fb",
+        "headline": "Russia could attack a Nato country within months, Danish intelligence says",
+        "signature_tokens": [
+          "attack",
+          "country",
+          "danish",
+          "intelligence",
+          "months",
+          "nato",
+          "russia",
+          "within"
+        ],
+        "observation_ids": [
+          "a4c5afb8741ee88f555f"
+        ],
+        "first_seen": "2026-09-24T16:47:39Z",
+        "last_seen": "2026-09-24T16:47:39Z",
+        "material_time": "2026-09-24T16:05:44Z",
+        "domains": [
+          "SPACE",
+          "WAR"
+        ],
+        "regions": [
+          "EUROPE",
+          "RUSSIA",
+          "UKRAINE"
+        ],
+        "actors": [
+          "NATO",
+          "RUSSIA",
+          "UKRAINE"
+        ],
+        "state": "CREDIBLE REPORT",
+        "confidence": 65,
+        "confidence_direction": "NEW",
+        "confidence_components": {
+          "source_quality": 84,
+          "independence": 25,
+          "corroboration": 22,
+          "contradiction": 0,
+          "specificity": 88,
+          "recency": 100,
+          "evidence_type": 79,
+          "historical_reliability": 84,
+          "claim_maturity": 35
+        },
+        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "supporting_observation_ids": [
+          "a4c5afb8741ee88f555f"
+        ],
+        "contradictory_observation_ids": [],
+        "source_count": 1,
+        "independent_provenance_count": 1,
+        "sources": [
+          "The Guardian World"
+        ],
+        "provenance_roots": [
+          "guardian_world"
+        ],
+        "evidence": [
+          {
+            "observation_id": "a4c5afb8741ee88f555f",
+            "title": "Russia could attack a Nato country within months, Danish intelligence says",
+            "source": "The Guardian World",
+            "source_class": "established_media",
+            "provenance_root": "guardian_world",
+            "stance": "warning",
+            "published": "2026-09-24T16:05:44Z",
+            "url": "https://www.theguardian.com/world/2026/sep/24/russia-could-attack-a-nato-country-within-months-danish-intelligence-says",
+            "discovery_only": false
+          }
+        ],
+        "state_affiliated_reporting": false,
+        "discovery_only": false,
+        "branch_analysis": {
+          "current_observation": "Russia could attack a Nato country within months, Danish intelligence says",
+          "plausible_explanations": [
+            "A genuine SPACE/WAR development involving NATO, RUSSIA, UKRAINE is unfolding as reported.",
+            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+          ],
+          "escalation_branch": "Related SPACE/WAR indicators spread, become operational, or draw additional actors into the event.",
+          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+          "confirm_indicators": [
+            "A primary record, sensor observation, or on-record official confirmation.",
+            "Matching detail from a genuinely independent provenance root.",
+            "Observable follow-on action consistent with the reported event."
+          ],
+          "falsify_indicators": [
+            "Time-stamped primary evidence incompatible with the claim.",
+            "Independent, technically specific refutation from credible sources.",
+            "Predicted follow-on indicators fail to occur inside the stated window."
+          ],
+          "contradictory_evidence_present": false
+        },
+        "historical_matches": [
+          {
+            "claim_id": "claim-cf7625f8b461238993",
+            "headline": "Shahed-Type Drones Filmed During Mali Village Attacks",
+            "material_time": "2026-07-24T15:39:05Z",
+            "shared_domains": [
+              "SPACE"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
+            "claim_id": "claim-f682011ad23c14b910",
+            "headline": "Satellite Imagery Shows Scale of Venezuela Earthquake Damage",
+            "material_time": "2026-06-29T22:34:11Z",
+            "shared_domains": [
+              "SPACE"
+            ],
+            "shared_actors": [
+              "NATO"
+            ],
+            "shared_regions": []
+          }
+        ],
+        "cross_domain_links": [
+          {
+            "claim_id": "claim-ddb28772ec8c980666",
+            "shared_actors": [
+              "NATO",
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "EUROPE",
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-b8652c4cd84816c66b",
+            "shared_actors": [
+              "NATO",
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "EUROPE",
+              "RUSSIA"
+            ],
+            "domains": [
+              "SECURITY",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-3255efa7f65ee85bd5",
+            "shared_actors": [
+              "NATO"
+            ],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-9e788f9d628b9094be",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-8b4542a6fdb7ba9c2e",
+            "shared_actors": [
+              "NATO",
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "EUROPE",
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "POLITICAL",
+              "SECURITY"
+            ]
+          },
+          {
+            "claim_id": "claim-4c82b5bc892668be90",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-76ce02e84975e8ee01",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-5d036678dfa62043f7",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-575c03559c735b0df5",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-f04800b1b5d28b9558",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-8f7efbd314043e6fe9",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "NUCLEAR"
+            ]
+          },
+          {
+            "claim_id": "claim-a12aa1754de927496a",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          }
+        ],
+        "anomaly_ids": [
+          "anomaly-24b71a1f4e0f73e4",
+          "anomaly-533f4d3c0a0aee59",
+          "anomaly-62ae06362353d013"
+        ],
+        "threat_score": 15,
+        "watch_priority": 59,
+        "audit": {
+          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+          "support_count": 1,
+          "contradiction_count": 0,
+          "independent_roots": 1,
+          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+          "material_time_used_for_decay": "2026-09-24T16:05:44Z"
         }
       },
       {
@@ -3046,7 +3365,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 75,
-          "recency": 83,
+          "recency": 82,
           "evidence_type": 79,
           "historical_reliability": 84,
           "claim_maturity": 38
@@ -3564,271 +3883,6 @@
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-22T11:30:33Z"
         }
-      },
-      {
-        "id": "claim-ed78f4f8a5ee857be6",
-        "headline": "US Vice President: Iran Cannot Build a Nuclear Weapon... - jordannews.jo",
-        "signature_tokens": [
-          "build",
-          "cannot",
-          "iran",
-          "jordannews",
-          "nuclear",
-          "president",
-          "vice",
-          "weapon"
-        ],
-        "observation_ids": [
-          "a87c3d19d281f8add775"
-        ],
-        "first_seen": "2026-09-22T05:19:48Z",
-        "last_seen": "2026-09-22T09:46:06Z",
-        "material_time": "2026-09-22T05:18:06Z",
-        "domains": [
-          "NUCLEAR"
-        ],
-        "regions": [
-          "IRAN",
-          "MIDDLE EAST"
-        ],
-        "actors": [
-          "IRAN"
-        ],
-        "state": "CREDIBLE REPORT",
-        "confidence": 63,
-        "confidence_direction": "STABLE",
-        "confidence_components": {
-          "source_quality": 93,
-          "independence": 25,
-          "corroboration": 22,
-          "contradiction": 0,
-          "specificity": 66,
-          "recency": 79,
-          "evidence_type": 79,
-          "historical_reliability": 93,
-          "claim_maturity": 39
-        },
-        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "supporting_observation_ids": [
-          "a87c3d19d281f8add775"
-        ],
-        "contradictory_observation_ids": [],
-        "source_count": 1,
-        "independent_provenance_count": 1,
-        "sources": [
-          "Agence France-Presse"
-        ],
-        "provenance_roots": [
-          "wire:afp_world"
-        ],
-        "evidence": [
-          {
-            "observation_id": "a87c3d19d281f8add775",
-            "title": "US Vice President: Iran Cannot Build a Nuclear Weapon... - jordannews.jo",
-            "source": "Agence France-Presse",
-            "source_class": "wire",
-            "provenance_root": "wire:afp_world",
-            "stance": "report",
-            "published": "2026-09-22T05:18:06Z",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUzd5aWdDSWVLbTktUnJQcTh1c2NOM3d3eEttTGRwa1BveEhzcHNWTUhlUThuYnpiMWQydWltSEJWWnhCcnZCbTJUS3hCNmc0WXZSQXdObXRLaFBlQ0QxaEoxODdQXzZuZlNkeEtIWkdNM2dKbnVFaE5EVGQxY2Z0TlVQcExmOVowb09jN2h4RGNrSDVJcTZOSnU2eXpjeDg5YXc?oc=5",
-            "discovery_only": false
-          }
-        ],
-        "state_affiliated_reporting": false,
-        "discovery_only": false,
-        "branch_analysis": {
-          "current_observation": "US Vice President: Iran Cannot Build a Nuclear Weapon... - jordannews.jo",
-          "plausible_explanations": [
-            "A genuine NUCLEAR development involving IRAN is unfolding as reported.",
-            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-          ],
-          "escalation_branch": "Related NUCLEAR indicators spread, become operational, or draw additional actors into the event.",
-          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-          "confirm_indicators": [
-            "A primary record, sensor observation, or on-record official confirmation.",
-            "Matching detail from a genuinely independent provenance root.",
-            "Observable follow-on action consistent with the reported event."
-          ],
-          "falsify_indicators": [
-            "Time-stamped primary evidence incompatible with the claim.",
-            "Independent, technically specific refutation from credible sources.",
-            "Predicted follow-on indicators fail to occur inside the stated window."
-          ],
-          "contradictory_evidence_present": false
-        },
-        "historical_matches": [],
-        "cross_domain_links": [
-          {
-            "claim_id": "claim-df8fa91bdf00195a47",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "SECURITY",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-8f7efbd314043e6fe9",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "NUCLEAR"
-            ]
-          },
-          {
-            "claim_id": "claim-7b3a8058f79a56f11d",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "POLITICAL",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-c898ca6341e7ff4700",
-            "shared_actors": [],
-            "shared_regions": [
-              "MIDDLE EAST"
-            ],
-            "domains": [
-              "HUMANITARIAN",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-480cb6ba382f404aae",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-6e3f1a064b6e817fdd",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "MIDDLE EAST"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-f33f1f8c33f3c3ff79",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "MIDDLE EAST"
-            ],
-            "domains": [
-              "POLITICAL",
-              "SECURITY",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-f40888e4d0a3c45580",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-a12aa1754de927496a",
-            "shared_actors": [],
-            "shared_regions": [
-              "MIDDLE EAST"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-bb5943baed259345b1",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "MIDDLE EAST"
-            ],
-            "domains": [
-              "POLITICAL",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-ff9eede36dc5b7c5cc",
-            "shared_actors": [],
-            "shared_regions": [
-              "MIDDLE EAST"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-f5ea2c33a12ba4eeb7",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "MIDDLE EAST"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "WAR"
-            ]
-          }
-        ],
-        "anomaly_ids": [
-          "anomaly-2c1e220c8787a2b1"
-        ],
-        "threat_score": 18,
-        "watch_priority": 33,
-        "audit": {
-          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 1,
-          "contradiction_count": 0,
-          "independent_roots": 1,
-          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-22T05:18:06Z"
-        }
       }
     ]
   },
@@ -4108,19 +4162,22 @@
             ]
           },
           {
-            "claim_id": "claim-e379855affe722d597",
+            "claim_id": "claim-4be2b5cb8b3901e890",
             "shared_actors": [
-              "NATO"
+              "RUSSIA",
+              "UKRAINE"
             ],
             "shared_regions": [
-              "EUROPE"
+              "RUSSIA",
+              "UKRAINE"
             ],
             "domains": [
+              "POLITICAL",
               "WAR"
             ]
           },
           {
-            "claim_id": "claim-4be2b5cb8b3901e890",
+            "claim_id": "claim-2f2bd68e90c2ea4310",
             "shared_actors": [
               "RUSSIA",
               "UKRAINE"
@@ -4136,7 +4193,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-c76a97c85a12d3b1",
+          "anomaly-24b71a1f4e0f73e4",
           "anomaly-533f4d3c0a0aee59",
           "anomaly-62ae06362353d013"
         ],
@@ -4411,20 +4468,21 @@
             ]
           },
           {
-            "claim_id": "claim-e379855affe722d597",
+            "claim_id": "claim-4be2b5cb8b3901e890",
             "shared_actors": [
-              "NATO"
+              "RUSSIA"
             ],
             "shared_regions": [
-              "EUROPE"
+              "RUSSIA"
             ],
             "domains": [
+              "POLITICAL",
               "WAR"
             ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-c76a97c85a12d3b1",
+          "anomaly-24b71a1f4e0f73e4",
           "anomaly-533f4d3c0a0aee59"
         ],
         "threat_score": 7,
@@ -7582,9 +7640,9 @@
     "multi_theater_coupling": 1,
     "nuclear_escalation": 8,
     "military_mobilization": 13,
-    "economic_warfare": 201,
+    "economic_warfare": 200,
     "crisis_control_failure": 0,
-    "hybrid_preparation": 70
+    "hybrid_preparation": 71
   },
   "formula": "Independent-provenance-capped claim contributions; verified and early-warning pressure remain separate.",
   "safeguard": "Republished stories sharing one provenance root cannot multiply pressure; speculative claims never enter Verified Pressure.",
@@ -8321,7 +8379,7 @@
         "corroboration": 25,
         "contradiction": 0,
         "specificity": 100,
-        "recency": 74,
+        "recency": 73,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 51
@@ -8522,16 +8580,6 @@
           ]
         },
         {
-          "claim_id": "claim-e379855affe722d597",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-b3ca8bcc3b30366d1d",
           "shared_actors": [
             "RUSSIA"
@@ -8557,6 +8605,21 @@
           ],
           "domains": [
             "NUCLEAR"
+          ]
+        },
+        {
+          "claim_id": "claim-a64839ea8d68cbf768",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
           ]
         }
       ],
@@ -8875,7 +8938,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-c76a97c85a12d3b1",
+        "anomaly-24b71a1f4e0f73e4",
         "anomaly-533f4d3c0a0aee59",
         "anomaly-62ae06362353d013",
         "anomaly-2c1e220c8787a2b1",
@@ -9269,6 +9332,320 @@
         "independent_roots": 3,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-22T02:46:42Z"
+      }
+    },
+    {
+      "id": "claim-8e693cdb42ba9f45fb",
+      "headline": "Russia could attack a Nato country within months, Danish intelligence says",
+      "signature_tokens": [
+        "attack",
+        "country",
+        "danish",
+        "intelligence",
+        "months",
+        "nato",
+        "russia",
+        "within"
+      ],
+      "observation_ids": [
+        "a4c5afb8741ee88f555f"
+      ],
+      "first_seen": "2026-09-24T16:47:39Z",
+      "last_seen": "2026-09-24T16:47:39Z",
+      "material_time": "2026-09-24T16:05:44Z",
+      "domains": [
+        "SPACE",
+        "WAR"
+      ],
+      "regions": [
+        "EUROPE",
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "actors": [
+        "NATO",
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "state": "CREDIBLE REPORT",
+      "confidence": 65,
+      "confidence_direction": "NEW",
+      "confidence_components": {
+        "source_quality": 84,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 88,
+        "recency": 100,
+        "evidence_type": 79,
+        "historical_reliability": 84,
+        "claim_maturity": 35
+      },
+      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+      "supporting_observation_ids": [
+        "a4c5afb8741ee88f555f"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 1,
+      "independent_provenance_count": 1,
+      "sources": [
+        "The Guardian World"
+      ],
+      "provenance_roots": [
+        "guardian_world"
+      ],
+      "evidence": [
+        {
+          "observation_id": "a4c5afb8741ee88f555f",
+          "title": "Russia could attack a Nato country within months, Danish intelligence says",
+          "source": "The Guardian World",
+          "source_class": "established_media",
+          "provenance_root": "guardian_world",
+          "stance": "warning",
+          "published": "2026-09-24T16:05:44Z",
+          "url": "https://www.theguardian.com/world/2026/sep/24/russia-could-attack-a-nato-country-within-months-danish-intelligence-says",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Russia could attack a Nato country within months, Danish intelligence says",
+        "plausible_explanations": [
+          "A genuine SPACE/WAR development involving NATO, RUSSIA, UKRAINE is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related SPACE/WAR indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-cf7625f8b461238993",
+          "headline": "Shahed-Type Drones Filmed During Mali Village Attacks",
+          "material_time": "2026-07-24T15:39:05Z",
+          "shared_domains": [
+            "SPACE"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ]
+        },
+        {
+          "claim_id": "claim-f682011ad23c14b910",
+          "headline": "Satellite Imagery Shows Scale of Venezuela Earthquake Damage",
+          "material_time": "2026-06-29T22:34:11Z",
+          "shared_domains": [
+            "SPACE"
+          ],
+          "shared_actors": [
+            "NATO"
+          ],
+          "shared_regions": []
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-ddb28772ec8c980666",
+          "shared_actors": [
+            "NATO",
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-b8652c4cd84816c66b",
+          "shared_actors": [
+            "NATO",
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA"
+          ],
+          "domains": [
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-3255efa7f65ee85bd5",
+          "shared_actors": [
+            "NATO"
+          ],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-9e788f9d628b9094be",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8b4542a6fdb7ba9c2e",
+          "shared_actors": [
+            "NATO",
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-4c82b5bc892668be90",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-76ce02e84975e8ee01",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-5d036678dfa62043f7",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-575c03559c735b0df5",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f04800b1b5d28b9558",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8f7efbd314043e6fe9",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "NUCLEAR"
+          ]
+        },
+        {
+          "claim_id": "claim-a12aa1754de927496a",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-24b71a1f4e0f73e4",
+        "anomaly-533f4d3c0a0aee59",
+        "anomaly-62ae06362353d013"
+      ],
+      "threat_score": 15,
+      "watch_priority": 59,
+      "audit": {
+        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "support_count": 1,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-24T16:05:44Z"
       }
     },
     {
@@ -10630,7 +11007,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 75,
-        "recency": 83,
+        "recency": 82,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 38
@@ -12312,279 +12689,6 @@
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-21T16:00:00Z"
-      }
-    },
-    {
-      "id": "claim-76974a273492c10f51",
-      "headline": "Viral NATO video falsely framed as ‘war propaganda’ against Russia",
-      "signature_tokens": [
-        "falsely",
-        "framed",
-        "nato",
-        "propaganda",
-        "russia",
-        "video",
-        "viral",
-        "war"
-      ],
-      "observation_ids": [
-        "6bcc4fc5ff9df2ceb998"
-      ],
-      "first_seen": "2026-09-22T21:18:03Z",
-      "last_seen": "2026-09-23T05:19:44Z",
-      "material_time": "2026-09-22T20:44:29Z",
-      "domains": [
-        "CYBER"
-      ],
-      "regions": [
-        "EUROPE",
-        "RUSSIA"
-      ],
-      "actors": [
-        "NATO",
-        "RUSSIA"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 64,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 84,
-        "independence": 25,
-        "corroboration": 22,
-        "contradiction": 0,
-        "specificity": 91,
-        "recency": 84,
-        "evidence_type": 79,
-        "historical_reliability": 84,
-        "claim_maturity": 38
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "6bcc4fc5ff9df2ceb998"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 1,
-      "independent_provenance_count": 1,
-      "sources": [
-        "France 24 World"
-      ],
-      "provenance_roots": [
-        "france24"
-      ],
-      "evidence": [
-        {
-          "observation_id": "6bcc4fc5ff9df2ceb998",
-          "title": "Viral NATO video falsely framed as ‘war propaganda’ against Russia",
-          "source": "France 24 World",
-          "source_class": "established_media",
-          "provenance_root": "france24",
-          "stance": "allegation",
-          "published": "2026-09-22T20:44:29Z",
-          "url": "https://www.france24.com/en/viral-nato-video-falsely-framed-as-war-propaganda-against-russia-1",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Viral NATO video falsely framed as ‘war propaganda’ against Russia",
-        "plausible_explanations": [
-          "A genuine CYBER development involving NATO, RUSSIA is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related CYBER indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-ddb28772ec8c980666",
-          "shared_actors": [
-            "NATO",
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "EUROPE",
-            "RUSSIA"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-b8652c4cd84816c66b",
-          "shared_actors": [
-            "NATO",
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "EUROPE",
-            "RUSSIA"
-          ],
-          "domains": [
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-3255efa7f65ee85bd5",
-          "shared_actors": [
-            "NATO"
-          ],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-9e788f9d628b9094be",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-8b4542a6fdb7ba9c2e",
-          "shared_actors": [
-            "NATO",
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "EUROPE",
-            "RUSSIA"
-          ],
-          "domains": [
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-4c82b5bc892668be90",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-76ce02e84975e8ee01",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-5d036678dfa62043f7",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-575c03559c735b0df5",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-f04800b1b5d28b9558",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-8f7efbd314043e6fe9",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "NUCLEAR"
-          ]
-        },
-        {
-          "claim_id": "claim-a12aa1754de927496a",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-c76a97c85a12d3b1",
-        "anomaly-533f4d3c0a0aee59"
-      ],
-      "threat_score": 14,
-      "watch_priority": 37,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 1,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-22T20:44:29Z"
       }
     }
   ]
