@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T00:29:20Z",
+  "generated_at": "2026-09-25T00:50:06Z",
   "claims": [
     {
       "id": "claim-8e693cdb42ba9f45fb",
@@ -21,7 +21,7 @@
         "25b4b34d8ff01195e04f"
       ],
       "first_seen": "2026-09-24T16:47:39Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T21:42:00Z",
       "domains": [
         "SECURITY",
@@ -385,7 +385,7 @@
         "efefb15d8670dd7749f3"
       ],
       "first_seen": "2026-09-21T11:20:43Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T09:51:00Z",
       "domains": [
         "INFRA",
@@ -765,7 +765,7 @@
       "anomaly_ids": [
         "anomaly-4a8b6a3edda5e431",
         "anomaly-3b3408792463e87c",
-        "anomaly-093831ac8a06c5dd"
+        "anomaly-56cc2c117d741f21"
       ],
       "threat_score": 16,
       "watch_priority": 58,
@@ -780,11 +780,12 @@
     },
     {
       "id": "claim-830bd6f3de66ea1b5b",
-      "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit",
+      "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
       "signature_tokens": [
         "airport",
         "begins",
         "chinese",
+        "france",
         "gives",
         "leader",
         "rare",
@@ -794,10 +795,11 @@
         "welcome"
       ],
       "observation_ids": [
-        "9adad0141ced85f42508"
+        "9adad0141ced85f42508",
+        "75407c02c81d36201fa9"
       ],
       "first_seen": "2026-09-24T02:20:24Z",
-      "last_seen": "2026-09-24T11:46:56Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T01:48:47Z",
       "domains": [
         "INFRA",
@@ -806,38 +808,42 @@
       ],
       "regions": [
         "CHINA",
+        "EUROPE",
         "IRAN"
       ],
       "actors": [
         "CHINA",
         "IRAN"
       ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 63,
-      "confidence_direction": "STABLE",
+      "state": "CONFIRMED",
+      "confidence": 73,
+      "confidence_direction": "UP",
       "confidence_components": {
-        "source_quality": 84,
-        "independence": 25,
-        "corroboration": 22,
+        "source_quality": 88,
+        "independence": 52,
+        "corroboration": 52,
         "contradiction": 0,
-        "specificity": 75,
+        "specificity": 76,
         "recency": 91,
         "evidence_type": 79,
-        "historical_reliability": 84,
-        "claim_maturity": 37
+        "historical_reliability": 88,
+        "claim_maturity": 48
       },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+      "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
       "supporting_observation_ids": [
-        "9adad0141ced85f42508"
+        "9adad0141ced85f42508",
+        "75407c02c81d36201fa9"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 1,
-      "independent_provenance_count": 1,
+      "source_count": 2,
+      "independent_provenance_count": 2,
       "sources": [
+        "Agence France-Presse",
         "France 24 World"
       ],
       "provenance_roots": [
-        "france24"
+        "france24",
+        "wire:afp_world"
       ],
       "evidence": [
         {
@@ -850,12 +856,23 @@
           "published": "2026-09-24T01:48:47Z",
           "url": "https://www.france24.com/en/americas/20260924-trump-gives-xi-rare-airport-welcome-as-chinese-leader-begins-us-state-visit",
           "discovery_only": false
+        },
+        {
+          "observation_id": "75407c02c81d36201fa9",
+          "title": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+          "source": "Agence France-Presse",
+          "source_class": "wire",
+          "provenance_root": "wire:afp_world",
+          "stance": "report",
+          "published": "2026-09-24T01:48:47Z",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVnRZdVlqRDg4N3FJOGZVd09Eb21HSHVfUjd0M3A3R2JHYkpPdkpVUl95UE8wUFFSa2lCZmpKNXlMM3MzMkppdm9XeE1CbUtsM3hBYkRjaEhYdjA5a0x6Vk5UREdFXy1yVFFqcHJWZ2w2cXlad19rVUF5dTNtNWh2RUlGc0JzU2txODJqXzdzRWw4UFFEc0VFV2c0M2VRdVFSdmdmcXBPenEzeFVfaXN0eUtuNUdZejloVXJ6UEp3?oc=5",
+          "discovery_only": false
         }
       ],
       "state_affiliated_reporting": false,
       "discovery_only": false,
       "branch_analysis": {
-        "current_observation": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit",
+        "current_observation": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
         "plausible_explanations": [
           "A genuine INFRA/POLITICAL/WAR development involving CHINA, IRAN is unfolding as reported.",
           "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
@@ -906,6 +923,50 @@
         }
       ],
       "cross_domain_links": [
+        {
+          "claim_id": "claim-ddb28772ec8c980666",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-b8652c4cd84816c66b",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-3255efa7f65ee85bd5",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8b4542a6fdb7ba9c2e",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
         {
           "claim_id": "claim-df8fa91bdf00195a47",
           "shared_actors": [
@@ -974,6 +1035,16 @@
           ]
         },
         {
+          "claim_id": "claim-a12aa1754de927496a",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-bb5943baed259345b1",
           "shared_actors": [
             "IRAN"
@@ -997,81 +1068,19 @@
           "domains": [
             "CYBER"
           ]
-        },
-        {
-          "claim_id": "claim-3eeda08926e459870d",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-1c72a7046919ccd500",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "CYBER"
-          ]
-        },
-        {
-          "claim_id": "claim-637c5145af81acee6f",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-2b0bbfb39360c0e162",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-0dd8dc2e439df1f87a",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
         "anomaly-4a8b6a3edda5e431",
-        "anomaly-9242b3883afec187"
+        "anomaly-c5d94d1b454caf3d"
       ],
-      "threat_score": 13,
-      "watch_priority": 53,
+      "threat_score": 21,
+      "watch_priority": 54,
       "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 1,
+        "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
+        "support_count": 2,
         "contradiction_count": 0,
-        "independent_roots": 1,
+        "independent_roots": 2,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-24T01:48:47Z"
       }
@@ -1099,7 +1108,7 @@
         "eb49e63ef2d123ae82d8"
       ],
       "first_seen": "2026-09-24T23:45:00Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T23:34:29Z",
       "domains": [
         "INFRA",
@@ -1112,7 +1121,7 @@
       "actors": [],
       "state": "CONFIRMED",
       "confidence": 75,
-      "confidence_direction": "UP",
+      "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 90,
         "independence": 52,
@@ -1379,7 +1388,7 @@
         "dbba1601dea368227154"
       ],
       "first_seen": "2026-09-24T11:20:32Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T19:46:13Z",
       "domains": [
         "POLITICAL",
@@ -2061,7 +2070,7 @@
       ],
       "anomaly_ids": [
         "anomaly-3b3408792463e87c",
-        "anomaly-9242b3883afec187"
+        "anomaly-c5d94d1b454caf3d"
       ],
       "threat_score": 13,
       "watch_priority": 47,
@@ -2089,7 +2098,7 @@
         "1b9fac2d146d9f740680"
       ],
       "first_seen": "2026-09-24T16:22:34Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T15:50:43Z",
       "domains": [
         "ECONOMIC"
@@ -2111,7 +2120,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 99,
+        "recency": 98,
         "evidence_type": 67,
         "historical_reliability": 79,
         "claim_maturity": 36
@@ -2422,7 +2431,7 @@
         "5858ef14d430866854ce"
       ],
       "first_seen": "2026-09-24T20:22:11Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T20:15:00Z",
       "domains": [
         "CYBER",
@@ -2689,7 +2698,7 @@
       ],
       "anomaly_ids": [
         "anomaly-3b3408792463e87c",
-        "anomaly-9242b3883afec187"
+        "anomaly-c5d94d1b454caf3d"
       ],
       "threat_score": 12,
       "watch_priority": 45,
@@ -2719,7 +2728,7 @@
         "a2f5830fd0ce5b7e6f60"
       ],
       "first_seen": "2026-09-24T07:22:33Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T07:20:11Z",
       "domains": [
         "CLIMATE",
@@ -2988,7 +2997,7 @@
         "b28fc75f2598899aa664"
       ],
       "first_seen": "2026-09-21T20:20:00Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T19:54:08Z",
       "domains": [
         "CLIMATE",
@@ -3471,7 +3480,7 @@
         "a818e6980982c839b9b3"
       ],
       "first_seen": "2026-09-24T13:49:22Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T13:41:04Z",
       "domains": [
         "ECONOMIC"
@@ -3759,7 +3768,7 @@
         "817ccf40de28d026ef41"
       ],
       "first_seen": "2026-09-24T23:19:37Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T14:44:00Z",
       "domains": [
         "CYBER"
@@ -4028,7 +4037,7 @@
         "976e6a9bf60d753c8c73"
       ],
       "first_seen": "2026-09-24T06:27:34Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T05:57:00Z",
       "domains": [
         "CYBER"
@@ -4284,7 +4293,7 @@
         "891d409229755388ef12"
       ],
       "first_seen": "2026-09-24T20:47:53Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T20:35:39Z",
       "domains": [
         "ECONOMIC"
@@ -4549,7 +4558,7 @@
       ],
       "anomaly_ids": [
         "anomaly-4a8b6a3edda5e431",
-        "anomaly-9242b3883afec187"
+        "anomaly-c5d94d1b454caf3d"
       ],
       "threat_score": 12,
       "watch_priority": 39,
@@ -4579,7 +4588,7 @@
         "5c7ddefc806063971270"
       ],
       "first_seen": "2026-09-24T20:22:11Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T20:19:30Z",
       "domains": [
         "INFRA"
@@ -4845,7 +4854,7 @@
       ],
       "anomaly_ids": [
         "anomaly-3b3408792463e87c",
-        "anomaly-9242b3883afec187"
+        "anomaly-c5d94d1b454caf3d"
       ],
       "threat_score": 11,
       "watch_priority": 38,
@@ -4875,7 +4884,7 @@
         "60d7f03a309ae432ebeb"
       ],
       "first_seen": "2026-09-24T13:49:22Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T14:59:02Z",
       "domains": [
         "ECONOMIC"
@@ -5452,7 +5461,7 @@
         "d80491d0ecb3a6236149"
       ],
       "first_seen": "2026-09-24T22:20:49Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T21:57:34Z",
       "domains": [
         "ECONOMIC",
@@ -5731,7 +5740,7 @@
         "364eb60ca6dc98b7250f"
       ],
       "first_seen": "2026-09-24T15:22:27Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T15:01:53Z",
       "domains": [
         "CYBER"
@@ -5971,7 +5980,7 @@
       ],
       "anomaly_ids": [
         "anomaly-3b3408792463e87c",
-        "anomaly-9242b3883afec187"
+        "anomaly-c5d94d1b454caf3d"
       ],
       "threat_score": 13,
       "watch_priority": 37,
@@ -6003,7 +6012,7 @@
         "736303087e020bb1e0ce"
       ],
       "first_seen": "2026-09-24T13:49:22Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T13:30:00Z",
       "domains": [
         "CYBER"
@@ -6294,7 +6303,7 @@
         "c675c8b201e1db44fe4f"
       ],
       "first_seen": "2026-09-24T12:26:29Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T12:31:08Z",
       "domains": [
         "ECONOMIC"
@@ -6856,7 +6865,7 @@
         "6375a7fa7a15334910fe"
       ],
       "first_seen": "2026-09-24T16:47:39Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T16:07:07Z",
       "domains": [
         "CLIMATE"
@@ -6960,7 +6969,7 @@
         "ef6daba1b8ed48ac84d0"
       ],
       "first_seen": "2026-09-24T15:48:17Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T15:30:36Z",
       "domains": [
         "CYBER"
@@ -7192,7 +7201,7 @@
         "b9fcda168ea28f09bb58"
       ],
       "first_seen": "2026-09-24T12:52:51Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T12:48:14Z",
       "domains": [
         "CYBER"
@@ -7297,7 +7306,7 @@
         "e94c96b1cc969bffe40e"
       ],
       "first_seen": "2026-09-24T10:47:18Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T10:42:37Z",
       "domains": [
         "CYBER"
@@ -7310,7 +7319,7 @@
         "UNITED STATES"
       ],
       "state": "UNVERIFIED CLAIM",
-      "confidence": 60,
+      "confidence": 59,
       "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 84,
@@ -7591,7 +7600,7 @@
         "b3ee0bcc23c16e535a9c"
       ],
       "first_seen": "2026-09-24T11:20:32Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T10:04:57Z",
       "domains": [
         "CYBER",
@@ -8088,7 +8097,7 @@
         "c6842413acdd6150235a"
       ],
       "first_seen": "2026-09-24T21:45:03Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T21:27:17Z",
       "domains": [
         "SPACE"
@@ -8101,14 +8110,14 @@
         "UNITED STATES"
       ],
       "state": "CREDIBLE REPORT",
-      "confidence": 71,
+      "confidence": 70,
       "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 96,
         "independence": 25,
         "corroboration": 22,
         "contradiction": 0,
-        "specificity": 100,
+        "specificity": 87,
         "recency": 100,
         "evidence_type": 86,
         "historical_reliability": 96,
@@ -8358,7 +8367,7 @@
         "bfe97fbdf224aa6a4d93"
       ],
       "first_seen": "2026-09-24T20:47:53Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T20:30:00Z",
       "domains": [
         "CYBER"
@@ -8634,7 +8643,7 @@
         "50ff8dd5293b25bda75a"
       ],
       "first_seen": "2026-09-24T12:52:51Z",
-      "last_seen": "2026-09-25T00:29:20Z",
+      "last_seen": "2026-09-25T00:50:06Z",
       "material_time": "2026-09-24T12:51:48Z",
       "domains": [
         "CLIMATE"
@@ -9126,7 +9135,7 @@
           ]
         },
         {
-          "claim_id": "claim-2a3542f911f34ffebb",
+          "claim_id": "claim-7642f24d98b4c1fbb3",
           "shared_actors": [
             "IRAN"
           ],
@@ -9134,7 +9143,7 @@
             "IRAN"
           ],
           "domains": [
-            "INFRA",
+            "POLITICAL",
             "WAR"
           ]
         }
@@ -9480,6 +9489,20 @@
           ]
         },
         {
+          "claim_id": "claim-830bd6f3de66ea1b5b",
+          "shared_actors": [
+            "CHINA"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-f924b3e25f3e85aff7",
           "shared_actors": [
             "CHINA"
@@ -9501,20 +9524,6 @@
           ],
           "domains": [
             "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-830bd6f3de66ea1b5b",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "WAR"
           ]
         },
         {
@@ -9543,7 +9552,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-9242b3883afec187"
+        "anomaly-c5d94d1b454caf3d"
       ],
       "threat_score": 13,
       "watch_priority": 34,
