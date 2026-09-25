@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-25T00:50:06Z",
+  "generated_at": "2026-09-25T01:20:29Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 36,
   "verified_pressure": {
     "score": 36,
-    "claim_count": 58,
+    "claim_count": 59,
     "top_claims": [
       {
         "id": "claim-8e693cdb42ba9f45fb",
@@ -23,10 +23,11 @@
           "a4c5afb8741ee88f555f",
           "a6e9ed653455235a9e8b",
           "30d84c4f45dbe394ec81",
-          "25b4b34d8ff01195e04f"
+          "25b4b34d8ff01195e04f",
+          "4810767b573b2c3e23fc"
         ],
         "first_seen": "2026-09-24T16:47:39Z",
-        "last_seen": "2026-09-25T00:50:06Z",
+        "last_seen": "2026-09-25T01:20:29Z",
         "material_time": "2026-09-24T21:42:00Z",
         "domains": [
           "SECURITY",
@@ -51,7 +52,7 @@
           "independence": 52,
           "corroboration": 52,
           "contradiction": 0,
-          "specificity": 72,
+          "specificity": 70,
           "recency": 100,
           "evidence_type": 79,
           "historical_reliability": 83,
@@ -62,18 +63,21 @@
           "a4c5afb8741ee88f555f",
           "a6e9ed653455235a9e8b",
           "30d84c4f45dbe394ec81",
-          "25b4b34d8ff01195e04f"
+          "25b4b34d8ff01195e04f",
+          "4810767b573b2c3e23fc"
         ],
         "contradictory_observation_ids": [],
-        "source_count": 3,
+        "source_count": 4,
         "independent_provenance_count": 2,
         "sources": [
           "GDELT Global Discovery",
+          "Google News Weak-Signal Discovery",
           "Sky News World",
           "The Guardian World"
         ],
         "provenance_roots": [
           "gdelt_global",
+          "google_weak_signal",
           "guardian_world",
           "sky_world"
         ],
@@ -84,6 +88,17 @@
             "source": "GDELT Global Discovery",
             "source_class": "discovery",
             "provenance_root": "gdelt_global",
+            "stance": "speculation",
+            "published": "2026-09-24T21:42:00Z",
+            "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONGNmbS1GdklXam8zQVF0N2ZFMTVGa0thQ1BoaTVQUC1SUVk0a0tvVDZnSlFsbTVZWDVlemFWN1B5ZFpqMmpqZzdpRW5jdmZ0X0xBNEN3cGJuLVA0RDctMHZQRzV0UG1zdVpLRERuX2lGNVBRaWt3MlZkLWNCMFladURIRWp0ZlJRSHRXcjBlWVJDU3dONGpBOWVIOXo2eEEzcEJFc053UlFTbjBNcXk5aFdFbGxzQ1pjMDVJ?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "4810767b573b2c3e23fc",
+            "title": "Russia could attack a Nato country within months, Danish intelligence says - The Guardian",
+            "source": "Google News Weak-Signal Discovery",
+            "source_class": "low_confidence",
+            "provenance_root": "google_weak_signal",
             "stance": "speculation",
             "published": "2026-09-24T21:42:00Z",
             "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONGNmbS1GdklXam8zQVF0N2ZFMTVGa0thQ1BoaTVQUC1SUVk0a0tvVDZnSlFsbTVZWDVlemFWN1B5ZFpqMmpqZzdpRW5jdmZ0X0xBNEN3cGJuLVA0RDctMHZQRzV0UG1zdVpLRERuX2lGNVBRaWt3MlZkLWNCMFladURIRWp0ZlJRSHRXcjBlWVJDU3dONGpBOWVIOXo2eEEzcEJFc053UlFTbjBNcXk5aFdFbGxzQ1pjMDVJ?oc=5",
@@ -359,7 +374,7 @@
         "watch_priority": 66,
         "audit": {
           "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 4,
+          "support_count": 5,
           "contradiction_count": 0,
           "independent_roots": 2,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
@@ -1028,10 +1043,10 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 88,
-          "recency": 77,
+          "recency": 76,
           "evidence_type": 79,
           "historical_reliability": 84,
-          "claim_maturity": 39
+          "claim_maturity": 40
         },
         "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
         "supporting_observation_ids": [
@@ -1562,17 +1577,6 @@
             ]
           },
           {
-            "claim_id": "claim-79f3e8fdf653e5a865",
-            "shared_actors": [
-              "ISRAEL"
-            ],
-            "shared_regions": [],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-f3f400a2a0d4ece459",
             "shared_actors": [
               "ISRAEL"
@@ -1641,6 +1645,18 @@
             ],
             "shared_regions": [
               "ISRAEL/PALESTINE"
+            ],
+            "domains": [
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-6279543b96670cf502",
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
             ],
             "domains": [
               "POLITICAL"
@@ -1986,7 +2002,7 @@
           "d80491d0ecb3a6236149"
         ],
         "first_seen": "2026-09-24T22:20:49Z",
-        "last_seen": "2026-09-25T00:50:06Z",
+        "last_seen": "2026-09-25T01:20:29Z",
         "material_time": "2026-09-24T21:57:34Z",
         "domains": [
           "ECONOMIC",
@@ -2266,7 +2282,7 @@
           "cf598fee29fd6c046e05"
         ],
         "first_seen": "2026-09-24T18:24:45Z",
-        "last_seen": "2026-09-25T00:50:06Z",
+        "last_seen": "2026-09-25T01:20:29Z",
         "material_time": "2026-09-24T18:13:43Z",
         "domains": [
           "SECURITY",
@@ -2290,7 +2306,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 78,
-          "recency": 100,
+          "recency": 99,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 35
@@ -2565,7 +2581,7 @@
           "7f91590282e4b3d83f05"
         ],
         "first_seen": "2026-09-24T18:24:45Z",
-        "last_seen": "2026-09-25T00:50:06Z",
+        "last_seen": "2026-09-25T01:20:29Z",
         "material_time": "2026-09-24T18:15:55Z",
         "domains": [
           "WAR"
@@ -2589,7 +2605,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 78,
-          "recency": 100,
+          "recency": 99,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 35
@@ -4667,6 +4683,18 @@
             ]
           },
           {
+            "claim_id": "claim-91963da1923b47c73f",
+            "shared_actors": [
+              "NORTH KOREA"
+            ],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-2717c780143e97d8df",
             "shared_actors": [
               "NORTH KOREA"
@@ -4700,18 +4728,6 @@
             ],
             "domains": [
               "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-4c62a054e2c3e2a949",
-            "shared_actors": [
-              "NORTH KOREA"
-            ],
-            "shared_regions": [
-              "KOREAN PENINSULA"
-            ],
-            "domains": [
-              "ECONOMIC"
             ]
           }
         ],
@@ -5951,7 +5967,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 78,
-          "recency": 76,
+          "recency": 75,
           "evidence_type": 24,
           "historical_reliability": 32,
           "claim_maturity": 40
@@ -6761,7 +6777,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 78,
-          "recency": 68,
+          "recency": 67,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 42
@@ -7075,7 +7091,7 @@
           "corroboration": 25,
           "contradiction": 0,
           "specificity": 79,
-          "recency": 81,
+          "recency": 80,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 50
@@ -7688,10 +7704,11 @@
         "a4c5afb8741ee88f555f",
         "a6e9ed653455235a9e8b",
         "30d84c4f45dbe394ec81",
-        "25b4b34d8ff01195e04f"
+        "25b4b34d8ff01195e04f",
+        "4810767b573b2c3e23fc"
       ],
       "first_seen": "2026-09-24T16:47:39Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T21:42:00Z",
       "domains": [
         "SECURITY",
@@ -7716,7 +7733,7 @@
         "independence": 52,
         "corroboration": 52,
         "contradiction": 0,
-        "specificity": 72,
+        "specificity": 70,
         "recency": 100,
         "evidence_type": 79,
         "historical_reliability": 83,
@@ -7727,18 +7744,21 @@
         "a4c5afb8741ee88f555f",
         "a6e9ed653455235a9e8b",
         "30d84c4f45dbe394ec81",
-        "25b4b34d8ff01195e04f"
+        "25b4b34d8ff01195e04f",
+        "4810767b573b2c3e23fc"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 3,
+      "source_count": 4,
       "independent_provenance_count": 2,
       "sources": [
         "GDELT Global Discovery",
+        "Google News Weak-Signal Discovery",
         "Sky News World",
         "The Guardian World"
       ],
       "provenance_roots": [
         "gdelt_global",
+        "google_weak_signal",
         "guardian_world",
         "sky_world"
       ],
@@ -7749,6 +7769,17 @@
           "source": "GDELT Global Discovery",
           "source_class": "discovery",
           "provenance_root": "gdelt_global",
+          "stance": "speculation",
+          "published": "2026-09-24T21:42:00Z",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONGNmbS1GdklXam8zQVF0N2ZFMTVGa0thQ1BoaTVQUC1SUVk0a0tvVDZnSlFsbTVZWDVlemFWN1B5ZFpqMmpqZzdpRW5jdmZ0X0xBNEN3cGJuLVA0RDctMHZQRzV0UG1zdVpLRERuX2lGNVBRaWt3MlZkLWNCMFladURIRWp0ZlJRSHRXcjBlWVJDU3dONGpBOWVIOXo2eEEzcEJFc053UlFTbjBNcXk5aFdFbGxzQ1pjMDVJ?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "4810767b573b2c3e23fc",
+          "title": "Russia could attack a Nato country within months, Danish intelligence says - The Guardian",
+          "source": "Google News Weak-Signal Discovery",
+          "source_class": "low_confidence",
+          "provenance_root": "google_weak_signal",
           "stance": "speculation",
           "published": "2026-09-24T21:42:00Z",
           "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONGNmbS1GdklXam8zQVF0N2ZFMTVGa0thQ1BoaTVQUC1SUVk0a0tvVDZnSlFsbTVZWDVlemFWN1B5ZFpqMmpqZzdpRW5jdmZ0X0xBNEN3cGJuLVA0RDctMHZQRzV0UG1zdVpLRERuX2lGNVBRaWt3MlZkLWNCMFladURIRWp0ZlJRSHRXcjBlWVJDU3dONGpBOWVIOXo2eEEzcEJFc053UlFTbjBNcXk5aFdFbGxzQ1pjMDVJ?oc=5",
@@ -8024,7 +8055,7 @@
       "watch_priority": 66,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 4,
+        "support_count": 5,
         "contradiction_count": 0,
         "independent_roots": 2,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
@@ -8693,10 +8724,10 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 88,
-        "recency": 77,
+        "recency": 76,
         "evidence_type": 79,
         "historical_reliability": 84,
-        "claim_maturity": 39
+        "claim_maturity": 40
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
@@ -9227,17 +9258,6 @@
           ]
         },
         {
-          "claim_id": "claim-79f3e8fdf653e5a865",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-f3f400a2a0d4ece459",
           "shared_actors": [
             "ISRAEL"
@@ -9306,6 +9326,18 @@
           ],
           "shared_regions": [
             "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
+        },
+        {
+          "claim_id": "claim-6279543b96670cf502",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
           ],
           "domains": [
             "POLITICAL"
@@ -9651,7 +9683,7 @@
         "d80491d0ecb3a6236149"
       ],
       "first_seen": "2026-09-24T22:20:49Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T21:57:34Z",
       "domains": [
         "ECONOMIC",
@@ -9931,7 +9963,7 @@
         "cf598fee29fd6c046e05"
       ],
       "first_seen": "2026-09-24T18:24:45Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T18:13:43Z",
       "domains": [
         "SECURITY",
@@ -9955,7 +9987,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 78,
-        "recency": 100,
+        "recency": 99,
         "evidence_type": 67,
         "historical_reliability": 79,
         "claim_maturity": 35
@@ -10230,7 +10262,7 @@
         "7f91590282e4b3d83f05"
       ],
       "first_seen": "2026-09-24T18:24:45Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T18:15:55Z",
       "domains": [
         "WAR"
@@ -10254,7 +10286,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 78,
-        "recency": 100,
+        "recency": 99,
         "evidence_type": 67,
         "historical_reliability": 79,
         "claim_maturity": 35
@@ -12121,7 +12153,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 77,
+        "recency": 76,
         "evidence_type": 79,
         "historical_reliability": 93,
         "claim_maturity": 40

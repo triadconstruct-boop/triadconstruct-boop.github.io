@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T00:50:06Z",
+  "generated_at": "2026-09-25T01:20:29Z",
   "claims": [
     {
       "id": "claim-8e693cdb42ba9f45fb",
@@ -18,10 +18,11 @@
         "a4c5afb8741ee88f555f",
         "a6e9ed653455235a9e8b",
         "30d84c4f45dbe394ec81",
-        "25b4b34d8ff01195e04f"
+        "25b4b34d8ff01195e04f",
+        "4810767b573b2c3e23fc"
       ],
       "first_seen": "2026-09-24T16:47:39Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T21:42:00Z",
       "domains": [
         "SECURITY",
@@ -46,7 +47,7 @@
         "independence": 52,
         "corroboration": 52,
         "contradiction": 0,
-        "specificity": 72,
+        "specificity": 70,
         "recency": 100,
         "evidence_type": 79,
         "historical_reliability": 83,
@@ -57,18 +58,21 @@
         "a4c5afb8741ee88f555f",
         "a6e9ed653455235a9e8b",
         "30d84c4f45dbe394ec81",
-        "25b4b34d8ff01195e04f"
+        "25b4b34d8ff01195e04f",
+        "4810767b573b2c3e23fc"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 3,
+      "source_count": 4,
       "independent_provenance_count": 2,
       "sources": [
         "GDELT Global Discovery",
+        "Google News Weak-Signal Discovery",
         "Sky News World",
         "The Guardian World"
       ],
       "provenance_roots": [
         "gdelt_global",
+        "google_weak_signal",
         "guardian_world",
         "sky_world"
       ],
@@ -79,6 +83,17 @@
           "source": "GDELT Global Discovery",
           "source_class": "discovery",
           "provenance_root": "gdelt_global",
+          "stance": "speculation",
+          "published": "2026-09-24T21:42:00Z",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONGNmbS1GdklXam8zQVF0N2ZFMTVGa0thQ1BoaTVQUC1SUVk0a0tvVDZnSlFsbTVZWDVlemFWN1B5ZFpqMmpqZzdpRW5jdmZ0X0xBNEN3cGJuLVA0RDctMHZQRzV0UG1zdVpLRERuX2lGNVBRaWt3MlZkLWNCMFladURIRWp0ZlJRSHRXcjBlWVJDU3dONGpBOWVIOXo2eEEzcEJFc053UlFTbjBNcXk5aFdFbGxzQ1pjMDVJ?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "4810767b573b2c3e23fc",
+          "title": "Russia could attack a Nato country within months, Danish intelligence says - The Guardian",
+          "source": "Google News Weak-Signal Discovery",
+          "source_class": "low_confidence",
+          "provenance_root": "google_weak_signal",
           "stance": "speculation",
           "published": "2026-09-24T21:42:00Z",
           "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONGNmbS1GdklXam8zQVF0N2ZFMTVGa0thQ1BoaTVQUC1SUVk0a0tvVDZnSlFsbTVZWDVlemFWN1B5ZFpqMmpqZzdpRW5jdmZ0X0xBNEN3cGJuLVA0RDctMHZQRzV0UG1zdVpLRERuX2lGNVBRaWt3MlZkLWNCMFladURIRWp0ZlJRSHRXcjBlWVJDU3dONGpBOWVIOXo2eEEzcEJFc053UlFTbjBNcXk5aFdFbGxzQ1pjMDVJ?oc=5",
@@ -354,7 +369,7 @@
       "watch_priority": 66,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 4,
+        "support_count": 5,
         "contradiction_count": 0,
         "independent_roots": 2,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
@@ -385,7 +400,7 @@
         "efefb15d8670dd7749f3"
       ],
       "first_seen": "2026-09-21T11:20:43Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T09:51:00Z",
       "domains": [
         "INFRA",
@@ -751,14 +766,15 @@
           ]
         },
         {
-          "claim_id": "claim-79f3e8fdf653e5a865",
+          "claim_id": "claim-f3f400a2a0d4ece459",
           "shared_actors": [
             "ISRAEL"
           ],
-          "shared_regions": [],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
           "domains": [
-            "INFRA",
-            "WAR"
+            "TERRORISM"
           ]
         }
       ],
@@ -799,7 +815,7 @@
         "75407c02c81d36201fa9"
       ],
       "first_seen": "2026-09-24T02:20:24Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T01:48:47Z",
       "domains": [
         "INFRA",
@@ -817,14 +833,14 @@
       ],
       "state": "CONFIRMED",
       "confidence": 73,
-      "confidence_direction": "UP",
+      "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 88,
         "independence": 52,
         "corroboration": 52,
         "contradiction": 0,
         "specificity": 76,
-        "recency": 91,
+        "recency": 90,
         "evidence_type": 79,
         "historical_reliability": 88,
         "claim_maturity": 48
@@ -1072,7 +1088,7 @@
       ],
       "anomaly_ids": [
         "anomaly-4a8b6a3edda5e431",
-        "anomaly-c5d94d1b454caf3d"
+        "anomaly-881bf75da57a10bc"
       ],
       "threat_score": 21,
       "watch_priority": 54,
@@ -1108,7 +1124,7 @@
         "eb49e63ef2d123ae82d8"
       ],
       "first_seen": "2026-09-24T23:45:00Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T23:34:29Z",
       "domains": [
         "INFRA",
@@ -1388,7 +1404,7 @@
         "dbba1601dea368227154"
       ],
       "first_seen": "2026-09-24T11:20:32Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T19:46:13Z",
       "domains": [
         "POLITICAL",
@@ -2070,7 +2086,7 @@
       ],
       "anomaly_ids": [
         "anomaly-3b3408792463e87c",
-        "anomaly-c5d94d1b454caf3d"
+        "anomaly-881bf75da57a10bc"
       ],
       "threat_score": 13,
       "watch_priority": 47,
@@ -2098,7 +2114,7 @@
         "1b9fac2d146d9f740680"
       ],
       "first_seen": "2026-09-24T16:22:34Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T15:50:43Z",
       "domains": [
         "ECONOMIC"
@@ -2431,7 +2447,7 @@
         "5858ef14d430866854ce"
       ],
       "first_seen": "2026-09-24T20:22:11Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T20:15:00Z",
       "domains": [
         "CYBER",
@@ -2698,7 +2714,7 @@
       ],
       "anomaly_ids": [
         "anomaly-3b3408792463e87c",
-        "anomaly-c5d94d1b454caf3d"
+        "anomaly-881bf75da57a10bc"
       ],
       "threat_score": 12,
       "watch_priority": 45,
@@ -2728,7 +2744,7 @@
         "a2f5830fd0ce5b7e6f60"
       ],
       "first_seen": "2026-09-24T07:22:33Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T07:20:11Z",
       "domains": [
         "CLIMATE",
@@ -2747,7 +2763,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 62,
-        "recency": 94,
+        "recency": 93,
         "evidence_type": 67,
         "historical_reliability": 80,
         "claim_maturity": 36
@@ -3437,13 +3453,15 @@
           ]
         },
         {
-          "claim_id": "claim-1cbf2849c5cc95e70c",
-          "shared_actors": [],
+          "claim_id": "claim-6279543b96670cf502",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
           "shared_regions": [
-            "LATIN AMERICA"
+            "UNITED STATES"
           ],
           "domains": [
-            "CLIMATE"
+            "POLITICAL"
           ]
         }
       ],
@@ -3480,7 +3498,7 @@
         "a818e6980982c839b9b3"
       ],
       "first_seen": "2026-09-24T13:49:22Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T13:41:04Z",
       "domains": [
         "ECONOMIC"
@@ -3735,7 +3753,7 @@
       ],
       "anomaly_ids": [
         "anomaly-a8a8e5a2c2154295",
-        "anomaly-7c4d019df80681b5"
+        "anomaly-5178368ffd04798d"
       ],
       "threat_score": 1,
       "watch_priority": 42,
@@ -3768,7 +3786,7 @@
         "817ccf40de28d026ef41"
       ],
       "first_seen": "2026-09-24T23:19:37Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T14:44:00Z",
       "domains": [
         "CYBER"
@@ -3788,7 +3806,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 98,
+        "recency": 97,
         "evidence_type": 12,
         "historical_reliability": 20,
         "claim_maturity": 25
@@ -4037,7 +4055,7 @@
         "976e6a9bf60d753c8c73"
       ],
       "first_seen": "2026-09-24T06:27:34Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T05:57:00Z",
       "domains": [
         "CYBER"
@@ -4237,7 +4255,7 @@
           ]
         },
         {
-          "claim_id": "claim-2717c780143e97d8df",
+          "claim_id": "claim-91963da1923b47c73f",
           "shared_actors": [
             "NORTH KOREA"
           ],
@@ -4249,7 +4267,7 @@
           ]
         },
         {
-          "claim_id": "claim-818d28b543c7663628",
+          "claim_id": "claim-2717c780143e97d8df",
           "shared_actors": [
             "NORTH KOREA"
           ],
@@ -4257,13 +4275,12 @@
             "KOREAN PENINSULA"
           ],
           "domains": [
-            "NUCLEAR",
             "WAR"
           ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-7c4d019df80681b5"
+        "anomaly-5178368ffd04798d"
       ],
       "threat_score": 3,
       "watch_priority": 41,
@@ -4293,7 +4310,7 @@
         "891d409229755388ef12"
       ],
       "first_seen": "2026-09-24T20:47:53Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T20:35:39Z",
       "domains": [
         "ECONOMIC"
@@ -4558,7 +4575,7 @@
       ],
       "anomaly_ids": [
         "anomaly-4a8b6a3edda5e431",
-        "anomaly-c5d94d1b454caf3d"
+        "anomaly-881bf75da57a10bc"
       ],
       "threat_score": 12,
       "watch_priority": 39,
@@ -4588,7 +4605,7 @@
         "5c7ddefc806063971270"
       ],
       "first_seen": "2026-09-24T20:22:11Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T20:19:30Z",
       "domains": [
         "INFRA"
@@ -4854,7 +4871,7 @@
       ],
       "anomaly_ids": [
         "anomaly-3b3408792463e87c",
-        "anomaly-c5d94d1b454caf3d"
+        "anomaly-881bf75da57a10bc"
       ],
       "threat_score": 11,
       "watch_priority": 38,
@@ -4884,7 +4901,7 @@
         "60d7f03a309ae432ebeb"
       ],
       "first_seen": "2026-09-24T13:49:22Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T14:59:02Z",
       "domains": [
         "ECONOMIC"
@@ -5461,7 +5478,7 @@
         "d80491d0ecb3a6236149"
       ],
       "first_seen": "2026-09-24T22:20:49Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T21:57:34Z",
       "domains": [
         "ECONOMIC",
@@ -5740,7 +5757,7 @@
         "364eb60ca6dc98b7250f"
       ],
       "first_seen": "2026-09-24T15:22:27Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T15:01:53Z",
       "domains": [
         "CYBER"
@@ -5939,6 +5956,20 @@
           ]
         },
         {
+          "claim_id": "claim-6279543b96670cf502",
+          "shared_actors": [
+            "CHINA",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "CHINA",
+            "UNITED STATES"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
+        },
+        {
           "claim_id": "claim-a54b3c364ffda95467",
           "shared_actors": [
             "CHINA",
@@ -5963,24 +5994,11 @@
           "domains": [
             "TERRORISM"
           ]
-        },
-        {
-          "claim_id": "claim-7642f24d98b4c1fbb3",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
         "anomaly-3b3408792463e87c",
-        "anomaly-c5d94d1b454caf3d"
+        "anomaly-881bf75da57a10bc"
       ],
       "threat_score": 13,
       "watch_priority": 37,
@@ -6012,7 +6030,7 @@
         "736303087e020bb1e0ce"
       ],
       "first_seen": "2026-09-24T13:49:22Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T13:30:00Z",
       "domains": [
         "CYBER"
@@ -6303,7 +6321,7 @@
         "c675c8b201e1db44fe4f"
       ],
       "first_seen": "2026-09-24T12:26:29Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T12:31:08Z",
       "domains": [
         "ECONOMIC"
@@ -6325,7 +6343,7 @@
         "corroboration": 52,
         "contradiction": 0,
         "specificity": 84,
-        "recency": 97,
+        "recency": 96,
         "evidence_type": 67,
         "historical_reliability": 56,
         "claim_maturity": 47
@@ -6865,7 +6883,7 @@
         "6375a7fa7a15334910fe"
       ],
       "first_seen": "2026-09-24T16:47:39Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T16:07:07Z",
       "domains": [
         "CLIMATE"
@@ -6883,7 +6901,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 44,
-        "recency": 99,
+        "recency": 98,
         "evidence_type": 67,
         "historical_reliability": 72,
         "claim_maturity": 36
@@ -6969,7 +6987,7 @@
         "ef6daba1b8ed48ac84d0"
       ],
       "first_seen": "2026-09-24T15:48:17Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T15:30:36Z",
       "domains": [
         "CYBER"
@@ -7201,7 +7219,7 @@
         "b9fcda168ea28f09bb58"
       ],
       "first_seen": "2026-09-24T12:52:51Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T12:48:14Z",
       "domains": [
         "CYBER"
@@ -7219,7 +7237,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 35,
-        "recency": 97,
+        "recency": 96,
         "evidence_type": 73,
         "historical_reliability": 80,
         "claim_maturity": 36
@@ -7306,7 +7324,7 @@
         "e94c96b1cc969bffe40e"
       ],
       "first_seen": "2026-09-24T10:47:18Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T10:42:37Z",
       "domains": [
         "CYBER"
@@ -7327,7 +7345,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 48,
-        "recency": 96,
+        "recency": 95,
         "evidence_type": 73,
         "historical_reliability": 84,
         "claim_maturity": 36
@@ -7512,6 +7530,18 @@
           ]
         },
         {
+          "claim_id": "claim-6279543b96670cf502",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
+        },
+        {
           "claim_id": "claim-a54b3c364ffda95467",
           "shared_actors": [
             "UNITED STATES"
@@ -7544,18 +7574,6 @@
           "shared_regions": [],
           "domains": [
             "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-89fb45424c5952dfd2",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "ECONOMIC"
           ]
         }
       ],
@@ -7600,7 +7618,7 @@
         "b3ee0bcc23c16e535a9c"
       ],
       "first_seen": "2026-09-24T11:20:32Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T10:04:57Z",
       "domains": [
         "CYBER",
@@ -7889,11 +7907,12 @@
         "warning"
       ],
       "observation_ids": [
-        "e01c2d6d102cbe2ba88b"
+        "e01c2d6d102cbe2ba88b",
+        "7e3fcfd44911942e744f"
       ],
       "first_seen": "2026-09-24T05:46:51Z",
-      "last_seen": "2026-09-24T18:24:45Z",
-      "material_time": "2026-09-24T05:30:17Z",
+      "last_seen": "2026-09-25T01:20:29Z",
+      "material_time": "2026-09-24T05:32:11Z",
       "domains": [
         "CYBER"
       ],
@@ -7910,25 +7929,39 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 35,
-        "recency": 93,
+        "recency": 92,
         "evidence_type": 67,
         "historical_reliability": 84,
         "claim_maturity": 36
       },
       "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
       "supporting_observation_ids": [
-        "e01c2d6d102cbe2ba88b"
+        "e01c2d6d102cbe2ba88b",
+        "7e3fcfd44911942e744f"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 1,
+      "source_count": 2,
       "independent_provenance_count": 1,
       "sources": [
-        "ABC Australia World"
+        "ABC Australia World",
+        "Google News Weak-Signal Discovery"
       ],
       "provenance_roots": [
-        "abc_australia"
+        "abc_australia",
+        "google_weak_signal"
       ],
       "evidence": [
+        {
+          "observation_id": "7e3fcfd44911942e744f",
+          "title": "'Heed the warning': NSW premier urges caution with AI after data breach - ABC News & Headlines – Australian Broadcasting Corporation",
+          "source": "Google News Weak-Signal Discovery",
+          "source_class": "low_confidence",
+          "provenance_root": "google_weak_signal",
+          "stance": "warning",
+          "published": "2026-09-24T05:32:11Z",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZWs3V1YxQ0JHMjNVMzg3M0FKSm5ENUJLaUZsamNWbmwxZjl3dmxMWDg4WmdTUFNUREVabUVGTXBuOW00czQzZWE2cUg5c3hVRWJXTVNmUnJrbXEyVXpuVnptOFlGTnVxaVduTDFaVVlWakNfOEJSN2xicFpjeXB6WjRmTFNiNVp5NXhvbC1ZdGYwYzhEOGlycEFRd2hpT1F0cWc4?oc=5",
+          "discovery_only": true
+        },
         {
           "observation_id": "e01c2d6d102cbe2ba88b",
           "title": "'Heed the warning': NSW premier urges caution with AI after data breach",
@@ -7971,11 +8004,11 @@
       "watch_priority": 36,
       "audit": {
         "reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
-        "support_count": 1,
+        "support_count": 2,
         "contradiction_count": 0,
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-24T05:30:17Z"
+        "material_time_used_for_decay": "2026-09-24T05:32:11Z"
       }
     },
     {
@@ -8097,7 +8130,7 @@
         "c6842413acdd6150235a"
       ],
       "first_seen": "2026-09-24T21:45:03Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T21:27:17Z",
       "domains": [
         "SPACE"
@@ -8367,7 +8400,7 @@
         "bfe97fbdf224aa6a4d93"
       ],
       "first_seen": "2026-09-24T20:47:53Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T20:30:00Z",
       "domains": [
         "CYBER"
@@ -8643,7 +8676,7 @@
         "50ff8dd5293b25bda75a"
       ],
       "first_seen": "2026-09-24T12:52:51Z",
-      "last_seen": "2026-09-25T00:50:06Z",
+      "last_seen": "2026-09-25T01:20:29Z",
       "material_time": "2026-09-24T12:51:48Z",
       "domains": [
         "CLIMATE"
@@ -8661,7 +8694,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 62,
-        "recency": 97,
+        "recency": 96,
         "evidence_type": 67,
         "historical_reliability": 80,
         "claim_maturity": 36
@@ -9332,7 +9365,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 96,
+        "recency": 95,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 36
@@ -9453,6 +9486,18 @@
           ]
         },
         {
+          "claim_id": "claim-6279543b96670cf502",
+          "shared_actors": [
+            "CHINA"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
+        },
+        {
           "claim_id": "claim-a54b3c364ffda95467",
           "shared_actors": [
             "CHINA"
@@ -9537,22 +9582,10 @@
           "domains": [
             "ECONOMIC"
           ]
-        },
-        {
-          "claim_id": "claim-1dd8b79182a7d5d9e7",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-c5d94d1b454caf3d"
+        "anomaly-881bf75da57a10bc"
       ],
       "threat_score": 13,
       "watch_priority": 34,
