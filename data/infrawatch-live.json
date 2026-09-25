@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T10:48:13Z",
+  "generated_at": "2026-09-25T11:20:58Z",
   "claims": [
     {
       "id": "claim-55b3e7d27136de8312",
@@ -23,7 +23,7 @@
         "30d84c4f45dbe394ec81"
       ],
       "first_seen": "2026-09-24T16:47:39Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-24T17:08:00Z",
       "domains": [
         "SECURITY",
@@ -42,14 +42,14 @@
       ],
       "state": "CREDIBLE REPORT",
       "confidence": 71,
-      "confidence_direction": "NEW",
+      "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 83,
         "independence": 52,
         "corroboration": 52,
         "contradiction": 0,
         "specificity": 70,
-        "recency": 94,
+        "recency": 93,
         "evidence_type": 79,
         "historical_reliability": 83,
         "claim_maturity": 47
@@ -411,7 +411,7 @@
         "eb49e63ef2d123ae82d8"
       ],
       "first_seen": "2026-09-24T23:45:00Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-24T23:34:29Z",
       "domains": [
         "INFRA",
@@ -647,7 +647,7 @@
       ],
       "anomaly_ids": [
         "anomaly-07227c86d3408583",
-        "anomaly-820507c81caff0d7"
+        "anomaly-826a9fa2d5d26b5a"
       ],
       "threat_score": 32,
       "watch_priority": 52,
@@ -658,6 +658,316 @@
         "independent_roots": 2,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-24T23:34:29Z"
+      }
+    },
+    {
+      "id": "claim-5d41955dc01bf91e43",
+      "headline": "Ethiopia's Tigray rebels in 'full-blown' war with govt - Africa - World - Ahram Online",
+      "signature_tokens": [
+        "africa",
+        "ahram",
+        "ethiopia",
+        "full-blown",
+        "govt",
+        "online",
+        "rebels",
+        "tigray",
+        "war",
+        "world"
+      ],
+      "observation_ids": [
+        "974e66ec08997b15acf4",
+        "3e5602d66f6f3c037772",
+        "689ddf04b52f94ea5a35",
+        "f46670d6606ef6080d91",
+        "3ad45761bfe8a86435a9"
+      ],
+      "first_seen": "2026-09-24T12:26:29Z",
+      "last_seen": "2026-09-25T11:20:58Z",
+      "material_time": "2026-09-25T11:13:48Z",
+      "domains": [
+        "INFRA",
+        "POLITICAL",
+        "WAR"
+      ],
+      "regions": [
+        "AFRICA",
+        "EUROPE",
+        "GLOBAL"
+      ],
+      "actors": [],
+      "state": "CONFIRMED",
+      "confidence": 75,
+      "confidence_direction": "UP",
+      "confidence_components": {
+        "source_quality": 90,
+        "independence": 52,
+        "corroboration": 61,
+        "contradiction": 0,
+        "specificity": 54,
+        "recency": 100,
+        "evidence_type": 79,
+        "historical_reliability": 88,
+        "claim_maturity": 79
+      },
+      "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
+      "supporting_observation_ids": [
+        "974e66ec08997b15acf4",
+        "3e5602d66f6f3c037772",
+        "689ddf04b52f94ea5a35",
+        "f46670d6606ef6080d91",
+        "3ad45761bfe8a86435a9"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 2,
+      "independent_provenance_count": 2,
+      "sources": [
+        "Agence France-Presse",
+        "France 24 World"
+      ],
+      "provenance_roots": [
+        "france24",
+        "wire:afp_world"
+      ],
+      "evidence": [
+        {
+          "observation_id": "3ad45761bfe8a86435a9",
+          "title": "Ethiopia: Tigray rebels claim \"full-blown war\"",
+          "source": "France 24 World",
+          "source_class": "established_media",
+          "provenance_root": "france24",
+          "stance": "report",
+          "published": "2026-09-25T11:13:48Z",
+          "url": "https://www.france24.com/en/ethiopia-tigray-rebels-claim-full-blown-war",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "f46670d6606ef6080d91",
+          "title": "Tigray rebels in 'full-blown' war with government",
+          "source": "France 24 World",
+          "source_class": "established_media",
+          "provenance_root": "france24",
+          "stance": "report",
+          "published": "2026-09-24T20:23:08Z",
+          "url": "https://www.france24.com/en/tigray-rebels-in-full-blown-war-with-government",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "689ddf04b52f94ea5a35",
+          "title": "Ethiopia's Tigray rebels in 'full-blown' war with govt - Africa - World - Ahram Online",
+          "source": "Agence France-Presse",
+          "source_class": "wire",
+          "provenance_root": "wire:afp_world",
+          "stance": "report",
+          "published": "2026-09-24T13:43:52Z",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5FNzdmMVFlM0tqZ29ISGxlMGtKTGMwdE1HZ3FpTDRCRUVpZHBncl96N3JKWjRlRnZGMXpxRVlwYW5ScEp2SUYtUHJVam1rck9wdTl3QVc3NGs?oc=5",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "3e5602d66f6f3c037772",
+          "title": "Tigray rebels in 'full-blown' war with govt - Yahoo",
+          "source": "Agence France-Presse",
+          "source_class": "wire",
+          "provenance_root": "wire:afp_world",
+          "stance": "report",
+          "published": "2026-09-24T12:39:22Z",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZ0ctNDltMDVLYnljV1VJakp3cXJEd3JFXzdVZ0lUcFNQZmRCMWJaVmJjeDVMaURaUmhvbnNDQ2hWNlZyNjFzbEpXQkpYX0tOUTE4dXlfWlg3YnF6ck9WNHg0Q1FhNlY1T0VMN1dtenFnWngwUU9UeWxLM1YtOWpUQlVIMFp0blQ3TlctbFRB?oc=5",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "974e66ec08997b15acf4",
+          "title": "Ethiopia's Tigray rebels in 'full-blown' war with govt",
+          "source": "France 24 World",
+          "source_class": "established_media",
+          "provenance_root": "france24",
+          "stance": "report",
+          "published": "2026-09-24T12:05:06Z",
+          "url": "https://www.france24.com/en/video/20260924-ethiopia-s-tigray-rebels-in-full-blown-war-with-govt",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Ethiopia's Tigray rebels in 'full-blown' war with govt - Africa - World - Ahram Online",
+        "plausible_explanations": [
+          "A genuine INFRA/POLITICAL/WAR development involving the reported actors is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related INFRA/POLITICAL/WAR indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-5864ef41bab32e4ffd",
+          "headline": "Tracking a Sanctioned Russian Vessel’s West African Odyssey",
+          "material_time": "2026-08-25T08:52:50Z",
+          "shared_domains": [
+            "INFRA"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "AFRICA"
+          ]
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-ddb28772ec8c980666",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-b8652c4cd84816c66b",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-3255efa7f65ee85bd5",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8b4542a6fdb7ba9c2e",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-a12aa1754de927496a",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-7cf2467c7698e0e607",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-b3ca8bcc3b30366d1d",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-ff33abb47597868373",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "CYBER"
+          ]
+        },
+        {
+          "claim_id": "claim-c360eb55c91ccfe2f9",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "ECONOMIC"
+          ]
+        },
+        {
+          "claim_id": "claim-55b3e7d27136de8312",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "SECURITY",
+            "SPACE",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-4635fd935a7a37336d",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-65cf54442a0ef86794",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-826a9fa2d5d26b5a",
+        "anomaly-7b6d7b7d4546467d"
+      ],
+      "threat_score": 22,
+      "watch_priority": 50,
+      "audit": {
+        "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
+        "support_count": 5,
+        "contradiction_count": 0,
+        "independent_roots": 2,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-25T11:13:48Z"
       }
     },
     {
@@ -677,7 +987,7 @@
         "f23cf4508b3e49ff8dc2"
       ],
       "first_seen": "2026-09-25T06:26:18Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-25T06:00:15Z",
       "domains": [
         "CLIMATE"
@@ -920,6 +1230,293 @@
       }
     },
     {
+      "id": "claim-677fc22512f75ec8a3",
+      "headline": "Kremlin calls EU sanctions on former RT France bureau chief pressure on media",
+      "signature_tokens": [
+        "bureau",
+        "calls",
+        "chief",
+        "former",
+        "france",
+        "kremlin",
+        "media",
+        "pressure",
+        "sanctions"
+      ],
+      "observation_ids": [
+        "889afeca382e526b5698"
+      ],
+      "first_seen": "2026-09-25T11:20:58Z",
+      "last_seen": "2026-09-25T11:20:58Z",
+      "material_time": "2026-09-25T10:58:56Z",
+      "domains": [
+        "ECONOMIC"
+      ],
+      "regions": [
+        "EUROPE",
+        "RUSSIA"
+      ],
+      "actors": [
+        "EUROPEAN UNION",
+        "RUSSIA"
+      ],
+      "state": "SPECULATIVE",
+      "confidence": 48,
+      "confidence_direction": "NEW",
+      "confidence_components": {
+        "source_quality": 50,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 66,
+        "recency": 100,
+        "evidence_type": 40,
+        "historical_reliability": 50,
+        "claim_maturity": 35
+      },
+      "classification_reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
+      "supporting_observation_ids": [
+        "889afeca382e526b5698"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 1,
+      "independent_provenance_count": 1,
+      "sources": [
+        "TASS World"
+      ],
+      "provenance_roots": [
+        "tass"
+      ],
+      "evidence": [
+        {
+          "observation_id": "889afeca382e526b5698",
+          "title": "Kremlin calls EU sanctions on former RT France bureau chief pressure on media",
+          "source": "TASS World",
+          "source_class": "state_media",
+          "provenance_root": "tass",
+          "stance": "allegation",
+          "published": "2026-09-25T10:58:56Z",
+          "url": "https://tass.com/politics/2192753",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": true,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Kremlin calls EU sanctions on former RT France bureau chief pressure on media",
+        "plausible_explanations": [
+          "A genuine ECONOMIC development involving EUROPEAN UNION, RUSSIA is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related ECONOMIC indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-5864ef41bab32e4ffd",
+          "headline": "Tracking a Sanctioned Russian Vessel’s West African Odyssey",
+          "material_time": "2026-08-25T08:52:50Z",
+          "shared_domains": [
+            "ECONOMIC"
+          ],
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ]
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-ddb28772ec8c980666",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-b8652c4cd84816c66b",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA"
+          ],
+          "domains": [
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-3255efa7f65ee85bd5",
+          "shared_actors": [
+            "EUROPEAN UNION"
+          ],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-9e788f9d628b9094be",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-ab9d35524801c19134",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8b4542a6fdb7ba9c2e",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-4c82b5bc892668be90",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-76ce02e84975e8ee01",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-5d036678dfa62043f7",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-575c03559c735b0df5",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f04800b1b5d28b9558",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-a12aa1754de927496a",
+          "shared_actors": [
+            "EUROPEAN UNION"
+          ],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-1cee9f88c165d8a9",
+        "anomaly-81d6b35b1e091f76"
+      ],
+      "threat_score": 2,
+      "watch_priority": 47,
+      "audit": {
+        "reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
+        "support_count": 1,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-25T10:58:56Z"
+      }
+    },
+    {
       "id": "claim-3631a61467cb004c04",
       "headline": "Poland says fire at Starlink station is sabotage as Denmark warns of rising Russian threat",
       "signature_tokens": [
@@ -948,7 +1545,7 @@
         "4e7031ec54d8d6aa6c78"
       ],
       "first_seen": "2026-09-24T11:20:32Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-25T07:00:00Z",
       "domains": [
         "POLITICAL",
@@ -1379,7 +1976,7 @@
         "c7d43610b77fe9abd367"
       ],
       "first_seen": "2026-09-25T03:20:18Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-25T06:01:20Z",
       "domains": [
         "INFRA",
@@ -1603,7 +2200,7 @@
       ],
       "anomaly_ids": [
         "anomaly-07227c86d3408583",
-        "anomaly-820507c81caff0d7"
+        "anomaly-826a9fa2d5d26b5a"
       ],
       "threat_score": 2,
       "watch_priority": 47,
@@ -1944,6 +2541,292 @@
       }
     },
     {
+      "id": "claim-5225a19e168971c814",
+      "headline": "Coming winter in Europe to remind of implications of rejecting Russian energy",
+      "signature_tokens": [
+        "coming",
+        "energy",
+        "europe",
+        "implications",
+        "rejecting",
+        "remind",
+        "russian",
+        "winter"
+      ],
+      "observation_ids": [
+        "317cc012e6a6be1a1f68"
+      ],
+      "first_seen": "2026-09-25T11:20:58Z",
+      "last_seen": "2026-09-25T11:20:58Z",
+      "material_time": "2026-09-25T10:55:13Z",
+      "domains": [
+        "ECONOMIC"
+      ],
+      "regions": [
+        "EUROPE",
+        "RUSSIA"
+      ],
+      "actors": [
+        "EUROPEAN UNION",
+        "RUSSIA"
+      ],
+      "state": "SPECULATIVE",
+      "confidence": 51,
+      "confidence_direction": "NEW",
+      "confidence_components": {
+        "source_quality": 50,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 91,
+        "recency": 100,
+        "evidence_type": 40,
+        "historical_reliability": 50,
+        "claim_maturity": 35
+      },
+      "classification_reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
+      "supporting_observation_ids": [
+        "317cc012e6a6be1a1f68"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 1,
+      "independent_provenance_count": 1,
+      "sources": [
+        "TASS World"
+      ],
+      "provenance_roots": [
+        "tass"
+      ],
+      "evidence": [
+        {
+          "observation_id": "317cc012e6a6be1a1f68",
+          "title": "Coming winter in Europe to remind of implications of rejecting Russian energy",
+          "source": "TASS World",
+          "source_class": "state_media",
+          "provenance_root": "tass",
+          "stance": "speculation",
+          "published": "2026-09-25T10:55:13Z",
+          "url": "https://tass.com/economy/2192751",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": true,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Coming winter in Europe to remind of implications of rejecting Russian energy",
+        "plausible_explanations": [
+          "A genuine ECONOMIC development involving EUROPEAN UNION, RUSSIA is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related ECONOMIC indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-5864ef41bab32e4ffd",
+          "headline": "Tracking a Sanctioned Russian Vessel’s West African Odyssey",
+          "material_time": "2026-08-25T08:52:50Z",
+          "shared_domains": [
+            "ECONOMIC"
+          ],
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ]
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-ddb28772ec8c980666",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-b8652c4cd84816c66b",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA"
+          ],
+          "domains": [
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-3255efa7f65ee85bd5",
+          "shared_actors": [
+            "EUROPEAN UNION"
+          ],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-9e788f9d628b9094be",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-ab9d35524801c19134",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8b4542a6fdb7ba9c2e",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-4c82b5bc892668be90",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-76ce02e84975e8ee01",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-5d036678dfa62043f7",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-575c03559c735b0df5",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f04800b1b5d28b9558",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-a12aa1754de927496a",
+          "shared_actors": [
+            "EUROPEAN UNION"
+          ],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-1cee9f88c165d8a9",
+        "anomaly-81d6b35b1e091f76"
+      ],
+      "threat_score": 2,
+      "watch_priority": 45,
+      "audit": {
+        "reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
+        "support_count": 1,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-25T10:55:13Z"
+      }
+    },
+    {
       "id": "claim-0adf26bab1f70d5bef",
       "headline": "Lawmakers introduce bill for voluntary telecom cyber rules after Salt Typhoon hacks",
       "signature_tokens": [
@@ -1962,7 +2845,7 @@
         "5858ef14d430866854ce"
       ],
       "first_seen": "2026-09-24T20:22:11Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-24T20:15:00Z",
       "domains": [
         "CYBER",
@@ -2214,17 +3097,16 @@
           ]
         },
         {
-          "claim_id": "claim-6279543b96670cf502",
+          "claim_id": "claim-7642f24d98b4c1fbb3",
           "shared_actors": [
-            "CHINA",
             "UNITED STATES"
           ],
           "shared_regions": [
-            "CHINA",
             "UNITED STATES"
           ],
           "domains": [
-            "POLITICAL"
+            "POLITICAL",
+            "WAR"
           ]
         }
       ],
@@ -2753,7 +3635,7 @@
         "940d030024a5bf82c880"
       ],
       "first_seen": "2026-09-25T09:21:45Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-25T08:52:10Z",
       "domains": [
         "ECONOMIC"
@@ -3009,7 +3891,7 @@
       ],
       "anomaly_ids": [
         "anomaly-1cee9f88c165d8a9",
-        "anomaly-61faeb64874a11f2"
+        "anomaly-81d6b35b1e091f76"
       ],
       "threat_score": 1,
       "watch_priority": 42,
@@ -3063,7 +3945,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 78,
-        "recency": 92,
+        "recency": 91,
         "evidence_type": 40,
         "historical_reliability": 50,
         "claim_maturity": 36
@@ -3144,6 +4026,19 @@
           ],
           "domains": [
             "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-4ff50ed48a18b23fbe",
+          "shared_actors": [
+            "NORTH KOREA"
+          ],
+          "shared_regions": [
+            "KOREAN PENINSULA"
+          ],
+          "domains": [
+            "NUCLEAR",
             "WAR"
           ]
         },
@@ -3278,19 +4173,6 @@
             "HUMANITARIAN",
             "WAR"
           ]
-        },
-        {
-          "claim_id": "claim-a3b3cb459fec644a01",
-          "shared_actors": [
-            "NORTH KOREA"
-          ],
-          "shared_regions": [
-            "KOREAN PENINSULA"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
@@ -3328,7 +4210,7 @@
         "817ccf40de28d026ef41"
       ],
       "first_seen": "2026-09-24T23:19:37Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-24T14:44:00Z",
       "domains": [
         "CYBER"
@@ -3888,7 +4770,7 @@
         "5c7ddefc806063971270"
       ],
       "first_seen": "2026-09-24T20:22:11Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-24T20:19:30Z",
       "domains": [
         "INFRA"
@@ -4139,17 +5021,16 @@
           ]
         },
         {
-          "claim_id": "claim-6279543b96670cf502",
+          "claim_id": "claim-7642f24d98b4c1fbb3",
           "shared_actors": [
-            "CHINA",
             "UNITED STATES"
           ],
           "shared_regions": [
-            "CHINA",
             "UNITED STATES"
           ],
           "domains": [
-            "POLITICAL"
+            "POLITICAL",
+            "WAR"
           ]
         }
       ],
@@ -4455,7 +5336,7 @@
       ],
       "anomaly_ids": [
         "anomaly-1cee9f88c165d8a9",
-        "anomaly-61faeb64874a11f2"
+        "anomaly-81d6b35b1e091f76"
       ],
       "threat_score": 13,
       "watch_priority": 38,
@@ -4742,6 +5623,287 @@
       }
     },
     {
+      "id": "claim-06b9199474ac90ecbd",
+      "headline": "South Korea has supporters of normalizing relations with Moscow — Russian MFA",
+      "signature_tokens": [
+        "has",
+        "korea",
+        "mfa",
+        "moscow",
+        "normalizing",
+        "relations",
+        "russian",
+        "south",
+        "supporters"
+      ],
+      "observation_ids": [
+        "df2fa907fca4700cd03d"
+      ],
+      "first_seen": "2026-09-25T11:20:58Z",
+      "last_seen": "2026-09-25T11:20:58Z",
+      "material_time": "2026-09-25T10:49:45Z",
+      "domains": [
+        "ECONOMIC"
+      ],
+      "regions": [
+        "KOREAN PENINSULA",
+        "RUSSIA"
+      ],
+      "actors": [
+        "RUSSIA"
+      ],
+      "state": "SPECULATIVE",
+      "confidence": 48,
+      "confidence_direction": "NEW",
+      "confidence_components": {
+        "source_quality": 50,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 66,
+        "recency": 100,
+        "evidence_type": 40,
+        "historical_reliability": 50,
+        "claim_maturity": 35
+      },
+      "classification_reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
+      "supporting_observation_ids": [
+        "df2fa907fca4700cd03d"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 1,
+      "independent_provenance_count": 1,
+      "sources": [
+        "TASS World"
+      ],
+      "provenance_roots": [
+        "tass"
+      ],
+      "evidence": [
+        {
+          "observation_id": "df2fa907fca4700cd03d",
+          "title": "South Korea has supporters of normalizing relations with Moscow — Russian MFA",
+          "source": "TASS World",
+          "source_class": "state_media",
+          "provenance_root": "tass",
+          "stance": "speculation",
+          "published": "2026-09-25T10:49:45Z",
+          "url": "https://tass.com/politics/2192749",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": true,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "South Korea has supporters of normalizing relations with Moscow — Russian MFA",
+        "plausible_explanations": [
+          "A genuine ECONOMIC development involving RUSSIA is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related ECONOMIC indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-5864ef41bab32e4ffd",
+          "headline": "Tracking a Sanctioned Russian Vessel’s West African Odyssey",
+          "material_time": "2026-08-25T08:52:50Z",
+          "shared_domains": [
+            "ECONOMIC"
+          ],
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ]
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-ddb28772ec8c980666",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-4ff50ed48a18b23fbe",
+          "shared_actors": [],
+          "shared_regions": [
+            "KOREAN PENINSULA"
+          ],
+          "domains": [
+            "NUCLEAR",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-b8652c4cd84816c66b",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-9e788f9d628b9094be",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-ab9d35524801c19134",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8b4542a6fdb7ba9c2e",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-4c82b5bc892668be90",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-76ce02e84975e8ee01",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-5d036678dfa62043f7",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-575c03559c735b0df5",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f04800b1b5d28b9558",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-b066da503f27dfa53b",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "HUMANITARIAN",
+            "WAR"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-1cee9f88c165d8a9"
+      ],
+      "threat_score": 2,
+      "watch_priority": 37,
+      "audit": {
+        "reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
+        "support_count": 1,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-25T10:49:45Z"
+      }
+    },
+    {
       "id": "claim-81319a0efaf6d058c9",
       "headline": "Iran awaiting response from Trump on proposal to open strait of Hormuz in six days",
       "signature_tokens": [
@@ -4760,7 +5922,7 @@
         "d80491d0ecb3a6236149"
       ],
       "first_seen": "2026-09-24T22:20:49Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-24T21:57:34Z",
       "domains": [
         "ECONOMIC",
@@ -5223,20 +6385,6 @@
           ]
         },
         {
-          "claim_id": "claim-6279543b96670cf502",
-          "shared_actors": [
-            "CHINA",
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "CHINA",
-            "UNITED STATES"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
           "claim_id": "claim-7642f24d98b4c1fbb3",
           "shared_actors": [
             "UNITED STATES"
@@ -5271,6 +6419,16 @@
           ],
           "domains": [
             "ECONOMIC"
+          ]
+        },
+        {
+          "claim_id": "claim-7ed2437b2f5bc55e1d",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "POLITICAL"
           ]
         }
       ],
@@ -5308,7 +6466,7 @@
         "736303087e020bb1e0ce"
       ],
       "first_seen": "2026-09-24T13:49:22Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-24T13:30:00Z",
       "domains": [
         "CYBER"
@@ -5330,7 +6488,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 75,
-        "recency": 92,
+        "recency": 91,
         "evidence_type": 73,
         "historical_reliability": 87,
         "claim_maturity": 36
@@ -5598,7 +6756,7 @@
         "c675c8b201e1db44fe4f"
       ],
       "first_seen": "2026-09-24T12:26:29Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-24T12:31:08Z",
       "domains": [
         "ECONOMIC"
@@ -5623,7 +6781,7 @@
         "recency": 91,
         "evidence_type": 67,
         "historical_reliability": 56,
-        "claim_maturity": 47
+        "claim_maturity": 48
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
@@ -5918,7 +7076,7 @@
         "1a10c0bb07d5fc724913"
       ],
       "first_seen": "2026-09-25T02:46:50Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-25T02:28:28Z",
       "domains": [
         "INFRA"
@@ -5940,7 +7098,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 78,
-        "recency": 99,
+        "recency": 98,
         "evidence_type": 67,
         "historical_reliability": 79,
         "claim_maturity": 36
@@ -6217,7 +7375,7 @@
         "034cb322af24dbba7951"
       ],
       "first_seen": "2026-09-25T05:47:37Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-25T00:00:00Z",
       "domains": [
         "ECONOMIC",
@@ -6448,7 +7606,7 @@
         "6375a7fa7a15334910fe"
       ],
       "first_seen": "2026-09-24T16:47:39Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-24T16:07:07Z",
       "domains": [
         "CLIMATE"
@@ -6552,7 +7710,7 @@
         "ef6daba1b8ed48ac84d0"
       ],
       "first_seen": "2026-09-24T15:48:17Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-24T15:30:36Z",
       "domains": [
         "CYBER"
@@ -6570,7 +7728,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 62,
-        "recency": 93,
+        "recency": 92,
         "evidence_type": 64,
         "historical_reliability": 82,
         "claim_maturity": 36
@@ -6784,7 +7942,7 @@
         "b9fcda168ea28f09bb58"
       ],
       "first_seen": "2026-09-24T12:52:51Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-24T12:48:14Z",
       "domains": [
         "CYBER"
@@ -6805,7 +7963,7 @@
         "recency": 91,
         "evidence_type": 73,
         "historical_reliability": 80,
-        "claim_maturity": 36
+        "claim_maturity": 37
       },
       "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
       "supporting_observation_ids": [
@@ -6886,7 +8044,7 @@
         "c6842413acdd6150235a"
       ],
       "first_seen": "2026-09-24T21:45:03Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-24T21:27:17Z",
       "domains": [
         "SPACE"
@@ -7157,7 +8315,7 @@
         "bfe97fbdf224aa6a4d93"
       ],
       "first_seen": "2026-09-24T20:47:53Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-24T20:30:00Z",
       "domains": [
         "CYBER"
@@ -7171,7 +8329,7 @@
         "UNITED STATES"
       ],
       "state": "CREDIBLE REPORT",
-      "confidence": 63,
+      "confidence": 62,
       "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 87,
@@ -7431,7 +8589,7 @@
         "50ff8dd5293b25bda75a"
       ],
       "first_seen": "2026-09-24T12:52:51Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-24T12:51:48Z",
       "domains": [
         "CLIMATE"
@@ -7674,82 +8832,127 @@
       }
     },
     {
-      "id": "claim-45805a16542a0786bc",
-      "headline": "Why is Iran threatening regional airports, and what could be the impact?",
+      "id": "claim-0d75eac1486e27ad19",
+      "headline": "Worries About an AI Internet Takeover Gain New Urgency Among Doomsday Scenarios",
       "signature_tokens": [
-        "airports",
-        "impact",
-        "iran",
-        "regional",
-        "threatening",
-        "why"
+        "among",
+        "doomsday",
+        "gain",
+        "internet",
+        "scenarios",
+        "takeover",
+        "urgency",
+        "worries"
       ],
       "observation_ids": [
-        "43285cf6a83d5b77ee79"
+        "ed2c4669e619b69c9450",
+        "694d6d5fe214d00713f7",
+        "55f6482d9cb3d4cef051",
+        "e0334e9d06188d614522"
       ],
-      "first_seen": "2026-09-24T11:20:32Z",
-      "last_seen": "2026-09-24T16:22:34Z",
-      "material_time": "2026-09-24T11:10:42Z",
+      "first_seen": "2026-09-24T01:38:48Z",
+      "last_seen": "2026-09-25T11:20:58Z",
+      "material_time": "2026-09-25T08:45:00Z",
       "domains": [
-        "ECONOMIC",
-        "INFRA"
+        "CYBER",
+        "SECURITY"
       ],
       "regions": [
-        "IRAN"
+        "GLOBAL"
       ],
-      "actors": [
-        "IRAN"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 61,
+      "actors": [],
+      "state": "SPECULATIVE",
+      "confidence": 57,
       "confidence_direction": "STABLE",
       "confidence_components": {
-        "source_quality": 82,
+        "source_quality": 80,
         "independence": 25,
         "corroboration": 22,
         "contradiction": 0,
-        "specificity": 66,
-        "recency": 90,
-        "evidence_type": 79,
-        "historical_reliability": 82,
-        "claim_maturity": 37
+        "specificity": 35,
+        "recency": 100,
+        "evidence_type": 73,
+        "historical_reliability": 80,
+        "claim_maturity": 35
       },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+      "classification_reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
       "supporting_observation_ids": [
-        "43285cf6a83d5b77ee79"
+        "ed2c4669e619b69c9450",
+        "694d6d5fe214d00713f7",
+        "55f6482d9cb3d4cef051",
+        "e0334e9d06188d614522"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 1,
+      "source_count": 4,
       "independent_provenance_count": 1,
       "sources": [
-        "Al Jazeera English"
+        "SecurityWeek",
+        "hurriyetdailynews.com",
+        "theoaklandpress.com",
+        "whec.com"
       ],
       "provenance_roots": [
-        "aljazeera"
+        "hurriyetdailynews.com",
+        "securityweek",
+        "theoaklandpress.com",
+        "whec.com"
       ],
       "evidence": [
         {
-          "observation_id": "43285cf6a83d5b77ee79",
-          "title": "Why is Iran threatening regional airports, and what could be the impact?",
-          "source": "Al Jazeera English",
-          "source_class": "established_media",
-          "provenance_root": "aljazeera",
-          "stance": "warning",
-          "published": "2026-09-24T11:10:42Z",
-          "url": "https://www.aljazeera.com/news/2026/9/24/why-is-iran-threatening-regional-airports-and-what-could-be-the-impact?traffic_source=rss",
+          "observation_id": "e0334e9d06188d614522",
+          "title": "Worries about an AI internet takeover gain new urgency among doomsday scenarios",
+          "source": "hurriyetdailynews.com",
+          "source_class": "low_confidence",
+          "provenance_root": "hurriyetdailynews.com",
+          "stance": "speculation",
+          "published": "2026-09-25T08:45:00Z",
+          "url": "https://www.hurriyetdailynews.com/worries-about-an-ai-internet-takeover-gain-new-urgency-among-doomsday-scenarios-227227",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "55f6482d9cb3d4cef051",
+          "title": "Worries about an AI internet takeover gain new urgency among doomsday scenarios",
+          "source": "theoaklandpress.com",
+          "source_class": "low_confidence",
+          "provenance_root": "theoaklandpress.com",
+          "stance": "speculation",
+          "published": "2026-09-24T15:45:00Z",
+          "url": "https://www.theoaklandpress.com/2026/09/24/worries-about-an-ai-internet-takeover-gain-new-urgency-among-doomsday-scenarios",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "694d6d5fe214d00713f7",
+          "title": "Worries about an AI internet takeover gain new urgency among doomsday scenarios",
+          "source": "whec.com",
+          "source_class": "low_confidence",
+          "provenance_root": "whec.com",
+          "stance": "speculation",
+          "published": "2026-09-24T01:15:00Z",
+          "url": "https://www.whec.com/ap-top-news/worries-about-an-ai-internet-takeover-gain-new-urgency-among-doomsday-scenarios",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "ed2c4669e619b69c9450",
+          "title": "Worries About an AI Internet Takeover Gain New Urgency Among Doomsday Scenarios",
+          "source": "SecurityWeek",
+          "source_class": "specialist",
+          "provenance_root": "securityweek",
+          "stance": "speculation",
+          "published": "2026-09-23T18:05:58Z",
+          "url": "https://www.securityweek.com/worries-about-an-ai-internet-takeover-gain-new-urgency-among-doomsday-scenarios",
           "discovery_only": false
         }
       ],
       "state_affiliated_reporting": false,
       "discovery_only": false,
       "branch_analysis": {
-        "current_observation": "Why is Iran threatening regional airports, and what could be the impact?",
+        "current_observation": "Worries About an AI Internet Takeover Gain New Urgency Among Doomsday Scenarios",
         "plausible_explanations": [
-          "A genuine ECONOMIC/INFRA development involving IRAN is unfolding as reported.",
+          "A genuine CYBER/SECURITY development involving the reported actors is unfolding as reported.",
           "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
           "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
         ],
-        "escalation_branch": "Related ECONOMIC/INFRA indicators spread, become operational, or draw additional actors into the event.",
+        "escalation_branch": "Related CYBER/SECURITY indicators spread, become operational, or draw additional actors into the event.",
         "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
         "confirm_indicators": [
           "A primary record, sensor observation, or on-record official confirmation.",
@@ -7763,187 +8966,18 @@
         ],
         "contradictory_evidence_present": false
       },
-      "historical_matches": [
-        {
-          "claim_id": "claim-d555e4d2e467f5fc66",
-          "headline": "Massachusetts Man Convicted of Violating U.S. Sanctions Against Iran",
-          "material_time": "2026-07-14T12:00:00Z",
-          "shared_domains": [
-            "ECONOMIC"
-          ],
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ]
-        }
-      ],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-df8fa91bdf00195a47",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-7b3a8058f79a56f11d",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-6e3f1a064b6e817fdd",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-f40888e4d0a3c45580",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-bb5943baed259345b1",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-637c5145af81acee6f",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-0dd8dc2e439df1f87a",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-f4afdd1329f51d1558",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-a147226e475b4c4897",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-cea0b47d444e1bd339",
-          "shared_actors": [],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-7642f24d98b4c1fbb3",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-f536f3fa32ed477fc3",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-84cab19cc20276d1"
-      ],
-      "threat_score": 13,
-      "watch_priority": 35,
+      "historical_matches": [],
+      "cross_domain_links": [],
+      "anomaly_ids": [],
+      "threat_score": 2,
+      "watch_priority": 34,
       "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 1,
+        "reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
+        "support_count": 4,
         "contradiction_count": 0,
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-24T11:10:42Z"
+        "material_time_used_for_decay": "2026-09-25T08:45:00Z"
       }
     },
     {
@@ -7962,7 +8996,7 @@
         "414f6e69c794ef195680"
       ],
       "first_seen": "2026-09-25T07:22:18Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-25T06:56:51Z",
       "domains": [
         "CLIMATE"
@@ -8049,410 +9083,6 @@
       }
     },
     {
-      "id": "claim-0d75eac1486e27ad19",
-      "headline": "Worries About an AI Internet Takeover Gain New Urgency Among Doomsday Scenarios",
-      "signature_tokens": [
-        "among",
-        "doomsday",
-        "gain",
-        "internet",
-        "scenarios",
-        "takeover",
-        "urgency",
-        "worries"
-      ],
-      "observation_ids": [
-        "ed2c4669e619b69c9450",
-        "694d6d5fe214d00713f7",
-        "55f6482d9cb3d4cef051"
-      ],
-      "first_seen": "2026-09-24T01:38:48Z",
-      "last_seen": "2026-09-24T16:22:34Z",
-      "material_time": "2026-09-24T15:45:00Z",
-      "domains": [
-        "CYBER",
-        "SECURITY"
-      ],
-      "regions": [
-        "GLOBAL"
-      ],
-      "actors": [],
-      "state": "SPECULATIVE",
-      "confidence": 56,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 80,
-        "independence": 25,
-        "corroboration": 22,
-        "contradiction": 0,
-        "specificity": 35,
-        "recency": 93,
-        "evidence_type": 73,
-        "historical_reliability": 80,
-        "claim_maturity": 36
-      },
-      "classification_reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
-      "supporting_observation_ids": [
-        "ed2c4669e619b69c9450",
-        "694d6d5fe214d00713f7",
-        "55f6482d9cb3d4cef051"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 3,
-      "independent_provenance_count": 1,
-      "sources": [
-        "SecurityWeek",
-        "theoaklandpress.com",
-        "whec.com"
-      ],
-      "provenance_roots": [
-        "securityweek",
-        "theoaklandpress.com",
-        "whec.com"
-      ],
-      "evidence": [
-        {
-          "observation_id": "55f6482d9cb3d4cef051",
-          "title": "Worries about an AI internet takeover gain new urgency among doomsday scenarios",
-          "source": "theoaklandpress.com",
-          "source_class": "low_confidence",
-          "provenance_root": "theoaklandpress.com",
-          "stance": "speculation",
-          "published": "2026-09-24T15:45:00Z",
-          "url": "https://www.theoaklandpress.com/2026/09/24/worries-about-an-ai-internet-takeover-gain-new-urgency-among-doomsday-scenarios",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "694d6d5fe214d00713f7",
-          "title": "Worries about an AI internet takeover gain new urgency among doomsday scenarios",
-          "source": "whec.com",
-          "source_class": "low_confidence",
-          "provenance_root": "whec.com",
-          "stance": "speculation",
-          "published": "2026-09-24T01:15:00Z",
-          "url": "https://www.whec.com/ap-top-news/worries-about-an-ai-internet-takeover-gain-new-urgency-among-doomsday-scenarios",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "ed2c4669e619b69c9450",
-          "title": "Worries About an AI Internet Takeover Gain New Urgency Among Doomsday Scenarios",
-          "source": "SecurityWeek",
-          "source_class": "specialist",
-          "provenance_root": "securityweek",
-          "stance": "speculation",
-          "published": "2026-09-23T18:05:58Z",
-          "url": "https://www.securityweek.com/worries-about-an-ai-internet-takeover-gain-new-urgency-among-doomsday-scenarios",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Worries About an AI Internet Takeover Gain New Urgency Among Doomsday Scenarios",
-        "plausible_explanations": [
-          "A genuine CYBER/SECURITY development involving the reported actors is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related CYBER/SECURITY indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [],
-      "cross_domain_links": [],
-      "anomaly_ids": [],
-      "threat_score": 2,
-      "watch_priority": 34,
-      "audit": {
-        "reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
-        "support_count": 3,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-24T15:45:00Z"
-      }
-    },
-    {
-      "id": "claim-907170f87063fc6ad5",
-      "headline": "Donald Trump startled by the sound of a fighter jet",
-      "signature_tokens": [
-        "donald",
-        "fighter",
-        "jet",
-        "sound",
-        "startled",
-        "trump"
-      ],
-      "observation_ids": [
-        "e4423ac355ebf470e171"
-      ],
-      "first_seen": "2026-09-24T11:46:56Z",
-      "last_seen": "2026-09-24T14:50:20Z",
-      "material_time": "2026-09-24T11:03:29Z",
-      "domains": [
-        "INFRA",
-        "WAR"
-      ],
-      "regions": [
-        "CHINA"
-      ],
-      "actors": [
-        "CHINA"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 62,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 84,
-        "independence": 25,
-        "corroboration": 22,
-        "contradiction": 0,
-        "specificity": 66,
-        "recency": 90,
-        "evidence_type": 79,
-        "historical_reliability": 84,
-        "claim_maturity": 37
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "e4423ac355ebf470e171"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 1,
-      "independent_provenance_count": 1,
-      "sources": [
-        "France 24 World"
-      ],
-      "provenance_roots": [
-        "france24"
-      ],
-      "evidence": [
-        {
-          "observation_id": "e4423ac355ebf470e171",
-          "title": "Donald Trump startled by the sound of a fighter jet",
-          "source": "France 24 World",
-          "source_class": "established_media",
-          "provenance_root": "france24",
-          "stance": "report",
-          "published": "2026-09-24T11:03:29Z",
-          "url": "https://www.france24.com/en/donald-trump-startled-by-the-sound-of-a-fighter-jet",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Donald Trump startled by the sound of a fighter jet",
-        "plausible_explanations": [
-          "A genuine INFRA/WAR development involving CHINA is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related INFRA/WAR indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [
-        {
-          "claim_id": "claim-ab13de06ed03a68f0a",
-          "headline": "Chinese National Pleads Guilty to Trying to Obtain U.S. Military Equipment",
-          "material_time": "2026-08-10T12:00:00Z",
-          "shared_domains": [
-            "WAR"
-          ],
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ]
-        }
-      ],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-55822d38b6dd761e34",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "CYBER"
-          ]
-        },
-        {
-          "claim_id": "claim-1c72a7046919ccd500",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "CYBER"
-          ]
-        },
-        {
-          "claim_id": "claim-2b0bbfb39360c0e162",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-6279543b96670cf502",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-89fb45424c5952dfd2",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "ECONOMIC"
-          ]
-        },
-        {
-          "claim_id": "claim-830bd6f3de66ea1b5b",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-f924b3e25f3e85aff7",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-ed88bb6b9064b4c4fc",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "ECONOMIC"
-          ]
-        },
-        {
-          "claim_id": "claim-1dd8b79182a7d5d9e7",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-e64faa9202067e16f8",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-674a6eca91e0c696d0",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-5bf27946c50697158e",
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ],
-          "domains": [
-            "NUCLEAR",
-            "WAR"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-4b0472d6505d4b00"
-      ],
-      "threat_score": 13,
-      "watch_priority": 34,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 1,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-24T11:03:29Z"
-      }
-    },
-    {
       "id": "claim-64504821c2cbbcfe5a",
       "headline": "Ethiopia, Djibouti, and Dangote to build $660m petroleum pipeline",
       "signature_tokens": [
@@ -8468,7 +9098,7 @@
         "c039602f8bc0e5acddb4"
       ],
       "first_seen": "2026-09-25T10:48:13Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-25T10:08:23Z",
       "domains": [
         "INFRA"
@@ -8479,7 +9109,7 @@
       "actors": [],
       "state": "UNVERIFIED CLAIM",
       "confidence": 57,
-      "confidence_direction": "NEW",
+      "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 72,
         "independence": 25,
@@ -8598,6 +9228,18 @@
           ]
         },
         {
+          "claim_id": "claim-5d41955dc01bf91e43",
+          "shared_actors": [],
+          "shared_regions": [
+            "AFRICA"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-bff52fe4b7d78ff76c",
           "shared_actors": [],
           "shared_regions": [
@@ -8673,21 +9315,10 @@
             "BIO",
             "HUMANITARIAN"
           ]
-        },
-        {
-          "claim_id": "claim-5a67805f151738ec24",
-          "shared_actors": [],
-          "shared_regions": [
-            "AFRICA"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-225653d4cbc83378"
+        "anomaly-7b6d7b7d4546467d"
       ],
       "threat_score": 1,
       "watch_priority": 33,
@@ -8719,7 +9350,7 @@
         "461dbdb18812deab0a1f"
       ],
       "first_seen": "2026-09-24T15:22:27Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-24T16:34:30Z",
       "domains": [
         "INFRA"
@@ -8849,6 +9480,18 @@
           ]
         },
         {
+          "claim_id": "claim-5d41955dc01bf91e43",
+          "shared_actors": [],
+          "shared_regions": [
+            "AFRICA"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-bff52fe4b7d78ff76c",
           "shared_actors": [],
           "shared_regions": [
@@ -8924,21 +9567,10 @@
             "BIO",
             "HUMANITARIAN"
           ]
-        },
-        {
-          "claim_id": "claim-5a67805f151738ec24",
-          "shared_actors": [],
-          "shared_regions": [
-            "AFRICA"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-225653d4cbc83378"
+        "anomaly-7b6d7b7d4546467d"
       ],
       "threat_score": 1,
       "watch_priority": 33,
@@ -8974,7 +9606,7 @@
         "f654650ee475a6eea584"
       ],
       "first_seen": "2026-09-24T15:48:17Z",
-      "last_seen": "2026-09-25T10:48:13Z",
+      "last_seen": "2026-09-25T11:20:58Z",
       "material_time": "2026-09-24T16:29:04Z",
       "domains": [
         "CYBER"
