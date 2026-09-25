@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-25T22:20:29Z",
+  "generated_at": "2026-09-25T22:47:01Z",
   "rules_version": "3.0-layered-early-warning",
-  "score": 39,
+  "score": 40,
   "verified_pressure": {
-    "score": 39,
+    "score": 40,
     "claim_count": 66,
     "top_claims": [
       {
@@ -28,7 +28,7 @@
           "30d84c4f45dbe394ec81"
         ],
         "first_seen": "2026-09-24T16:47:39Z",
-        "last_seen": "2026-09-25T22:20:29Z",
+        "last_seen": "2026-09-25T22:47:01Z",
         "material_time": "2026-09-24T17:08:00Z",
         "domains": [
           "SECURITY",
@@ -377,7 +377,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-16c712993b1ba980",
+          "anomaly-514c05081073edea",
           "anomaly-e619c76385b9980b",
           "anomaly-b81fbf0d6927ff2d"
         ],
@@ -711,7 +711,7 @@
           "8d5b4c48906a2094490d"
         ],
         "first_seen": "2026-09-25T16:23:06Z",
-        "last_seen": "2026-09-25T22:20:29Z",
+        "last_seen": "2026-09-25T22:47:01Z",
         "material_time": "2026-09-25T15:43:59Z",
         "domains": [
           "ECONOMIC",
@@ -738,7 +738,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 100,
+          "recency": 99,
           "evidence_type": 79,
           "historical_reliability": 84,
           "claim_maturity": 35
@@ -1565,7 +1565,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-16c712993b1ba980",
+          "anomaly-514c05081073edea",
           "anomaly-e619c76385b9980b",
           "anomaly-b81fbf0d6927ff2d",
           "anomaly-296f9d25221aad9e",
@@ -1965,23 +1965,29 @@
       },
       {
         "id": "claim-8f4e2dd2be0bc17380",
-        "headline": "Iran proposes a 7-day plan to reopen the Strait of Hormuz",
+        "headline": "Trump, Xi discuss Middle East war as Iran presses 7-day plan to end fighting - Reuters",
         "signature_tokens": [
           "7-day",
-          "hormuz",
+          "discuss",
+          "east",
+          "end",
+          "fighting",
           "iran",
+          "middle",
           "plan",
-          "proposes",
-          "reopen",
-          "strait"
+          "presses",
+          "reuters",
+          "trump",
+          "war"
         ],
         "observation_ids": [
           "84fbff517bac06829456",
+          "4ef7dcfe13842228d5d9",
           "8e2d3d61ddb4255cebb0",
           "e55e7f7179095e80e47b"
         ],
         "first_seen": "2026-09-25T02:19:57Z",
-        "last_seen": "2026-09-25T22:20:29Z",
+        "last_seen": "2026-09-25T22:47:01Z",
         "material_time": "2026-09-25T20:07:56Z",
         "domains": [
           "POLITICAL",
@@ -1989,6 +1995,7 @@
         ],
         "regions": [
           "IRAN",
+          "MIDDLE EAST",
           "UNITED STATES"
         ],
         "actors": [
@@ -1996,37 +2003,40 @@
           "UNITED STATES"
         ],
         "state": "CONFIRMED",
-        "confidence": 76,
-        "confidence_direction": "STABLE",
+        "confidence": 88,
+        "confidence_direction": "UP",
         "confidence_components": {
-          "source_quality": 65,
-          "independence": 79,
-          "corroboration": 82,
+          "source_quality": 86,
+          "independence": 100,
+          "corroboration": 100,
           "contradiction": 0,
-          "specificity": 74,
+          "specificity": 75,
           "recency": 100,
           "evidence_type": 79,
-          "historical_reliability": 65,
-          "claim_maturity": 57
+          "historical_reliability": 72,
+          "claim_maturity": 68
         },
         "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
         "supporting_observation_ids": [
           "84fbff517bac06829456",
+          "4ef7dcfe13842228d5d9",
           "8e2d3d61ddb4255cebb0",
           "e55e7f7179095e80e47b"
         ],
         "contradictory_observation_ids": [],
-        "source_count": 3,
-        "independent_provenance_count": 3,
+        "source_count": 4,
+        "independent_provenance_count": 4,
         "sources": [
           "CBS News World",
           "Euronews",
-          "Reddit WorldNews Signal"
+          "Reddit WorldNews Signal",
+          "Reuters World"
         ],
         "provenance_roots": [
           "cbs_world",
           "euronews",
-          "reddit_worldnews"
+          "reddit_worldnews",
+          "wire:reuters_world"
         ],
         "evidence": [
           {
@@ -2052,6 +2062,17 @@
             "discovery_only": false
           },
           {
+            "observation_id": "4ef7dcfe13842228d5d9",
+            "title": "Trump, Xi discuss Middle East war as Iran presses 7-day plan to end fighting - Reuters",
+            "source": "Reuters World",
+            "source_class": "wire",
+            "provenance_root": "wire:reuters_world",
+            "stance": "report",
+            "published": "2026-09-25T01:54:00Z",
+            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSktoVFV5TmFoZFFlNGJOdHNQbl9ZNWVfOFVvRTN2UXpLMlBhSnZ6ZVZLdFNlRU5CR3RjaHYxWDJRclcyb1lrVzh1WG83MWtmcjRyVnpRdTZIcTdtY01WRlFaVXZ5aWFBSXgzdk9LdzZNdmlQWHJlUmJuci1TSFI1bWRtYXJwYWdEYjBVMHJlVnpYbndpR1lQbllKNkphM0t1SmhXaXNYQmVncDFVOHFJ?oc=5",
+            "discovery_only": false
+          },
+          {
             "observation_id": "84fbff517bac06829456",
             "title": "Iran Proposes 7-Day Plan to End War",
             "source": "Reddit WorldNews Signal",
@@ -2066,7 +2087,7 @@
         "state_affiliated_reporting": false,
         "discovery_only": false,
         "branch_analysis": {
-          "current_observation": "Iran proposes a 7-day plan to reopen the Strait of Hormuz",
+          "current_observation": "Trump, Xi discuss Middle East war as Iran presses 7-day plan to end fighting - Reuters",
           "plausible_explanations": [
             "A genuine POLITICAL/WAR development involving IRAN, UNITED STATES is unfolding as reported.",
             "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
@@ -2171,6 +2192,17 @@
             ]
           },
           {
+            "claim_id": "claim-c898ca6341e7ff4700",
+            "shared_actors": [],
+            "shared_regions": [
+              "MIDDLE EAST"
+            ],
+            "domains": [
+              "HUMANITARIAN",
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-480cb6ba382f404aae",
             "shared_actors": [
               "IRAN"
@@ -2206,6 +2238,7 @@
             ],
             "shared_regions": [
               "IRAN",
+              "MIDDLE EAST",
               "UNITED STATES"
             ],
             "domains": [
@@ -2231,12 +2264,23 @@
             ]
           },
           {
+            "claim_id": "claim-a12aa1754de927496a",
+            "shared_actors": [],
+            "shared_regions": [
+              "MIDDLE EAST"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-bb5943baed259345b1",
             "shared_actors": [
               "IRAN"
             ],
             "shared_regions": [
-              "IRAN"
+              "IRAN",
+              "MIDDLE EAST"
             ],
             "domains": [
               "POLITICAL",
@@ -2266,45 +2310,19 @@
             "domains": [
               "CYBER"
             ]
-          },
-          {
-            "claim_id": "claim-637c5145af81acee6f",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-af8f754e60078ad1ce",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "NUCLEAR",
-              "WAR"
-            ]
           }
         ],
         "anomaly_ids": [
           "anomaly-296f9d25221aad9e",
           "anomaly-4c5cd5efce0be5b2"
         ],
-        "threat_score": 25,
-        "watch_priority": 52,
+        "threat_score": 29,
+        "watch_priority": 54,
         "audit": {
           "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-          "support_count": 3,
+          "support_count": 4,
           "contradiction_count": 0,
-          "independent_roots": 3,
+          "independent_roots": 4,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-25T20:07:56Z"
         }
@@ -2609,7 +2627,7 @@
           "034cb322af24dbba7951"
         ],
         "first_seen": "2026-09-25T05:47:37Z",
-        "last_seen": "2026-09-25T22:20:29Z",
+        "last_seen": "2026-09-25T22:47:01Z",
         "material_time": "2026-09-25T00:00:00Z",
         "domains": [
           "ECONOMIC",
@@ -2631,7 +2649,7 @@
           "recency": 91,
           "evidence_type": 97,
           "historical_reliability": 98,
-          "claim_maturity": 36
+          "claim_maturity": 37
         },
         "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
         "supporting_observation_ids": [
@@ -2802,12 +2820,13 @@
             ]
           },
           {
-            "claim_id": "claim-add2a39172b6ac0a42",
+            "claim_id": "claim-8f4e2dd2be0bc17380",
             "shared_actors": [],
             "shared_regions": [
               "MIDDLE EAST"
             ],
             "domains": [
+              "POLITICAL",
               "WAR"
             ]
           }
@@ -2844,7 +2863,7 @@
           "500b9aac7c620f27ee14"
         ],
         "first_seen": "2026-09-25T17:48:05Z",
-        "last_seen": "2026-09-25T22:20:29Z",
+        "last_seen": "2026-09-25T22:47:01Z",
         "material_time": "2026-09-25T20:41:29Z",
         "domains": [
           "POLITICAL",
@@ -3392,7 +3411,7 @@
           "d80491d0ecb3a6236149"
         ],
         "first_seen": "2026-09-24T22:20:49Z",
-        "last_seen": "2026-09-25T22:20:29Z",
+        "last_seen": "2026-09-25T22:47:01Z",
         "material_time": "2026-09-24T21:57:34Z",
         "domains": [
           "ECONOMIC",
@@ -3658,7 +3677,7 @@
   },
   "early_warning_pressure": {
     "score": 100,
-    "claim_count": 53,
+    "claim_count": 52,
     "top_claims": [
       {
         "id": "claim-ddb28772ec8c980666",
@@ -3961,7 +3980,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-16c712993b1ba980",
+          "anomaly-514c05081073edea",
           "anomaly-e619c76385b9980b",
           "anomaly-b81fbf0d6927ff2d"
         ],
@@ -5081,7 +5100,7 @@
           "efca135bb3544fb66f6f"
         ],
         "first_seen": "2026-09-25T17:20:32Z",
-        "last_seen": "2026-09-25T22:20:29Z",
+        "last_seen": "2026-09-25T22:47:01Z",
         "material_time": "2026-09-25T16:54:29Z",
         "domains": [
           "WAR"
@@ -5991,7 +6010,7 @@
           "9f52f8ea5b8a791fa16a"
         ],
         "first_seen": "2026-09-25T16:23:06Z",
-        "last_seen": "2026-09-25T22:20:29Z",
+        "last_seen": "2026-09-25T22:47:01Z",
         "material_time": "2026-09-25T16:12:21Z",
         "domains": [
           "INFRA",
@@ -7437,9 +7456,9 @@
     "multi_theater_coupling": 1,
     "nuclear_escalation": 10,
     "military_mobilization": 16,
-    "economic_warfare": 212,
+    "economic_warfare": 211,
     "crisis_control_failure": 0,
-    "hybrid_preparation": 64
+    "hybrid_preparation": 63
   },
   "formula": "Independent-provenance-capped claim contributions; verified and early-warning pressure remain separate.",
   "safeguard": "Republished stories sharing one provenance root cannot multiply pressure; speculative claims never enter Verified Pressure.",
@@ -7467,7 +7486,7 @@
         "30d84c4f45dbe394ec81"
       ],
       "first_seen": "2026-09-24T16:47:39Z",
-      "last_seen": "2026-09-25T22:20:29Z",
+      "last_seen": "2026-09-25T22:47:01Z",
       "material_time": "2026-09-24T17:08:00Z",
       "domains": [
         "SECURITY",
@@ -7816,7 +7835,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-16c712993b1ba980",
+        "anomaly-514c05081073edea",
         "anomaly-e619c76385b9980b",
         "anomaly-b81fbf0d6927ff2d"
       ],
@@ -8150,7 +8169,7 @@
         "8d5b4c48906a2094490d"
       ],
       "first_seen": "2026-09-25T16:23:06Z",
-      "last_seen": "2026-09-25T22:20:29Z",
+      "last_seen": "2026-09-25T22:47:01Z",
       "material_time": "2026-09-25T15:43:59Z",
       "domains": [
         "ECONOMIC",
@@ -8177,7 +8196,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 100,
+        "recency": 99,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 35
@@ -9004,7 +9023,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-16c712993b1ba980",
+        "anomaly-514c05081073edea",
         "anomaly-e619c76385b9980b",
         "anomaly-b81fbf0d6927ff2d",
         "anomaly-296f9d25221aad9e",
@@ -9404,23 +9423,29 @@
     },
     {
       "id": "claim-8f4e2dd2be0bc17380",
-      "headline": "Iran proposes a 7-day plan to reopen the Strait of Hormuz",
+      "headline": "Trump, Xi discuss Middle East war as Iran presses 7-day plan to end fighting - Reuters",
       "signature_tokens": [
         "7-day",
-        "hormuz",
+        "discuss",
+        "east",
+        "end",
+        "fighting",
         "iran",
+        "middle",
         "plan",
-        "proposes",
-        "reopen",
-        "strait"
+        "presses",
+        "reuters",
+        "trump",
+        "war"
       ],
       "observation_ids": [
         "84fbff517bac06829456",
+        "4ef7dcfe13842228d5d9",
         "8e2d3d61ddb4255cebb0",
         "e55e7f7179095e80e47b"
       ],
       "first_seen": "2026-09-25T02:19:57Z",
-      "last_seen": "2026-09-25T22:20:29Z",
+      "last_seen": "2026-09-25T22:47:01Z",
       "material_time": "2026-09-25T20:07:56Z",
       "domains": [
         "POLITICAL",
@@ -9428,6 +9453,7 @@
       ],
       "regions": [
         "IRAN",
+        "MIDDLE EAST",
         "UNITED STATES"
       ],
       "actors": [
@@ -9435,37 +9461,40 @@
         "UNITED STATES"
       ],
       "state": "CONFIRMED",
-      "confidence": 76,
-      "confidence_direction": "STABLE",
+      "confidence": 88,
+      "confidence_direction": "UP",
       "confidence_components": {
-        "source_quality": 65,
-        "independence": 79,
-        "corroboration": 82,
+        "source_quality": 86,
+        "independence": 100,
+        "corroboration": 100,
         "contradiction": 0,
-        "specificity": 74,
+        "specificity": 75,
         "recency": 100,
         "evidence_type": 79,
-        "historical_reliability": 65,
-        "claim_maturity": 57
+        "historical_reliability": 72,
+        "claim_maturity": 68
       },
       "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
       "supporting_observation_ids": [
         "84fbff517bac06829456",
+        "4ef7dcfe13842228d5d9",
         "8e2d3d61ddb4255cebb0",
         "e55e7f7179095e80e47b"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 3,
-      "independent_provenance_count": 3,
+      "source_count": 4,
+      "independent_provenance_count": 4,
       "sources": [
         "CBS News World",
         "Euronews",
-        "Reddit WorldNews Signal"
+        "Reddit WorldNews Signal",
+        "Reuters World"
       ],
       "provenance_roots": [
         "cbs_world",
         "euronews",
-        "reddit_worldnews"
+        "reddit_worldnews",
+        "wire:reuters_world"
       ],
       "evidence": [
         {
@@ -9491,6 +9520,17 @@
           "discovery_only": false
         },
         {
+          "observation_id": "4ef7dcfe13842228d5d9",
+          "title": "Trump, Xi discuss Middle East war as Iran presses 7-day plan to end fighting - Reuters",
+          "source": "Reuters World",
+          "source_class": "wire",
+          "provenance_root": "wire:reuters_world",
+          "stance": "report",
+          "published": "2026-09-25T01:54:00Z",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSktoVFV5TmFoZFFlNGJOdHNQbl9ZNWVfOFVvRTN2UXpLMlBhSnZ6ZVZLdFNlRU5CR3RjaHYxWDJRclcyb1lrVzh1WG83MWtmcjRyVnpRdTZIcTdtY01WRlFaVXZ5aWFBSXgzdk9LdzZNdmlQWHJlUmJuci1TSFI1bWRtYXJwYWdEYjBVMHJlVnpYbndpR1lQbllKNkphM0t1SmhXaXNYQmVncDFVOHFJ?oc=5",
+          "discovery_only": false
+        },
+        {
           "observation_id": "84fbff517bac06829456",
           "title": "Iran Proposes 7-Day Plan to End War",
           "source": "Reddit WorldNews Signal",
@@ -9505,7 +9545,7 @@
       "state_affiliated_reporting": false,
       "discovery_only": false,
       "branch_analysis": {
-        "current_observation": "Iran proposes a 7-day plan to reopen the Strait of Hormuz",
+        "current_observation": "Trump, Xi discuss Middle East war as Iran presses 7-day plan to end fighting - Reuters",
         "plausible_explanations": [
           "A genuine POLITICAL/WAR development involving IRAN, UNITED STATES is unfolding as reported.",
           "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
@@ -9610,6 +9650,17 @@
           ]
         },
         {
+          "claim_id": "claim-c898ca6341e7ff4700",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "HUMANITARIAN",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-480cb6ba382f404aae",
           "shared_actors": [
             "IRAN"
@@ -9645,6 +9696,7 @@
           ],
           "shared_regions": [
             "IRAN",
+            "MIDDLE EAST",
             "UNITED STATES"
           ],
           "domains": [
@@ -9670,12 +9722,23 @@
           ]
         },
         {
+          "claim_id": "claim-a12aa1754de927496a",
+          "shared_actors": [],
+          "shared_regions": [
+            "MIDDLE EAST"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-bb5943baed259345b1",
           "shared_actors": [
             "IRAN"
           ],
           "shared_regions": [
-            "IRAN"
+            "IRAN",
+            "MIDDLE EAST"
           ],
           "domains": [
             "POLITICAL",
@@ -9705,45 +9768,19 @@
           "domains": [
             "CYBER"
           ]
-        },
-        {
-          "claim_id": "claim-637c5145af81acee6f",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-af8f754e60078ad1ce",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "NUCLEAR",
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
         "anomaly-296f9d25221aad9e",
         "anomaly-4c5cd5efce0be5b2"
       ],
-      "threat_score": 25,
-      "watch_priority": 52,
+      "threat_score": 29,
+      "watch_priority": 54,
       "audit": {
         "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-        "support_count": 3,
+        "support_count": 4,
         "contradiction_count": 0,
-        "independent_roots": 3,
+        "independent_roots": 4,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-25T20:07:56Z"
       }
@@ -10048,7 +10085,7 @@
         "034cb322af24dbba7951"
       ],
       "first_seen": "2026-09-25T05:47:37Z",
-      "last_seen": "2026-09-25T22:20:29Z",
+      "last_seen": "2026-09-25T22:47:01Z",
       "material_time": "2026-09-25T00:00:00Z",
       "domains": [
         "ECONOMIC",
@@ -10070,7 +10107,7 @@
         "recency": 91,
         "evidence_type": 97,
         "historical_reliability": 98,
-        "claim_maturity": 36
+        "claim_maturity": 37
       },
       "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
       "supporting_observation_ids": [
@@ -10241,12 +10278,13 @@
           ]
         },
         {
-          "claim_id": "claim-add2a39172b6ac0a42",
+          "claim_id": "claim-8f4e2dd2be0bc17380",
           "shared_actors": [],
           "shared_regions": [
             "MIDDLE EAST"
           ],
           "domains": [
+            "POLITICAL",
             "WAR"
           ]
         }
@@ -10283,7 +10321,7 @@
         "500b9aac7c620f27ee14"
       ],
       "first_seen": "2026-09-25T17:48:05Z",
-      "last_seen": "2026-09-25T22:20:29Z",
+      "last_seen": "2026-09-25T22:47:01Z",
       "material_time": "2026-09-25T20:41:29Z",
       "domains": [
         "POLITICAL",
@@ -10831,7 +10869,7 @@
         "d80491d0ecb3a6236149"
       ],
       "first_seen": "2026-09-24T22:20:49Z",
-      "last_seen": "2026-09-25T22:20:29Z",
+      "last_seen": "2026-09-25T22:47:01Z",
       "material_time": "2026-09-24T21:57:34Z",
       "domains": [
         "ECONOMIC",
@@ -11109,7 +11147,7 @@
         "fa9e295d379a5ee11d4e"
       ],
       "first_seen": "2026-09-25T18:48:40Z",
-      "last_seen": "2026-09-25T22:20:29Z",
+      "last_seen": "2026-09-25T22:47:01Z",
       "material_time": "2026-09-25T18:30:20Z",
       "domains": [
         "ECONOMIC",
@@ -11387,7 +11425,7 @@
         "4ee1e24126a94b92d818"
       ],
       "first_seen": "2026-09-25T17:20:32Z",
-      "last_seen": "2026-09-25T22:20:29Z",
+      "last_seen": "2026-09-25T22:47:01Z",
       "material_time": "2026-09-25T17:12:04Z",
       "domains": [
         "NUCLEAR"
@@ -11646,7 +11684,7 @@
         "101cc059e5cde23c0956"
       ],
       "first_seen": "2026-09-25T11:47:58Z",
-      "last_seen": "2026-09-25T22:20:29Z",
+      "last_seen": "2026-09-25T22:47:01Z",
       "material_time": "2026-09-25T11:31:40Z",
       "domains": [
         "POLITICAL",
@@ -11942,7 +11980,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 87,
+        "recency": 86,
         "evidence_type": 79,
         "historical_reliability": 82,
         "claim_maturity": 37
