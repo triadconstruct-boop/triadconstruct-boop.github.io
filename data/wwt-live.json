@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T15:20:18Z",
+  "generated_at": "2026-09-26T15:47:17Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 39,
   "verified_pressure": {
@@ -27,7 +27,7 @@
           "4c389e2b4231dd0cc8d6"
         ],
         "first_seen": "2026-09-26T09:45:40Z",
-        "last_seen": "2026-09-26T15:20:18Z",
+        "last_seen": "2026-09-26T15:47:17Z",
         "material_time": "2026-09-26T12:38:46Z",
         "domains": [
           "INFRA",
@@ -338,7 +338,7 @@
           "9cbdf40afaca87a93355"
         ],
         "first_seen": "2026-09-26T14:46:59Z",
-        "last_seen": "2026-09-26T15:20:18Z",
+        "last_seen": "2026-09-26T15:47:17Z",
         "material_time": "2026-09-26T14:46:53Z",
         "domains": [
           "INFRA",
@@ -354,7 +354,7 @@
         ],
         "state": "CREDIBLE REPORT",
         "confidence": 72,
-        "confidence_direction": "UP",
+        "confidence_direction": "STABLE",
         "confidence_components": {
           "source_quality": 83,
           "independence": 52,
@@ -1053,7 +1053,7 @@
           "8d5b4c48906a2094490d"
         ],
         "first_seen": "2026-09-25T16:23:06Z",
-        "last_seen": "2026-09-26T15:20:18Z",
+        "last_seen": "2026-09-26T15:47:17Z",
         "material_time": "2026-09-25T15:43:59Z",
         "domains": [
           "ECONOMIC",
@@ -2339,7 +2339,7 @@
           "8e2d3d61ddb4255cebb0"
         ],
         "first_seen": "2026-09-25T02:19:57Z",
-        "last_seen": "2026-09-26T15:20:18Z",
+        "last_seen": "2026-09-26T15:47:17Z",
         "material_time": "2026-09-25T17:33:54Z",
         "domains": [
           "POLITICAL",
@@ -2871,7 +2871,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-62988ca62330eda7",
+          "anomaly-25bdc89d4b503754",
           "anomaly-809145fba81562f7"
         ],
         "threat_score": 15,
@@ -3156,7 +3156,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 79,
-          "recency": 85,
+          "recency": 84,
           "evidence_type": 79,
           "historical_reliability": 84,
           "claim_maturity": 38
@@ -3398,84 +3398,86 @@
         }
       },
       {
-        "id": "claim-7db617e8626cd461ce",
-        "headline": "Iraqi airports halt Iranian flights after new US aviation sanctions",
+        "id": "claim-35e8287e1e186df1ef",
+        "headline": "Zelensky sanctions more than 40 people involved in elections in Russian-occupied Ukraine",
         "signature_tokens": [
-          "airports",
-          "aviation",
-          "flights",
-          "halt",
-          "iranian",
-          "iraqi",
-          "sanctions"
+          "elections",
+          "involved",
+          "people",
+          "russian-occupied",
+          "sanctions",
+          "than",
+          "ukraine",
+          "zelensky"
         ],
         "observation_ids": [
-          "fa9e295d379a5ee11d4e"
+          "d3c16dc217c60c0408be"
         ],
-        "first_seen": "2026-09-25T18:48:40Z",
-        "last_seen": "2026-09-26T02:19:47Z",
-        "material_time": "2026-09-25T18:30:20Z",
+        "first_seen": "2026-09-26T15:47:17Z",
+        "last_seen": "2026-09-26T15:47:17Z",
+        "material_time": "2026-09-26T15:26:52Z",
         "domains": [
           "ECONOMIC",
-          "INFRA"
+          "POLITICAL"
         ],
         "regions": [
-          "IRAN",
-          "MIDDLE EAST"
+          "RUSSIA",
+          "UKRAINE"
         ],
         "actors": [
-          "IRAN"
+          "RUSSIA",
+          "UKRAINE"
         ],
         "state": "CREDIBLE REPORT",
-        "confidence": 61,
-        "confidence_direction": "STABLE",
+        "confidence": 63,
+        "confidence_direction": "NEW",
         "confidence_components": {
-          "source_quality": 82,
+          "source_quality": 79,
           "independence": 25,
           "corroboration": 22,
           "contradiction": 0,
-          "specificity": 66,
-          "recency": 92,
-          "evidence_type": 79,
-          "historical_reliability": 82,
-          "claim_maturity": 36
+          "specificity": 91,
+          "recency": 100,
+          "evidence_type": 67,
+          "historical_reliability": 79,
+          "claim_maturity": 35
         },
         "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
         "supporting_observation_ids": [
-          "fa9e295d379a5ee11d4e"
+          "d3c16dc217c60c0408be"
         ],
         "contradictory_observation_ids": [],
         "source_count": 1,
         "independent_provenance_count": 1,
         "sources": [
-          "Al Jazeera English"
+          "Kyiv Independent"
         ],
         "provenance_roots": [
-          "aljazeera"
+          "kyiv_independent"
         ],
         "evidence": [
           {
-            "observation_id": "fa9e295d379a5ee11d4e",
-            "title": "Iraqi airports halt Iranian flights after new US aviation sanctions",
-            "source": "Al Jazeera English",
-            "source_class": "established_media",
-            "provenance_root": "aljazeera",
+            "observation_id": "d3c16dc217c60c0408be",
+            "title": "Zelensky sanctions more than 40 people involved in elections in Russian-occupied Ukraine",
+            "source": "Kyiv Independent",
+            "source_class": "regional_local",
+            "provenance_root": "kyiv_independent",
             "stance": "report",
-            "published": "2026-09-25T18:30:20Z",
-            "url": "https://www.aljazeera.com/news/2026/9/25/iraqi-airports-halt-iranian-flights-after-new-us-aviation-sanctions?traffic_source=rss",
+            "published": "2026-09-26T15:26:52Z",
+            "url": "https://kyivindependent.com/zelensky-sanctions-more-than-40-people-involved-in-elections-in-russian-occupied-ukraine",
             "discovery_only": false
           }
         ],
         "state_affiliated_reporting": false,
         "discovery_only": false,
         "branch_analysis": {
-          "current_observation": "Iraqi airports halt Iranian flights after new US aviation sanctions",
+          "current_observation": "Zelensky sanctions more than 40 people involved in elections in Russian-occupied Ukraine",
           "plausible_explanations": [
-            "A genuine ECONOMIC/INFRA development involving IRAN is unfolding as reported.",
+            "A genuine ECONOMIC/POLITICAL development involving RUSSIA, UKRAINE is unfolding as reported.",
             "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
             "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
           ],
-          "escalation_branch": "Related ECONOMIC/INFRA indicators spread, become operational, or draw additional actors into the event.",
+          "escalation_branch": "Related ECONOMIC/POLITICAL indicators spread, become operational, or draw additional actors into the event.",
           "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
           "confirm_indicators": [
             "A primary record, sensor observation, or on-record official confirmation.",
@@ -3491,195 +3493,215 @@
         },
         "historical_matches": [
           {
-            "claim_id": "claim-d555e4d2e467f5fc66",
-            "headline": "Massachusetts Man Convicted of Violating U.S. Sanctions Against Iran",
-            "material_time": "2026-07-14T12:00:00Z",
+            "claim_id": "claim-5864ef41bab32e4ffd",
+            "headline": "Tracking a Sanctioned Russian Vessel’s West African Odyssey",
+            "material_time": "2026-08-25T08:52:50Z",
             "shared_domains": [
               "ECONOMIC"
             ],
             "shared_actors": [
-              "IRAN"
+              "RUSSIA"
             ],
             "shared_regions": [
-              "IRAN"
+              "RUSSIA"
             ]
           }
         ],
         "cross_domain_links": [
           {
-            "claim_id": "claim-df8fa91bdf00195a47",
+            "claim_id": "claim-2dd8d8676da99b2626",
             "shared_actors": [
-              "IRAN"
+              "RUSSIA",
+              "UKRAINE"
             ],
             "shared_regions": [
-              "IRAN"
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-ddb28772ec8c980666",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-ab9d35524801c19134",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-8b4542a6fdb7ba9c2e",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "POLITICAL",
+              "SECURITY"
+            ]
+          },
+          {
+            "claim_id": "claim-76ce02e84975e8ee01",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-5d036678dfa62043f7",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-575c03559c735b0df5",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-4c82b5bc892668be90",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-86d7d3f055d049ac6d",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-d47e4cd2b83f09ff18",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "SECURITY"
+            ]
+          },
+          {
+            "claim_id": "claim-959f0c684e4b36f1f6",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-6d49e127db359331f2",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
             ],
             "domains": [
               "SECURITY",
               "WAR"
             ]
-          },
-          {
-            "claim_id": "claim-c898ca6341e7ff4700",
-            "shared_actors": [],
-            "shared_regions": [
-              "MIDDLE EAST"
-            ],
-            "domains": [
-              "HUMANITARIAN",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-7b3a8058f79a56f11d",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "POLITICAL",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-6e3f1a064b6e817fdd",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "MIDDLE EAST"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-f40888e4d0a3c45580",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-a12aa1754de927496a",
-            "shared_actors": [],
-            "shared_regions": [
-              "MIDDLE EAST"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-54195610a0187daac7",
-            "shared_actors": [],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "HUMANITARIAN",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-6225591395cd90c87a",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "INFRA",
-              "NUCLEAR",
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-da591494f9c8cff50a",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "INFRA",
-              "NUCLEAR",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-3d807506831f411af0",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-af8f754e60078ad1ce",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "MIDDLE EAST"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "NUCLEAR",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-4635fd935a7a37336d",
-            "shared_actors": [],
-            "shared_regions": [
-              "MIDDLE EAST"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-59d31a4c4ddf7900"
+          "anomaly-39867de0d26ca174",
+          "anomaly-962bbb6ca5d7894b"
         ],
-        "threat_score": 13,
-        "watch_priority": 35,
+        "threat_score": 12,
+        "watch_priority": 43,
         "audit": {
           "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
           "support_count": 1,
           "contradiction_count": 0,
           "independent_roots": 1,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-25T18:30:20Z"
+          "material_time_used_for_decay": "2026-09-26T15:26:52Z"
         }
       }
     ]
   },
   "early_warning_pressure": {
     "score": 100,
-    "claim_count": 48,
+    "claim_count": 47,
     "top_claims": [
       {
         "id": "claim-ddb28772ec8c980666",
@@ -4034,7 +4056,7 @@
           "recency": 81,
           "evidence_type": 79,
           "historical_reliability": 82,
-          "claim_maturity": 38
+          "claim_maturity": 39
         },
         "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
         "supporting_observation_ids": [
@@ -4236,6 +4258,18 @@
             ]
           },
           {
+            "claim_id": "claim-664cd19ca465fc2828",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "NUCLEAR"
+            ]
+          },
+          {
             "claim_id": "claim-f4afdd1329f51d1558",
             "shared_actors": [
               "IRAN"
@@ -4245,18 +4279,6 @@
             ],
             "domains": [
               "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-fab9f338e091950b60",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "WAR"
             ]
           }
         ],
@@ -4515,6 +4537,18 @@
             ]
           },
           {
+            "claim_id": "claim-664cd19ca465fc2828",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "NUCLEAR"
+            ]
+          },
+          {
             "claim_id": "claim-f4afdd1329f51d1558",
             "shared_actors": [
               "IRAN"
@@ -4524,18 +4558,6 @@
             ],
             "domains": [
               "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-fab9f338e091950b60",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "WAR"
             ]
           }
         ],
@@ -5750,7 +5772,7 @@
           "recency": 91,
           "evidence_type": 67,
           "historical_reliability": 79,
-          "claim_maturity": 36
+          "claim_maturity": 37
         },
         "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
         "supporting_observation_ids": [
@@ -6245,6 +6267,18 @@
             ]
           },
           {
+            "claim_id": "claim-664cd19ca465fc2828",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "NUCLEAR"
+            ]
+          },
+          {
             "claim_id": "claim-f4afdd1329f51d1558",
             "shared_actors": [
               "IRAN"
@@ -6254,18 +6288,6 @@
             ],
             "domains": [
               "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-fab9f338e091950b60",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "WAR"
             ]
           }
         ],
@@ -6326,7 +6348,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 91,
+          "recency": 90,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 37
@@ -6615,7 +6637,6 @@
           "8fe30a896d7f5ad6afab",
           "c63126eb1423f1a7b7a2",
           "2a99f8696587da5c1678",
-          "8c06bf663a70a4d8b67e",
           "997e752134d51650a673",
           "b07376db23fab4a3161d",
           "b7ba7bb06d4b6ca66781",
@@ -6664,7 +6685,6 @@
           "8fe30a896d7f5ad6afab",
           "c63126eb1423f1a7b7a2",
           "2a99f8696587da5c1678",
-          "8c06bf663a70a4d8b67e",
           "997e752134d51650a673",
           "b07376db23fab4a3161d",
           "b7ba7bb06d4b6ca66781",
@@ -6731,17 +6751,6 @@
           {
             "observation_id": "2a99f8696587da5c1678",
             "title": "Iran offers to reopen Strait of Hormuz if US ends blockade: ‘Golden opportunity’ - New York Post",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-22T15:16:00Z",
-            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbEU0LUw0UmdsbUt2SEZxby1LTUxPRGlrV0hqY1QtWFdaVVRpSUU4TmVLUU04bXJYWXpTZTJOSU41b1NNa0pjZ2puRkItS01mc1pWc1ZQa09henJlektibk1EdDNObUVmMjVQYmZWNkhGbTRRaFQyUHVwUm1rQVlwM0hSTnlwNTFKNEZhUGNLSEZUTmlWSDVZUFRZdnQtMXVsQU4teml6X0J1dDVtT2Q4emdVWXVkWTA?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "8c06bf663a70a4d8b67e",
-            "title": "Iran offers to reopen Strait of Hormuz if US ends blockade: ‘Golden opportunity’ - nypost.com",
             "source": "GDELT Global Discovery",
             "source_class": "discovery",
             "provenance_root": "gdelt_global",
@@ -7127,7 +7136,7 @@
         "watch_priority": 61,
         "audit": {
           "reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
-          "support_count": 16,
+          "support_count": 15,
           "contradiction_count": 0,
           "independent_roots": 1,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
@@ -7152,7 +7161,7 @@
           "7672b0c4c138d2b262cd"
         ],
         "first_seen": "2026-09-26T03:21:16Z",
-        "last_seen": "2026-09-26T15:20:18Z",
+        "last_seen": "2026-09-26T15:47:17Z",
         "material_time": "2026-09-26T06:53:00Z",
         "domains": [
           "HUMANITARIAN",
@@ -7173,7 +7182,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 70,
-          "recency": 99,
+          "recency": 98,
           "evidence_type": 40,
           "historical_reliability": 50,
           "claim_maturity": 36
@@ -7403,7 +7412,7 @@
     "great_power_direct_clash": 8,
     "alliance_entanglement": 15,
     "multi_theater_coupling": 9,
-    "nuclear_escalation": 38,
+    "nuclear_escalation": 41,
     "military_mobilization": 58,
     "economic_warfare": 100,
     "crisis_control_failure": 0,
@@ -7415,9 +7424,9 @@
     "multi_theater_coupling": 2,
     "nuclear_escalation": 9,
     "military_mobilization": 15,
-    "economic_warfare": 194,
+    "economic_warfare": 196,
     "crisis_control_failure": 0,
-    "hybrid_preparation": 46
+    "hybrid_preparation": 45
   },
   "formula": "Independent-provenance-capped claim contributions; verified and early-warning pressure remain separate.",
   "safeguard": "Republished stories sharing one provenance root cannot multiply pressure; speculative claims never enter Verified Pressure.",
@@ -7444,7 +7453,7 @@
         "4c389e2b4231dd0cc8d6"
       ],
       "first_seen": "2026-09-26T09:45:40Z",
-      "last_seen": "2026-09-26T15:20:18Z",
+      "last_seen": "2026-09-26T15:47:17Z",
       "material_time": "2026-09-26T12:38:46Z",
       "domains": [
         "INFRA",
@@ -7755,7 +7764,7 @@
         "9cbdf40afaca87a93355"
       ],
       "first_seen": "2026-09-26T14:46:59Z",
-      "last_seen": "2026-09-26T15:20:18Z",
+      "last_seen": "2026-09-26T15:47:17Z",
       "material_time": "2026-09-26T14:46:53Z",
       "domains": [
         "INFRA",
@@ -7771,7 +7780,7 @@
       ],
       "state": "CREDIBLE REPORT",
       "confidence": 72,
-      "confidence_direction": "UP",
+      "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 83,
         "independence": 52,
@@ -8470,7 +8479,7 @@
         "8d5b4c48906a2094490d"
       ],
       "first_seen": "2026-09-25T16:23:06Z",
-      "last_seen": "2026-09-26T15:20:18Z",
+      "last_seen": "2026-09-26T15:47:17Z",
       "material_time": "2026-09-25T15:43:59Z",
       "domains": [
         "ECONOMIC",
@@ -9756,7 +9765,7 @@
         "8e2d3d61ddb4255cebb0"
       ],
       "first_seen": "2026-09-25T02:19:57Z",
-      "last_seen": "2026-09-26T15:20:18Z",
+      "last_seen": "2026-09-26T15:47:17Z",
       "material_time": "2026-09-25T17:33:54Z",
       "domains": [
         "POLITICAL",
@@ -10288,7 +10297,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-62988ca62330eda7",
+        "anomaly-25bdc89d4b503754",
         "anomaly-809145fba81562f7"
       ],
       "threat_score": 15,
@@ -10573,7 +10582,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 79,
-        "recency": 85,
+        "recency": 84,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 38
@@ -10812,6 +10821,306 @@
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-24T21:57:34Z"
+      }
+    },
+    {
+      "id": "claim-35e8287e1e186df1ef",
+      "headline": "Zelensky sanctions more than 40 people involved in elections in Russian-occupied Ukraine",
+      "signature_tokens": [
+        "elections",
+        "involved",
+        "people",
+        "russian-occupied",
+        "sanctions",
+        "than",
+        "ukraine",
+        "zelensky"
+      ],
+      "observation_ids": [
+        "d3c16dc217c60c0408be"
+      ],
+      "first_seen": "2026-09-26T15:47:17Z",
+      "last_seen": "2026-09-26T15:47:17Z",
+      "material_time": "2026-09-26T15:26:52Z",
+      "domains": [
+        "ECONOMIC",
+        "POLITICAL"
+      ],
+      "regions": [
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "actors": [
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "state": "CREDIBLE REPORT",
+      "confidence": 63,
+      "confidence_direction": "NEW",
+      "confidence_components": {
+        "source_quality": 79,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 91,
+        "recency": 100,
+        "evidence_type": 67,
+        "historical_reliability": 79,
+        "claim_maturity": 35
+      },
+      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+      "supporting_observation_ids": [
+        "d3c16dc217c60c0408be"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 1,
+      "independent_provenance_count": 1,
+      "sources": [
+        "Kyiv Independent"
+      ],
+      "provenance_roots": [
+        "kyiv_independent"
+      ],
+      "evidence": [
+        {
+          "observation_id": "d3c16dc217c60c0408be",
+          "title": "Zelensky sanctions more than 40 people involved in elections in Russian-occupied Ukraine",
+          "source": "Kyiv Independent",
+          "source_class": "regional_local",
+          "provenance_root": "kyiv_independent",
+          "stance": "report",
+          "published": "2026-09-26T15:26:52Z",
+          "url": "https://kyivindependent.com/zelensky-sanctions-more-than-40-people-involved-in-elections-in-russian-occupied-ukraine",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Zelensky sanctions more than 40 people involved in elections in Russian-occupied Ukraine",
+        "plausible_explanations": [
+          "A genuine ECONOMIC/POLITICAL development involving RUSSIA, UKRAINE is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related ECONOMIC/POLITICAL indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-5864ef41bab32e4ffd",
+          "headline": "Tracking a Sanctioned Russian Vessel’s West African Odyssey",
+          "material_time": "2026-08-25T08:52:50Z",
+          "shared_domains": [
+            "ECONOMIC"
+          ],
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ]
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-2dd8d8676da99b2626",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-ddb28772ec8c980666",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-ab9d35524801c19134",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8b4542a6fdb7ba9c2e",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-76ce02e84975e8ee01",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-5d036678dfa62043f7",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-575c03559c735b0df5",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-4c82b5bc892668be90",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-86d7d3f055d049ac6d",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-d47e4cd2b83f09ff18",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-959f0c684e4b36f1f6",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-6d49e127db359331f2",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "SECURITY",
+            "WAR"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-39867de0d26ca174",
+        "anomaly-962bbb6ca5d7894b"
+      ],
+      "threat_score": 12,
+      "watch_priority": 43,
+      "audit": {
+        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "support_count": 1,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-26T15:26:52Z"
       }
     },
     {
@@ -11109,7 +11418,7 @@
         "4ee1e24126a94b92d818"
       ],
       "first_seen": "2026-09-25T17:20:32Z",
-      "last_seen": "2026-09-26T15:20:18Z",
+      "last_seen": "2026-09-26T15:47:17Z",
       "material_time": "2026-09-25T17:12:04Z",
       "domains": [
         "NUCLEAR"
@@ -11132,7 +11441,7 @@
         "recency": 91,
         "evidence_type": 79,
         "historical_reliability": 86,
-        "claim_maturity": 36
+        "claim_maturity": 37
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
@@ -11816,273 +12125,6 @@
         "independent_roots": 2,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-22T16:55:14Z"
-      }
-    },
-    {
-      "id": "claim-664cd19ca465fc2828",
-      "headline": "REPLAY: Trump defends Iran war, attacks ICC in UN speech",
-      "signature_tokens": [
-        "attacks",
-        "defends",
-        "icc",
-        "iran",
-        "replay",
-        "speech",
-        "trump",
-        "war"
-      ],
-      "observation_ids": [
-        "99cf33cf912520100bdb"
-      ],
-      "first_seen": "2026-09-22T16:21:02Z",
-      "last_seen": "2026-09-23T05:19:44Z",
-      "material_time": "2026-09-22T16:13:28Z",
-      "domains": [
-        "NUCLEAR"
-      ],
-      "regions": [
-        "IRAN"
-      ],
-      "actors": [
-        "IRAN"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 61,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 84,
-        "independence": 25,
-        "corroboration": 22,
-        "contradiction": 0,
-        "specificity": 75,
-        "recency": 70,
-        "evidence_type": 79,
-        "historical_reliability": 84,
-        "claim_maturity": 41
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "99cf33cf912520100bdb"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 1,
-      "independent_provenance_count": 1,
-      "sources": [
-        "France 24 World"
-      ],
-      "provenance_roots": [
-        "france24"
-      ],
-      "evidence": [
-        {
-          "observation_id": "99cf33cf912520100bdb",
-          "title": "REPLAY: Trump defends Iran war, attacks ICC in UN speech",
-          "source": "France 24 World",
-          "source_class": "established_media",
-          "provenance_root": "france24",
-          "stance": "speculation",
-          "published": "2026-09-22T16:13:28Z",
-          "url": "https://www.france24.com/en/video/20260922-replay-trump-defends-iran-war-attacks-icc-in-un-speech",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "REPLAY: Trump defends Iran war, attacks ICC in UN speech",
-        "plausible_explanations": [
-          "A genuine NUCLEAR development involving IRAN is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related NUCLEAR indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-45805a16542a0786bc",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-2942007ff1e1e3addd",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-df8fa91bdf00195a47",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-480cb6ba382f404aae",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-7b3a8058f79a56f11d",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-6e3f1a064b6e817fdd",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-f40888e4d0a3c45580",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-54195610a0187daac7",
-          "shared_actors": [],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "HUMANITARIAN",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-6225591395cd90c87a",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "NUCLEAR",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-da591494f9c8cff50a",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA",
-            "NUCLEAR",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-3d807506831f411af0",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-af8f754e60078ad1ce",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "NUCLEAR",
-            "WAR"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-59d31a4c4ddf7900"
-      ],
-      "threat_score": 17,
-      "watch_priority": 33,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 1,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-22T16:13:28Z"
       }
     },
     {
