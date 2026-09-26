@@ -1,30 +1,33 @@
 {
-  "generated_at": "2026-09-26T12:49:58Z",
+  "generated_at": "2026-09-26T13:19:28Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 39,
   "verified_pressure": {
     "score": 39,
-    "claim_count": 62,
+    "claim_count": 60,
     "top_claims": [
       {
-        "id": "claim-181c08191618986ed8",
-        "headline": "Trump reportedly rejects 7-day plan to reopen Strait of Hormuz",
+        "id": "claim-6225591395cd90c87a",
+        "headline": "Trump reportedly rejects Iran’s seven-day peace deal to reopen strait of Hormuz",
         "signature_tokens": [
-          "7-day",
+          "deal",
           "hormuz",
-          "plan",
+          "iran",
+          "peace",
           "rejects",
           "reopen",
           "reportedly",
+          "seven-day",
           "strait",
           "trump"
         ],
         "observation_ids": [
-          "d258bf2be0c493f60ad0",
+          "1a75b05114e6f15c6dca",
+          "f6281e1e3c83b6d3c112",
           "4c389e2b4231dd0cc8d6"
         ],
         "first_seen": "2026-09-26T09:45:40Z",
-        "last_seen": "2026-09-26T12:49:58Z",
+        "last_seen": "2026-09-26T13:19:28Z",
         "material_time": "2026-09-26T12:38:46Z",
         "domains": [
           "INFRA",
@@ -33,41 +36,40 @@
           "WAR"
         ],
         "regions": [
-          "IRAN",
-          "UNITED STATES"
+          "IRAN"
         ],
         "actors": [
-          "IRAN",
-          "UNITED STATES"
+          "IRAN"
         ],
         "state": "CREDIBLE REPORT",
-        "confidence": 74,
+        "confidence": 73,
         "confidence_direction": "UP",
         "confidence_components": {
-          "source_quality": 84,
+          "source_quality": 83,
           "independence": 52,
-          "corroboration": 52,
+          "corroboration": 55,
           "contradiction": 0,
-          "specificity": 85,
+          "specificity": 70,
           "recency": 100,
           "evidence_type": 79,
-          "historical_reliability": 84,
-          "claim_maturity": 46
+          "historical_reliability": 83,
+          "claim_maturity": 57
         },
         "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
         "supporting_observation_ids": [
-          "d258bf2be0c493f60ad0",
+          "1a75b05114e6f15c6dca",
+          "f6281e1e3c83b6d3c112",
           "4c389e2b4231dd0cc8d6"
         ],
         "contradictory_observation_ids": [],
         "source_count": 2,
         "independent_provenance_count": 2,
         "sources": [
-          "CBS News World",
+          "Al Jazeera English",
           "The Guardian World"
         ],
         "provenance_roots": [
-          "cbs_world",
+          "aljazeera",
           "guardian_world"
         ],
         "evidence": [
@@ -83,23 +85,34 @@
             "discovery_only": false
           },
           {
-            "observation_id": "d258bf2be0c493f60ad0",
-            "title": "Trump reportedly rejects 7-day plan to reopen Strait of Hormuz",
-            "source": "CBS News World",
+            "observation_id": "1a75b05114e6f15c6dca",
+            "title": "Trump reportedly rejects Iran’s seven-day ceasefire proposal. What’s next?",
+            "source": "Al Jazeera English",
             "source_class": "established_media",
-            "provenance_root": "cbs_world",
+            "provenance_root": "aljazeera",
             "stance": "speculation",
-            "published": "2026-09-26T12:32:41Z",
-            "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-strait-of-hormuz-7-day-proposal",
+            "published": "2026-09-26T09:28:19Z",
+            "url": "https://www.aljazeera.com/news/2026/9/26/trump-reportedly-rejects-irans-seven-day-ceasefire-proposal-whats-next?traffic_source=rss",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "f6281e1e3c83b6d3c112",
+            "title": "Trump ‘rejects’ Iran’s seven-day ceasefire proposal. What’s next?",
+            "source": "Al Jazeera English",
+            "source_class": "established_media",
+            "provenance_root": "aljazeera",
+            "stance": "speculation",
+            "published": "2026-09-26T09:28:19Z",
+            "url": "https://www.aljazeera.com/news/2026/9/26/trump-reportedly-rejects-irans-seven-day-ceasefire-proposal-whats-next?traffic_source=rss",
             "discovery_only": false
           }
         ],
         "state_affiliated_reporting": false,
         "discovery_only": false,
         "branch_analysis": {
-          "current_observation": "Trump reportedly rejects 7-day plan to reopen Strait of Hormuz",
+          "current_observation": "Trump reportedly rejects Iran’s seven-day peace deal to reopen strait of Hormuz",
           "plausible_explanations": [
-            "A genuine INFRA/NUCLEAR/POLITICAL development involving IRAN, UNITED STATES is unfolding as reported.",
+            "A genuine INFRA/NUCLEAR/POLITICAL development involving IRAN is unfolding as reported.",
             "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
             "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
           ],
@@ -119,73 +132,17 @@
         },
         "historical_matches": [
           {
-            "claim_id": "claim-c774e58742ead11dc6",
-            "headline": "Justice Department and FBI Seize Platforms Operated and Used by China State-Sponsored Hackers to Target U.S. Critical Infrastructure",
-            "material_time": "2026-08-26T12:00:00Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-685c7c00fd8defeb85",
-            "headline": "NOAA boosts weather data collection capabilities with new Mesonet contract",
-            "material_time": "2026-08-19T19:20:15Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-f2f896a8377745aae5",
-            "headline": "American tuna gets a boost: Increased bluefin tuna quotas mean more opportunities for U.S. fishermen",
-            "material_time": "2026-08-19T18:01:28Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-ab13de06ed03a68f0a",
-            "headline": "Chinese National Pleads Guilty to Trying to Obtain U.S. Military Equipment",
-            "material_time": "2026-08-10T12:00:00Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-a02fb9167c45d388fd",
-            "headline": "Department of Justice Files First Case in U.S. Alien Terrorist Removal Court to Deport Afghan Alien Who Supported Her Family’s Plans for Election-Day Shooting",
-            "material_time": "2026-07-30T12:00:00Z",
+            "claim_id": "claim-7bf080d5d0604d497d",
+            "headline": "Journalist targeted by Iran says U.K.'s crackdown on IRGC is \"the happiest day\"",
+            "material_time": "2026-07-17T20:56:00Z",
             "shared_domains": [
               "POLITICAL"
             ],
             "shared_actors": [
-              "UNITED STATES"
+              "IRAN"
             ],
             "shared_regions": [
-              "UNITED STATES"
+              "IRAN"
             ]
           }
         ],
@@ -230,19 +187,6 @@
             ]
           },
           {
-            "claim_id": "claim-4c82b5bc892668be90",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-480cb6ba382f404aae",
             "shared_actors": [
               "IRAN"
@@ -258,12 +202,10 @@
           {
             "claim_id": "claim-7b3a8058f79a56f11d",
             "shared_actors": [
-              "IRAN",
-              "UNITED STATES"
+              "IRAN"
             ],
             "shared_regions": [
-              "IRAN",
-              "UNITED STATES"
+              "IRAN"
             ],
             "domains": [
               "POLITICAL",
@@ -273,12 +215,10 @@
           {
             "claim_id": "claim-6e3f1a064b6e817fdd",
             "shared_actors": [
-              "IRAN",
-              "UNITED STATES"
+              "IRAN"
             ],
             "shared_regions": [
-              "IRAN",
-              "UNITED STATES"
+              "IRAN"
             ],
             "domains": [
               "INFRA",
@@ -289,12 +229,10 @@
           {
             "claim_id": "claim-f40888e4d0a3c45580",
             "shared_actors": [
-              "IRAN",
-              "UNITED STATES"
+              "IRAN"
             ],
             "shared_regions": [
-              "IRAN",
-              "UNITED STATES"
+              "IRAN"
             ],
             "domains": [
               "INFRA",
@@ -314,30 +252,6 @@
             ]
           },
           {
-            "claim_id": "claim-1c72a7046919ccd500",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "CYBER"
-            ]
-          },
-          {
-            "claim_id": "claim-7556566e059b77d93a",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "CYBER"
-            ]
-          },
-          {
             "claim_id": "claim-af8f754e60078ad1ce",
             "shared_actors": [
               "IRAN"
@@ -350,17 +264,54 @@
               "NUCLEAR",
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-0dd8dc2e439df1f87a",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-f4afdd1329f51d1558",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-7642f24d98b4c1fbb3",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-81048303330428c0",
-          "anomaly-156e874b86db7a5c"
+          "anomaly-c022a3e9b8f88da6"
         ],
-        "threat_score": 18,
-        "watch_priority": 59,
+        "threat_score": 17,
+        "watch_priority": 48,
         "audit": {
           "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 2,
+          "support_count": 3,
           "contradiction_count": 0,
           "independent_roots": 2,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
@@ -737,8 +688,8 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-a10807257cb6ce27",
-          "anomaly-d1166646f0ccaba4",
+          "anomaly-4d4806dde4ad6b38",
+          "anomaly-68faea1fef7ce80c",
           "anomaly-7432aecf758ab563"
         ],
         "threat_score": 17,
@@ -771,7 +722,7 @@
           "8d5b4c48906a2094490d"
         ],
         "first_seen": "2026-09-25T16:23:06Z",
-        "last_seen": "2026-09-26T12:49:58Z",
+        "last_seen": "2026-09-26T13:19:28Z",
         "material_time": "2026-09-25T15:43:59Z",
         "domains": [
           "ECONOMIC",
@@ -798,7 +749,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 92,
+          "recency": 91,
           "evidence_type": 79,
           "historical_reliability": 84,
           "claim_maturity": 36
@@ -998,7 +949,7 @@
             ]
           },
           {
-            "claim_id": "claim-181c08191618986ed8",
+            "claim_id": "claim-6225591395cd90c87a",
             "shared_actors": [
               "IRAN"
             ],
@@ -1026,7 +977,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-81048303330428c0",
+          "anomaly-c022a3e9b8f88da6",
           "anomaly-80bc8ed9d105ab9c",
           "anomaly-b3636cb9d3f73d97"
         ],
@@ -1593,21 +1544,6 @@
             ]
           },
           {
-            "claim_id": "claim-181c08191618986ed8",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "INFRA",
-              "NUCLEAR",
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-f3f400a2a0d4ece459",
             "shared_actors": [
               "ISRAEL"
@@ -1700,6 +1636,19 @@
             ],
             "shared_regions": [
               "UNITED STATES"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-2b0bbfb39360c0e162",
+            "shared_actors": [
+              "ISRAEL",
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
             ],
             "domains": [
               "WAR"
@@ -2024,7 +1973,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-81048303330428c0"
+          "anomaly-c022a3e9b8f88da6"
         ],
         "threat_score": 25,
         "watch_priority": 39,
@@ -2060,7 +2009,7 @@
           "8e2d3d61ddb4255cebb0"
         ],
         "first_seen": "2026-09-25T02:19:57Z",
-        "last_seen": "2026-09-26T12:49:58Z",
+        "last_seen": "2026-09-26T13:19:28Z",
         "material_time": "2026-09-25T17:33:54Z",
         "domains": [
           "POLITICAL",
@@ -2082,7 +2031,7 @@
           "corroboration": 82,
           "contradiction": 0,
           "specificity": 74,
-          "recency": 93,
+          "recency": 92,
           "evidence_type": 79,
           "historical_reliability": 69,
           "claim_maturity": 58
@@ -2308,7 +2257,7 @@
             ]
           },
           {
-            "claim_id": "claim-181c08191618986ed8",
+            "claim_id": "claim-6225591395cd90c87a",
             "shared_actors": [
               "IRAN"
             ],
@@ -2339,7 +2288,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-81048303330428c0"
+          "anomaly-c022a3e9b8f88da6"
         ],
         "threat_score": 25,
         "watch_priority": 39,
@@ -2516,6 +2465,17 @@
             ]
           },
           {
+            "claim_id": "claim-6d49e127db359331f2",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "SECURITY",
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-fe6685e3172c0926bb",
             "shared_actors": [],
             "shared_regions": [
@@ -2575,18 +2535,6 @@
               "EUROPE"
             ],
             "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-55b3e7d27136de8312",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "SECURITY",
-              "SPACE",
               "WAR"
             ]
           }
@@ -3075,7 +3023,7 @@
             ]
           },
           {
-            "claim_id": "claim-181c08191618986ed8",
+            "claim_id": "claim-6225591395cd90c87a",
             "shared_actors": [
               "IRAN"
             ],
@@ -3106,7 +3054,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-81048303330428c0"
+          "anomaly-c022a3e9b8f88da6"
         ],
         "threat_score": 15,
         "watch_priority": 37,
@@ -3316,7 +3264,7 @@
             ]
           },
           {
-            "claim_id": "claim-181c08191618986ed8",
+            "claim_id": "claim-6225591395cd90c87a",
             "shared_actors": [
               "IRAN"
             ],
@@ -3383,7 +3331,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-81048303330428c0"
+          "anomaly-c022a3e9b8f88da6"
         ],
         "threat_score": 13,
         "watch_priority": 35,
@@ -3413,7 +3361,7 @@
           "4ee1e24126a94b92d818"
         ],
         "first_seen": "2026-09-25T17:20:32Z",
-        "last_seen": "2026-09-26T12:49:58Z",
+        "last_seen": "2026-09-26T13:19:28Z",
         "material_time": "2026-09-25T17:12:04Z",
         "domains": [
           "NUCLEAR"
@@ -3433,7 +3381,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 93,
+          "recency": 92,
           "evidence_type": 79,
           "historical_reliability": 86,
           "claim_maturity": 36
@@ -3544,21 +3492,6 @@
             ]
           },
           {
-            "claim_id": "claim-181c08191618986ed8",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "INFRA",
-              "NUCLEAR",
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-1c72a7046919ccd500",
             "shared_actors": [
               "UNITED STATES"
@@ -3640,10 +3573,23 @@
               "POLITICAL",
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-944da7963b4a14b97a",
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ],
+            "domains": [
+              "NUCLEAR",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-156e874b86db7a5c"
+          "anomaly-48070e3187f8ffab"
         ],
         "threat_score": 17,
         "watch_priority": 33,
@@ -3961,8 +3907,8 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-a10807257cb6ce27",
-          "anomaly-d1166646f0ccaba4",
+          "anomaly-4d4806dde4ad6b38",
+          "anomaly-68faea1fef7ce80c",
           "anomaly-7432aecf758ab563"
         ],
         "threat_score": 7,
@@ -4149,7 +4095,7 @@
             ]
           },
           {
-            "claim_id": "claim-181c08191618986ed8",
+            "claim_id": "claim-6225591395cd90c87a",
             "shared_actors": [
               "IRAN"
             ],
@@ -4241,7 +4187,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-81048303330428c0"
+          "anomaly-c022a3e9b8f88da6"
         ],
         "threat_score": 6,
         "watch_priority": 55,
@@ -4427,7 +4373,7 @@
             ]
           },
           {
-            "claim_id": "claim-181c08191618986ed8",
+            "claim_id": "claim-6225591395cd90c87a",
             "shared_actors": [
               "IRAN"
             ],
@@ -4519,7 +4465,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-81048303330428c0"
+          "anomaly-c022a3e9b8f88da6"
         ],
         "threat_score": 6,
         "watch_priority": 55,
@@ -4791,6 +4737,19 @@
             ]
           },
           {
+            "claim_id": "claim-6d49e127db359331f2",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "SECURITY",
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-b066da503f27dfa53b",
             "shared_actors": [
               "RUSSIA",
@@ -4802,21 +4761,6 @@
             ],
             "domains": [
               "HUMANITARIAN",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-7cd35406081eab7d79",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "POLITICAL",
               "WAR"
             ]
           }
@@ -5027,6 +4971,19 @@
             ]
           },
           {
+            "claim_id": "claim-6d49e127db359331f2",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "SECURITY",
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-b066da503f27dfa53b",
             "shared_actors": [
               "RUSSIA"
@@ -5063,18 +5020,6 @@
             "domains": [
               "SECURITY",
               "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-5191e1c03894d7b230",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR"
             ]
           }
         ],
@@ -5289,6 +5234,19 @@
             ]
           },
           {
+            "claim_id": "claim-6d49e127db359331f2",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "SECURITY",
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-b066da503f27dfa53b",
             "shared_actors": [
               "RUSSIA"
@@ -5325,18 +5283,6 @@
             "domains": [
               "SECURITY",
               "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-5191e1c03894d7b230",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR"
             ]
           }
         ],
@@ -5679,9 +5625,9 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-a10807257cb6ce27",
-          "anomaly-d1166646f0ccaba4",
-          "anomaly-156e874b86db7a5c"
+          "anomaly-4d4806dde4ad6b38",
+          "anomaly-68faea1fef7ce80c",
+          "anomaly-48070e3187f8ffab"
         ],
         "threat_score": 2,
         "watch_priority": 72,
@@ -5905,6 +5851,19 @@
             ]
           },
           {
+            "claim_id": "claim-6d49e127db359331f2",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "SECURITY",
+              "WAR"
+            ]
+          },
+          {
             "claim_id": "claim-b066da503f27dfa53b",
             "shared_actors": [
               "RUSSIA",
@@ -5948,24 +5907,11 @@
               "SECURITY",
               "WAR"
             ]
-          },
-          {
-            "claim_id": "claim-b3ca8bcc3b30366d1d",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "SECURITY",
-              "WAR"
-            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-a10807257cb6ce27",
-          "anomaly-d1166646f0ccaba4"
+          "anomaly-4d4806dde4ad6b38",
+          "anomaly-68faea1fef7ce80c"
         ],
         "threat_score": 6,
         "watch_priority": 58,
@@ -6160,7 +6106,7 @@
             ]
           },
           {
-            "claim_id": "claim-181c08191618986ed8",
+            "claim_id": "claim-6225591395cd90c87a",
             "shared_actors": [
               "IRAN"
             ],
@@ -6557,8 +6503,8 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-a10807257cb6ce27",
-          "anomaly-d1166646f0ccaba4"
+          "anomaly-4d4806dde4ad6b38",
+          "anomaly-68faea1fef7ce80c"
         ],
         "threat_score": 2,
         "watch_priority": 58,
@@ -7034,14 +6980,12 @@
             ]
           },
           {
-            "claim_id": "claim-181c08191618986ed8",
+            "claim_id": "claim-6225591395cd90c87a",
             "shared_actors": [
-              "IRAN",
-              "UNITED STATES"
+              "IRAN"
             ],
             "shared_regions": [
-              "IRAN",
-              "UNITED STATES"
+              "IRAN"
             ],
             "domains": [
               "INFRA",
@@ -7090,8 +7034,8 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-81048303330428c0",
-          "anomaly-156e874b86db7a5c"
+          "anomaly-c022a3e9b8f88da6",
+          "anomaly-48070e3187f8ffab"
         ],
         "threat_score": 2,
         "watch_priority": 61,
@@ -7122,7 +7066,7 @@
           "7672b0c4c138d2b262cd"
         ],
         "first_seen": "2026-09-26T03:21:16Z",
-        "last_seen": "2026-09-26T12:49:58Z",
+        "last_seen": "2026-09-26T13:19:28Z",
         "material_time": "2026-09-26T06:53:00Z",
         "domains": [
           "HUMANITARIAN",
@@ -7293,7 +7237,7 @@
             ]
           },
           {
-            "claim_id": "claim-181c08191618986ed8",
+            "claim_id": "claim-6225591395cd90c87a",
             "shared_actors": [],
             "shared_regions": [
               "IRAN"
@@ -7372,10 +7316,10 @@
     "alliance_entanglement": 16,
     "multi_theater_coupling": 9,
     "nuclear_escalation": 38,
-    "military_mobilization": 57,
+    "military_mobilization": 58,
     "economic_warfare": 100,
     "crisis_control_failure": 0,
-    "hybrid_preparation": 72
+    "hybrid_preparation": 71
   },
   "vector_claim_counts": {
     "great_power_direct_clash": 1,
@@ -7383,7 +7327,7 @@
     "multi_theater_coupling": 2,
     "nuclear_escalation": 9,
     "military_mobilization": 15,
-    "economic_warfare": 200,
+    "economic_warfare": 197,
     "crisis_control_failure": 0,
     "hybrid_preparation": 48
   },
@@ -7392,24 +7336,27 @@
   "disclaimer": "Machine-generated public-source warning indicators, not a probability of world war or an official warning.",
   "top_claims": [
     {
-      "id": "claim-181c08191618986ed8",
-      "headline": "Trump reportedly rejects 7-day plan to reopen Strait of Hormuz",
+      "id": "claim-6225591395cd90c87a",
+      "headline": "Trump reportedly rejects Iran’s seven-day peace deal to reopen strait of Hormuz",
       "signature_tokens": [
-        "7-day",
+        "deal",
         "hormuz",
-        "plan",
+        "iran",
+        "peace",
         "rejects",
         "reopen",
         "reportedly",
+        "seven-day",
         "strait",
         "trump"
       ],
       "observation_ids": [
-        "d258bf2be0c493f60ad0",
+        "1a75b05114e6f15c6dca",
+        "f6281e1e3c83b6d3c112",
         "4c389e2b4231dd0cc8d6"
       ],
       "first_seen": "2026-09-26T09:45:40Z",
-      "last_seen": "2026-09-26T12:49:58Z",
+      "last_seen": "2026-09-26T13:19:28Z",
       "material_time": "2026-09-26T12:38:46Z",
       "domains": [
         "INFRA",
@@ -7418,41 +7365,40 @@
         "WAR"
       ],
       "regions": [
-        "IRAN",
-        "UNITED STATES"
+        "IRAN"
       ],
       "actors": [
-        "IRAN",
-        "UNITED STATES"
+        "IRAN"
       ],
       "state": "CREDIBLE REPORT",
-      "confidence": 74,
+      "confidence": 73,
       "confidence_direction": "UP",
       "confidence_components": {
-        "source_quality": 84,
+        "source_quality": 83,
         "independence": 52,
-        "corroboration": 52,
+        "corroboration": 55,
         "contradiction": 0,
-        "specificity": 85,
+        "specificity": 70,
         "recency": 100,
         "evidence_type": 79,
-        "historical_reliability": 84,
-        "claim_maturity": 46
+        "historical_reliability": 83,
+        "claim_maturity": 57
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
-        "d258bf2be0c493f60ad0",
+        "1a75b05114e6f15c6dca",
+        "f6281e1e3c83b6d3c112",
         "4c389e2b4231dd0cc8d6"
       ],
       "contradictory_observation_ids": [],
       "source_count": 2,
       "independent_provenance_count": 2,
       "sources": [
-        "CBS News World",
+        "Al Jazeera English",
         "The Guardian World"
       ],
       "provenance_roots": [
-        "cbs_world",
+        "aljazeera",
         "guardian_world"
       ],
       "evidence": [
@@ -7468,23 +7414,34 @@
           "discovery_only": false
         },
         {
-          "observation_id": "d258bf2be0c493f60ad0",
-          "title": "Trump reportedly rejects 7-day plan to reopen Strait of Hormuz",
-          "source": "CBS News World",
+          "observation_id": "1a75b05114e6f15c6dca",
+          "title": "Trump reportedly rejects Iran’s seven-day ceasefire proposal. What’s next?",
+          "source": "Al Jazeera English",
           "source_class": "established_media",
-          "provenance_root": "cbs_world",
+          "provenance_root": "aljazeera",
           "stance": "speculation",
-          "published": "2026-09-26T12:32:41Z",
-          "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-strait-of-hormuz-7-day-proposal",
+          "published": "2026-09-26T09:28:19Z",
+          "url": "https://www.aljazeera.com/news/2026/9/26/trump-reportedly-rejects-irans-seven-day-ceasefire-proposal-whats-next?traffic_source=rss",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "f6281e1e3c83b6d3c112",
+          "title": "Trump ‘rejects’ Iran’s seven-day ceasefire proposal. What’s next?",
+          "source": "Al Jazeera English",
+          "source_class": "established_media",
+          "provenance_root": "aljazeera",
+          "stance": "speculation",
+          "published": "2026-09-26T09:28:19Z",
+          "url": "https://www.aljazeera.com/news/2026/9/26/trump-reportedly-rejects-irans-seven-day-ceasefire-proposal-whats-next?traffic_source=rss",
           "discovery_only": false
         }
       ],
       "state_affiliated_reporting": false,
       "discovery_only": false,
       "branch_analysis": {
-        "current_observation": "Trump reportedly rejects 7-day plan to reopen Strait of Hormuz",
+        "current_observation": "Trump reportedly rejects Iran’s seven-day peace deal to reopen strait of Hormuz",
         "plausible_explanations": [
-          "A genuine INFRA/NUCLEAR/POLITICAL development involving IRAN, UNITED STATES is unfolding as reported.",
+          "A genuine INFRA/NUCLEAR/POLITICAL development involving IRAN is unfolding as reported.",
           "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
           "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
         ],
@@ -7504,73 +7461,17 @@
       },
       "historical_matches": [
         {
-          "claim_id": "claim-c774e58742ead11dc6",
-          "headline": "Justice Department and FBI Seize Platforms Operated and Used by China State-Sponsored Hackers to Target U.S. Critical Infrastructure",
-          "material_time": "2026-08-26T12:00:00Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-685c7c00fd8defeb85",
-          "headline": "NOAA boosts weather data collection capabilities with new Mesonet contract",
-          "material_time": "2026-08-19T19:20:15Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-f2f896a8377745aae5",
-          "headline": "American tuna gets a boost: Increased bluefin tuna quotas mean more opportunities for U.S. fishermen",
-          "material_time": "2026-08-19T18:01:28Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-ab13de06ed03a68f0a",
-          "headline": "Chinese National Pleads Guilty to Trying to Obtain U.S. Military Equipment",
-          "material_time": "2026-08-10T12:00:00Z",
-          "shared_domains": [
-            "WAR"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-a02fb9167c45d388fd",
-          "headline": "Department of Justice Files First Case in U.S. Alien Terrorist Removal Court to Deport Afghan Alien Who Supported Her Family’s Plans for Election-Day Shooting",
-          "material_time": "2026-07-30T12:00:00Z",
+          "claim_id": "claim-7bf080d5d0604d497d",
+          "headline": "Journalist targeted by Iran says U.K.'s crackdown on IRGC is \"the happiest day\"",
+          "material_time": "2026-07-17T20:56:00Z",
           "shared_domains": [
             "POLITICAL"
           ],
           "shared_actors": [
-            "UNITED STATES"
+            "IRAN"
           ],
           "shared_regions": [
-            "UNITED STATES"
+            "IRAN"
           ]
         }
       ],
@@ -7615,19 +7516,6 @@
           ]
         },
         {
-          "claim_id": "claim-4c82b5bc892668be90",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-480cb6ba382f404aae",
           "shared_actors": [
             "IRAN"
@@ -7643,12 +7531,10 @@
         {
           "claim_id": "claim-7b3a8058f79a56f11d",
           "shared_actors": [
-            "IRAN",
-            "UNITED STATES"
+            "IRAN"
           ],
           "shared_regions": [
-            "IRAN",
-            "UNITED STATES"
+            "IRAN"
           ],
           "domains": [
             "POLITICAL",
@@ -7658,12 +7544,10 @@
         {
           "claim_id": "claim-6e3f1a064b6e817fdd",
           "shared_actors": [
-            "IRAN",
-            "UNITED STATES"
+            "IRAN"
           ],
           "shared_regions": [
-            "IRAN",
-            "UNITED STATES"
+            "IRAN"
           ],
           "domains": [
             "INFRA",
@@ -7674,12 +7558,10 @@
         {
           "claim_id": "claim-f40888e4d0a3c45580",
           "shared_actors": [
-            "IRAN",
-            "UNITED STATES"
+            "IRAN"
           ],
           "shared_regions": [
-            "IRAN",
-            "UNITED STATES"
+            "IRAN"
           ],
           "domains": [
             "INFRA",
@@ -7699,30 +7581,6 @@
           ]
         },
         {
-          "claim_id": "claim-1c72a7046919ccd500",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "CYBER"
-          ]
-        },
-        {
-          "claim_id": "claim-7556566e059b77d93a",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "CYBER"
-          ]
-        },
-        {
           "claim_id": "claim-af8f754e60078ad1ce",
           "shared_actors": [
             "IRAN"
@@ -7735,17 +7593,54 @@
             "NUCLEAR",
             "WAR"
           ]
+        },
+        {
+          "claim_id": "claim-0dd8dc2e439df1f87a",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f4afdd1329f51d1558",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
+        },
+        {
+          "claim_id": "claim-7642f24d98b4c1fbb3",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-81048303330428c0",
-        "anomaly-156e874b86db7a5c"
+        "anomaly-c022a3e9b8f88da6"
       ],
-      "threat_score": 18,
-      "watch_priority": 59,
+      "threat_score": 17,
+      "watch_priority": 48,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 2,
+        "support_count": 3,
         "contradiction_count": 0,
         "independent_roots": 2,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
@@ -8122,8 +8017,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-a10807257cb6ce27",
-        "anomaly-d1166646f0ccaba4",
+        "anomaly-4d4806dde4ad6b38",
+        "anomaly-68faea1fef7ce80c",
         "anomaly-7432aecf758ab563"
       ],
       "threat_score": 17,
@@ -8156,7 +8051,7 @@
         "8d5b4c48906a2094490d"
       ],
       "first_seen": "2026-09-25T16:23:06Z",
-      "last_seen": "2026-09-26T12:49:58Z",
+      "last_seen": "2026-09-26T13:19:28Z",
       "material_time": "2026-09-25T15:43:59Z",
       "domains": [
         "ECONOMIC",
@@ -8183,7 +8078,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 92,
+        "recency": 91,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 36
@@ -8383,7 +8278,7 @@
           ]
         },
         {
-          "claim_id": "claim-181c08191618986ed8",
+          "claim_id": "claim-6225591395cd90c87a",
           "shared_actors": [
             "IRAN"
           ],
@@ -8411,7 +8306,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-81048303330428c0",
+        "anomaly-c022a3e9b8f88da6",
         "anomaly-80bc8ed9d105ab9c",
         "anomaly-b3636cb9d3f73d97"
       ],
@@ -8978,21 +8873,6 @@
           ]
         },
         {
-          "claim_id": "claim-181c08191618986ed8",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "INFRA",
-            "NUCLEAR",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-f3f400a2a0d4ece459",
           "shared_actors": [
             "ISRAEL"
@@ -9085,6 +8965,19 @@
           ],
           "shared_regions": [
             "UNITED STATES"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-2b0bbfb39360c0e162",
+          "shared_actors": [
+            "ISRAEL",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
           ],
           "domains": [
             "WAR"
@@ -9409,7 +9302,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-81048303330428c0"
+        "anomaly-c022a3e9b8f88da6"
       ],
       "threat_score": 25,
       "watch_priority": 39,
@@ -9445,7 +9338,7 @@
         "8e2d3d61ddb4255cebb0"
       ],
       "first_seen": "2026-09-25T02:19:57Z",
-      "last_seen": "2026-09-26T12:49:58Z",
+      "last_seen": "2026-09-26T13:19:28Z",
       "material_time": "2026-09-25T17:33:54Z",
       "domains": [
         "POLITICAL",
@@ -9467,7 +9360,7 @@
         "corroboration": 82,
         "contradiction": 0,
         "specificity": 74,
-        "recency": 93,
+        "recency": 92,
         "evidence_type": 79,
         "historical_reliability": 69,
         "claim_maturity": 58
@@ -9693,7 +9586,7 @@
           ]
         },
         {
-          "claim_id": "claim-181c08191618986ed8",
+          "claim_id": "claim-6225591395cd90c87a",
           "shared_actors": [
             "IRAN"
           ],
@@ -9724,7 +9617,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-81048303330428c0"
+        "anomaly-c022a3e9b8f88da6"
       ],
       "threat_score": 25,
       "watch_priority": 39,
@@ -9901,6 +9794,17 @@
           ]
         },
         {
+          "claim_id": "claim-6d49e127db359331f2",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-fe6685e3172c0926bb",
           "shared_actors": [],
           "shared_regions": [
@@ -9960,18 +9864,6 @@
             "EUROPE"
           ],
           "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-55b3e7d27136de8312",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "SECURITY",
-            "SPACE",
             "WAR"
           ]
         }
@@ -10460,7 +10352,7 @@
           ]
         },
         {
-          "claim_id": "claim-181c08191618986ed8",
+          "claim_id": "claim-6225591395cd90c87a",
           "shared_actors": [
             "IRAN"
           ],
@@ -10491,7 +10383,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-81048303330428c0"
+        "anomaly-c022a3e9b8f88da6"
       ],
       "threat_score": 15,
       "watch_priority": 37,
@@ -10701,7 +10593,7 @@
           ]
         },
         {
-          "claim_id": "claim-181c08191618986ed8",
+          "claim_id": "claim-6225591395cd90c87a",
           "shared_actors": [
             "IRAN"
           ],
@@ -10768,7 +10660,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-81048303330428c0"
+        "anomaly-c022a3e9b8f88da6"
       ],
       "threat_score": 13,
       "watch_priority": 35,
@@ -10798,7 +10690,7 @@
         "4ee1e24126a94b92d818"
       ],
       "first_seen": "2026-09-25T17:20:32Z",
-      "last_seen": "2026-09-26T12:49:58Z",
+      "last_seen": "2026-09-26T13:19:28Z",
       "material_time": "2026-09-25T17:12:04Z",
       "domains": [
         "NUCLEAR"
@@ -10818,7 +10710,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 93,
+        "recency": 92,
         "evidence_type": 79,
         "historical_reliability": 86,
         "claim_maturity": 36
@@ -10929,21 +10821,6 @@
           ]
         },
         {
-          "claim_id": "claim-181c08191618986ed8",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "INFRA",
-            "NUCLEAR",
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-1c72a7046919ccd500",
           "shared_actors": [
             "UNITED STATES"
@@ -11025,10 +10902,23 @@
             "POLITICAL",
             "WAR"
           ]
+        },
+        {
+          "claim_id": "claim-944da7963b4a14b97a",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "NUCLEAR",
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-156e874b86db7a5c"
+        "anomaly-48070e3187f8ffab"
       ],
       "threat_score": 17,
       "watch_priority": 33,
@@ -11495,8 +11385,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-a10807257cb6ce27",
-        "anomaly-d1166646f0ccaba4"
+        "anomaly-4d4806dde4ad6b38",
+        "anomaly-68faea1fef7ce80c"
       ],
       "threat_score": 12,
       "watch_priority": 43,
@@ -11707,7 +11597,7 @@
           ]
         },
         {
-          "claim_id": "claim-181c08191618986ed8",
+          "claim_id": "claim-6225591395cd90c87a",
           "shared_actors": [
             "IRAN"
           ],
@@ -11762,7 +11652,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-81048303330428c0"
+        "anomaly-c022a3e9b8f88da6"
       ],
       "threat_score": 17,
       "watch_priority": 33,
@@ -11825,7 +11715,7 @@
         "recency": 70,
         "evidence_type": 79,
         "historical_reliability": 94,
-        "claim_maturity": 41
+        "claim_maturity": 42
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
@@ -11997,7 +11887,7 @@
           ]
         },
         {
-          "claim_id": "claim-181c08191618986ed8",
+          "claim_id": "claim-6225591395cd90c87a",
           "shared_actors": [
             "IRAN"
           ],
@@ -12284,7 +12174,7 @@
           ]
         },
         {
-          "claim_id": "claim-181c08191618986ed8",
+          "claim_id": "claim-6225591395cd90c87a",
           "shared_actors": [
             "IRAN"
           ],
