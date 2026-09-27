@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-27T20:46:01Z",
+  "generated_at": "2026-09-27T21:20:29Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 37,
   "verified_pressure": {
     "score": 37,
-    "claim_count": 45,
+    "claim_count": 46,
     "top_claims": [
       {
         "id": "claim-6fe34e676f1123feae",
@@ -27,11 +27,12 @@
           "e321ebfa9f7044f6aae1",
           "736c0e320b978038c04a",
           "0e3621f47066f1fad91f",
-          "d71b82de0d5b29f029a8"
+          "d71b82de0d5b29f029a8",
+          "da2df878232f260800f7"
         ],
         "first_seen": "2026-09-26T14:46:59Z",
-        "last_seen": "2026-09-27T20:46:01Z",
-        "material_time": "2026-09-27T06:34:43Z",
+        "last_seen": "2026-09-27T21:20:29Z",
+        "material_time": "2026-09-27T12:45:00Z",
         "domains": [
           "INFRA",
           "NUCLEAR",
@@ -54,8 +55,8 @@
           "independence": 79,
           "corroboration": 82,
           "contradiction": 0,
-          "specificity": 66,
-          "recency": 95,
+          "specificity": 65,
+          "recency": 99,
           "evidence_type": 79,
           "historical_reliability": 85,
           "claim_maturity": 58
@@ -68,10 +69,11 @@
           "e321ebfa9f7044f6aae1",
           "736c0e320b978038c04a",
           "0e3621f47066f1fad91f",
-          "d71b82de0d5b29f029a8"
+          "d71b82de0d5b29f029a8",
+          "da2df878232f260800f7"
         ],
         "contradictory_observation_ids": [],
-        "source_count": 7,
+        "source_count": 8,
         "independent_provenance_count": 3,
         "sources": [
           "Al Jazeera English",
@@ -79,6 +81,7 @@
           "The Guardian World",
           "cp24.com",
           "fox13now.com",
+          "jamaicantimes.com",
           "krgv.com",
           "texarkanagazette.com"
         ],
@@ -88,10 +91,22 @@
           "cp24.com",
           "fox13now.com",
           "guardian_world",
+          "jamaicantimes.com",
           "krgv.com",
           "texarkanagazette.com"
         ],
         "evidence": [
+          {
+            "observation_id": "da2df878232f260800f7",
+            "title": "Trump Rejects Iran Plan To Reopen Strait Of Hormuz",
+            "source": "jamaicantimes.com",
+            "source_class": "low_confidence",
+            "provenance_root": "jamaicantimes.com",
+            "stance": "report",
+            "published": "2026-09-27T12:45:00Z",
+            "url": "http://www.jamaicantimes.com/news/279333708/trump-rejects-iran-plan-to-reopen-strait-of-hormuz",
+            "discovery_only": true
+          },
           {
             "observation_id": "d71b82de0d5b29f029a8",
             "title": "Trump rejects Iran’s seven-day peace deal to reopen strait of Hormuz",
@@ -195,6 +210,18 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-8210e0f0e5ba7084f3",
+            "headline": "Strait of Hormuz Tanker Transits Up But Still Below Pre–War Levels",
+            "material_time": "2026-08-28T21:20:26Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "IRAN"
+            ]
+          },
+          {
             "claim_id": "claim-d747f7f074dd147630",
             "headline": "USNI News Western Pacific Pulse: Aug. 28, 2026",
             "material_time": "2026-08-28T18:18:39Z",
@@ -234,18 +261,6 @@
             "claim_id": "claim-c774e58742ead11dc6",
             "headline": "Justice Department and FBI Seize Platforms Operated and Used by China State-Sponsored Hackers to Target U.S. Critical Infrastructure",
             "material_time": "2026-08-26T12:00:00Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": []
-          },
-          {
-            "claim_id": "claim-685c7c00fd8defeb85",
-            "headline": "NOAA boosts weather data collection capabilities with new Mesonet contract",
-            "material_time": "2026-08-19T19:20:15Z",
             "shared_domains": [
               "INFRA"
             ],
@@ -418,11 +433,11 @@
         "watch_priority": 60,
         "audit": {
           "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-          "support_count": 7,
+          "support_count": 8,
           "contradiction_count": 0,
           "independent_roots": 3,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-27T06:34:43Z"
+          "material_time_used_for_decay": "2026-09-27T12:45:00Z"
         }
       },
       {
@@ -550,6 +565,18 @@
           "contradictory_evidence_present": false
         },
         "historical_matches": [
+          {
+            "claim_id": "claim-8210e0f0e5ba7084f3",
+            "headline": "Strait of Hormuz Tanker Transits Up But Still Below Pre–War Levels",
+            "material_time": "2026-08-28T21:20:26Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "IRAN"
+            ]
+          },
           {
             "claim_id": "claim-7bf080d5d0604d497d",
             "headline": "Journalist targeted by Iran says U.K.'s crackdown on IRGC is \"the happiest day\"",
@@ -726,7 +753,7 @@
           "anomaly-d20ceeadd752ebf3"
         ],
         "threat_score": 17,
-        "watch_priority": 47,
+        "watch_priority": 49,
         "audit": {
           "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
           "support_count": 3,
@@ -960,19 +987,6 @@
             ]
           },
           {
-            "claim_id": "claim-3255efa7f65ee85bd5",
-            "shared_actors": [
-              "NATO"
-            ],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-989145b34a34dc9ab4",
             "shared_actors": [
               "RUSSIA",
@@ -1118,6 +1132,22 @@
               "HUMANITARIAN",
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-0577bbeca24d7a8f20",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "SPACE",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
@@ -1237,6 +1267,18 @@
           "contradictory_evidence_present": false
         },
         "historical_matches": [
+          {
+            "claim_id": "claim-8210e0f0e5ba7084f3",
+            "headline": "Strait of Hormuz Tanker Transits Up But Still Below Pre–War Levels",
+            "material_time": "2026-08-28T21:20:26Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "IRAN"
+            ]
+          },
           {
             "claim_id": "claim-d555e4d2e467f5fc66",
             "headline": "Massachusetts Man Convicted of Violating U.S. Sanctions Against Iran",
@@ -1423,7 +1465,7 @@
           "anomaly-25a1100ebd445210"
         ],
         "threat_score": 14,
-        "watch_priority": 70,
+        "watch_priority": 72,
         "audit": {
           "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
           "support_count": 1,
@@ -1449,7 +1491,7 @@
           "f4810f4464c3f9d03204"
         ],
         "first_seen": "2026-09-27T16:21:52Z",
-        "last_seen": "2026-09-27T20:46:01Z",
+        "last_seen": "2026-09-27T21:20:29Z",
         "material_time": "2026-09-27T17:46:04Z",
         "domains": [
           "NUCLEAR",
@@ -1751,7 +1793,7 @@
           "0078c17bab336b278f47"
         ],
         "first_seen": "2026-09-27T08:47:18Z",
-        "last_seen": "2026-09-27T20:46:01Z",
+        "last_seen": "2026-09-27T21:20:29Z",
         "material_time": "2026-09-27T08:36:49Z",
         "domains": [
           "ECONOMIC",
@@ -1775,7 +1817,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 78,
-          "recency": 97,
+          "recency": 96,
           "evidence_type": 79,
           "historical_reliability": 84,
           "claim_maturity": 36
@@ -1857,17 +1899,6 @@
               "UKRAINE"
             ],
             "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-3255efa7f65ee85bd5",
-            "shared_actors": [
-              "NATO"
-            ],
-            "shared_regions": [],
-            "domains": [
-              "POLITICAL",
               "WAR"
             ]
           },
@@ -2012,6 +2043,22 @@
               "HUMANITARIAN",
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-0577bbeca24d7a8f20",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "SPACE",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
@@ -2075,7 +2122,7 @@
           "corroboration": 58,
           "contradiction": 0,
           "specificity": 74,
-          "recency": 83,
+          "recency": 82,
           "evidence_type": 79,
           "historical_reliability": 88,
           "claim_maturity": 71
@@ -2168,6 +2215,18 @@
           "contradictory_evidence_present": false
         },
         "historical_matches": [
+          {
+            "claim_id": "claim-8210e0f0e5ba7084f3",
+            "headline": "Strait of Hormuz Tanker Transits Up But Still Below Pre–War Levels",
+            "material_time": "2026-08-28T21:20:26Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "IRAN"
+            ]
+          },
           {
             "claim_id": "claim-7bf080d5d0604d497d",
             "headline": "Journalist targeted by Iran says U.K.'s crackdown on IRGC is \"the happiest day\"",
@@ -2339,7 +2398,7 @@
           "anomaly-d20ceeadd752ebf3"
         ],
         "threat_score": 24,
-        "watch_priority": 39,
+        "watch_priority": 41,
         "audit": {
           "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
           "support_count": 4,
@@ -2372,7 +2431,7 @@
           "8e2d3d61ddb4255cebb0"
         ],
         "first_seen": "2026-09-25T02:19:57Z",
-        "last_seen": "2026-09-27T20:46:01Z",
+        "last_seen": "2026-09-27T21:20:29Z",
         "material_time": "2026-09-25T17:33:54Z",
         "domains": [
           "POLITICAL",
@@ -2394,7 +2453,7 @@
           "corroboration": 82,
           "contradiction": 0,
           "specificity": 74,
-          "recency": 82,
+          "recency": 81,
           "evidence_type": 79,
           "historical_reliability": 69,
           "claim_maturity": 60
@@ -2477,6 +2536,18 @@
           "contradictory_evidence_present": false
         },
         "historical_matches": [
+          {
+            "claim_id": "claim-8210e0f0e5ba7084f3",
+            "headline": "Strait of Hormuz Tanker Transits Up But Still Below Pre–War Levels",
+            "material_time": "2026-08-28T21:20:26Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "IRAN"
+            ]
+          },
           {
             "claim_id": "claim-7bf080d5d0604d497d",
             "headline": "Journalist targeted by Iran says U.K.'s crackdown on IRGC is \"the happiest day\"",
@@ -2656,7 +2727,7 @@
           "anomaly-d20ceeadd752ebf3"
         ],
         "threat_score": 25,
-        "watch_priority": 39,
+        "watch_priority": 41,
         "audit": {
           "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
           "support_count": 3,
@@ -2690,7 +2761,7 @@
           "5e51c8c94239bc8c4473"
         ],
         "first_seen": "2026-09-27T15:20:31Z",
-        "last_seen": "2026-09-27T20:46:01Z",
+        "last_seen": "2026-09-27T21:20:29Z",
         "material_time": "2026-09-27T16:55:20Z",
         "domains": [
           "ECONOMIC",
@@ -2849,19 +2920,6 @@
             ]
           },
           {
-            "claim_id": "claim-3255efa7f65ee85bd5",
-            "shared_actors": [
-              "NATO"
-            ],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-989145b34a34dc9ab4",
             "shared_actors": [
               "RUSSIA"
@@ -2986,6 +3044,20 @@
             ],
             "domains": [
               "HUMANITARIAN",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-0577bbeca24d7a8f20",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA",
+              "SPACE",
               "WAR"
             ]
           }
@@ -3115,17 +3187,6 @@
         ],
         "cross_domain_links": [
           {
-            "claim_id": "claim-3255efa7f65ee85bd5",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-8b4542a6fdb7ba9c2e",
             "shared_actors": [],
             "shared_regions": [
@@ -3237,6 +3298,17 @@
           },
           {
             "claim_id": "claim-0da6d8f10f4fb66df2",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-cb58619cf9290263de",
             "shared_actors": [],
             "shared_regions": [
               "EUROPE"
@@ -4100,7 +4172,7 @@
           "recency": 70,
           "evidence_type": 79,
           "historical_reliability": 82,
-          "claim_maturity": 41
+          "claim_maturity": 42
         },
         "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
         "supporting_observation_ids": [
@@ -4779,17 +4851,6 @@
             ]
           },
           {
-            "claim_id": "claim-3255efa7f65ee85bd5",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-989145b34a34dc9ab4",
             "shared_actors": [
               "RUSSIA",
@@ -4929,6 +4990,21 @@
             "domains": [
               "INFRA",
               "SPACE",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-7cd35406081eab7d79",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "POLITICAL",
               "WAR"
             ]
           }
@@ -5377,17 +5453,6 @@
             ]
           },
           {
-            "claim_id": "claim-3255efa7f65ee85bd5",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-989145b34a34dc9ab4",
             "shared_actors": [
               "RUSSIA",
@@ -5530,6 +5595,22 @@
               "HUMANITARIAN",
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-0577bbeca24d7a8f20",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "SPACE",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
@@ -5564,7 +5645,7 @@
           "4e66990e3d0b1382ef35"
         ],
         "first_seen": "2026-09-25T21:47:20Z",
-        "last_seen": "2026-09-27T20:46:01Z",
+        "last_seen": "2026-09-27T21:20:29Z",
         "material_time": "2026-09-25T21:41:07Z",
         "domains": [
           "CYBER"
@@ -5748,19 +5829,6 @@
         "historical_matches": [],
         "cross_domain_links": [
           {
-            "claim_id": "claim-3255efa7f65ee85bd5",
-            "shared_actors": [
-              "NATO"
-            ],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-989145b34a34dc9ab4",
             "shared_actors": [
               "RUSSIA",
@@ -5928,6 +5996,20 @@
               "SECURITY",
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-6d49e127db359331f2",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "EUROPE",
+              "RUSSIA"
+            ],
+            "domains": [
+              "SECURITY",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
@@ -5963,7 +6045,7 @@
           "f2ac30fe56165fad1f08"
         ],
         "first_seen": "2026-09-27T17:20:24Z",
-        "last_seen": "2026-09-27T20:46:01Z",
+        "last_seen": "2026-09-27T21:20:29Z",
         "material_time": "2026-09-27T17:00:04Z",
         "domains": [
           "ECONOMIC",
@@ -6041,6 +6123,18 @@
           "contradictory_evidence_present": false
         },
         "historical_matches": [
+          {
+            "claim_id": "claim-8210e0f0e5ba7084f3",
+            "headline": "Strait of Hormuz Tanker Transits Up But Still Below Pre–War Levels",
+            "material_time": "2026-08-28T21:20:26Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "IRAN"
+            ]
+          },
           {
             "claim_id": "claim-d747f7f074dd147630",
             "headline": "USNI News Western Pacific Pulse: Aug. 28, 2026",
@@ -6326,7 +6420,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 94,
+          "recency": 93,
           "evidence_type": 12,
           "historical_reliability": 20,
           "claim_maturity": 25
@@ -6394,19 +6488,6 @@
         },
         "historical_matches": [],
         "cross_domain_links": [
-          {
-            "claim_id": "claim-3255efa7f65ee85bd5",
-            "shared_actors": [
-              "NATO"
-            ],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
           {
             "claim_id": "claim-45805a16542a0786bc",
             "shared_actors": [
@@ -6547,6 +6628,18 @@
             "domains": [
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-d47e4cd2b83f09ff18",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "SECURITY"
+            ]
           }
         ],
         "anomaly_ids": [
@@ -6581,7 +6674,7 @@
           "55a7fb01d13299ff309c"
         ],
         "first_seen": "2026-09-26T06:25:35Z",
-        "last_seen": "2026-09-27T20:46:01Z",
+        "last_seen": "2026-09-27T21:20:29Z",
         "material_time": "2026-09-26T06:00:36Z",
         "domains": [
           "WAR"
@@ -7099,9 +7192,9 @@
     "multi_theater_coupling": 1,
     "nuclear_escalation": 7,
     "military_mobilization": 9,
-    "economic_warfare": 176,
+    "economic_warfare": 179,
     "crisis_control_failure": 0,
-    "hybrid_preparation": 23
+    "hybrid_preparation": 21
   },
   "formula": "Independent-provenance-capped claim contributions; verified and early-warning pressure remain separate.",
   "safeguard": "Republished stories sharing one provenance root cannot multiply pressure; speculative claims never enter Verified Pressure.",
@@ -7128,11 +7221,12 @@
         "e321ebfa9f7044f6aae1",
         "736c0e320b978038c04a",
         "0e3621f47066f1fad91f",
-        "d71b82de0d5b29f029a8"
+        "d71b82de0d5b29f029a8",
+        "da2df878232f260800f7"
       ],
       "first_seen": "2026-09-26T14:46:59Z",
-      "last_seen": "2026-09-27T20:46:01Z",
-      "material_time": "2026-09-27T06:34:43Z",
+      "last_seen": "2026-09-27T21:20:29Z",
+      "material_time": "2026-09-27T12:45:00Z",
       "domains": [
         "INFRA",
         "NUCLEAR",
@@ -7155,8 +7249,8 @@
         "independence": 79,
         "corroboration": 82,
         "contradiction": 0,
-        "specificity": 66,
-        "recency": 95,
+        "specificity": 65,
+        "recency": 99,
         "evidence_type": 79,
         "historical_reliability": 85,
         "claim_maturity": 58
@@ -7169,10 +7263,11 @@
         "e321ebfa9f7044f6aae1",
         "736c0e320b978038c04a",
         "0e3621f47066f1fad91f",
-        "d71b82de0d5b29f029a8"
+        "d71b82de0d5b29f029a8",
+        "da2df878232f260800f7"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 7,
+      "source_count": 8,
       "independent_provenance_count": 3,
       "sources": [
         "Al Jazeera English",
@@ -7180,6 +7275,7 @@
         "The Guardian World",
         "cp24.com",
         "fox13now.com",
+        "jamaicantimes.com",
         "krgv.com",
         "texarkanagazette.com"
       ],
@@ -7189,10 +7285,22 @@
         "cp24.com",
         "fox13now.com",
         "guardian_world",
+        "jamaicantimes.com",
         "krgv.com",
         "texarkanagazette.com"
       ],
       "evidence": [
+        {
+          "observation_id": "da2df878232f260800f7",
+          "title": "Trump Rejects Iran Plan To Reopen Strait Of Hormuz",
+          "source": "jamaicantimes.com",
+          "source_class": "low_confidence",
+          "provenance_root": "jamaicantimes.com",
+          "stance": "report",
+          "published": "2026-09-27T12:45:00Z",
+          "url": "http://www.jamaicantimes.com/news/279333708/trump-rejects-iran-plan-to-reopen-strait-of-hormuz",
+          "discovery_only": true
+        },
         {
           "observation_id": "d71b82de0d5b29f029a8",
           "title": "Trump rejects Iran’s seven-day peace deal to reopen strait of Hormuz",
@@ -7296,6 +7404,18 @@
       },
       "historical_matches": [
         {
+          "claim_id": "claim-8210e0f0e5ba7084f3",
+          "headline": "Strait of Hormuz Tanker Transits Up But Still Below Pre–War Levels",
+          "material_time": "2026-08-28T21:20:26Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "IRAN"
+          ]
+        },
+        {
           "claim_id": "claim-d747f7f074dd147630",
           "headline": "USNI News Western Pacific Pulse: Aug. 28, 2026",
           "material_time": "2026-08-28T18:18:39Z",
@@ -7335,18 +7455,6 @@
           "claim_id": "claim-c774e58742ead11dc6",
           "headline": "Justice Department and FBI Seize Platforms Operated and Used by China State-Sponsored Hackers to Target U.S. Critical Infrastructure",
           "material_time": "2026-08-26T12:00:00Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": []
-        },
-        {
-          "claim_id": "claim-685c7c00fd8defeb85",
-          "headline": "NOAA boosts weather data collection capabilities with new Mesonet contract",
-          "material_time": "2026-08-19T19:20:15Z",
           "shared_domains": [
             "INFRA"
           ],
@@ -7519,11 +7627,11 @@
       "watch_priority": 60,
       "audit": {
         "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-        "support_count": 7,
+        "support_count": 8,
         "contradiction_count": 0,
         "independent_roots": 3,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-27T06:34:43Z"
+        "material_time_used_for_decay": "2026-09-27T12:45:00Z"
       }
     },
     {
@@ -7651,6 +7759,18 @@
         "contradictory_evidence_present": false
       },
       "historical_matches": [
+        {
+          "claim_id": "claim-8210e0f0e5ba7084f3",
+          "headline": "Strait of Hormuz Tanker Transits Up But Still Below Pre–War Levels",
+          "material_time": "2026-08-28T21:20:26Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "IRAN"
+          ]
+        },
         {
           "claim_id": "claim-7bf080d5d0604d497d",
           "headline": "Journalist targeted by Iran says U.K.'s crackdown on IRGC is \"the happiest day\"",
@@ -7827,7 +7947,7 @@
         "anomaly-d20ceeadd752ebf3"
       ],
       "threat_score": 17,
-      "watch_priority": 47,
+      "watch_priority": 49,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
         "support_count": 3,
@@ -8061,19 +8181,6 @@
           ]
         },
         {
-          "claim_id": "claim-3255efa7f65ee85bd5",
-          "shared_actors": [
-            "NATO"
-          ],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-989145b34a34dc9ab4",
           "shared_actors": [
             "RUSSIA",
@@ -8219,6 +8326,22 @@
             "HUMANITARIAN",
             "WAR"
           ]
+        },
+        {
+          "claim_id": "claim-0577bbeca24d7a8f20",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "SPACE",
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -8338,6 +8461,18 @@
         "contradictory_evidence_present": false
       },
       "historical_matches": [
+        {
+          "claim_id": "claim-8210e0f0e5ba7084f3",
+          "headline": "Strait of Hormuz Tanker Transits Up But Still Below Pre–War Levels",
+          "material_time": "2026-08-28T21:20:26Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "IRAN"
+          ]
+        },
         {
           "claim_id": "claim-d555e4d2e467f5fc66",
           "headline": "Massachusetts Man Convicted of Violating U.S. Sanctions Against Iran",
@@ -8524,7 +8659,7 @@
         "anomaly-25a1100ebd445210"
       ],
       "threat_score": 14,
-      "watch_priority": 70,
+      "watch_priority": 72,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
         "support_count": 1,
@@ -8550,7 +8685,7 @@
         "f4810f4464c3f9d03204"
       ],
       "first_seen": "2026-09-27T16:21:52Z",
-      "last_seen": "2026-09-27T20:46:01Z",
+      "last_seen": "2026-09-27T21:20:29Z",
       "material_time": "2026-09-27T17:46:04Z",
       "domains": [
         "NUCLEAR",
@@ -8852,7 +8987,7 @@
         "0078c17bab336b278f47"
       ],
       "first_seen": "2026-09-27T08:47:18Z",
-      "last_seen": "2026-09-27T20:46:01Z",
+      "last_seen": "2026-09-27T21:20:29Z",
       "material_time": "2026-09-27T08:36:49Z",
       "domains": [
         "ECONOMIC",
@@ -8876,7 +9011,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 78,
-        "recency": 97,
+        "recency": 96,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 36
@@ -8958,17 +9093,6 @@
             "UKRAINE"
           ],
           "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-3255efa7f65ee85bd5",
-          "shared_actors": [
-            "NATO"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "POLITICAL",
             "WAR"
           ]
         },
@@ -9113,6 +9237,22 @@
             "HUMANITARIAN",
             "WAR"
           ]
+        },
+        {
+          "claim_id": "claim-0577bbeca24d7a8f20",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "SPACE",
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -9176,7 +9316,7 @@
         "corroboration": 58,
         "contradiction": 0,
         "specificity": 74,
-        "recency": 83,
+        "recency": 82,
         "evidence_type": 79,
         "historical_reliability": 88,
         "claim_maturity": 71
@@ -9269,6 +9409,18 @@
         "contradictory_evidence_present": false
       },
       "historical_matches": [
+        {
+          "claim_id": "claim-8210e0f0e5ba7084f3",
+          "headline": "Strait of Hormuz Tanker Transits Up But Still Below Pre–War Levels",
+          "material_time": "2026-08-28T21:20:26Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "IRAN"
+          ]
+        },
         {
           "claim_id": "claim-7bf080d5d0604d497d",
           "headline": "Journalist targeted by Iran says U.K.'s crackdown on IRGC is \"the happiest day\"",
@@ -9440,7 +9592,7 @@
         "anomaly-d20ceeadd752ebf3"
       ],
       "threat_score": 24,
-      "watch_priority": 39,
+      "watch_priority": 41,
       "audit": {
         "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
         "support_count": 4,
@@ -9473,7 +9625,7 @@
         "8e2d3d61ddb4255cebb0"
       ],
       "first_seen": "2026-09-25T02:19:57Z",
-      "last_seen": "2026-09-27T20:46:01Z",
+      "last_seen": "2026-09-27T21:20:29Z",
       "material_time": "2026-09-25T17:33:54Z",
       "domains": [
         "POLITICAL",
@@ -9495,7 +9647,7 @@
         "corroboration": 82,
         "contradiction": 0,
         "specificity": 74,
-        "recency": 82,
+        "recency": 81,
         "evidence_type": 79,
         "historical_reliability": 69,
         "claim_maturity": 60
@@ -9578,6 +9730,18 @@
         "contradictory_evidence_present": false
       },
       "historical_matches": [
+        {
+          "claim_id": "claim-8210e0f0e5ba7084f3",
+          "headline": "Strait of Hormuz Tanker Transits Up But Still Below Pre–War Levels",
+          "material_time": "2026-08-28T21:20:26Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "IRAN"
+          ]
+        },
         {
           "claim_id": "claim-7bf080d5d0604d497d",
           "headline": "Journalist targeted by Iran says U.K.'s crackdown on IRGC is \"the happiest day\"",
@@ -9757,7 +9921,7 @@
         "anomaly-d20ceeadd752ebf3"
       ],
       "threat_score": 25,
-      "watch_priority": 39,
+      "watch_priority": 41,
       "audit": {
         "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
         "support_count": 3,
@@ -9791,7 +9955,7 @@
         "5e51c8c94239bc8c4473"
       ],
       "first_seen": "2026-09-27T15:20:31Z",
-      "last_seen": "2026-09-27T20:46:01Z",
+      "last_seen": "2026-09-27T21:20:29Z",
       "material_time": "2026-09-27T16:55:20Z",
       "domains": [
         "ECONOMIC",
@@ -9950,19 +10114,6 @@
           ]
         },
         {
-          "claim_id": "claim-3255efa7f65ee85bd5",
-          "shared_actors": [
-            "NATO"
-          ],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-989145b34a34dc9ab4",
           "shared_actors": [
             "RUSSIA"
@@ -10087,6 +10238,20 @@
           ],
           "domains": [
             "HUMANITARIAN",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-0577bbeca24d7a8f20",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "SPACE",
             "WAR"
           ]
         }
@@ -10216,17 +10381,6 @@
       ],
       "cross_domain_links": [
         {
-          "claim_id": "claim-3255efa7f65ee85bd5",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-8b4542a6fdb7ba9c2e",
           "shared_actors": [],
           "shared_regions": [
@@ -10338,6 +10492,17 @@
         },
         {
           "claim_id": "claim-0da6d8f10f4fb66df2",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-cb58619cf9290263de",
           "shared_actors": [],
           "shared_regions": [
             "EUROPE"
@@ -10898,7 +11063,7 @@
         "a06db7484603199cdd88"
       ],
       "first_seen": "2026-09-26T15:47:17Z",
-      "last_seen": "2026-09-27T20:46:01Z",
+      "last_seen": "2026-09-27T21:20:29Z",
       "material_time": "2026-09-27T11:06:36Z",
       "domains": [
         "ECONOMIC",
