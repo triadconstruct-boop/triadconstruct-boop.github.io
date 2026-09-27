@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-27T16:47:23Z",
+  "generated_at": "2026-09-27T17:20:24Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 38,
   "verified_pressure": {
     "score": 38,
-    "claim_count": 48,
+    "claim_count": 45,
     "top_claims": [
       {
         "id": "claim-6fe34e676f1123feae",
@@ -31,7 +31,7 @@
           "da2df878232f260800f7"
         ],
         "first_seen": "2026-09-26T14:46:59Z",
-        "last_seen": "2026-09-27T16:47:23Z",
+        "last_seen": "2026-09-27T17:20:24Z",
         "material_time": "2026-09-27T12:45:00Z",
         "domains": [
           "INFRA",
@@ -430,7 +430,7 @@
         ],
         "anomaly_ids": [
           "anomaly-1f9c1916800ae9ad",
-          "anomaly-77f392636689dd67"
+          "anomaly-ad6b318b179619ba"
         ],
         "threat_score": 27,
         "watch_priority": 60,
@@ -728,7 +728,7 @@
             ]
           },
           {
-            "claim_id": "claim-c2342b2bf68c4582e6",
+            "claim_id": "claim-2379c880ba5d9489f5",
             "shared_actors": [
               "IRAN"
             ],
@@ -736,7 +736,8 @@
               "IRAN"
             ],
             "domains": [
-              "INFRA"
+              "NUCLEAR",
+              "POLITICAL"
             ]
           }
         ],
@@ -1466,7 +1467,7 @@
           "0078c17bab336b278f47"
         ],
         "first_seen": "2026-09-27T08:47:18Z",
-        "last_seen": "2026-09-27T16:47:23Z",
+        "last_seen": "2026-09-27T17:20:24Z",
         "material_time": "2026-09-27T08:36:49Z",
         "domains": [
           "ECONOMIC",
@@ -2088,7 +2089,7 @@
           "8e2d3d61ddb4255cebb0"
         ],
         "first_seen": "2026-09-25T02:19:57Z",
-        "last_seen": "2026-09-27T16:47:23Z",
+        "last_seen": "2026-09-27T17:20:24Z",
         "material_time": "2026-09-25T17:33:54Z",
         "domains": [
           "POLITICAL",
@@ -3156,6 +3157,320 @@
         }
       },
       {
+        "id": "claim-1e8097b149e278722f",
+        "headline": "Swiss voters set to reject tighter neutrality rules that would curb NATO cooperation - NBC News",
+        "signature_tokens": [
+          "cooperation",
+          "curb",
+          "nato",
+          "nbc",
+          "neutrality",
+          "reject",
+          "rules",
+          "set",
+          "swiss",
+          "tighter",
+          "voters"
+        ],
+        "observation_ids": [
+          "f15187800834ca23b190",
+          "9622a933fc952e50f3ff",
+          "f9cf1a8fa80eeffd1316"
+        ],
+        "first_seen": "2026-09-27T15:20:31Z",
+        "last_seen": "2026-09-27T17:20:24Z",
+        "material_time": "2026-09-27T15:05:21Z",
+        "domains": [
+          "ECONOMIC",
+          "POLITICAL"
+        ],
+        "regions": [
+          "EUROPE",
+          "RUSSIA"
+        ],
+        "actors": [
+          "NATO",
+          "RUSSIA"
+        ],
+        "state": "CONFIRMED",
+        "confidence": 76,
+        "confidence_direction": "NEW",
+        "confidence_components": {
+          "source_quality": 87,
+          "independence": 52,
+          "corroboration": 55,
+          "contradiction": 0,
+          "specificity": 83,
+          "recency": 100,
+          "evidence_type": 79,
+          "historical_reliability": 87,
+          "claim_maturity": 57
+        },
+        "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
+        "supporting_observation_ids": [
+          "f15187800834ca23b190",
+          "9622a933fc952e50f3ff",
+          "f9cf1a8fa80eeffd1316"
+        ],
+        "contradictory_observation_ids": [],
+        "source_count": 2,
+        "independent_provenance_count": 2,
+        "sources": [
+          "Reuters World",
+          "The Guardian World"
+        ],
+        "provenance_roots": [
+          "guardian_world",
+          "wire:reuters_world"
+        ],
+        "evidence": [
+          {
+            "observation_id": "9622a933fc952e50f3ff",
+            "title": "Swiss voters reject stricter neutrality rules that would curb Nato cooperation",
+            "source": "The Guardian World",
+            "source_class": "established_media",
+            "provenance_root": "guardian_world",
+            "stance": "report",
+            "published": "2026-09-27T15:05:21Z",
+            "url": "https://www.theguardian.com/world/2026/sep/27/swiss-vote-reject-stricter-neutrality-rules-nato",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "f9cf1a8fa80eeffd1316",
+            "title": "Swiss voters reject stricter neutrality rules that would have curbed Nato cooperation",
+            "source": "The Guardian World",
+            "source_class": "established_media",
+            "provenance_root": "guardian_world",
+            "stance": "report",
+            "published": "2026-09-27T15:05:21Z",
+            "url": "https://www.theguardian.com/world/2026/sep/27/swiss-vote-reject-stricter-neutrality-rules-nato",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "f15187800834ca23b190",
+            "title": "Swiss voters set to reject tighter neutrality rules that would curb NATO cooperation - NBC News",
+            "source": "Reuters World",
+            "source_class": "wire",
+            "provenance_root": "wire:reuters_world",
+            "stance": "report",
+            "published": "2026-09-27T11:17:08Z",
+            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOcnZNUWtVaUVIZ3dZM2xBekh4OHByUjhBS3gzUGJ1VXM0X3BwWElpVEp5TjRXSGpBYWZrLVdCcW53a282aFcxblpKYjRZZFRFc2VoT2hKUFZCNEw1T2NpQVA0YzAxT2JCakczcmtXRDlIX1p3bV9FTngtdldaWkF3Qkd4TFdIdUNRRURwMTJkR2RwUzV5MjhJWUl0aXR6U0J1WW9uby1tNS1Ic2J2bjZ1bENvOC1DZUdpS3c?oc=5",
+            "discovery_only": false
+          }
+        ],
+        "state_affiliated_reporting": false,
+        "discovery_only": false,
+        "branch_analysis": {
+          "current_observation": "Swiss voters set to reject tighter neutrality rules that would curb NATO cooperation - NBC News",
+          "plausible_explanations": [
+            "A genuine ECONOMIC/POLITICAL development involving NATO, RUSSIA is unfolding as reported.",
+            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+          ],
+          "escalation_branch": "Related ECONOMIC/POLITICAL indicators spread, become operational, or draw additional actors into the event.",
+          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+          "confirm_indicators": [
+            "A primary record, sensor observation, or on-record official confirmation.",
+            "Matching detail from a genuinely independent provenance root.",
+            "Observable follow-on action consistent with the reported event."
+          ],
+          "falsify_indicators": [
+            "Time-stamped primary evidence incompatible with the claim.",
+            "Independent, technically specific refutation from credible sources.",
+            "Predicted follow-on indicators fail to occur inside the stated window."
+          ],
+          "contradictory_evidence_present": false
+        },
+        "historical_matches": [
+          {
+            "claim_id": "claim-5864ef41bab32e4ffd",
+            "headline": "Tracking a Sanctioned Russian Vessel’s West African Odyssey",
+            "material_time": "2026-08-25T08:52:50Z",
+            "shared_domains": [
+              "ECONOMIC"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          }
+        ],
+        "cross_domain_links": [
+          {
+            "claim_id": "claim-2dd8d8676da99b2626",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-ddb28772ec8c980666",
+            "shared_actors": [
+              "NATO",
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "EUROPE",
+              "RUSSIA"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-3255efa7f65ee85bd5",
+            "shared_actors": [
+              "NATO"
+            ],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-ea2b118f02565cd1b7",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-8b4542a6fdb7ba9c2e",
+            "shared_actors": [
+              "NATO",
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "EUROPE",
+              "RUSSIA"
+            ],
+            "domains": [
+              "POLITICAL",
+              "SECURITY"
+            ]
+          },
+          {
+            "claim_id": "claim-86d7d3f055d049ac6d",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-4dd47d16e47f200135",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "TERRORISM"
+            ]
+          },
+          {
+            "claim_id": "claim-cc379327343321ef12",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-99498e6a69ccf61001",
+            "shared_actors": [
+              "NATO"
+            ],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-d47e4cd2b83f09ff18",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "EUROPE",
+              "RUSSIA"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "SECURITY"
+            ]
+          },
+          {
+            "claim_id": "claim-959f0c684e4b36f1f6",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-6d49e127db359331f2",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "EUROPE",
+              "RUSSIA"
+            ],
+            "domains": [
+              "SECURITY",
+              "WAR"
+            ]
+          }
+        ],
+        "anomaly_ids": [
+          "anomaly-3ec1550a865adf40",
+          "anomaly-6529cef11c76ef1b"
+        ],
+        "threat_score": 20,
+        "watch_priority": 44,
+        "audit": {
+          "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
+          "support_count": 3,
+          "contradiction_count": 0,
+          "independent_roots": 2,
+          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+          "material_time_used_for_decay": "2026-09-27T15:05:21Z"
+        }
+      },
+      {
         "id": "claim-35e8287e1e186df1ef",
         "headline": "Ukraine sanctions 44 people involved in Russia's sham parliamentary elections in occupied territories",
         "signature_tokens": [
@@ -3175,7 +3490,7 @@
           "a06db7484603199cdd88"
         ],
         "first_seen": "2026-09-26T15:47:17Z",
-        "last_seen": "2026-09-27T16:47:23Z",
+        "last_seen": "2026-09-27T17:20:24Z",
         "material_time": "2026-09-27T11:06:36Z",
         "domains": [
           "ECONOMIC",
@@ -3470,268 +3785,12 @@
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-27T11:06:36Z"
         }
-      },
-      {
-        "id": "claim-c33403e54e6136f9a4",
-        "headline": "Saudis have not ruled out developing nuclear weapons, U.S. intelligence assesses",
-        "signature_tokens": [
-          "assesses",
-          "developing",
-          "intelligence",
-          "nuclear",
-          "out",
-          "ruled",
-          "saudis",
-          "weapons"
-        ],
-        "observation_ids": [
-          "4ee1e24126a94b92d818"
-        ],
-        "first_seen": "2026-09-25T17:20:32Z",
-        "last_seen": "2026-09-27T16:47:23Z",
-        "material_time": "2026-09-25T17:12:04Z",
-        "domains": [
-          "NUCLEAR"
-        ],
-        "regions": [
-          "UNITED STATES"
-        ],
-        "actors": [
-          "UNITED STATES"
-        ],
-        "state": "CREDIBLE REPORT",
-        "confidence": 61,
-        "confidence_direction": "STABLE",
-        "confidence_components": {
-          "source_quality": 86,
-          "independence": 25,
-          "corroboration": 22,
-          "contradiction": 0,
-          "specificity": 66,
-          "recency": 83,
-          "evidence_type": 79,
-          "historical_reliability": 86,
-          "claim_maturity": 38
-        },
-        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "supporting_observation_ids": [
-          "4ee1e24126a94b92d818"
-        ],
-        "contradictory_observation_ids": [],
-        "source_count": 1,
-        "independent_provenance_count": 1,
-        "sources": [
-          "Washington Post World"
-        ],
-        "provenance_roots": [
-          "washington_post_world"
-        ],
-        "evidence": [
-          {
-            "observation_id": "4ee1e24126a94b92d818",
-            "title": "Saudis have not ruled out developing nuclear weapons, U.S. intelligence assesses",
-            "source": "Washington Post World",
-            "source_class": "established_media",
-            "provenance_root": "washington_post_world",
-            "stance": "report",
-            "published": "2026-09-25T17:12:04Z",
-            "url": "https://www.washingtonpost.com/national-security/2026/09/25/saudis-have-not-ruled-out-developing-nuclear-weapons-us-intelligence-assesses",
-            "discovery_only": false
-          }
-        ],
-        "state_affiliated_reporting": false,
-        "discovery_only": false,
-        "branch_analysis": {
-          "current_observation": "Saudis have not ruled out developing nuclear weapons, U.S. intelligence assesses",
-          "plausible_explanations": [
-            "A genuine NUCLEAR development involving UNITED STATES is unfolding as reported.",
-            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-          ],
-          "escalation_branch": "Related NUCLEAR indicators spread, become operational, or draw additional actors into the event.",
-          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-          "confirm_indicators": [
-            "A primary record, sensor observation, or on-record official confirmation.",
-            "Matching detail from a genuinely independent provenance root.",
-            "Observable follow-on action consistent with the reported event."
-          ],
-          "falsify_indicators": [
-            "Time-stamped primary evidence incompatible with the claim.",
-            "Independent, technically specific refutation from credible sources.",
-            "Predicted follow-on indicators fail to occur inside the stated window."
-          ],
-          "contradictory_evidence_present": false
-        },
-        "historical_matches": [],
-        "cross_domain_links": [
-          {
-            "claim_id": "claim-7846d23b16eda07536",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "POLITICAL",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-7b3a8058f79a56f11d",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "POLITICAL",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-f40888e4d0a3c45580",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-6fe34e676f1123feae",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [],
-            "domains": [
-              "INFRA",
-              "NUCLEAR",
-              "POLITICAL",
-              "SECURITY",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-2a3159d950d493e864",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "POLITICAL",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-2b0bbfb39360c0e162",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-5d21404d7c6616ef09",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-0c8014565b345756ce",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "POLITICAL",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-cbad9459bd0740fedc",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-8ef2d64d8ab0b309b2",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-7ed2437b2f5bc55e1d",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [],
-            "domains": [
-              "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-b119cec7190b6f8249",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          }
-        ],
-        "anomaly_ids": [
-          "anomaly-77f392636689dd67"
-        ],
-        "threat_score": 17,
-        "watch_priority": 33,
-        "audit": {
-          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 1,
-          "contradiction_count": 0,
-          "independent_roots": 1,
-          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-25T17:12:04Z"
-        }
       }
     ]
   },
   "early_warning_pressure": {
-    "score": 94,
-    "claim_count": 41,
+    "score": 96,
+    "claim_count": 42,
     "top_claims": [
       {
         "id": "claim-ddb28772ec8c980666",
@@ -4288,6 +4347,19 @@
             ]
           },
           {
+            "claim_id": "claim-2379c880ba5d9489f5",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "NUCLEAR",
+              "POLITICAL"
+            ]
+          },
+          {
             "claim_id": "claim-c2342b2bf68c4582e6",
             "shared_actors": [
               "IRAN"
@@ -4297,20 +4369,6 @@
             ],
             "domains": [
               "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-af8f754e60078ad1ce",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "NUCLEAR",
-              "WAR"
             ]
           }
         ],
@@ -4364,7 +4422,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 71,
+          "recency": 70,
           "evidence_type": 79,
           "historical_reliability": 82,
           "claim_maturity": 41
@@ -4568,6 +4626,19 @@
             ]
           },
           {
+            "claim_id": "claim-2379c880ba5d9489f5",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "NUCLEAR",
+              "POLITICAL"
+            ]
+          },
+          {
             "claim_id": "claim-c2342b2bf68c4582e6",
             "shared_actors": [
               "IRAN"
@@ -4577,20 +4648,6 @@
             ],
             "domains": [
               "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-af8f754e60078ad1ce",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "NUCLEAR",
-              "WAR"
             ]
           }
         ],
@@ -4644,7 +4701,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 83,
+          "recency": 82,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 38
@@ -4917,6 +4974,7 @@
           "8fe30a896d7f5ad6afab",
           "c63126eb1423f1a7b7a2",
           "2a99f8696587da5c1678",
+          "8c06bf663a70a4d8b67e",
           "997e752134d51650a673",
           "b07376db23fab4a3161d",
           "b7ba7bb06d4b6ca66781",
@@ -4965,6 +5023,7 @@
           "8fe30a896d7f5ad6afab",
           "c63126eb1423f1a7b7a2",
           "2a99f8696587da5c1678",
+          "8c06bf663a70a4d8b67e",
           "997e752134d51650a673",
           "b07376db23fab4a3161d",
           "b7ba7bb06d4b6ca66781",
@@ -5031,6 +5090,17 @@
           {
             "observation_id": "2a99f8696587da5c1678",
             "title": "Iran offers to reopen Strait of Hormuz if US ends blockade: ‘Golden opportunity’ - New York Post",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-22T15:16:00Z",
+            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbEU0LUw0UmdsbUt2SEZxby1LTUxPRGlrV0hqY1QtWFdaVVRpSUU4TmVLUU04bXJYWXpTZTJOSU41b1NNa0pjZ2puRkItS01mc1pWc1ZQa09henJlektibk1EdDNObUVmMjVQYmZWNkhGbTRRaFQyUHVwUm1rQVlwM0hSTnlwNTFKNEZhUGNLSEZUTmlWSDVZUFRZdnQtMXVsQU4teml6X0J1dDVtT2Q4emdVWXVkWTA?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "8c06bf663a70a4d8b67e",
+            "title": "Iran offers to reopen Strait of Hormuz if US ends blockade: ‘Golden opportunity’ - nypost.com",
             "source": "GDELT Global Discovery",
             "source_class": "discovery",
             "provenance_root": "gdelt_global",
@@ -5414,7 +5484,7 @@
         "watch_priority": 45,
         "audit": {
           "reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
-          "support_count": 15,
+          "support_count": 16,
           "contradiction_count": 0,
           "independent_roots": 1,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
@@ -5996,13 +6066,14 @@
             ]
           },
           {
-            "claim_id": "claim-c2342b2bf68c4582e6",
+            "claim_id": "claim-2379c880ba5d9489f5",
             "shared_actors": [],
             "shared_regions": [
               "IRAN"
             ],
             "domains": [
-              "INFRA"
+              "NUCLEAR",
+              "POLITICAL"
             ]
           }
         ],
@@ -6063,7 +6134,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 74,
-          "recency": 76,
+          "recency": 75,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 40
@@ -6639,6 +6710,298 @@
         }
       },
       {
+        "id": "claim-2379c880ba5d9489f5",
+        "headline": "Araghchi says Iran ready for ‘doomsday war’ against US",
+        "signature_tokens": [
+          "araghchi",
+          "doomsday",
+          "iran",
+          "ready",
+          "war"
+        ],
+        "observation_ids": [
+          "8f41eca12e3b75ab3f37",
+          "be110992b7eac40c994b"
+        ],
+        "first_seen": "2026-09-27T16:21:52Z",
+        "last_seen": "2026-09-27T17:20:24Z",
+        "material_time": "2026-09-27T17:01:59Z",
+        "domains": [
+          "NUCLEAR",
+          "POLITICAL"
+        ],
+        "regions": [
+          "IRAN"
+        ],
+        "actors": [
+          "IRAN"
+        ],
+        "state": "UNVERIFIED CLAIM",
+        "confidence": 51,
+        "confidence_direction": "STABLE",
+        "confidence_components": {
+          "source_quality": 50,
+          "independence": 25,
+          "corroboration": 25,
+          "contradiction": 0,
+          "specificity": 78,
+          "recency": 100,
+          "evidence_type": 40,
+          "historical_reliability": 50,
+          "claim_maturity": 46
+        },
+        "classification_reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
+        "supporting_observation_ids": [
+          "8f41eca12e3b75ab3f37",
+          "be110992b7eac40c994b"
+        ],
+        "contradictory_observation_ids": [],
+        "source_count": 1,
+        "independent_provenance_count": 1,
+        "sources": [
+          "TASS World"
+        ],
+        "provenance_roots": [
+          "tass"
+        ],
+        "evidence": [
+          {
+            "observation_id": "be110992b7eac40c994b",
+            "title": "Araghchi says Iran ready for ‘doomsday war’ against US",
+            "source": "TASS World",
+            "source_class": "state_media",
+            "provenance_root": "tass",
+            "stance": "report",
+            "published": "2026-09-27T17:01:59Z",
+            "url": "https://tass.com/world/2193649",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "8f41eca12e3b75ab3f37",
+            "title": "Araghchi says Iran ready for ‘doomsday war’ against US",
+            "source": "TASS World",
+            "source_class": "state_media",
+            "provenance_root": "tass",
+            "stance": "report",
+            "published": "2026-09-27T16:18:58Z",
+            "url": "https://tass.com/world/2193657",
+            "discovery_only": false
+          }
+        ],
+        "state_affiliated_reporting": true,
+        "discovery_only": false,
+        "branch_analysis": {
+          "current_observation": "Araghchi says Iran ready for ‘doomsday war’ against US",
+          "plausible_explanations": [
+            "A genuine NUCLEAR/POLITICAL development involving IRAN is unfolding as reported.",
+            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+          ],
+          "escalation_branch": "Related NUCLEAR/POLITICAL indicators spread, become operational, or draw additional actors into the event.",
+          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+          "confirm_indicators": [
+            "A primary record, sensor observation, or on-record official confirmation.",
+            "Matching detail from a genuinely independent provenance root.",
+            "Observable follow-on action consistent with the reported event."
+          ],
+          "falsify_indicators": [
+            "Time-stamped primary evidence incompatible with the claim.",
+            "Independent, technically specific refutation from credible sources.",
+            "Predicted follow-on indicators fail to occur inside the stated window."
+          ],
+          "contradictory_evidence_present": false
+        },
+        "historical_matches": [
+          {
+            "claim_id": "claim-7bf080d5d0604d497d",
+            "headline": "Journalist targeted by Iran says U.K.'s crackdown on IRGC is \"the happiest day\"",
+            "material_time": "2026-07-17T20:56:00Z",
+            "shared_domains": [
+              "POLITICAL"
+            ],
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ]
+          }
+        ],
+        "cross_domain_links": [
+          {
+            "claim_id": "claim-45805a16542a0786bc",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-2942007ff1e1e3addd",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-df8fa91bdf00195a47",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "SECURITY",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-7846d23b16eda07536",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "POLITICAL",
+              "SECURITY"
+            ]
+          },
+          {
+            "claim_id": "claim-45edc49ec343ddb9fe",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-7b3a8058f79a56f11d",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "POLITICAL",
+              "SECURITY"
+            ]
+          },
+          {
+            "claim_id": "claim-ba1bbf32ca5cf6f779",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "POLITICAL",
+              "SECURITY"
+            ]
+          },
+          {
+            "claim_id": "claim-f40888e4d0a3c45580",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "SECURITY"
+            ]
+          },
+          {
+            "claim_id": "claim-6fe34e676f1123feae",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "INFRA",
+              "NUCLEAR",
+              "POLITICAL",
+              "SECURITY",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-6225591395cd90c87a",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "INFRA",
+              "NUCLEAR",
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-54195610a0187daac7",
+            "shared_actors": [],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "HUMANITARIAN",
+              "SECURITY"
+            ]
+          },
+          {
+            "claim_id": "claim-3d807506831f411af0",
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          }
+        ],
+        "anomaly_ids": [
+          "anomaly-1f9c1916800ae9ad"
+        ],
+        "threat_score": 2,
+        "watch_priority": 46,
+        "audit": {
+          "reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
+          "support_count": 2,
+          "contradiction_count": 0,
+          "independent_roots": 1,
+          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+          "material_time_used_for_decay": "2026-09-27T17:01:59Z"
+        }
+      },
+      {
         "id": "claim-2ec6da82945febd38e",
         "headline": "Kiteworks urges 6-hour server shutdown over potential zero-day attacks",
         "signature_tokens": [
@@ -6655,7 +7018,7 @@
           "4e66990e3d0b1382ef35"
         ],
         "first_seen": "2026-09-25T21:47:20Z",
-        "last_seen": "2026-09-27T16:47:23Z",
+        "last_seen": "2026-09-27T17:20:24Z",
         "material_time": "2026-09-25T21:41:07Z",
         "domains": [
           "CYBER"
@@ -6782,7 +7145,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 78,
-          "recency": 76,
+          "recency": 75,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 40
@@ -7036,295 +7399,6 @@
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-24T18:15:55Z"
         }
-      },
-      {
-        "id": "claim-7a07247bab27f9be28",
-        "headline": "'Deploying Everything': NATO Nation's Stark Warning To Iran Over Nukes & Hormuz Blockade | UNGA - timesofindia.indiatimes.com",
-        "signature_tokens": [
-          "blockade",
-          "com",
-          "deploying",
-          "everything",
-          "hormuz",
-          "indiatimes",
-          "iran",
-          "nation",
-          "nato",
-          "nukes",
-          "stark",
-          "timesofindia",
-          "unga",
-          "warning"
-        ],
-        "observation_ids": [
-          "7ceaeb3f85bb06420826",
-          "aa6a4a751ebd3cd117ca"
-        ],
-        "first_seen": "2026-09-27T03:47:50Z",
-        "last_seen": "2026-09-27T16:47:23Z",
-        "material_time": "2026-09-27T03:31:14Z",
-        "domains": [
-          "SECURITY"
-        ],
-        "regions": [
-          "EUROPE",
-          "IRAN"
-        ],
-        "actors": [
-          "IRAN",
-          "NATO"
-        ],
-        "state": "EARLY WARNING",
-        "confidence": 34,
-        "confidence_direction": "STABLE",
-        "confidence_components": {
-          "source_quality": 15,
-          "independence": 25,
-          "corroboration": 22,
-          "contradiction": 0,
-          "specificity": 66,
-          "recency": 96,
-          "evidence_type": 12,
-          "historical_reliability": 20,
-          "claim_maturity": 25
-        },
-        "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
-        "supporting_observation_ids": [
-          "7ceaeb3f85bb06420826",
-          "aa6a4a751ebd3cd117ca"
-        ],
-        "contradictory_observation_ids": [],
-        "source_count": 1,
-        "independent_provenance_count": 0,
-        "sources": [
-          "GDELT Global Discovery"
-        ],
-        "provenance_roots": [
-          "gdelt_global"
-        ],
-        "evidence": [
-          {
-            "observation_id": "7ceaeb3f85bb06420826",
-            "title": "'Deploying Everything': NATO Nation's Stark Warning To Iran Over Nukes & Hormuz Blockade | UNGA - timesofindia.indiatimes.com",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "warning",
-            "published": "2026-09-27T03:31:14Z",
-            "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOTmJKT1JUUlFRdl9hdlNQcldTVzlsUXZxeXRxdXRoMVRyeWo4WjZUWU1Zd3RsU3l2OTlTcml0Tzh5QkxiVVNPcllHdUd3SENZR09wS3hweW01cm9kLW44RFR4c2t2SXZkMVU2M1kwRHpHbm9xLU9Cem80Nm15Y3hydkpsQVZoYVRsVXFzWGVKT3Z2akJGUnJiRUhVaUN5cWhzdzlzRC1xaU1wT0sxZ1h4ZDlFbGJMekdjaGhRMGJQd0M4cExuSEhpVmt6Z1VFUW05cGdSQ2dvWmZ5RkM1ODQtdDhIRmZjQTg4d1dSNm52MGNNd2otZFJZc1lvak_SAYICQVVfeXFMTTJNUGplMjFJZG1ZQ3pfX2t1SXdSa2Z6TTd3YzZIcjJVY1FWTUtKaHhodEM4WE5EU29aVVZ2VmY4bGNfbVlkamx5QXFfbGFWc1ZISTZ2UHZ3WWdOcDlmSVVoNTVPZUpyMUlWN21GellFVS1jY2lfRHUtV1M3c0RselBpVzVlalo2R0ExRjNobGVxYV9vWGFnNl9nblJmZmN4QlBobUh0NmhYSVhiQjdOYzkxVlA4NDI3TGdMTlJ5cVNZaW5pc1YzWHFxSmxzZHpmWUV1dHFsVWpoZXlKMzNKTzQ1VXExZExKSl82enlicG16d1hiV1JQdHRnMEhUZXNISUN3?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "aa6a4a751ebd3cd117ca",
-            "title": "'Deploying Everything': NATO Nation's Stark Warning To Iran Over Nukes & Hormuz Blockade | UNGA - The Times of India",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "warning",
-            "published": "2026-09-27T03:31:14Z",
-            "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOTmJKT1JUUlFRdl9hdlNQcldTVzlsUXZxeXRxdXRoMVRyeWo4WjZUWU1Zd3RsU3l2OTlTcml0Tzh5QkxiVVNPcllHdUd3SENZR09wS3hweW01cm9kLW44RFR4c2t2SXZkMVU2M1kwRHpHbm9xLU9Cem80Nm15Y3hydkpsQVZoYVRsVXFzWGVKT3Z2akJGUnJiRUhVaUN5cWhzdzlzRC1xaU1wT0sxZ1h4ZDlFbGJMekdjaGhRMGJQd0M4cExuSEhpVmt6Z1VFUW05cGdSQ2dvWmZ5RkM1ODQtdDhIRmZjQTg4d1dSNm52MGNNd2otZFJZc1lvak_SAYICQVVfeXFMTTJNUGplMjFJZG1ZQ3pfX2t1SXdSa2Z6TTd3YzZIcjJVY1FWTUtKaHhodEM4WE5EU29aVVZ2VmY4bGNfbVlkamx5QXFfbGFWc1ZISTZ2UHZ3WWdOcDlmSVVoNTVPZUpyMUlWN21GellFVS1jY2lfRHUtV1M3c0RselBpVzVlalo2R0ExRjNobGVxYV9vWGFnNl9nblJmZmN4QlBobUh0NmhYSVhiQjdOYzkxVlA4NDI3TGdMTlJ5cVNZaW5pc1YzWHFxSmxzZHpmWUV1dHFsVWpoZXlKMzNKTzQ1VXExZExKSl82enlicG16d1hiV1JQdHRnMEhUZXNISUN3?oc=5",
-            "discovery_only": true
-          }
-        ],
-        "state_affiliated_reporting": false,
-        "discovery_only": true,
-        "branch_analysis": {
-          "current_observation": "'Deploying Everything': NATO Nation's Stark Warning To Iran Over Nukes & Hormuz Blockade | UNGA - timesofindia.indiatimes.com",
-          "plausible_explanations": [
-            "A genuine SECURITY development involving IRAN, NATO is unfolding as reported.",
-            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-          ],
-          "escalation_branch": "Related SECURITY indicators spread, become operational, or draw additional actors into the event.",
-          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-          "confirm_indicators": [
-            "A primary record, sensor observation, or on-record official confirmation.",
-            "Matching detail from a genuinely independent provenance root.",
-            "Observable follow-on action consistent with the reported event."
-          ],
-          "falsify_indicators": [
-            "Time-stamped primary evidence incompatible with the claim.",
-            "Independent, technically specific refutation from credible sources.",
-            "Predicted follow-on indicators fail to occur inside the stated window."
-          ],
-          "contradictory_evidence_present": false
-        },
-        "historical_matches": [],
-        "cross_domain_links": [
-          {
-            "claim_id": "claim-ddb28772ec8c980666",
-            "shared_actors": [
-              "NATO"
-            ],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-3255efa7f65ee85bd5",
-            "shared_actors": [
-              "NATO"
-            ],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-45805a16542a0786bc",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-2942007ff1e1e3addd",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-df8fa91bdf00195a47",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "SECURITY",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-8b4542a6fdb7ba9c2e",
-            "shared_actors": [
-              "NATO"
-            ],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "POLITICAL",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-7846d23b16eda07536",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "POLITICAL",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-45edc49ec343ddb9fe",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-7b3a8058f79a56f11d",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "POLITICAL",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-ba1bbf32ca5cf6f779",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "POLITICAL",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-f40888e4d0a3c45580",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-6fe34e676f1123feae",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "INFRA",
-              "NUCLEAR",
-              "POLITICAL",
-              "SECURITY",
-              "WAR"
-            ]
-          }
-        ],
-        "anomaly_ids": [
-          "anomaly-1f9c1916800ae9ad",
-          "anomaly-6529cef11c76ef1b"
-        ],
-        "threat_score": 2,
-        "watch_priority": 49,
-        "audit": {
-          "reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
-          "support_count": 2,
-          "contradiction_count": 0,
-          "independent_roots": 0,
-          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-27T03:31:14Z"
-        }
       }
     ]
   },
@@ -7332,7 +7406,7 @@
     "great_power_direct_clash": 0,
     "alliance_entanglement": 14,
     "multi_theater_coupling": 4,
-    "nuclear_escalation": 26,
+    "nuclear_escalation": 28,
     "military_mobilization": 53,
     "economic_warfare": 100,
     "crisis_control_failure": 0,
@@ -7343,8 +7417,8 @@
     "alliance_entanglement": 3,
     "multi_theater_coupling": 1,
     "nuclear_escalation": 6,
-    "military_mobilization": 11,
-    "economic_warfare": 182,
+    "military_mobilization": 10,
+    "economic_warfare": 180,
     "crisis_control_failure": 0,
     "hybrid_preparation": 27
   },
@@ -7377,7 +7451,7 @@
         "da2df878232f260800f7"
       ],
       "first_seen": "2026-09-26T14:46:59Z",
-      "last_seen": "2026-09-27T16:47:23Z",
+      "last_seen": "2026-09-27T17:20:24Z",
       "material_time": "2026-09-27T12:45:00Z",
       "domains": [
         "INFRA",
@@ -7776,7 +7850,7 @@
       ],
       "anomaly_ids": [
         "anomaly-1f9c1916800ae9ad",
-        "anomaly-77f392636689dd67"
+        "anomaly-ad6b318b179619ba"
       ],
       "threat_score": 27,
       "watch_priority": 60,
@@ -8074,7 +8148,7 @@
           ]
         },
         {
-          "claim_id": "claim-c2342b2bf68c4582e6",
+          "claim_id": "claim-2379c880ba5d9489f5",
           "shared_actors": [
             "IRAN"
           ],
@@ -8082,7 +8156,8 @@
             "IRAN"
           ],
           "domains": [
-            "INFRA"
+            "NUCLEAR",
+            "POLITICAL"
           ]
         }
       ],
@@ -8812,7 +8887,7 @@
         "0078c17bab336b278f47"
       ],
       "first_seen": "2026-09-27T08:47:18Z",
-      "last_seen": "2026-09-27T16:47:23Z",
+      "last_seen": "2026-09-27T17:20:24Z",
       "material_time": "2026-09-27T08:36:49Z",
       "domains": [
         "ECONOMIC",
@@ -9434,7 +9509,7 @@
         "8e2d3d61ddb4255cebb0"
       ],
       "first_seen": "2026-09-25T02:19:57Z",
-      "last_seen": "2026-09-27T16:47:23Z",
+      "last_seen": "2026-09-27T17:20:24Z",
       "material_time": "2026-09-25T17:33:54Z",
       "domains": [
         "POLITICAL",
@@ -10502,6 +10577,320 @@
       }
     },
     {
+      "id": "claim-1e8097b149e278722f",
+      "headline": "Swiss voters set to reject tighter neutrality rules that would curb NATO cooperation - NBC News",
+      "signature_tokens": [
+        "cooperation",
+        "curb",
+        "nato",
+        "nbc",
+        "neutrality",
+        "reject",
+        "rules",
+        "set",
+        "swiss",
+        "tighter",
+        "voters"
+      ],
+      "observation_ids": [
+        "f15187800834ca23b190",
+        "9622a933fc952e50f3ff",
+        "f9cf1a8fa80eeffd1316"
+      ],
+      "first_seen": "2026-09-27T15:20:31Z",
+      "last_seen": "2026-09-27T17:20:24Z",
+      "material_time": "2026-09-27T15:05:21Z",
+      "domains": [
+        "ECONOMIC",
+        "POLITICAL"
+      ],
+      "regions": [
+        "EUROPE",
+        "RUSSIA"
+      ],
+      "actors": [
+        "NATO",
+        "RUSSIA"
+      ],
+      "state": "CONFIRMED",
+      "confidence": 76,
+      "confidence_direction": "NEW",
+      "confidence_components": {
+        "source_quality": 87,
+        "independence": 52,
+        "corroboration": 55,
+        "contradiction": 0,
+        "specificity": 83,
+        "recency": 100,
+        "evidence_type": 79,
+        "historical_reliability": 87,
+        "claim_maturity": 57
+      },
+      "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
+      "supporting_observation_ids": [
+        "f15187800834ca23b190",
+        "9622a933fc952e50f3ff",
+        "f9cf1a8fa80eeffd1316"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 2,
+      "independent_provenance_count": 2,
+      "sources": [
+        "Reuters World",
+        "The Guardian World"
+      ],
+      "provenance_roots": [
+        "guardian_world",
+        "wire:reuters_world"
+      ],
+      "evidence": [
+        {
+          "observation_id": "9622a933fc952e50f3ff",
+          "title": "Swiss voters reject stricter neutrality rules that would curb Nato cooperation",
+          "source": "The Guardian World",
+          "source_class": "established_media",
+          "provenance_root": "guardian_world",
+          "stance": "report",
+          "published": "2026-09-27T15:05:21Z",
+          "url": "https://www.theguardian.com/world/2026/sep/27/swiss-vote-reject-stricter-neutrality-rules-nato",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "f9cf1a8fa80eeffd1316",
+          "title": "Swiss voters reject stricter neutrality rules that would have curbed Nato cooperation",
+          "source": "The Guardian World",
+          "source_class": "established_media",
+          "provenance_root": "guardian_world",
+          "stance": "report",
+          "published": "2026-09-27T15:05:21Z",
+          "url": "https://www.theguardian.com/world/2026/sep/27/swiss-vote-reject-stricter-neutrality-rules-nato",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "f15187800834ca23b190",
+          "title": "Swiss voters set to reject tighter neutrality rules that would curb NATO cooperation - NBC News",
+          "source": "Reuters World",
+          "source_class": "wire",
+          "provenance_root": "wire:reuters_world",
+          "stance": "report",
+          "published": "2026-09-27T11:17:08Z",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOcnZNUWtVaUVIZ3dZM2xBekh4OHByUjhBS3gzUGJ1VXM0X3BwWElpVEp5TjRXSGpBYWZrLVdCcW53a282aFcxblpKYjRZZFRFc2VoT2hKUFZCNEw1T2NpQVA0YzAxT2JCakczcmtXRDlIX1p3bV9FTngtdldaWkF3Qkd4TFdIdUNRRURwMTJkR2RwUzV5MjhJWUl0aXR6U0J1WW9uby1tNS1Ic2J2bjZ1bENvOC1DZUdpS3c?oc=5",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Swiss voters set to reject tighter neutrality rules that would curb NATO cooperation - NBC News",
+        "plausible_explanations": [
+          "A genuine ECONOMIC/POLITICAL development involving NATO, RUSSIA is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related ECONOMIC/POLITICAL indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-5864ef41bab32e4ffd",
+          "headline": "Tracking a Sanctioned Russian Vessel’s West African Odyssey",
+          "material_time": "2026-08-25T08:52:50Z",
+          "shared_domains": [
+            "ECONOMIC"
+          ],
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ]
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-2dd8d8676da99b2626",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-ddb28772ec8c980666",
+          "shared_actors": [
+            "NATO",
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-3255efa7f65ee85bd5",
+          "shared_actors": [
+            "NATO"
+          ],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-ea2b118f02565cd1b7",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8b4542a6fdb7ba9c2e",
+          "shared_actors": [
+            "NATO",
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-86d7d3f055d049ac6d",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-4dd47d16e47f200135",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-cc379327343321ef12",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-99498e6a69ccf61001",
+          "shared_actors": [
+            "NATO"
+          ],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-d47e4cd2b83f09ff18",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-959f0c684e4b36f1f6",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-6d49e127db359331f2",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "RUSSIA"
+          ],
+          "domains": [
+            "SECURITY",
+            "WAR"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-3ec1550a865adf40",
+        "anomaly-6529cef11c76ef1b"
+      ],
+      "threat_score": 20,
+      "watch_priority": 44,
+      "audit": {
+        "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
+        "support_count": 3,
+        "contradiction_count": 0,
+        "independent_roots": 2,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-27T15:05:21Z"
+      }
+    },
+    {
       "id": "claim-35e8287e1e186df1ef",
       "headline": "Ukraine sanctions 44 people involved in Russia's sham parliamentary elections in occupied territories",
       "signature_tokens": [
@@ -10521,7 +10910,7 @@
         "a06db7484603199cdd88"
       ],
       "first_seen": "2026-09-26T15:47:17Z",
-      "last_seen": "2026-09-27T16:47:23Z",
+      "last_seen": "2026-09-27T17:20:24Z",
       "material_time": "2026-09-27T11:06:36Z",
       "domains": [
         "ECONOMIC",
@@ -10988,6 +11377,19 @@
           ]
         },
         {
+          "claim_id": "claim-14776e26472e2f15c7",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
           "claim_id": "claim-5d21404d7c6616ef09",
           "shared_actors": [
             "UNITED STATES"
@@ -11045,22 +11447,10 @@
           "domains": [
             "POLITICAL"
           ]
-        },
-        {
-          "claim_id": "claim-b119cec7190b6f8249",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "WAR"
-          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-77f392636689dd67"
+        "anomaly-ad6b318b179619ba"
       ],
       "threat_score": 17,
       "watch_priority": 33,
@@ -11071,471 +11461,6 @@
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-25T17:12:04Z"
-      }
-    },
-    {
-      "id": "claim-3278b7b19918544cb1",
-      "headline": "The other Hormuz: Black Sea blockade threatens a food supply shock",
-      "signature_tokens": [
-        "black",
-        "blockade",
-        "food",
-        "hormuz",
-        "other",
-        "sea",
-        "shock",
-        "supply",
-        "threatens"
-      ],
-      "observation_ids": [
-        "e4cf9986fc216ce79a60",
-        "9660e0911e191e8a4ba3",
-        "229fabc393104d711a51",
-        "ae8491d9b3ea26d80781",
-        "27d776afe9f6c166d95e",
-        "2f2270fff3b2d9210cce",
-        "52b7574e9a5d61222d8f",
-        "61f288f2a9109cbcbe7f",
-        "d9c8ee3129527fcc718c",
-        "666cc2015afdb6678157",
-        "ff613f5412b54ebfb4d4",
-        "d2fbf173b1e7834bbf2e",
-        "481e83e99da7a64eea77",
-        "308626d6a9ee2d0a8f23"
-      ],
-      "first_seen": "2026-09-20T23:43:40Z",
-      "last_seen": "2026-09-23T05:19:44Z",
-      "material_time": "2026-09-22T16:55:14Z",
-      "domains": [
-        "INFRA",
-        "SECURITY"
-      ],
-      "regions": [
-        "INDO-PACIFIC",
-        "IRAN",
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "actors": [
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 64,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 79,
-        "independence": 52,
-        "corroboration": 52,
-        "contradiction": 0,
-        "specificity": 52,
-        "recency": 65,
-        "evidence_type": 73,
-        "historical_reliability": 79,
-        "claim_maturity": 54
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "e4cf9986fc216ce79a60",
-        "9660e0911e191e8a4ba3",
-        "229fabc393104d711a51",
-        "ae8491d9b3ea26d80781",
-        "27d776afe9f6c166d95e",
-        "2f2270fff3b2d9210cce",
-        "52b7574e9a5d61222d8f",
-        "61f288f2a9109cbcbe7f",
-        "d9c8ee3129527fcc718c",
-        "666cc2015afdb6678157",
-        "ff613f5412b54ebfb4d4",
-        "d2fbf173b1e7834bbf2e",
-        "481e83e99da7a64eea77",
-        "308626d6a9ee2d0a8f23"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 4,
-      "independent_provenance_count": 2,
-      "sources": [
-        "GDELT Global Discovery",
-        "Japan Times",
-        "finance.yahoo.com",
-        "gCaptain"
-      ],
-      "provenance_roots": [
-        "finance.yahoo.com",
-        "gcaptain",
-        "gdelt_global",
-        "japan_times"
-      ],
-      "evidence": [
-        {
-          "observation_id": "d2fbf173b1e7834bbf2e",
-          "title": "The Other Hormuz: Black Sea Blockade Threatens a Food Supply Shock",
-          "source": "gCaptain",
-          "source_class": "specialist",
-          "provenance_root": "gcaptain",
-          "stance": "warning",
-          "published": "2026-09-22T16:55:14Z",
-          "url": "https://gcaptain.com/the-other-hormuz-black-sea-blockade-threatens-a-food-supply-shock",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "481e83e99da7a64eea77",
-          "title": "The Other Hormuz: Black Sea Blockade Threatens a Food Supply Shock - gCaptain",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "warning",
-          "published": "2026-09-22T16:55:14Z",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPWUdNOTVWdE5HaW45dDVyNXE1T0VIR3dtUFRQU2JaMDhQOHlxVDVzb3NSLVlDbzdUaFZVeUdCMC1ZUk5RTTF0bEwtZFcxSURIVnJCT1BKZXAwUmN6bGZNRF9Mbl84ZHF5aXlJdmZraTIxX2d0ZVRMb0xwVWJaX19BLW5ta0daUF84OER5Zk9sLWY?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "308626d6a9ee2d0a8f23",
-          "title": "The Other Hormuz: Black Sea Blockade Threatens a Food Supply Shock - gcaptain.com",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "warning",
-          "published": "2026-09-22T16:55:14Z",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPWUdNOTVWdE5HaW45dDVyNXE1T0VIR3dtUFRQU2JaMDhQOHlxVDVzb3NSLVlDbzdUaFZVeUdCMC1ZUk5RTTF0bEwtZFcxSURIVnJCT1BKZXAwUmN6bGZNRF9Mbl84ZHF5aXlJdmZraTIxX2d0ZVRMb0xwVWJaX19BLW5ta0daUF84OER5Zk9sLWY?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "ff613f5412b54ebfb4d4",
-          "title": "The Other Hormuz : Black Sea Blockade Threatens a Food Supply Shock",
-          "source": "finance.yahoo.com",
-          "source_class": "low_confidence",
-          "provenance_root": "finance.yahoo.com",
-          "stance": "warning",
-          "published": "2026-09-21T06:30:00Z",
-          "url": "https://finance.yahoo.com/markets/commodities/articles/other-hormuz-black-sea-blockade-230101888.html",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "666cc2015afdb6678157",
-          "title": "The Other Hormuz: Black Sea blockade threatens a food supply shock - The Economic Times",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "warning",
-          "published": "2026-09-21T04:43:00Z",
-          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOYzhaOWplTkx0dy03VXVSOEdRV2ZBdGNackM2QTdTX1BFSzluNG4ybW9hQXJnbk1sQi1RdEYxNjJlQ2dRNEdIMXExNThCbWJ0V2VYdUhFVTA0WmtMcnJ4bEJtRHZ3TjlETVg4cy15b2xEN0lIdldYcDFtYnpDSU9neVpqUU80U0JuRVZZR3QzRkk4YkVqMHI0bF9NNkcwMmdCb3A2MDVYSXd1UXFQMzZ1Z2R2NzViX2FEd0tnZFRxLXhLLXEyQm5tSm0yWVU0emFTT2J3WEpRU0Y4MHR4ZEtMeUxyaS0wV2ZaNENjadIB7AFBVV95cUxOYzhaOWplTkx0dy03VXVSOEdRV2ZBdGNackM2QTdTX1BFSzluNG4ybW9hQXJnbk1sQi1RdEYxNjJlQ2dRNEdIMXExNThCbWJ0V2VYdUhFVTA0WmtMcnJ4bEJtRHZ3TjlETVg4cy15b2xEN0lIdldYcDFtYnpDSU9neVpqUU80U0JuRVZZR3QzRkk4YkVqMHI0bF9NNkcwMmdCb3A2MDVYSXd1UXFQMzZ1Z2R2NzViX2FEd0tnZFRxLXhLLXEyQm5tSm0yWVU0emFTT2J3WEpRU0Y4MHR4ZEtMeUxyaS0wV2ZaNENjaQ?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "52b7574e9a5d61222d8f",
-          "title": "The other Hormuz: Black Sea blockade threatens a food supply shock",
-          "source": "Japan Times",
-          "source_class": "regional_local",
-          "provenance_root": "japan_times",
-          "stance": "warning",
-          "published": "2026-09-21T03:31:00Z",
-          "url": "https://www.japantimes.co.jp/news/2026/09/21/world/black-sea-blockade-food-supply",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "61f288f2a9109cbcbe7f",
-          "title": "The other Hormuz: Black Sea blockade threatens a food supply shock - The Japan Times",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "warning",
-          "published": "2026-09-21T03:31:00Z",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOd3lVVzRoMzM2LXNHX0RvM2pveS1WWnRfZGZxZW5FTWNiQjRCcTA4X3EyQUV0eU5xMjlCTDlsdXhYcXZTb3FZbld6Y2Nrek5JVmx0ek8wc0NaWGx0ZVBabW1kT1VHSWpBNTVEZDZNM3pvMmtjSHhyb0xRYThmbHEzcWYyUWRBdFdSeXc?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "d9c8ee3129527fcc718c",
-          "title": "The other Hormuz: Black Sea blockade threatens a food supply shock - japantimes.co.jp",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "warning",
-          "published": "2026-09-21T03:31:00Z",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOd3lVVzRoMzM2LXNHX0RvM2pveS1WWnRfZGZxZW5FTWNiQjRCcTA4X3EyQUV0eU5xMjlCTDlsdXhYcXZTb3FZbld6Y2Nrek5JVmx0ek8wc0NaWGx0ZVBabW1kT1VHSWpBNTVEZDZNM3pvMmtjSHhyb0xRYThmbHEzcWYyUWRBdFdSeXc?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "e4cf9986fc216ce79a60",
-          "title": "The Other Hormuz: Black Sea Blockade Threatens a Food Supply Shock - uk.finance.yahoo.com",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "warning",
-          "published": "2026-09-20T23:01:01Z",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNc2JfUWNlaGRORnU1c3ExTjYwWUdUY2NEcnhFZjVrZHM2S3c1SEdpQ0pyVEtVUlN0dXJVWUw5SW41WlI3ZUE5VDBqWlVXWXdmUGhFdE1GaE1Lai1zc3lVYlhVMXcyczItS1gySndCVTlDS2VLSHEzYmNBcVJrNElOZFRhdWRSUHc?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "9660e0911e191e8a4ba3",
-          "title": "The Other Hormuz: Black Sea Blockade Threatens a Food Supply Shock - Yahoo Finance",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "warning",
-          "published": "2026-09-20T23:01:01Z",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQX2F0VTFqdm1CVkc5TjFwWTJfSVlpZTk2ajdDZ0JPWHBDaTdzMEJjYk1WLVBQZjJqNGx5WHFoMUZtczk2ckMwTkhWSUJhQmdzbWg2R1M1dzZGeHpEUTIwZkk2RzRFZTZZNW9lMG5PMWJoYnBOajdhU194eVJMcTVYZWIwRGxPUUhjM3JwWkhrWWgteG96dVdKZ25JSExpbmxYSlNB?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "229fabc393104d711a51",
-          "title": "The Other Hormuz: Black Sea Blockade Threatens a Food Supply Shock - Yahoo Finance UK",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "warning",
-          "published": "2026-09-20T23:01:01Z",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNc2JfUWNlaGRORnU1c3ExTjYwWUdUY2NEcnhFZjVrZHM2S3c1SEdpQ0pyVEtVUlN0dXJVWUw5SW41WlI3ZUE5VDBqWlVXWXdmUGhFdE1GaE1Lai1zc3lVYlhVMXcyczItS1gySndCVTlDS2VLSHEzYmNBcVJrNElOZFRhdWRSUHc?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "ae8491d9b3ea26d80781",
-          "title": "The Other Hormuz: Black Sea Blockade Threatens a Food Supply Shock - Bloomberg.com",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "warning",
-          "published": "2026-09-20T23:01:01Z",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOcFJoRXZCYjFhejNmdnZxMlZmLUpoZU01MnVwdUV2RExPdzNVakNrU1podnNzVVh5Zl9DVG90MXoyeGJaYzhLdVFhaHpta251VnRpVVBzTXhCSGt6R2VuYTF6QXotM0ZxLVlBYTlqYUF6azJ2VnhJcmJkMnNsdVYyTl9WQzdGNExtWE44MkdTY2JQQjRoMUhZclV5TDlVMVRqRlBrR1JCZUp3ZTNGMzZsNTFhRnUwWlY2VTZUbk5B?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "27d776afe9f6c166d95e",
-          "title": "The Other Hormuz: Black Sea Blockade Threatens a Food Supply Shock - Bloomberg",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "warning",
-          "published": "2026-09-20T23:01:01Z",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOcFJoRXZCYjFhejNmdnZxMlZmLUpoZU01MnVwdUV2RExPdzNVakNrU1podnNzVVh5Zl9DVG90MXoyeGJaYzhLdVFhaHpta251VnRpVVBzTXhCSGt6R2VuYTF6QXotM0ZxLVlBYTlqYUF6azJ2VnhJcmJkMnNsdVYyTl9WQzdGNExtWE44MkdTY2JQQjRoMUhZclV5TDlVMVRqRlBrR1JCZUp3ZTNGMzZsNTFhRnUwWlY2VTZUbk5B?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "2f2270fff3b2d9210cce",
-          "title": "The Other Hormuz: Black Sea Blockade Threatens a Food Supply Shock - finance.yahoo.com",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "warning",
-          "published": "2026-09-20T23:01:01Z",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQX2F0VTFqdm1CVkc5TjFwWTJfSVlpZTk2ajdDZ0JPWHBDaTdzMEJjYk1WLVBQZjJqNGx5WHFoMUZtczk2ckMwTkhWSUJhQmdzbWg2R1M1dzZGeHpEUTIwZkk2RzRFZTZZNW9lMG5PMWJoYnBOajdhU194eVJMcTVYZWIwRGxPUUhjM3JwWkhrWWgteG96dVdKZ25JSExpbmxYSlNB?oc=5",
-          "discovery_only": true
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "The other Hormuz: Black Sea blockade threatens a food supply shock",
-        "plausible_explanations": [
-          "A genuine INFRA/SECURITY development involving RUSSIA, UKRAINE is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related INFRA/SECURITY indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [
-        {
-          "claim_id": "claim-6074bdce7ae23b0373",
-          "headline": "Russian National Living in Florida Convicted for Scheme to Illegally Export Aircraft Parts from the United States to Russia",
-          "material_time": "2026-08-28T12:00:00Z",
-          "shared_domains": [
-            "SECURITY"
-          ],
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ]
-        },
-        {
-          "claim_id": "claim-5864ef41bab32e4ffd",
-          "headline": "Tracking a Sanctioned Russian Vessel’s West African Odyssey",
-          "material_time": "2026-08-25T08:52:50Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ]
-        }
-      ],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-2dd8d8676da99b2626",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-ddb28772ec8c980666",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-45805a16542a0786bc",
-          "shared_actors": [],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-2942007ff1e1e3addd",
-          "shared_actors": [],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "ECONOMIC",
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-df8fa91bdf00195a47",
-          "shared_actors": [],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-ea2b118f02565cd1b7",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-8b4542a6fdb7ba9c2e",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "INDO-PACIFIC",
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-86d7d3f055d049ac6d",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-7846d23b16eda07536",
-          "shared_actors": [],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-d4cef6c59a1376cd86",
-          "shared_actors": [],
-          "shared_regions": [
-            "INDO-PACIFIC"
-          ],
-          "domains": [
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-45edc49ec343ddb9fe",
-          "shared_actors": [],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-7b3a8058f79a56f11d",
-          "shared_actors": [],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "POLITICAL",
-            "SECURITY"
-          ]
-        }
-      ],
-      "anomaly_ids": [],
-      "threat_score": 12,
-      "watch_priority": 29,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 14,
-        "contradiction_count": 0,
-        "independent_roots": 2,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-22T16:55:14Z"
       }
     },
     {
@@ -11580,7 +11505,7 @@
         "corroboration": 55,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 91,
+        "recency": 90,
         "evidence_type": 79,
         "historical_reliability": 89,
         "claim_maturity": 59
@@ -12615,6 +12540,19 @@
           ]
         },
         {
+          "claim_id": "claim-2379c880ba5d9489f5",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "NUCLEAR",
+            "POLITICAL"
+          ]
+        },
+        {
           "claim_id": "claim-c2342b2bf68c4582e6",
           "shared_actors": [
             "IRAN"
@@ -12640,18 +12578,6 @@
             "ECONOMIC",
             "NUCLEAR",
             "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-d6305ef737d7cfe8b6",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "INFRA"
           ]
         }
       ],
