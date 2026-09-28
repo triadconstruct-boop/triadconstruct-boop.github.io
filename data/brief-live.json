@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T03:23:37Z",
+  "generated_at": "2026-09-28T03:50:45Z",
   "top_claims": [
     {
       "id": "claim-6fe34e676f1123feae",
@@ -26,7 +26,7 @@
         "da2df878232f260800f7"
       ],
       "first_seen": "2026-09-26T14:46:59Z",
-      "last_seen": "2026-09-28T03:23:37Z",
+      "last_seen": "2026-09-28T03:50:45Z",
       "material_time": "2026-09-27T12:45:00Z",
       "domains": [
         "INFRA",
@@ -43,7 +43,7 @@
         "UNITED STATES"
       ],
       "state": "CONFIRMED",
-      "confidence": 81,
+      "confidence": 80,
       "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 85,
@@ -307,19 +307,6 @@
           ]
         },
         {
-          "claim_id": "claim-df8fa91bdf00195a47",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-7846d23b16eda07536",
           "shared_actors": [
             "IRAN",
@@ -420,13 +407,25 @@
           "domains": [
             "WAR"
           ]
+        },
+        {
+          "claim_id": "claim-c2342b2bf68c4582e6",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "INFRA"
+          ]
         }
       ],
       "anomaly_ids": [
         "anomaly-b60029177f80e4b2",
         "anomaly-8367318ba2f02667"
       ],
-      "threat_score": 27,
+      "threat_score": 26,
       "watch_priority": 60,
       "audit": {
         "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
@@ -1046,6 +1045,312 @@
       }
     },
     {
+      "id": "claim-45eedf00fd908199af",
+      "headline": "Seoul seeks apology after Ukraine 'breached' confidentiality agreement over transfer of North Korean POWs",
+      "signature_tokens": [
+        "agreement",
+        "apology",
+        "breached",
+        "confidentiality",
+        "korean",
+        "north",
+        "pows",
+        "seeks",
+        "seoul",
+        "transfer",
+        "ukraine"
+      ],
+      "observation_ids": [
+        "1a0f5b967279e437c0ad",
+        "be24ad3d19da0b527893"
+      ],
+      "first_seen": "2026-09-28T03:50:45Z",
+      "last_seen": "2026-09-28T03:50:45Z",
+      "material_time": "2026-09-28T03:49:15Z",
+      "domains": [
+        "POLITICAL",
+        "WAR"
+      ],
+      "regions": [
+        "KOREAN PENINSULA",
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "actors": [
+        "NORTH KOREA",
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "state": "CREDIBLE REPORT",
+      "confidence": 69,
+      "confidence_direction": "NEW",
+      "confidence_components": {
+        "source_quality": 80,
+        "independence": 52,
+        "corroboration": 52,
+        "contradiction": 0,
+        "specificity": 66,
+        "recency": 100,
+        "evidence_type": 67,
+        "historical_reliability": 80,
+        "claim_maturity": 46
+      },
+      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+      "supporting_observation_ids": [
+        "1a0f5b967279e437c0ad",
+        "be24ad3d19da0b527893"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 2,
+      "independent_provenance_count": 2,
+      "sources": [
+        "Euronews",
+        "Japan Times"
+      ],
+      "provenance_roots": [
+        "euronews",
+        "japan_times"
+      ],
+      "evidence": [
+        {
+          "observation_id": "be24ad3d19da0b527893",
+          "title": "Seoul seeks apology after Ukraine 'breached' confidentiality agreement over transfer of North Korean POWs",
+          "source": "Euronews",
+          "source_class": "regional_local",
+          "provenance_root": "euronews",
+          "stance": "report",
+          "published": "2026-09-28T03:49:15Z",
+          "url": "https://www.euronews.com/2026/09/28/seoul-seeks-apology-after-ukraine-breached-confidentiality-agreement-over-transfer-of-nort",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "1a0f5b967279e437c0ad",
+          "title": "Seoul seeks apology after Ukraine reveals transfer of North Korean POWs",
+          "source": "Japan Times",
+          "source_class": "regional_local",
+          "provenance_root": "japan_times",
+          "stance": "report",
+          "published": "2026-09-28T00:33:00Z",
+          "url": "https://www.japantimes.co.jp/news/2026/09/28/world/south-korea-ukraine-north-korea-pow",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Seoul seeks apology after Ukraine 'breached' confidentiality agreement over transfer of North Korean POWs",
+        "plausible_explanations": [
+          "A genuine POLITICAL/WAR development involving NORTH KOREA, RUSSIA, UKRAINE is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related POLITICAL/WAR indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-2dd8d8676da99b2626",
+          "shared_actors": [
+            "NORTH KOREA",
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "KOREAN PENINSULA",
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-046afa828378507ba6",
+          "shared_actors": [
+            "NORTH KOREA"
+          ],
+          "shared_regions": [
+            "KOREAN PENINSULA"
+          ],
+          "domains": [
+            "NUCLEAR",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-ea2b118f02565cd1b7",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8b4542a6fdb7ba9c2e",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-86d7d3f055d049ac6d",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-50e2edfe7007921903",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-cc379327343321ef12",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-d47e4cd2b83f09ff18",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-b066da503f27dfa53b",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "HUMANITARIAN",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-0577bbeca24d7a8f20",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "SPACE",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-4dd47d16e47f200135",
+          "shared_actors": [
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "UKRAINE"
+          ],
+          "domains": [
+            "TERRORISM"
+          ]
+        },
+        {
+          "claim_id": "claim-2a3159d950d493e864",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-d59d51d008caf6f6",
+        "anomaly-eaa7cb65570e3768",
+        "anomaly-62b13e2069cdb7fc"
+      ],
+      "threat_score": 16,
+      "watch_priority": 56,
+      "audit": {
+        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "support_count": 2,
+        "contradiction_count": 0,
+        "independent_roots": 2,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-28T03:49:15Z"
+      }
+    },
+    {
       "id": "claim-0577bbeca24d7a8f20",
       "headline": "Russian forces strike Omega Telecom data center in Kiev",
       "signature_tokens": [
@@ -1064,7 +1369,7 @@
         "2f3298b1b9faeffaafcd"
       ],
       "first_seen": "2026-09-26T05:46:03Z",
-      "last_seen": "2026-09-28T03:23:37Z",
+      "last_seen": "2026-09-28T03:50:45Z",
       "material_time": "2026-09-27T15:35:51Z",
       "domains": [
         "INFRA",
@@ -1390,7 +1695,7 @@
         "f2ac30fe56165fad1f08"
       ],
       "first_seen": "2026-09-27T17:20:24Z",
-      "last_seen": "2026-09-28T03:23:37Z",
+      "last_seen": "2026-09-28T03:50:45Z",
       "material_time": "2026-09-27T17:00:04Z",
       "domains": [
         "ECONOMIC",
@@ -1413,7 +1718,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 98,
+        "recency": 97,
         "evidence_type": 40,
         "historical_reliability": 50,
         "claim_maturity": 36
@@ -1582,19 +1887,6 @@
           ]
         },
         {
-          "claim_id": "claim-df8fa91bdf00195a47",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-7846d23b16eda07536",
           "shared_actors": [
             "IRAN",
@@ -1703,6 +1995,18 @@
             "POLITICAL",
             "SECURITY"
           ]
+        },
+        {
+          "claim_id": "claim-3d807506831f411af0",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -1742,7 +2046,7 @@
         "eedff1b88b7b59d9450f"
       ],
       "first_seen": "2026-09-27T12:51:07Z",
-      "last_seen": "2026-09-28T03:23:37Z",
+      "last_seen": "2026-09-28T03:50:45Z",
       "material_time": "2026-09-27T12:00:12Z",
       "domains": [
         "SECURITY",
@@ -2074,7 +2378,7 @@
         "corroboration": 64,
         "contradiction": 0,
         "specificity": 80,
-        "recency": 93,
+        "recency": 92,
         "evidence_type": 79,
         "historical_reliability": 89,
         "claim_maturity": 91
@@ -2399,7 +2703,7 @@
         "d2d43fd756deac9bfa26"
       ],
       "first_seen": "2026-09-27T05:19:49Z",
-      "last_seen": "2026-09-28T03:23:37Z",
+      "last_seen": "2026-09-28T03:50:45Z",
       "material_time": "2026-09-28T01:02:00Z",
       "domains": [
         "POLITICAL",
@@ -2703,7 +3007,7 @@
         "b23e0c40d98840171d01"
       ],
       "first_seen": "2026-09-26T09:45:40Z",
-      "last_seen": "2026-09-28T03:23:37Z",
+      "last_seen": "2026-09-28T03:50:45Z",
       "material_time": "2026-09-27T22:10:44Z",
       "domains": [
         "INFRA",
@@ -2890,19 +3194,6 @@
           ]
         },
         {
-          "claim_id": "claim-df8fa91bdf00195a47",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-7846d23b16eda07536",
           "shared_actors": [
             "IRAN"
@@ -3004,6 +3295,20 @@
           "domains": [
             "INFRA"
           ]
+        },
+        {
+          "claim_id": "claim-0d8998da6ac47662c5",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "NUCLEAR",
+            "POLITICAL",
+            "SECURITY"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -3040,7 +3345,7 @@
         "240d1fd7a299200a645e"
       ],
       "first_seen": "2026-09-27T16:21:52Z",
-      "last_seen": "2026-09-28T03:23:37Z",
+      "last_seen": "2026-09-28T03:50:45Z",
       "material_time": "2026-09-27T21:14:44Z",
       "domains": [
         "TERRORISM",
@@ -3257,19 +3562,6 @@
           ]
         },
         {
-          "claim_id": "claim-df8fa91bdf00195a47",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-7846d23b16eda07536",
           "shared_actors": [
             "IRAN",
@@ -3378,6 +3670,18 @@
             "POLITICAL",
             "SECURITY"
           ]
+        },
+        {
+          "claim_id": "claim-3d807506831f411af0",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -3416,7 +3720,7 @@
         "8f5c5221021174f4aab8"
       ],
       "first_seen": "2026-09-27T18:23:40Z",
-      "last_seen": "2026-09-28T03:23:37Z",
+      "last_seen": "2026-09-28T03:50:45Z",
       "material_time": "2026-09-27T17:44:53Z",
       "domains": [
         "SECURITY"
@@ -3556,18 +3860,6 @@
           ]
         },
         {
-          "claim_id": "claim-298520663d09ebde38",
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
           "claim_id": "claim-8ef2d64d8ab0b309b2",
           "shared_actors": [
             "ISRAEL"
@@ -3654,6 +3946,18 @@
             "ECONOMIC",
             "POLITICAL"
           ]
+        },
+        {
+          "claim_id": "claim-1a39fd888a0b00b7b1",
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ],
+          "domains": [
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -3688,7 +3992,7 @@
         "93f7d74b9e81dd63ae28"
       ],
       "first_seen": "2026-09-27T16:21:52Z",
-      "last_seen": "2026-09-28T03:23:37Z",
+      "last_seen": "2026-09-28T03:50:45Z",
       "material_time": "2026-09-28T01:00:00Z",
       "domains": [
         "NUCLEAR",
@@ -3862,19 +4166,6 @@
           ]
         },
         {
-          "claim_id": "claim-df8fa91bdf00195a47",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-7846d23b16eda07536",
           "shared_actors": [
             "IRAN"
@@ -3977,6 +4268,19 @@
           "domains": [
             "INFRA"
           ]
+        },
+        {
+          "claim_id": "claim-14776e26472e2f15c7",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -4015,7 +4319,7 @@
         "af130177196dc9fc6f47"
       ],
       "first_seen": "2026-09-27T12:25:52Z",
-      "last_seen": "2026-09-28T03:23:37Z",
+      "last_seen": "2026-09-28T03:50:45Z",
       "material_time": "2026-09-27T22:06:00Z",
       "domains": [
         "INFRA",
@@ -4246,19 +4550,6 @@
           ]
         },
         {
-          "claim_id": "claim-df8fa91bdf00195a47",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-7846d23b16eda07536",
           "shared_actors": [
             "IRAN",
@@ -4367,6 +4658,18 @@
             "POLITICAL",
             "SECURITY"
           ]
+        },
+        {
+          "claim_id": "claim-3d807506831f411af0",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -4401,7 +4704,7 @@
         "19549aa6bd641e96713d"
       ],
       "first_seen": "2026-09-27T21:20:29Z",
-      "last_seen": "2026-09-28T03:23:37Z",
+      "last_seen": "2026-09-28T03:50:45Z",
       "material_time": "2026-09-27T21:04:46Z",
       "domains": [
         "POLITICAL"
@@ -4697,7 +5000,7 @@
         "321c35f9158b6410dc42"
       ],
       "first_seen": "2026-09-27T14:47:06Z",
-      "last_seen": "2026-09-28T03:23:37Z",
+      "last_seen": "2026-09-28T03:50:45Z",
       "material_time": "2026-09-27T14:36:26Z",
       "domains": [
         "WAR"
@@ -4857,19 +5160,6 @@
           ]
         },
         {
-          "claim_id": "claim-df8fa91bdf00195a47",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-7846d23b16eda07536",
           "shared_actors": [
             "IRAN",
@@ -4978,6 +5268,20 @@
           "domains": [
             "INFRA"
           ]
+        },
+        {
+          "claim_id": "claim-0d8998da6ac47662c5",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "NUCLEAR",
+            "POLITICAL",
+            "SECURITY"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -5016,7 +5320,7 @@
         "cdb764d0b1b9973ceccf"
       ],
       "first_seen": "2026-09-27T16:21:52Z",
-      "last_seen": "2026-09-28T03:23:37Z",
+      "last_seen": "2026-09-28T03:50:45Z",
       "material_time": "2026-09-27T13:59:50Z",
       "domains": [
         "SECURITY"
@@ -5343,7 +5647,7 @@
         "b2f3e512e2422f37533b"
       ],
       "first_seen": "2026-09-25T14:22:52Z",
-      "last_seen": "2026-09-28T03:23:37Z",
+      "last_seen": "2026-09-28T03:50:45Z",
       "material_time": "2026-09-27T09:35:03Z",
       "domains": [
         "INFRA",
@@ -5366,7 +5670,7 @@
         "corroboration": 58,
         "contradiction": 0,
         "specificity": 78,
-        "recency": 94,
+        "recency": 93,
         "evidence_type": 67,
         "historical_reliability": 56,
         "claim_maturity": 69
@@ -5686,7 +5990,7 @@
         "08ba41558831cdc79bc4"
       ],
       "first_seen": "2026-09-27T09:21:43Z",
-      "last_seen": "2026-09-28T03:23:37Z",
+      "last_seen": "2026-09-28T03:50:45Z",
       "material_time": "2026-09-27T09:26:39Z",
       "domains": [
         "POLITICAL"
@@ -5914,19 +6218,6 @@
           ]
         },
         {
-          "claim_id": "claim-df8fa91bdf00195a47",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-86d7d3f055d049ac6d",
           "shared_actors": [
             "RUSSIA"
@@ -5976,6 +6267,19 @@
           "domains": [
             "WAR"
           ]
+        },
+        {
+          "claim_id": "claim-ba1bbf32ca5cf6f779",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -6014,7 +6318,7 @@
         "8ac8b5bd929ef99dfdc0"
       ],
       "first_seen": "2026-09-27T21:46:06Z",
-      "last_seen": "2026-09-28T03:23:37Z",
+      "last_seen": "2026-09-28T03:50:45Z",
       "material_time": "2026-09-27T21:36:36Z",
       "domains": [
         "TERRORISM"
@@ -6028,7 +6332,7 @@
         "UNITED STATES"
       ],
       "state": "CREDIBLE REPORT",
-      "confidence": 62,
+      "confidence": 61,
       "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 84,
@@ -6162,19 +6466,6 @@
           ]
         },
         {
-          "claim_id": "claim-df8fa91bdf00195a47",
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ],
-          "domains": [
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-7846d23b16eda07536",
           "shared_actors": [
             "IRAN",
@@ -6283,6 +6574,18 @@
             "POLITICAL",
             "SECURITY"
           ]
+        },
+        {
+          "claim_id": "claim-3d807506831f411af0",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -6299,328 +6602,30 @@
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-27T21:36:36Z"
       }
-    },
-    {
-      "id": "claim-65184e0cc1c912c842",
-      "headline": "Russia Says It Struck Vessels In Ukraine",
-      "signature_tokens": [
-        "russia",
-        "struck",
-        "ukraine",
-        "vessels"
-      ],
-      "observation_ids": [
-        "74b67fcc5fc4346fa68d"
-      ],
-      "first_seen": "2026-09-27T20:21:39Z",
-      "last_seen": "2026-09-28T03:23:37Z",
-      "material_time": "2026-09-27T19:39:37Z",
-      "domains": [
-        "INFRA",
-        "WAR"
-      ],
-      "regions": [
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "actors": [
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 64,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 78,
-        "independence": 25,
-        "corroboration": 22,
-        "contradiction": 0,
-        "specificity": 100,
-        "recency": 99,
-        "evidence_type": 73,
-        "historical_reliability": 78,
-        "claim_maturity": 36
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "74b67fcc5fc4346fa68d"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 1,
-      "independent_provenance_count": 1,
-      "sources": [
-        "gCaptain"
-      ],
-      "provenance_roots": [
-        "gcaptain"
-      ],
-      "evidence": [
-        {
-          "observation_id": "74b67fcc5fc4346fa68d",
-          "title": "Russia Says It Struck Vessels In Ukraine",
-          "source": "gCaptain",
-          "source_class": "specialist",
-          "provenance_root": "gcaptain",
-          "stance": "report",
-          "published": "2026-09-27T19:39:37Z",
-          "url": "https://gcaptain.com/russia-says-it-struck-vessels-in-ukraine",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Russia Says It Struck Vessels In Ukraine",
-        "plausible_explanations": [
-          "A genuine INFRA/WAR development involving RUSSIA, UKRAINE is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related INFRA/WAR indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [
-        {
-          "claim_id": "claim-5864ef41bab32e4ffd",
-          "headline": "Tracking a Sanctioned Russian Vessel’s West African Odyssey",
-          "material_time": "2026-08-25T08:52:50Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ]
-        }
-      ],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-2dd8d8676da99b2626",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-989145b34a34dc9ab4",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-ea2b118f02565cd1b7",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-8b4542a6fdb7ba9c2e",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-86d7d3f055d049ac6d",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-50e2edfe7007921903",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-d47e4cd2b83f09ff18",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-959f0c684e4b36f1f6",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-b066da503f27dfa53b",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "HUMANITARIAN",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-0577bbeca24d7a8f20",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "SPACE",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-4dd47d16e47f200135",
-          "shared_actors": [
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "UKRAINE"
-          ],
-          "domains": [
-            "TERRORISM"
-          ]
-        },
-        {
-          "claim_id": "claim-7cd35406081eab7d79",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-eaa7cb65570e3768",
-        "anomaly-62b13e2069cdb7fc"
-      ],
-      "threat_score": 15,
-      "watch_priority": 47,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 1,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-27T19:39:37Z"
-      }
     }
   ],
   "state_counts": {
-    "CONFIRMED": 177,
-    "CREDIBLE REPORT": 1845,
-    "EARLY WARNING": 588,
-    "SPECULATIVE": 1438,
-    "UNVERIFIED CLAIM": 15964,
+    "CONFIRMED": 176,
+    "CREDIBLE REPORT": 1836,
+    "EARLY WARNING": 589,
+    "SPECULATIVE": 1439,
+    "UNVERIFIED CLAIM": 15957,
     "REFUTED": 96,
-    "DORMANT": 9364
+    "DORMANT": 9387
   },
   "domain_counts": {
-    "WAR": 851,
+    "WAR": 849,
     "ECONOMIC": 164,
     "NUCLEAR": 95,
-    "POLITICAL": 4373,
-    "INFRA": 589,
+    "POLITICAL": 4371,
+    "INFRA": 585,
     "SPACE": 78,
-    "SECURITY": 4219,
-    "CYBER": 387,
+    "SECURITY": 4220,
+    "CYBER": 386,
     "HUMANITARIAN": 89,
-    "CLIMATE": 180,
+    "CLIMATE": 179,
     "TERRORISM": 112,
-    "BIO": 516,
+    "BIO": 515,
     "TRAFFICKING": 6
   },
   "note": "Layered machine brief: every item retains its explicit claim state and confidence."
