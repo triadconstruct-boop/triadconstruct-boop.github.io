@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T06:30:30Z",
+  "generated_at": "2026-09-28T06:55:47Z",
   "top_claims": [
     {
       "id": "claim-6fe34e676f1123feae",
@@ -26,7 +26,7 @@
         "da2df878232f260800f7"
       ],
       "first_seen": "2026-09-26T14:46:59Z",
-      "last_seen": "2026-09-28T06:30:30Z",
+      "last_seen": "2026-09-28T06:55:47Z",
       "material_time": "2026-09-27T12:45:00Z",
       "domains": [
         "INFRA",
@@ -51,7 +51,7 @@
         "corroboration": 82,
         "contradiction": 0,
         "specificity": 65,
-        "recency": 94,
+        "recency": 93,
         "evidence_type": 79,
         "historical_reliability": 85,
         "claim_maturity": 58
@@ -437,92 +437,120 @@
       }
     },
     {
-      "id": "claim-50e2edfe7007921903",
-      "headline": "Russia's strike near Poland put Ukraine's railway lifeline in focus. But the bigger threat lies elsewhere",
+      "id": "claim-45eedf00fd908199af",
+      "headline": "Seoul demands apology after Zelenskyy reveals North Korean prisoners of war transfer",
       "signature_tokens": [
-        "bigger",
-        "but",
-        "elsewhere",
-        "focus",
-        "lies",
-        "lifeline",
-        "near",
-        "poland",
-        "put",
-        "railway",
-        "russia",
-        "strike",
-        "threat",
-        "ukraine"
+        "apology",
+        "demands",
+        "korean",
+        "north",
+        "prisoners",
+        "reveals",
+        "seoul",
+        "transfer",
+        "war",
+        "zelenskyy"
       ],
       "observation_ids": [
-        "b9dee2d793f0fe0f4ce8"
+        "1a0f5b967279e437c0ad",
+        "be24ad3d19da0b527893",
+        "5c46ad676ee1c9185107"
       ],
-      "first_seen": "2026-09-27T06:51:28Z",
-      "last_seen": "2026-09-28T02:49:05Z",
-      "material_time": "2026-09-27T06:36:44Z",
+      "first_seen": "2026-09-28T03:50:45Z",
+      "last_seen": "2026-09-28T06:55:47Z",
+      "material_time": "2026-09-28T06:41:49Z",
       "domains": [
-        "INFRA"
+        "POLITICAL",
+        "WAR"
       ],
       "regions": [
-        "EUROPE",
+        "KOREAN PENINSULA",
         "RUSSIA",
         "UKRAINE"
       ],
       "actors": [
+        "NORTH KOREA",
         "RUSSIA",
         "UKRAINE"
       ],
-      "state": "EARLY WARNING",
-      "confidence": 60,
-      "confidence_direction": "STABLE",
+      "state": "CONFIRMED",
+      "confidence": 80,
+      "confidence_direction": "UP",
       "confidence_components": {
-        "source_quality": 79,
-        "independence": 25,
-        "corroboration": 22,
+        "source_quality": 81,
+        "independence": 79,
+        "corroboration": 82,
         "contradiction": 0,
-        "specificity": 78,
-        "recency": 90,
-        "evidence_type": 67,
-        "historical_reliability": 79,
-        "claim_maturity": 37
+        "specificity": 66,
+        "recency": 100,
+        "evidence_type": 79,
+        "historical_reliability": 81,
+        "claim_maturity": 57
       },
-      "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
+      "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
       "supporting_observation_ids": [
-        "b9dee2d793f0fe0f4ce8"
+        "1a0f5b967279e437c0ad",
+        "be24ad3d19da0b527893",
+        "5c46ad676ee1c9185107"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 1,
-      "independent_provenance_count": 1,
+      "source_count": 3,
+      "independent_provenance_count": 3,
       "sources": [
-        "Kyiv Independent"
+        "ABC News International",
+        "Euronews",
+        "Japan Times"
       ],
       "provenance_roots": [
-        "kyiv_independent"
+        "abc_intl",
+        "euronews",
+        "japan_times"
       ],
       "evidence": [
         {
-          "observation_id": "b9dee2d793f0fe0f4ce8",
-          "title": "Russia's strike near Poland put Ukraine's railway lifeline in focus. But the bigger threat lies elsewhere",
-          "source": "Kyiv Independent",
+          "observation_id": "5c46ad676ee1c9185107",
+          "title": "Seoul demands apology after Zelenskyy reveals North Korean prisoners of war transfer",
+          "source": "ABC News International",
+          "source_class": "established_media",
+          "provenance_root": "abc_intl",
+          "stance": "report",
+          "published": "2026-09-28T06:41:49Z",
+          "url": "https://abcnews.com/International/wireStory/seoul-demands-apology-after-zelenskyy-unilaterally-reveals-north-136814400",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "be24ad3d19da0b527893",
+          "title": "Seoul seeks apology after Ukraine 'breached' confidentiality agreement over transfer of North Korean POWs",
+          "source": "Euronews",
           "source_class": "regional_local",
-          "provenance_root": "kyiv_independent",
-          "stance": "warning",
-          "published": "2026-09-27T06:36:44Z",
-          "url": "https://kyivindependent.com/russias-strike-near-poland-put-ukraines-railway-lifeline-in-focus-but-the-bigger-threat-lies-elsewhere",
+          "provenance_root": "euronews",
+          "stance": "report",
+          "published": "2026-09-28T03:49:15Z",
+          "url": "https://www.euronews.com/2026/09/28/seoul-seeks-apology-after-ukraine-breached-confidentiality-agreement-over-transfer-of-nort",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "1a0f5b967279e437c0ad",
+          "title": "Seoul seeks apology after Ukraine reveals transfer of North Korean POWs",
+          "source": "Japan Times",
+          "source_class": "regional_local",
+          "provenance_root": "japan_times",
+          "stance": "report",
+          "published": "2026-09-28T00:33:00Z",
+          "url": "https://www.japantimes.co.jp/news/2026/09/28/world/south-korea-ukraine-north-korea-pow",
           "discovery_only": false
         }
       ],
       "state_affiliated_reporting": false,
       "discovery_only": false,
       "branch_analysis": {
-        "current_observation": "Russia's strike near Poland put Ukraine's railway lifeline in focus. But the bigger threat lies elsewhere",
+        "current_observation": "Seoul demands apology after Zelenskyy reveals North Korean prisoners of war transfer",
         "plausible_explanations": [
-          "A genuine INFRA development involving RUSSIA, UKRAINE is unfolding as reported.",
+          "A genuine POLITICAL/WAR development involving NORTH KOREA, RUSSIA, UKRAINE is unfolding as reported.",
           "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
           "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
         ],
-        "escalation_branch": "Related INFRA indicators spread, become operational, or draw additional actors into the event.",
+        "escalation_branch": "Related POLITICAL/WAR indicators spread, become operational, or draw additional actors into the event.",
         "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
         "confirm_indicators": [
           "A primary record, sensor observation, or on-record official confirmation.",
@@ -536,30 +564,17 @@
         ],
         "contradictory_evidence_present": false
       },
-      "historical_matches": [
-        {
-          "claim_id": "claim-5864ef41bab32e4ffd",
-          "headline": "Tracking a Sanctioned Russian Vessel’s West African Odyssey",
-          "material_time": "2026-08-25T08:52:50Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ]
-        }
-      ],
+      "historical_matches": [],
       "cross_domain_links": [
         {
           "claim_id": "claim-2dd8d8676da99b2626",
           "shared_actors": [
+            "NORTH KOREA",
             "RUSSIA",
             "UKRAINE"
           ],
           "shared_regions": [
+            "KOREAN PENINSULA",
             "RUSSIA",
             "UKRAINE"
           ],
@@ -568,17 +583,15 @@
           ]
         },
         {
-          "claim_id": "claim-989145b34a34dc9ab4",
+          "claim_id": "claim-046afa828378507ba6",
           "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
+            "NORTH KOREA"
           ],
           "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
+            "KOREAN PENINSULA"
           ],
           "domains": [
-            "POLITICAL",
+            "NUCLEAR",
             "WAR"
           ]
         },
@@ -603,7 +616,6 @@
             "UKRAINE"
           ],
           "shared_regions": [
-            "EUROPE",
             "RUSSIA",
             "UKRAINE"
           ],
@@ -624,6 +636,20 @@
           ],
           "domains": [
             "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-50e2edfe7007921903",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA"
           ]
         },
         {
@@ -648,7 +674,6 @@
             "UKRAINE"
           ],
           "shared_regions": [
-            "EUROPE",
             "RUSSIA",
             "UKRAINE"
           ],
@@ -656,21 +681,6 @@
             "INFRA",
             "POLITICAL",
             "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-959f0c684e4b36f1f6",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
           ]
         },
         {
@@ -710,7 +720,6 @@
             "UKRAINE"
           ],
           "shared_regions": [
-            "EUROPE",
             "UKRAINE"
           ],
           "domains": [
@@ -718,29 +727,33 @@
           ]
         },
         {
-          "claim_id": "claim-99498e6a69ccf61001",
-          "shared_actors": [],
+          "claim_id": "claim-2a3159d950d493e864",
+          "shared_actors": [
+            "RUSSIA"
+          ],
           "shared_regions": [
-            "EUROPE"
+            "RUSSIA"
           ],
           "domains": [
-            "WAR"
+            "POLITICAL",
+            "SECURITY"
           ]
         }
       ],
       "anomaly_ids": [
+        "anomaly-d59d51d008caf6f6",
         "anomaly-eaa7cb65570e3768",
         "anomaly-62b13e2069cdb7fc"
       ],
-      "threat_score": 6,
-      "watch_priority": 59,
+      "threat_score": 26,
+      "watch_priority": 58,
       "audit": {
-        "reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
-        "support_count": 1,
+        "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
+        "support_count": 3,
         "contradiction_count": 0,
-        "independent_roots": 1,
+        "independent_roots": 3,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-27T06:36:44Z"
+        "material_time_used_for_decay": "2026-09-28T06:41:49Z"
       }
     },
     {
@@ -1045,312 +1058,6 @@
       }
     },
     {
-      "id": "claim-45eedf00fd908199af",
-      "headline": "Seoul seeks apology after Ukraine 'breached' confidentiality agreement over transfer of North Korean POWs",
-      "signature_tokens": [
-        "agreement",
-        "apology",
-        "breached",
-        "confidentiality",
-        "korean",
-        "north",
-        "pows",
-        "seeks",
-        "seoul",
-        "transfer",
-        "ukraine"
-      ],
-      "observation_ids": [
-        "1a0f5b967279e437c0ad",
-        "be24ad3d19da0b527893"
-      ],
-      "first_seen": "2026-09-28T03:50:45Z",
-      "last_seen": "2026-09-28T06:30:30Z",
-      "material_time": "2026-09-28T03:49:15Z",
-      "domains": [
-        "POLITICAL",
-        "WAR"
-      ],
-      "regions": [
-        "KOREAN PENINSULA",
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "actors": [
-        "NORTH KOREA",
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 69,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 80,
-        "independence": 52,
-        "corroboration": 52,
-        "contradiction": 0,
-        "specificity": 66,
-        "recency": 100,
-        "evidence_type": 67,
-        "historical_reliability": 80,
-        "claim_maturity": 46
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "1a0f5b967279e437c0ad",
-        "be24ad3d19da0b527893"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 2,
-      "independent_provenance_count": 2,
-      "sources": [
-        "Euronews",
-        "Japan Times"
-      ],
-      "provenance_roots": [
-        "euronews",
-        "japan_times"
-      ],
-      "evidence": [
-        {
-          "observation_id": "be24ad3d19da0b527893",
-          "title": "Seoul seeks apology after Ukraine 'breached' confidentiality agreement over transfer of North Korean POWs",
-          "source": "Euronews",
-          "source_class": "regional_local",
-          "provenance_root": "euronews",
-          "stance": "report",
-          "published": "2026-09-28T03:49:15Z",
-          "url": "https://www.euronews.com/2026/09/28/seoul-seeks-apology-after-ukraine-breached-confidentiality-agreement-over-transfer-of-nort",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "1a0f5b967279e437c0ad",
-          "title": "Seoul seeks apology after Ukraine reveals transfer of North Korean POWs",
-          "source": "Japan Times",
-          "source_class": "regional_local",
-          "provenance_root": "japan_times",
-          "stance": "report",
-          "published": "2026-09-28T00:33:00Z",
-          "url": "https://www.japantimes.co.jp/news/2026/09/28/world/south-korea-ukraine-north-korea-pow",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Seoul seeks apology after Ukraine 'breached' confidentiality agreement over transfer of North Korean POWs",
-        "plausible_explanations": [
-          "A genuine POLITICAL/WAR development involving NORTH KOREA, RUSSIA, UKRAINE is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related POLITICAL/WAR indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-2dd8d8676da99b2626",
-          "shared_actors": [
-            "NORTH KOREA",
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "KOREAN PENINSULA",
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-046afa828378507ba6",
-          "shared_actors": [
-            "NORTH KOREA"
-          ],
-          "shared_regions": [
-            "KOREAN PENINSULA"
-          ],
-          "domains": [
-            "NUCLEAR",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-ea2b118f02565cd1b7",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-8b4542a6fdb7ba9c2e",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-86d7d3f055d049ac6d",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-50e2edfe7007921903",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-cc379327343321ef12",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-d47e4cd2b83f09ff18",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-b066da503f27dfa53b",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "HUMANITARIAN",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-0577bbeca24d7a8f20",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "SPACE",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-4dd47d16e47f200135",
-          "shared_actors": [
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "UKRAINE"
-          ],
-          "domains": [
-            "TERRORISM"
-          ]
-        },
-        {
-          "claim_id": "claim-2a3159d950d493e864",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "POLITICAL",
-            "SECURITY"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-d59d51d008caf6f6",
-        "anomaly-eaa7cb65570e3768",
-        "anomaly-62b13e2069cdb7fc"
-      ],
-      "threat_score": 16,
-      "watch_priority": 56,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 2,
-        "contradiction_count": 0,
-        "independent_roots": 2,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-28T03:49:15Z"
-      }
-    },
-    {
       "id": "claim-0577bbeca24d7a8f20",
       "headline": "Russian forces strike Omega Telecom data center in Kiev",
       "signature_tokens": [
@@ -1369,7 +1076,7 @@
         "2f3298b1b9faeffaafcd"
       ],
       "first_seen": "2026-09-26T05:46:03Z",
-      "last_seen": "2026-09-28T06:30:30Z",
+      "last_seen": "2026-09-28T06:55:47Z",
       "material_time": "2026-09-27T15:35:51Z",
       "domains": [
         "INFRA",
@@ -1695,7 +1402,7 @@
         "f2ac30fe56165fad1f08"
       ],
       "first_seen": "2026-09-27T17:20:24Z",
-      "last_seen": "2026-09-28T06:30:30Z",
+      "last_seen": "2026-09-28T06:55:47Z",
       "material_time": "2026-09-27T17:00:04Z",
       "domains": [
         "ECONOMIC",
@@ -2043,7 +1750,7 @@
         "fc4f4d5eafe5da50f4e6"
       ],
       "first_seen": "2026-09-28T05:23:49Z",
-      "last_seen": "2026-09-28T06:30:30Z",
+      "last_seen": "2026-09-28T06:55:47Z",
       "material_time": "2026-09-28T05:14:47Z",
       "domains": [
         "NUCLEAR",
@@ -2336,7 +2043,7 @@
         "eedff1b88b7b59d9450f"
       ],
       "first_seen": "2026-09-27T12:51:07Z",
-      "last_seen": "2026-09-28T06:30:30Z",
+      "last_seen": "2026-09-28T06:55:47Z",
       "material_time": "2026-09-27T12:00:12Z",
       "domains": [
         "SECURITY",
@@ -2671,7 +2378,7 @@
         "recency": 91,
         "evidence_type": 79,
         "historical_reliability": 89,
-        "claim_maturity": 91
+        "claim_maturity": 92
       },
       "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
       "supporting_observation_ids": [
@@ -2993,7 +2700,7 @@
         "d2d43fd756deac9bfa26"
       ],
       "first_seen": "2026-09-27T05:19:49Z",
-      "last_seen": "2026-09-28T06:30:30Z",
+      "last_seen": "2026-09-28T06:55:47Z",
       "material_time": "2026-09-28T01:02:00Z",
       "domains": [
         "POLITICAL",
@@ -3297,7 +3004,7 @@
         "b23e0c40d98840171d01"
       ],
       "first_seen": "2026-09-26T09:45:40Z",
-      "last_seen": "2026-09-28T06:30:30Z",
+      "last_seen": "2026-09-28T06:55:47Z",
       "material_time": "2026-09-27T22:10:44Z",
       "domains": [
         "INFRA",
@@ -3320,7 +3027,7 @@
         "corroboration": 85,
         "contradiction": 0,
         "specificity": 75,
-        "recency": 99,
+        "recency": 98,
         "evidence_type": 79,
         "historical_reliability": 83,
         "claim_maturity": 69
@@ -3635,7 +3342,7 @@
         "240d1fd7a299200a645e"
       ],
       "first_seen": "2026-09-27T16:21:52Z",
-      "last_seen": "2026-09-28T06:30:30Z",
+      "last_seen": "2026-09-28T06:55:47Z",
       "material_time": "2026-09-27T21:14:44Z",
       "domains": [
         "TERRORISM",
@@ -4010,7 +3717,7 @@
         "8f5c5221021174f4aab8"
       ],
       "first_seen": "2026-09-27T18:23:40Z",
-      "last_seen": "2026-09-28T06:30:30Z",
+      "last_seen": "2026-09-28T06:55:47Z",
       "material_time": "2026-09-27T17:44:53Z",
       "domains": [
         "SECURITY"
@@ -4267,6 +3974,361 @@
       }
     },
     {
+      "id": "claim-eb36a6441bfce6d062",
+      "headline": "Iran FM says Tehran ready for doomsday war with U . S ., but ready to negotiate – Ya Libnan",
+      "signature_tokens": [
+        "but",
+        "doomsday",
+        "iran",
+        "libnan",
+        "negotiate",
+        "ready",
+        "tehran",
+        "war"
+      ],
+      "observation_ids": [
+        "83964b770dc511b6fa18",
+        "483d336f87d3fb45d3ec"
+      ],
+      "first_seen": "2026-09-27T18:23:40Z",
+      "last_seen": "2026-09-28T06:55:47Z",
+      "material_time": "2026-09-28T05:45:00Z",
+      "domains": [
+        "POLITICAL",
+        "SECURITY"
+      ],
+      "regions": [
+        "IRAN",
+        "UNITED STATES"
+      ],
+      "actors": [
+        "IRAN",
+        "UNITED STATES"
+      ],
+      "state": "UNVERIFIED CLAIM",
+      "confidence": 42,
+      "confidence_direction": "STABLE",
+      "confidence_components": {
+        "source_quality": 32,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 72,
+        "recency": 100,
+        "evidence_type": 24,
+        "historical_reliability": 32,
+        "claim_maturity": 35
+      },
+      "classification_reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
+      "supporting_observation_ids": [
+        "83964b770dc511b6fa18",
+        "483d336f87d3fb45d3ec"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 2,
+      "independent_provenance_count": 1,
+      "sources": [
+        "Reddit WorldNews Signal",
+        "yalibnan.com"
+      ],
+      "provenance_roots": [
+        "reddit_worldnews",
+        "yalibnan.com"
+      ],
+      "evidence": [
+        {
+          "observation_id": "483d336f87d3fb45d3ec",
+          "title": "Iran FM says Tehran ready for doomsday war with U . S ., but ready to negotiate – Ya Libnan",
+          "source": "yalibnan.com",
+          "source_class": "low_confidence",
+          "provenance_root": "yalibnan.com",
+          "stance": "report",
+          "published": "2026-09-28T05:45:00Z",
+          "url": "https://yalibnan.com/2026/09/28/irans-fm-says-tehran-ready-for-doomsday-war-with-u-s-but-ready-to-negotiate",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "83964b770dc511b6fa18",
+          "title": "Iran’s foreign minister says Tehran ready for ‘doomsday’ war with U.S., but leaves diplomacy on the table",
+          "source": "Reddit WorldNews Signal",
+          "source_class": "low_confidence",
+          "provenance_root": "reddit_worldnews",
+          "stance": "report",
+          "published": "2026-09-27T17:41:02Z",
+          "url": "https://www.reddit.com/r/worldnews/comments/1wrqfkr/irans_foreign_minister_says_tehran_ready_for",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Iran FM says Tehran ready for doomsday war with U . S ., but ready to negotiate – Ya Libnan",
+        "plausible_explanations": [
+          "A genuine POLITICAL/SECURITY development involving IRAN, UNITED STATES is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related POLITICAL/SECURITY indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-6074bdce7ae23b0373",
+          "headline": "Russian National Living in Florida Convicted for Scheme to Illegally Export Aircraft Parts from the United States to Russia",
+          "material_time": "2026-08-28T12:00:00Z",
+          "shared_domains": [
+            "SECURITY"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-030707f5eb81a11a28",
+          "headline": "Former U.S. Government Employee Pleads Guilty to Attempting to Provide Classified Information to Foreign Government",
+          "material_time": "2026-08-27T12:00:00Z",
+          "shared_domains": [
+            "SECURITY"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-cd0596790c6e08bcab",
+          "headline": "Homeland Security Task Force: Dual Dominican and French National Admits Role in Firearms Trafficking Scheme",
+          "material_time": "2026-08-05T12:00:00Z",
+          "shared_domains": [
+            "SECURITY"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-a02fb9167c45d388fd",
+          "headline": "Department of Justice Files First Case in U.S. Alien Terrorist Removal Court to Deport Afghan Alien Who Supported Her Family’s Plans for Election-Day Shooting",
+          "material_time": "2026-07-30T12:00:00Z",
+          "shared_domains": [
+            "POLITICAL"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-02f5d588ef155ffda6",
+          "headline": "Will Ronaldo Cry​? World Cup Fans Bet Billions Through Prediction Markets",
+          "material_time": "2026-07-30T11:17:38Z",
+          "shared_domains": [
+            "SECURITY"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-af8f754e60078ad1ce",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "NUCLEAR",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-45805a16542a0786bc",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-2942007ff1e1e3addd",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-45edc49ec343ddb9fe",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-6225591395cd90c87a",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "INFRA",
+            "NUCLEAR",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-6fe34e676f1123feae",
+          "shared_actors": [
+            "IRAN",
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "INFRA",
+            "NUCLEAR",
+            "POLITICAL",
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-2379c880ba5d9489f5",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "NUCLEAR",
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-54195610a0187daac7",
+          "shared_actors": [],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "HUMANITARIAN",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-3d807506831f411af0",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-c2342b2bf68c4582e6",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-2b0bbfb39360c0e162",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-0d8998da6ac47662c5",
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ],
+          "domains": [
+            "NUCLEAR",
+            "POLITICAL",
+            "SECURITY"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-b60029177f80e4b2",
+        "anomaly-e416d66232e352cf"
+      ],
+      "threat_score": 1,
+      "watch_priority": 48,
+      "audit": {
+        "reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
+        "support_count": 2,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-28T05:45:00Z"
+      }
+    },
+    {
       "id": "claim-ec3a26bf92d899631f",
       "headline": "Trump asked Xi Jinping if China would like to buy US weapons, American ambassador says",
       "signature_tokens": [
@@ -4285,7 +4347,7 @@
         "64f18757d07ab7c87aa4"
       ],
       "first_seen": "2026-09-28T01:21:04Z",
-      "last_seen": "2026-09-28T06:30:30Z",
+      "last_seen": "2026-09-28T06:55:47Z",
       "material_time": "2026-09-28T04:06:25Z",
       "domains": [
         "POLITICAL",
@@ -4612,7 +4674,7 @@
         "93f7d74b9e81dd63ae28"
       ],
       "first_seen": "2026-09-27T16:21:52Z",
-      "last_seen": "2026-09-28T06:30:30Z",
+      "last_seen": "2026-09-28T06:55:47Z",
       "material_time": "2026-09-28T01:00:00Z",
       "domains": [
         "NUCLEAR",
@@ -4939,7 +5001,7 @@
         "af130177196dc9fc6f47"
       ],
       "first_seen": "2026-09-27T12:25:52Z",
-      "last_seen": "2026-09-28T06:30:30Z",
+      "last_seen": "2026-09-28T06:55:47Z",
       "material_time": "2026-09-27T22:06:00Z",
       "domains": [
         "INFRA",
@@ -4962,7 +5024,7 @@
         "corroboration": 85,
         "contradiction": 0,
         "specificity": 69,
-        "recency": 99,
+        "recency": 98,
         "evidence_type": 79,
         "historical_reliability": 86,
         "claim_maturity": 69
@@ -5324,7 +5386,7 @@
         "19549aa6bd641e96713d"
       ],
       "first_seen": "2026-09-27T21:20:29Z",
-      "last_seen": "2026-09-28T06:30:30Z",
+      "last_seen": "2026-09-28T06:55:47Z",
       "material_time": "2026-09-27T21:04:46Z",
       "domains": [
         "POLITICAL"
@@ -5620,7 +5682,7 @@
         "321c35f9158b6410dc42"
       ],
       "first_seen": "2026-09-27T14:47:06Z",
-      "last_seen": "2026-09-28T06:30:30Z",
+      "last_seen": "2026-09-28T06:55:47Z",
       "material_time": "2026-09-27T14:36:26Z",
       "domains": [
         "WAR"
@@ -5642,7 +5704,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 95,
+        "recency": 94,
         "evidence_type": 73,
         "historical_reliability": 80,
         "claim_maturity": 36
@@ -5940,7 +6002,7 @@
         "cdb764d0b1b9973ceccf"
       ],
       "first_seen": "2026-09-27T16:21:52Z",
-      "last_seen": "2026-09-28T06:30:30Z",
+      "last_seen": "2026-09-28T06:55:47Z",
       "material_time": "2026-09-27T13:59:50Z",
       "domains": [
         "SECURITY"
@@ -6267,7 +6329,7 @@
         "b2f3e512e2422f37533b"
       ],
       "first_seen": "2026-09-25T14:22:52Z",
-      "last_seen": "2026-09-28T06:30:30Z",
+      "last_seen": "2026-09-28T06:55:47Z",
       "material_time": "2026-09-27T09:35:03Z",
       "domains": [
         "INFRA",
@@ -6592,25 +6654,25 @@
     }
   ],
   "state_counts": {
-    "CONFIRMED": 180,
-    "CREDIBLE REPORT": 1831,
-    "EARLY WARNING": 590,
-    "SPECULATIVE": 1443,
-    "UNVERIFIED CLAIM": 15945,
+    "CONFIRMED": 179,
+    "CREDIBLE REPORT": 1829,
+    "EARLY WARNING": 592,
+    "SPECULATIVE": 1445,
+    "UNVERIFIED CLAIM": 16056,
     "REFUTED": 96,
-    "DORMANT": 9504
+    "DORMANT": 9527
   },
   "domain_counts": {
-    "WAR": 839,
-    "ECONOMIC": 166,
+    "WAR": 838,
+    "ECONOMIC": 167,
     "NUCLEAR": 95,
-    "POLITICAL": 4361,
-    "INFRA": 564,
+    "POLITICAL": 4364,
+    "INFRA": 560,
     "SPACE": 77,
-    "SECURITY": 4157,
+    "SECURITY": 4260,
     "CYBER": 387,
     "HUMANITARIAN": 89,
-    "CLIMATE": 183,
+    "CLIMATE": 181,
     "TERRORISM": 110,
     "BIO": 520,
     "TRAFFICKING": 6
