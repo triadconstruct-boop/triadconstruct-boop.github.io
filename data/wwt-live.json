@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-29T22:48:35Z",
+  "generated_at": "2026-09-29T23:21:00Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 42,
   "verified_pressure": {
     "score": 42,
-    "claim_count": 54,
+    "claim_count": 55,
     "top_claims": [
       {
         "id": "claim-97bfb29d982c338e8e",
@@ -667,11 +667,12 @@
           "e321ebfa9f7044f6aae1",
           "736c0e320b978038c04a",
           "0e3621f47066f1fad91f",
-          "d71b82de0d5b29f029a8"
+          "d71b82de0d5b29f029a8",
+          "da2df878232f260800f7"
         ],
         "first_seen": "2026-09-26T14:46:59Z",
         "last_seen": "2026-09-28T17:49:54Z",
-        "material_time": "2026-09-27T06:34:43Z",
+        "material_time": "2026-09-27T12:45:00Z",
         "domains": [
           "INFRA",
           "NUCLEAR",
@@ -694,8 +695,8 @@
           "independence": 79,
           "corroboration": 82,
           "contradiction": 0,
-          "specificity": 66,
-          "recency": 78,
+          "specificity": 65,
+          "recency": 79,
           "evidence_type": 79,
           "historical_reliability": 85,
           "claim_maturity": 61
@@ -708,10 +709,11 @@
           "e321ebfa9f7044f6aae1",
           "736c0e320b978038c04a",
           "0e3621f47066f1fad91f",
-          "d71b82de0d5b29f029a8"
+          "d71b82de0d5b29f029a8",
+          "da2df878232f260800f7"
         ],
         "contradictory_observation_ids": [],
-        "source_count": 7,
+        "source_count": 8,
         "independent_provenance_count": 3,
         "sources": [
           "Al Jazeera English",
@@ -719,6 +721,7 @@
           "The Guardian World",
           "cp24.com",
           "fox13now.com",
+          "jamaicantimes.com",
           "krgv.com",
           "texarkanagazette.com"
         ],
@@ -728,10 +731,22 @@
           "cp24.com",
           "fox13now.com",
           "guardian_world",
+          "jamaicantimes.com",
           "krgv.com",
           "texarkanagazette.com"
         ],
         "evidence": [
+          {
+            "observation_id": "da2df878232f260800f7",
+            "title": "Trump Rejects Iran Plan To Reopen Strait Of Hormuz",
+            "source": "jamaicantimes.com",
+            "source_class": "low_confidence",
+            "provenance_root": "jamaicantimes.com",
+            "stance": "report",
+            "published": "2026-09-27T12:45:00Z",
+            "url": "http://www.jamaicantimes.com/news/279333708/trump-rejects-iran-plan-to-reopen-strait-of-hormuz",
+            "discovery_only": true
+          },
           {
             "observation_id": "d71b82de0d5b29f029a8",
             "title": "Trump rejects Iran’s seven-day peace deal to reopen strait of Hormuz",
@@ -835,6 +850,19 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-de2116379c6c1bfea5",
+            "headline": "USS Abraham Lincoln Passes Through Singapore Strait En route to Thailand",
+            "material_time": "2026-08-30T23:12:37Z",
+            "shared_domains": [
+              "INFRA",
+              "WAR"
+            ],
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": []
+          },
+          {
             "claim_id": "claim-8210e0f0e5ba7084f3",
             "headline": "Strait of Hormuz Tanker Transits Up But Still Below Pre–War Levels",
             "material_time": "2026-08-28T21:20:26Z",
@@ -876,18 +904,6 @@
             "material_time": "2026-08-27T12:00:00Z",
             "shared_domains": [
               "SECURITY"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": []
-          },
-          {
-            "claim_id": "claim-c774e58742ead11dc6",
-            "headline": "Justice Department and FBI Seize Platforms Operated and Used by China State-Sponsored Hackers to Target U.S. Critical Infrastructure",
-            "material_time": "2026-08-26T12:00:00Z",
-            "shared_domains": [
-              "INFRA"
             ],
             "shared_actors": [
               "UNITED STATES"
@@ -1062,11 +1078,11 @@
         "watch_priority": 60,
         "audit": {
           "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-          "support_count": 7,
+          "support_count": 8,
           "contradiction_count": 0,
           "independent_roots": 3,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-27T06:34:43Z"
+          "material_time_used_for_decay": "2026-09-27T12:45:00Z"
         }
       },
       {
@@ -1419,7 +1435,7 @@
           "98fae5a3c935133e50ed"
         ],
         "first_seen": "2026-09-29T10:52:25Z",
-        "last_seen": "2026-09-29T22:48:35Z",
+        "last_seen": "2026-09-29T23:21:00Z",
         "material_time": "2026-09-29T17:30:00Z",
         "domains": [
           "POLITICAL",
@@ -1606,6 +1622,20 @@
           "contradictory_evidence_present": false
         },
         "historical_matches": [
+          {
+            "claim_id": "claim-de2116379c6c1bfea5",
+            "headline": "USS Abraham Lincoln Passes Through Singapore Strait En route to Thailand",
+            "material_time": "2026-08-30T23:12:37Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "CHINA"
+            ],
+            "shared_regions": [
+              "CHINA"
+            ]
+          },
           {
             "claim_id": "claim-6074bdce7ae23b0373",
             "headline": "Russian National Living in Florida Convicted for Scheme to Illegally Export Aircraft Parts from the United States to Russia",
@@ -1874,7 +1904,7 @@
           "corroboration": 25,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 96,
+          "recency": 95,
           "evidence_type": 79,
           "historical_reliability": 84,
           "claim_maturity": 47
@@ -2140,7 +2170,7 @@
           "0e2810a1da42315e571d"
         ],
         "first_seen": "2026-09-29T10:24:49Z",
-        "last_seen": "2026-09-29T22:48:35Z",
+        "last_seen": "2026-09-29T23:21:00Z",
         "material_time": "2026-09-29T16:38:24Z",
         "domains": [
           "ECONOMIC",
@@ -3079,7 +3109,7 @@
           "4c92b0da6c0ad72d3205"
         ],
         "first_seen": "2026-09-29T21:22:38Z",
-        "last_seen": "2026-09-29T22:48:35Z",
+        "last_seen": "2026-09-29T23:21:00Z",
         "material_time": "2026-09-29T20:48:34Z",
         "domains": [
           "ECONOMIC",
@@ -3157,6 +3187,20 @@
           "contradictory_evidence_present": false
         },
         "historical_matches": [
+          {
+            "claim_id": "claim-de2116379c6c1bfea5",
+            "headline": "USS Abraham Lincoln Passes Through Singapore Strait En route to Thailand",
+            "material_time": "2026-08-30T23:12:37Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "CHINA"
+            ],
+            "shared_regions": [
+              "CHINA"
+            ]
+          },
           {
             "claim_id": "claim-8210e0f0e5ba7084f3",
             "headline": "Strait of Hormuz Tanker Transits Up But Still Below Pre–War Levels",
@@ -3393,10 +3437,11 @@
           "b6dd890ae88955acad73",
           "cd715a9fde76cb9c1119",
           "197add2ee81287c1eddb",
+          "139cb5f1f35404926bf5",
           "a44914109d6cf5b9e6b8"
         ],
         "first_seen": "2026-09-29T14:53:57Z",
-        "last_seen": "2026-09-29T22:48:35Z",
+        "last_seen": "2026-09-29T23:21:00Z",
         "material_time": "2026-09-29T14:55:18Z",
         "domains": [
           "INFRA",
@@ -3430,6 +3475,7 @@
           "b6dd890ae88955acad73",
           "cd715a9fde76cb9c1119",
           "197add2ee81287c1eddb",
+          "139cb5f1f35404926bf5",
           "a44914109d6cf5b9e6b8"
         ],
         "contradictory_observation_ids": [],
@@ -3471,6 +3517,17 @@
           {
             "observation_id": "197add2ee81287c1eddb",
             "title": "Ukrainian suspect in Nord Stream sabotage requests asylum in Croatia - The Kyiv Independent",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-29T14:46:10Z",
+            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOT3M4aUUtcXJpaXM4ckM4bXJpbHEtYkM2VmRXX185SjJQVTRhY1k3M1ZUcUlEdW9UNEQyLXppNDlvS1FDZDJtVnpXTkdZc28ySVRRNU5HQ0N2eXNIV25QMkFmUEhpTW8tOTNHbV96cHNHbmlTcnpaTG1ITUhVV2d5dERHb2l1QUptazYxaW1DOFNrLXRScFBWWGwtUVlZZw?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "139cb5f1f35404926bf5",
+            "title": "Ukrainian suspect in Nord Stream sabotage requests asylum in Croatia - kyivindependent.com",
             "source": "GDELT Global Discovery",
             "source_class": "discovery",
             "provenance_root": "gdelt_global",
@@ -3681,7 +3738,7 @@
         "watch_priority": 37,
         "audit": {
           "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 5,
+          "support_count": 6,
           "contradiction_count": 0,
           "independent_roots": 2,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
@@ -3703,7 +3760,7 @@
           "eb13e4d60bafe624010e"
         ],
         "first_seen": "2026-09-28T20:54:43Z",
-        "last_seen": "2026-09-29T22:48:35Z",
+        "last_seen": "2026-09-29T23:21:00Z",
         "material_time": "2026-09-28T20:01:43Z",
         "domains": [
           "INFRA",
@@ -4860,7 +4917,7 @@
           "corroboration": 52,
           "contradiction": 0,
           "specificity": 78,
-          "recency": 68,
+          "recency": 67,
           "evidence_type": 67,
           "historical_reliability": 56,
           "claim_maturity": 53
@@ -5660,7 +5717,7 @@
           "UKRAINE"
         ],
         "state": "UNVERIFIED CLAIM",
-        "confidence": 57,
+        "confidence": 56,
         "confidence_direction": "STABLE",
         "confidence_components": {
           "source_quality": 79,
@@ -5668,7 +5725,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 69,
+          "recency": 68,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 42
@@ -6237,7 +6294,7 @@
           "2ca11ea2ef504347ce38"
         ],
         "first_seen": "2026-09-29T11:50:26Z",
-        "last_seen": "2026-09-29T22:22:14Z",
+        "last_seen": "2026-09-29T23:21:00Z",
         "material_time": "2026-09-29T14:01:29Z",
         "domains": [
           "NUCLEAR"
@@ -7150,7 +7207,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-8bb50608f713126e"
+          "anomaly-1ed7992080a41bea"
         ],
         "threat_score": 4,
         "watch_priority": 44,
@@ -7201,7 +7258,7 @@
           "recency": 70,
           "evidence_type": 73,
           "historical_reliability": 84,
-          "claim_maturity": 41
+          "claim_maturity": 42
         },
         "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
         "supporting_observation_ids": [
@@ -7273,7 +7330,7 @@
     "alliance_entanglement": 5,
     "multi_theater_coupling": 7,
     "nuclear_escalation": 74,
-    "military_mobilization": 60,
+    "military_mobilization": 61,
     "economic_warfare": 100,
     "crisis_control_failure": 0,
     "hybrid_preparation": 65
@@ -7284,7 +7341,7 @@
     "multi_theater_coupling": 2,
     "nuclear_escalation": 16,
     "military_mobilization": 16,
-    "economic_warfare": 201,
+    "economic_warfare": 203,
     "crisis_control_failure": 0,
     "hybrid_preparation": 33
   },
@@ -7953,11 +8010,12 @@
         "e321ebfa9f7044f6aae1",
         "736c0e320b978038c04a",
         "0e3621f47066f1fad91f",
-        "d71b82de0d5b29f029a8"
+        "d71b82de0d5b29f029a8",
+        "da2df878232f260800f7"
       ],
       "first_seen": "2026-09-26T14:46:59Z",
       "last_seen": "2026-09-28T17:49:54Z",
-      "material_time": "2026-09-27T06:34:43Z",
+      "material_time": "2026-09-27T12:45:00Z",
       "domains": [
         "INFRA",
         "NUCLEAR",
@@ -7980,8 +8038,8 @@
         "independence": 79,
         "corroboration": 82,
         "contradiction": 0,
-        "specificity": 66,
-        "recency": 78,
+        "specificity": 65,
+        "recency": 79,
         "evidence_type": 79,
         "historical_reliability": 85,
         "claim_maturity": 61
@@ -7994,10 +8052,11 @@
         "e321ebfa9f7044f6aae1",
         "736c0e320b978038c04a",
         "0e3621f47066f1fad91f",
-        "d71b82de0d5b29f029a8"
+        "d71b82de0d5b29f029a8",
+        "da2df878232f260800f7"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 7,
+      "source_count": 8,
       "independent_provenance_count": 3,
       "sources": [
         "Al Jazeera English",
@@ -8005,6 +8064,7 @@
         "The Guardian World",
         "cp24.com",
         "fox13now.com",
+        "jamaicantimes.com",
         "krgv.com",
         "texarkanagazette.com"
       ],
@@ -8014,10 +8074,22 @@
         "cp24.com",
         "fox13now.com",
         "guardian_world",
+        "jamaicantimes.com",
         "krgv.com",
         "texarkanagazette.com"
       ],
       "evidence": [
+        {
+          "observation_id": "da2df878232f260800f7",
+          "title": "Trump Rejects Iran Plan To Reopen Strait Of Hormuz",
+          "source": "jamaicantimes.com",
+          "source_class": "low_confidence",
+          "provenance_root": "jamaicantimes.com",
+          "stance": "report",
+          "published": "2026-09-27T12:45:00Z",
+          "url": "http://www.jamaicantimes.com/news/279333708/trump-rejects-iran-plan-to-reopen-strait-of-hormuz",
+          "discovery_only": true
+        },
         {
           "observation_id": "d71b82de0d5b29f029a8",
           "title": "Trump rejects Iran’s seven-day peace deal to reopen strait of Hormuz",
@@ -8121,6 +8193,19 @@
       },
       "historical_matches": [
         {
+          "claim_id": "claim-de2116379c6c1bfea5",
+          "headline": "USS Abraham Lincoln Passes Through Singapore Strait En route to Thailand",
+          "material_time": "2026-08-30T23:12:37Z",
+          "shared_domains": [
+            "INFRA",
+            "WAR"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": []
+        },
+        {
           "claim_id": "claim-8210e0f0e5ba7084f3",
           "headline": "Strait of Hormuz Tanker Transits Up But Still Below Pre–War Levels",
           "material_time": "2026-08-28T21:20:26Z",
@@ -8162,18 +8247,6 @@
           "material_time": "2026-08-27T12:00:00Z",
           "shared_domains": [
             "SECURITY"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": []
-        },
-        {
-          "claim_id": "claim-c774e58742ead11dc6",
-          "headline": "Justice Department and FBI Seize Platforms Operated and Used by China State-Sponsored Hackers to Target U.S. Critical Infrastructure",
-          "material_time": "2026-08-26T12:00:00Z",
-          "shared_domains": [
-            "INFRA"
           ],
           "shared_actors": [
             "UNITED STATES"
@@ -8348,11 +8421,11 @@
       "watch_priority": 60,
       "audit": {
         "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-        "support_count": 7,
+        "support_count": 8,
         "contradiction_count": 0,
         "independent_roots": 3,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-27T06:34:43Z"
+        "material_time_used_for_decay": "2026-09-27T12:45:00Z"
       }
     },
     {
@@ -8705,7 +8778,7 @@
         "98fae5a3c935133e50ed"
       ],
       "first_seen": "2026-09-29T10:52:25Z",
-      "last_seen": "2026-09-29T22:48:35Z",
+      "last_seen": "2026-09-29T23:21:00Z",
       "material_time": "2026-09-29T17:30:00Z",
       "domains": [
         "POLITICAL",
@@ -8892,6 +8965,20 @@
         "contradictory_evidence_present": false
       },
       "historical_matches": [
+        {
+          "claim_id": "claim-de2116379c6c1bfea5",
+          "headline": "USS Abraham Lincoln Passes Through Singapore Strait En route to Thailand",
+          "material_time": "2026-08-30T23:12:37Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [
+            "CHINA"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ]
+        },
         {
           "claim_id": "claim-6074bdce7ae23b0373",
           "headline": "Russian National Living in Florida Convicted for Scheme to Illegally Export Aircraft Parts from the United States to Russia",
@@ -9160,7 +9247,7 @@
         "corroboration": 25,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 96,
+        "recency": 95,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 47
@@ -9426,7 +9513,7 @@
         "0e2810a1da42315e571d"
       ],
       "first_seen": "2026-09-29T10:24:49Z",
-      "last_seen": "2026-09-29T22:48:35Z",
+      "last_seen": "2026-09-29T23:21:00Z",
       "material_time": "2026-09-29T16:38:24Z",
       "domains": [
         "ECONOMIC",
@@ -10365,7 +10452,7 @@
         "4c92b0da6c0ad72d3205"
       ],
       "first_seen": "2026-09-29T21:22:38Z",
-      "last_seen": "2026-09-29T22:48:35Z",
+      "last_seen": "2026-09-29T23:21:00Z",
       "material_time": "2026-09-29T20:48:34Z",
       "domains": [
         "ECONOMIC",
@@ -10443,6 +10530,20 @@
         "contradictory_evidence_present": false
       },
       "historical_matches": [
+        {
+          "claim_id": "claim-de2116379c6c1bfea5",
+          "headline": "USS Abraham Lincoln Passes Through Singapore Strait En route to Thailand",
+          "material_time": "2026-08-30T23:12:37Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [
+            "CHINA"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ]
+        },
         {
           "claim_id": "claim-8210e0f0e5ba7084f3",
           "headline": "Strait of Hormuz Tanker Transits Up But Still Below Pre–War Levels",
@@ -10679,10 +10780,11 @@
         "b6dd890ae88955acad73",
         "cd715a9fde76cb9c1119",
         "197add2ee81287c1eddb",
+        "139cb5f1f35404926bf5",
         "a44914109d6cf5b9e6b8"
       ],
       "first_seen": "2026-09-29T14:53:57Z",
-      "last_seen": "2026-09-29T22:48:35Z",
+      "last_seen": "2026-09-29T23:21:00Z",
       "material_time": "2026-09-29T14:55:18Z",
       "domains": [
         "INFRA",
@@ -10716,6 +10818,7 @@
         "b6dd890ae88955acad73",
         "cd715a9fde76cb9c1119",
         "197add2ee81287c1eddb",
+        "139cb5f1f35404926bf5",
         "a44914109d6cf5b9e6b8"
       ],
       "contradictory_observation_ids": [],
@@ -10757,6 +10860,17 @@
         {
           "observation_id": "197add2ee81287c1eddb",
           "title": "Ukrainian suspect in Nord Stream sabotage requests asylum in Croatia - The Kyiv Independent",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-29T14:46:10Z",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOT3M4aUUtcXJpaXM4ckM4bXJpbHEtYkM2VmRXX185SjJQVTRhY1k3M1ZUcUlEdW9UNEQyLXppNDlvS1FDZDJtVnpXTkdZc28ySVRRNU5HQ0N2eXNIV25QMkFmUEhpTW8tOTNHbV96cHNHbmlTcnpaTG1ITUhVV2d5dERHb2l1QUptazYxaW1DOFNrLXRScFBWWGwtUVlZZw?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "139cb5f1f35404926bf5",
+          "title": "Ukrainian suspect in Nord Stream sabotage requests asylum in Croatia - kyivindependent.com",
           "source": "GDELT Global Discovery",
           "source_class": "discovery",
           "provenance_root": "gdelt_global",
@@ -10967,7 +11081,7 @@
       "watch_priority": 37,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 5,
+        "support_count": 6,
         "contradiction_count": 0,
         "independent_roots": 2,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
@@ -10989,7 +11103,7 @@
         "eb13e4d60bafe624010e"
       ],
       "first_seen": "2026-09-28T20:54:43Z",
-      "last_seen": "2026-09-29T22:48:35Z",
+      "last_seen": "2026-09-29T23:21:00Z",
       "material_time": "2026-09-28T20:01:43Z",
       "domains": [
         "INFRA",
@@ -11307,7 +11421,7 @@
         "corroboration": 58,
         "contradiction": 0,
         "specificity": 74,
-        "recency": 70,
+        "recency": 69,
         "evidence_type": 79,
         "historical_reliability": 88,
         "claim_maturity": 75
