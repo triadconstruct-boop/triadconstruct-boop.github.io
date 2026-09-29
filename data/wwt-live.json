@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-29T15:52:27Z",
+  "generated_at": "2026-09-29T16:25:30Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 42,
   "verified_pressure": {
     "score": 42,
-    "claim_count": 54,
+    "claim_count": 53,
     "top_claims": [
       {
         "id": "claim-97bfb29d982c338e8e",
@@ -283,16 +283,15 @@
             ]
           },
           {
-            "claim_id": "claim-8b4973e8383c8abc42",
-            "shared_actors": [
-              "IRAN"
-            ],
+            "claim_id": "claim-d47e4cd2b83f09ff18",
+            "shared_actors": [],
             "shared_regions": [
-              "IRAN"
+              "EUROPE"
             ],
             "domains": [
-              "TERRORISM",
-              "WAR"
+              "INFRA",
+              "POLITICAL",
+              "SECURITY"
             ]
           }
         ],
@@ -355,7 +354,7 @@
           "corroboration": 85,
           "contradiction": 0,
           "specificity": 75,
-          "recency": 85,
+          "recency": 84,
           "evidence_type": 79,
           "historical_reliability": 83,
           "claim_maturity": 71
@@ -668,11 +667,12 @@
           "e321ebfa9f7044f6aae1",
           "736c0e320b978038c04a",
           "0e3621f47066f1fad91f",
-          "d71b82de0d5b29f029a8"
+          "d71b82de0d5b29f029a8",
+          "da2df878232f260800f7"
         ],
         "first_seen": "2026-09-26T14:46:59Z",
         "last_seen": "2026-09-28T17:49:54Z",
-        "material_time": "2026-09-27T06:34:43Z",
+        "material_time": "2026-09-27T12:45:00Z",
         "domains": [
           "INFRA",
           "NUCLEAR",
@@ -695,11 +695,11 @@
           "independence": 79,
           "corroboration": 82,
           "contradiction": 0,
-          "specificity": 66,
-          "recency": 80,
+          "specificity": 65,
+          "recency": 81,
           "evidence_type": 79,
           "historical_reliability": 85,
-          "claim_maturity": 61
+          "claim_maturity": 60
         },
         "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
         "supporting_observation_ids": [
@@ -709,10 +709,11 @@
           "e321ebfa9f7044f6aae1",
           "736c0e320b978038c04a",
           "0e3621f47066f1fad91f",
-          "d71b82de0d5b29f029a8"
+          "d71b82de0d5b29f029a8",
+          "da2df878232f260800f7"
         ],
         "contradictory_observation_ids": [],
-        "source_count": 7,
+        "source_count": 8,
         "independent_provenance_count": 3,
         "sources": [
           "Al Jazeera English",
@@ -720,6 +721,7 @@
           "The Guardian World",
           "cp24.com",
           "fox13now.com",
+          "jamaicantimes.com",
           "krgv.com",
           "texarkanagazette.com"
         ],
@@ -729,10 +731,22 @@
           "cp24.com",
           "fox13now.com",
           "guardian_world",
+          "jamaicantimes.com",
           "krgv.com",
           "texarkanagazette.com"
         ],
         "evidence": [
+          {
+            "observation_id": "da2df878232f260800f7",
+            "title": "Trump Rejects Iran Plan To Reopen Strait Of Hormuz",
+            "source": "jamaicantimes.com",
+            "source_class": "low_confidence",
+            "provenance_root": "jamaicantimes.com",
+            "stance": "report",
+            "published": "2026-09-27T12:45:00Z",
+            "url": "http://www.jamaicantimes.com/news/279333708/trump-rejects-iran-plan-to-reopen-strait-of-hormuz",
+            "discovery_only": true
+          },
           {
             "observation_id": "d71b82de0d5b29f029a8",
             "title": "Trump rejects Iran’s seven-day peace deal to reopen strait of Hormuz",
@@ -1062,11 +1076,11 @@
         "watch_priority": 60,
         "audit": {
           "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-          "support_count": 7,
+          "support_count": 8,
           "contradiction_count": 0,
           "independent_roots": 3,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-27T06:34:43Z"
+          "material_time_used_for_decay": "2026-09-27T12:45:00Z"
         }
       },
       {
@@ -1654,21 +1668,6 @@
             ]
           },
           {
-            "claim_id": "claim-989145b34a34dc9ab4",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-eb8eb880a59f4b18b9",
             "shared_actors": [
               "NATO",
@@ -1763,6 +1762,18 @@
             "domains": [
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-97bfb29d982c338e8e",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "SECURITY",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [],
@@ -1775,6 +1786,426 @@
           "independent_roots": 2,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-24T17:08:00Z"
+        }
+      },
+      {
+        "id": "claim-ac769f1325adbd0179",
+        "headline": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
+        "signature_tokens": [
+          "arson",
+          "attack",
+          "blames",
+          "company",
+          "defense",
+          "estonia",
+          "provides",
+          "russia",
+          "ukraine",
+          "vehicles"
+        ],
+        "observation_ids": [
+          "c932b6ccd2d853bb913f",
+          "b31ed3b4df95d5225dc9",
+          "cfb8f682f16b1a0f37f0",
+          "221dea78c75d532782e6",
+          "7775269c0e03456a9af1",
+          "af95b9bdd410115af721",
+          "12bec8d6a79da216e31b",
+          "55464fb9f61c910fd27d"
+        ],
+        "first_seen": "2026-09-29T10:52:25Z",
+        "last_seen": "2026-09-29T16:25:30Z",
+        "material_time": "2026-09-29T13:15:00Z",
+        "domains": [
+          "POLITICAL",
+          "SECURITY",
+          "WAR"
+        ],
+        "regions": [
+          "CHINA",
+          "RUSSIA",
+          "UKRAINE"
+        ],
+        "actors": [
+          "CHINA",
+          "RUSSIA",
+          "UKRAINE"
+        ],
+        "state": "CREDIBLE REPORT",
+        "confidence": 64,
+        "confidence_direction": "STABLE",
+        "confidence_components": {
+          "source_quality": 58,
+          "independence": 52,
+          "corroboration": 52,
+          "contradiction": 0,
+          "specificity": 68,
+          "recency": 100,
+          "evidence_type": 79,
+          "historical_reliability": 58,
+          "claim_maturity": 46
+        },
+        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "supporting_observation_ids": [
+          "c932b6ccd2d853bb913f",
+          "b31ed3b4df95d5225dc9",
+          "cfb8f682f16b1a0f37f0",
+          "221dea78c75d532782e6",
+          "7775269c0e03456a9af1",
+          "af95b9bdd410115af721",
+          "12bec8d6a79da216e31b",
+          "55464fb9f61c910fd27d"
+        ],
+        "contradictory_observation_ids": [],
+        "source_count": 5,
+        "independent_provenance_count": 2,
+        "sources": [
+          "ABC News International",
+          "GDELT Global Discovery",
+          "Reddit WorldNews Signal",
+          "clickondetroit.com",
+          "ksat.com"
+        ],
+        "provenance_roots": [
+          "abc_intl",
+          "clickondetroit.com",
+          "gdelt_global",
+          "ksat.com",
+          "reddit_worldnews"
+        ],
+        "evidence": [
+          {
+            "observation_id": "55464fb9f61c910fd27d",
+            "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
+            "source": "ksat.com",
+            "source_class": "low_confidence",
+            "provenance_root": "ksat.com",
+            "stance": "report",
+            "published": "2026-09-29T13:15:00Z",
+            "url": "https://www.ksat.com/news/world/2026/09/29/estonia-blames-russia-for-arson-attack-on-defense-company-that-provides-vehicles-to-ukraine",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "12bec8d6a79da216e31b",
+            "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
+            "source": "clickondetroit.com",
+            "source_class": "low_confidence",
+            "provenance_root": "clickondetroit.com",
+            "stance": "report",
+            "published": "2026-09-29T12:45:00Z",
+            "url": "https://www.clickondetroit.com/news/world/2026/09/29/estonia-blames-russia-for-arson-attack-on-defense-company-that-provides-vehicles-to-ukraine",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "af95b9bdd410115af721",
+            "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
+            "source": "ABC News International",
+            "source_class": "established_media",
+            "provenance_root": "abc_intl",
+            "stance": "report",
+            "published": "2026-09-29T12:18:22Z",
+            "url": "https://abcnews.com/International/wireStory/estonia-blames-russia-arson-attack-defense-company-vehicles-136846626",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "7775269c0e03456a9af1",
+            "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine - The Washington Post",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-29T12:15:26Z",
+            "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOSGRXZ0lZOW91aEViTjRZaC1nUEp0NEVyZi1sb3htX3FuaFdRQkFiM1UzcmlRTmp2dUNqSVJUS1NkdmRjZzNqU0lOa213OGthblJwZmFwTFcta0JIMWxIYkpWZVBMbWRPT1VsckZMMi1yaElwbUFCLUE3cGloOHUzeDNmaVpnbE1mRUlBbWZRUTUwMUo1YW8zc0w5U09jNE5TaFNNb1J3TnVBSmlGMk5oc2tLLS1KZWJrRV9kYndWRWRKaEJGeDlFS2poSDQ3OGM?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "221dea78c75d532782e6",
+            "title": "Estonia blames Russia for arson attack on company supplying vehicles to Ukraine - South China Morning Post",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-29T12:07:37Z",
+            "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNkZ0RDl4U3huTGpuUzQxenF6YlZoMEVMSGx3ZkZ0QWlVTHZWaDAxaG1nSlU3b0tpRGttS2xyZUVva3RJcUktdmRqZmEyalBZLTBZcXgwVWY1UUJWS0xQSFZmSGluWWFia2pmVG9wMU13TjZhN1hCbWpZYUMwWVNTRnpkZ3hfQWxBZXRacVJ5R0hkMGgxM2JCMzZvY3U2ckVUSm4tR3I0OGZobVVqTENyZEpUYXZHcFFIaXl6S1RfakI2Z9IBwgFBVV95cUxNOFZhX1ZkcGtqRldfYlYzUkR4Yjl2QVFya2VFSnpUWXV3VTVUSlMxU0diYXBVRDhlX3JJeXFkcGRvLWFXbFdlQllpQ3RXcFhUVlJpS1c5Y2xKYkpJc3ZadE96bmt5ajlZRE5Od0dURldLTUxZcGZNc0xMVTFBRy03NHdtbmVkQmdEeC1EbDFyVzdyM19pMGlob2ZCT3V2ZE5yNjdkT1JsWnhrREMwYW5ndFlMTHhLM0RoT0lfdDB2alBFUQ?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "cfb8f682f16b1a0f37f0",
+            "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
+            "source": "Reddit WorldNews Signal",
+            "source_class": "low_confidence",
+            "provenance_root": "reddit_worldnews",
+            "stance": "report",
+            "published": "2026-09-29T10:37:49Z",
+            "url": "https://www.reddit.com/r/worldnews/comments/1wt6ow6/estonia_blames_russia_for_arson_attack_on_defense",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "c932b6ccd2d853bb913f",
+            "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine - ABC News - Breaking News, Latest News and Videos",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-29T10:24:00Z",
+            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNb2o1MnMzb2RZUmh2cC1VQ1hveHlhNzc1bTdteUFTcm15ZTF3NFQ0VFFOY200aXoxbWREZG5ScUs2cmZrajQyWDg4ell4eUxBODB0YXk0QVEtclp5NUI5eEpqUVAxWVNZNkRXUlJsYzRfNzJoLTVIT0FhdmF4NUVKWW5GNVVEYnlIbUVVY1pvb0QxY1VQRm9FWVVBT2Y1U01KYlJuZ2xwSHp4d0dNLV9YSXdLWnRGWHVw0gG4AUFVX3lxTE1vajUyczNvZFlSaHZwLVVDWG94eWE3NzVtN215QVNybXllMXc0VDRUUU5jbTRpejFtZERkblJxSzZyZmtqNDJYODh6WXh5TEE4MHRheTRBUS1yWnk1Qjl4SmpRUDFZU1k2RFdSUmxjNF83MmgtNUhPQWF2YXg1RUpZbkY1VURieUhtRVVjWm9vRDFjVVBGb0VZVUFPZjVTTUpiUm5nbHBIenh3R00tX1hJd0tadEZYdXA?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "b31ed3b4df95d5225dc9",
+            "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine - abcnews.com",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-29T10:24:00Z",
+            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNb2o1MnMzb2RZUmh2cC1VQ1hveHlhNzc1bTdteUFTcm15ZTF3NFQ0VFFOY200aXoxbWREZG5ScUs2cmZrajQyWDg4ell4eUxBODB0YXk0QVEtclp5NUI5eEpqUVAxWVNZNkRXUlJsYzRfNzJoLTVIT0FhdmF4NUVKWW5GNVVEYnlIbUVVY1pvb0QxY1VQRm9FWVVBT2Y1U01KYlJuZ2xwSHp4d0dNLV9YSXdLWnRGWHVw0gG4AUFVX3lxTE1vajUyczNvZFlSaHZwLVVDWG94eWE3NzVtN215QVNybXllMXc0VDRUUU5jbTRpejFtZERkblJxSzZyZmtqNDJYODh6WXh5TEE4MHRheTRBUS1yWnk1Qjl4SmpRUDFZU1k2RFdSUmxjNF83MmgtNUhPQWF2YXg1RUpZbkY1VURieUhtRVVjWm9vRDFjVVBGb0VZVUFPZjVTTUpiUm5nbHBIenh3R00tX1hJd0tadEZYdXA?oc=5",
+            "discovery_only": true
+          }
+        ],
+        "state_affiliated_reporting": false,
+        "discovery_only": false,
+        "branch_analysis": {
+          "current_observation": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
+          "plausible_explanations": [
+            "A genuine POLITICAL/SECURITY/WAR development involving CHINA, RUSSIA, UKRAINE is unfolding as reported.",
+            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+          ],
+          "escalation_branch": "Related POLITICAL/SECURITY/WAR indicators spread, become operational, or draw additional actors into the event.",
+          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+          "confirm_indicators": [
+            "A primary record, sensor observation, or on-record official confirmation.",
+            "Matching detail from a genuinely independent provenance root.",
+            "Observable follow-on action consistent with the reported event."
+          ],
+          "falsify_indicators": [
+            "Time-stamped primary evidence incompatible with the claim.",
+            "Independent, technically specific refutation from credible sources.",
+            "Predicted follow-on indicators fail to occur inside the stated window."
+          ],
+          "contradictory_evidence_present": false
+        },
+        "historical_matches": [
+          {
+            "claim_id": "claim-6074bdce7ae23b0373",
+            "headline": "Russian National Living in Florida Convicted for Scheme to Illegally Export Aircraft Parts from the United States to Russia",
+            "material_time": "2026-08-28T12:00:00Z",
+            "shared_domains": [
+              "SECURITY"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
+            "claim_id": "claim-ab13de06ed03a68f0a",
+            "headline": "Chinese National Pleads Guilty to Trying to Obtain U.S. Military Equipment",
+            "material_time": "2026-08-10T12:00:00Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "CHINA"
+            ],
+            "shared_regions": [
+              "CHINA"
+            ]
+          },
+          {
+            "claim_id": "claim-6fc31363eef65639b0",
+            "headline": "Former Adviser to Federal Reserve Board of Governors Sentenced to Federal Prison Term",
+            "material_time": "2026-07-15T12:00:00Z",
+            "shared_domains": [
+              "SECURITY"
+            ],
+            "shared_actors": [
+              "CHINA"
+            ],
+            "shared_regions": [
+              "CHINA"
+            ]
+          }
+        ],
+        "cross_domain_links": [
+          {
+            "claim_id": "claim-2dd8d8676da99b2626",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-a4ee2d17032b8d50f2",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-be07f2c837d8126d5a",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "HUMANITARIAN",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-eb8eb880a59f4b18b9",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-ea2b118f02565cd1b7",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-86d7d3f055d049ac6d",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-50e2edfe7007921903",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-c794db27acb8440ae8",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "NUCLEAR"
+            ]
+          },
+          {
+            "claim_id": "claim-df52790a3459a1afc0",
+            "shared_actors": [
+              "CHINA"
+            ],
+            "shared_regions": [
+              "CHINA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-02d150d413b5e66327",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-b989643588d77d917e",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-d47e4cd2b83f09ff18",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "SECURITY"
+            ]
+          }
+        ],
+        "anomaly_ids": [
+          "anomaly-80cbb5b2b6e664a2",
+          "anomaly-4123cbbc76090c71",
+          "anomaly-380d489bd234ca6e"
+        ],
+        "threat_score": 13,
+        "watch_priority": 63,
+        "audit": {
+          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+          "support_count": 8,
+          "contradiction_count": 0,
+          "independent_roots": 2,
+          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+          "material_time_used_for_decay": "2026-09-29T13:15:00Z"
         }
       },
       {
@@ -1827,7 +2258,7 @@
           "corroboration": 25,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 100,
+          "recency": 99,
           "evidence_type": 79,
           "historical_reliability": 84,
           "claim_maturity": 46
@@ -2060,8 +2491,8 @@
         ],
         "anomaly_ids": [
           "anomaly-625087205f5467fc",
-          "anomaly-7e8bc150853c5be7",
-          "anomaly-de96771d849213fc"
+          "anomaly-80cbb5b2b6e664a2",
+          "anomaly-4123cbbc76090c71"
         ],
         "threat_score": 17,
         "watch_priority": 58,
@@ -2072,385 +2503,6 @@
           "independent_roots": 1,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-29T09:07:24Z"
-        }
-      },
-      {
-        "id": "claim-ac769f1325adbd0179",
-        "headline": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
-        "signature_tokens": [
-          "arson",
-          "attack",
-          "blames",
-          "company",
-          "defense",
-          "estonia",
-          "provides",
-          "russia",
-          "ukraine",
-          "vehicles"
-        ],
-        "observation_ids": [
-          "c932b6ccd2d853bb913f",
-          "b31ed3b4df95d5225dc9",
-          "cfb8f682f16b1a0f37f0",
-          "7775269c0e03456a9af1",
-          "af95b9bdd410115af721",
-          "12bec8d6a79da216e31b",
-          "55464fb9f61c910fd27d"
-        ],
-        "first_seen": "2026-09-29T10:52:25Z",
-        "last_seen": "2026-09-29T15:52:27Z",
-        "material_time": "2026-09-29T13:15:00Z",
-        "domains": [
-          "POLITICAL",
-          "SECURITY",
-          "WAR"
-        ],
-        "regions": [
-          "RUSSIA",
-          "UKRAINE"
-        ],
-        "actors": [
-          "RUSSIA",
-          "UKRAINE"
-        ],
-        "state": "CREDIBLE REPORT",
-        "confidence": 64,
-        "confidence_direction": "STABLE",
-        "confidence_components": {
-          "source_quality": 58,
-          "independence": 52,
-          "corroboration": 52,
-          "contradiction": 0,
-          "specificity": 68,
-          "recency": 100,
-          "evidence_type": 79,
-          "historical_reliability": 58,
-          "claim_maturity": 46
-        },
-        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "supporting_observation_ids": [
-          "c932b6ccd2d853bb913f",
-          "b31ed3b4df95d5225dc9",
-          "cfb8f682f16b1a0f37f0",
-          "7775269c0e03456a9af1",
-          "af95b9bdd410115af721",
-          "12bec8d6a79da216e31b",
-          "55464fb9f61c910fd27d"
-        ],
-        "contradictory_observation_ids": [],
-        "source_count": 5,
-        "independent_provenance_count": 2,
-        "sources": [
-          "ABC News International",
-          "GDELT Global Discovery",
-          "Reddit WorldNews Signal",
-          "clickondetroit.com",
-          "ksat.com"
-        ],
-        "provenance_roots": [
-          "abc_intl",
-          "clickondetroit.com",
-          "gdelt_global",
-          "ksat.com",
-          "reddit_worldnews"
-        ],
-        "evidence": [
-          {
-            "observation_id": "55464fb9f61c910fd27d",
-            "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
-            "source": "ksat.com",
-            "source_class": "low_confidence",
-            "provenance_root": "ksat.com",
-            "stance": "report",
-            "published": "2026-09-29T13:15:00Z",
-            "url": "https://www.ksat.com/news/world/2026/09/29/estonia-blames-russia-for-arson-attack-on-defense-company-that-provides-vehicles-to-ukraine",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "12bec8d6a79da216e31b",
-            "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
-            "source": "clickondetroit.com",
-            "source_class": "low_confidence",
-            "provenance_root": "clickondetroit.com",
-            "stance": "report",
-            "published": "2026-09-29T12:45:00Z",
-            "url": "https://www.clickondetroit.com/news/world/2026/09/29/estonia-blames-russia-for-arson-attack-on-defense-company-that-provides-vehicles-to-ukraine",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "af95b9bdd410115af721",
-            "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
-            "source": "ABC News International",
-            "source_class": "established_media",
-            "provenance_root": "abc_intl",
-            "stance": "report",
-            "published": "2026-09-29T12:18:22Z",
-            "url": "https://abcnews.com/International/wireStory/estonia-blames-russia-arson-attack-defense-company-vehicles-136846626",
-            "discovery_only": false
-          },
-          {
-            "observation_id": "7775269c0e03456a9af1",
-            "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine - The Washington Post",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-29T12:15:26Z",
-            "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOSGRXZ0lZOW91aEViTjRZaC1nUEp0NEVyZi1sb3htX3FuaFdRQkFiM1UzcmlRTmp2dUNqSVJUS1NkdmRjZzNqU0lOa213OGthblJwZmFwTFcta0JIMWxIYkpWZVBMbWRPT1VsckZMMi1yaElwbUFCLUE3cGloOHUzeDNmaVpnbE1mRUlBbWZRUTUwMUo1YW8zc0w5U09jNE5TaFNNb1J3TnVBSmlGMk5oc2tLLS1KZWJrRV9kYndWRWRKaEJGeDlFS2poSDQ3OGM?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "cfb8f682f16b1a0f37f0",
-            "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
-            "source": "Reddit WorldNews Signal",
-            "source_class": "low_confidence",
-            "provenance_root": "reddit_worldnews",
-            "stance": "report",
-            "published": "2026-09-29T10:37:49Z",
-            "url": "https://www.reddit.com/r/worldnews/comments/1wt6ow6/estonia_blames_russia_for_arson_attack_on_defense",
-            "discovery_only": false
-          },
-          {
-            "observation_id": "c932b6ccd2d853bb913f",
-            "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine - ABC News - Breaking News, Latest News and Videos",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-29T10:24:00Z",
-            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNb2o1MnMzb2RZUmh2cC1VQ1hveHlhNzc1bTdteUFTcm15ZTF3NFQ0VFFOY200aXoxbWREZG5ScUs2cmZrajQyWDg4ell4eUxBODB0YXk0QVEtclp5NUI5eEpqUVAxWVNZNkRXUlJsYzRfNzJoLTVIT0FhdmF4NUVKWW5GNVVEYnlIbUVVY1pvb0QxY1VQRm9FWVVBT2Y1U01KYlJuZ2xwSHp4d0dNLV9YSXdLWnRGWHVw0gG4AUFVX3lxTE1vajUyczNvZFlSaHZwLVVDWG94eWE3NzVtN215QVNybXllMXc0VDRUUU5jbTRpejFtZERkblJxSzZyZmtqNDJYODh6WXh5TEE4MHRheTRBUS1yWnk1Qjl4SmpRUDFZU1k2RFdSUmxjNF83MmgtNUhPQWF2YXg1RUpZbkY1VURieUhtRVVjWm9vRDFjVVBGb0VZVUFPZjVTTUpiUm5nbHBIenh3R00tX1hJd0tadEZYdXA?oc=5",
-            "discovery_only": true
-          },
-          {
-            "observation_id": "b31ed3b4df95d5225dc9",
-            "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine - abcnews.com",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "report",
-            "published": "2026-09-29T10:24:00Z",
-            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNb2o1MnMzb2RZUmh2cC1VQ1hveHlhNzc1bTdteUFTcm15ZTF3NFQ0VFFOY200aXoxbWREZG5ScUs2cmZrajQyWDg4ell4eUxBODB0YXk0QVEtclp5NUI5eEpqUVAxWVNZNkRXUlJsYzRfNzJoLTVIT0FhdmF4NUVKWW5GNVVEYnlIbUVVY1pvb0QxY1VQRm9FWVVBT2Y1U01KYlJuZ2xwSHp4d0dNLV9YSXdLWnRGWHVw0gG4AUFVX3lxTE1vajUyczNvZFlSaHZwLVVDWG94eWE3NzVtN215QVNybXllMXc0VDRUUU5jbTRpejFtZERkblJxSzZyZmtqNDJYODh6WXh5TEE4MHRheTRBUS1yWnk1Qjl4SmpRUDFZU1k2RFdSUmxjNF83MmgtNUhPQWF2YXg1RUpZbkY1VURieUhtRVVjWm9vRDFjVVBGb0VZVUFPZjVTTUpiUm5nbHBIenh3R00tX1hJd0tadEZYdXA?oc=5",
-            "discovery_only": true
-          }
-        ],
-        "state_affiliated_reporting": false,
-        "discovery_only": false,
-        "branch_analysis": {
-          "current_observation": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
-          "plausible_explanations": [
-            "A genuine POLITICAL/SECURITY/WAR development involving RUSSIA, UKRAINE is unfolding as reported.",
-            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-          ],
-          "escalation_branch": "Related POLITICAL/SECURITY/WAR indicators spread, become operational, or draw additional actors into the event.",
-          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-          "confirm_indicators": [
-            "A primary record, sensor observation, or on-record official confirmation.",
-            "Matching detail from a genuinely independent provenance root.",
-            "Observable follow-on action consistent with the reported event."
-          ],
-          "falsify_indicators": [
-            "Time-stamped primary evidence incompatible with the claim.",
-            "Independent, technically specific refutation from credible sources.",
-            "Predicted follow-on indicators fail to occur inside the stated window."
-          ],
-          "contradictory_evidence_present": false
-        },
-        "historical_matches": [
-          {
-            "claim_id": "claim-6074bdce7ae23b0373",
-            "headline": "Russian National Living in Florida Convicted for Scheme to Illegally Export Aircraft Parts from the United States to Russia",
-            "material_time": "2026-08-28T12:00:00Z",
-            "shared_domains": [
-              "SECURITY"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          }
-        ],
-        "cross_domain_links": [
-          {
-            "claim_id": "claim-2dd8d8676da99b2626",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-a4ee2d17032b8d50f2",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-be07f2c837d8126d5a",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "HUMANITARIAN",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-989145b34a34dc9ab4",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-eb8eb880a59f4b18b9",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-ea2b118f02565cd1b7",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-86d7d3f055d049ac6d",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-50e2edfe7007921903",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-c794db27acb8440ae8",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR"
-            ]
-          },
-          {
-            "claim_id": "claim-02d150d413b5e66327",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-b989643588d77d917e",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-d47e4cd2b83f09ff18",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "INFRA",
-              "POLITICAL",
-              "SECURITY"
-            ]
-          }
-        ],
-        "anomaly_ids": [
-          "anomaly-7e8bc150853c5be7",
-          "anomaly-de96771d849213fc"
-        ],
-        "threat_score": 13,
-        "watch_priority": 51,
-        "audit": {
-          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 7,
-          "contradiction_count": 0,
-          "independent_roots": 2,
-          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-29T13:15:00Z"
         }
       },
       {
@@ -2472,7 +2524,7 @@
           "947fd1c2323c53e7cb30"
         ],
         "first_seen": "2026-09-29T08:50:49Z",
-        "last_seen": "2026-09-29T15:52:27Z",
+        "last_seen": "2026-09-29T16:25:30Z",
         "material_time": "2026-09-29T10:24:00Z",
         "domains": [
           "POLITICAL",
@@ -2638,21 +2690,6 @@
             ]
           },
           {
-            "claim_id": "claim-989145b34a34dc9ab4",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-eb8eb880a59f4b18b9",
             "shared_actors": [
               "RUSSIA"
@@ -2757,11 +2794,26 @@
               "POLITICAL",
               "SECURITY"
             ]
+          },
+          {
+            "claim_id": "claim-959f0c684e4b36f1f6",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-7e8bc150853c5be7",
-          "anomaly-de96771d849213fc"
+          "anomaly-80cbb5b2b6e664a2",
+          "anomaly-4123cbbc76090c71"
         ],
         "threat_score": 13,
         "watch_priority": 51,
@@ -3080,7 +3132,7 @@
         "anomaly_ids": [
           "anomaly-442df49a3d213ab8",
           "anomaly-758e00fade311209",
-          "anomaly-30c7889dc294d428"
+          "anomaly-380d489bd234ca6e"
         ],
         "threat_score": 15,
         "watch_priority": 60,
@@ -3244,21 +3296,6 @@
             ]
           },
           {
-            "claim_id": "claim-989145b34a34dc9ab4",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-eb8eb880a59f4b18b9",
             "shared_actors": [
               "NATO",
@@ -3366,12 +3403,27 @@
               "POLITICAL",
               "SECURITY"
             ]
+          },
+          {
+            "claim_id": "claim-959f0c684e4b36f1f6",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
           "anomaly-625087205f5467fc",
-          "anomaly-7e8bc150853c5be7",
-          "anomaly-de96771d849213fc"
+          "anomaly-80cbb5b2b6e664a2",
+          "anomaly-4123cbbc76090c71"
         ],
         "threat_score": 15,
         "watch_priority": 57,
@@ -3382,6 +3434,306 @@
           "independent_roots": 1,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-27T08:36:49Z"
+        }
+      },
+      {
+        "id": "claim-34916271fd769e2a7c",
+        "headline": "Ukrainian suspect in Nord Stream sabotage requests asylum in Croatia",
+        "signature_tokens": [
+          "asylum",
+          "croatia",
+          "nord",
+          "requests",
+          "sabotage",
+          "stream",
+          "suspect",
+          "ukrainian"
+        ],
+        "observation_ids": [
+          "596d67de789121b4bbce",
+          "cd715a9fde76cb9c1119",
+          "197add2ee81287c1eddb",
+          "a44914109d6cf5b9e6b8"
+        ],
+        "first_seen": "2026-09-29T14:53:57Z",
+        "last_seen": "2026-09-29T16:25:30Z",
+        "material_time": "2026-09-29T14:55:18Z",
+        "domains": [
+          "INFRA",
+          "POLITICAL",
+          "SECURITY"
+        ],
+        "regions": [
+          "EUROPE",
+          "UKRAINE"
+        ],
+        "actors": [
+          "UKRAINE"
+        ],
+        "state": "CREDIBLE REPORT",
+        "confidence": 65,
+        "confidence_direction": "NEW",
+        "confidence_components": {
+          "source_quality": 64,
+          "independence": 52,
+          "corroboration": 52,
+          "contradiction": 0,
+          "specificity": 69,
+          "recency": 100,
+          "evidence_type": 67,
+          "historical_reliability": 64,
+          "claim_maturity": 46
+        },
+        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "supporting_observation_ids": [
+          "596d67de789121b4bbce",
+          "cd715a9fde76cb9c1119",
+          "197add2ee81287c1eddb",
+          "a44914109d6cf5b9e6b8"
+        ],
+        "contradictory_observation_ids": [],
+        "source_count": 3,
+        "independent_provenance_count": 2,
+        "sources": [
+          "GDELT Global Discovery",
+          "Kyiv Independent",
+          "TASS World"
+        ],
+        "provenance_roots": [
+          "gdelt_global",
+          "kyiv_independent",
+          "tass"
+        ],
+        "evidence": [
+          {
+            "observation_id": "a44914109d6cf5b9e6b8",
+            "title": "Ukrainian national suspected of blowing up Nord Streams applies for asylum in Croatia",
+            "source": "TASS World",
+            "source_class": "state_media",
+            "provenance_root": "tass",
+            "stance": "report",
+            "published": "2026-09-29T14:55:18Z",
+            "url": "https://tass.com/world/2194641",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "cd715a9fde76cb9c1119",
+            "title": "Ukrainian suspect in Nord Stream sabotage requests asylum in Croatia",
+            "source": "Kyiv Independent",
+            "source_class": "regional_local",
+            "provenance_root": "kyiv_independent",
+            "stance": "report",
+            "published": "2026-09-29T14:46:10Z",
+            "url": "https://kyivindependent.com/ukrainian-suspect-in-nord-stream-sabotage-requests-asylum-in-croatia",
+            "discovery_only": false
+          },
+          {
+            "observation_id": "197add2ee81287c1eddb",
+            "title": "Ukrainian suspect in Nord Stream sabotage requests asylum in Croatia - The Kyiv Independent",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-29T14:46:10Z",
+            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOT3M4aUUtcXJpaXM4ckM4bXJpbHEtYkM2VmRXX185SjJQVTRhY1k3M1ZUcUlEdW9UNEQyLXppNDlvS1FDZDJtVnpXTkdZc28ySVRRNU5HQ0N2eXNIV25QMkFmUEhpTW8tOTNHbV96cHNHbmlTcnpaTG1ITUhVV2d5dERHb2l1QUptazYxaW1DOFNrLXRScFBWWGwtUVlZZw?oc=5",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "596d67de789121b4bbce",
+            "title": "Ukrainian national suspected in Nord Stream sabotage seeks asylum in Croatia - Українська правда",
+            "source": "GDELT Global Discovery",
+            "source_class": "discovery",
+            "provenance_root": "gdelt_global",
+            "stance": "report",
+            "published": "2026-09-29T13:56:00Z",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9IVzNkS2tHcDVlUE80ZDgzTnBJMlJrUXI1dXlvYXR0clJkZzBqakh1STBjSWZweFRDWGVYU2c0YXRjeHVzZDZhaTdzZFIwX2pLSVN3TWlTMVFpNWRIdlFOcko0TzlsTGNldFBLRF9SVkTSAXBBVV95cUxPSFczZEtrR3A1ZVBPNGQ4M05wSTJSa1FyNXV5b2F0dHJSZGcwampIdUkwY0lmcHhUQ1hlWFNnNGF0Y3h1c2Q2YWk3c2RSMF9qS0lTd01pUzFRaTVkSHZRTnJKNE85bExjZXRQS0RfUlZE?oc=5",
+            "discovery_only": true
+          }
+        ],
+        "state_affiliated_reporting": true,
+        "discovery_only": false,
+        "branch_analysis": {
+          "current_observation": "Ukrainian suspect in Nord Stream sabotage requests asylum in Croatia",
+          "plausible_explanations": [
+            "A genuine INFRA/POLITICAL/SECURITY development involving UKRAINE is unfolding as reported.",
+            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+          ],
+          "escalation_branch": "Related INFRA/POLITICAL/SECURITY indicators spread, become operational, or draw additional actors into the event.",
+          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+          "confirm_indicators": [
+            "A primary record, sensor observation, or on-record official confirmation.",
+            "Matching detail from a genuinely independent provenance root.",
+            "Observable follow-on action consistent with the reported event."
+          ],
+          "falsify_indicators": [
+            "Time-stamped primary evidence incompatible with the claim.",
+            "Independent, technically specific refutation from credible sources.",
+            "Predicted follow-on indicators fail to occur inside the stated window."
+          ],
+          "contradictory_evidence_present": false
+        },
+        "historical_matches": [],
+        "cross_domain_links": [
+          {
+            "claim_id": "claim-2dd8d8676da99b2626",
+            "shared_actors": [
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "UKRAINE"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-47597ff425de0f7948",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-be07f2c837d8126d5a",
+            "shared_actors": [
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "UKRAINE"
+            ],
+            "domains": [
+              "HUMANITARIAN",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-eb8eb880a59f4b18b9",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-ea2b118f02565cd1b7",
+            "shared_actors": [
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "UKRAINE"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-86d7d3f055d049ac6d",
+            "shared_actors": [
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "UKRAINE"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-50e2edfe7007921903",
+            "shared_actors": [
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "EUROPE",
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-02d150d413b5e66327",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-97bfb29d982c338e8e",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "SECURITY",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-d6789f99ce990cb44a",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "HUMANITARIAN",
+              "INFRA",
+              "POLITICAL",
+              "SECURITY",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-959f0c684e4b36f1f6",
+            "shared_actors": [
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "UKRAINE"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-0577bbeca24d7a8f20",
+            "shared_actors": [
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "UKRAINE"
+            ],
+            "domains": [
+              "INFRA",
+              "SPACE",
+              "WAR"
+            ]
+          }
+        ],
+        "anomaly_ids": [
+          "anomaly-4123cbbc76090c71"
+        ],
+        "threat_score": 12,
+        "watch_priority": 37,
+        "audit": {
+          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+          "support_count": 4,
+          "contradiction_count": 0,
+          "independent_roots": 2,
+          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+          "material_time_used_for_decay": "2026-09-29T14:55:18Z"
         }
       },
       {
@@ -3399,7 +3751,7 @@
           "eb13e4d60bafe624010e"
         ],
         "first_seen": "2026-09-28T20:54:43Z",
-        "last_seen": "2026-09-29T15:52:27Z",
+        "last_seen": "2026-09-29T16:25:30Z",
         "material_time": "2026-09-28T20:01:43Z",
         "domains": [
           "INFRA",
@@ -3571,19 +3923,6 @@
             ]
           },
           {
-            "claim_id": "claim-989145b34a34dc9ab4",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-eb8eb880a59f4b18b9",
             "shared_actors": [
               "RUSSIA"
@@ -3655,11 +3994,23 @@
             "domains": [
               "NUCLEAR"
             ]
+          },
+          {
+            "claim_id": "claim-02d150d413b5e66327",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
           "anomaly-442df49a3d213ab8",
-          "anomaly-7e8bc150853c5be7"
+          "anomaly-80cbb5b2b6e664a2"
         ],
         "threat_score": 15,
         "watch_priority": 49,
@@ -3671,348 +4022,12 @@
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-09-28T20:01:43Z"
         }
-      },
-      {
-        "id": "claim-b145f3071f753d5e87",
-        "headline": "Yemen's president calls on his people to mobilise against Iran-backed Houthis - france24.com",
-        "signature_tokens": [
-          "calls",
-          "com",
-          "france24",
-          "his",
-          "houthis",
-          "iran-backed",
-          "mobilise",
-          "people",
-          "president",
-          "yemen"
-        ],
-        "observation_ids": [
-          "56b689242d433b9e4918",
-          "500b9aac7c620f27ee14",
-          "41d0a8753f61997cb94f",
-          "5106e538e55e3605535e"
-        ],
-        "first_seen": "2026-09-25T17:48:05Z",
-        "last_seen": "2026-09-26T18:23:17Z",
-        "material_time": "2026-09-25T20:41:29Z",
-        "domains": [
-          "POLITICAL",
-          "WAR"
-        ],
-        "regions": [
-          "EUROPE",
-          "IRAN",
-          "MIDDLE EAST"
-        ],
-        "actors": [
-          "IRAN"
-        ],
-        "state": "CONFIRMED",
-        "confidence": 73,
-        "confidence_direction": "STABLE",
-        "confidence_components": {
-          "source_quality": 90,
-          "independence": 52,
-          "corroboration": 58,
-          "contradiction": 0,
-          "specificity": 74,
-          "recency": 71,
-          "evidence_type": 79,
-          "historical_reliability": 88,
-          "claim_maturity": 74
-        },
-        "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-        "supporting_observation_ids": [
-          "56b689242d433b9e4918",
-          "500b9aac7c620f27ee14",
-          "41d0a8753f61997cb94f",
-          "5106e538e55e3605535e"
-        ],
-        "contradictory_observation_ids": [],
-        "source_count": 2,
-        "independent_provenance_count": 2,
-        "sources": [
-          "Agence France-Presse",
-          "France 24 World"
-        ],
-        "provenance_roots": [
-          "france24",
-          "wire:afp_world"
-        ],
-        "evidence": [
-          {
-            "observation_id": "500b9aac7c620f27ee14",
-            "title": "Yemen's president calls on his people to mobilise against Iran-backed Houthis",
-            "source": "France 24 World",
-            "source_class": "established_media",
-            "provenance_root": "france24",
-            "stance": "report",
-            "published": "2026-09-25T20:41:29Z",
-            "url": "https://www.france24.com/en/middle-east/20260925-yemen-president-calls-on-his-people-to-mobilise-against-iran-backed-houthis",
-            "discovery_only": false
-          },
-          {
-            "observation_id": "41d0a8753f61997cb94f",
-            "title": "Yemen's president calls on his people to mobilise against Iran-backed Houthis - france24.com",
-            "source": "Agence France-Presse",
-            "source_class": "wire",
-            "provenance_root": "wire:afp_world",
-            "stance": "report",
-            "published": "2026-09-25T20:41:29Z",
-            "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVGQtUWFQT2p6WXFwU0lIZm9NVW9rZDF0NWlfMTJvTkVNUmUxYjJFMVF2MjVWQ01YOFF1WU5JRVJ3WkR6eVo0RUkwcjRfczEwcTZ5NkhwdnViYkMtWG5aMndqOGE2Q0JXTm9kRlFpWV9jM21ackhTaDlWNnhOR19lSDZqcld5d2laVExHOWhaMkxyM2NKTHQzWG9FN2RCOFhEZE5BeGh0NDJOeTc2cXNCZlJnanIzTThkWmFkNzA3TkZoQQ?oc=5",
-            "discovery_only": false
-          },
-          {
-            "observation_id": "5106e538e55e3605535e",
-            "title": "Yemen's president calls on his people to mobilise against Iran-backed Houthis - France 24",
-            "source": "Agence France-Presse",
-            "source_class": "wire",
-            "provenance_root": "wire:afp_world",
-            "stance": "report",
-            "published": "2026-09-25T20:41:29Z",
-            "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVGQtUWFQT2p6WXFwU0lIZm9NVW9rZDF0NWlfMTJvTkVNUmUxYjJFMVF2MjVWQ01YOFF1WU5JRVJ3WkR6eVo0RUkwcjRfczEwcTZ5NkhwdnViYkMtWG5aMndqOGE2Q0JXTm9kRlFpWV9jM21ackhTaDlWNnhOR19lSDZqcld5d2laVExHOWhaMkxyM2NKTHQzWG9FN2RCOFhEZE5BeGh0NDJOeTc2cXNCZlJnanIzTThkWmFkNzA3TkZoQQ?oc=5",
-            "discovery_only": false
-          },
-          {
-            "observation_id": "56b689242d433b9e4918",
-            "title": "🔴 Live: Yemen's president calls on his people to mobilise against Iran-backed Houthis",
-            "source": "France 24 World",
-            "source_class": "established_media",
-            "provenance_root": "france24",
-            "stance": "report",
-            "published": "2026-09-25T17:35:26Z",
-            "url": "https://www.france24.com/en/middle-east/20260924-live-iran-s-president-says-us-must-choose-whether-to-end-war",
-            "discovery_only": false
-          }
-        ],
-        "state_affiliated_reporting": false,
-        "discovery_only": false,
-        "branch_analysis": {
-          "current_observation": "Yemen's president calls on his people to mobilise against Iran-backed Houthis - france24.com",
-          "plausible_explanations": [
-            "A genuine POLITICAL/WAR development involving IRAN is unfolding as reported.",
-            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-          ],
-          "escalation_branch": "Related POLITICAL/WAR indicators spread, become operational, or draw additional actors into the event.",
-          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-          "confirm_indicators": [
-            "A primary record, sensor observation, or on-record official confirmation.",
-            "Matching detail from a genuinely independent provenance root.",
-            "Observable follow-on action consistent with the reported event."
-          ],
-          "falsify_indicators": [
-            "Time-stamped primary evidence incompatible with the claim.",
-            "Independent, technically specific refutation from credible sources.",
-            "Predicted follow-on indicators fail to occur inside the stated window."
-          ],
-          "contradictory_evidence_present": false
-        },
-        "historical_matches": [
-          {
-            "claim_id": "claim-8210e0f0e5ba7084f3",
-            "headline": "Strait of Hormuz Tanker Transits Up But Still Below Pre–War Levels",
-            "material_time": "2026-08-28T21:20:26Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "IRAN"
-            ]
-          },
-          {
-            "claim_id": "claim-7bf080d5d0604d497d",
-            "headline": "Journalist targeted by Iran says U.K.'s crackdown on IRGC is \"the happiest day\"",
-            "material_time": "2026-07-17T20:56:00Z",
-            "shared_domains": [
-              "POLITICAL"
-            ],
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ]
-          }
-        ],
-        "cross_domain_links": [
-          {
-            "claim_id": "claim-af8f754e60078ad1ce",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "MIDDLE EAST"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "NUCLEAR",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-47597ff425de0f7948",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-5d4b6d6712214058f8",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "NUCLEAR"
-            ]
-          },
-          {
-            "claim_id": "claim-eb8eb880a59f4b18b9",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-7846d23b16eda07536",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "MIDDLE EAST"
-            ],
-            "domains": [
-              "POLITICAL",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-50e2edfe7007921903",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "INFRA"
-            ]
-          },
-          {
-            "claim_id": "claim-02d150d413b5e66327",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-45edc49ec343ddb9fe",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-97bfb29d982c338e8e",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "EUROPE",
-              "IRAN"
-            ],
-            "domains": [
-              "ECONOMIC",
-              "SECURITY",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-d6789f99ce990cb44a",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "HUMANITARIAN",
-              "INFRA",
-              "POLITICAL",
-              "SECURITY",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-6225591395cd90c87a",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "INFRA",
-              "NUCLEAR",
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-6fe34e676f1123feae",
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ],
-            "domains": [
-              "INFRA",
-              "NUCLEAR",
-              "POLITICAL",
-              "SECURITY",
-              "WAR"
-            ]
-          }
-        ],
-        "anomaly_ids": [
-          "anomaly-442df49a3d213ab8"
-        ],
-        "threat_score": 24,
-        "watch_priority": 41,
-        "audit": {
-          "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-          "support_count": 4,
-          "contradiction_count": 0,
-          "independent_roots": 2,
-          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-25T20:41:29Z"
-        }
       }
     ]
   },
   "early_warning_pressure": {
     "score": 100,
-    "claim_count": 49,
+    "claim_count": 50,
     "top_claims": [
       {
         "id": "claim-af8f754e60078ad1ce",
@@ -5245,21 +5260,6 @@
             ]
           },
           {
-            "claim_id": "claim-989145b34a34dc9ab4",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-50e2edfe7007921903",
             "shared_actors": [
               "RUSSIA",
@@ -5386,11 +5386,26 @@
               "POLITICAL",
               "SECURITY"
             ]
+          },
+          {
+            "claim_id": "claim-7cf2467c7698e0e607",
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "domains": [
+              "SECURITY",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-7e8bc150853c5be7",
-          "anomaly-de96771d849213fc"
+          "anomaly-80cbb5b2b6e664a2",
+          "anomaly-4123cbbc76090c71"
         ],
         "threat_score": 6,
         "watch_priority": 58,
@@ -5536,19 +5551,6 @@
             ]
           },
           {
-            "claim_id": "claim-989145b34a34dc9ab4",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-eb8eb880a59f4b18b9",
             "shared_actors": [
               "RUSSIA"
@@ -5646,10 +5648,22 @@
               "POLITICAL",
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-7d26a44c2e911b5ec9",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-7e8bc150853c5be7"
+          "anomaly-80cbb5b2b6e664a2"
         ],
         "threat_score": 4,
         "watch_priority": 48,
@@ -5860,21 +5874,6 @@
             ]
           },
           {
-            "claim_id": "claim-989145b34a34dc9ab4",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-eb8eb880a59f4b18b9",
             "shared_actors": [
               "RUSSIA"
@@ -5966,14 +5965,23 @@
             "domains": [
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-97bfb29d982c338e8e",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "SECURITY",
+              "WAR"
+            ]
           }
         ],
-        "anomaly_ids": [
-          "anomaly-7e8bc150853c5be7",
-          "anomaly-de96771d849213fc"
-        ],
+        "anomaly_ids": [],
         "threat_score": 2,
-        "watch_priority": 59,
+        "watch_priority": 43,
         "audit": {
           "reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
           "support_count": 2,
@@ -6452,21 +6460,6 @@
             ]
           },
           {
-            "claim_id": "claim-989145b34a34dc9ab4",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-eb8eb880a59f4b18b9",
             "shared_actors": [
               "RUSSIA"
@@ -6558,6 +6551,18 @@
             "domains": [
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-97bfb29d982c338e8e",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "SECURITY",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [],
@@ -6594,7 +6599,7 @@
           "2ca11ea2ef504347ce38"
         ],
         "first_seen": "2026-09-29T11:50:26Z",
-        "last_seen": "2026-09-29T15:52:27Z",
+        "last_seen": "2026-09-29T16:25:30Z",
         "material_time": "2026-09-29T14:01:29Z",
         "domains": [
           "NUCLEAR"
@@ -6784,19 +6789,6 @@
             ]
           },
           {
-            "claim_id": "claim-989145b34a34dc9ab4",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-eb8eb880a59f4b18b9",
             "shared_actors": [
               "NATO",
@@ -6885,11 +6877,25 @@
               "SECURITY",
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-d6789f99ce990cb44a",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "HUMANITARIAN",
+              "INFRA",
+              "POLITICAL",
+              "SECURITY",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
           "anomaly-625087205f5467fc",
-          "anomaly-7e8bc150853c5be7"
+          "anomaly-80cbb5b2b6e664a2"
         ],
         "threat_score": 3,
         "watch_priority": 53,
@@ -6936,7 +6942,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 50,
-          "recency": 91,
+          "recency": 90,
           "evidence_type": 40,
           "historical_reliability": 50,
           "claim_maturity": 37
@@ -7139,85 +7145,81 @@
         }
       },
       {
-        "id": "claim-583ba32aa316b00281",
-        "headline": "Bill Gates warns AI global framework talks harder than Cold War-era nuclear negotiations",
+        "id": "claim-2ec6da82945febd38e",
+        "headline": "Kiteworks urges 6-hour server shutdown over potential zero-day attacks",
         "signature_tokens": [
-          "bill",
-          "cold",
-          "framework",
-          "gates",
-          "global",
-          "harder",
-          "negotiations",
-          "nuclear",
-          "talks",
-          "than",
-          "war-era",
-          "warns"
+          "6-hour",
+          "attacks",
+          "kiteworks",
+          "potential",
+          "server",
+          "shutdown",
+          "urges",
+          "zero-day"
         ],
         "observation_ids": [
-          "7db0a4e8849e3455aebb"
+          "4e66990e3d0b1382ef35"
         ],
-        "first_seen": "2026-09-28T03:23:37Z",
-        "last_seen": "2026-09-29T15:52:27Z",
-        "material_time": "2026-09-28T00:38:00Z",
+        "first_seen": "2026-09-25T21:47:20Z",
+        "last_seen": "2026-09-28T18:25:21Z",
+        "material_time": "2026-09-25T21:41:07Z",
         "domains": [
-          "NUCLEAR"
+          "CYBER"
         ],
         "regions": [
           "GLOBAL"
         ],
         "actors": [],
-        "state": "SPECULATIVE",
-        "confidence": 56,
+        "state": "EARLY WARNING",
+        "confidence": 58,
         "confidence_direction": "STABLE",
         "confidence_components": {
-          "source_quality": 82,
+          "source_quality": 84,
           "independence": 25,
           "corroboration": 22,
           "contradiction": 0,
-          "specificity": 35,
-          "recency": 85,
-          "evidence_type": 67,
-          "historical_reliability": 82,
-          "claim_maturity": 38
+          "specificity": 56,
+          "recency": 71,
+          "evidence_type": 73,
+          "historical_reliability": 84,
+          "claim_maturity": 41
         },
-        "classification_reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
+        "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
         "supporting_observation_ids": [
-          "7db0a4e8849e3455aebb"
+          "4e66990e3d0b1382ef35"
         ],
         "contradictory_observation_ids": [],
         "source_count": 1,
         "independent_provenance_count": 1,
         "sources": [
-          "Sky News World"
+          "BleepingComputer"
         ],
         "provenance_roots": [
-          "sky_world"
+          "bleepingcomputer"
         ],
         "evidence": [
           {
-            "observation_id": "7db0a4e8849e3455aebb",
-            "title": "Bill Gates warns AI global framework talks harder than Cold War-era nuclear negotiations",
-            "source": "Sky News World",
-            "source_class": "regional_local",
-            "provenance_root": "sky_world",
-            "stance": "speculation",
-            "published": "2026-09-28T00:38:00Z",
-            "url": "https://news.sky.com/story/bill-gates-warns-ai-global-framework-talks-harder-than-cold-war-era-nuclear-negotiations-13592595",
+            "observation_id": "4e66990e3d0b1382ef35",
+            "title": "Kiteworks urges 6-hour server shutdown over potential zero-day attacks",
+            "source": "BleepingComputer",
+            "source_class": "specialist",
+            "provenance_root": "bleepingcomputer",
+            "stance": "warning",
+            "published": "2026-09-25T21:41:07Z",
+            "url": "https://www.bleepingcomputer.com/news/security/kiteworks-urges-6-hour-server-shutdown-over-potential-zero-day-attacks",
             "discovery_only": false
           }
         ],
         "state_affiliated_reporting": false,
         "discovery_only": false,
         "branch_analysis": {
-          "current_observation": "Bill Gates warns AI global framework talks harder than Cold War-era nuclear negotiations",
+          "current_observation": "Kiteworks urges 6-hour server shutdown over potential zero-day attacks",
           "plausible_explanations": [
-            "A genuine NUCLEAR development involving the reported actors is unfolding as reported.",
+            "A genuine CYBER development involving the reported actors is unfolding as reported.",
             "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
             "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
           ],
-          "escalation_branch": "Related NUCLEAR indicators spread, become operational, or draw additional actors into the event.",
+          "escalation_branch": "Related CYBER indicators spread, become operational, or draw additional actors into the event.",
           "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
           "confirm_indicators": [
             "A primary record, sensor observation, or on-record official confirmation.",
@@ -7234,15 +7236,15 @@
         "historical_matches": [],
         "cross_domain_links": [],
         "anomaly_ids": [],
-        "threat_score": 3,
+        "threat_score": 5,
         "watch_priority": 36,
         "audit": {
-          "reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
+          "reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
           "support_count": 1,
           "contradiction_count": 0,
           "independent_roots": 1,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-28T00:38:00Z"
+          "material_time_used_for_decay": "2026-09-25T21:41:07Z"
         }
       }
     ]
@@ -7255,7 +7257,7 @@
     "military_mobilization": 62,
     "economic_warfare": 100,
     "crisis_control_failure": 0,
-    "hybrid_preparation": 72
+    "hybrid_preparation": 73
   },
   "vector_claim_counts": {
     "great_power_direct_clash": 0,
@@ -7263,7 +7265,7 @@
     "multi_theater_coupling": 2,
     "nuclear_escalation": 13,
     "military_mobilization": 15,
-    "economic_warfare": 199,
+    "economic_warfare": 201,
     "crisis_control_failure": 0,
     "hybrid_preparation": 35
   },
@@ -7548,16 +7550,15 @@
           ]
         },
         {
-          "claim_id": "claim-8b4973e8383c8abc42",
-          "shared_actors": [
-            "IRAN"
-          ],
+          "claim_id": "claim-d47e4cd2b83f09ff18",
+          "shared_actors": [],
           "shared_regions": [
-            "IRAN"
+            "EUROPE"
           ],
           "domains": [
-            "TERRORISM",
-            "WAR"
+            "INFRA",
+            "POLITICAL",
+            "SECURITY"
           ]
         }
       ],
@@ -7620,7 +7621,7 @@
         "corroboration": 85,
         "contradiction": 0,
         "specificity": 75,
-        "recency": 85,
+        "recency": 84,
         "evidence_type": 79,
         "historical_reliability": 83,
         "claim_maturity": 71
@@ -7933,11 +7934,12 @@
         "e321ebfa9f7044f6aae1",
         "736c0e320b978038c04a",
         "0e3621f47066f1fad91f",
-        "d71b82de0d5b29f029a8"
+        "d71b82de0d5b29f029a8",
+        "da2df878232f260800f7"
       ],
       "first_seen": "2026-09-26T14:46:59Z",
       "last_seen": "2026-09-28T17:49:54Z",
-      "material_time": "2026-09-27T06:34:43Z",
+      "material_time": "2026-09-27T12:45:00Z",
       "domains": [
         "INFRA",
         "NUCLEAR",
@@ -7960,11 +7962,11 @@
         "independence": 79,
         "corroboration": 82,
         "contradiction": 0,
-        "specificity": 66,
-        "recency": 80,
+        "specificity": 65,
+        "recency": 81,
         "evidence_type": 79,
         "historical_reliability": 85,
-        "claim_maturity": 61
+        "claim_maturity": 60
       },
       "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
       "supporting_observation_ids": [
@@ -7974,10 +7976,11 @@
         "e321ebfa9f7044f6aae1",
         "736c0e320b978038c04a",
         "0e3621f47066f1fad91f",
-        "d71b82de0d5b29f029a8"
+        "d71b82de0d5b29f029a8",
+        "da2df878232f260800f7"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 7,
+      "source_count": 8,
       "independent_provenance_count": 3,
       "sources": [
         "Al Jazeera English",
@@ -7985,6 +7988,7 @@
         "The Guardian World",
         "cp24.com",
         "fox13now.com",
+        "jamaicantimes.com",
         "krgv.com",
         "texarkanagazette.com"
       ],
@@ -7994,10 +7998,22 @@
         "cp24.com",
         "fox13now.com",
         "guardian_world",
+        "jamaicantimes.com",
         "krgv.com",
         "texarkanagazette.com"
       ],
       "evidence": [
+        {
+          "observation_id": "da2df878232f260800f7",
+          "title": "Trump Rejects Iran Plan To Reopen Strait Of Hormuz",
+          "source": "jamaicantimes.com",
+          "source_class": "low_confidence",
+          "provenance_root": "jamaicantimes.com",
+          "stance": "report",
+          "published": "2026-09-27T12:45:00Z",
+          "url": "http://www.jamaicantimes.com/news/279333708/trump-rejects-iran-plan-to-reopen-strait-of-hormuz",
+          "discovery_only": true
+        },
         {
           "observation_id": "d71b82de0d5b29f029a8",
           "title": "Trump rejects Iran’s seven-day peace deal to reopen strait of Hormuz",
@@ -8327,11 +8343,11 @@
       "watch_priority": 60,
       "audit": {
         "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-        "support_count": 7,
+        "support_count": 8,
         "contradiction_count": 0,
         "independent_roots": 3,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-27T06:34:43Z"
+        "material_time_used_for_decay": "2026-09-27T12:45:00Z"
       }
     },
     {
@@ -8919,21 +8935,6 @@
           ]
         },
         {
-          "claim_id": "claim-989145b34a34dc9ab4",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-eb8eb880a59f4b18b9",
           "shared_actors": [
             "NATO",
@@ -9028,6 +9029,18 @@
           "domains": [
             "WAR"
           ]
+        },
+        {
+          "claim_id": "claim-97bfb29d982c338e8e",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "SECURITY",
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [],
@@ -9040,6 +9053,426 @@
         "independent_roots": 2,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-24T17:08:00Z"
+      }
+    },
+    {
+      "id": "claim-ac769f1325adbd0179",
+      "headline": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
+      "signature_tokens": [
+        "arson",
+        "attack",
+        "blames",
+        "company",
+        "defense",
+        "estonia",
+        "provides",
+        "russia",
+        "ukraine",
+        "vehicles"
+      ],
+      "observation_ids": [
+        "c932b6ccd2d853bb913f",
+        "b31ed3b4df95d5225dc9",
+        "cfb8f682f16b1a0f37f0",
+        "221dea78c75d532782e6",
+        "7775269c0e03456a9af1",
+        "af95b9bdd410115af721",
+        "12bec8d6a79da216e31b",
+        "55464fb9f61c910fd27d"
+      ],
+      "first_seen": "2026-09-29T10:52:25Z",
+      "last_seen": "2026-09-29T16:25:30Z",
+      "material_time": "2026-09-29T13:15:00Z",
+      "domains": [
+        "POLITICAL",
+        "SECURITY",
+        "WAR"
+      ],
+      "regions": [
+        "CHINA",
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "actors": [
+        "CHINA",
+        "RUSSIA",
+        "UKRAINE"
+      ],
+      "state": "CREDIBLE REPORT",
+      "confidence": 64,
+      "confidence_direction": "STABLE",
+      "confidence_components": {
+        "source_quality": 58,
+        "independence": 52,
+        "corroboration": 52,
+        "contradiction": 0,
+        "specificity": 68,
+        "recency": 100,
+        "evidence_type": 79,
+        "historical_reliability": 58,
+        "claim_maturity": 46
+      },
+      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+      "supporting_observation_ids": [
+        "c932b6ccd2d853bb913f",
+        "b31ed3b4df95d5225dc9",
+        "cfb8f682f16b1a0f37f0",
+        "221dea78c75d532782e6",
+        "7775269c0e03456a9af1",
+        "af95b9bdd410115af721",
+        "12bec8d6a79da216e31b",
+        "55464fb9f61c910fd27d"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 5,
+      "independent_provenance_count": 2,
+      "sources": [
+        "ABC News International",
+        "GDELT Global Discovery",
+        "Reddit WorldNews Signal",
+        "clickondetroit.com",
+        "ksat.com"
+      ],
+      "provenance_roots": [
+        "abc_intl",
+        "clickondetroit.com",
+        "gdelt_global",
+        "ksat.com",
+        "reddit_worldnews"
+      ],
+      "evidence": [
+        {
+          "observation_id": "55464fb9f61c910fd27d",
+          "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
+          "source": "ksat.com",
+          "source_class": "low_confidence",
+          "provenance_root": "ksat.com",
+          "stance": "report",
+          "published": "2026-09-29T13:15:00Z",
+          "url": "https://www.ksat.com/news/world/2026/09/29/estonia-blames-russia-for-arson-attack-on-defense-company-that-provides-vehicles-to-ukraine",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "12bec8d6a79da216e31b",
+          "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
+          "source": "clickondetroit.com",
+          "source_class": "low_confidence",
+          "provenance_root": "clickondetroit.com",
+          "stance": "report",
+          "published": "2026-09-29T12:45:00Z",
+          "url": "https://www.clickondetroit.com/news/world/2026/09/29/estonia-blames-russia-for-arson-attack-on-defense-company-that-provides-vehicles-to-ukraine",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "af95b9bdd410115af721",
+          "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
+          "source": "ABC News International",
+          "source_class": "established_media",
+          "provenance_root": "abc_intl",
+          "stance": "report",
+          "published": "2026-09-29T12:18:22Z",
+          "url": "https://abcnews.com/International/wireStory/estonia-blames-russia-arson-attack-defense-company-vehicles-136846626",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "7775269c0e03456a9af1",
+          "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine - The Washington Post",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-29T12:15:26Z",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOSGRXZ0lZOW91aEViTjRZaC1nUEp0NEVyZi1sb3htX3FuaFdRQkFiM1UzcmlRTmp2dUNqSVJUS1NkdmRjZzNqU0lOa213OGthblJwZmFwTFcta0JIMWxIYkpWZVBMbWRPT1VsckZMMi1yaElwbUFCLUE3cGloOHUzeDNmaVpnbE1mRUlBbWZRUTUwMUo1YW8zc0w5U09jNE5TaFNNb1J3TnVBSmlGMk5oc2tLLS1KZWJrRV9kYndWRWRKaEJGeDlFS2poSDQ3OGM?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "221dea78c75d532782e6",
+          "title": "Estonia blames Russia for arson attack on company supplying vehicles to Ukraine - South China Morning Post",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-29T12:07:37Z",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNkZ0RDl4U3huTGpuUzQxenF6YlZoMEVMSGx3ZkZ0QWlVTHZWaDAxaG1nSlU3b0tpRGttS2xyZUVva3RJcUktdmRqZmEyalBZLTBZcXgwVWY1UUJWS0xQSFZmSGluWWFia2pmVG9wMU13TjZhN1hCbWpZYUMwWVNTRnpkZ3hfQWxBZXRacVJ5R0hkMGgxM2JCMzZvY3U2ckVUSm4tR3I0OGZobVVqTENyZEpUYXZHcFFIaXl6S1RfakI2Z9IBwgFBVV95cUxNOFZhX1ZkcGtqRldfYlYzUkR4Yjl2QVFya2VFSnpUWXV3VTVUSlMxU0diYXBVRDhlX3JJeXFkcGRvLWFXbFdlQllpQ3RXcFhUVlJpS1c5Y2xKYkpJc3ZadE96bmt5ajlZRE5Od0dURldLTUxZcGZNc0xMVTFBRy03NHdtbmVkQmdEeC1EbDFyVzdyM19pMGlob2ZCT3V2ZE5yNjdkT1JsWnhrREMwYW5ndFlMTHhLM0RoT0lfdDB2alBFUQ?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "cfb8f682f16b1a0f37f0",
+          "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
+          "source": "Reddit WorldNews Signal",
+          "source_class": "low_confidence",
+          "provenance_root": "reddit_worldnews",
+          "stance": "report",
+          "published": "2026-09-29T10:37:49Z",
+          "url": "https://www.reddit.com/r/worldnews/comments/1wt6ow6/estonia_blames_russia_for_arson_attack_on_defense",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "c932b6ccd2d853bb913f",
+          "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine - ABC News - Breaking News, Latest News and Videos",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-29T10:24:00Z",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNb2o1MnMzb2RZUmh2cC1VQ1hveHlhNzc1bTdteUFTcm15ZTF3NFQ0VFFOY200aXoxbWREZG5ScUs2cmZrajQyWDg4ell4eUxBODB0YXk0QVEtclp5NUI5eEpqUVAxWVNZNkRXUlJsYzRfNzJoLTVIT0FhdmF4NUVKWW5GNVVEYnlIbUVVY1pvb0QxY1VQRm9FWVVBT2Y1U01KYlJuZ2xwSHp4d0dNLV9YSXdLWnRGWHVw0gG4AUFVX3lxTE1vajUyczNvZFlSaHZwLVVDWG94eWE3NzVtN215QVNybXllMXc0VDRUUU5jbTRpejFtZERkblJxSzZyZmtqNDJYODh6WXh5TEE4MHRheTRBUS1yWnk1Qjl4SmpRUDFZU1k2RFdSUmxjNF83MmgtNUhPQWF2YXg1RUpZbkY1VURieUhtRVVjWm9vRDFjVVBGb0VZVUFPZjVTTUpiUm5nbHBIenh3R00tX1hJd0tadEZYdXA?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "b31ed3b4df95d5225dc9",
+          "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine - abcnews.com",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-29T10:24:00Z",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNb2o1MnMzb2RZUmh2cC1VQ1hveHlhNzc1bTdteUFTcm15ZTF3NFQ0VFFOY200aXoxbWREZG5ScUs2cmZrajQyWDg4ell4eUxBODB0YXk0QVEtclp5NUI5eEpqUVAxWVNZNkRXUlJsYzRfNzJoLTVIT0FhdmF4NUVKWW5GNVVEYnlIbUVVY1pvb0QxY1VQRm9FWVVBT2Y1U01KYlJuZ2xwSHp4d0dNLV9YSXdLWnRGWHVw0gG4AUFVX3lxTE1vajUyczNvZFlSaHZwLVVDWG94eWE3NzVtN215QVNybXllMXc0VDRUUU5jbTRpejFtZERkblJxSzZyZmtqNDJYODh6WXh5TEE4MHRheTRBUS1yWnk1Qjl4SmpRUDFZU1k2RFdSUmxjNF83MmgtNUhPQWF2YXg1RUpZbkY1VURieUhtRVVjWm9vRDFjVVBGb0VZVUFPZjVTTUpiUm5nbHBIenh3R00tX1hJd0tadEZYdXA?oc=5",
+          "discovery_only": true
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
+        "plausible_explanations": [
+          "A genuine POLITICAL/SECURITY/WAR development involving CHINA, RUSSIA, UKRAINE is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related POLITICAL/SECURITY/WAR indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-6074bdce7ae23b0373",
+          "headline": "Russian National Living in Florida Convicted for Scheme to Illegally Export Aircraft Parts from the United States to Russia",
+          "material_time": "2026-08-28T12:00:00Z",
+          "shared_domains": [
+            "SECURITY"
+          ],
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ]
+        },
+        {
+          "claim_id": "claim-ab13de06ed03a68f0a",
+          "headline": "Chinese National Pleads Guilty to Trying to Obtain U.S. Military Equipment",
+          "material_time": "2026-08-10T12:00:00Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [
+            "CHINA"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ]
+        },
+        {
+          "claim_id": "claim-6fc31363eef65639b0",
+          "headline": "Former Adviser to Federal Reserve Board of Governors Sentenced to Federal Prison Term",
+          "material_time": "2026-07-15T12:00:00Z",
+          "shared_domains": [
+            "SECURITY"
+          ],
+          "shared_actors": [
+            "CHINA"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ]
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-2dd8d8676da99b2626",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-a4ee2d17032b8d50f2",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-be07f2c837d8126d5a",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "HUMANITARIAN",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-eb8eb880a59f4b18b9",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-ea2b118f02565cd1b7",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-86d7d3f055d049ac6d",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-50e2edfe7007921903",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-c794db27acb8440ae8",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "NUCLEAR"
+          ]
+        },
+        {
+          "claim_id": "claim-df52790a3459a1afc0",
+          "shared_actors": [
+            "CHINA"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-02d150d413b5e66327",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-b989643588d77d917e",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-d47e4cd2b83f09ff18",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "SECURITY"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-80cbb5b2b6e664a2",
+        "anomaly-4123cbbc76090c71",
+        "anomaly-380d489bd234ca6e"
+      ],
+      "threat_score": 13,
+      "watch_priority": 63,
+      "audit": {
+        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "support_count": 8,
+        "contradiction_count": 0,
+        "independent_roots": 2,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-29T13:15:00Z"
       }
     },
     {
@@ -9092,7 +9525,7 @@
         "corroboration": 25,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 100,
+        "recency": 99,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 46
@@ -9325,8 +9758,8 @@
       ],
       "anomaly_ids": [
         "anomaly-625087205f5467fc",
-        "anomaly-7e8bc150853c5be7",
-        "anomaly-de96771d849213fc"
+        "anomaly-80cbb5b2b6e664a2",
+        "anomaly-4123cbbc76090c71"
       ],
       "threat_score": 17,
       "watch_priority": 58,
@@ -9337,385 +9770,6 @@
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-29T09:07:24Z"
-      }
-    },
-    {
-      "id": "claim-ac769f1325adbd0179",
-      "headline": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
-      "signature_tokens": [
-        "arson",
-        "attack",
-        "blames",
-        "company",
-        "defense",
-        "estonia",
-        "provides",
-        "russia",
-        "ukraine",
-        "vehicles"
-      ],
-      "observation_ids": [
-        "c932b6ccd2d853bb913f",
-        "b31ed3b4df95d5225dc9",
-        "cfb8f682f16b1a0f37f0",
-        "7775269c0e03456a9af1",
-        "af95b9bdd410115af721",
-        "12bec8d6a79da216e31b",
-        "55464fb9f61c910fd27d"
-      ],
-      "first_seen": "2026-09-29T10:52:25Z",
-      "last_seen": "2026-09-29T15:52:27Z",
-      "material_time": "2026-09-29T13:15:00Z",
-      "domains": [
-        "POLITICAL",
-        "SECURITY",
-        "WAR"
-      ],
-      "regions": [
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "actors": [
-        "RUSSIA",
-        "UKRAINE"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 64,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 58,
-        "independence": 52,
-        "corroboration": 52,
-        "contradiction": 0,
-        "specificity": 68,
-        "recency": 100,
-        "evidence_type": 79,
-        "historical_reliability": 58,
-        "claim_maturity": 46
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "c932b6ccd2d853bb913f",
-        "b31ed3b4df95d5225dc9",
-        "cfb8f682f16b1a0f37f0",
-        "7775269c0e03456a9af1",
-        "af95b9bdd410115af721",
-        "12bec8d6a79da216e31b",
-        "55464fb9f61c910fd27d"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 5,
-      "independent_provenance_count": 2,
-      "sources": [
-        "ABC News International",
-        "GDELT Global Discovery",
-        "Reddit WorldNews Signal",
-        "clickondetroit.com",
-        "ksat.com"
-      ],
-      "provenance_roots": [
-        "abc_intl",
-        "clickondetroit.com",
-        "gdelt_global",
-        "ksat.com",
-        "reddit_worldnews"
-      ],
-      "evidence": [
-        {
-          "observation_id": "55464fb9f61c910fd27d",
-          "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
-          "source": "ksat.com",
-          "source_class": "low_confidence",
-          "provenance_root": "ksat.com",
-          "stance": "report",
-          "published": "2026-09-29T13:15:00Z",
-          "url": "https://www.ksat.com/news/world/2026/09/29/estonia-blames-russia-for-arson-attack-on-defense-company-that-provides-vehicles-to-ukraine",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "12bec8d6a79da216e31b",
-          "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
-          "source": "clickondetroit.com",
-          "source_class": "low_confidence",
-          "provenance_root": "clickondetroit.com",
-          "stance": "report",
-          "published": "2026-09-29T12:45:00Z",
-          "url": "https://www.clickondetroit.com/news/world/2026/09/29/estonia-blames-russia-for-arson-attack-on-defense-company-that-provides-vehicles-to-ukraine",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "af95b9bdd410115af721",
-          "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
-          "source": "ABC News International",
-          "source_class": "established_media",
-          "provenance_root": "abc_intl",
-          "stance": "report",
-          "published": "2026-09-29T12:18:22Z",
-          "url": "https://abcnews.com/International/wireStory/estonia-blames-russia-arson-attack-defense-company-vehicles-136846626",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "7775269c0e03456a9af1",
-          "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine - The Washington Post",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "report",
-          "published": "2026-09-29T12:15:26Z",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOSGRXZ0lZOW91aEViTjRZaC1nUEp0NEVyZi1sb3htX3FuaFdRQkFiM1UzcmlRTmp2dUNqSVJUS1NkdmRjZzNqU0lOa213OGthblJwZmFwTFcta0JIMWxIYkpWZVBMbWRPT1VsckZMMi1yaElwbUFCLUE3cGloOHUzeDNmaVpnbE1mRUlBbWZRUTUwMUo1YW8zc0w5U09jNE5TaFNNb1J3TnVBSmlGMk5oc2tLLS1KZWJrRV9kYndWRWRKaEJGeDlFS2poSDQ3OGM?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "cfb8f682f16b1a0f37f0",
-          "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
-          "source": "Reddit WorldNews Signal",
-          "source_class": "low_confidence",
-          "provenance_root": "reddit_worldnews",
-          "stance": "report",
-          "published": "2026-09-29T10:37:49Z",
-          "url": "https://www.reddit.com/r/worldnews/comments/1wt6ow6/estonia_blames_russia_for_arson_attack_on_defense",
-          "discovery_only": false
-        },
-        {
-          "observation_id": "c932b6ccd2d853bb913f",
-          "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine - ABC News - Breaking News, Latest News and Videos",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "report",
-          "published": "2026-09-29T10:24:00Z",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNb2o1MnMzb2RZUmh2cC1VQ1hveHlhNzc1bTdteUFTcm15ZTF3NFQ0VFFOY200aXoxbWREZG5ScUs2cmZrajQyWDg4ell4eUxBODB0YXk0QVEtclp5NUI5eEpqUVAxWVNZNkRXUlJsYzRfNzJoLTVIT0FhdmF4NUVKWW5GNVVEYnlIbUVVY1pvb0QxY1VQRm9FWVVBT2Y1U01KYlJuZ2xwSHp4d0dNLV9YSXdLWnRGWHVw0gG4AUFVX3lxTE1vajUyczNvZFlSaHZwLVVDWG94eWE3NzVtN215QVNybXllMXc0VDRUUU5jbTRpejFtZERkblJxSzZyZmtqNDJYODh6WXh5TEE4MHRheTRBUS1yWnk1Qjl4SmpRUDFZU1k2RFdSUmxjNF83MmgtNUhPQWF2YXg1RUpZbkY1VURieUhtRVVjWm9vRDFjVVBGb0VZVUFPZjVTTUpiUm5nbHBIenh3R00tX1hJd0tadEZYdXA?oc=5",
-          "discovery_only": true
-        },
-        {
-          "observation_id": "b31ed3b4df95d5225dc9",
-          "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine - abcnews.com",
-          "source": "GDELT Global Discovery",
-          "source_class": "discovery",
-          "provenance_root": "gdelt_global",
-          "stance": "report",
-          "published": "2026-09-29T10:24:00Z",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNb2o1MnMzb2RZUmh2cC1VQ1hveHlhNzc1bTdteUFTcm15ZTF3NFQ0VFFOY200aXoxbWREZG5ScUs2cmZrajQyWDg4ell4eUxBODB0YXk0QVEtclp5NUI5eEpqUVAxWVNZNkRXUlJsYzRfNzJoLTVIT0FhdmF4NUVKWW5GNVVEYnlIbUVVY1pvb0QxY1VQRm9FWVVBT2Y1U01KYlJuZ2xwSHp4d0dNLV9YSXdLWnRGWHVw0gG4AUFVX3lxTE1vajUyczNvZFlSaHZwLVVDWG94eWE3NzVtN215QVNybXllMXc0VDRUUU5jbTRpejFtZERkblJxSzZyZmtqNDJYODh6WXh5TEE4MHRheTRBUS1yWnk1Qjl4SmpRUDFZU1k2RFdSUmxjNF83MmgtNUhPQWF2YXg1RUpZbkY1VURieUhtRVVjWm9vRDFjVVBGb0VZVUFPZjVTTUpiUm5nbHBIenh3R00tX1hJd0tadEZYdXA?oc=5",
-          "discovery_only": true
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
-        "plausible_explanations": [
-          "A genuine POLITICAL/SECURITY/WAR development involving RUSSIA, UKRAINE is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related POLITICAL/SECURITY/WAR indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [
-        {
-          "claim_id": "claim-6074bdce7ae23b0373",
-          "headline": "Russian National Living in Florida Convicted for Scheme to Illegally Export Aircraft Parts from the United States to Russia",
-          "material_time": "2026-08-28T12:00:00Z",
-          "shared_domains": [
-            "SECURITY"
-          ],
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ]
-        }
-      ],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-2dd8d8676da99b2626",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-a4ee2d17032b8d50f2",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-be07f2c837d8126d5a",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "HUMANITARIAN",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-989145b34a34dc9ab4",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-eb8eb880a59f4b18b9",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-ea2b118f02565cd1b7",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-86d7d3f055d049ac6d",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-50e2edfe7007921903",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-c794db27acb8440ae8",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "NUCLEAR"
-          ]
-        },
-        {
-          "claim_id": "claim-02d150d413b5e66327",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-b989643588d77d917e",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-d47e4cd2b83f09ff18",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "INFRA",
-            "POLITICAL",
-            "SECURITY"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-7e8bc150853c5be7",
-        "anomaly-de96771d849213fc"
-      ],
-      "threat_score": 13,
-      "watch_priority": 51,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 7,
-        "contradiction_count": 0,
-        "independent_roots": 2,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-29T13:15:00Z"
       }
     },
     {
@@ -9737,7 +9791,7 @@
         "947fd1c2323c53e7cb30"
       ],
       "first_seen": "2026-09-29T08:50:49Z",
-      "last_seen": "2026-09-29T15:52:27Z",
+      "last_seen": "2026-09-29T16:25:30Z",
       "material_time": "2026-09-29T10:24:00Z",
       "domains": [
         "POLITICAL",
@@ -9903,21 +9957,6 @@
           ]
         },
         {
-          "claim_id": "claim-989145b34a34dc9ab4",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-eb8eb880a59f4b18b9",
           "shared_actors": [
             "RUSSIA"
@@ -10022,11 +10061,26 @@
             "POLITICAL",
             "SECURITY"
           ]
+        },
+        {
+          "claim_id": "claim-959f0c684e4b36f1f6",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-7e8bc150853c5be7",
-        "anomaly-de96771d849213fc"
+        "anomaly-80cbb5b2b6e664a2",
+        "anomaly-4123cbbc76090c71"
       ],
       "threat_score": 13,
       "watch_priority": 51,
@@ -10345,7 +10399,7 @@
       "anomaly_ids": [
         "anomaly-442df49a3d213ab8",
         "anomaly-758e00fade311209",
-        "anomaly-30c7889dc294d428"
+        "anomaly-380d489bd234ca6e"
       ],
       "threat_score": 15,
       "watch_priority": 60,
@@ -10509,21 +10563,6 @@
           ]
         },
         {
-          "claim_id": "claim-989145b34a34dc9ab4",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-eb8eb880a59f4b18b9",
           "shared_actors": [
             "NATO",
@@ -10631,12 +10670,27 @@
             "POLITICAL",
             "SECURITY"
           ]
+        },
+        {
+          "claim_id": "claim-959f0c684e4b36f1f6",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
         "anomaly-625087205f5467fc",
-        "anomaly-7e8bc150853c5be7",
-        "anomaly-de96771d849213fc"
+        "anomaly-80cbb5b2b6e664a2",
+        "anomaly-4123cbbc76090c71"
       ],
       "threat_score": 15,
       "watch_priority": 57,
@@ -10647,6 +10701,306 @@
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-27T08:36:49Z"
+      }
+    },
+    {
+      "id": "claim-34916271fd769e2a7c",
+      "headline": "Ukrainian suspect in Nord Stream sabotage requests asylum in Croatia",
+      "signature_tokens": [
+        "asylum",
+        "croatia",
+        "nord",
+        "requests",
+        "sabotage",
+        "stream",
+        "suspect",
+        "ukrainian"
+      ],
+      "observation_ids": [
+        "596d67de789121b4bbce",
+        "cd715a9fde76cb9c1119",
+        "197add2ee81287c1eddb",
+        "a44914109d6cf5b9e6b8"
+      ],
+      "first_seen": "2026-09-29T14:53:57Z",
+      "last_seen": "2026-09-29T16:25:30Z",
+      "material_time": "2026-09-29T14:55:18Z",
+      "domains": [
+        "INFRA",
+        "POLITICAL",
+        "SECURITY"
+      ],
+      "regions": [
+        "EUROPE",
+        "UKRAINE"
+      ],
+      "actors": [
+        "UKRAINE"
+      ],
+      "state": "CREDIBLE REPORT",
+      "confidence": 65,
+      "confidence_direction": "NEW",
+      "confidence_components": {
+        "source_quality": 64,
+        "independence": 52,
+        "corroboration": 52,
+        "contradiction": 0,
+        "specificity": 69,
+        "recency": 100,
+        "evidence_type": 67,
+        "historical_reliability": 64,
+        "claim_maturity": 46
+      },
+      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+      "supporting_observation_ids": [
+        "596d67de789121b4bbce",
+        "cd715a9fde76cb9c1119",
+        "197add2ee81287c1eddb",
+        "a44914109d6cf5b9e6b8"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 3,
+      "independent_provenance_count": 2,
+      "sources": [
+        "GDELT Global Discovery",
+        "Kyiv Independent",
+        "TASS World"
+      ],
+      "provenance_roots": [
+        "gdelt_global",
+        "kyiv_independent",
+        "tass"
+      ],
+      "evidence": [
+        {
+          "observation_id": "a44914109d6cf5b9e6b8",
+          "title": "Ukrainian national suspected of blowing up Nord Streams applies for asylum in Croatia",
+          "source": "TASS World",
+          "source_class": "state_media",
+          "provenance_root": "tass",
+          "stance": "report",
+          "published": "2026-09-29T14:55:18Z",
+          "url": "https://tass.com/world/2194641",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "cd715a9fde76cb9c1119",
+          "title": "Ukrainian suspect in Nord Stream sabotage requests asylum in Croatia",
+          "source": "Kyiv Independent",
+          "source_class": "regional_local",
+          "provenance_root": "kyiv_independent",
+          "stance": "report",
+          "published": "2026-09-29T14:46:10Z",
+          "url": "https://kyivindependent.com/ukrainian-suspect-in-nord-stream-sabotage-requests-asylum-in-croatia",
+          "discovery_only": false
+        },
+        {
+          "observation_id": "197add2ee81287c1eddb",
+          "title": "Ukrainian suspect in Nord Stream sabotage requests asylum in Croatia - The Kyiv Independent",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-29T14:46:10Z",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOT3M4aUUtcXJpaXM4ckM4bXJpbHEtYkM2VmRXX185SjJQVTRhY1k3M1ZUcUlEdW9UNEQyLXppNDlvS1FDZDJtVnpXTkdZc28ySVRRNU5HQ0N2eXNIV25QMkFmUEhpTW8tOTNHbV96cHNHbmlTcnpaTG1ITUhVV2d5dERHb2l1QUptazYxaW1DOFNrLXRScFBWWGwtUVlZZw?oc=5",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "596d67de789121b4bbce",
+          "title": "Ukrainian national suspected in Nord Stream sabotage seeks asylum in Croatia - Українська правда",
+          "source": "GDELT Global Discovery",
+          "source_class": "discovery",
+          "provenance_root": "gdelt_global",
+          "stance": "report",
+          "published": "2026-09-29T13:56:00Z",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9IVzNkS2tHcDVlUE80ZDgzTnBJMlJrUXI1dXlvYXR0clJkZzBqakh1STBjSWZweFRDWGVYU2c0YXRjeHVzZDZhaTdzZFIwX2pLSVN3TWlTMVFpNWRIdlFOcko0TzlsTGNldFBLRF9SVkTSAXBBVV95cUxPSFczZEtrR3A1ZVBPNGQ4M05wSTJSa1FyNXV5b2F0dHJSZGcwampIdUkwY0lmcHhUQ1hlWFNnNGF0Y3h1c2Q2YWk3c2RSMF9qS0lTd01pUzFRaTVkSHZRTnJKNE85bExjZXRQS0RfUlZE?oc=5",
+          "discovery_only": true
+        }
+      ],
+      "state_affiliated_reporting": true,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Ukrainian suspect in Nord Stream sabotage requests asylum in Croatia",
+        "plausible_explanations": [
+          "A genuine INFRA/POLITICAL/SECURITY development involving UKRAINE is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related INFRA/POLITICAL/SECURITY indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-2dd8d8676da99b2626",
+          "shared_actors": [
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "UKRAINE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-47597ff425de0f7948",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-be07f2c837d8126d5a",
+          "shared_actors": [
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "UKRAINE"
+          ],
+          "domains": [
+            "HUMANITARIAN",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-eb8eb880a59f4b18b9",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-ea2b118f02565cd1b7",
+          "shared_actors": [
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "UKRAINE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-86d7d3f055d049ac6d",
+          "shared_actors": [
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "UKRAINE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-50e2edfe7007921903",
+          "shared_actors": [
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "EUROPE",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA"
+          ]
+        },
+        {
+          "claim_id": "claim-02d150d413b5e66327",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-97bfb29d982c338e8e",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-d6789f99ce990cb44a",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "HUMANITARIAN",
+            "INFRA",
+            "POLITICAL",
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-959f0c684e4b36f1f6",
+          "shared_actors": [
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "UKRAINE"
+          ],
+          "domains": [
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-0577bbeca24d7a8f20",
+          "shared_actors": [
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "SPACE",
+            "WAR"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-4123cbbc76090c71"
+      ],
+      "threat_score": 12,
+      "watch_priority": 37,
+      "audit": {
+        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "support_count": 4,
+        "contradiction_count": 0,
+        "independent_roots": 2,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-09-29T14:55:18Z"
       }
     },
     {
@@ -10664,7 +11018,7 @@
         "eb13e4d60bafe624010e"
       ],
       "first_seen": "2026-09-28T20:54:43Z",
-      "last_seen": "2026-09-29T15:52:27Z",
+      "last_seen": "2026-09-29T16:25:30Z",
       "material_time": "2026-09-28T20:01:43Z",
       "domains": [
         "INFRA",
@@ -10836,19 +11190,6 @@
           ]
         },
         {
-          "claim_id": "claim-989145b34a34dc9ab4",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-eb8eb880a59f4b18b9",
           "shared_actors": [
             "RUSSIA"
@@ -10920,11 +11261,23 @@
           "domains": [
             "NUCLEAR"
           ]
+        },
+        {
+          "claim_id": "claim-02d150d413b5e66327",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
         "anomaly-442df49a3d213ab8",
-        "anomaly-7e8bc150853c5be7"
+        "anomaly-80cbb5b2b6e664a2"
       ],
       "threat_score": 15,
       "watch_priority": 49,
@@ -11747,21 +12100,6 @@
           ]
         },
         {
-          "claim_id": "claim-989145b34a34dc9ab4",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-50e2edfe7007921903",
           "shared_actors": [
             "RUSSIA",
@@ -11874,12 +12212,27 @@
           "domains": [
             "TERRORISM"
           ]
+        },
+        {
+          "claim_id": "claim-cc379327343321ef12",
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "domains": [
+            "INFRA",
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
         "anomaly-625087205f5467fc",
-        "anomaly-7e8bc150853c5be7",
-        "anomaly-de96771d849213fc"
+        "anomaly-80cbb5b2b6e664a2",
+        "anomaly-4123cbbc76090c71"
       ],
       "threat_score": 17,
       "watch_priority": 52,
@@ -12127,19 +12480,6 @@
           ]
         },
         {
-          "claim_id": "claim-989145b34a34dc9ab4",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "POLITICAL",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-eb8eb880a59f4b18b9",
           "shared_actors": [
             "NATO",
@@ -12228,11 +12568,23 @@
           "domains": [
             "WAR"
           ]
+        },
+        {
+          "claim_id": "claim-97bfb29d982c338e8e",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "ECONOMIC",
+            "SECURITY",
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
         "anomaly-625087205f5467fc",
-        "anomaly-7e8bc150853c5be7"
+        "anomaly-80cbb5b2b6e664a2"
       ],
       "threat_score": 23,
       "watch_priority": 46,
@@ -12243,263 +12595,6 @@
         "independent_roots": 4,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-09-28T00:50:00Z"
-      }
-    },
-    {
-      "id": "claim-111dc07c9b59b4d688",
-      "headline": "ISIL (Da’esh) and Al-Qaida: list of designations and sanctions notices",
-      "signature_tokens": [
-        "al-qaida",
-        "designations",
-        "esh",
-        "isil",
-        "list",
-        "notices",
-        "sanctions"
-      ],
-      "observation_ids": [
-        "e9eb30578be050598405"
-      ],
-      "first_seen": "2026-09-10T14:18:49Z",
-      "last_seen": "2026-09-29T15:52:27Z",
-      "material_time": "2026-09-29T10:15:41Z",
-      "domains": [
-        "ECONOMIC",
-        "TERRORISM"
-      ],
-      "regions": [
-        "GLOBAL"
-      ],
-      "actors": [
-        "ISIS"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 65,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 95,
-        "independence": 25,
-        "corroboration": 22,
-        "contradiction": 0,
-        "specificity": 51,
-        "recency": 100,
-        "evidence_type": 86,
-        "historical_reliability": 95,
-        "claim_maturity": 35
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "e9eb30578be050598405"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 1,
-      "independent_provenance_count": 1,
-      "sources": [
-        "UK Foreign, Commonwealth & Development Office"
-      ],
-      "provenance_roots": [
-        "fcdo"
-      ],
-      "evidence": [
-        {
-          "observation_id": "e9eb30578be050598405",
-          "title": "ISIL (Da’esh) and Al-Qaida: list of designations and sanctions notices",
-          "source": "UK Foreign, Commonwealth & Development Office",
-          "source_class": "primary_official",
-          "provenance_root": "fcdo",
-          "stance": "report",
-          "published": "2026-09-29T10:15:41Z",
-          "url": "https://www.gov.uk/guidance/isil-daesh-and-al-qaida-list-of-designations-and-sanctions-notices",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "ISIL (Da’esh) and Al-Qaida: list of designations and sanctions notices",
-        "plausible_explanations": [
-          "A genuine ECONOMIC/TERRORISM development involving ISIS is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related ECONOMIC/TERRORISM indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [
-        {
-          "claim_id": "claim-c13be1899bbec8d248",
-          "headline": "Albany, New York Woman Charged with ISIS-Inspired Terror Plot Targeting New York State Capitol",
-          "material_time": "2026-08-20T12:00:00Z",
-          "shared_domains": [
-            "TERRORISM"
-          ],
-          "shared_actors": [
-            "ISIS"
-          ],
-          "shared_regions": []
-        },
-        {
-          "claim_id": "claim-f9781e8a8f711fa0cd",
-          "headline": "Maryland Man Sentenced for Attempting to Provide Material Support to ISIS",
-          "material_time": "2026-07-08T12:00:00Z",
-          "shared_domains": [
-            "TERRORISM"
-          ],
-          "shared_actors": [
-            "ISIS"
-          ],
-          "shared_regions": []
-        }
-      ],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-af8f754e60078ad1ce",
-          "shared_actors": [
-            "ISIS"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "ECONOMIC",
-            "NUCLEAR",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-54195610a0187daac7",
-          "shared_actors": [
-            "ISIS"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "HUMANITARIAN",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-dd51fd37dd8a3cafab",
-          "shared_actors": [
-            "ISIS"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "INFRA"
-          ]
-        },
-        {
-          "claim_id": "claim-f87f33b77fb31e198b",
-          "shared_actors": [
-            "ISIS"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-9b41912c6b935323a5",
-          "shared_actors": [
-            "ISIS"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-6cd5f2c5187ed5b48f",
-          "shared_actors": [
-            "ISIS"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "TERRORISM",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-07203ffb1ccaa51db7",
-          "shared_actors": [
-            "ISIS"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-b3c7bc289815846c0b",
-          "shared_actors": [
-            "ISIS"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-2cbaf942f69bd6577f",
-          "shared_actors": [
-            "ISIS"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-9b62b465fa35a677ac",
-          "shared_actors": [
-            "ISIS"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-cf59a733cac7901b19",
-          "shared_actors": [
-            "ISIS"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "HUMANITARIAN"
-          ]
-        },
-        {
-          "claim_id": "claim-384f13d9beaca56114",
-          "shared_actors": [
-            "ISIS"
-          ],
-          "shared_regions": [],
-          "domains": [
-            "POLITICAL"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-843890e7621338ed"
-      ],
-      "threat_score": 15,
-      "watch_priority": 39,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 1,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-29T10:15:41Z"
       }
     }
   ]
