@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-29T13:26:30Z",
+  "generated_at": "2026-09-29T13:53:15Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 42,
   "verified_pressure": {
     "score": 42,
-    "claim_count": 53,
+    "claim_count": 54,
     "top_claims": [
       {
         "id": "claim-97bfb29d982c338e8e",
@@ -47,7 +47,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 88,
-          "recency": 100,
+          "recency": 99,
           "evidence_type": 79,
           "historical_reliability": 84,
           "claim_maturity": 35
@@ -2111,11 +2111,13 @@
           "c932b6ccd2d853bb913f",
           "cfb8f682f16b1a0f37f0",
           "7775269c0e03456a9af1",
-          "af95b9bdd410115af721"
+          "af95b9bdd410115af721",
+          "12bec8d6a79da216e31b",
+          "55464fb9f61c910fd27d"
         ],
         "first_seen": "2026-09-29T10:52:25Z",
-        "last_seen": "2026-09-29T13:26:30Z",
-        "material_time": "2026-09-29T12:18:22Z",
+        "last_seen": "2026-09-29T13:53:15Z",
+        "material_time": "2026-09-29T13:15:00Z",
         "domains": [
           "POLITICAL",
           "SECURITY",
@@ -2131,13 +2133,13 @@
         ],
         "state": "CREDIBLE REPORT",
         "confidence": 64,
-        "confidence_direction": "NEW",
+        "confidence_direction": "STABLE",
         "confidence_components": {
           "source_quality": 58,
           "independence": 52,
           "corroboration": 52,
           "contradiction": 0,
-          "specificity": 69,
+          "specificity": 68,
           "recency": 100,
           "evidence_type": 79,
           "historical_reliability": 58,
@@ -2148,22 +2150,50 @@
           "c932b6ccd2d853bb913f",
           "cfb8f682f16b1a0f37f0",
           "7775269c0e03456a9af1",
-          "af95b9bdd410115af721"
+          "af95b9bdd410115af721",
+          "12bec8d6a79da216e31b",
+          "55464fb9f61c910fd27d"
         ],
         "contradictory_observation_ids": [],
-        "source_count": 3,
+        "source_count": 5,
         "independent_provenance_count": 2,
         "sources": [
           "ABC News International",
           "GDELT Global Discovery",
-          "Reddit WorldNews Signal"
+          "Reddit WorldNews Signal",
+          "clickondetroit.com",
+          "ksat.com"
         ],
         "provenance_roots": [
           "abc_intl",
+          "clickondetroit.com",
           "gdelt_global",
+          "ksat.com",
           "reddit_worldnews"
         ],
         "evidence": [
+          {
+            "observation_id": "55464fb9f61c910fd27d",
+            "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
+            "source": "ksat.com",
+            "source_class": "low_confidence",
+            "provenance_root": "ksat.com",
+            "stance": "report",
+            "published": "2026-09-29T13:15:00Z",
+            "url": "https://www.ksat.com/news/world/2026/09/29/estonia-blames-russia-for-arson-attack-on-defense-company-that-provides-vehicles-to-ukraine",
+            "discovery_only": true
+          },
+          {
+            "observation_id": "12bec8d6a79da216e31b",
+            "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
+            "source": "clickondetroit.com",
+            "source_class": "low_confidence",
+            "provenance_root": "clickondetroit.com",
+            "stance": "report",
+            "published": "2026-09-29T12:45:00Z",
+            "url": "https://www.clickondetroit.com/news/world/2026/09/29/estonia-blames-russia-for-arson-attack-on-defense-company-that-provides-vehicles-to-ukraine",
+            "discovery_only": true
+          },
           {
             "observation_id": "af95b9bdd410115af721",
             "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
@@ -2420,11 +2450,11 @@
         "watch_priority": 51,
         "audit": {
           "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 4,
+          "support_count": 6,
           "contradiction_count": 0,
           "independent_roots": 2,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-09-29T12:18:22Z"
+          "material_time_used_for_decay": "2026-09-29T13:15:00Z"
         }
       },
       {
@@ -2446,7 +2476,7 @@
           "947fd1c2323c53e7cb30"
         ],
         "first_seen": "2026-09-29T08:50:49Z",
-        "last_seen": "2026-09-29T13:26:30Z",
+        "last_seen": "2026-09-29T13:53:15Z",
         "material_time": "2026-09-29T10:24:00Z",
         "domains": [
           "POLITICAL",
@@ -3371,7 +3401,7 @@
           "eb13e4d60bafe624010e"
         ],
         "first_seen": "2026-09-28T20:54:43Z",
-        "last_seen": "2026-09-29T13:26:30Z",
+        "last_seen": "2026-09-29T13:53:15Z",
         "material_time": "2026-09-28T20:01:43Z",
         "domains": [
           "INFRA",
@@ -3394,7 +3424,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 78,
-          "recency": 94,
+          "recency": 93,
           "evidence_type": 73,
           "historical_reliability": 81,
           "claim_maturity": 36
@@ -3985,7 +4015,7 @@
   },
   "early_warning_pressure": {
     "score": 100,
-    "claim_count": 50,
+    "claim_count": 49,
     "top_claims": [
       {
         "id": "claim-af8f754e60078ad1ce",
@@ -4526,14 +4556,13 @@
             ]
           },
           {
-            "claim_id": "claim-b3ca8bcc3b30366d1d",
+            "claim_id": "claim-620967d366f2fcb39f",
             "shared_actors": [],
             "shared_regions": [
               "EUROPE"
             ],
             "domains": [
-              "SECURITY",
-              "WAR"
+              "NUCLEAR"
             ]
           }
         ],
@@ -4568,7 +4597,7 @@
           "9a6b2a70bf0926e21029"
         ],
         "first_seen": "2026-09-28T21:22:26Z",
-        "last_seen": "2026-09-29T13:26:30Z",
+        "last_seen": "2026-09-29T13:53:15Z",
         "material_time": "2026-09-28T20:57:35Z",
         "domains": [
           "ECONOMIC",
@@ -4872,7 +4901,7 @@
           "corroboration": 52,
           "contradiction": 0,
           "specificity": 78,
-          "recency": 70,
+          "recency": 69,
           "evidence_type": 67,
           "historical_reliability": 56,
           "claim_maturity": 53
@@ -5079,7 +5108,7 @@
             ]
           },
           {
-            "claim_id": "claim-0577bbeca24d7a8f20",
+            "claim_id": "claim-7d26a44c2e911b5ec9",
             "shared_actors": [
               "RUSSIA"
             ],
@@ -5087,8 +5116,6 @@
               "RUSSIA"
             ],
             "domains": [
-              "INFRA",
-              "SPACE",
               "WAR"
             ]
           }
@@ -5690,7 +5717,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 71,
+          "recency": 70,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 41
@@ -6001,7 +6028,7 @@
           "ISIS"
         ],
         "state": "EARLY WARNING",
-        "confidence": 46,
+        "confidence": 45,
         "confidence_direction": "STABLE",
         "confidence_components": {
           "source_quality": 50,
@@ -6816,7 +6843,7 @@
           "7db0a4e8849e3455aebb"
         ],
         "first_seen": "2026-09-28T03:23:37Z",
-        "last_seen": "2026-09-29T13:26:30Z",
+        "last_seen": "2026-09-29T13:53:15Z",
         "material_time": "2026-09-28T00:38:00Z",
         "domains": [
           "NUCLEAR"
@@ -7015,7 +7042,7 @@
     "military_mobilization": 62,
     "economic_warfare": 100,
     "crisis_control_failure": 0,
-    "hybrid_preparation": 67
+    "hybrid_preparation": 72
   },
   "vector_claim_counts": {
     "great_power_direct_clash": 0,
@@ -7072,7 +7099,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 88,
-        "recency": 100,
+        "recency": 99,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 35
@@ -9136,11 +9163,13 @@
         "c932b6ccd2d853bb913f",
         "cfb8f682f16b1a0f37f0",
         "7775269c0e03456a9af1",
-        "af95b9bdd410115af721"
+        "af95b9bdd410115af721",
+        "12bec8d6a79da216e31b",
+        "55464fb9f61c910fd27d"
       ],
       "first_seen": "2026-09-29T10:52:25Z",
-      "last_seen": "2026-09-29T13:26:30Z",
-      "material_time": "2026-09-29T12:18:22Z",
+      "last_seen": "2026-09-29T13:53:15Z",
+      "material_time": "2026-09-29T13:15:00Z",
       "domains": [
         "POLITICAL",
         "SECURITY",
@@ -9156,13 +9185,13 @@
       ],
       "state": "CREDIBLE REPORT",
       "confidence": 64,
-      "confidence_direction": "NEW",
+      "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 58,
         "independence": 52,
         "corroboration": 52,
         "contradiction": 0,
-        "specificity": 69,
+        "specificity": 68,
         "recency": 100,
         "evidence_type": 79,
         "historical_reliability": 58,
@@ -9173,22 +9202,50 @@
         "c932b6ccd2d853bb913f",
         "cfb8f682f16b1a0f37f0",
         "7775269c0e03456a9af1",
-        "af95b9bdd410115af721"
+        "af95b9bdd410115af721",
+        "12bec8d6a79da216e31b",
+        "55464fb9f61c910fd27d"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 3,
+      "source_count": 5,
       "independent_provenance_count": 2,
       "sources": [
         "ABC News International",
         "GDELT Global Discovery",
-        "Reddit WorldNews Signal"
+        "Reddit WorldNews Signal",
+        "clickondetroit.com",
+        "ksat.com"
       ],
       "provenance_roots": [
         "abc_intl",
+        "clickondetroit.com",
         "gdelt_global",
+        "ksat.com",
         "reddit_worldnews"
       ],
       "evidence": [
+        {
+          "observation_id": "55464fb9f61c910fd27d",
+          "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
+          "source": "ksat.com",
+          "source_class": "low_confidence",
+          "provenance_root": "ksat.com",
+          "stance": "report",
+          "published": "2026-09-29T13:15:00Z",
+          "url": "https://www.ksat.com/news/world/2026/09/29/estonia-blames-russia-for-arson-attack-on-defense-company-that-provides-vehicles-to-ukraine",
+          "discovery_only": true
+        },
+        {
+          "observation_id": "12bec8d6a79da216e31b",
+          "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
+          "source": "clickondetroit.com",
+          "source_class": "low_confidence",
+          "provenance_root": "clickondetroit.com",
+          "stance": "report",
+          "published": "2026-09-29T12:45:00Z",
+          "url": "https://www.clickondetroit.com/news/world/2026/09/29/estonia-blames-russia-for-arson-attack-on-defense-company-that-provides-vehicles-to-ukraine",
+          "discovery_only": true
+        },
         {
           "observation_id": "af95b9bdd410115af721",
           "title": "Estonia blames Russia for arson attack on defense company that provides vehicles to Ukraine",
@@ -9445,11 +9502,11 @@
       "watch_priority": 51,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 4,
+        "support_count": 6,
         "contradiction_count": 0,
         "independent_roots": 2,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-09-29T12:18:22Z"
+        "material_time_used_for_decay": "2026-09-29T13:15:00Z"
       }
     },
     {
@@ -9471,7 +9528,7 @@
         "947fd1c2323c53e7cb30"
       ],
       "first_seen": "2026-09-29T08:50:49Z",
-      "last_seen": "2026-09-29T13:26:30Z",
+      "last_seen": "2026-09-29T13:53:15Z",
       "material_time": "2026-09-29T10:24:00Z",
       "domains": [
         "POLITICAL",
@@ -10396,7 +10453,7 @@
         "eb13e4d60bafe624010e"
       ],
       "first_seen": "2026-09-28T20:54:43Z",
-      "last_seen": "2026-09-29T13:26:30Z",
+      "last_seen": "2026-09-29T13:53:15Z",
       "material_time": "2026-09-28T20:01:43Z",
       "domains": [
         "INFRA",
@@ -10419,7 +10476,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 78,
-        "recency": 94,
+        "recency": 93,
         "evidence_type": 73,
         "historical_reliability": 81,
         "claim_maturity": 36
@@ -11996,7 +12053,7 @@
         "e9eb30578be050598405"
       ],
       "first_seen": "2026-09-10T14:18:49Z",
-      "last_seen": "2026-09-29T13:26:30Z",
+      "last_seen": "2026-09-29T13:53:15Z",
       "material_time": "2026-09-29T10:15:41Z",
       "domains": [
         "ECONOMIC",
