@@ -2,37 +2,37 @@
   "engine": "Y&Y Intelligence Engine",
   "version": "3.0",
   "rules_version": "3.0-layered-early-warning",
-  "last_poll": "2026-10-04T12:51:48Z",
+  "last_poll": "2026-10-04T17:28:55Z",
   "poll_mode": "LIVE COLLECTION",
   "mode": "AUTONOMOUS",
   "situation": "ACTIVE WITH GAPS",
   "quiet_interpretation": "Active reporting is present; inspect source gaps before interpreting absence in uncovered domains.",
   "sources_total": 60,
-  "sources_ok": 49,
-  "sources_failed": 7,
-  "source_health_percent": 82,
+  "sources_ok": 53,
+  "sources_failed": 3,
+  "source_health_percent": 88,
   "source_diagnostics": {
     "configured": 61,
     "enabled": 60,
     "disabled": 1,
-    "healthy_or_quiet": 49,
-    "reachable": 53,
-    "failed": 7,
+    "healthy_or_quiet": 53,
+    "reachable": 57,
+    "failed": 3,
     "empty": 0,
     "stale": 4,
     "quiet": 1,
-    "coverage_percent": 82,
-    "reachability_percent": 88,
+    "coverage_percent": 88,
+    "reachability_percent": 95,
     "classes": {
       "primary_official": {
         "configured": 18,
-        "healthy": 15,
-        "failed_or_stale": 3
+        "healthy": 14,
+        "failed_or_stale": 4
       },
       "wire": {
         "configured": 3,
-        "healthy": 0,
-        "failed_or_stale": 3
+        "healthy": 3,
+        "failed_or_stale": 0
       },
       "established_media": {
         "configured": 10,
@@ -66,13 +66,13 @@
       },
       "low_confidence": {
         "configured": 2,
-        "healthy": 1,
-        "failed_or_stale": 1
+        "healthy": 2,
+        "failed_or_stale": 0
       },
       "discovery": {
         "configured": 1,
-        "healthy": 0,
-        "failed_or_stale": 1
+        "healthy": 1,
+        "failed_or_stale": 0
       }
     }
   },
@@ -89,10 +89,10 @@
       "useful": true,
       "items": 15,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
-      "newest_item": "2026-10-04T12:51:51Z"
+      "newest_item": "2026-10-04T17:28:58Z"
     },
     {
       "id": "cisa_kev",
@@ -106,7 +106,7 @@
       "useful": true,
       "items": 160,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-02T00:00:00Z"
@@ -123,7 +123,7 @@
       "useful": true,
       "items": 0,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": null
@@ -140,7 +140,7 @@
       "useful": true,
       "items": 25,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-02T12:00:00Z"
@@ -157,7 +157,7 @@
       "useful": true,
       "items": 2,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-02T16:01:39Z"
@@ -174,10 +174,10 @@
       "useful": true,
       "items": 160,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
-      "newest_item": "2026-10-04T11:33:38Z"
+      "newest_item": "2026-10-04T15:18:57Z"
     },
     {
       "id": "who",
@@ -191,7 +191,7 @@
       "useful": false,
       "items": 25,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-02-25T18:06:55Z"
@@ -208,7 +208,7 @@
       "useful": false,
       "items": 160,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-09-22T08:00:00Z"
@@ -220,15 +220,15 @@
       "source_class": "primary_official",
       "reliability": 0.96,
       "enabled": true,
-      "status": "healthy",
-      "reachable": true,
-      "useful": true,
-      "items": 10,
-      "error": null,
+      "status": "failed",
+      "reachable": false,
+      "useful": false,
+      "items": 0,
+      "error": "HTTPError: HTTP Error 429: Too Many Requests",
       "last_success": "2026-10-04T12:51:48Z",
-      "last_failure": null,
-      "consecutive_failures": 0,
-      "newest_item": "2026-10-04T04:05:00Z"
+      "last_failure": "2026-10-04T17:28:55Z",
+      "consecutive_failures": 1,
+      "newest_item": null
     },
     {
       "id": "noaa",
@@ -242,7 +242,7 @@
       "useful": true,
       "items": 10,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-09-30T13:21:42Z"
@@ -257,12 +257,12 @@
       "status": "healthy",
       "reachable": true,
       "useful": true,
-      "items": 4,
+      "items": 6,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
-      "newest_item": "2026-10-04T12:46:06Z"
+      "newest_item": "2026-10-04T17:18:06Z"
     },
     {
       "id": "eu_commission",
@@ -276,7 +276,7 @@
       "useful": true,
       "items": 10,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-02T15:38:58Z"
@@ -293,7 +293,7 @@
       "useful": true,
       "items": 20,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-02T15:06:40Z"
@@ -310,7 +310,7 @@
       "useful": true,
       "items": 20,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-02T15:26:35Z"
@@ -327,7 +327,7 @@
       "useful": true,
       "items": 20,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-03T11:43:18Z"
@@ -344,7 +344,7 @@
       "useful": true,
       "items": 20,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-02T20:45:00Z"
@@ -361,7 +361,7 @@
       "useful": true,
       "items": 10,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-05T00:00:00Z"
@@ -379,8 +379,8 @@
       "items": 0,
       "error": "ParseError: no element found: line 1, column 0",
       "last_success": null,
-      "last_failure": "2026-10-04T12:51:48Z",
-      "consecutive_failures": 919,
+      "last_failure": "2026-10-04T17:28:55Z",
+      "consecutive_failures": 920,
       "newest_item": null
     },
     {
@@ -390,15 +390,15 @@
       "source_class": "wire",
       "reliability": 0.94,
       "enabled": true,
-      "status": "failed",
-      "reachable": false,
-      "useful": false,
-      "items": 0,
-      "error": "HTTPError: HTTP Error 503: Service Unavailable",
-      "last_success": "2026-10-04T06:19:46Z",
-      "last_failure": "2026-10-04T12:51:48Z",
-      "consecutive_failures": 1,
-      "newest_item": null
+      "status": "healthy",
+      "reachable": true,
+      "useful": true,
+      "items": 12,
+      "error": null,
+      "last_success": "2026-10-04T17:28:55Z",
+      "last_failure": null,
+      "consecutive_failures": 0,
+      "newest_item": "2026-10-04T12:58:37Z"
     },
     {
       "id": "ap_top",
@@ -407,15 +407,15 @@
       "source_class": "wire",
       "reliability": 0.94,
       "enabled": true,
-      "status": "failed",
-      "reachable": false,
-      "useful": false,
-      "items": 0,
-      "error": "HTTPError: HTTP Error 503: Service Unavailable",
-      "last_success": "2026-10-04T06:19:46Z",
-      "last_failure": "2026-10-04T12:51:48Z",
-      "consecutive_failures": 1,
-      "newest_item": null
+      "status": "healthy",
+      "reachable": true,
+      "useful": true,
+      "items": 9,
+      "error": null,
+      "last_success": "2026-10-04T17:28:55Z",
+      "last_failure": null,
+      "consecutive_failures": 0,
+      "newest_item": "2026-10-04T10:22:59Z"
     },
     {
       "id": "afp_world",
@@ -424,15 +424,15 @@
       "source_class": "wire",
       "reliability": 0.93,
       "enabled": true,
-      "status": "failed",
-      "reachable": false,
-      "useful": false,
-      "items": 0,
-      "error": "HTTPError: HTTP Error 503: Service Unavailable",
-      "last_success": "2026-10-04T06:19:46Z",
-      "last_failure": "2026-10-04T12:51:48Z",
-      "consecutive_failures": 1,
-      "newest_item": null
+      "status": "healthy",
+      "reachable": true,
+      "useful": true,
+      "items": 33,
+      "error": null,
+      "last_success": "2026-10-04T17:28:55Z",
+      "last_failure": null,
+      "consecutive_failures": 0,
+      "newest_item": "2026-10-04T16:52:30Z"
     },
     {
       "id": "bbc_world",
@@ -446,10 +446,10 @@
       "useful": true,
       "items": 21,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
-      "newest_item": "2026-10-04T12:09:04Z"
+      "newest_item": "2026-10-04T17:01:19Z"
     },
     {
       "id": "bbc_uk",
@@ -461,12 +461,12 @@
       "status": "healthy",
       "reachable": true,
       "useful": true,
-      "items": 31,
+      "items": 35,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
-      "newest_item": "2026-10-04T11:59:35Z"
+      "newest_item": "2026-10-04T16:46:24Z"
     },
     {
       "id": "guardian_world",
@@ -480,10 +480,10 @@
       "useful": true,
       "items": 45,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
-      "newest_item": "2026-10-04T12:30:02Z"
+      "newest_item": "2026-10-04T16:32:00Z"
     },
     {
       "id": "npr_world",
@@ -497,10 +497,10 @@
       "useful": true,
       "items": 10,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
-      "newest_item": "2026-10-04T10:00:00Z"
+      "newest_item": "2026-10-04T15:15:09Z"
     },
     {
       "id": "dw_world",
@@ -514,7 +514,7 @@
       "useful": true,
       "items": 12,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-04T11:28:00Z"
@@ -531,10 +531,10 @@
       "useful": true,
       "items": 24,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
-      "newest_item": "2026-10-04T12:12:24Z"
+      "newest_item": "2026-10-04T16:38:55Z"
     },
     {
       "id": "aljazeera",
@@ -548,10 +548,10 @@
       "useful": true,
       "items": 25,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
-      "newest_item": "2026-10-04T11:58:14Z"
+      "newest_item": "2026-10-04T16:55:03Z"
     },
     {
       "id": "cbs_world",
@@ -565,10 +565,10 @@
       "useful": true,
       "items": 30,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
-      "newest_item": "2026-10-04T12:33:23Z"
+      "newest_item": "2026-10-04T16:41:33Z"
     },
     {
       "id": "abc_intl",
@@ -582,10 +582,10 @@
       "useful": true,
       "items": 25,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
-      "newest_item": "2026-10-04T12:04:58Z"
+      "newest_item": "2026-10-04T15:46:16Z"
     },
     {
       "id": "washington_post_world",
@@ -597,9 +597,9 @@
       "status": "healthy",
       "reachable": true,
       "useful": true,
-      "items": 8,
+      "items": 6,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-04T10:49:14Z"
@@ -616,7 +616,7 @@
       "useful": true,
       "items": 25,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-02T19:00:24Z"
@@ -633,7 +633,7 @@
       "useful": true,
       "items": 15,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-02T21:46:37Z"
@@ -650,7 +650,7 @@
       "useful": true,
       "items": 39,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-03T18:31:31Z"
@@ -667,7 +667,7 @@
       "useful": true,
       "items": 10,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-01T13:46:03Z"
@@ -684,7 +684,7 @@
       "useful": true,
       "items": 10,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-09-28T15:08:57Z"
@@ -701,7 +701,7 @@
       "useful": true,
       "items": 15,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-04T10:53:21Z"
@@ -718,7 +718,7 @@
       "useful": true,
       "items": 5,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-02T20:30:00Z"
@@ -735,10 +735,10 @@
       "useful": true,
       "items": 10,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
-      "newest_item": "2026-10-03T11:45:00Z"
+      "newest_item": "2026-10-04T14:57:25Z"
     },
     {
       "id": "maritime_exec",
@@ -750,9 +750,9 @@
       "status": "healthy",
       "reachable": true,
       "useful": true,
-      "items": 64,
+      "items": 62,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-04T00:45:57Z"
@@ -769,7 +769,7 @@
       "useful": true,
       "items": 12,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-03T23:35:50Z"
@@ -786,7 +786,7 @@
       "useful": true,
       "items": 16,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-01T15:06:43Z"
@@ -803,7 +803,7 @@
       "useful": true,
       "items": 10,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-01T20:30:54Z"
@@ -820,7 +820,7 @@
       "useful": true,
       "items": 10,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-02T20:23:27Z"
@@ -837,7 +837,7 @@
       "useful": true,
       "items": 30,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-03T12:31:58Z"
@@ -854,7 +854,7 @@
       "useful": false,
       "items": 10,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-09-25T13:56:47Z"
@@ -871,7 +871,7 @@
       "useful": true,
       "items": 10,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-09-24T13:28:39Z"
@@ -888,7 +888,7 @@
       "useful": false,
       "items": 10,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-03-26T13:49:41Z"
@@ -905,10 +905,10 @@
       "useful": true,
       "items": 15,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
-      "newest_item": "2026-10-04T11:15:07Z"
+      "newest_item": "2026-10-04T17:24:53Z"
     },
     {
       "id": "times_israel",
@@ -923,8 +923,8 @@
       "items": 0,
       "error": "HTTPError: HTTP Error 403: Forbidden",
       "last_success": null,
-      "last_failure": "2026-10-04T12:51:48Z",
-      "consecutive_failures": 919,
+      "last_failure": "2026-10-04T17:28:55Z",
+      "consecutive_failures": 920,
       "newest_item": null
     },
     {
@@ -939,10 +939,10 @@
       "useful": true,
       "items": 50,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
-      "newest_item": "2026-10-04T11:13:53Z"
+      "newest_item": "2026-10-04T16:00:29Z"
     },
     {
       "id": "africa_news",
@@ -956,10 +956,10 @@
       "useful": true,
       "items": 50,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
-      "newest_item": "2026-10-04T12:22:24Z"
+      "newest_item": "2026-10-04T13:28:26Z"
     },
     {
       "id": "japan_times",
@@ -973,7 +973,7 @@
       "useful": true,
       "items": 30,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-04T12:21:00Z"
@@ -990,7 +990,7 @@
       "useful": true,
       "items": 25,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-04T12:19:56Z"
@@ -1005,12 +1005,12 @@
       "status": "healthy",
       "reachable": true,
       "useful": true,
-      "items": 8,
+      "items": 9,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
-      "newest_item": "2026-10-04T08:02:00Z"
+      "newest_item": "2026-10-04T12:14:00Z"
     },
     {
       "id": "tass",
@@ -1022,12 +1022,12 @@
       "status": "healthy",
       "reachable": true,
       "useful": true,
-      "items": 66,
+      "items": 62,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
-      "newest_item": "2026-10-04T12:50:09Z"
+      "newest_item": "2026-10-04T16:53:40Z"
     },
     {
       "id": "globalvoices",
@@ -1041,7 +1041,7 @@
       "useful": true,
       "items": 15,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
       "newest_item": "2026-10-03T18:40:44Z"
@@ -1053,15 +1053,15 @@
       "source_class": "low_confidence",
       "reliability": 0.28,
       "enabled": true,
-      "status": "failed",
-      "reachable": false,
-      "useful": false,
-      "items": 0,
-      "error": "HTTPError: HTTP Error 503: Service Unavailable",
-      "last_success": "2026-10-04T06:19:46Z",
-      "last_failure": "2026-10-04T12:51:48Z",
-      "consecutive_failures": 1,
-      "newest_item": null
+      "status": "healthy",
+      "reachable": true,
+      "useful": true,
+      "items": 49,
+      "error": null,
+      "last_success": "2026-10-04T17:28:55Z",
+      "last_failure": null,
+      "consecutive_failures": 0,
+      "newest_item": "2026-10-04T15:46:00Z"
     },
     {
       "id": "reddit_worldnews",
@@ -1075,10 +1075,10 @@
       "useful": true,
       "items": 25,
       "error": null,
-      "last_success": "2026-10-04T12:51:48Z",
+      "last_success": "2026-10-04T17:28:55Z",
       "last_failure": null,
       "consecutive_failures": 0,
-      "newest_item": "2026-10-04T12:25:01Z"
+      "newest_item": "2026-10-04T16:31:15Z"
     },
     {
       "id": "gdelt_global",
@@ -1087,15 +1087,15 @@
       "source_class": "discovery",
       "reliability": 0.2,
       "enabled": true,
-      "status": "failed",
-      "reachable": false,
-      "useful": false,
-      "items": 0,
-      "error": "HTTPError: HTTP Error 503: Service Unavailable",
-      "last_success": "2026-10-04T06:19:46Z",
-      "last_failure": "2026-10-04T12:51:48Z",
-      "consecutive_failures": 1,
-      "newest_item": null
+      "status": "healthy",
+      "reachable": true,
+      "useful": true,
+      "items": 100,
+      "error": null,
+      "last_success": "2026-10-04T17:28:55Z",
+      "last_failure": null,
+      "consecutive_failures": 0,
+      "newest_item": "2026-10-04T17:20:15Z"
     },
     {
       "id": "xinhua",
@@ -1115,30 +1115,30 @@
       "newest_item": null
     }
   ],
-  "fetched_items": 1487,
-  "new_observations": 182,
+  "fetched_items": 1679,
+  "new_observations": 258,
   "future_dated_items_rejected": 10,
-  "observation_count": 56954,
-  "claim_count": 38289,
-  "active_claim_count": 9700,
+  "observation_count": 57212,
+  "claim_count": 38490,
+  "active_claim_count": 9630,
   "claim_status_counts": {
-    "CONFIRMED": 164,
-    "CREDIBLE REPORT": 1727,
-    "EARLY WARNING": 510,
-    "SPECULATIVE": 1391,
-    "UNVERIFIED CLAIM": 17043,
+    "CONFIRMED": 160,
+    "CREDIBLE REPORT": 1719,
+    "EARLY WARNING": 518,
+    "SPECULATIVE": 1399,
+    "UNVERIFIED CLAIM": 17070,
     "REFUTED": 132,
-    "DORMANT": 17322
+    "DORMANT": 17492
   },
   "confidence_distribution": {
-    "0-19": 139,
-    "20-39": 16147,
-    "40-59": 18833,
-    "60-79": 3097,
-    "80-100": 73
+    "0-19": 141,
+    "20-39": 16230,
+    "40-59": 18938,
+    "60-79": 3107,
+    "80-100": 74
   },
   "anomaly_count": 19,
-  "historical_memory_count": 40422,
+  "historical_memory_count": 40626,
   "update_frequency_minutes": 30,
   "collection_blind_spots": [
     {
@@ -1152,24 +1152,14 @@
       "error": null
     },
     {
+      "source": "NASA Breaking News",
+      "status": "failed",
+      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
       "source": "ReliefWeb Updates",
       "status": "failed",
       "error": "ParseError: no element found: line 1, column 0"
-    },
-    {
-      "source": "Reuters World",
-      "status": "failed",
-      "error": "HTTPError: HTTP Error 503: Service Unavailable"
-    },
-    {
-      "source": "Associated Press Top News",
-      "status": "failed",
-      "error": "HTTPError: HTTP Error 503: Service Unavailable"
-    },
-    {
-      "source": "Agence France-Presse",
-      "status": "failed",
-      "error": "HTTPError: HTTP Error 503: Service Unavailable"
     },
     {
       "source": "International Crisis Group",
@@ -1185,16 +1175,6 @@
       "source": "Times of Israel",
       "status": "failed",
       "error": "HTTPError: HTTP Error 403: Forbidden"
-    },
-    {
-      "source": "Google News Weak-Signal Discovery",
-      "status": "failed",
-      "error": "HTTPError: HTTP Error 503: Service Unavailable"
-    },
-    {
-      "source": "GDELT Global Discovery",
-      "status": "failed",
-      "error": "HTTPError: HTTP Error 503: Service Unavailable"
     }
   ],
   "chatgpt_dependency": false,
