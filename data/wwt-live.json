@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-10T20:01:50Z",
+  "generated_at": "2026-10-10T23:30:03Z",
   "rules_version": "3.0-layered-early-warning",
   "score": 42,
   "verified_pressure": {
     "score": 42,
-    "claim_count": 52,
+    "claim_count": 49,
     "top_claims": [
       {
         "id": "claim-8920310364022fbc9c",
@@ -25,11 +25,12 @@
         "observation_ids": [
           "86742a589c5fa767deb6",
           "37c61583225728d5ffab",
-          "1053eca57d962ec55f77"
+          "1053eca57d962ec55f77",
+          "42abacafb06aff904ad4"
         ],
         "first_seen": "2026-10-09T23:12:07Z",
-        "last_seen": "2026-10-10T20:01:50Z",
-        "material_time": "2026-10-10T14:17:52Z",
+        "last_seen": "2026-10-10T23:30:03Z",
+        "material_time": "2026-10-10T20:42:55Z",
         "domains": [
           "ECONOMIC",
           "POLITICAL",
@@ -44,39 +45,53 @@
           "UKRAINE"
         ],
         "state": "CONFIRMED",
-        "confidence": 83,
-        "confidence_direction": "STABLE",
+        "confidence": 89,
+        "confidence_direction": "UP",
         "confidence_components": {
           "source_quality": 84,
-          "independence": 79,
-          "corroboration": 82,
+          "independence": 100,
+          "corroboration": 100,
           "contradiction": 0,
           "specificity": 81,
           "recency": 100,
           "evidence_type": 79,
           "historical_reliability": 84,
-          "claim_maturity": 57
+          "claim_maturity": 68
         },
         "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
         "supporting_observation_ids": [
           "86742a589c5fa767deb6",
           "37c61583225728d5ffab",
-          "1053eca57d962ec55f77"
+          "1053eca57d962ec55f77",
+          "42abacafb06aff904ad4"
         ],
         "contradictory_observation_ids": [],
-        "source_count": 3,
-        "independent_provenance_count": 3,
+        "source_count": 4,
+        "independent_provenance_count": 4,
         "sources": [
           "ABC Australia World",
           "ABC News International",
-          "France 24 World"
+          "France 24 World",
+          "The Guardian World"
         ],
         "provenance_roots": [
           "abc_australia",
           "abc_intl",
-          "france24"
+          "france24",
+          "guardian_world"
         ],
         "evidence": [
+          {
+            "observation_id": "42abacafb06aff904ad4",
+            "title": "Trump says Ukraine needs a new leader after diesel deal with Russia",
+            "source": "The Guardian World",
+            "source_class": "established_media",
+            "provenance_root": "guardian_world",
+            "stance": "report",
+            "published": "2026-10-10T20:42:55Z",
+            "url": "https://www.theguardian.com/world/2026/oct/10/ukraine-russia-strikes-war-trump-diesel-deal-zelenskyy",
+            "discovery_only": false
+          },
           {
             "observation_id": "1053eca57d962ec55f77",
             "title": "Kyiv says Trump's diesel deal with Putin will support Russia's war effort",
@@ -136,37 +151,25 @@
         },
         "historical_matches": [
           {
-            "claim_id": "claim-e99c6b1ccee866670f",
-            "headline": "Canada to fund $253 mln worth of interceptor missiles to Ukraine via US mechanism — PM",
-            "material_time": "2026-09-10T19:27:53Z",
+            "claim_id": "claim-cc3915dadf8c056db2",
+            "headline": "Ukraine's fortress cities under fire as Russia bids to seize rest of Donbas",
+            "material_time": "2026-09-10T23:22:11Z",
             "shared_domains": [
-              "WAR"
+              "POLITICAL"
             ],
             "shared_actors": [
+              "RUSSIA",
               "UKRAINE"
             ],
             "shared_regions": [
+              "RUSSIA",
               "UKRAINE"
             ]
           },
           {
-            "claim_id": "claim-89cc407f780ccb9df5",
-            "headline": "Dangerous Partners: The Russia-China Military Embrace - Center for European Policy Analysis (CEPA)",
-            "material_time": "2026-09-10T19:02:01Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-f1f28aa77dd212cf6a",
-            "headline": "Canada, Ukraine forge 100-year pact built on drones and defence",
-            "material_time": "2026-09-10T18:49:15Z",
+            "claim_id": "claim-6ea4a95cf301d740a3",
+            "headline": "Canada, Ukraine sign declaration toward 100-year partnership",
+            "material_time": "2026-09-10T22:39:18Z",
             "shared_domains": [
               "POLITICAL"
             ],
@@ -178,23 +181,25 @@
             ]
           },
           {
-            "claim_id": "claim-41a9262e6955037606",
-            "headline": "Japan should not tell Russia which monuments to erect — Kremlin aide",
-            "material_time": "2026-09-10T18:06:05Z",
+            "claim_id": "claim-f830835d35614f2755",
+            "headline": "Five killed and 67 injured in Russian strike on shopping centre, Ukraine says",
+            "material_time": "2026-09-10T22:36:02Z",
             "shared_domains": [
               "POLITICAL"
             ],
             "shared_actors": [
-              "RUSSIA"
+              "RUSSIA",
+              "UKRAINE"
             ],
             "shared_regions": [
-              "RUSSIA"
+              "RUSSIA",
+              "UKRAINE"
             ]
           },
           {
-            "claim_id": "claim-873f871656fe6bad54",
-            "headline": "Russian attacks kill at least 12, injure 72 across Ukraine as Russia continues relentless strikes on Kyiv",
-            "material_time": "2026-09-10T18:00:00Z",
+            "claim_id": "claim-597329310138891537",
+            "headline": "30 Reported Injured in USV Attack on Port of Sochi",
+            "material_time": "2026-09-10T22:07:43Z",
             "shared_domains": [
               "WAR"
             ],
@@ -204,6 +209,20 @@
             ],
             "shared_regions": [
               "RUSSIA",
+              "UKRAINE"
+            ]
+          },
+          {
+            "claim_id": "claim-92b7b997c32cd98a95",
+            "headline": "Commission approves €6.1 billion to support Ukraine's air and missile defence and other defence needs",
+            "material_time": "2026-09-10T22:00:00Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "UKRAINE"
+            ],
+            "shared_regions": [
               "UKRAINE"
             ]
           }
@@ -282,19 +301,6 @@
             ]
           },
           {
-            "claim_id": "claim-4a10d631f96d52dff1",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-3de742e2140e697d1c",
             "shared_actors": [
               "RUSSIA",
@@ -307,20 +313,6 @@
             "domains": [
               "INFRA",
               "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-feb46d1682d954e15f",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "WAR"
             ]
           },
           {
@@ -373,21 +365,45 @@
             "domains": [
               "NUCLEAR"
             ]
+          },
+          {
+            "claim_id": "claim-f795315cdb390de7b3",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-f2106ac1bb89fba207",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "NUCLEAR"
+            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-7c4aeb762baac5f7",
-          "anomaly-82f46df1624efa36"
+          "anomaly-0a52f9aab5f00815",
+          "anomaly-ce3c0a9d625e178e"
         ],
-        "threat_score": 36,
-        "watch_priority": 67,
+        "threat_score": 38,
+        "watch_priority": 68,
         "audit": {
           "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-          "support_count": 3,
+          "support_count": 4,
           "contradiction_count": 0,
-          "independent_roots": 3,
+          "independent_roots": 4,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-10-10T14:17:52Z"
+          "material_time_used_for_decay": "2026-10-10T20:42:55Z"
         }
       },
       {
@@ -409,7 +425,7 @@
           "4345a8f004b7ed81966c"
         ],
         "first_seen": "2026-10-08T23:57:47Z",
-        "last_seen": "2026-10-10T20:01:50Z",
+        "last_seen": "2026-10-10T23:30:03Z",
         "material_time": "2026-10-09T08:36:37Z",
         "domains": [
           "CYBER",
@@ -430,10 +446,10 @@
           "corroboration": 52,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 86,
+          "recency": 85,
           "evidence_type": 73,
           "historical_reliability": 82,
-          "claim_maturity": 48
+          "claim_maturity": 49
         },
         "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
         "supporting_observation_ids": [
@@ -500,6 +516,20 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-e123383c383b864f9b",
+            "headline": "Fire on Chinese Car Carrier Appears to Flare Up After a Month",
+            "material_time": "2026-09-10T20:14:58Z",
+            "shared_domains": [
+              "INFRA"
+            ],
+            "shared_actors": [
+              "CHINA"
+            ],
+            "shared_regions": [
+              "CHINA"
+            ]
+          },
+          {
             "claim_id": "claim-4562f2f3062230b31c",
             "headline": "Shipyard Fire Kills 25 Aboard Bulk Carrier in China",
             "material_time": "2026-09-10T17:53:18Z",
@@ -545,20 +575,6 @@
             "claim_id": "claim-096f845e9755adf612",
             "headline": "China’s President Demands Action After Shipyard Fire Kills 25 Workers",
             "material_time": "2026-09-10T17:11:05Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "CHINA"
-            ],
-            "shared_regions": [
-              "CHINA"
-            ]
-          },
-          {
-            "claim_id": "claim-2e5b66b03048895adb",
-            "headline": "Chinese electric motorcycle imports to Africa rise 60%",
-            "material_time": "2026-09-10T14:35:13Z",
             "shared_domains": [
               "INFRA"
             ],
@@ -721,7 +737,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-1893c84dfd05bcf5"
+          "anomaly-5677e723488d35bf"
         ],
         "threat_score": 23,
         "watch_priority": 50,
@@ -755,7 +771,7 @@
           "65c23976226d6bf1bdb3"
         ],
         "first_seen": "2026-10-10T15:52:45Z",
-        "last_seen": "2026-10-10T20:01:50Z",
+        "last_seen": "2026-10-10T23:30:03Z",
         "material_time": "2026-10-10T11:22:55Z",
         "domains": [
           "ECONOMIC",
@@ -778,7 +794,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 78,
-          "recency": 99,
+          "recency": 97,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 36
@@ -834,9 +850,25 @@
         },
         "historical_matches": [
           {
-            "claim_id": "claim-e99c6b1ccee866670f",
-            "headline": "Canada to fund $253 mln worth of interceptor missiles to Ukraine via US mechanism — PM",
-            "material_time": "2026-09-10T19:27:53Z",
+            "claim_id": "claim-597329310138891537",
+            "headline": "30 Reported Injured in USV Attack on Port of Sochi",
+            "material_time": "2026-09-10T22:07:43Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ]
+          },
+          {
+            "claim_id": "claim-92b7b997c32cd98a95",
+            "headline": "Commission approves €6.1 billion to support Ukraine's air and missile defence and other defence needs",
+            "material_time": "2026-09-10T22:00:00Z",
             "shared_domains": [
               "WAR"
             ],
@@ -848,9 +880,23 @@
             ]
           },
           {
-            "claim_id": "claim-89cc407f780ccb9df5",
-            "headline": "Dangerous Partners: The Russia-China Military Embrace - Center for European Policy Analysis (CEPA)",
-            "material_time": "2026-09-10T19:02:01Z",
+            "claim_id": "claim-c49c533a33495cd94c",
+            "headline": "Russian-owned Irish refinery held private talks with government over war and sanctions risks, Irish Times reports",
+            "material_time": "2026-09-10T21:56:00Z",
+            "shared_domains": [
+              "ECONOMIC"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
+            "claim_id": "claim-64259a130f4bb29c4e",
+            "headline": "British man charged with aiding Russian spies to sabotage UK drone factory",
+            "material_time": "2026-09-10T20:44:08Z",
             "shared_domains": [
               "WAR"
             ],
@@ -862,49 +908,17 @@
             ]
           },
           {
-            "claim_id": "claim-873f871656fe6bad54",
-            "headline": "Russian attacks kill at least 12, injure 72 across Ukraine as Russia continues relentless strikes on Kyiv",
-            "material_time": "2026-09-10T18:00:00Z",
+            "claim_id": "claim-a6d8bb8b0934effc21",
+            "headline": "Russia calls on West to abandon intent to renew sanctions against Iran — envoy to UN",
+            "material_time": "2026-09-10T20:31:52Z",
             "shared_domains": [
-              "WAR"
+              "ECONOMIC"
             ],
             "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
+              "RUSSIA"
             ],
             "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ]
-          },
-          {
-            "claim_id": "claim-61b7ecd42b8e0dd001",
-            "headline": "'Until safer times' — Kyiv’s cultural life pauses as the city adjusts to new drone threats",
-            "material_time": "2026-09-10T16:55:39Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "UKRAINE"
-            ]
-          },
-          {
-            "claim_id": "claim-8850201cd0d750fe27",
-            "headline": "5 dead, 67 injured after Russian attack on Pavlohrad shopping center",
-            "material_time": "2026-09-10T16:29:30Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
+              "RUSSIA"
             ]
           }
         ],
@@ -998,19 +1012,6 @@
             ]
           },
           {
-            "claim_id": "claim-4a10d631f96d52dff1",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-3de742e2140e697d1c",
             "shared_actors": [
               "RUSSIA",
@@ -1023,20 +1024,6 @@
             "domains": [
               "INFRA",
               "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-feb46d1682d954e15f",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "WAR"
             ]
           },
           {
@@ -1074,11 +1061,35 @@
             "domains": [
               "NUCLEAR"
             ]
+          },
+          {
+            "claim_id": "claim-f795315cdb390de7b3",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-f2106ac1bb89fba207",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "NUCLEAR"
+            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-7c4aeb762baac5f7",
-          "anomaly-82f46df1624efa36"
+          "anomaly-0a52f9aab5f00815",
+          "anomaly-ce3c0a9d625e178e"
         ],
         "threat_score": 18,
         "watch_priority": 55,
@@ -1108,7 +1119,7 @@
           "4390a19bd0beb9fc454f"
         ],
         "first_seen": "2026-10-08T19:26:59Z",
-        "last_seen": "2026-10-10T20:01:50Z",
+        "last_seen": "2026-10-10T23:30:03Z",
         "material_time": "2026-10-08T16:05:10Z",
         "domains": [
           "NUCLEAR",
@@ -1127,10 +1138,10 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 71,
-          "recency": 81,
+          "recency": 80,
           "evidence_type": 73,
           "historical_reliability": 86,
-          "claim_maturity": 38
+          "claim_maturity": 39
         },
         "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
         "supporting_observation_ids": [
@@ -1183,6 +1194,18 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-f52a13a7abddb57c24",
+            "headline": "Report: Russia Develops Untraceable Method to Disable Subsea Cables",
+            "material_time": "2026-09-10T20:06:45Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
             "claim_id": "claim-181e65f5d9959606e6",
             "headline": "Implementation of the NPT Safeguards Agreement in Iran: Quad statement to the IAEA Board of Governors, September 2026",
             "material_time": "2026-09-10T15:37:01Z",
@@ -1224,18 +1247,6 @@
             "material_time": "2026-09-10T02:46:54Z",
             "shared_domains": [
               "WAR"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ]
-          },
-          {
-            "claim_id": "claim-3e60b9ecaa2deb399e",
-            "headline": "IAEA board refers Iran to UN Security Council over nuclear ‘non-compliance’",
-            "material_time": "2026-09-09T23:45:00Z",
-            "shared_domains": [
-              "NUCLEAR"
             ],
             "shared_actors": [],
             "shared_regions": [
@@ -1359,13 +1370,13 @@
             ]
           },
           {
-            "claim_id": "claim-671bab2e8076f5e043",
+            "claim_id": "claim-7b6a6486c82533d10d",
             "shared_actors": [],
             "shared_regions": [
               "EUROPE"
             ],
             "domains": [
-              "POLITICAL"
+              "WAR"
             ]
           }
         ],
@@ -1426,10 +1437,10 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 91,
-          "recency": 92,
+          "recency": 90,
           "evidence_type": 79,
           "historical_reliability": 84,
-          "claim_maturity": 36
+          "claim_maturity": 37
         },
         "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
         "supporting_observation_ids": [
@@ -1482,9 +1493,25 @@
         },
         "historical_matches": [
           {
-            "claim_id": "claim-e99c6b1ccee866670f",
-            "headline": "Canada to fund $253 mln worth of interceptor missiles to Ukraine via US mechanism — PM",
-            "material_time": "2026-09-10T19:27:53Z",
+            "claim_id": "claim-597329310138891537",
+            "headline": "30 Reported Injured in USV Attack on Port of Sochi",
+            "material_time": "2026-09-10T22:07:43Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ]
+          },
+          {
+            "claim_id": "claim-92b7b997c32cd98a95",
+            "headline": "Commission approves €6.1 billion to support Ukraine's air and missile defence and other defence needs",
+            "material_time": "2026-09-10T22:00:00Z",
             "shared_domains": [
               "WAR"
             ],
@@ -1496,9 +1523,23 @@
             ]
           },
           {
-            "claim_id": "claim-89cc407f780ccb9df5",
-            "headline": "Dangerous Partners: The Russia-China Military Embrace - Center for European Policy Analysis (CEPA)",
-            "material_time": "2026-09-10T19:02:01Z",
+            "claim_id": "claim-c49c533a33495cd94c",
+            "headline": "Russian-owned Irish refinery held private talks with government over war and sanctions risks, Irish Times reports",
+            "material_time": "2026-09-10T21:56:00Z",
+            "shared_domains": [
+              "ECONOMIC"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
+            "claim_id": "claim-64259a130f4bb29c4e",
+            "headline": "British man charged with aiding Russian spies to sabotage UK drone factory",
+            "material_time": "2026-09-10T20:44:08Z",
             "shared_domains": [
               "WAR"
             ],
@@ -1510,49 +1551,17 @@
             ]
           },
           {
-            "claim_id": "claim-873f871656fe6bad54",
-            "headline": "Russian attacks kill at least 12, injure 72 across Ukraine as Russia continues relentless strikes on Kyiv",
-            "material_time": "2026-09-10T18:00:00Z",
+            "claim_id": "claim-a6d8bb8b0934effc21",
+            "headline": "Russia calls on West to abandon intent to renew sanctions against Iran — envoy to UN",
+            "material_time": "2026-09-10T20:31:52Z",
             "shared_domains": [
-              "WAR"
+              "ECONOMIC"
             ],
             "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
+              "RUSSIA"
             ],
             "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ]
-          },
-          {
-            "claim_id": "claim-61b7ecd42b8e0dd001",
-            "headline": "'Until safer times' — Kyiv’s cultural life pauses as the city adjusts to new drone threats",
-            "material_time": "2026-09-10T16:55:39Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "UKRAINE"
-            ]
-          },
-          {
-            "claim_id": "claim-8850201cd0d750fe27",
-            "headline": "5 dead, 67 injured after Russian attack on Pavlohrad shopping center",
-            "material_time": "2026-09-10T16:29:30Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
+              "RUSSIA"
             ]
           }
         ],
@@ -1646,19 +1655,6 @@
             ]
           },
           {
-            "claim_id": "claim-4a10d631f96d52dff1",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-3de742e2140e697d1c",
             "shared_actors": [
               "RUSSIA",
@@ -1671,20 +1667,6 @@
             "domains": [
               "INFRA",
               "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-feb46d1682d954e15f",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "WAR"
             ]
           },
           {
@@ -1722,11 +1704,35 @@
             "domains": [
               "NUCLEAR"
             ]
+          },
+          {
+            "claim_id": "claim-f795315cdb390de7b3",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-f2106ac1bb89fba207",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "NUCLEAR"
+            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-7c4aeb762baac5f7",
-          "anomaly-82f46df1624efa36"
+          "anomaly-0a52f9aab5f00815",
+          "anomaly-ce3c0a9d625e178e"
         ],
         "threat_score": 15,
         "watch_priority": 50,
@@ -1756,7 +1762,7 @@
           "af29301ca855e4beff03"
         ],
         "first_seen": "2026-10-10T02:42:46Z",
-        "last_seen": "2026-10-10T20:01:50Z",
+        "last_seen": "2026-10-10T23:30:03Z",
         "material_time": "2026-10-10T07:55:32Z",
         "domains": [
           "ECONOMIC",
@@ -1778,7 +1784,7 @@
           "corroboration": 52,
           "contradiction": 0,
           "specificity": 46,
-          "recency": 97,
+          "recency": 95,
           "evidence_type": 79,
           "historical_reliability": 81,
           "claim_maturity": 47
@@ -1862,6 +1868,48 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-3d51a2a960fb3f090c",
+            "headline": "Amid war and sanctions, unemployment worsens in Iran",
+            "material_time": "2026-09-10T21:03:38Z",
+            "shared_domains": [
+              "ECONOMIC"
+            ],
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ]
+          },
+          {
+            "claim_id": "claim-eaea6a9de82bd9267d",
+            "headline": "Houthi Seizure of Mocha Opens New Front in Iran-U.S. War",
+            "material_time": "2026-09-10T20:25:15Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ]
+          },
+          {
+            "claim_id": "claim-3ff6467c233784e52d",
+            "headline": "Iran attack on base in Jordan damaged American military aircraft, US official says - Reuters",
+            "material_time": "2026-09-10T20:22:31Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ]
+          },
+          {
             "claim_id": "claim-97b5050e845133a78c",
             "headline": "3 Killed in Strike on Alleged Drug Boat",
             "material_time": "2026-09-10T17:38:24Z",
@@ -1879,48 +1927,6 @@
             "claim_id": "claim-026ea071c93a7a1bef",
             "headline": "With reconciliation uncertain, Pentagon eyeing plan to retool FY27 priorities with Congress",
             "material_time": "2026-09-10T16:30:10Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-18e230b9a5e7d21898",
-            "headline": "Sailors, Marines Deploy Long-range Missile Systems to Norway for Drills",
-            "material_time": "2026-09-10T16:07:37Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-44b4e98f696d499a17",
-            "headline": "Russia sanctions bill faces make-or-break moment before US midterms, Ukraine says",
-            "material_time": "2026-09-10T15:00:20Z",
-            "shared_domains": [
-              "ECONOMIC"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-3044f826a6e738d8c3",
-            "headline": "Kremlin calls energy sector Ukraine's 'Achilles' heel' as it dismisses aerial truce",
-            "material_time": "2026-09-10T14:30:35Z",
             "shared_domains": [
               "WAR"
             ],
@@ -1957,18 +1963,6 @@
             "domains": [
               "CYBER",
               "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-feb46d1682d954e15f",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "WAR"
             ]
           },
           {
@@ -2083,6 +2077,18 @@
               "HUMANITARIAN",
               "SPACE"
             ]
+          },
+          {
+            "claim_id": "claim-45e80768c3aea3a86c",
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ],
+            "domains": [
+              "POLITICAL"
+            ]
           }
         ],
         "anomaly_ids": [
@@ -2138,7 +2144,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 78,
-          "recency": 80,
+          "recency": 79,
           "evidence_type": 86,
           "historical_reliability": 95,
           "claim_maturity": 39
@@ -2194,9 +2200,9 @@
         },
         "historical_matches": [
           {
-            "claim_id": "claim-89cc407f780ccb9df5",
-            "headline": "Dangerous Partners: The Russia-China Military Embrace - Center for European Policy Analysis (CEPA)",
-            "material_time": "2026-09-10T19:02:01Z",
+            "claim_id": "claim-597329310138891537",
+            "headline": "30 Reported Injured in USV Attack on Port of Sochi",
+            "material_time": "2026-09-10T22:07:43Z",
             "shared_domains": [
               "WAR"
             ],
@@ -2208,9 +2214,23 @@
             ]
           },
           {
-            "claim_id": "claim-873f871656fe6bad54",
-            "headline": "Russian attacks kill at least 12, injure 72 across Ukraine as Russia continues relentless strikes on Kyiv",
-            "material_time": "2026-09-10T18:00:00Z",
+            "claim_id": "claim-c49c533a33495cd94c",
+            "headline": "Russian-owned Irish refinery held private talks with government over war and sanctions risks, Irish Times reports",
+            "material_time": "2026-09-10T21:56:00Z",
+            "shared_domains": [
+              "ECONOMIC"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
+            "claim_id": "claim-64259a130f4bb29c4e",
+            "headline": "British man charged with aiding Russian spies to sabotage UK drone factory",
+            "material_time": "2026-09-10T20:44:08Z",
             "shared_domains": [
               "WAR"
             ],
@@ -2222,11 +2242,11 @@
             ]
           },
           {
-            "claim_id": "claim-8850201cd0d750fe27",
-            "headline": "5 dead, 67 injured after Russian attack on Pavlohrad shopping center",
-            "material_time": "2026-09-10T16:29:30Z",
+            "claim_id": "claim-a6d8bb8b0934effc21",
+            "headline": "Russia calls on West to abandon intent to renew sanctions against Iran — envoy to UN",
+            "material_time": "2026-09-10T20:31:52Z",
             "shared_domains": [
-              "WAR"
+              "ECONOMIC"
             ],
             "shared_actors": [
               "RUSSIA"
@@ -2236,23 +2256,9 @@
             ]
           },
           {
-            "claim_id": "claim-d4acff36f43d0dde16",
-            "headline": "Brit accused of feeding Russian military intelligence details of united kingdom drone factories",
-            "material_time": "2026-09-10T16:15:00Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-189f8d93243aa9c226",
-            "headline": "Russia Reportedly Aiding Iran’s Development of Supersonic Cruise Missile - The Defense Post",
-            "material_time": "2026-09-10T15:25:43Z",
+            "claim_id": "claim-f52a13a7abddb57c24",
+            "headline": "Report: Russia Develops Untraceable Method to Disable Subsea Cables",
+            "material_time": "2026-09-10T20:06:45Z",
             "shared_domains": [
               "WAR"
             ],
@@ -2344,19 +2350,6 @@
             ]
           },
           {
-            "claim_id": "claim-4a10d631f96d52dff1",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-3de742e2140e697d1c",
             "shared_actors": [
               "RUSSIA"
@@ -2367,18 +2360,6 @@
             "domains": [
               "INFRA",
               "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-feb46d1682d954e15f",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
             ]
           },
           {
@@ -2416,10 +2397,34 @@
             "domains": [
               "NUCLEAR"
             ]
+          },
+          {
+            "claim_id": "claim-f795315cdb390de7b3",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-f2106ac1bb89fba207",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "NUCLEAR"
+            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-7c4aeb762baac5f7"
+          "anomaly-0a52f9aab5f00815"
         ],
         "threat_score": 16,
         "watch_priority": 41,
@@ -2465,7 +2470,7 @@
           "RUSSIA"
         ],
         "state": "CREDIBLE REPORT",
-        "confidence": 64,
+        "confidence": 63,
         "confidence_direction": "STABLE",
         "confidence_components": {
           "source_quality": 84,
@@ -2473,7 +2478,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 79,
-          "recency": 93,
+          "recency": 91,
           "evidence_type": 79,
           "historical_reliability": 84,
           "claim_maturity": 36
@@ -2529,9 +2534,9 @@
         },
         "historical_matches": [
           {
-            "claim_id": "claim-89cc407f780ccb9df5",
-            "headline": "Dangerous Partners: The Russia-China Military Embrace - Center for European Policy Analysis (CEPA)",
-            "material_time": "2026-09-10T19:02:01Z",
+            "claim_id": "claim-597329310138891537",
+            "headline": "30 Reported Injured in USV Attack on Port of Sochi",
+            "material_time": "2026-09-10T22:07:43Z",
             "shared_domains": [
               "WAR"
             ],
@@ -2543,9 +2548,23 @@
             ]
           },
           {
-            "claim_id": "claim-873f871656fe6bad54",
-            "headline": "Russian attacks kill at least 12, injure 72 across Ukraine as Russia continues relentless strikes on Kyiv",
-            "material_time": "2026-09-10T18:00:00Z",
+            "claim_id": "claim-c49c533a33495cd94c",
+            "headline": "Russian-owned Irish refinery held private talks with government over war and sanctions risks, Irish Times reports",
+            "material_time": "2026-09-10T21:56:00Z",
+            "shared_domains": [
+              "ECONOMIC"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
+            "claim_id": "claim-64259a130f4bb29c4e",
+            "headline": "British man charged with aiding Russian spies to sabotage UK drone factory",
+            "material_time": "2026-09-10T20:44:08Z",
             "shared_domains": [
               "WAR"
             ],
@@ -2557,11 +2576,11 @@
             ]
           },
           {
-            "claim_id": "claim-8850201cd0d750fe27",
-            "headline": "5 dead, 67 injured after Russian attack on Pavlohrad shopping center",
-            "material_time": "2026-09-10T16:29:30Z",
+            "claim_id": "claim-a6d8bb8b0934effc21",
+            "headline": "Russia calls on West to abandon intent to renew sanctions against Iran — envoy to UN",
+            "material_time": "2026-09-10T20:31:52Z",
             "shared_domains": [
-              "WAR"
+              "ECONOMIC"
             ],
             "shared_actors": [
               "RUSSIA"
@@ -2571,23 +2590,9 @@
             ]
           },
           {
-            "claim_id": "claim-d4acff36f43d0dde16",
-            "headline": "Brit accused of feeding Russian military intelligence details of united kingdom drone factories",
-            "material_time": "2026-09-10T16:15:00Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-189f8d93243aa9c226",
-            "headline": "Russia Reportedly Aiding Iran’s Development of Supersonic Cruise Missile - The Defense Post",
-            "material_time": "2026-09-10T15:25:43Z",
+            "claim_id": "claim-f52a13a7abddb57c24",
+            "headline": "Report: Russia Develops Untraceable Method to Disable Subsea Cables",
+            "material_time": "2026-09-10T20:06:45Z",
             "shared_domains": [
               "WAR"
             ],
@@ -2679,19 +2684,6 @@
             ]
           },
           {
-            "claim_id": "claim-4a10d631f96d52dff1",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-3de742e2140e697d1c",
             "shared_actors": [
               "RUSSIA"
@@ -2702,18 +2694,6 @@
             "domains": [
               "INFRA",
               "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-feb46d1682d954e15f",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
             ]
           },
           {
@@ -2751,10 +2731,34 @@
             "domains": [
               "NUCLEAR"
             ]
+          },
+          {
+            "claim_id": "claim-f795315cdb390de7b3",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-f2106ac1bb89fba207",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "NUCLEAR"
+            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-7c4aeb762baac5f7"
+          "anomaly-0a52f9aab5f00815"
         ],
         "threat_score": 15,
         "watch_priority": 40,
@@ -2782,7 +2786,7 @@
           "9ae5c9f1d09b70c7c103"
         ],
         "first_seen": "2026-10-09T18:49:08Z",
-        "last_seen": "2026-10-10T20:01:50Z",
+        "last_seen": "2026-10-10T23:30:03Z",
         "material_time": "2026-10-09T16:00:26Z",
         "domains": [
           "INFRA",
@@ -2803,7 +2807,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 87,
-          "recency": 89,
+          "recency": 88,
           "evidence_type": 73,
           "historical_reliability": 86,
           "claim_maturity": 37
@@ -2859,6 +2863,49 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-4da5d5c35cb7848347",
+            "headline": "Australia news live: Marles says One Nation ‘traitor’ cartoon about Hastie is ‘tasteless’; Albanese marks 25 years since September 11",
+            "material_time": "2026-09-10T22:12:44Z",
+            "shared_domains": [
+              "INFRA"
+            ],
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ]
+          },
+          {
+            "claim_id": "claim-eaea6a9de82bd9267d",
+            "headline": "Houthi Seizure of Mocha Opens New Front in Iran-U.S. War",
+            "material_time": "2026-09-10T20:25:15Z",
+            "shared_domains": [
+              "INFRA",
+              "WAR"
+            ],
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ]
+          },
+          {
+            "claim_id": "claim-3ff6467c233784e52d",
+            "headline": "Iran attack on base in Jordan damaged American military aircraft, US official says - Reuters",
+            "material_time": "2026-09-10T20:22:31Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ]
+          },
+          {
             "claim_id": "claim-238d94882a273770d8",
             "headline": "Pentagon admits Iran seriously damaged US Navy facilities in Bahrain",
             "material_time": "2026-09-10T19:31:29Z",
@@ -2878,48 +2925,6 @@
             "material_time": "2026-09-10T18:48:25Z",
             "shared_domains": [
               "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-fab896d23ad36d34eb",
-            "headline": "China’s Huawei branded a criminal enterprise as tech firm’s US trial opens",
-            "material_time": "2026-09-10T17:41:19Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-25c8c431f9cb00a8e2",
-            "headline": "US trial against China's Huawei opens with prosecutor calling the company a criminal enterprise - AsiaOne",
-            "material_time": "2026-09-10T17:41:19Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-97b5050e845133a78c",
-            "headline": "3 Killed in Strike on Alleged Drug Boat",
-            "material_time": "2026-09-10T17:38:24Z",
-            "shared_domains": [
-              "WAR"
             ],
             "shared_actors": [
               "UNITED STATES"
@@ -2954,18 +2959,6 @@
             "domains": [
               "CYBER",
               "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-feb46d1682d954e15f",
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ],
-            "domains": [
-              "WAR"
             ]
           },
           {
@@ -3079,6 +3072,20 @@
               "POLITICAL",
               "WAR"
             ]
+          },
+          {
+            "claim_id": "claim-84ff18e86672ee1e94",
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ],
+            "domains": [
+              "CLIMATE",
+              "HUMANITARIAN",
+              "SPACE"
+            ]
           }
         ],
         "anomaly_ids": [
@@ -3116,7 +3123,7 @@
           "174d7add047a0da9d3cc"
         ],
         "first_seen": "2026-10-09T13:09:11Z",
-        "last_seen": "2026-10-10T20:01:50Z",
+        "last_seen": "2026-10-10T23:30:03Z",
         "material_time": "2026-10-09T18:49:16Z",
         "domains": [
           "ECONOMIC",
@@ -3138,7 +3145,7 @@
           "corroboration": 82,
           "contradiction": 0,
           "specificity": 72,
-          "recency": 90,
+          "recency": 89,
           "evidence_type": 79,
           "historical_reliability": 80,
           "claim_maturity": 59
@@ -3222,9 +3229,23 @@
         },
         "historical_matches": [
           {
-            "claim_id": "claim-051810f992282b2240",
-            "headline": "French firefighters on six-week strike after record summer blazes",
-            "material_time": "2026-09-10T19:41:24Z",
+            "claim_id": "claim-b704d18645e46c7540",
+            "headline": "Israel says it destroyed Hezbollah base in Lebanon’s Ali al-Taher ridge",
+            "material_time": "2026-09-10T22:33:41Z",
+            "shared_domains": [
+              "POLITICAL"
+            ],
+            "shared_actors": [
+              "ISRAEL"
+            ],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
+            ]
+          },
+          {
+            "claim_id": "claim-0b69a01385a2ba910d",
+            "headline": "Commission presents landmark India trade deal to Council for signature",
+            "material_time": "2026-09-10T22:00:00Z",
             "shared_domains": [
               "POLITICAL"
             ],
@@ -3234,9 +3255,21 @@
             ]
           },
           {
-            "claim_id": "claim-afced874c8333f9440",
-            "headline": "As New York marks 25 years since 9/11, Muslims recall stigmatisation in aftermath of attacks",
-            "material_time": "2026-09-10T19:32:33Z",
+            "claim_id": "claim-817b959e1564eeab17",
+            "headline": "Gaza hospitals ration power as fuel shortages deepen",
+            "material_time": "2026-09-10T21:17:09Z",
+            "shared_domains": [
+              "POLITICAL"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "ISRAEL/PALESTINE"
+            ]
+          },
+          {
+            "claim_id": "claim-9a13c01eb9ea8ef32d",
+            "headline": "Space: Europe urged to find its path, from crewed spaceflight to communications",
+            "material_time": "2026-09-10T21:05:39Z",
             "shared_domains": [
               "POLITICAL"
             ],
@@ -3246,33 +3279,9 @@
             ]
           },
           {
-            "claim_id": "claim-eeeea81f5de40c6897",
-            "headline": "Iran raises fuel prices for heavy users",
-            "material_time": "2026-09-10T18:48:25Z",
-            "shared_domains": [
-              "POLITICAL"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ]
-          },
-          {
-            "claim_id": "claim-fb37d104de4bb4da7a",
-            "headline": "Iran raises fuel prices for heavy users",
-            "material_time": "2026-09-10T18:48:25Z",
-            "shared_domains": [
-              "POLITICAL"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ]
-          },
-          {
-            "claim_id": "claim-c4a4b9c675a00d231b",
-            "headline": "UAE to invest €40 billion in Germany amid slew of business deals - Reuters",
-            "material_time": "2026-09-10T18:15:36Z",
+            "claim_id": "claim-d4b4c9d5694b39bb34",
+            "headline": "Europe unable to finance all of Kiev’s requests this year — WSJ",
+            "material_time": "2026-09-10T20:58:23Z",
             "shared_domains": [
               "POLITICAL"
             ],
@@ -3291,17 +3300,6 @@
             ],
             "domains": [
               "NUCLEAR"
-            ]
-          },
-          {
-            "claim_id": "claim-4a10d631f96d52dff1",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "NUCLEAR",
-              "WAR"
             ]
           },
           {
@@ -3411,6 +3409,18 @@
             "domains": [
               "SECURITY"
             ]
+          },
+          {
+            "claim_id": "claim-12931bcc7ac1e749c1",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "INFRA",
+              "POLITICAL",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
@@ -3467,7 +3477,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 84,
-          "recency": 75,
+          "recency": 74,
           "evidence_type": 79,
           "historical_reliability": 84,
           "claim_maturity": 40
@@ -3523,57 +3533,57 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-0b69a01385a2ba910d",
+            "headline": "Commission presents landmark India trade deal to Council for signature",
+            "material_time": "2026-09-10T22:00:00Z",
+            "shared_domains": [
+              "POLITICAL"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
+            "claim_id": "claim-9a13c01eb9ea8ef32d",
+            "headline": "Space: Europe urged to find its path, from crewed spaceflight to communications",
+            "material_time": "2026-09-10T21:05:39Z",
+            "shared_domains": [
+              "POLITICAL"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
+            "claim_id": "claim-d4b4c9d5694b39bb34",
+            "headline": "Europe unable to finance all of Kiev’s requests this year — WSJ",
+            "material_time": "2026-09-10T20:58:23Z",
+            "shared_domains": [
+              "POLITICAL"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
+            "claim_id": "claim-f52a13a7abddb57c24",
+            "headline": "Report: Russia Develops Untraceable Method to Disable Subsea Cables",
+            "material_time": "2026-09-10T20:06:45Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
             "claim_id": "claim-051810f992282b2240",
             "headline": "French firefighters on six-week strike after record summer blazes",
             "material_time": "2026-09-10T19:41:24Z",
-            "shared_domains": [
-              "POLITICAL"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ]
-          },
-          {
-            "claim_id": "claim-afced874c8333f9440",
-            "headline": "As New York marks 25 years since 9/11, Muslims recall stigmatisation in aftermath of attacks",
-            "material_time": "2026-09-10T19:32:33Z",
-            "shared_domains": [
-              "POLITICAL"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ]
-          },
-          {
-            "claim_id": "claim-eeeea81f5de40c6897",
-            "headline": "Iran raises fuel prices for heavy users",
-            "material_time": "2026-09-10T18:48:25Z",
-            "shared_domains": [
-              "POLITICAL"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ]
-          },
-          {
-            "claim_id": "claim-fb37d104de4bb4da7a",
-            "headline": "Iran raises fuel prices for heavy users",
-            "material_time": "2026-09-10T18:48:25Z",
-            "shared_domains": [
-              "POLITICAL"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ]
-          },
-          {
-            "claim_id": "claim-c4a4b9c675a00d231b",
-            "headline": "UAE to invest €40 billion in Germany amid slew of business deals - Reuters",
-            "material_time": "2026-09-10T18:15:36Z",
             "shared_domains": [
               "POLITICAL"
             ],
@@ -3592,17 +3602,6 @@
             ],
             "domains": [
               "NUCLEAR"
-            ]
-          },
-          {
-            "claim_id": "claim-4a10d631f96d52dff1",
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ],
-            "domains": [
-              "NUCLEAR",
-              "WAR"
             ]
           },
           {
@@ -3709,6 +3708,17 @@
             "domains": [
               "POLITICAL"
             ]
+          },
+          {
+            "claim_id": "claim-deb958425c31e3d8f9",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "NUCLEAR",
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
@@ -3761,7 +3771,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 99,
+          "recency": 97,
           "evidence_type": 79,
           "historical_reliability": 82,
           "claim_maturity": 36
@@ -3817,9 +3827,9 @@
         },
         "historical_matches": [
           {
-            "claim_id": "claim-41a9262e6955037606",
-            "headline": "Japan should not tell Russia which monuments to erect — Kremlin aide",
-            "material_time": "2026-09-10T18:06:05Z",
+            "claim_id": "claim-cc3915dadf8c056db2",
+            "headline": "Ukraine's fortress cities under fire as Russia bids to seize rest of Donbas",
+            "material_time": "2026-09-10T23:22:11Z",
             "shared_domains": [
               "POLITICAL"
             ],
@@ -3831,9 +3841,9 @@
             ]
           },
           {
-            "claim_id": "claim-eec29096d01c102bc8",
-            "headline": "French govt warns right-wing TV channel about using again expelled pro-Putin pundit",
-            "material_time": "2026-09-10T17:52:40Z",
+            "claim_id": "claim-f830835d35614f2755",
+            "headline": "Five killed and 67 injured in Russian strike on shopping centre, Ukraine says",
+            "material_time": "2026-09-10T22:36:02Z",
             "shared_domains": [
               "POLITICAL"
             ],
@@ -3845,9 +3855,23 @@
             ]
           },
           {
-            "claim_id": "claim-b92842e3df8ee25e48",
-            "headline": "Poland says it expects Russia will target its border crossings with Ukraine",
-            "material_time": "2026-09-10T17:35:40Z",
+            "claim_id": "claim-c49c533a33495cd94c",
+            "headline": "Russian-owned Irish refinery held private talks with government over war and sanctions risks, Irish Times reports",
+            "material_time": "2026-09-10T21:56:00Z",
+            "shared_domains": [
+              "ECONOMIC"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
+            "claim_id": "claim-42c309c632d0c4eb66",
+            "headline": "The Russian Embassy in Romania protests the arrest of a Russian national over an alleged sabotage attempt - Українські Національні Новини (УНН)",
+            "material_time": "2026-09-10T21:18:22Z",
             "shared_domains": [
               "POLITICAL"
             ],
@@ -3859,23 +3883,9 @@
             ]
           },
           {
-            "claim_id": "claim-6f06f85dd21961ac61",
-            "headline": "Innoprom in New Delhi shows Russia, India moving from words to action — minister",
-            "material_time": "2026-09-10T17:24:55Z",
-            "shared_domains": [
-              "POLITICAL"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-00f6c8151c6ff82bbd",
-            "headline": "Russia surpasses US in experience of next-generation warfare — Foreign Affairs",
-            "material_time": "2026-09-10T17:23:15Z",
+            "claim_id": "claim-64259a130f4bb29c4e",
+            "headline": "British man charged with aiding Russian spies to sabotage UK drone factory",
+            "material_time": "2026-09-10T20:44:08Z",
             "shared_domains": [
               "POLITICAL"
             ],
@@ -3967,19 +3977,6 @@
             ]
           },
           {
-            "claim_id": "claim-4a10d631f96d52dff1",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-3de742e2140e697d1c",
             "shared_actors": [
               "RUSSIA"
@@ -3990,18 +3987,6 @@
             "domains": [
               "INFRA",
               "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-feb46d1682d954e15f",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
             ]
           },
           {
@@ -4040,10 +4025,34 @@
             "domains": [
               "NUCLEAR"
             ]
+          },
+          {
+            "claim_id": "claim-7c8e829495206d841e",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "NUCLEAR"
+            ]
+          },
+          {
+            "claim_id": "claim-f795315cdb390de7b3",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-7c4aeb762baac5f7"
+          "anomaly-0a52f9aab5f00815"
         ],
         "threat_score": 12,
         "watch_priority": 36,
@@ -4060,7 +4069,7 @@
   },
   "early_warning_pressure": {
     "score": 100,
-    "claim_count": 64,
+    "claim_count": 68,
     "top_claims": [
       {
         "id": "claim-28fe4d0c75e89a9316",
@@ -4104,7 +4113,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 68,
+          "recency": 67,
           "evidence_type": 79,
           "historical_reliability": 86,
           "claim_maturity": 42
@@ -4160,6 +4169,20 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-a6d8bb8b0934effc21",
+            "headline": "Russia calls on West to abandon intent to renew sanctions against Iran — envoy to UN",
+            "material_time": "2026-09-10T20:31:52Z",
+            "shared_domains": [
+              "NUCLEAR"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
             "claim_id": "claim-181e65f5d9959606e6",
             "headline": "Implementation of the NPT Safeguards Agreement in Iran: Quad statement to the IAEA Board of Governors, September 2026",
             "material_time": "2026-09-10T15:37:01Z",
@@ -4201,20 +4224,6 @@
             "claim_id": "claim-8ab3d5df644f12ff13",
             "headline": "IAEA new anti-Iranian resolution fraught with new round of escalation — Russian diplomat",
             "material_time": "2026-09-09T23:31:37Z",
-            "shared_domains": [
-              "NUCLEAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-33aaafe896e165293d",
-            "headline": "Russia, Vietnam sign 17 deals including on partnership in nuclear, oil, gas sectors",
-            "material_time": "2026-09-09T19:20:31Z",
             "shared_domains": [
               "NUCLEAR"
             ],
@@ -4290,20 +4299,6 @@
             ]
           },
           {
-            "claim_id": "claim-4a10d631f96d52dff1",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "EUROPE",
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-3de742e2140e697d1c",
             "shared_actors": [
               "RUSSIA",
@@ -4326,20 +4321,6 @@
             ],
             "domains": [
               "NUCLEAR",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-feb46d1682d954e15f",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
               "WAR"
             ]
           },
@@ -4382,7 +4363,32 @@
             ]
           },
           {
-            "claim_id": "claim-14fd70655ac8b91a15",
+            "claim_id": "claim-f795315cdb390de7b3",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "EUROPE",
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-e32346abf1056a56f5",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-4f085cb9b7379786d6",
             "shared_actors": [
               "RUSSIA",
               "UKRAINE"
@@ -4392,7 +4398,7 @@
               "UKRAINE"
             ],
             "domains": [
-              "POLITICAL"
+              "WAR"
             ]
           }
         ],
@@ -4452,7 +4458,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 71,
+          "recency": 70,
           "evidence_type": 67,
           "historical_reliability": 84,
           "claim_maturity": 41
@@ -4508,49 +4514,9 @@
         },
         "historical_matches": [
           {
-            "claim_id": "claim-e99c6b1ccee866670f",
-            "headline": "Canada to fund $253 mln worth of interceptor missiles to Ukraine via US mechanism — PM",
-            "material_time": "2026-09-10T19:27:53Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "UKRAINE"
-            ]
-          },
-          {
-            "claim_id": "claim-89cc407f780ccb9df5",
-            "headline": "Dangerous Partners: The Russia-China Military Embrace - Center for European Policy Analysis (CEPA)",
-            "material_time": "2026-09-10T19:02:01Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-8b99785a28ac6f03ba",
-            "headline": "Global energy market shock not over yet — IMF",
-            "material_time": "2026-09-10T18:31:17Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "ISIS"
-            ],
-            "shared_regions": []
-          },
-          {
-            "claim_id": "claim-6bb9c918a54788a74b",
-            "headline": "NATO allies disrupt Russian preparations to disable Arctic undersea cables near Svalbard, Reuters reports - theins.press",
-            "material_time": "2026-09-10T18:08:06Z",
+            "claim_id": "claim-96fbb716e03d91030c",
+            "headline": "Azerbaijan Issues Warning After Russian Attack Kills Two Seafarers",
+            "material_time": "2026-09-10T22:36:48Z",
             "shared_domains": [
               "INFRA"
             ],
@@ -4562,10 +4528,57 @@
             ]
           },
           {
-            "claim_id": "claim-873f871656fe6bad54",
-            "headline": "Russian attacks kill at least 12, injure 72 across Ukraine as Russia continues relentless strikes on Kyiv",
-            "material_time": "2026-09-10T18:00:00Z",
+            "claim_id": "claim-be23bda180cadc34c6",
+            "headline": "Azerbaijan Issues Warning After Russian Attack Kills Two Seafarers",
+            "material_time": "2026-09-10T22:36:48Z",
             "shared_domains": [
+              "INFRA"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
+            "claim_id": "claim-b1450b534043b19345",
+            "headline": "Five killed and 67 injured in Russian strike on shopping centre, Ukraine says",
+            "material_time": "2026-09-10T22:36:02Z",
+            "shared_domains": [
+              "INFRA"
+            ],
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ]
+          },
+          {
+            "claim_id": "claim-f830835d35614f2755",
+            "headline": "Five killed and 67 injured in Russian strike on shopping centre, Ukraine says",
+            "material_time": "2026-09-10T22:36:02Z",
+            "shared_domains": [
+              "INFRA"
+            ],
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ]
+          },
+          {
+            "claim_id": "claim-597329310138891537",
+            "headline": "30 Reported Injured in USV Attack on Port of Sochi",
+            "material_time": "2026-09-10T22:07:43Z",
+            "shared_domains": [
+              "INFRA",
               "WAR"
             ],
             "shared_actors": [
@@ -4652,19 +4665,6 @@
             ]
           },
           {
-            "claim_id": "claim-4a10d631f96d52dff1",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-3de742e2140e697d1c",
             "shared_actors": [
               "RUSSIA",
@@ -4677,20 +4677,6 @@
             "domains": [
               "INFRA",
               "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-feb46d1682d954e15f",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "WAR"
             ]
           },
           {
@@ -4743,15 +4729,35 @@
             "domains": [
               "NUCLEAR"
             ]
+          },
+          {
+            "claim_id": "claim-f795315cdb390de7b3",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-f2106ac1bb89fba207",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "NUCLEAR"
+            ]
           }
         ],
-        "anomaly_ids": [
-          "anomaly-7c4aeb762baac5f7",
-          "anomaly-82f46df1624efa36",
-          "anomaly-f0783dd288d8fd8a"
-        ],
+        "anomaly_ids": [],
         "threat_score": 2,
-        "watch_priority": 74,
+        "watch_priority": 50,
         "audit": {
           "reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
           "support_count": 1,
@@ -4800,7 +4806,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 91,
-          "recency": 68,
+          "recency": 67,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 42
@@ -4856,6 +4862,20 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-a6d8bb8b0934effc21",
+            "headline": "Russia calls on West to abandon intent to renew sanctions against Iran — envoy to UN",
+            "material_time": "2026-09-10T20:31:52Z",
+            "shared_domains": [
+              "NUCLEAR"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
             "claim_id": "claim-484b52cf892585e914",
             "headline": "US, Israeli guarantees needed for IAEA to be granted full access to Iranian nuke sites",
             "material_time": "2026-09-10T00:34:33Z",
@@ -4901,20 +4921,6 @@
             "claim_id": "claim-129a139339ffe3f371",
             "headline": "Russia, China, Niger vote against anti-Iranian IAEA resolution — source",
             "material_time": "2026-09-09T18:48:53Z",
-            "shared_domains": [
-              "NUCLEAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-073898bb64a7e88730",
-            "headline": "Moscow, Hanoi to continue building Nuclear Science and Technology Center in Vietnam",
-            "material_time": "2026-09-09T17:35:38Z",
             "shared_domains": [
               "NUCLEAR"
             ],
@@ -4982,19 +4988,6 @@
             ]
           },
           {
-            "claim_id": "claim-4a10d631f96d52dff1",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-3de742e2140e697d1c",
             "shared_actors": [
               "RUSSIA"
@@ -5005,18 +4998,6 @@
             "domains": [
               "INFRA",
               "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-feb46d1682d954e15f",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
             ]
           },
           {
@@ -5045,18 +5026,6 @@
             ]
           },
           {
-            "claim_id": "claim-14fd70655ac8b91a15",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "POLITICAL"
-            ]
-          },
-          {
             "claim_id": "claim-f795315cdb390de7b3",
             "shared_actors": [
               "RUSSIA"
@@ -5077,6 +5046,44 @@
               "RUSSIA"
             ],
             "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-4f085cb9b7379786d6",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-7c3857b14cadbc1091",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-3658e4ab56f44deb5e",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "NUCLEAR",
               "WAR"
             ]
           }
@@ -5131,7 +5138,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 79,
+          "recency": 78,
           "evidence_type": 40,
           "historical_reliability": 50,
           "claim_maturity": 39
@@ -5187,6 +5194,20 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-a6d8bb8b0934effc21",
+            "headline": "Russia calls on West to abandon intent to renew sanctions against Iran — envoy to UN",
+            "material_time": "2026-09-10T20:31:52Z",
+            "shared_domains": [
+              "NUCLEAR"
+            ],
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ]
+          },
+          {
             "claim_id": "claim-181e65f5d9959606e6",
             "headline": "Implementation of the NPT Safeguards Agreement in Iran: Quad statement to the IAEA Board of Governors, September 2026",
             "material_time": "2026-09-10T15:37:01Z",
@@ -5232,20 +5253,6 @@
             "claim_id": "claim-44229cc83f3e47ab8c",
             "headline": "IAEA accuses Iran of ‘noncompliance’",
             "material_time": "2026-09-10T10:59:39Z",
-            "shared_domains": [
-              "NUCLEAR"
-            ],
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ]
-          },
-          {
-            "claim_id": "claim-4cca48fa1f895f1358",
-            "headline": "Iran nuclear impasse deepens after U.S. wins U.N. watchdog vote",
-            "material_time": "2026-09-10T04:09:00Z",
             "shared_domains": [
               "NUCLEAR"
             ],
@@ -5454,7 +5461,7 @@
           "UNITED STATES"
         ],
         "state": "UNVERIFIED CLAIM",
-        "confidence": 59,
+        "confidence": 58,
         "confidence_direction": "STABLE",
         "confidence_components": {
           "source_quality": 79,
@@ -5462,7 +5469,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 87,
+          "recency": 86,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 37
@@ -5518,37 +5525,9 @@
         },
         "historical_matches": [
           {
-            "claim_id": "claim-e99c6b1ccee866670f",
-            "headline": "Canada to fund $253 mln worth of interceptor missiles to Ukraine via US mechanism — PM",
-            "material_time": "2026-09-10T19:27:53Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "UKRAINE"
-            ]
-          },
-          {
-            "claim_id": "claim-89cc407f780ccb9df5",
-            "headline": "Dangerous Partners: The Russia-China Military Embrace - Center for European Policy Analysis (CEPA)",
-            "material_time": "2026-09-10T19:02:01Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-873f871656fe6bad54",
-            "headline": "Russian attacks kill at least 12, injure 72 across Ukraine as Russia continues relentless strikes on Kyiv",
-            "material_time": "2026-09-10T18:00:00Z",
+            "claim_id": "claim-597329310138891537",
+            "headline": "30 Reported Injured in USV Attack on Port of Sochi",
+            "material_time": "2026-09-10T22:07:43Z",
             "shared_domains": [
               "WAR"
             ],
@@ -5562,11 +5541,39 @@
             ]
           },
           {
-            "claim_id": "claim-97b5050e845133a78c",
-            "headline": "3 Killed in Strike on Alleged Drug Boat",
-            "material_time": "2026-09-10T17:38:24Z",
+            "claim_id": "claim-92b7b997c32cd98a95",
+            "headline": "Commission approves €6.1 billion to support Ukraine's air and missile defence and other defence needs",
+            "material_time": "2026-09-10T22:00:00Z",
             "shared_domains": [
               "WAR"
+            ],
+            "shared_actors": [
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "UKRAINE"
+            ]
+          },
+          {
+            "claim_id": "claim-c49c533a33495cd94c",
+            "headline": "Russian-owned Irish refinery held private talks with government over war and sanctions risks, Irish Times reports",
+            "material_time": "2026-09-10T21:56:00Z",
+            "shared_domains": [
+              "ECONOMIC"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
+            "claim_id": "claim-3d51a2a960fb3f090c",
+            "headline": "Amid war and sanctions, unemployment worsens in Iran",
+            "material_time": "2026-09-10T21:03:38Z",
+            "shared_domains": [
+              "ECONOMIC"
             ],
             "shared_actors": [
               "UNITED STATES"
@@ -5576,17 +5583,17 @@
             ]
           },
           {
-            "claim_id": "claim-61b7ecd42b8e0dd001",
-            "headline": "'Until safer times' — Kyiv’s cultural life pauses as the city adjusts to new drone threats",
-            "material_time": "2026-09-10T16:55:39Z",
+            "claim_id": "claim-64259a130f4bb29c4e",
+            "headline": "British man charged with aiding Russian spies to sabotage UK drone factory",
+            "material_time": "2026-09-10T20:44:08Z",
             "shared_domains": [
               "WAR"
             ],
             "shared_actors": [
-              "UKRAINE"
+              "RUSSIA"
             ],
             "shared_regions": [
-              "UKRAINE"
+              "RUSSIA"
             ]
           }
         ],
@@ -5693,19 +5700,6 @@
             ]
           },
           {
-            "claim_id": "claim-4a10d631f96d52dff1",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-3de742e2140e697d1c",
             "shared_actors": [
               "RUSSIA",
@@ -5734,22 +5728,6 @@
             ]
           },
           {
-            "claim_id": "claim-feb46d1682d954e15f",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE",
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE",
-              "UNITED STATES"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-bcfbb825f757980c40",
             "shared_actors": [
               "UNITED STATES"
@@ -5761,11 +5739,35 @@
               "INFRA",
               "TERRORISM"
             ]
+          },
+          {
+            "claim_id": "claim-7000a0538abb162c30",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-24188d15a2fc9e7e4b",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "NUCLEAR"
+            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-7c4aeb762baac5f7",
-          "anomaly-82f46df1624efa36",
+          "anomaly-0a52f9aab5f00815",
+          "anomaly-ce3c0a9d625e178e",
           "anomaly-c9d7960bf4d8fe05"
         ],
         "threat_score": 2,
@@ -5817,7 +5819,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 79,
-          "recency": 76,
+          "recency": 75,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 40
@@ -5873,6 +5875,48 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-597329310138891537",
+            "headline": "30 Reported Injured in USV Attack on Port of Sochi",
+            "material_time": "2026-09-10T22:07:43Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
+            "claim_id": "claim-64259a130f4bb29c4e",
+            "headline": "British man charged with aiding Russian spies to sabotage UK drone factory",
+            "material_time": "2026-09-10T20:44:08Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
+            "claim_id": "claim-f52a13a7abddb57c24",
+            "headline": "Report: Russia Develops Untraceable Method to Disable Subsea Cables",
+            "material_time": "2026-09-10T20:06:45Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
             "claim_id": "claim-89cc407f780ccb9df5",
             "headline": "Dangerous Partners: The Russia-China Military Embrace - Center for European Policy Analysis (CEPA)",
             "material_time": "2026-09-10T19:02:01Z",
@@ -5890,48 +5934,6 @@
             "claim_id": "claim-873f871656fe6bad54",
             "headline": "Russian attacks kill at least 12, injure 72 across Ukraine as Russia continues relentless strikes on Kyiv",
             "material_time": "2026-09-10T18:00:00Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-8850201cd0d750fe27",
-            "headline": "5 dead, 67 injured after Russian attack on Pavlohrad shopping center",
-            "material_time": "2026-09-10T16:29:30Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-d4acff36f43d0dde16",
-            "headline": "Brit accused of feeding Russian military intelligence details of united kingdom drone factories",
-            "material_time": "2026-09-10T16:15:00Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-189f8d93243aa9c226",
-            "headline": "Russia Reportedly Aiding Iran’s Development of Supersonic Cruise Missile - The Defense Post",
-            "material_time": "2026-09-10T15:25:43Z",
             "shared_domains": [
               "WAR"
             ],
@@ -6023,19 +6025,6 @@
             ]
           },
           {
-            "claim_id": "claim-4a10d631f96d52dff1",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-3de742e2140e697d1c",
             "shared_actors": [
               "RUSSIA"
@@ -6086,7 +6075,7 @@
             ]
           },
           {
-            "claim_id": "claim-14fd70655ac8b91a15",
+            "claim_id": "claim-f2106ac1bb89fba207",
             "shared_actors": [
               "RUSSIA"
             ],
@@ -6094,12 +6083,24 @@
               "RUSSIA"
             ],
             "domains": [
-              "POLITICAL"
+              "NUCLEAR"
+            ]
+          },
+          {
+            "claim_id": "claim-71ca6ed43bd6bc5c13",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "NUCLEAR"
             ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-7c4aeb762baac5f7"
+          "anomaly-0a52f9aab5f00815"
         ],
         "threat_score": 6,
         "watch_priority": 53,
@@ -6149,7 +6150,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 69,
+          "recency": 68,
           "evidence_type": 24,
           "historical_reliability": 32,
           "claim_maturity": 42
@@ -6205,6 +6206,20 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-a6d8bb8b0934effc21",
+            "headline": "Russia calls on West to abandon intent to renew sanctions against Iran — envoy to UN",
+            "material_time": "2026-09-10T20:31:52Z",
+            "shared_domains": [
+              "NUCLEAR"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
             "claim_id": "claim-484b52cf892585e914",
             "headline": "US, Israeli guarantees needed for IAEA to be granted full access to Iranian nuke sites",
             "material_time": "2026-09-10T00:34:33Z",
@@ -6250,20 +6265,6 @@
             "claim_id": "claim-129a139339ffe3f371",
             "headline": "Russia, China, Niger vote against anti-Iranian IAEA resolution — source",
             "material_time": "2026-09-09T18:48:53Z",
-            "shared_domains": [
-              "NUCLEAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-073898bb64a7e88730",
-            "headline": "Moscow, Hanoi to continue building Nuclear Science and Technology Center in Vietnam",
-            "material_time": "2026-09-09T17:35:38Z",
             "shared_domains": [
               "NUCLEAR"
             ],
@@ -6331,19 +6332,6 @@
             ]
           },
           {
-            "claim_id": "claim-4a10d631f96d52dff1",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-3de742e2140e697d1c",
             "shared_actors": [
               "RUSSIA"
@@ -6354,18 +6342,6 @@
             "domains": [
               "INFRA",
               "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-feb46d1682d954e15f",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
             ]
           },
           {
@@ -6383,6 +6359,18 @@
           },
           {
             "claim_id": "claim-7000a0538abb162c30",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-f795315cdb390de7b3",
             "shared_actors": [
               "RUSSIA"
             ],
@@ -6418,7 +6406,7 @@
             ]
           },
           {
-            "claim_id": "claim-7b4dc0c1b21c032334",
+            "claim_id": "claim-7c3857b14cadbc1091",
             "shared_actors": [
               "RUSSIA"
             ],
@@ -6427,7 +6415,20 @@
             ],
             "domains": [
               "ECONOMIC",
-              "WAR"
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-38781766f5858121cb",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "POLITICAL",
+              "SECURITY"
             ]
           }
         ],
@@ -6477,7 +6478,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 35,
-          "recency": 85,
+          "recency": 84,
           "evidence_type": 24,
           "historical_reliability": 32,
           "claim_maturity": 38
@@ -6587,7 +6588,7 @@
           "corroboration": 55,
           "contradiction": 0,
           "specificity": 78,
-          "recency": 84,
+          "recency": 83,
           "evidence_type": 67,
           "historical_reliability": 48,
           "claim_maturity": 60
@@ -6669,9 +6670,9 @@
         },
         "historical_matches": [
           {
-            "claim_id": "claim-6bb9c918a54788a74b",
-            "headline": "NATO allies disrupt Russian preparations to disable Arctic undersea cables near Svalbard, Reuters reports - theins.press",
-            "material_time": "2026-09-10T18:08:06Z",
+            "claim_id": "claim-96fbb716e03d91030c",
+            "headline": "Azerbaijan Issues Warning After Russian Attack Kills Two Seafarers",
+            "material_time": "2026-09-10T22:36:48Z",
             "shared_domains": [
               "INFRA"
             ],
@@ -6683,9 +6684,9 @@
             ]
           },
           {
-            "claim_id": "claim-cbb3f9ca46cc8a1ac5",
-            "headline": "Germany’s Goethe-Institut is closing in Russia. Russians tell DW how canceled exams are upending their plans",
-            "material_time": "2026-09-10T16:17:00Z",
+            "claim_id": "claim-be23bda180cadc34c6",
+            "headline": "Azerbaijan Issues Warning After Russian Attack Kills Two Seafarers",
+            "material_time": "2026-09-10T22:36:48Z",
             "shared_domains": [
               "INFRA"
             ],
@@ -6697,9 +6698,9 @@
             ]
           },
           {
-            "claim_id": "claim-a609f00e3e1febb65e",
-            "headline": "Russia’s international flight network covers 37 countries — Transport Ministry",
-            "material_time": "2026-09-10T15:45:18Z",
+            "claim_id": "claim-b1450b534043b19345",
+            "headline": "Five killed and 67 injured in Russian strike on shopping centre, Ukraine says",
+            "material_time": "2026-09-10T22:36:02Z",
             "shared_domains": [
               "INFRA"
             ],
@@ -6711,9 +6712,9 @@
             ]
           },
           {
-            "claim_id": "claim-cb23b2e815fa5cf5d7",
-            "headline": "Global grain prices rise as Russia-Ukraine war escalates in Black Sea",
-            "material_time": "2026-09-10T15:32:59Z",
+            "claim_id": "claim-f830835d35614f2755",
+            "headline": "Five killed and 67 injured in Russian strike on shopping centre, Ukraine says",
+            "material_time": "2026-09-10T22:36:02Z",
             "shared_domains": [
               "INFRA"
             ],
@@ -6725,9 +6726,9 @@
             ]
           },
           {
-            "claim_id": "claim-341c30ef68364f0fda",
-            "headline": "US should stop supporting Kiev to avoid larger-scale conflict — expert",
-            "material_time": "2026-09-10T15:31:34Z",
+            "claim_id": "claim-597329310138891537",
+            "headline": "30 Reported Injured in USV Attack on Port of Sochi",
+            "material_time": "2026-09-10T22:07:43Z",
             "shared_domains": [
               "INFRA"
             ],
@@ -6820,19 +6821,6 @@
             ]
           },
           {
-            "claim_id": "claim-4a10d631f96d52dff1",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-3de742e2140e697d1c",
             "shared_actors": [
               "RUSSIA"
@@ -6843,18 +6831,6 @@
             "domains": [
               "INFRA",
               "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-feb46d1682d954e15f",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
             ]
           },
           {
@@ -6893,10 +6869,34 @@
             "domains": [
               "NUCLEAR"
             ]
+          },
+          {
+            "claim_id": "claim-7c8e829495206d841e",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "NUCLEAR"
+            ]
+          },
+          {
+            "claim_id": "claim-f795315cdb390de7b3",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-7c4aeb762baac5f7"
+          "anomaly-0a52f9aab5f00815"
         ],
         "threat_score": 3,
         "watch_priority": 50,
@@ -6928,7 +6928,7 @@
           "928b919a00c6aba7ea9d"
         ],
         "first_seen": "2026-10-09T23:12:07Z",
-        "last_seen": "2026-10-10T20:01:50Z",
+        "last_seen": "2026-10-10T23:30:03Z",
         "material_time": "2026-10-09T21:00:22Z",
         "domains": [
           "ECONOMIC"
@@ -6938,7 +6938,7 @@
         ],
         "actors": [],
         "state": "EARLY WARNING",
-        "confidence": 59,
+        "confidence": 58,
         "confidence_direction": "STABLE",
         "confidence_components": {
           "source_quality": 86,
@@ -6946,7 +6946,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 35,
-          "recency": 91,
+          "recency": 89,
           "evidence_type": 79,
           "historical_reliability": 86,
           "claim_maturity": 37
@@ -7054,7 +7054,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 88,
+          "recency": 87,
           "evidence_type": 24,
           "historical_reliability": 32,
           "claim_maturity": 37
@@ -7110,9 +7110,25 @@
         },
         "historical_matches": [
           {
-            "claim_id": "claim-e99c6b1ccee866670f",
-            "headline": "Canada to fund $253 mln worth of interceptor missiles to Ukraine via US mechanism — PM",
-            "material_time": "2026-09-10T19:27:53Z",
+            "claim_id": "claim-597329310138891537",
+            "headline": "30 Reported Injured in USV Attack on Port of Sochi",
+            "material_time": "2026-09-10T22:07:43Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ]
+          },
+          {
+            "claim_id": "claim-92b7b997c32cd98a95",
+            "headline": "Commission approves €6.1 billion to support Ukraine's air and missile defence and other defence needs",
+            "material_time": "2026-09-10T22:00:00Z",
             "shared_domains": [
               "WAR"
             ],
@@ -7124,9 +7140,23 @@
             ]
           },
           {
-            "claim_id": "claim-89cc407f780ccb9df5",
-            "headline": "Dangerous Partners: The Russia-China Military Embrace - Center for European Policy Analysis (CEPA)",
-            "material_time": "2026-09-10T19:02:01Z",
+            "claim_id": "claim-c49c533a33495cd94c",
+            "headline": "Russian-owned Irish refinery held private talks with government over war and sanctions risks, Irish Times reports",
+            "material_time": "2026-09-10T21:56:00Z",
+            "shared_domains": [
+              "ECONOMIC"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
+            "claim_id": "claim-64259a130f4bb29c4e",
+            "headline": "British man charged with aiding Russian spies to sabotage UK drone factory",
+            "material_time": "2026-09-10T20:44:08Z",
             "shared_domains": [
               "WAR"
             ],
@@ -7138,49 +7168,17 @@
             ]
           },
           {
-            "claim_id": "claim-873f871656fe6bad54",
-            "headline": "Russian attacks kill at least 12, injure 72 across Ukraine as Russia continues relentless strikes on Kyiv",
-            "material_time": "2026-09-10T18:00:00Z",
+            "claim_id": "claim-a6d8bb8b0934effc21",
+            "headline": "Russia calls on West to abandon intent to renew sanctions against Iran — envoy to UN",
+            "material_time": "2026-09-10T20:31:52Z",
             "shared_domains": [
-              "WAR"
+              "ECONOMIC"
             ],
             "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
+              "RUSSIA"
             ],
             "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ]
-          },
-          {
-            "claim_id": "claim-61b7ecd42b8e0dd001",
-            "headline": "'Until safer times' — Kyiv’s cultural life pauses as the city adjusts to new drone threats",
-            "material_time": "2026-09-10T16:55:39Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "UKRAINE"
-            ]
-          },
-          {
-            "claim_id": "claim-8850201cd0d750fe27",
-            "headline": "5 dead, 67 injured after Russian attack on Pavlohrad shopping center",
-            "material_time": "2026-09-10T16:29:30Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
+              "RUSSIA"
             ]
           }
         ],
@@ -7274,19 +7272,6 @@
             ]
           },
           {
-            "claim_id": "claim-4a10d631f96d52dff1",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-3de742e2140e697d1c",
             "shared_actors": [
               "RUSSIA",
@@ -7299,20 +7284,6 @@
             "domains": [
               "INFRA",
               "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-feb46d1682d954e15f",
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "domains": [
-              "WAR"
             ]
           },
           {
@@ -7350,11 +7321,35 @@
             "domains": [
               "NUCLEAR"
             ]
+          },
+          {
+            "claim_id": "claim-f795315cdb390de7b3",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-f2106ac1bb89fba207",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "NUCLEAR"
+            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-7c4aeb762baac5f7",
-          "anomaly-82f46df1624efa36"
+          "anomaly-0a52f9aab5f00815",
+          "anomaly-ce3c0a9d625e178e"
         ],
         "threat_score": 1,
         "watch_priority": 56,
@@ -7403,10 +7398,10 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 79,
-          "recency": 82,
+          "recency": 81,
           "evidence_type": 40,
           "historical_reliability": 50,
-          "claim_maturity": 38
+          "claim_maturity": 39
         },
         "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
         "supporting_observation_ids": [
@@ -7459,6 +7454,34 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-c49c533a33495cd94c",
+            "headline": "Russian-owned Irish refinery held private talks with government over war and sanctions risks, Irish Times reports",
+            "material_time": "2026-09-10T21:56:00Z",
+            "shared_domains": [
+              "ECONOMIC"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
+            "claim_id": "claim-a6d8bb8b0934effc21",
+            "headline": "Russia calls on West to abandon intent to renew sanctions against Iran — envoy to UN",
+            "material_time": "2026-09-10T20:31:52Z",
+            "shared_domains": [
+              "ECONOMIC"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
             "claim_id": "claim-44b4e98f696d499a17",
             "headline": "Russia sanctions bill faces make-or-break moment before US midterms, Ukraine says",
             "material_time": "2026-09-10T15:00:20Z",
@@ -7490,34 +7513,6 @@
             "claim_id": "claim-d9cc656b808aa2ffe2",
             "headline": "US destroys 5 Iranian oil tankers, 3 linked to Russia's shadow fleet, Ukrainian official says",
             "material_time": "2026-09-10T10:21:57Z",
-            "shared_domains": [
-              "ECONOMIC"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-cea3b460f6d873c5d5",
-            "headline": "Russia, Vietnam oppose sanctions, seizure of countries' assets",
-            "material_time": "2026-09-09T16:56:11Z",
-            "shared_domains": [
-              "ECONOMIC"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-659e3ce28558836865",
-            "headline": "AfD co-leader speaks out against supplying Ukraine with drones used to strike Russia",
-            "material_time": "2026-09-09T11:31:49Z",
             "shared_domains": [
               "ECONOMIC"
             ],
@@ -7609,19 +7604,6 @@
             ]
           },
           {
-            "claim_id": "claim-4a10d631f96d52dff1",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "NUCLEAR",
-              "WAR"
-            ]
-          },
-          {
             "claim_id": "claim-3de742e2140e697d1c",
             "shared_actors": [
               "RUSSIA"
@@ -7632,18 +7614,6 @@
             "domains": [
               "INFRA",
               "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-feb46d1682d954e15f",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
             ]
           },
           {
@@ -7682,10 +7652,34 @@
             "domains": [
               "NUCLEAR"
             ]
+          },
+          {
+            "claim_id": "claim-7c8e829495206d841e",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "NUCLEAR"
+            ]
+          },
+          {
+            "claim_id": "claim-f795315cdb390de7b3",
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ],
+            "domains": [
+              "WAR"
+            ]
           }
         ],
         "anomaly_ids": [
-          "anomaly-7c4aeb762baac5f7"
+          "anomaly-0a52f9aab5f00815"
         ],
         "threat_score": 4,
         "watch_priority": 48,
@@ -7705,7 +7699,7 @@
     "alliance_entanglement": 0,
     "multi_theater_coupling": 4,
     "nuclear_escalation": 82,
-    "military_mobilization": 62,
+    "military_mobilization": 61,
     "economic_warfare": 100,
     "crisis_control_failure": 0,
     "hybrid_preparation": 64
@@ -7716,9 +7710,9 @@
     "multi_theater_coupling": 1,
     "nuclear_escalation": 16,
     "military_mobilization": 9,
-    "economic_warfare": 148,
+    "economic_warfare": 152,
     "crisis_control_failure": 0,
-    "hybrid_preparation": 25
+    "hybrid_preparation": 24
   },
   "formula": "Independent-provenance-capped claim contributions; verified and early-warning pressure remain separate.",
   "safeguard": "Republished stories sharing one provenance root cannot multiply pressure; speculative claims never enter Verified Pressure.",
@@ -7743,11 +7737,12 @@
       "observation_ids": [
         "86742a589c5fa767deb6",
         "37c61583225728d5ffab",
-        "1053eca57d962ec55f77"
+        "1053eca57d962ec55f77",
+        "42abacafb06aff904ad4"
       ],
       "first_seen": "2026-10-09T23:12:07Z",
-      "last_seen": "2026-10-10T20:01:50Z",
-      "material_time": "2026-10-10T14:17:52Z",
+      "last_seen": "2026-10-10T23:30:03Z",
+      "material_time": "2026-10-10T20:42:55Z",
       "domains": [
         "ECONOMIC",
         "POLITICAL",
@@ -7762,39 +7757,53 @@
         "UKRAINE"
       ],
       "state": "CONFIRMED",
-      "confidence": 83,
-      "confidence_direction": "STABLE",
+      "confidence": 89,
+      "confidence_direction": "UP",
       "confidence_components": {
         "source_quality": 84,
-        "independence": 79,
-        "corroboration": 82,
+        "independence": 100,
+        "corroboration": 100,
         "contradiction": 0,
         "specificity": 81,
         "recency": 100,
         "evidence_type": 79,
         "historical_reliability": 84,
-        "claim_maturity": 57
+        "claim_maturity": 68
       },
       "classification_reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
       "supporting_observation_ids": [
         "86742a589c5fa767deb6",
         "37c61583225728d5ffab",
-        "1053eca57d962ec55f77"
+        "1053eca57d962ec55f77",
+        "42abacafb06aff904ad4"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 3,
-      "independent_provenance_count": 3,
+      "source_count": 4,
+      "independent_provenance_count": 4,
       "sources": [
         "ABC Australia World",
         "ABC News International",
-        "France 24 World"
+        "France 24 World",
+        "The Guardian World"
       ],
       "provenance_roots": [
         "abc_australia",
         "abc_intl",
-        "france24"
+        "france24",
+        "guardian_world"
       ],
       "evidence": [
+        {
+          "observation_id": "42abacafb06aff904ad4",
+          "title": "Trump says Ukraine needs a new leader after diesel deal with Russia",
+          "source": "The Guardian World",
+          "source_class": "established_media",
+          "provenance_root": "guardian_world",
+          "stance": "report",
+          "published": "2026-10-10T20:42:55Z",
+          "url": "https://www.theguardian.com/world/2026/oct/10/ukraine-russia-strikes-war-trump-diesel-deal-zelenskyy",
+          "discovery_only": false
+        },
         {
           "observation_id": "1053eca57d962ec55f77",
           "title": "Kyiv says Trump's diesel deal with Putin will support Russia's war effort",
@@ -7854,37 +7863,25 @@
       },
       "historical_matches": [
         {
-          "claim_id": "claim-e99c6b1ccee866670f",
-          "headline": "Canada to fund $253 mln worth of interceptor missiles to Ukraine via US mechanism — PM",
-          "material_time": "2026-09-10T19:27:53Z",
+          "claim_id": "claim-cc3915dadf8c056db2",
+          "headline": "Ukraine's fortress cities under fire as Russia bids to seize rest of Donbas",
+          "material_time": "2026-09-10T23:22:11Z",
           "shared_domains": [
-            "WAR"
+            "POLITICAL"
           ],
           "shared_actors": [
+            "RUSSIA",
             "UKRAINE"
           ],
           "shared_regions": [
+            "RUSSIA",
             "UKRAINE"
           ]
         },
         {
-          "claim_id": "claim-89cc407f780ccb9df5",
-          "headline": "Dangerous Partners: The Russia-China Military Embrace - Center for European Policy Analysis (CEPA)",
-          "material_time": "2026-09-10T19:02:01Z",
-          "shared_domains": [
-            "WAR"
-          ],
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ]
-        },
-        {
-          "claim_id": "claim-f1f28aa77dd212cf6a",
-          "headline": "Canada, Ukraine forge 100-year pact built on drones and defence",
-          "material_time": "2026-09-10T18:49:15Z",
+          "claim_id": "claim-6ea4a95cf301d740a3",
+          "headline": "Canada, Ukraine sign declaration toward 100-year partnership",
+          "material_time": "2026-09-10T22:39:18Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -7896,23 +7893,25 @@
           ]
         },
         {
-          "claim_id": "claim-41a9262e6955037606",
-          "headline": "Japan should not tell Russia which monuments to erect — Kremlin aide",
-          "material_time": "2026-09-10T18:06:05Z",
+          "claim_id": "claim-f830835d35614f2755",
+          "headline": "Five killed and 67 injured in Russian strike on shopping centre, Ukraine says",
+          "material_time": "2026-09-10T22:36:02Z",
           "shared_domains": [
             "POLITICAL"
           ],
           "shared_actors": [
-            "RUSSIA"
+            "RUSSIA",
+            "UKRAINE"
           ],
           "shared_regions": [
-            "RUSSIA"
+            "RUSSIA",
+            "UKRAINE"
           ]
         },
         {
-          "claim_id": "claim-873f871656fe6bad54",
-          "headline": "Russian attacks kill at least 12, injure 72 across Ukraine as Russia continues relentless strikes on Kyiv",
-          "material_time": "2026-09-10T18:00:00Z",
+          "claim_id": "claim-597329310138891537",
+          "headline": "30 Reported Injured in USV Attack on Port of Sochi",
+          "material_time": "2026-09-10T22:07:43Z",
           "shared_domains": [
             "WAR"
           ],
@@ -7922,6 +7921,20 @@
           ],
           "shared_regions": [
             "RUSSIA",
+            "UKRAINE"
+          ]
+        },
+        {
+          "claim_id": "claim-92b7b997c32cd98a95",
+          "headline": "Commission approves €6.1 billion to support Ukraine's air and missile defence and other defence needs",
+          "material_time": "2026-09-10T22:00:00Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [
+            "UKRAINE"
+          ],
+          "shared_regions": [
             "UKRAINE"
           ]
         }
@@ -8000,19 +8013,6 @@
           ]
         },
         {
-          "claim_id": "claim-4a10d631f96d52dff1",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "NUCLEAR",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-3de742e2140e697d1c",
           "shared_actors": [
             "RUSSIA",
@@ -8025,20 +8025,6 @@
           "domains": [
             "INFRA",
             "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-feb46d1682d954e15f",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "WAR"
           ]
         },
         {
@@ -8091,21 +8077,45 @@
           "domains": [
             "NUCLEAR"
           ]
+        },
+        {
+          "claim_id": "claim-f795315cdb390de7b3",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f2106ac1bb89fba207",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "NUCLEAR"
+          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-7c4aeb762baac5f7",
-        "anomaly-82f46df1624efa36"
+        "anomaly-0a52f9aab5f00815",
+        "anomaly-ce3c0a9d625e178e"
       ],
-      "threat_score": 36,
-      "watch_priority": 67,
+      "threat_score": 38,
+      "watch_priority": 68,
       "audit": {
         "reason": "Direct authoritative evidence or at least two independent credible provenance roots clears the confirmation gate.",
-        "support_count": 3,
+        "support_count": 4,
         "contradiction_count": 0,
-        "independent_roots": 3,
+        "independent_roots": 4,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-10-10T14:17:52Z"
+        "material_time_used_for_decay": "2026-10-10T20:42:55Z"
       }
     },
     {
@@ -8127,7 +8137,7 @@
         "4345a8f004b7ed81966c"
       ],
       "first_seen": "2026-10-08T23:57:47Z",
-      "last_seen": "2026-10-10T20:01:50Z",
+      "last_seen": "2026-10-10T23:30:03Z",
       "material_time": "2026-10-09T08:36:37Z",
       "domains": [
         "CYBER",
@@ -8148,10 +8158,10 @@
         "corroboration": 52,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 86,
+        "recency": 85,
         "evidence_type": 73,
         "historical_reliability": 82,
-        "claim_maturity": 48
+        "claim_maturity": 49
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
@@ -8218,6 +8228,20 @@
       },
       "historical_matches": [
         {
+          "claim_id": "claim-e123383c383b864f9b",
+          "headline": "Fire on Chinese Car Carrier Appears to Flare Up After a Month",
+          "material_time": "2026-09-10T20:14:58Z",
+          "shared_domains": [
+            "INFRA"
+          ],
+          "shared_actors": [
+            "CHINA"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ]
+        },
+        {
           "claim_id": "claim-4562f2f3062230b31c",
           "headline": "Shipyard Fire Kills 25 Aboard Bulk Carrier in China",
           "material_time": "2026-09-10T17:53:18Z",
@@ -8263,20 +8287,6 @@
           "claim_id": "claim-096f845e9755adf612",
           "headline": "China’s President Demands Action After Shipyard Fire Kills 25 Workers",
           "material_time": "2026-09-10T17:11:05Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ]
-        },
-        {
-          "claim_id": "claim-2e5b66b03048895adb",
-          "headline": "Chinese electric motorcycle imports to Africa rise 60%",
-          "material_time": "2026-09-10T14:35:13Z",
           "shared_domains": [
             "INFRA"
           ],
@@ -8439,7 +8449,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-1893c84dfd05bcf5"
+        "anomaly-5677e723488d35bf"
       ],
       "threat_score": 23,
       "watch_priority": 50,
@@ -8473,7 +8483,7 @@
         "65c23976226d6bf1bdb3"
       ],
       "first_seen": "2026-10-10T15:52:45Z",
-      "last_seen": "2026-10-10T20:01:50Z",
+      "last_seen": "2026-10-10T23:30:03Z",
       "material_time": "2026-10-10T11:22:55Z",
       "domains": [
         "ECONOMIC",
@@ -8496,7 +8506,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 78,
-        "recency": 99,
+        "recency": 97,
         "evidence_type": 67,
         "historical_reliability": 79,
         "claim_maturity": 36
@@ -8552,9 +8562,25 @@
       },
       "historical_matches": [
         {
-          "claim_id": "claim-e99c6b1ccee866670f",
-          "headline": "Canada to fund $253 mln worth of interceptor missiles to Ukraine via US mechanism — PM",
-          "material_time": "2026-09-10T19:27:53Z",
+          "claim_id": "claim-597329310138891537",
+          "headline": "30 Reported Injured in USV Attack on Port of Sochi",
+          "material_time": "2026-09-10T22:07:43Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ]
+        },
+        {
+          "claim_id": "claim-92b7b997c32cd98a95",
+          "headline": "Commission approves €6.1 billion to support Ukraine's air and missile defence and other defence needs",
+          "material_time": "2026-09-10T22:00:00Z",
           "shared_domains": [
             "WAR"
           ],
@@ -8566,9 +8592,23 @@
           ]
         },
         {
-          "claim_id": "claim-89cc407f780ccb9df5",
-          "headline": "Dangerous Partners: The Russia-China Military Embrace - Center for European Policy Analysis (CEPA)",
-          "material_time": "2026-09-10T19:02:01Z",
+          "claim_id": "claim-c49c533a33495cd94c",
+          "headline": "Russian-owned Irish refinery held private talks with government over war and sanctions risks, Irish Times reports",
+          "material_time": "2026-09-10T21:56:00Z",
+          "shared_domains": [
+            "ECONOMIC"
+          ],
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ]
+        },
+        {
+          "claim_id": "claim-64259a130f4bb29c4e",
+          "headline": "British man charged with aiding Russian spies to sabotage UK drone factory",
+          "material_time": "2026-09-10T20:44:08Z",
           "shared_domains": [
             "WAR"
           ],
@@ -8580,49 +8620,17 @@
           ]
         },
         {
-          "claim_id": "claim-873f871656fe6bad54",
-          "headline": "Russian attacks kill at least 12, injure 72 across Ukraine as Russia continues relentless strikes on Kyiv",
-          "material_time": "2026-09-10T18:00:00Z",
+          "claim_id": "claim-a6d8bb8b0934effc21",
+          "headline": "Russia calls on West to abandon intent to renew sanctions against Iran — envoy to UN",
+          "material_time": "2026-09-10T20:31:52Z",
           "shared_domains": [
-            "WAR"
+            "ECONOMIC"
           ],
           "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
+            "RUSSIA"
           ],
           "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ]
-        },
-        {
-          "claim_id": "claim-61b7ecd42b8e0dd001",
-          "headline": "'Until safer times' — Kyiv’s cultural life pauses as the city adjusts to new drone threats",
-          "material_time": "2026-09-10T16:55:39Z",
-          "shared_domains": [
-            "WAR"
-          ],
-          "shared_actors": [
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "UKRAINE"
-          ]
-        },
-        {
-          "claim_id": "claim-8850201cd0d750fe27",
-          "headline": "5 dead, 67 injured after Russian attack on Pavlohrad shopping center",
-          "material_time": "2026-09-10T16:29:30Z",
-          "shared_domains": [
-            "WAR"
-          ],
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
+            "RUSSIA"
           ]
         }
       ],
@@ -8716,19 +8724,6 @@
           ]
         },
         {
-          "claim_id": "claim-4a10d631f96d52dff1",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "NUCLEAR",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-3de742e2140e697d1c",
           "shared_actors": [
             "RUSSIA",
@@ -8741,20 +8736,6 @@
           "domains": [
             "INFRA",
             "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-feb46d1682d954e15f",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "WAR"
           ]
         },
         {
@@ -8792,11 +8773,35 @@
           "domains": [
             "NUCLEAR"
           ]
+        },
+        {
+          "claim_id": "claim-f795315cdb390de7b3",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f2106ac1bb89fba207",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "NUCLEAR"
+          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-7c4aeb762baac5f7",
-        "anomaly-82f46df1624efa36"
+        "anomaly-0a52f9aab5f00815",
+        "anomaly-ce3c0a9d625e178e"
       ],
       "threat_score": 18,
       "watch_priority": 55,
@@ -8826,7 +8831,7 @@
         "4390a19bd0beb9fc454f"
       ],
       "first_seen": "2026-10-08T19:26:59Z",
-      "last_seen": "2026-10-10T20:01:50Z",
+      "last_seen": "2026-10-10T23:30:03Z",
       "material_time": "2026-10-08T16:05:10Z",
       "domains": [
         "NUCLEAR",
@@ -8845,10 +8850,10 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 71,
-        "recency": 81,
+        "recency": 80,
         "evidence_type": 73,
         "historical_reliability": 86,
-        "claim_maturity": 38
+        "claim_maturity": 39
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
@@ -8901,6 +8906,18 @@
       },
       "historical_matches": [
         {
+          "claim_id": "claim-f52a13a7abddb57c24",
+          "headline": "Report: Russia Develops Untraceable Method to Disable Subsea Cables",
+          "material_time": "2026-09-10T20:06:45Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ]
+        },
+        {
           "claim_id": "claim-181e65f5d9959606e6",
           "headline": "Implementation of the NPT Safeguards Agreement in Iran: Quad statement to the IAEA Board of Governors, September 2026",
           "material_time": "2026-09-10T15:37:01Z",
@@ -8942,18 +8959,6 @@
           "material_time": "2026-09-10T02:46:54Z",
           "shared_domains": [
             "WAR"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ]
-        },
-        {
-          "claim_id": "claim-3e60b9ecaa2deb399e",
-          "headline": "IAEA board refers Iran to UN Security Council over nuclear ‘non-compliance’",
-          "material_time": "2026-09-09T23:45:00Z",
-          "shared_domains": [
-            "NUCLEAR"
           ],
           "shared_actors": [],
           "shared_regions": [
@@ -9077,13 +9082,13 @@
           ]
         },
         {
-          "claim_id": "claim-671bab2e8076f5e043",
+          "claim_id": "claim-7b6a6486c82533d10d",
           "shared_actors": [],
           "shared_regions": [
             "EUROPE"
           ],
           "domains": [
-            "POLITICAL"
+            "WAR"
           ]
         }
       ],
@@ -9144,10 +9149,10 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 91,
-        "recency": 92,
+        "recency": 90,
         "evidence_type": 79,
         "historical_reliability": 84,
-        "claim_maturity": 36
+        "claim_maturity": 37
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
@@ -9200,9 +9205,25 @@
       },
       "historical_matches": [
         {
-          "claim_id": "claim-e99c6b1ccee866670f",
-          "headline": "Canada to fund $253 mln worth of interceptor missiles to Ukraine via US mechanism — PM",
-          "material_time": "2026-09-10T19:27:53Z",
+          "claim_id": "claim-597329310138891537",
+          "headline": "30 Reported Injured in USV Attack on Port of Sochi",
+          "material_time": "2026-09-10T22:07:43Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ]
+        },
+        {
+          "claim_id": "claim-92b7b997c32cd98a95",
+          "headline": "Commission approves €6.1 billion to support Ukraine's air and missile defence and other defence needs",
+          "material_time": "2026-09-10T22:00:00Z",
           "shared_domains": [
             "WAR"
           ],
@@ -9214,9 +9235,23 @@
           ]
         },
         {
-          "claim_id": "claim-89cc407f780ccb9df5",
-          "headline": "Dangerous Partners: The Russia-China Military Embrace - Center for European Policy Analysis (CEPA)",
-          "material_time": "2026-09-10T19:02:01Z",
+          "claim_id": "claim-c49c533a33495cd94c",
+          "headline": "Russian-owned Irish refinery held private talks with government over war and sanctions risks, Irish Times reports",
+          "material_time": "2026-09-10T21:56:00Z",
+          "shared_domains": [
+            "ECONOMIC"
+          ],
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ]
+        },
+        {
+          "claim_id": "claim-64259a130f4bb29c4e",
+          "headline": "British man charged with aiding Russian spies to sabotage UK drone factory",
+          "material_time": "2026-09-10T20:44:08Z",
           "shared_domains": [
             "WAR"
           ],
@@ -9228,49 +9263,17 @@
           ]
         },
         {
-          "claim_id": "claim-873f871656fe6bad54",
-          "headline": "Russian attacks kill at least 12, injure 72 across Ukraine as Russia continues relentless strikes on Kyiv",
-          "material_time": "2026-09-10T18:00:00Z",
+          "claim_id": "claim-a6d8bb8b0934effc21",
+          "headline": "Russia calls on West to abandon intent to renew sanctions against Iran — envoy to UN",
+          "material_time": "2026-09-10T20:31:52Z",
           "shared_domains": [
-            "WAR"
+            "ECONOMIC"
           ],
           "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
+            "RUSSIA"
           ],
           "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ]
-        },
-        {
-          "claim_id": "claim-61b7ecd42b8e0dd001",
-          "headline": "'Until safer times' — Kyiv’s cultural life pauses as the city adjusts to new drone threats",
-          "material_time": "2026-09-10T16:55:39Z",
-          "shared_domains": [
-            "WAR"
-          ],
-          "shared_actors": [
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "UKRAINE"
-          ]
-        },
-        {
-          "claim_id": "claim-8850201cd0d750fe27",
-          "headline": "5 dead, 67 injured after Russian attack on Pavlohrad shopping center",
-          "material_time": "2026-09-10T16:29:30Z",
-          "shared_domains": [
-            "WAR"
-          ],
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
+            "RUSSIA"
           ]
         }
       ],
@@ -9364,19 +9367,6 @@
           ]
         },
         {
-          "claim_id": "claim-4a10d631f96d52dff1",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "NUCLEAR",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-3de742e2140e697d1c",
           "shared_actors": [
             "RUSSIA",
@@ -9389,20 +9379,6 @@
           "domains": [
             "INFRA",
             "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-feb46d1682d954e15f",
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
-          "domains": [
-            "WAR"
           ]
         },
         {
@@ -9440,11 +9416,35 @@
           "domains": [
             "NUCLEAR"
           ]
+        },
+        {
+          "claim_id": "claim-f795315cdb390de7b3",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f2106ac1bb89fba207",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "NUCLEAR"
+          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-7c4aeb762baac5f7",
-        "anomaly-82f46df1624efa36"
+        "anomaly-0a52f9aab5f00815",
+        "anomaly-ce3c0a9d625e178e"
       ],
       "threat_score": 15,
       "watch_priority": 50,
@@ -9474,7 +9474,7 @@
         "af29301ca855e4beff03"
       ],
       "first_seen": "2026-10-10T02:42:46Z",
-      "last_seen": "2026-10-10T20:01:50Z",
+      "last_seen": "2026-10-10T23:30:03Z",
       "material_time": "2026-10-10T07:55:32Z",
       "domains": [
         "ECONOMIC",
@@ -9496,7 +9496,7 @@
         "corroboration": 52,
         "contradiction": 0,
         "specificity": 46,
-        "recency": 97,
+        "recency": 95,
         "evidence_type": 79,
         "historical_reliability": 81,
         "claim_maturity": 47
@@ -9580,6 +9580,48 @@
       },
       "historical_matches": [
         {
+          "claim_id": "claim-3d51a2a960fb3f090c",
+          "headline": "Amid war and sanctions, unemployment worsens in Iran",
+          "material_time": "2026-09-10T21:03:38Z",
+          "shared_domains": [
+            "ECONOMIC"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-eaea6a9de82bd9267d",
+          "headline": "Houthi Seizure of Mocha Opens New Front in Iran-U.S. War",
+          "material_time": "2026-09-10T20:25:15Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-3ff6467c233784e52d",
+          "headline": "Iran attack on base in Jordan damaged American military aircraft, US official says - Reuters",
+          "material_time": "2026-09-10T20:22:31Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
           "claim_id": "claim-97b5050e845133a78c",
           "headline": "3 Killed in Strike on Alleged Drug Boat",
           "material_time": "2026-09-10T17:38:24Z",
@@ -9597,48 +9639,6 @@
           "claim_id": "claim-026ea071c93a7a1bef",
           "headline": "With reconciliation uncertain, Pentagon eyeing plan to retool FY27 priorities with Congress",
           "material_time": "2026-09-10T16:30:10Z",
-          "shared_domains": [
-            "WAR"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-18e230b9a5e7d21898",
-          "headline": "Sailors, Marines Deploy Long-range Missile Systems to Norway for Drills",
-          "material_time": "2026-09-10T16:07:37Z",
-          "shared_domains": [
-            "WAR"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-44b4e98f696d499a17",
-          "headline": "Russia sanctions bill faces make-or-break moment before US midterms, Ukraine says",
-          "material_time": "2026-09-10T15:00:20Z",
-          "shared_domains": [
-            "ECONOMIC"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-3044f826a6e738d8c3",
-          "headline": "Kremlin calls energy sector Ukraine's 'Achilles' heel' as it dismisses aerial truce",
-          "material_time": "2026-09-10T14:30:35Z",
           "shared_domains": [
             "WAR"
           ],
@@ -9675,18 +9675,6 @@
           "domains": [
             "CYBER",
             "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-feb46d1682d954e15f",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "WAR"
           ]
         },
         {
@@ -9801,6 +9789,18 @@
             "HUMANITARIAN",
             "SPACE"
           ]
+        },
+        {
+          "claim_id": "claim-45e80768c3aea3a86c",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -9856,7 +9856,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 78,
-        "recency": 80,
+        "recency": 79,
         "evidence_type": 86,
         "historical_reliability": 95,
         "claim_maturity": 39
@@ -9912,9 +9912,9 @@
       },
       "historical_matches": [
         {
-          "claim_id": "claim-89cc407f780ccb9df5",
-          "headline": "Dangerous Partners: The Russia-China Military Embrace - Center for European Policy Analysis (CEPA)",
-          "material_time": "2026-09-10T19:02:01Z",
+          "claim_id": "claim-597329310138891537",
+          "headline": "30 Reported Injured in USV Attack on Port of Sochi",
+          "material_time": "2026-09-10T22:07:43Z",
           "shared_domains": [
             "WAR"
           ],
@@ -9926,9 +9926,23 @@
           ]
         },
         {
-          "claim_id": "claim-873f871656fe6bad54",
-          "headline": "Russian attacks kill at least 12, injure 72 across Ukraine as Russia continues relentless strikes on Kyiv",
-          "material_time": "2026-09-10T18:00:00Z",
+          "claim_id": "claim-c49c533a33495cd94c",
+          "headline": "Russian-owned Irish refinery held private talks with government over war and sanctions risks, Irish Times reports",
+          "material_time": "2026-09-10T21:56:00Z",
+          "shared_domains": [
+            "ECONOMIC"
+          ],
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ]
+        },
+        {
+          "claim_id": "claim-64259a130f4bb29c4e",
+          "headline": "British man charged with aiding Russian spies to sabotage UK drone factory",
+          "material_time": "2026-09-10T20:44:08Z",
           "shared_domains": [
             "WAR"
           ],
@@ -9940,11 +9954,11 @@
           ]
         },
         {
-          "claim_id": "claim-8850201cd0d750fe27",
-          "headline": "5 dead, 67 injured after Russian attack on Pavlohrad shopping center",
-          "material_time": "2026-09-10T16:29:30Z",
+          "claim_id": "claim-a6d8bb8b0934effc21",
+          "headline": "Russia calls on West to abandon intent to renew sanctions against Iran — envoy to UN",
+          "material_time": "2026-09-10T20:31:52Z",
           "shared_domains": [
-            "WAR"
+            "ECONOMIC"
           ],
           "shared_actors": [
             "RUSSIA"
@@ -9954,23 +9968,9 @@
           ]
         },
         {
-          "claim_id": "claim-d4acff36f43d0dde16",
-          "headline": "Brit accused of feeding Russian military intelligence details of united kingdom drone factories",
-          "material_time": "2026-09-10T16:15:00Z",
-          "shared_domains": [
-            "WAR"
-          ],
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ]
-        },
-        {
-          "claim_id": "claim-189f8d93243aa9c226",
-          "headline": "Russia Reportedly Aiding Iran’s Development of Supersonic Cruise Missile - The Defense Post",
-          "material_time": "2026-09-10T15:25:43Z",
+          "claim_id": "claim-f52a13a7abddb57c24",
+          "headline": "Report: Russia Develops Untraceable Method to Disable Subsea Cables",
+          "material_time": "2026-09-10T20:06:45Z",
           "shared_domains": [
             "WAR"
           ],
@@ -10062,19 +10062,6 @@
           ]
         },
         {
-          "claim_id": "claim-4a10d631f96d52dff1",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "NUCLEAR",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-3de742e2140e697d1c",
           "shared_actors": [
             "RUSSIA"
@@ -10085,18 +10072,6 @@
           "domains": [
             "INFRA",
             "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-feb46d1682d954e15f",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "WAR"
           ]
         },
         {
@@ -10134,10 +10109,34 @@
           "domains": [
             "NUCLEAR"
           ]
+        },
+        {
+          "claim_id": "claim-f795315cdb390de7b3",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f2106ac1bb89fba207",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "NUCLEAR"
+          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-7c4aeb762baac5f7"
+        "anomaly-0a52f9aab5f00815"
       ],
       "threat_score": 16,
       "watch_priority": 41,
@@ -10183,7 +10182,7 @@
         "RUSSIA"
       ],
       "state": "CREDIBLE REPORT",
-      "confidence": 64,
+      "confidence": 63,
       "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 84,
@@ -10191,7 +10190,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 79,
-        "recency": 93,
+        "recency": 91,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 36
@@ -10247,9 +10246,9 @@
       },
       "historical_matches": [
         {
-          "claim_id": "claim-89cc407f780ccb9df5",
-          "headline": "Dangerous Partners: The Russia-China Military Embrace - Center for European Policy Analysis (CEPA)",
-          "material_time": "2026-09-10T19:02:01Z",
+          "claim_id": "claim-597329310138891537",
+          "headline": "30 Reported Injured in USV Attack on Port of Sochi",
+          "material_time": "2026-09-10T22:07:43Z",
           "shared_domains": [
             "WAR"
           ],
@@ -10261,9 +10260,23 @@
           ]
         },
         {
-          "claim_id": "claim-873f871656fe6bad54",
-          "headline": "Russian attacks kill at least 12, injure 72 across Ukraine as Russia continues relentless strikes on Kyiv",
-          "material_time": "2026-09-10T18:00:00Z",
+          "claim_id": "claim-c49c533a33495cd94c",
+          "headline": "Russian-owned Irish refinery held private talks with government over war and sanctions risks, Irish Times reports",
+          "material_time": "2026-09-10T21:56:00Z",
+          "shared_domains": [
+            "ECONOMIC"
+          ],
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ]
+        },
+        {
+          "claim_id": "claim-64259a130f4bb29c4e",
+          "headline": "British man charged with aiding Russian spies to sabotage UK drone factory",
+          "material_time": "2026-09-10T20:44:08Z",
           "shared_domains": [
             "WAR"
           ],
@@ -10275,11 +10288,11 @@
           ]
         },
         {
-          "claim_id": "claim-8850201cd0d750fe27",
-          "headline": "5 dead, 67 injured after Russian attack on Pavlohrad shopping center",
-          "material_time": "2026-09-10T16:29:30Z",
+          "claim_id": "claim-a6d8bb8b0934effc21",
+          "headline": "Russia calls on West to abandon intent to renew sanctions against Iran — envoy to UN",
+          "material_time": "2026-09-10T20:31:52Z",
           "shared_domains": [
-            "WAR"
+            "ECONOMIC"
           ],
           "shared_actors": [
             "RUSSIA"
@@ -10289,23 +10302,9 @@
           ]
         },
         {
-          "claim_id": "claim-d4acff36f43d0dde16",
-          "headline": "Brit accused of feeding Russian military intelligence details of united kingdom drone factories",
-          "material_time": "2026-09-10T16:15:00Z",
-          "shared_domains": [
-            "WAR"
-          ],
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ]
-        },
-        {
-          "claim_id": "claim-189f8d93243aa9c226",
-          "headline": "Russia Reportedly Aiding Iran’s Development of Supersonic Cruise Missile - The Defense Post",
-          "material_time": "2026-09-10T15:25:43Z",
+          "claim_id": "claim-f52a13a7abddb57c24",
+          "headline": "Report: Russia Develops Untraceable Method to Disable Subsea Cables",
+          "material_time": "2026-09-10T20:06:45Z",
           "shared_domains": [
             "WAR"
           ],
@@ -10397,19 +10396,6 @@
           ]
         },
         {
-          "claim_id": "claim-4a10d631f96d52dff1",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "NUCLEAR",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-3de742e2140e697d1c",
           "shared_actors": [
             "RUSSIA"
@@ -10420,18 +10406,6 @@
           "domains": [
             "INFRA",
             "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-feb46d1682d954e15f",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "WAR"
           ]
         },
         {
@@ -10469,10 +10443,34 @@
           "domains": [
             "NUCLEAR"
           ]
+        },
+        {
+          "claim_id": "claim-f795315cdb390de7b3",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f2106ac1bb89fba207",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "NUCLEAR"
+          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-7c4aeb762baac5f7"
+        "anomaly-0a52f9aab5f00815"
       ],
       "threat_score": 15,
       "watch_priority": 40,
@@ -10500,7 +10498,7 @@
         "9ae5c9f1d09b70c7c103"
       ],
       "first_seen": "2026-10-09T18:49:08Z",
-      "last_seen": "2026-10-10T20:01:50Z",
+      "last_seen": "2026-10-10T23:30:03Z",
       "material_time": "2026-10-09T16:00:26Z",
       "domains": [
         "INFRA",
@@ -10521,7 +10519,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 87,
-        "recency": 89,
+        "recency": 88,
         "evidence_type": 73,
         "historical_reliability": 86,
         "claim_maturity": 37
@@ -10577,6 +10575,49 @@
       },
       "historical_matches": [
         {
+          "claim_id": "claim-4da5d5c35cb7848347",
+          "headline": "Australia news live: Marles says One Nation ‘traitor’ cartoon about Hastie is ‘tasteless’; Albanese marks 25 years since September 11",
+          "material_time": "2026-09-10T22:12:44Z",
+          "shared_domains": [
+            "INFRA"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-eaea6a9de82bd9267d",
+          "headline": "Houthi Seizure of Mocha Opens New Front in Iran-U.S. War",
+          "material_time": "2026-09-10T20:25:15Z",
+          "shared_domains": [
+            "INFRA",
+            "WAR"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-3ff6467c233784e52d",
+          "headline": "Iran attack on base in Jordan damaged American military aircraft, US official says - Reuters",
+          "material_time": "2026-09-10T20:22:31Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
           "claim_id": "claim-238d94882a273770d8",
           "headline": "Pentagon admits Iran seriously damaged US Navy facilities in Bahrain",
           "material_time": "2026-09-10T19:31:29Z",
@@ -10596,48 +10637,6 @@
           "material_time": "2026-09-10T18:48:25Z",
           "shared_domains": [
             "INFRA"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-fab896d23ad36d34eb",
-          "headline": "China’s Huawei branded a criminal enterprise as tech firm’s US trial opens",
-          "material_time": "2026-09-10T17:41:19Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-25c8c431f9cb00a8e2",
-          "headline": "US trial against China's Huawei opens with prosecutor calling the company a criminal enterprise - AsiaOne",
-          "material_time": "2026-09-10T17:41:19Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-97b5050e845133a78c",
-          "headline": "3 Killed in Strike on Alleged Drug Boat",
-          "material_time": "2026-09-10T17:38:24Z",
-          "shared_domains": [
-            "WAR"
           ],
           "shared_actors": [
             "UNITED STATES"
@@ -10672,18 +10671,6 @@
           "domains": [
             "CYBER",
             "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-feb46d1682d954e15f",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "WAR"
           ]
         },
         {
@@ -10797,6 +10784,20 @@
             "POLITICAL",
             "WAR"
           ]
+        },
+        {
+          "claim_id": "claim-84ff18e86672ee1e94",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "CLIMATE",
+            "HUMANITARIAN",
+            "SPACE"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -10834,7 +10835,7 @@
         "174d7add047a0da9d3cc"
       ],
       "first_seen": "2026-10-09T13:09:11Z",
-      "last_seen": "2026-10-10T20:01:50Z",
+      "last_seen": "2026-10-10T23:30:03Z",
       "material_time": "2026-10-09T18:49:16Z",
       "domains": [
         "ECONOMIC",
@@ -10856,7 +10857,7 @@
         "corroboration": 82,
         "contradiction": 0,
         "specificity": 72,
-        "recency": 90,
+        "recency": 89,
         "evidence_type": 79,
         "historical_reliability": 80,
         "claim_maturity": 59
@@ -10940,9 +10941,23 @@
       },
       "historical_matches": [
         {
-          "claim_id": "claim-051810f992282b2240",
-          "headline": "French firefighters on six-week strike after record summer blazes",
-          "material_time": "2026-09-10T19:41:24Z",
+          "claim_id": "claim-b704d18645e46c7540",
+          "headline": "Israel says it destroyed Hezbollah base in Lebanon’s Ali al-Taher ridge",
+          "material_time": "2026-09-10T22:33:41Z",
+          "shared_domains": [
+            "POLITICAL"
+          ],
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ]
+        },
+        {
+          "claim_id": "claim-0b69a01385a2ba910d",
+          "headline": "Commission presents landmark India trade deal to Council for signature",
+          "material_time": "2026-09-10T22:00:00Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -10952,9 +10967,21 @@
           ]
         },
         {
-          "claim_id": "claim-afced874c8333f9440",
-          "headline": "As New York marks 25 years since 9/11, Muslims recall stigmatisation in aftermath of attacks",
-          "material_time": "2026-09-10T19:32:33Z",
+          "claim_id": "claim-817b959e1564eeab17",
+          "headline": "Gaza hospitals ration power as fuel shortages deepen",
+          "material_time": "2026-09-10T21:17:09Z",
+          "shared_domains": [
+            "POLITICAL"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ]
+        },
+        {
+          "claim_id": "claim-9a13c01eb9ea8ef32d",
+          "headline": "Space: Europe urged to find its path, from crewed spaceflight to communications",
+          "material_time": "2026-09-10T21:05:39Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -10964,33 +10991,9 @@
           ]
         },
         {
-          "claim_id": "claim-eeeea81f5de40c6897",
-          "headline": "Iran raises fuel prices for heavy users",
-          "material_time": "2026-09-10T18:48:25Z",
-          "shared_domains": [
-            "POLITICAL"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ]
-        },
-        {
-          "claim_id": "claim-fb37d104de4bb4da7a",
-          "headline": "Iran raises fuel prices for heavy users",
-          "material_time": "2026-09-10T18:48:25Z",
-          "shared_domains": [
-            "POLITICAL"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ]
-        },
-        {
-          "claim_id": "claim-c4a4b9c675a00d231b",
-          "headline": "UAE to invest €40 billion in Germany amid slew of business deals - Reuters",
-          "material_time": "2026-09-10T18:15:36Z",
+          "claim_id": "claim-d4b4c9d5694b39bb34",
+          "headline": "Europe unable to finance all of Kiev’s requests this year — WSJ",
+          "material_time": "2026-09-10T20:58:23Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -11009,17 +11012,6 @@
           ],
           "domains": [
             "NUCLEAR"
-          ]
-        },
-        {
-          "claim_id": "claim-4a10d631f96d52dff1",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "NUCLEAR",
-            "WAR"
           ]
         },
         {
@@ -11129,6 +11121,18 @@
           "domains": [
             "SECURITY"
           ]
+        },
+        {
+          "claim_id": "claim-12931bcc7ac1e749c1",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -11185,7 +11189,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 84,
-        "recency": 75,
+        "recency": 74,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 40
@@ -11241,57 +11245,57 @@
       },
       "historical_matches": [
         {
+          "claim_id": "claim-0b69a01385a2ba910d",
+          "headline": "Commission presents landmark India trade deal to Council for signature",
+          "material_time": "2026-09-10T22:00:00Z",
+          "shared_domains": [
+            "POLITICAL"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ]
+        },
+        {
+          "claim_id": "claim-9a13c01eb9ea8ef32d",
+          "headline": "Space: Europe urged to find its path, from crewed spaceflight to communications",
+          "material_time": "2026-09-10T21:05:39Z",
+          "shared_domains": [
+            "POLITICAL"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ]
+        },
+        {
+          "claim_id": "claim-d4b4c9d5694b39bb34",
+          "headline": "Europe unable to finance all of Kiev’s requests this year — WSJ",
+          "material_time": "2026-09-10T20:58:23Z",
+          "shared_domains": [
+            "POLITICAL"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ]
+        },
+        {
+          "claim_id": "claim-f52a13a7abddb57c24",
+          "headline": "Report: Russia Develops Untraceable Method to Disable Subsea Cables",
+          "material_time": "2026-09-10T20:06:45Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ]
+        },
+        {
           "claim_id": "claim-051810f992282b2240",
           "headline": "French firefighters on six-week strike after record summer blazes",
           "material_time": "2026-09-10T19:41:24Z",
-          "shared_domains": [
-            "POLITICAL"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ]
-        },
-        {
-          "claim_id": "claim-afced874c8333f9440",
-          "headline": "As New York marks 25 years since 9/11, Muslims recall stigmatisation in aftermath of attacks",
-          "material_time": "2026-09-10T19:32:33Z",
-          "shared_domains": [
-            "POLITICAL"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ]
-        },
-        {
-          "claim_id": "claim-eeeea81f5de40c6897",
-          "headline": "Iran raises fuel prices for heavy users",
-          "material_time": "2026-09-10T18:48:25Z",
-          "shared_domains": [
-            "POLITICAL"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ]
-        },
-        {
-          "claim_id": "claim-fb37d104de4bb4da7a",
-          "headline": "Iran raises fuel prices for heavy users",
-          "material_time": "2026-09-10T18:48:25Z",
-          "shared_domains": [
-            "POLITICAL"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ]
-        },
-        {
-          "claim_id": "claim-c4a4b9c675a00d231b",
-          "headline": "UAE to invest €40 billion in Germany amid slew of business deals - Reuters",
-          "material_time": "2026-09-10T18:15:36Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -11310,17 +11314,6 @@
           ],
           "domains": [
             "NUCLEAR"
-          ]
-        },
-        {
-          "claim_id": "claim-4a10d631f96d52dff1",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "NUCLEAR",
-            "WAR"
           ]
         },
         {
@@ -11427,6 +11420,17 @@
           "domains": [
             "POLITICAL"
           ]
+        },
+        {
+          "claim_id": "claim-deb958425c31e3d8f9",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "NUCLEAR",
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -11479,7 +11483,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 66,
-        "recency": 99,
+        "recency": 97,
         "evidence_type": 79,
         "historical_reliability": 82,
         "claim_maturity": 36
@@ -11535,9 +11539,9 @@
       },
       "historical_matches": [
         {
-          "claim_id": "claim-41a9262e6955037606",
-          "headline": "Japan should not tell Russia which monuments to erect — Kremlin aide",
-          "material_time": "2026-09-10T18:06:05Z",
+          "claim_id": "claim-cc3915dadf8c056db2",
+          "headline": "Ukraine's fortress cities under fire as Russia bids to seize rest of Donbas",
+          "material_time": "2026-09-10T23:22:11Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -11549,9 +11553,9 @@
           ]
         },
         {
-          "claim_id": "claim-eec29096d01c102bc8",
-          "headline": "French govt warns right-wing TV channel about using again expelled pro-Putin pundit",
-          "material_time": "2026-09-10T17:52:40Z",
+          "claim_id": "claim-f830835d35614f2755",
+          "headline": "Five killed and 67 injured in Russian strike on shopping centre, Ukraine says",
+          "material_time": "2026-09-10T22:36:02Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -11563,9 +11567,23 @@
           ]
         },
         {
-          "claim_id": "claim-b92842e3df8ee25e48",
-          "headline": "Poland says it expects Russia will target its border crossings with Ukraine",
-          "material_time": "2026-09-10T17:35:40Z",
+          "claim_id": "claim-c49c533a33495cd94c",
+          "headline": "Russian-owned Irish refinery held private talks with government over war and sanctions risks, Irish Times reports",
+          "material_time": "2026-09-10T21:56:00Z",
+          "shared_domains": [
+            "ECONOMIC"
+          ],
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ]
+        },
+        {
+          "claim_id": "claim-42c309c632d0c4eb66",
+          "headline": "The Russian Embassy in Romania protests the arrest of a Russian national over an alleged sabotage attempt - Українські Національні Новини (УНН)",
+          "material_time": "2026-09-10T21:18:22Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -11577,23 +11595,9 @@
           ]
         },
         {
-          "claim_id": "claim-6f06f85dd21961ac61",
-          "headline": "Innoprom in New Delhi shows Russia, India moving from words to action — minister",
-          "material_time": "2026-09-10T17:24:55Z",
-          "shared_domains": [
-            "POLITICAL"
-          ],
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ]
-        },
-        {
-          "claim_id": "claim-00f6c8151c6ff82bbd",
-          "headline": "Russia surpasses US in experience of next-generation warfare — Foreign Affairs",
-          "material_time": "2026-09-10T17:23:15Z",
+          "claim_id": "claim-64259a130f4bb29c4e",
+          "headline": "British man charged with aiding Russian spies to sabotage UK drone factory",
+          "material_time": "2026-09-10T20:44:08Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -11685,19 +11689,6 @@
           ]
         },
         {
-          "claim_id": "claim-4a10d631f96d52dff1",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "NUCLEAR",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-3de742e2140e697d1c",
           "shared_actors": [
             "RUSSIA"
@@ -11708,18 +11699,6 @@
           "domains": [
             "INFRA",
             "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-feb46d1682d954e15f",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "WAR"
           ]
         },
         {
@@ -11758,10 +11737,34 @@
           "domains": [
             "NUCLEAR"
           ]
+        },
+        {
+          "claim_id": "claim-7c8e829495206d841e",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "NUCLEAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f795315cdb390de7b3",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-7c4aeb762baac5f7"
+        "anomaly-0a52f9aab5f00815"
       ],
       "threat_score": 12,
       "watch_priority": 36,
@@ -11812,7 +11815,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 88,
-        "recency": 97,
+        "recency": 95,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 36
@@ -11868,9 +11871,9 @@
       },
       "historical_matches": [
         {
-          "claim_id": "claim-41a9262e6955037606",
-          "headline": "Japan should not tell Russia which monuments to erect — Kremlin aide",
-          "material_time": "2026-09-10T18:06:05Z",
+          "claim_id": "claim-cc3915dadf8c056db2",
+          "headline": "Ukraine's fortress cities under fire as Russia bids to seize rest of Donbas",
+          "material_time": "2026-09-10T23:22:11Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -11882,9 +11885,9 @@
           ]
         },
         {
-          "claim_id": "claim-eec29096d01c102bc8",
-          "headline": "French govt warns right-wing TV channel about using again expelled pro-Putin pundit",
-          "material_time": "2026-09-10T17:52:40Z",
+          "claim_id": "claim-f830835d35614f2755",
+          "headline": "Five killed and 67 injured in Russian strike on shopping centre, Ukraine says",
+          "material_time": "2026-09-10T22:36:02Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -11896,9 +11899,23 @@
           ]
         },
         {
-          "claim_id": "claim-b92842e3df8ee25e48",
-          "headline": "Poland says it expects Russia will target its border crossings with Ukraine",
-          "material_time": "2026-09-10T17:35:40Z",
+          "claim_id": "claim-c49c533a33495cd94c",
+          "headline": "Russian-owned Irish refinery held private talks with government over war and sanctions risks, Irish Times reports",
+          "material_time": "2026-09-10T21:56:00Z",
+          "shared_domains": [
+            "ECONOMIC"
+          ],
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ]
+        },
+        {
+          "claim_id": "claim-42c309c632d0c4eb66",
+          "headline": "The Russian Embassy in Romania protests the arrest of a Russian national over an alleged sabotage attempt - Українські Національні Новини (УНН)",
+          "material_time": "2026-09-10T21:18:22Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -11910,23 +11927,9 @@
           ]
         },
         {
-          "claim_id": "claim-6f06f85dd21961ac61",
-          "headline": "Innoprom in New Delhi shows Russia, India moving from words to action — minister",
-          "material_time": "2026-09-10T17:24:55Z",
-          "shared_domains": [
-            "POLITICAL"
-          ],
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ]
-        },
-        {
-          "claim_id": "claim-00f6c8151c6ff82bbd",
-          "headline": "Russia surpasses US in experience of next-generation warfare — Foreign Affairs",
-          "material_time": "2026-09-10T17:23:15Z",
+          "claim_id": "claim-64259a130f4bb29c4e",
+          "headline": "British man charged with aiding Russian spies to sabotage UK drone factory",
+          "material_time": "2026-09-10T20:44:08Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -12018,19 +12021,6 @@
           ]
         },
         {
-          "claim_id": "claim-4a10d631f96d52dff1",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "NUCLEAR",
-            "WAR"
-          ]
-        },
-        {
           "claim_id": "claim-3de742e2140e697d1c",
           "shared_actors": [
             "RUSSIA"
@@ -12041,18 +12031,6 @@
           "domains": [
             "INFRA",
             "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-feb46d1682d954e15f",
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ],
-          "domains": [
-            "WAR"
           ]
         },
         {
@@ -12091,10 +12069,34 @@
           "domains": [
             "NUCLEAR"
           ]
+        },
+        {
+          "claim_id": "claim-7c8e829495206d841e",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "NUCLEAR"
+          ]
+        },
+        {
+          "claim_id": "claim-f795315cdb390de7b3",
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ],
+          "domains": [
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
-        "anomaly-7c4aeb762baac5f7"
+        "anomaly-0a52f9aab5f00815"
       ],
       "threat_score": 12,
       "watch_priority": 36,
@@ -12151,7 +12153,7 @@
         "corroboration": 37,
         "contradiction": 0,
         "specificity": 68,
-        "recency": 84,
+        "recency": 83,
         "evidence_type": 79,
         "historical_reliability": 93,
         "claim_maturity": 93
@@ -12267,9 +12269,23 @@
       },
       "historical_matches": [
         {
-          "claim_id": "claim-051810f992282b2240",
-          "headline": "French firefighters on six-week strike after record summer blazes",
-          "material_time": "2026-09-10T19:41:24Z",
+          "claim_id": "claim-b704d18645e46c7540",
+          "headline": "Israel says it destroyed Hezbollah base in Lebanon’s Ali al-Taher ridge",
+          "material_time": "2026-09-10T22:33:41Z",
+          "shared_domains": [
+            "POLITICAL"
+          ],
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ]
+        },
+        {
+          "claim_id": "claim-0b69a01385a2ba910d",
+          "headline": "Commission presents landmark India trade deal to Council for signature",
+          "material_time": "2026-09-10T22:00:00Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -12279,9 +12295,21 @@
           ]
         },
         {
-          "claim_id": "claim-afced874c8333f9440",
-          "headline": "As New York marks 25 years since 9/11, Muslims recall stigmatisation in aftermath of attacks",
-          "material_time": "2026-09-10T19:32:33Z",
+          "claim_id": "claim-817b959e1564eeab17",
+          "headline": "Gaza hospitals ration power as fuel shortages deepen",
+          "material_time": "2026-09-10T21:17:09Z",
+          "shared_domains": [
+            "POLITICAL"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ]
+        },
+        {
+          "claim_id": "claim-9a13c01eb9ea8ef32d",
+          "headline": "Space: Europe urged to find its path, from crewed spaceflight to communications",
+          "material_time": "2026-09-10T21:05:39Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -12291,33 +12319,9 @@
           ]
         },
         {
-          "claim_id": "claim-eeeea81f5de40c6897",
-          "headline": "Iran raises fuel prices for heavy users",
-          "material_time": "2026-09-10T18:48:25Z",
-          "shared_domains": [
-            "POLITICAL"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ]
-        },
-        {
-          "claim_id": "claim-fb37d104de4bb4da7a",
-          "headline": "Iran raises fuel prices for heavy users",
-          "material_time": "2026-09-10T18:48:25Z",
-          "shared_domains": [
-            "POLITICAL"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ]
-        },
-        {
-          "claim_id": "claim-c4a4b9c675a00d231b",
-          "headline": "UAE to invest €40 billion in Germany amid slew of business deals - Reuters",
-          "material_time": "2026-09-10T18:15:36Z",
+          "claim_id": "claim-d4b4c9d5694b39bb34",
+          "headline": "Europe unable to finance all of Kiev’s requests this year — WSJ",
+          "material_time": "2026-09-10T20:58:23Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -12336,17 +12340,6 @@
           ],
           "domains": [
             "NUCLEAR"
-          ]
-        },
-        {
-          "claim_id": "claim-4a10d631f96d52dff1",
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ],
-          "domains": [
-            "NUCLEAR",
-            "WAR"
           ]
         },
         {
@@ -12456,6 +12449,18 @@
           "domains": [
             "SECURITY"
           ]
+        },
+        {
+          "claim_id": "claim-12931bcc7ac1e749c1",
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ],
+          "domains": [
+            "INFRA",
+            "POLITICAL",
+            "WAR"
+          ]
         }
       ],
       "anomaly_ids": [
@@ -12510,10 +12515,10 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 79,
-        "recency": 82,
+        "recency": 81,
         "evidence_type": 79,
         "historical_reliability": 84,
-        "claim_maturity": 38
+        "claim_maturity": 39
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
@@ -12566,6 +12571,46 @@
       },
       "historical_matches": [
         {
+          "claim_id": "claim-b704d18645e46c7540",
+          "headline": "Israel says it destroyed Hezbollah base in Lebanon’s Ali al-Taher ridge",
+          "material_time": "2026-09-10T22:33:41Z",
+          "shared_domains": [
+            "POLITICAL"
+          ],
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ]
+        },
+        {
+          "claim_id": "claim-817b959e1564eeab17",
+          "headline": "Gaza hospitals ration power as fuel shortages deepen",
+          "material_time": "2026-09-10T21:17:09Z",
+          "shared_domains": [
+            "POLITICAL"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ]
+        },
+        {
+          "claim_id": "claim-be4db9689c38ff8d4d",
+          "headline": "🔴 Live: Israel demolition of Hezbollah tunnels in south Lebanon caused 4.1-magnitude quake",
+          "material_time": "2026-09-10T20:12:47Z",
+          "shared_domains": [
+            "POLITICAL"
+          ],
+          "shared_actors": [
+            "ISRAEL"
+          ],
+          "shared_regions": [
+            "ISRAEL/PALESTINE"
+          ]
+        },
+        {
           "claim_id": "claim-1af90ca53d1236ade0",
           "headline": "Family of four killed as they slept in Israeli strike on Gaza",
           "material_time": "2026-09-10T17:32:28Z",
@@ -12583,48 +12628,6 @@
           "claim_id": "claim-c515f026afd49e9fd4",
           "headline": "Israel arrests 100 Palestinians in a week as West Bank pogroms continue",
           "material_time": "2026-09-10T17:00:17Z",
-          "shared_domains": [
-            "POLITICAL"
-          ],
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ]
-        },
-        {
-          "claim_id": "claim-c7a9309389923fded5",
-          "headline": "Israel's Netanyahu to sue newspaper over claim UAE warned him of 7 October attack",
-          "material_time": "2026-09-10T15:54:17Z",
-          "shared_domains": [
-            "POLITICAL"
-          ],
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ]
-        },
-        {
-          "claim_id": "claim-e72bacccf71b130215",
-          "headline": "Protests outside Israeli embassy in Bangkok over badly behaved tourists",
-          "material_time": "2026-09-10T14:42:38Z",
-          "shared_domains": [
-            "POLITICAL"
-          ],
-          "shared_actors": [
-            "ISRAEL"
-          ],
-          "shared_regions": [
-            "ISRAEL/PALESTINE"
-          ]
-        },
-        {
-          "claim_id": "claim-50904f311d9dc77f94",
-          "headline": "Israeli PM's wife hit with $1.2m defamation suit over Oct 7 conspiracy theory",
-          "material_time": "2026-09-10T13:37:53Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -12914,37 +12917,9 @@
       },
       "historical_matches": [
         {
-          "claim_id": "claim-42961a5cb0cb53beb8",
-          "headline": "CENTCOM redirects 96 ships amid blockade of Iran - Report.az",
-          "material_time": "2026-09-10T19:58:01Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ]
-        },
-        {
-          "claim_id": "claim-238d94882a273770d8",
-          "headline": "Pentagon admits Iran seriously damaged US Navy facilities in Bahrain",
-          "material_time": "2026-09-10T19:31:29Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ]
-        },
-        {
-          "claim_id": "claim-2a69f32439b9a35958",
-          "headline": "Global economy coping with aftermath of war against Iran better than expected — IMF",
-          "material_time": "2026-09-10T18:51:29Z",
+          "claim_id": "claim-f6e981a1fe5decc8bd",
+          "headline": "U.S. colonel shot down in Iran speaks with 60 Minutes in exclusive interview",
+          "material_time": "2026-09-10T23:25:53Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -12956,11 +12931,24 @@
           ]
         },
         {
-          "claim_id": "claim-eeeea81f5de40c6897",
-          "headline": "Iran raises fuel prices for heavy users",
-          "material_time": "2026-09-10T18:48:25Z",
+          "claim_id": "claim-7d9a49d68a7fc16c07",
+          "headline": "Several US warplanes damaged after Iranian strikes on Jordan — TV",
+          "material_time": "2026-09-10T22:52:11Z",
           "shared_domains": [
-            "INFRA",
+            "INFRA"
+          ],
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ]
+        },
+        {
+          "claim_id": "claim-c5590f4fdcaa96d576",
+          "headline": "IRGC directly guided Houthi Red Sea offensive - Reuters - Iran International",
+          "material_time": "2026-09-10T22:12:16Z",
+          "shared_domains": [
             "POLITICAL"
           ],
           "shared_actors": [
@@ -12971,9 +12959,23 @@
           ]
         },
         {
-          "claim_id": "claim-fb37d104de4bb4da7a",
-          "headline": "Iran raises fuel prices for heavy users",
-          "material_time": "2026-09-10T18:48:25Z",
+          "claim_id": "claim-1263fa9de1c982da8a",
+          "headline": "Two Supertankers Carrying Saudi Oil Struck by Iran Along U.S.-Designated Route in the Gulf of Oman",
+          "material_time": "2026-09-10T21:47:43Z",
+          "shared_domains": [
+            "POLITICAL"
+          ],
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ]
+        },
+        {
+          "claim_id": "claim-f52da13c176d86bcd1",
+          "headline": "Houthi rebels take key Red Sea city in Yemen, as Iran’s wartime leverage grows",
+          "material_time": "2026-09-10T21:12:01Z",
           "shared_domains": [
             "POLITICAL"
           ],
