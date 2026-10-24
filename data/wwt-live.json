@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-23T23:29:16Z",
+  "generated_at": "2026-10-24T01:57:25Z",
   "rules_version": "3.0-layered-early-warning",
-  "score": 33,
+  "score": 31,
   "verified_pressure": {
-    "score": 33,
-    "claim_count": 30,
+    "score": 31,
+    "claim_count": 29,
     "top_claims": [
       {
         "id": "claim-f7cfdb8546dacd237d",
@@ -19,11 +19,12 @@
         ],
         "observation_ids": [
           "e68088594c0a8e5a0863",
-          "62f75cc197aa18892443"
+          "62f75cc197aa18892443",
+          "5e350811f6b77954cb15"
         ],
         "first_seen": "2026-10-23T23:29:16Z",
-        "last_seen": "2026-10-23T23:29:16Z",
-        "material_time": "2026-10-23T22:06:20Z",
+        "last_seen": "2026-10-24T01:57:25Z",
+        "material_time": "2026-10-24T00:45:00Z",
         "domains": [
           "INFRA",
           "SECURITY",
@@ -38,14 +39,14 @@
           "UNITED STATES"
         ],
         "state": "CREDIBLE REPORT",
-        "confidence": 62,
-        "confidence_direction": "NEW",
+        "confidence": 61,
+        "confidence_direction": "STABLE",
         "confidence_components": {
           "source_quality": 81,
           "independence": 25,
           "corroboration": 22,
           "contradiction": 0,
-          "specificity": 72,
+          "specificity": 67,
           "recency": 100,
           "evidence_type": 73,
           "historical_reliability": 81,
@@ -54,20 +55,34 @@
         "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
         "supporting_observation_ids": [
           "e68088594c0a8e5a0863",
-          "62f75cc197aa18892443"
+          "62f75cc197aa18892443",
+          "5e350811f6b77954cb15"
         ],
         "contradictory_observation_ids": [],
-        "source_count": 2,
+        "source_count": 3,
         "independent_provenance_count": 1,
         "sources": [
           "GDELT Global Discovery",
-          "The Maritime Executive"
+          "The Maritime Executive",
+          "maritime-executive.com"
         ],
         "provenance_roots": [
           "gdelt_global",
+          "maritime-executive.com",
           "maritime_exec"
         ],
         "evidence": [
+          {
+            "observation_id": "5e350811f6b77954cb15",
+            "title": "The Blockade on Iran is Deepening – But Also Widening",
+            "source": "maritime-executive.com",
+            "source_class": "low_confidence",
+            "provenance_root": "maritime-executive.com",
+            "stance": "report",
+            "published": "2026-10-24T00:45:00Z",
+            "url": "https://maritime-executive.com/article/the-blockade-on-iran-is-deepening-but-also-widening",
+            "discovery_only": true
+          },
           {
             "observation_id": "e68088594c0a8e5a0863",
             "title": "The Blockade on Iran is Deepening – But Also Widening",
@@ -116,55 +131,12 @@
         },
         "historical_matches": [
           {
-            "claim_id": "claim-3cdabbc9d8b9498cc5",
-            "headline": "3 Years of Middle East Combat Altering How Navy Supplies, Maintains Fleet, Leaders Say",
-            "material_time": "2026-09-23T23:19:42Z",
+            "claim_id": "claim-830bd6f3de66ea1b5b",
+            "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+            "material_time": "2026-09-24T01:48:47Z",
             "shared_domains": [
+              "INFRA",
               "WAR"
-            ],
-            "shared_actors": [
-              "IRAN",
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "IRAN",
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-27aed814390d776860",
-            "headline": "Coast Guard Expands Base Kodiak With Two More Piers",
-            "material_time": "2026-09-23T22:33:30Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-7e1df7dc6e8bda3672",
-            "headline": "Coast Guard Awards $315 Million Kodiak Pier Contract to Support Arctic Fleet Expansion",
-            "material_time": "2026-09-23T21:34:42Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-2942007ff1e1e3addd",
-            "headline": "Iran threatens countries enforcing US airline sanctions",
-            "material_time": "2026-09-23T19:27:50Z",
-            "shared_domains": [
-              "INFRA"
             ],
             "shared_actors": [
               "IRAN"
@@ -174,17 +146,57 @@
             ]
           },
           {
-            "claim_id": "claim-a34aa79cca8ec519b6",
-            "headline": "Where Are The Aircraft Carriers?: September 23, 2026",
-            "material_time": "2026-09-23T19:14:35Z",
+            "claim_id": "claim-9f37d521d2b52ca05c",
+            "headline": "Giá dầu tăng gần 4 % sau những tuyên bố của Mỹ và Iran",
+            "material_time": "2026-09-24T01:30:00Z",
+            "shared_domains": [
+              "SECURITY"
+            ],
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ]
+          },
+          {
+            "claim_id": "claim-c23b0eeb6d6d1fc3fa",
+            "headline": "After Trump threat , Iran president tells UN Tehran cannot be made to surrender",
+            "material_time": "2026-09-24T01:30:00Z",
+            "shared_domains": [
+              "SECURITY"
+            ],
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ]
+          },
+          {
+            "claim_id": "claim-790874ae84936520c2",
+            "headline": "Japan PM says talks on ending Hormuz crisis should include countries that depend on strait",
+            "material_time": "2026-09-24T01:30:00Z",
+            "shared_domains": [
+              "SECURITY"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "IRAN"
+            ]
+          },
+          {
+            "claim_id": "claim-30e13007f797264c74",
+            "headline": "115 Iran-linked ships redirected: US naval blockade on Iran continues - Gulf News",
+            "material_time": "2026-09-24T01:24:03Z",
             "shared_domains": [
               "WAR"
             ],
             "shared_actors": [
-              "UNITED STATES"
+              "IRAN"
             ],
             "shared_regions": [
-              "UNITED STATES"
+              "IRAN"
             ]
           }
         ],
@@ -344,15 +356,15 @@
           "anomaly-e1cc2cf251bab881",
           "anomaly-f76b0d40fe5d4f08"
         ],
-        "threat_score": 15,
+        "threat_score": 14,
         "watch_priority": 56,
         "audit": {
           "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 2,
+          "support_count": 3,
           "contradiction_count": 0,
           "independent_roots": 1,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-10-23T22:06:20Z"
+          "material_time_used_for_decay": "2026-10-24T00:45:00Z"
         }
       },
       {
@@ -377,7 +389,7 @@
           "19c6b8b3261cbe8ff5c9"
         ],
         "first_seen": "2026-10-23T17:00:39Z",
-        "last_seen": "2026-10-23T23:29:16Z",
+        "last_seen": "2026-10-24T01:57:25Z",
         "material_time": "2026-10-23T17:53:55Z",
         "domains": [
           "HUMANITARIAN",
@@ -401,10 +413,10 @@
           "corroboration": 25,
           "contradiction": 0,
           "specificity": 72,
-          "recency": 100,
+          "recency": 99,
           "evidence_type": 67,
           "historical_reliability": 79,
-          "claim_maturity": 46
+          "claim_maturity": 47
         },
         "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
         "supporting_observation_ids": [
@@ -469,6 +481,23 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-b066da503f27dfa53b",
+            "headline": "US lawmakers call to extend immigration protections for Ukrainian refugees as renewal deadline looms",
+            "material_time": "2026-09-24T01:55:57Z",
+            "shared_domains": [
+              "HUMANITARIAN",
+              "WAR"
+            ],
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ]
+          },
+          {
             "claim_id": "claim-431eea3157dd619081",
             "headline": "Russian ballistic missile attack against Kyiv kills 2, injures 6 after day of drone strikes",
             "material_time": "2026-09-23T22:28:54Z",
@@ -518,20 +547,6 @@
             "claim_id": "claim-19b882cfa20c671a33",
             "headline": "Zelensky reports Russia lost nearly 249,000 troops over eight months - Crypto Briefing",
             "material_time": "2026-09-23T20:18:12Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-12e5e8e4581b01f476",
-            "headline": "Russian Mi-8 Helicopter Briefly Enters Polish Airspace: F-16s Scrambled to Respond - Military Watch Magazine",
-            "material_time": "2026-09-23T18:50:00Z",
             "shared_domains": [
               "WAR"
             ],
@@ -715,8 +730,8 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-64c179a89c68d5e9",
-          "anomaly-e58b1976b4ec955f",
+          "anomaly-3f4f37cc8c55da47",
+          "anomaly-88bf5e7b14d8a2fa",
           "anomaly-8b3e7ce43aab272a"
         ],
         "threat_score": 17,
@@ -758,7 +773,7 @@
           "IRAN"
         ],
         "state": "CREDIBLE REPORT",
-        "confidence": 62,
+        "confidence": 61,
         "confidence_direction": "STABLE",
         "confidence_components": {
           "source_quality": 78,
@@ -766,7 +781,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 88,
-          "recency": 88,
+          "recency": 87,
           "evidence_type": 73,
           "historical_reliability": 78,
           "claim_maturity": 37
@@ -822,6 +837,48 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-830bd6f3de66ea1b5b",
+            "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+            "material_time": "2026-09-24T01:48:47Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ]
+          },
+          {
+            "claim_id": "claim-30e13007f797264c74",
+            "headline": "115 Iran-linked ships redirected: US naval blockade on Iran continues - Gulf News",
+            "material_time": "2026-09-24T01:24:03Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ]
+          },
+          {
+            "claim_id": "claim-a3740751f202e90845",
+            "headline": "US aviation sanctions disrupt Iran flights, push travellers overland",
+            "material_time": "2026-09-24T00:15:00Z",
+            "shared_domains": [
+              "ECONOMIC"
+            ],
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ]
+          },
+          {
             "claim_id": "claim-3cdabbc9d8b9498cc5",
             "headline": "3 Years of Middle East Combat Altering How Navy Supplies, Maintains Fleet, Leaders Say",
             "material_time": "2026-09-23T23:19:42Z",
@@ -841,49 +898,6 @@
             "material_time": "2026-09-23T19:27:50Z",
             "shared_domains": [
               "ECONOMIC"
-            ],
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ]
-          },
-          {
-            "claim_id": "claim-38e75554103b1636a9",
-            "headline": "Iran’s president hits out at ‘bully’ Trump in UN speech but signals willingness to talk",
-            "material_time": "2026-09-23T16:44:57Z",
-            "shared_domains": [
-              "TERRORISM"
-            ],
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ]
-          },
-          {
-            "claim_id": "claim-108365255289e2ab6e",
-            "headline": "Iran will 'never bend at the knee', Pezeshkian tells UN in defiant wartime address",
-            "material_time": "2026-09-23T15:49:35Z",
-            "shared_domains": [
-              "TERRORISM"
-            ],
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ]
-          },
-          {
-            "claim_id": "claim-a23db04266aa25b4de",
-            "headline": "Iran’s Pezeshkian tells UN his country is ‘victim’ of US ‘terrorism’",
-            "material_time": "2026-09-23T14:57:47Z",
-            "shared_domains": [
-              "TERRORISM",
-              "WAR"
             ],
             "shared_actors": [
               "IRAN"
@@ -1051,7 +1065,7 @@
         "anomaly_ids": [
           "anomaly-f76b0d40fe5d4f08"
         ],
-        "threat_score": 15,
+        "threat_score": 14,
         "watch_priority": 46,
         "audit": {
           "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
@@ -1105,7 +1119,7 @@
           "corroboration": 52,
           "contradiction": 0,
           "specificity": 63,
-          "recency": 88,
+          "recency": 87,
           "evidence_type": 79,
           "historical_reliability": 80,
           "claim_maturity": 48
@@ -1189,9 +1203,9 @@
         },
         "historical_matches": [
           {
-            "claim_id": "claim-431eea3157dd619081",
-            "headline": "Russian ballistic missile attack against Kyiv kills 2, injures 6 after day of drone strikes",
-            "material_time": "2026-09-23T22:28:54Z",
+            "claim_id": "claim-b066da503f27dfa53b",
+            "headline": "US lawmakers call to extend immigration protections for Ukrainian refugees as renewal deadline looms",
+            "material_time": "2026-09-24T01:55:57Z",
             "shared_domains": [
               "WAR"
             ],
@@ -1205,61 +1219,59 @@
             ]
           },
           {
-            "claim_id": "claim-6b0ccbea10a93bab83",
-            "headline": "51 countries back Ukraine in joint statement calling for Black Sea initiative as world gathers for UN General Assembly",
-            "material_time": "2026-09-23T21:16:01Z",
+            "claim_id": "claim-830bd6f3de66ea1b5b",
+            "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+            "material_time": "2026-09-24T01:48:47Z",
             "shared_domains": [
               "WAR"
             ],
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
+            "shared_actors": [],
             "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
+              "EUROPE"
             ]
           },
           {
-            "claim_id": "claim-bbacf1c254653dade6",
-            "headline": "The Evolving Role Of Ukraine’s Artillery In The Age Of Drones",
-            "material_time": "2026-09-23T20:20:36Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "UKRAINE"
-            ]
-          },
-          {
-            "claim_id": "claim-19b882cfa20c671a33",
-            "headline": "Zelensky reports Russia lost nearly 249,000 troops over eight months - Crypto Briefing",
-            "material_time": "2026-09-23T20:18:12Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-53e2415459ef10abcf",
-            "headline": "Zelenskyy warns Russia's 'General Winter' could turn against Moscow - RBC-Ukraine",
-            "material_time": "2026-09-23T19:55:22Z",
+            "claim_id": "claim-45e4ec079ea43b03b2",
+            "headline": "Un loc din Europa aflat între două țări NATO a devenit terenul de testare pentru războiul hidrid al lui Putin VIDEO",
+            "material_time": "2026-09-24T01:15:00Z",
             "shared_domains": [
               "SECURITY"
             ],
             "shared_actors": [
+              "NATO"
+            ],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
+            "claim_id": "claim-50fc0e40613d2f2359",
+            "headline": "Integrity Initiative : united kingdom - funded network framed dissent as Russian disinformation for years",
+            "material_time": "2026-09-24T01:15:00Z",
+            "shared_domains": [
+              "SECURITY"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
+            "claim_id": "claim-8b4542a6fdb7ba9c2e",
+            "headline": "Europeans warn of rising Russian sabotage but see no imminent NATO attack",
+            "material_time": "2026-09-24T01:11:55Z",
+            "shared_domains": [
+              "SECURITY"
+            ],
+            "shared_actors": [
+              "NATO",
               "RUSSIA",
               "UKRAINE"
             ],
             "shared_regions": [
+              "EUROPE",
               "RUSSIA",
               "UKRAINE"
             ]
@@ -1442,9 +1454,9 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-64c179a89c68d5e9",
-          "anomaly-e58b1976b4ec955f",
-          "anomaly-5785d92e3c378e7b"
+          "anomaly-3f4f37cc8c55da47",
+          "anomaly-88bf5e7b14d8a2fa",
+          "anomaly-30071f8fa76f675e"
         ],
         "threat_score": 16,
         "watch_priority": 61,
@@ -1455,326 +1467,6 @@
           "independent_roots": 2,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-10-22T17:30:00Z"
-        }
-      },
-      {
-        "id": "claim-a99cf7ebf54e471c9d",
-        "headline": "Australia targets fraudulent North Korean workers propping up nuclear program",
-        "signature_tokens": [
-          "australia",
-          "fraudulent",
-          "korean",
-          "north",
-          "nuclear",
-          "program",
-          "propping",
-          "targets",
-          "workers"
-        ],
-        "observation_ids": [
-          "97bce0c686751c1c7380"
-        ],
-        "first_seen": "2026-10-23T06:29:42Z",
-        "last_seen": "2026-10-23T06:29:42Z",
-        "material_time": "2026-10-23T02:32:50Z",
-        "domains": [
-          "ECONOMIC",
-          "NUCLEAR"
-        ],
-        "regions": [
-          "KOREAN PENINSULA"
-        ],
-        "actors": [
-          "NORTH KOREA"
-        ],
-        "state": "CREDIBLE REPORT",
-        "confidence": 61,
-        "confidence_direction": "STABLE",
-        "confidence_components": {
-          "source_quality": 84,
-          "independence": 25,
-          "corroboration": 22,
-          "contradiction": 0,
-          "specificity": 66,
-          "recency": 92,
-          "evidence_type": 67,
-          "historical_reliability": 84,
-          "claim_maturity": 36
-        },
-        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "supporting_observation_ids": [
-          "97bce0c686751c1c7380"
-        ],
-        "contradictory_observation_ids": [],
-        "source_count": 1,
-        "independent_provenance_count": 1,
-        "sources": [
-          "ABC Australia World"
-        ],
-        "provenance_roots": [
-          "abc_australia"
-        ],
-        "evidence": [
-          {
-            "observation_id": "97bce0c686751c1c7380",
-            "title": "Australia targets fraudulent North Korean workers propping up nuclear program",
-            "source": "ABC Australia World",
-            "source_class": "regional_local",
-            "provenance_root": "abc_australia",
-            "stance": "allegation",
-            "published": "2026-10-23T02:32:50Z",
-            "url": "https://www.abc.net.au/news/2026-10-23/penny-wong-north-korea-company-sanctions/107301184",
-            "discovery_only": false
-          }
-        ],
-        "state_affiliated_reporting": false,
-        "discovery_only": false,
-        "branch_analysis": {
-          "current_observation": "Australia targets fraudulent North Korean workers propping up nuclear program",
-          "plausible_explanations": [
-            "A genuine ECONOMIC/NUCLEAR development involving NORTH KOREA is unfolding as reported.",
-            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-          ],
-          "escalation_branch": "Related ECONOMIC/NUCLEAR indicators spread, become operational, or draw additional actors into the event.",
-          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-          "confirm_indicators": [
-            "A primary record, sensor observation, or on-record official confirmation.",
-            "Matching detail from a genuinely independent provenance root.",
-            "Observable follow-on action consistent with the reported event."
-          ],
-          "falsify_indicators": [
-            "Time-stamped primary evidence incompatible with the claim.",
-            "Independent, technically specific refutation from credible sources.",
-            "Predicted follow-on indicators fail to occur inside the stated window."
-          ],
-          "contradictory_evidence_present": false
-        },
-        "historical_matches": [
-          {
-            "claim_id": "claim-4c62a054e2c3e2a949",
-            "headline": "South Korea’s Lee urges U.S. to ease North Korea sanctions, report says",
-            "material_time": "2026-09-22T23:04:00Z",
-            "shared_domains": [
-              "ECONOMIC"
-            ],
-            "shared_actors": [
-              "NORTH KOREA"
-            ],
-            "shared_regions": [
-              "KOREAN PENINSULA"
-            ]
-          },
-          {
-            "claim_id": "claim-944da7963b4a14b97a",
-            "headline": "North Korea launches missiles as it dials up pressure against U.S.",
-            "material_time": "2026-09-22T13:01:00Z",
-            "shared_domains": [
-              "NUCLEAR"
-            ],
-            "shared_actors": [
-              "NORTH KOREA"
-            ],
-            "shared_regions": [
-              "KOREAN PENINSULA"
-            ]
-          },
-          {
-            "claim_id": "claim-818d28b543c7663628",
-            "headline": "North Korea’s Kim hails ‘new’ weapon thought to be hypersonic missile",
-            "material_time": "2026-09-22T05:25:00Z",
-            "shared_domains": [
-              "NUCLEAR"
-            ],
-            "shared_actors": [
-              "NORTH KOREA"
-            ],
-            "shared_regions": [
-              "KOREAN PENINSULA"
-            ]
-          },
-          {
-            "claim_id": "claim-4ff50ed48a18b23fbe",
-            "headline": "North Korea fires two ballistic missiles into the sea in latest weapons display",
-            "material_time": "2026-09-20T12:00:34Z",
-            "shared_domains": [
-              "NUCLEAR"
-            ],
-            "shared_actors": [
-              "NORTH KOREA"
-            ],
-            "shared_regions": [
-              "KOREAN PENINSULA"
-            ]
-          },
-          {
-            "claim_id": "claim-ad89978b6a56a0a7ee",
-            "headline": "North Korea fires off second apparent ballistic missile - The Japan Times",
-            "material_time": "2026-09-20T10:04:28Z",
-            "shared_domains": [
-              "NUCLEAR"
-            ],
-            "shared_actors": [
-              "NORTH KOREA"
-            ],
-            "shared_regions": [
-              "KOREAN PENINSULA"
-            ]
-          }
-        ],
-        "cross_domain_links": [
-          {
-            "claim_id": "claim-f78b888fb13ed0bf34",
-            "shared_actors": [],
-            "shared_regions": [
-              "KOREAN PENINSULA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-d1cf0897950ab0bb40",
-            "shared_actors": [
-              "NORTH KOREA"
-            ],
-            "shared_regions": [
-              "KOREAN PENINSULA"
-            ],
-            "domains": [
-              "POLITICAL",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-b06f4bf45350e92937",
-            "shared_actors": [
-              "NORTH KOREA"
-            ],
-            "shared_regions": [
-              "KOREAN PENINSULA"
-            ],
-            "domains": [
-              "POLITICAL",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-25dd8a47e2f24699ca",
-            "shared_actors": [
-              "NORTH KOREA"
-            ],
-            "shared_regions": [
-              "KOREAN PENINSULA"
-            ],
-            "domains": [
-              "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-45dd4802969a029282",
-            "shared_actors": [
-              "NORTH KOREA"
-            ],
-            "shared_regions": [
-              "KOREAN PENINSULA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-dd59adde8d529c6904",
-            "shared_actors": [
-              "NORTH KOREA"
-            ],
-            "shared_regions": [
-              "KOREAN PENINSULA"
-            ],
-            "domains": [
-              "POLITICAL"
-            ]
-          },
-          {
-            "claim_id": "claim-b75b1015c7bf8783db",
-            "shared_actors": [
-              "NORTH KOREA"
-            ],
-            "shared_regions": [
-              "KOREAN PENINSULA"
-            ],
-            "domains": [
-              "SECURITY",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-487967f6f41ce244c0",
-            "shared_actors": [],
-            "shared_regions": [
-              "KOREAN PENINSULA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-4336e9ab102c93a245",
-            "shared_actors": [
-              "NORTH KOREA"
-            ],
-            "shared_regions": [
-              "KOREAN PENINSULA"
-            ],
-            "domains": [
-              "CYBER"
-            ]
-          },
-          {
-            "claim_id": "claim-918b412943f76a96ef",
-            "shared_actors": [],
-            "shared_regions": [
-              "KOREAN PENINSULA"
-            ],
-            "domains": [
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-a169cfed3cf9576ac5",
-            "shared_actors": [],
-            "shared_regions": [
-              "KOREAN PENINSULA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-4ac504830b4920b1c6",
-            "shared_actors": [
-              "NORTH KOREA"
-            ],
-            "shared_regions": [
-              "KOREAN PENINSULA"
-            ],
-            "domains": [
-              "POLITICAL"
-            ]
-          }
-        ],
-        "anomaly_ids": [
-          "anomaly-fc7316f56515a128"
-        ],
-        "threat_score": 14,
-        "watch_priority": 40,
-        "audit": {
-          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-          "support_count": 1,
-          "contradiction_count": 0,
-          "independent_roots": 1,
-          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-10-23T02:32:50Z"
         }
       },
       {
@@ -2148,7 +1840,7 @@
           "17972aae4ddb00f2f78a"
         ],
         "first_seen": "2026-10-19T17:46:53Z",
-        "last_seen": "2026-10-23T23:29:16Z",
+        "last_seen": "2026-10-24T01:57:25Z",
         "material_time": "2026-10-19T16:18:29Z",
         "domains": [
           "INFRA",
@@ -2226,6 +1918,32 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-688ce31c4d7be2f87b",
+            "headline": "The Robot Ships of Route 90",
+            "material_time": "2026-09-23T23:35:40Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": [
+              "UNITED STATES"
+            ]
+          },
+          {
+            "claim_id": "claim-7c523e4251d0c29ac7",
+            "headline": "Trump greets Xi Jinping at plane as Chinese leader arrives for state visit",
+            "material_time": "2026-09-23T23:30:50Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "UNITED STATES"
+            ],
+            "shared_regions": []
+          },
+          {
             "claim_id": "claim-3cdabbc9d8b9498cc5",
             "headline": "3 Years of Middle East Combat Altering How Navy Supplies, Maintains Fleet, Leaders Say",
             "material_time": "2026-09-23T23:19:42Z",
@@ -2265,32 +1983,6 @@
             ],
             "shared_regions": [
               "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-a34aa79cca8ec519b6",
-            "headline": "Where Are The Aircraft Carriers?: September 23, 2026",
-            "material_time": "2026-09-23T19:14:35Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "UNITED STATES"
-            ],
-            "shared_regions": [
-              "UNITED STATES"
-            ]
-          },
-          {
-            "claim_id": "claim-81fcdea928c853c781",
-            "headline": "Taiwan Transfers Coast Guard Patrol Vessel to the Philippines",
-            "material_time": "2026-09-23T18:53:24Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "INDO-PACIFIC"
             ]
           }
         ],
@@ -2468,7 +2160,7 @@
           "77fcad9b48dddce18ab1"
         ],
         "first_seen": "2026-10-23T20:24:02Z",
-        "last_seen": "2026-10-23T23:29:16Z",
+        "last_seen": "2026-10-24T01:57:25Z",
         "material_time": "2026-10-23T19:13:14Z",
         "domains": [
           "ECONOMIC",
@@ -2546,6 +2238,18 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-830bd6f3de66ea1b5b",
+            "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+            "material_time": "2026-09-24T01:48:47Z",
+            "shared_domains": [
+              "INFRA"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
             "claim_id": "claim-2ccdf12129630ad09f",
             "headline": "Zelenskyy warns of painful winter for Russia if energy truce talks fail",
             "material_time": "2026-09-23T22:14:00Z",
@@ -2597,20 +2301,6 @@
             ],
             "shared_regions": [
               "EUROPE",
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-79d0fdcf7de583e810",
-            "headline": "Captain Killed in Russia’s Latest Attack on Merchant Shipping",
-            "material_time": "2026-09-23T17:45:11Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
               "RUSSIA"
             ]
           }
@@ -2774,7 +2464,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-64c179a89c68d5e9"
+          "anomaly-3f4f37cc8c55da47"
         ],
         "threat_score": 13,
         "watch_priority": 38,
@@ -2804,7 +2494,7 @@
           "fc38681582f12ca1424f"
         ],
         "first_seen": "2026-10-23T17:00:39Z",
-        "last_seen": "2026-10-23T23:29:16Z",
+        "last_seen": "2026-10-24T01:57:25Z",
         "material_time": "2026-10-23T13:55:40Z",
         "domains": [
           "POLITICAL",
@@ -2823,7 +2513,7 @@
           "corroboration": 25,
           "contradiction": 0,
           "specificity": 71,
-          "recency": 98,
+          "recency": 97,
           "evidence_type": 79,
           "historical_reliability": 84,
           "claim_maturity": 47
@@ -2891,6 +2581,43 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-830bd6f3de66ea1b5b",
+            "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+            "material_time": "2026-09-24T01:48:47Z",
+            "shared_domains": [
+              "POLITICAL",
+              "WAR"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
+            "claim_id": "claim-8b4542a6fdb7ba9c2e",
+            "headline": "Europeans warn of rising Russian sabotage but see no imminent NATO attack",
+            "material_time": "2026-09-24T01:11:55Z",
+            "shared_domains": [
+              "POLITICAL"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
+            "claim_id": "claim-11efac226d9c73a7f8",
+            "headline": "Europeans warn of rising Russian sabotage but see no imminent NATO attack",
+            "material_time": "2026-09-24T01:02:00Z",
+            "shared_domains": [
+              "POLITICAL"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
             "claim_id": "claim-1ffa6cef2579d67302",
             "headline": "French court confirms rape trial for PSG and Morocco star Hakimi - France 24",
             "material_time": "2026-09-23T21:32:43Z",
@@ -2908,42 +2635,6 @@
             "material_time": "2026-09-23T19:24:39Z",
             "shared_domains": [
               "POLITICAL"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ]
-          },
-          {
-            "claim_id": "claim-0a365a8b8ed164a3fa",
-            "headline": "Holy regulation? Pope in Paris to press case for 'disarming' AI",
-            "material_time": "2026-09-23T18:44:11Z",
-            "shared_domains": [
-              "POLITICAL"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ]
-          },
-          {
-            "claim_id": "claim-c960c7ee9d4c7972be",
-            "headline": "Poland scrambles jets after Russian helicopter breaches its airspace",
-            "material_time": "2026-09-23T17:59:47Z",
-            "shared_domains": [
-              "POLITICAL"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ]
-          },
-          {
-            "claim_id": "claim-cdb8fba1cfd6a9470f",
-            "headline": "Russia not to pause special military operation for talks in any format — Lavrov",
-            "material_time": "2026-09-23T17:00:01Z",
-            "shared_domains": [
-              "WAR"
             ],
             "shared_actors": [],
             "shared_regions": [
@@ -3135,7 +2826,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 71,
-          "recency": 87,
+          "recency": 86,
           "evidence_type": 79,
           "historical_reliability": 84,
           "claim_maturity": 37
@@ -3191,6 +2882,43 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-830bd6f3de66ea1b5b",
+            "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+            "material_time": "2026-09-24T01:48:47Z",
+            "shared_domains": [
+              "POLITICAL",
+              "WAR"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
+            "claim_id": "claim-8b4542a6fdb7ba9c2e",
+            "headline": "Europeans warn of rising Russian sabotage but see no imminent NATO attack",
+            "material_time": "2026-09-24T01:11:55Z",
+            "shared_domains": [
+              "POLITICAL"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
+            "claim_id": "claim-11efac226d9c73a7f8",
+            "headline": "Europeans warn of rising Russian sabotage but see no imminent NATO attack",
+            "material_time": "2026-09-24T01:02:00Z",
+            "shared_domains": [
+              "POLITICAL"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
             "claim_id": "claim-1ffa6cef2579d67302",
             "headline": "French court confirms rape trial for PSG and Morocco star Hakimi - France 24",
             "material_time": "2026-09-23T21:32:43Z",
@@ -3208,42 +2936,6 @@
             "material_time": "2026-09-23T19:24:39Z",
             "shared_domains": [
               "POLITICAL"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ]
-          },
-          {
-            "claim_id": "claim-0a365a8b8ed164a3fa",
-            "headline": "Holy regulation? Pope in Paris to press case for 'disarming' AI",
-            "material_time": "2026-09-23T18:44:11Z",
-            "shared_domains": [
-              "POLITICAL"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ]
-          },
-          {
-            "claim_id": "claim-c960c7ee9d4c7972be",
-            "headline": "Poland scrambles jets after Russian helicopter breaches its airspace",
-            "material_time": "2026-09-23T17:59:47Z",
-            "shared_domains": [
-              "POLITICAL"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ]
-          },
-          {
-            "claim_id": "claim-cdb8fba1cfd6a9470f",
-            "headline": "Russia not to pause special military operation for talks in any format — Lavrov",
-            "material_time": "2026-09-23T17:00:01Z",
-            "shared_domains": [
-              "WAR"
             ],
             "shared_actors": [],
             "shared_regions": [
@@ -3422,7 +3114,7 @@
           "c53c84556461f5da2b02"
         ],
         "first_seen": "2026-10-23T20:24:02Z",
-        "last_seen": "2026-10-23T23:29:16Z",
+        "last_seen": "2026-10-24T01:57:25Z",
         "material_time": "2026-10-23T20:04:09Z",
         "domains": [
           "INFRA",
@@ -3513,9 +3205,24 @@
         },
         "historical_matches": [
           {
-            "claim_id": "claim-6abf6b509e5b0c7fc6",
-            "headline": "Senior IRGC Commander Killed In Iran Armed Clash - The Whistler Newspaper",
-            "material_time": "2026-09-23T23:06:15Z",
+            "claim_id": "claim-830bd6f3de66ea1b5b",
+            "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+            "material_time": "2026-09-24T01:48:47Z",
+            "shared_domains": [
+              "INFRA",
+              "POLITICAL"
+            ],
+            "shared_actors": [
+              "IRAN"
+            ],
+            "shared_regions": [
+              "IRAN"
+            ]
+          },
+          {
+            "claim_id": "claim-993938898c12a9d1cf",
+            "headline": "Iran, US still far apart in peace talks, Iranian official says; Pezeshkian vows no surrender - Reuters",
+            "material_time": "2026-09-24T01:32:00Z",
             "shared_domains": [
               "POLITICAL"
             ],
@@ -3527,23 +3234,9 @@
             ]
           },
           {
-            "claim_id": "claim-18ae7b8374a56a3c9d",
-            "headline": "Here's what happened on day 2 of the UN General Assembly",
-            "material_time": "2026-09-23T22:06:37Z",
-            "shared_domains": [
-              "POLITICAL"
-            ],
-            "shared_actors": [
-              "IRAN"
-            ],
-            "shared_regions": [
-              "IRAN"
-            ]
-          },
-          {
-            "claim_id": "claim-0c17007da2829c35ab",
-            "headline": "Commissioner Šuica addresses the 2nd Ministerial Meeting of the Coalition of Rome for Fertiliser Access and Food Security",
-            "material_time": "2026-09-23T22:00:00Z",
+            "claim_id": "claim-4c711b18d969b42aae",
+            "headline": "Lavrov discusses explosive situation in Persian Gulf with Arab League chief",
+            "material_time": "2026-09-24T01:09:15Z",
             "shared_domains": [
               "POLITICAL"
             ],
@@ -3553,9 +3246,9 @@
             ]
           },
           {
-            "claim_id": "claim-e9f021b44bfded0252",
-            "headline": "Trump should press Xi to stop support for Iran, Democratic senator says - reuters.com",
-            "material_time": "2026-09-23T21:58:24Z",
+            "claim_id": "claim-ba1bbf32ca5cf6f779",
+            "headline": "Iran's president gives a rare wartime speech at the U.N.",
+            "material_time": "2026-09-24T01:00:00Z",
             "shared_domains": [
               "POLITICAL"
             ],
@@ -3567,9 +3260,9 @@
             ]
           },
           {
-            "claim_id": "claim-6cd93730afcc0c8eaa",
-            "headline": "Iran’s president tells U.N. his country ‘must be powerful so as to avoid being threatened’",
-            "material_time": "2026-09-23T21:39:49Z",
+            "claim_id": "claim-99ab6228f6c9d94963",
+            "headline": "Iran war live: Tehran says it won’t be bullied, remains open for talks",
+            "material_time": "2026-09-24T00:00:00Z",
             "shared_domains": [
               "POLITICAL"
             ],
@@ -3790,7 +3483,7 @@
           "corroboration": 52,
           "contradiction": 0,
           "specificity": 77,
-          "recency": 86,
+          "recency": 85,
           "evidence_type": 73,
           "historical_reliability": 79,
           "claim_maturity": 49
@@ -3860,9 +3553,39 @@
         },
         "historical_matches": [
           {
-            "claim_id": "claim-eaed33cce1049bfb3e",
-            "headline": "US, China to extend trade de-escalation arrangements — US Treasury secretary",
-            "material_time": "2026-09-23T23:10:41Z",
+            "claim_id": "claim-830bd6f3de66ea1b5b",
+            "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+            "material_time": "2026-09-24T01:48:47Z",
+            "shared_domains": [
+              "INFRA",
+              "POLITICAL"
+            ],
+            "shared_actors": [
+              "CHINA"
+            ],
+            "shared_regions": [
+              "CHINA"
+            ]
+          },
+          {
+            "claim_id": "claim-38d933c004e41418b2",
+            "headline": "Trump’s retreat from U.S. allies puts Taiwan in jeopardy",
+            "material_time": "2026-09-24T01:39:00Z",
+            "shared_domains": [
+              "POLITICAL"
+            ],
+            "shared_actors": [
+              "CHINA"
+            ],
+            "shared_regions": [
+              "CHINA",
+              "TAIWAN"
+            ]
+          },
+          {
+            "claim_id": "claim-2f8be02cfa4d8a4b83",
+            "headline": "Trump to raise detainees with Xi, but other rights issues may not come up",
+            "material_time": "2026-09-24T01:38:00Z",
             "shared_domains": [
               "POLITICAL"
             ],
@@ -3874,9 +3597,9 @@
             ]
           },
           {
-            "claim_id": "claim-4f65a512b9fc370dd7",
-            "headline": "The hip side of Japan the tourists haven’t figured out yet",
-            "material_time": "2026-09-23T23:00:00Z",
+            "claim_id": "claim-05d6eb287e50e30442",
+            "headline": "Japan returns wrongly collected remains to Kazakhstan and Myanmar",
+            "material_time": "2026-09-24T01:33:00Z",
             "shared_domains": [
               "POLITICAL"
             ],
@@ -3886,37 +3609,9 @@
             ]
           },
           {
-            "claim_id": "claim-ab357481bee134ceba",
-            "headline": "Trump greets China’s Xi Jinping on arrival for three-day US trip",
-            "material_time": "2026-09-23T22:56:41Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "CHINA"
-            ],
-            "shared_regions": [
-              "CHINA"
-            ]
-          },
-          {
-            "claim_id": "claim-77c7940485130969e9",
-            "headline": "Xi and Trump seek safe AI without slowing the race for supremacy",
-            "material_time": "2026-09-23T22:22:00Z",
-            "shared_domains": [
-              "POLITICAL"
-            ],
-            "shared_actors": [
-              "CHINA"
-            ],
-            "shared_regions": [
-              "CHINA"
-            ]
-          },
-          {
-            "claim_id": "claim-bf8d3f65e3e6ccf7c9",
-            "headline": "Trump greets Xi at aircraft stairs after his arrival in US",
-            "material_time": "2026-09-23T22:17:36Z",
+            "claim_id": "claim-c285dfb99149e918e1",
+            "headline": "Red carpet for Xi as Trump seeks to steady US-China ties - malaymail.com",
+            "material_time": "2026-09-24T01:25:31Z",
             "shared_domains": [
               "POLITICAL"
             ],
@@ -4085,12 +3780,322 @@
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-10-22T09:01:05Z"
         }
+      },
+      {
+        "id": "claim-6a41fbfdf000bcd383",
+        "headline": "NATO Kicks Off Neptune Strike Across European Waters",
+        "signature_tokens": [
+          "across",
+          "european",
+          "kicks",
+          "nato",
+          "neptune",
+          "off",
+          "strike",
+          "waters"
+        ],
+        "observation_ids": [
+          "c9ee140deecc31596d25"
+        ],
+        "first_seen": "2026-10-21T18:17:27Z",
+        "last_seen": "2026-10-24T01:57:25Z",
+        "material_time": "2026-10-21T16:59:35Z",
+        "domains": [
+          "WAR"
+        ],
+        "regions": [
+          "EUROPE"
+        ],
+        "actors": [
+          "NATO"
+        ],
+        "state": "CREDIBLE REPORT",
+        "confidence": 63,
+        "confidence_direction": "STABLE",
+        "confidence_components": {
+          "source_quality": 86,
+          "independence": 25,
+          "corroboration": 22,
+          "contradiction": 0,
+          "specificity": 87,
+          "recency": 80,
+          "evidence_type": 73,
+          "historical_reliability": 86,
+          "claim_maturity": 39
+        },
+        "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "supporting_observation_ids": [
+          "c9ee140deecc31596d25"
+        ],
+        "contradictory_observation_ids": [],
+        "source_count": 1,
+        "independent_provenance_count": 1,
+        "sources": [
+          "USNI News"
+        ],
+        "provenance_roots": [
+          "usni_news"
+        ],
+        "evidence": [
+          {
+            "observation_id": "c9ee140deecc31596d25",
+            "title": "NATO Kicks Off Neptune Strike Across European Waters",
+            "source": "USNI News",
+            "source_class": "specialist",
+            "provenance_root": "usni_news",
+            "stance": "report",
+            "published": "2026-10-21T16:59:35Z",
+            "url": "https://news.usni.org/2026/10/21/nato-kicks-off-neptune-strike-across-european-waters",
+            "discovery_only": false
+          }
+        ],
+        "state_affiliated_reporting": false,
+        "discovery_only": false,
+        "branch_analysis": {
+          "current_observation": "NATO Kicks Off Neptune Strike Across European Waters",
+          "plausible_explanations": [
+            "A genuine WAR development involving NATO is unfolding as reported.",
+            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+          ],
+          "escalation_branch": "Related WAR indicators spread, become operational, or draw additional actors into the event.",
+          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+          "confirm_indicators": [
+            "A primary record, sensor observation, or on-record official confirmation.",
+            "Matching detail from a genuinely independent provenance root.",
+            "Observable follow-on action consistent with the reported event."
+          ],
+          "falsify_indicators": [
+            "Time-stamped primary evidence incompatible with the claim.",
+            "Independent, technically specific refutation from credible sources.",
+            "Predicted follow-on indicators fail to occur inside the stated window."
+          ],
+          "contradictory_evidence_present": false
+        },
+        "historical_matches": [
+          {
+            "claim_id": "claim-830bd6f3de66ea1b5b",
+            "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+            "material_time": "2026-09-24T01:48:47Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
+            "claim_id": "claim-cdb8fba1cfd6a9470f",
+            "headline": "Russia not to pause special military operation for talks in any format — Lavrov",
+            "material_time": "2026-09-23T17:00:01Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
+            "claim_id": "claim-133590c3d4970f8c8a",
+            "headline": "French far-left presidential candidate Melenchon blames Ukraine's deep strikes for war escalation",
+            "material_time": "2026-09-23T16:31:57Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
+            "claim_id": "claim-b426e5e26e6c4ddc01",
+            "headline": "Russia reserves right to proportionate response to NATO, EU actions — diplomat",
+            "material_time": "2026-09-23T16:08:15Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "NATO"
+            ],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
+            "claim_id": "claim-f5ae3b931c624839e0",
+            "headline": "Poland accuses Russian military helicopter of violating its airspace",
+            "material_time": "2026-09-23T15:37:20Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "NATO"
+            ],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          }
+        ],
+        "cross_domain_links": [
+          {
+            "claim_id": "claim-48fd86d998c90f985e",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "HUMANITARIAN",
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-e28f126087d7a53005",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-52ee8f784be6bf4ec2",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "CYBER",
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-feac584b3f81caea38",
+            "shared_actors": [
+              "NATO"
+            ],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-2323428cf3875ad879",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "HUMANITARIAN",
+              "POLITICAL",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-435b894f8a690fa904",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "CYBER",
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-5bd8620e9a17e8d7e2",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "POLITICAL",
+              "SECURITY"
+            ]
+          },
+          {
+            "claim_id": "claim-728a0538855d16da1a",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-06e430d279df2520ec",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "HUMANITARIAN",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-e174a00661b3920b97",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "CYBER",
+              "POLITICAL",
+              "SECURITY"
+            ]
+          },
+          {
+            "claim_id": "claim-fc5910441c1ad9b728",
+            "shared_actors": [
+              "NATO"
+            ],
+            "shared_regions": [],
+            "domains": [
+              "INFRA",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-7552cc8f772afa292a",
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ],
+            "domains": [
+              "ECONOMIC",
+              "WAR"
+            ]
+          }
+        ],
+        "anomaly_ids": [
+          "anomaly-30071f8fa76f675e"
+        ],
+        "threat_score": 15,
+        "watch_priority": 34,
+        "audit": {
+          "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+          "support_count": 1,
+          "contradiction_count": 0,
+          "independent_roots": 1,
+          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+          "material_time_used_for_decay": "2026-10-21T16:59:35Z"
+        }
       }
     ]
   },
   "early_warning_pressure": {
     "score": 100,
-    "claim_count": 70,
+    "claim_count": 69,
     "top_claims": [
       {
         "id": "claim-e28f126087d7a53005",
@@ -4186,6 +4191,43 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-830bd6f3de66ea1b5b",
+            "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+            "material_time": "2026-09-24T01:48:47Z",
+            "shared_domains": [
+              "POLITICAL",
+              "WAR"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
+            "claim_id": "claim-8b4542a6fdb7ba9c2e",
+            "headline": "Europeans warn of rising Russian sabotage but see no imminent NATO attack",
+            "material_time": "2026-09-24T01:11:55Z",
+            "shared_domains": [
+              "POLITICAL"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
+            "claim_id": "claim-11efac226d9c73a7f8",
+            "headline": "Europeans warn of rising Russian sabotage but see no imminent NATO attack",
+            "material_time": "2026-09-24T01:02:00Z",
+            "shared_domains": [
+              "POLITICAL"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
             "claim_id": "claim-1ffa6cef2579d67302",
             "headline": "French court confirms rape trial for PSG and Morocco star Hakimi - France 24",
             "material_time": "2026-09-23T21:32:43Z",
@@ -4203,42 +4245,6 @@
             "material_time": "2026-09-23T19:24:39Z",
             "shared_domains": [
               "POLITICAL"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ]
-          },
-          {
-            "claim_id": "claim-0a365a8b8ed164a3fa",
-            "headline": "Holy regulation? Pope in Paris to press case for 'disarming' AI",
-            "material_time": "2026-09-23T18:44:11Z",
-            "shared_domains": [
-              "POLITICAL"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ]
-          },
-          {
-            "claim_id": "claim-c960c7ee9d4c7972be",
-            "headline": "Poland scrambles jets after Russian helicopter breaches its airspace",
-            "material_time": "2026-09-23T17:59:47Z",
-            "shared_domains": [
-              "POLITICAL"
-            ],
-            "shared_actors": [],
-            "shared_regions": [
-              "EUROPE"
-            ]
-          },
-          {
-            "claim_id": "claim-cdb8fba1cfd6a9470f",
-            "headline": "Russia not to pause special military operation for talks in any format — Lavrov",
-            "material_time": "2026-09-23T17:00:01Z",
-            "shared_domains": [
-              "WAR"
             ],
             "shared_actors": [],
             "shared_regions": [
@@ -4422,7 +4428,7 @@
         ],
         "actors": [],
         "state": "EARLY WARNING",
-        "confidence": 52,
+        "confidence": 51,
         "confidence_direction": "STABLE",
         "confidence_components": {
           "source_quality": 72,
@@ -4430,10 +4436,10 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 35,
-          "recency": 77,
+          "recency": 76,
           "evidence_type": 67,
           "historical_reliability": 72,
-          "claim_maturity": 39
+          "claim_maturity": 40
         },
         "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
         "supporting_observation_ids": [
@@ -4496,6 +4502,324 @@
           "independent_roots": 1,
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-10-21T06:05:21Z"
+        }
+      },
+      {
+        "id": "claim-a99cf7ebf54e471c9d",
+        "headline": "Australia targets fraudulent North Korean workers propping up nuclear program",
+        "signature_tokens": [
+          "australia",
+          "fraudulent",
+          "korean",
+          "north",
+          "nuclear",
+          "program",
+          "propping",
+          "targets",
+          "workers"
+        ],
+        "observation_ids": [
+          "97bce0c686751c1c7380"
+        ],
+        "first_seen": "2026-10-23T06:29:42Z",
+        "last_seen": "2026-10-23T06:29:42Z",
+        "material_time": "2026-10-23T02:32:50Z",
+        "domains": [
+          "ECONOMIC",
+          "NUCLEAR"
+        ],
+        "regions": [
+          "KOREAN PENINSULA"
+        ],
+        "actors": [
+          "NORTH KOREA"
+        ],
+        "state": "SPECULATIVE",
+        "confidence": 60,
+        "confidence_direction": "STABLE",
+        "confidence_components": {
+          "source_quality": 84,
+          "independence": 25,
+          "corroboration": 22,
+          "contradiction": 0,
+          "specificity": 66,
+          "recency": 90,
+          "evidence_type": 67,
+          "historical_reliability": 84,
+          "claim_maturity": 37
+        },
+        "classification_reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
+        "supporting_observation_ids": [
+          "97bce0c686751c1c7380"
+        ],
+        "contradictory_observation_ids": [],
+        "source_count": 1,
+        "independent_provenance_count": 1,
+        "sources": [
+          "ABC Australia World"
+        ],
+        "provenance_roots": [
+          "abc_australia"
+        ],
+        "evidence": [
+          {
+            "observation_id": "97bce0c686751c1c7380",
+            "title": "Australia targets fraudulent North Korean workers propping up nuclear program",
+            "source": "ABC Australia World",
+            "source_class": "regional_local",
+            "provenance_root": "abc_australia",
+            "stance": "allegation",
+            "published": "2026-10-23T02:32:50Z",
+            "url": "https://www.abc.net.au/news/2026-10-23/penny-wong-north-korea-company-sanctions/107301184",
+            "discovery_only": false
+          }
+        ],
+        "state_affiliated_reporting": false,
+        "discovery_only": false,
+        "branch_analysis": {
+          "current_observation": "Australia targets fraudulent North Korean workers propping up nuclear program",
+          "plausible_explanations": [
+            "A genuine ECONOMIC/NUCLEAR development involving NORTH KOREA is unfolding as reported.",
+            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+          ],
+          "escalation_branch": "Related ECONOMIC/NUCLEAR indicators spread, become operational, or draw additional actors into the event.",
+          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+          "confirm_indicators": [
+            "A primary record, sensor observation, or on-record official confirmation.",
+            "Matching detail from a genuinely independent provenance root.",
+            "Observable follow-on action consistent with the reported event."
+          ],
+          "falsify_indicators": [
+            "Time-stamped primary evidence incompatible with the claim.",
+            "Independent, technically specific refutation from credible sources.",
+            "Predicted follow-on indicators fail to occur inside the stated window."
+          ],
+          "contradictory_evidence_present": false
+        },
+        "historical_matches": [
+          {
+            "claim_id": "claim-4c62a054e2c3e2a949",
+            "headline": "South Korea’s Lee urges U.S. to ease North Korea sanctions, report says",
+            "material_time": "2026-09-22T23:04:00Z",
+            "shared_domains": [
+              "ECONOMIC"
+            ],
+            "shared_actors": [
+              "NORTH KOREA"
+            ],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ]
+          },
+          {
+            "claim_id": "claim-944da7963b4a14b97a",
+            "headline": "North Korea launches missiles as it dials up pressure against U.S.",
+            "material_time": "2026-09-22T13:01:00Z",
+            "shared_domains": [
+              "NUCLEAR"
+            ],
+            "shared_actors": [
+              "NORTH KOREA"
+            ],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ]
+          },
+          {
+            "claim_id": "claim-818d28b543c7663628",
+            "headline": "North Korea’s Kim hails ‘new’ weapon thought to be hypersonic missile",
+            "material_time": "2026-09-22T05:25:00Z",
+            "shared_domains": [
+              "NUCLEAR"
+            ],
+            "shared_actors": [
+              "NORTH KOREA"
+            ],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ]
+          },
+          {
+            "claim_id": "claim-4ff50ed48a18b23fbe",
+            "headline": "North Korea fires two ballistic missiles into the sea in latest weapons display",
+            "material_time": "2026-09-20T12:00:34Z",
+            "shared_domains": [
+              "NUCLEAR"
+            ],
+            "shared_actors": [
+              "NORTH KOREA"
+            ],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ]
+          },
+          {
+            "claim_id": "claim-ad89978b6a56a0a7ee",
+            "headline": "North Korea fires off second apparent ballistic missile - The Japan Times",
+            "material_time": "2026-09-20T10:04:28Z",
+            "shared_domains": [
+              "NUCLEAR"
+            ],
+            "shared_actors": [
+              "NORTH KOREA"
+            ],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ]
+          }
+        ],
+        "cross_domain_links": [
+          {
+            "claim_id": "claim-f78b888fb13ed0bf34",
+            "shared_actors": [],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-d1cf0897950ab0bb40",
+            "shared_actors": [
+              "NORTH KOREA"
+            ],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ],
+            "domains": [
+              "POLITICAL",
+              "SECURITY"
+            ]
+          },
+          {
+            "claim_id": "claim-b06f4bf45350e92937",
+            "shared_actors": [
+              "NORTH KOREA"
+            ],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ],
+            "domains": [
+              "POLITICAL",
+              "SECURITY"
+            ]
+          },
+          {
+            "claim_id": "claim-25dd8a47e2f24699ca",
+            "shared_actors": [
+              "NORTH KOREA"
+            ],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ],
+            "domains": [
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-45dd4802969a029282",
+            "shared_actors": [
+              "NORTH KOREA"
+            ],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-dd59adde8d529c6904",
+            "shared_actors": [
+              "NORTH KOREA"
+            ],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ],
+            "domains": [
+              "POLITICAL"
+            ]
+          },
+          {
+            "claim_id": "claim-b75b1015c7bf8783db",
+            "shared_actors": [
+              "NORTH KOREA"
+            ],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ],
+            "domains": [
+              "SECURITY",
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-c9da0099ae5361217c",
+            "shared_actors": [],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-487967f6f41ce244c0",
+            "shared_actors": [],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ],
+            "domains": [
+              "WAR"
+            ]
+          },
+          {
+            "claim_id": "claim-2c708c6143885e76c8",
+            "shared_actors": [],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          },
+          {
+            "claim_id": "claim-4336e9ab102c93a245",
+            "shared_actors": [
+              "NORTH KOREA"
+            ],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ],
+            "domains": [
+              "CYBER"
+            ]
+          },
+          {
+            "claim_id": "claim-42e3db9db0b9f62740",
+            "shared_actors": [],
+            "shared_regions": [
+              "KOREAN PENINSULA"
+            ],
+            "domains": [
+              "INFRA"
+            ]
+          }
+        ],
+        "anomaly_ids": [
+          "anomaly-3cec934ddf9044f5"
+        ],
+        "threat_score": 3,
+        "watch_priority": 52,
+        "audit": {
+          "reason": "The claim is explicitly conditional, alleged, or speculative and remains labeled as such.",
+          "support_count": 1,
+          "contradiction_count": 0,
+          "independent_roots": 1,
+          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+          "material_time_used_for_decay": "2026-10-23T02:32:50Z"
         }
       },
       {
@@ -4593,6 +4917,20 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-b066da503f27dfa53b",
+            "headline": "US lawmakers call to extend immigration protections for Ukrainian refugees as renewal deadline looms",
+            "material_time": "2026-09-24T01:55:57Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "UKRAINE"
+            ]
+          },
+          {
             "claim_id": "claim-431eea3157dd619081",
             "headline": "Russian ballistic missile attack against Kyiv kills 2, injures 6 after day of drone strikes",
             "material_time": "2026-09-23T22:28:54Z",
@@ -4638,20 +4976,6 @@
             "claim_id": "claim-fd61bb206c4091502f",
             "headline": "More than 57,000 women serve as military personnel in Ukraine's Armed Forces, General Staff says",
             "material_time": "2026-09-23T17:37:54Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "UKRAINE"
-            ]
-          },
-          {
-            "claim_id": "claim-133590c3d4970f8c8a",
-            "headline": "French far-left presidential candidate Melenchon blames Ukraine's deep strikes for war escalation",
-            "material_time": "2026-09-23T16:31:57Z",
             "shared_domains": [
               "WAR"
             ],
@@ -4785,7 +5109,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-e58b1976b4ec955f"
+          "anomaly-88bf5e7b14d8a2fa"
         ],
         "threat_score": 6,
         "watch_priority": 51,
@@ -4840,10 +5164,10 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 82,
+          "recency": 81,
           "evidence_type": 67,
           "historical_reliability": 79,
-          "claim_maturity": 38
+          "claim_maturity": 39
         },
         "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
         "supporting_observation_ids": [
@@ -4922,6 +5246,32 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-b066da503f27dfa53b",
+            "headline": "US lawmakers call to extend immigration protections for Ukrainian refugees as renewal deadline looms",
+            "material_time": "2026-09-24T01:55:57Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
+            "claim_id": "claim-830bd6f3de66ea1b5b",
+            "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+            "material_time": "2026-09-24T01:48:47Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
             "claim_id": "claim-431eea3157dd619081",
             "headline": "Russian ballistic missile attack against Kyiv kills 2, injures 6 after day of drone strikes",
             "material_time": "2026-09-23T22:28:54Z",
@@ -4953,34 +5303,6 @@
             "claim_id": "claim-19b882cfa20c671a33",
             "headline": "Zelensky reports Russia lost nearly 249,000 troops over eight months - Crypto Briefing",
             "material_time": "2026-09-23T20:18:12Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-12e5e8e4581b01f476",
-            "headline": "Russian Mi-8 Helicopter Briefly Enters Polish Airspace: F-16s Scrambled to Respond - Military Watch Magazine",
-            "material_time": "2026-09-23T18:50:00Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-4967c82b90019811be",
-            "headline": "Russian Airstrike Kills Five in Oleksandrivka as Rescuers Search for Seven Missing People - Межа. Новини України.",
-            "material_time": "2026-09-23T17:44:49Z",
             "shared_domains": [
               "WAR"
             ],
@@ -5151,7 +5473,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-64c179a89c68d5e9"
+          "anomaly-3f4f37cc8c55da47"
         ],
         "threat_score": 6,
         "watch_priority": 51,
@@ -5207,7 +5529,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 78,
-          "recency": 81,
+          "recency": 80,
           "evidence_type": 24,
           "historical_reliability": 32,
           "claim_maturity": 39
@@ -5263,6 +5585,32 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-b066da503f27dfa53b",
+            "headline": "US lawmakers call to extend immigration protections for Ukrainian refugees as renewal deadline looms",
+            "material_time": "2026-09-24T01:55:57Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
+            "claim_id": "claim-830bd6f3de66ea1b5b",
+            "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+            "material_time": "2026-09-24T01:48:47Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
             "claim_id": "claim-431eea3157dd619081",
             "headline": "Russian ballistic missile attack against Kyiv kills 2, injures 6 after day of drone strikes",
             "material_time": "2026-09-23T22:28:54Z",
@@ -5294,34 +5642,6 @@
             "claim_id": "claim-19b882cfa20c671a33",
             "headline": "Zelensky reports Russia lost nearly 249,000 troops over eight months - Crypto Briefing",
             "material_time": "2026-09-23T20:18:12Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-12e5e8e4581b01f476",
-            "headline": "Russian Mi-8 Helicopter Briefly Enters Polish Airspace: F-16s Scrambled to Respond - Military Watch Magazine",
-            "material_time": "2026-09-23T18:50:00Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-4967c82b90019811be",
-            "headline": "Russian Airstrike Kills Five in Oleksandrivka as Rescuers Search for Seven Missing People - Межа. Новини України.",
-            "material_time": "2026-09-23T17:44:49Z",
             "shared_domains": [
               "WAR"
             ],
@@ -5492,7 +5812,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-64c179a89c68d5e9"
+          "anomaly-3f4f37cc8c55da47"
         ],
         "threat_score": 4,
         "watch_priority": 51,
@@ -5545,7 +5865,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 80,
+          "recency": 79,
           "evidence_type": 73,
           "historical_reliability": 85,
           "claim_maturity": 39
@@ -5629,6 +5949,20 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-b066da503f27dfa53b",
+            "headline": "US lawmakers call to extend immigration protections for Ukrainian refugees as renewal deadline looms",
+            "material_time": "2026-09-24T01:55:57Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
             "claim_id": "claim-431eea3157dd619081",
             "headline": "Russian ballistic missile attack against Kyiv kills 2, injures 6 after day of drone strikes",
             "material_time": "2026-09-23T22:28:54Z",
@@ -5674,20 +6008,6 @@
             "claim_id": "claim-12e5e8e4581b01f476",
             "headline": "Russian Mi-8 Helicopter Briefly Enters Polish Airspace: F-16s Scrambled to Respond - Military Watch Magazine",
             "material_time": "2026-09-23T18:50:00Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-4967c82b90019811be",
-            "headline": "Russian Airstrike Kills Five in Oleksandrivka as Rescuers Search for Seven Missing People - Межа. Новини України.",
-            "material_time": "2026-09-23T17:44:49Z",
             "shared_domains": [
               "WAR"
             ],
@@ -5821,7 +6141,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-64c179a89c68d5e9"
+          "anomaly-3f4f37cc8c55da47"
         ],
         "threat_score": 6,
         "watch_priority": 51,
@@ -5871,7 +6191,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 78,
-          "recency": 69,
+          "recency": 68,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 42
@@ -5927,6 +6247,20 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-b066da503f27dfa53b",
+            "headline": "US lawmakers call to extend immigration protections for Ukrainian refugees as renewal deadline looms",
+            "material_time": "2026-09-24T01:55:57Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "UKRAINE"
+            ]
+          },
+          {
             "claim_id": "claim-431eea3157dd619081",
             "headline": "Russian ballistic missile attack against Kyiv kills 2, injures 6 after day of drone strikes",
             "material_time": "2026-09-23T22:28:54Z",
@@ -5972,20 +6306,6 @@
             "claim_id": "claim-fd61bb206c4091502f",
             "headline": "More than 57,000 women serve as military personnel in Ukraine's Armed Forces, General Staff says",
             "material_time": "2026-09-23T17:37:54Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "UKRAINE"
-            ]
-          },
-          {
-            "claim_id": "claim-133590c3d4970f8c8a",
-            "headline": "French far-left presidential candidate Melenchon blames Ukraine's deep strikes for war escalation",
-            "material_time": "2026-09-23T16:31:57Z",
             "shared_domains": [
               "WAR"
             ],
@@ -6193,7 +6513,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 72,
+          "recency": 71,
           "evidence_type": 67,
           "historical_reliability": 80,
           "claim_maturity": 41
@@ -6520,10 +6840,10 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 100,
+          "recency": 99,
           "evidence_type": 12,
           "historical_reliability": 20,
-          "claim_maturity": 24
+          "claim_maturity": 25
         },
         "classification_reason": "Available reporting does not yet clear the credible-report or confirmation threshold.",
         "supporting_observation_ids": [
@@ -6575,6 +6895,22 @@
           "contradictory_evidence_present": false
         },
         "historical_matches": [
+          {
+            "claim_id": "claim-b066da503f27dfa53b",
+            "headline": "US lawmakers call to extend immigration protections for Ukrainian refugees as renewal deadline looms",
+            "material_time": "2026-09-24T01:55:57Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ]
+          },
           {
             "claim_id": "claim-431eea3157dd619081",
             "headline": "Russian ballistic missile attack against Kyiv kills 2, injures 6 after day of drone strikes",
@@ -6635,20 +6971,6 @@
             ],
             "shared_regions": [
               "UKRAINE"
-            ]
-          },
-          {
-            "claim_id": "claim-19b882cfa20c671a33",
-            "headline": "Zelensky reports Russia lost nearly 249,000 troops over eight months - Crypto Briefing",
-            "material_time": "2026-09-23T20:18:12Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
             ]
           }
         ],
@@ -6821,9 +7143,9 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-64c179a89c68d5e9",
-          "anomaly-e58b1976b4ec955f",
-          "anomaly-5785d92e3c378e7b"
+          "anomaly-3f4f37cc8c55da47",
+          "anomaly-88bf5e7b14d8a2fa",
+          "anomaly-30071f8fa76f675e"
         ],
         "threat_score": 1,
         "watch_priority": 63,
@@ -6853,7 +7175,7 @@
           "10257fcc4f061f1760ec"
         ],
         "first_seen": "2026-10-23T17:00:39Z",
-        "last_seen": "2026-10-23T23:29:16Z",
+        "last_seen": "2026-10-24T01:57:25Z",
         "material_time": "2026-10-23T13:40:53Z",
         "domains": [
           "ECONOMIC",
@@ -6876,7 +7198,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 66,
-          "recency": 98,
+          "recency": 97,
           "evidence_type": 40,
           "historical_reliability": 50,
           "claim_maturity": 36
@@ -6932,6 +7254,32 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-b066da503f27dfa53b",
+            "headline": "US lawmakers call to extend immigration protections for Ukrainian refugees as renewal deadline looms",
+            "material_time": "2026-09-24T01:55:57Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
+            "claim_id": "claim-830bd6f3de66ea1b5b",
+            "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+            "material_time": "2026-09-24T01:48:47Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [],
+            "shared_regions": [
+              "EUROPE"
+            ]
+          },
+          {
             "claim_id": "claim-431eea3157dd619081",
             "headline": "Russian ballistic missile attack against Kyiv kills 2, injures 6 after day of drone strikes",
             "material_time": "2026-09-23T22:28:54Z",
@@ -6965,34 +7313,6 @@
             "material_time": "2026-09-23T20:18:12Z",
             "shared_domains": [
               "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-12e5e8e4581b01f476",
-            "headline": "Russian Mi-8 Helicopter Briefly Enters Polish Airspace: F-16s Scrambled to Respond - Military Watch Magazine",
-            "material_time": "2026-09-23T18:50:00Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-b17f177edf0d96e49f",
-            "headline": "UK opposes EU delisting of 2 Russian oligarchs, calls for continued sanctions, Bloomberg reports",
-            "material_time": "2026-09-23T18:15:16Z",
-            "shared_domains": [
-              "ECONOMIC"
             ],
             "shared_actors": [
               "RUSSIA"
@@ -7161,7 +7481,7 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-64c179a89c68d5e9",
+          "anomaly-3f4f37cc8c55da47",
           "anomaly-5b5ab4b1343d2de2"
         ],
         "threat_score": 2,
@@ -7218,7 +7538,7 @@
           "corroboration": 22,
           "contradiction": 0,
           "specificity": 72,
-          "recency": 98,
+          "recency": 96,
           "evidence_type": 67,
           "historical_reliability": 79,
           "claim_maturity": 36
@@ -7288,71 +7608,71 @@
         },
         "historical_matches": [
           {
+            "claim_id": "claim-b066da503f27dfa53b",
+            "headline": "US lawmakers call to extend immigration protections for Ukrainian refugees as renewal deadline looms",
+            "material_time": "2026-09-24T01:55:57Z",
+            "shared_domains": [
+              "WAR"
+            ],
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ]
+          },
+          {
+            "claim_id": "claim-50fc0e40613d2f2359",
+            "headline": "Integrity Initiative : united kingdom - funded network framed dissent as Russian disinformation for years",
+            "material_time": "2026-09-24T01:15:00Z",
+            "shared_domains": [
+              "SECURITY"
+            ],
+            "shared_actors": [
+              "RUSSIA"
+            ],
+            "shared_regions": [
+              "RUSSIA"
+            ]
+          },
+          {
+            "claim_id": "claim-8b4542a6fdb7ba9c2e",
+            "headline": "Europeans warn of rising Russian sabotage but see no imminent NATO attack",
+            "material_time": "2026-09-24T01:11:55Z",
+            "shared_domains": [
+              "SECURITY"
+            ],
+            "shared_actors": [
+              "RUSSIA",
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "RUSSIA",
+              "UKRAINE"
+            ]
+          },
+          {
+            "claim_id": "claim-0b6ed0a17b60f0df36",
+            "headline": "Senior NATO Commander Warns Putin Is Becoming More Dangerous As Ukraine War Drags On",
+            "material_time": "2026-09-24T00:30:00Z",
+            "shared_domains": [
+              "SECURITY"
+            ],
+            "shared_actors": [
+              "UKRAINE"
+            ],
+            "shared_regions": [
+              "UKRAINE"
+            ]
+          },
+          {
             "claim_id": "claim-431eea3157dd619081",
             "headline": "Russian ballistic missile attack against Kyiv kills 2, injures 6 after day of drone strikes",
             "material_time": "2026-09-23T22:28:54Z",
             "shared_domains": [
               "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ]
-          },
-          {
-            "claim_id": "claim-6b0ccbea10a93bab83",
-            "headline": "51 countries back Ukraine in joint statement calling for Black Sea initiative as world gathers for UN General Assembly",
-            "material_time": "2026-09-23T21:16:01Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA",
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "RUSSIA",
-              "UKRAINE"
-            ]
-          },
-          {
-            "claim_id": "claim-bbacf1c254653dade6",
-            "headline": "The Evolving Role Of Ukraine’s Artillery In The Age Of Drones",
-            "material_time": "2026-09-23T20:20:36Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "UKRAINE"
-            ],
-            "shared_regions": [
-              "UKRAINE"
-            ]
-          },
-          {
-            "claim_id": "claim-19b882cfa20c671a33",
-            "headline": "Zelensky reports Russia lost nearly 249,000 troops over eight months - Crypto Briefing",
-            "material_time": "2026-09-23T20:18:12Z",
-            "shared_domains": [
-              "WAR"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-53e2415459ef10abcf",
-            "headline": "Zelenskyy warns Russia's 'General Winter' could turn against Moscow - RBC-Ukraine",
-            "material_time": "2026-09-23T19:55:22Z",
-            "shared_domains": [
-              "SECURITY"
             ],
             "shared_actors": [
               "RUSSIA",
@@ -7539,8 +7859,8 @@
           }
         ],
         "anomaly_ids": [
-          "anomaly-64c179a89c68d5e9",
-          "anomaly-e58b1976b4ec955f"
+          "anomaly-3f4f37cc8c55da47",
+          "anomaly-88bf5e7b14d8a2fa"
         ],
         "threat_score": 2,
         "watch_priority": 54,
@@ -7552,342 +7872,6 @@
           "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
           "material_time_used_for_decay": "2026-10-23T13:17:10Z"
         }
-      },
-      {
-        "id": "claim-94ff733713f6af35dc",
-        "headline": "UK plans 14-year prison sentences for subsea cable sabotage amid Russian threats - Engineering and Technology Magazine",
-        "signature_tokens": [
-          "14-year",
-          "cable",
-          "engineering",
-          "magazine",
-          "plans",
-          "prison",
-          "russian",
-          "sabotage",
-          "sentences",
-          "subsea",
-          "technology",
-          "threats"
-        ],
-        "observation_ids": [
-          "8ecf6ee19715206526f0"
-        ],
-        "first_seen": "2026-10-23T17:00:39Z",
-        "last_seen": "2026-10-23T17:00:39Z",
-        "material_time": "2026-10-23T11:06:59Z",
-        "domains": [
-          "INFRA"
-        ],
-        "regions": [
-          "RUSSIA"
-        ],
-        "actors": [
-          "RUSSIA"
-        ],
-        "state": "EARLY WARNING",
-        "confidence": 36,
-        "confidence_direction": "STABLE",
-        "confidence_components": {
-          "source_quality": 15,
-          "independence": 25,
-          "corroboration": 22,
-          "contradiction": 0,
-          "specificity": 78,
-          "recency": 96,
-          "evidence_type": 12,
-          "historical_reliability": 20,
-          "claim_maturity": 25
-        },
-        "classification_reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
-        "supporting_observation_ids": [
-          "8ecf6ee19715206526f0"
-        ],
-        "contradictory_observation_ids": [],
-        "source_count": 1,
-        "independent_provenance_count": 0,
-        "sources": [
-          "GDELT Global Discovery"
-        ],
-        "provenance_roots": [
-          "gdelt_global"
-        ],
-        "evidence": [
-          {
-            "observation_id": "8ecf6ee19715206526f0",
-            "title": "UK plans 14-year prison sentences for subsea cable sabotage amid Russian threats - Engineering and Technology Magazine",
-            "source": "GDELT Global Discovery",
-            "source_class": "discovery",
-            "provenance_root": "gdelt_global",
-            "stance": "warning",
-            "published": "2026-10-23T11:06:59Z",
-            "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOREJLSkdhdktrRTRmNmpnWkhXSXEtSGRPUjVZZXAzdzl5V1ZoZHh6cEJuVzkzUUtaeU5BbV9kelFtVTRRNDZhUy1SV2stMnUtaElpU28yVlVJY3FLT09qQ01CVVNhcURQWTd5WktXYXNzVzRTSV9uMmRHQmxGYnc2ZkdCdk5WZ0gxNlRsUGRRVTkwcEkyU050V3FVUFRMMmc5TWdFRVdKbw?oc=5",
-            "discovery_only": true
-          }
-        ],
-        "state_affiliated_reporting": false,
-        "discovery_only": true,
-        "branch_analysis": {
-          "current_observation": "UK plans 14-year prison sentences for subsea cable sabotage amid Russian threats - Engineering and Technology Magazine",
-          "plausible_explanations": [
-            "A genuine INFRA development involving RUSSIA is unfolding as reported.",
-            "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-            "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-          ],
-          "escalation_branch": "Related INFRA indicators spread, become operational, or draw additional actors into the event.",
-          "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-          "confirm_indicators": [
-            "A primary record, sensor observation, or on-record official confirmation.",
-            "Matching detail from a genuinely independent provenance root.",
-            "Observable follow-on action consistent with the reported event."
-          ],
-          "falsify_indicators": [
-            "Time-stamped primary evidence incompatible with the claim.",
-            "Independent, technically specific refutation from credible sources.",
-            "Predicted follow-on indicators fail to occur inside the stated window."
-          ],
-          "contradictory_evidence_present": false
-        },
-        "historical_matches": [
-          {
-            "claim_id": "claim-2ccdf12129630ad09f",
-            "headline": "Zelenskyy warns of painful winter for Russia if energy truce talks fail",
-            "material_time": "2026-09-23T22:14:00Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-2f086812f509724512",
-            "headline": "Ukraine war latest: Russian drone attacks on Kyiv kill 2, injure over 40 amid day of repeated strikes",
-            "material_time": "2026-09-23T17:55:09Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-79d0fdcf7de583e810",
-            "headline": "Captain Killed in Russia’s Latest Attack on Merchant Shipping",
-            "material_time": "2026-09-23T17:45:11Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-3fa625b945d13a4043",
-            "headline": "Zelenskiy Says Ukraine Ready for Maritime Truce if Russia Agrees",
-            "material_time": "2026-09-23T17:14:20Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          },
-          {
-            "claim_id": "claim-59a6b8c95a4ff95f99",
-            "headline": "Smuggled Western arms from Ukraine end up in Africa, Middle East — Russian envoy",
-            "material_time": "2026-09-23T12:04:13Z",
-            "shared_domains": [
-              "INFRA"
-            ],
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ]
-          }
-        ],
-        "cross_domain_links": [
-          {
-            "claim_id": "claim-24b280aac26861baaf",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-7fa82cd57d3200d879",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-8e9211fab1a0e16bec",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-307b86b500e3e0d2aa",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "POLITICAL",
-              "SECURITY"
-            ]
-          },
-          {
-            "claim_id": "claim-48fd86d998c90f985e",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "HUMANITARIAN",
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-8a73c7699550fdb5c4",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-c378c2c99c9405c455",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-52ee8f784be6bf4ec2",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "CYBER",
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-feac584b3f81caea38",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "INFRA",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-2323428cf3875ad879",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "HUMANITARIAN",
-              "POLITICAL",
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-650609552b0f419dcb",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          },
-          {
-            "claim_id": "claim-aef09b98a3a4dfa0ce",
-            "shared_actors": [
-              "RUSSIA"
-            ],
-            "shared_regions": [
-              "RUSSIA"
-            ],
-            "domains": [
-              "WAR"
-            ]
-          }
-        ],
-        "anomaly_ids": [
-          "anomaly-64c179a89c68d5e9"
-        ],
-        "threat_score": 3,
-        "watch_priority": 46,
-        "audit": {
-          "reason": "Preparatory, warning, or escalation indicators merit watch priority before hard confirmation.",
-          "support_count": 1,
-          "contradiction_count": 0,
-          "independent_roots": 0,
-          "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-          "material_time_used_for_decay": "2026-10-23T11:06:59Z"
-        }
       }
     ]
   },
@@ -7897,7 +7881,7 @@
     "multi_theater_coupling": 0,
     "nuclear_escalation": 31,
     "military_mobilization": 43,
-    "economic_warfare": 98,
+    "economic_warfare": 99,
     "crisis_control_failure": 0,
     "hybrid_preparation": 96
   },
@@ -7907,9 +7891,9 @@
     "multi_theater_coupling": 0,
     "nuclear_escalation": 4,
     "military_mobilization": 15,
-    "economic_warfare": 119,
+    "economic_warfare": 121,
     "crisis_control_failure": 0,
-    "hybrid_preparation": 46
+    "hybrid_preparation": 47
   },
   "formula": "Independent-provenance-capped claim contributions; verified and early-warning pressure remain separate.",
   "safeguard": "Republished stories sharing one provenance root cannot multiply pressure; speculative claims never enter Verified Pressure.",
@@ -7928,11 +7912,12 @@
       ],
       "observation_ids": [
         "e68088594c0a8e5a0863",
-        "62f75cc197aa18892443"
+        "62f75cc197aa18892443",
+        "5e350811f6b77954cb15"
       ],
       "first_seen": "2026-10-23T23:29:16Z",
-      "last_seen": "2026-10-23T23:29:16Z",
-      "material_time": "2026-10-23T22:06:20Z",
+      "last_seen": "2026-10-24T01:57:25Z",
+      "material_time": "2026-10-24T00:45:00Z",
       "domains": [
         "INFRA",
         "SECURITY",
@@ -7947,14 +7932,14 @@
         "UNITED STATES"
       ],
       "state": "CREDIBLE REPORT",
-      "confidence": 62,
-      "confidence_direction": "NEW",
+      "confidence": 61,
+      "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 81,
         "independence": 25,
         "corroboration": 22,
         "contradiction": 0,
-        "specificity": 72,
+        "specificity": 67,
         "recency": 100,
         "evidence_type": 73,
         "historical_reliability": 81,
@@ -7963,20 +7948,34 @@
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
         "e68088594c0a8e5a0863",
-        "62f75cc197aa18892443"
+        "62f75cc197aa18892443",
+        "5e350811f6b77954cb15"
       ],
       "contradictory_observation_ids": [],
-      "source_count": 2,
+      "source_count": 3,
       "independent_provenance_count": 1,
       "sources": [
         "GDELT Global Discovery",
-        "The Maritime Executive"
+        "The Maritime Executive",
+        "maritime-executive.com"
       ],
       "provenance_roots": [
         "gdelt_global",
+        "maritime-executive.com",
         "maritime_exec"
       ],
       "evidence": [
+        {
+          "observation_id": "5e350811f6b77954cb15",
+          "title": "The Blockade on Iran is Deepening – But Also Widening",
+          "source": "maritime-executive.com",
+          "source_class": "low_confidence",
+          "provenance_root": "maritime-executive.com",
+          "stance": "report",
+          "published": "2026-10-24T00:45:00Z",
+          "url": "https://maritime-executive.com/article/the-blockade-on-iran-is-deepening-but-also-widening",
+          "discovery_only": true
+        },
         {
           "observation_id": "e68088594c0a8e5a0863",
           "title": "The Blockade on Iran is Deepening – But Also Widening",
@@ -8025,55 +8024,12 @@
       },
       "historical_matches": [
         {
-          "claim_id": "claim-3cdabbc9d8b9498cc5",
-          "headline": "3 Years of Middle East Combat Altering How Navy Supplies, Maintains Fleet, Leaders Say",
-          "material_time": "2026-09-23T23:19:42Z",
+          "claim_id": "claim-830bd6f3de66ea1b5b",
+          "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+          "material_time": "2026-09-24T01:48:47Z",
           "shared_domains": [
+            "INFRA",
             "WAR"
-          ],
-          "shared_actors": [
-            "IRAN",
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "IRAN",
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-27aed814390d776860",
-          "headline": "Coast Guard Expands Base Kodiak With Two More Piers",
-          "material_time": "2026-09-23T22:33:30Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-7e1df7dc6e8bda3672",
-          "headline": "Coast Guard Awards $315 Million Kodiak Pier Contract to Support Arctic Fleet Expansion",
-          "material_time": "2026-09-23T21:34:42Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-2942007ff1e1e3addd",
-          "headline": "Iran threatens countries enforcing US airline sanctions",
-          "material_time": "2026-09-23T19:27:50Z",
-          "shared_domains": [
-            "INFRA"
           ],
           "shared_actors": [
             "IRAN"
@@ -8083,17 +8039,57 @@
           ]
         },
         {
-          "claim_id": "claim-a34aa79cca8ec519b6",
-          "headline": "Where Are The Aircraft Carriers?: September 23, 2026",
-          "material_time": "2026-09-23T19:14:35Z",
+          "claim_id": "claim-9f37d521d2b52ca05c",
+          "headline": "Giá dầu tăng gần 4 % sau những tuyên bố của Mỹ và Iran",
+          "material_time": "2026-09-24T01:30:00Z",
+          "shared_domains": [
+            "SECURITY"
+          ],
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ]
+        },
+        {
+          "claim_id": "claim-c23b0eeb6d6d1fc3fa",
+          "headline": "After Trump threat , Iran president tells UN Tehran cannot be made to surrender",
+          "material_time": "2026-09-24T01:30:00Z",
+          "shared_domains": [
+            "SECURITY"
+          ],
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ]
+        },
+        {
+          "claim_id": "claim-790874ae84936520c2",
+          "headline": "Japan PM says talks on ending Hormuz crisis should include countries that depend on strait",
+          "material_time": "2026-09-24T01:30:00Z",
+          "shared_domains": [
+            "SECURITY"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "IRAN"
+          ]
+        },
+        {
+          "claim_id": "claim-30e13007f797264c74",
+          "headline": "115 Iran-linked ships redirected: US naval blockade on Iran continues - Gulf News",
+          "material_time": "2026-09-24T01:24:03Z",
           "shared_domains": [
             "WAR"
           ],
           "shared_actors": [
-            "UNITED STATES"
+            "IRAN"
           ],
           "shared_regions": [
-            "UNITED STATES"
+            "IRAN"
           ]
         }
       ],
@@ -8253,15 +8249,15 @@
         "anomaly-e1cc2cf251bab881",
         "anomaly-f76b0d40fe5d4f08"
       ],
-      "threat_score": 15,
+      "threat_score": 14,
       "watch_priority": 56,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 2,
+        "support_count": 3,
         "contradiction_count": 0,
         "independent_roots": 1,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-10-23T22:06:20Z"
+        "material_time_used_for_decay": "2026-10-24T00:45:00Z"
       }
     },
     {
@@ -8286,7 +8282,7 @@
         "19c6b8b3261cbe8ff5c9"
       ],
       "first_seen": "2026-10-23T17:00:39Z",
-      "last_seen": "2026-10-23T23:29:16Z",
+      "last_seen": "2026-10-24T01:57:25Z",
       "material_time": "2026-10-23T17:53:55Z",
       "domains": [
         "HUMANITARIAN",
@@ -8310,10 +8306,10 @@
         "corroboration": 25,
         "contradiction": 0,
         "specificity": 72,
-        "recency": 100,
+        "recency": 99,
         "evidence_type": 67,
         "historical_reliability": 79,
-        "claim_maturity": 46
+        "claim_maturity": 47
       },
       "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
       "supporting_observation_ids": [
@@ -8378,6 +8374,23 @@
       },
       "historical_matches": [
         {
+          "claim_id": "claim-b066da503f27dfa53b",
+          "headline": "US lawmakers call to extend immigration protections for Ukrainian refugees as renewal deadline looms",
+          "material_time": "2026-09-24T01:55:57Z",
+          "shared_domains": [
+            "HUMANITARIAN",
+            "WAR"
+          ],
+          "shared_actors": [
+            "RUSSIA",
+            "UKRAINE"
+          ],
+          "shared_regions": [
+            "RUSSIA",
+            "UKRAINE"
+          ]
+        },
+        {
           "claim_id": "claim-431eea3157dd619081",
           "headline": "Russian ballistic missile attack against Kyiv kills 2, injures 6 after day of drone strikes",
           "material_time": "2026-09-23T22:28:54Z",
@@ -8427,20 +8440,6 @@
           "claim_id": "claim-19b882cfa20c671a33",
           "headline": "Zelensky reports Russia lost nearly 249,000 troops over eight months - Crypto Briefing",
           "material_time": "2026-09-23T20:18:12Z",
-          "shared_domains": [
-            "WAR"
-          ],
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ]
-        },
-        {
-          "claim_id": "claim-12e5e8e4581b01f476",
-          "headline": "Russian Mi-8 Helicopter Briefly Enters Polish Airspace: F-16s Scrambled to Respond - Military Watch Magazine",
-          "material_time": "2026-09-23T18:50:00Z",
           "shared_domains": [
             "WAR"
           ],
@@ -8624,8 +8623,8 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-64c179a89c68d5e9",
-        "anomaly-e58b1976b4ec955f",
+        "anomaly-3f4f37cc8c55da47",
+        "anomaly-88bf5e7b14d8a2fa",
         "anomaly-8b3e7ce43aab272a"
       ],
       "threat_score": 17,
@@ -8667,7 +8666,7 @@
         "IRAN"
       ],
       "state": "CREDIBLE REPORT",
-      "confidence": 62,
+      "confidence": 61,
       "confidence_direction": "STABLE",
       "confidence_components": {
         "source_quality": 78,
@@ -8675,7 +8674,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 88,
-        "recency": 88,
+        "recency": 87,
         "evidence_type": 73,
         "historical_reliability": 78,
         "claim_maturity": 37
@@ -8731,6 +8730,48 @@
       },
       "historical_matches": [
         {
+          "claim_id": "claim-830bd6f3de66ea1b5b",
+          "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+          "material_time": "2026-09-24T01:48:47Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ]
+        },
+        {
+          "claim_id": "claim-30e13007f797264c74",
+          "headline": "115 Iran-linked ships redirected: US naval blockade on Iran continues - Gulf News",
+          "material_time": "2026-09-24T01:24:03Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ]
+        },
+        {
+          "claim_id": "claim-a3740751f202e90845",
+          "headline": "US aviation sanctions disrupt Iran flights, push travellers overland",
+          "material_time": "2026-09-24T00:15:00Z",
+          "shared_domains": [
+            "ECONOMIC"
+          ],
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ]
+        },
+        {
           "claim_id": "claim-3cdabbc9d8b9498cc5",
           "headline": "3 Years of Middle East Combat Altering How Navy Supplies, Maintains Fleet, Leaders Say",
           "material_time": "2026-09-23T23:19:42Z",
@@ -8750,49 +8791,6 @@
           "material_time": "2026-09-23T19:27:50Z",
           "shared_domains": [
             "ECONOMIC"
-          ],
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ]
-        },
-        {
-          "claim_id": "claim-38e75554103b1636a9",
-          "headline": "Iran’s president hits out at ‘bully’ Trump in UN speech but signals willingness to talk",
-          "material_time": "2026-09-23T16:44:57Z",
-          "shared_domains": [
-            "TERRORISM"
-          ],
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ]
-        },
-        {
-          "claim_id": "claim-108365255289e2ab6e",
-          "headline": "Iran will 'never bend at the knee', Pezeshkian tells UN in defiant wartime address",
-          "material_time": "2026-09-23T15:49:35Z",
-          "shared_domains": [
-            "TERRORISM"
-          ],
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ]
-        },
-        {
-          "claim_id": "claim-a23db04266aa25b4de",
-          "headline": "Iran’s Pezeshkian tells UN his country is ‘victim’ of US ‘terrorism’",
-          "material_time": "2026-09-23T14:57:47Z",
-          "shared_domains": [
-            "TERRORISM",
-            "WAR"
           ],
           "shared_actors": [
             "IRAN"
@@ -8960,7 +8958,7 @@
       "anomaly_ids": [
         "anomaly-f76b0d40fe5d4f08"
       ],
-      "threat_score": 15,
+      "threat_score": 14,
       "watch_priority": 46,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
@@ -9014,7 +9012,7 @@
         "corroboration": 52,
         "contradiction": 0,
         "specificity": 63,
-        "recency": 88,
+        "recency": 87,
         "evidence_type": 79,
         "historical_reliability": 80,
         "claim_maturity": 48
@@ -9098,9 +9096,9 @@
       },
       "historical_matches": [
         {
-          "claim_id": "claim-431eea3157dd619081",
-          "headline": "Russian ballistic missile attack against Kyiv kills 2, injures 6 after day of drone strikes",
-          "material_time": "2026-09-23T22:28:54Z",
+          "claim_id": "claim-b066da503f27dfa53b",
+          "headline": "US lawmakers call to extend immigration protections for Ukrainian refugees as renewal deadline looms",
+          "material_time": "2026-09-24T01:55:57Z",
           "shared_domains": [
             "WAR"
           ],
@@ -9114,61 +9112,59 @@
           ]
         },
         {
-          "claim_id": "claim-6b0ccbea10a93bab83",
-          "headline": "51 countries back Ukraine in joint statement calling for Black Sea initiative as world gathers for UN General Assembly",
-          "material_time": "2026-09-23T21:16:01Z",
+          "claim_id": "claim-830bd6f3de66ea1b5b",
+          "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+          "material_time": "2026-09-24T01:48:47Z",
           "shared_domains": [
             "WAR"
           ],
-          "shared_actors": [
-            "RUSSIA",
-            "UKRAINE"
-          ],
+          "shared_actors": [],
           "shared_regions": [
-            "RUSSIA",
-            "UKRAINE"
+            "EUROPE"
           ]
         },
         {
-          "claim_id": "claim-bbacf1c254653dade6",
-          "headline": "The Evolving Role Of Ukraine’s Artillery In The Age Of Drones",
-          "material_time": "2026-09-23T20:20:36Z",
-          "shared_domains": [
-            "WAR"
-          ],
-          "shared_actors": [
-            "UKRAINE"
-          ],
-          "shared_regions": [
-            "UKRAINE"
-          ]
-        },
-        {
-          "claim_id": "claim-19b882cfa20c671a33",
-          "headline": "Zelensky reports Russia lost nearly 249,000 troops over eight months - Crypto Briefing",
-          "material_time": "2026-09-23T20:18:12Z",
-          "shared_domains": [
-            "WAR"
-          ],
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
-            "RUSSIA"
-          ]
-        },
-        {
-          "claim_id": "claim-53e2415459ef10abcf",
-          "headline": "Zelenskyy warns Russia's 'General Winter' could turn against Moscow - RBC-Ukraine",
-          "material_time": "2026-09-23T19:55:22Z",
+          "claim_id": "claim-45e4ec079ea43b03b2",
+          "headline": "Un loc din Europa aflat între două țări NATO a devenit terenul de testare pentru războiul hidrid al lui Putin VIDEO",
+          "material_time": "2026-09-24T01:15:00Z",
           "shared_domains": [
             "SECURITY"
           ],
           "shared_actors": [
+            "NATO"
+          ],
+          "shared_regions": [
+            "EUROPE"
+          ]
+        },
+        {
+          "claim_id": "claim-50fc0e40613d2f2359",
+          "headline": "Integrity Initiative : united kingdom - funded network framed dissent as Russian disinformation for years",
+          "material_time": "2026-09-24T01:15:00Z",
+          "shared_domains": [
+            "SECURITY"
+          ],
+          "shared_actors": [
+            "RUSSIA"
+          ],
+          "shared_regions": [
+            "RUSSIA"
+          ]
+        },
+        {
+          "claim_id": "claim-8b4542a6fdb7ba9c2e",
+          "headline": "Europeans warn of rising Russian sabotage but see no imminent NATO attack",
+          "material_time": "2026-09-24T01:11:55Z",
+          "shared_domains": [
+            "SECURITY"
+          ],
+          "shared_actors": [
+            "NATO",
             "RUSSIA",
             "UKRAINE"
           ],
           "shared_regions": [
+            "EUROPE",
             "RUSSIA",
             "UKRAINE"
           ]
@@ -9351,9 +9347,9 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-64c179a89c68d5e9",
-        "anomaly-e58b1976b4ec955f",
-        "anomaly-5785d92e3c378e7b"
+        "anomaly-3f4f37cc8c55da47",
+        "anomaly-88bf5e7b14d8a2fa",
+        "anomaly-30071f8fa76f675e"
       ],
       "threat_score": 16,
       "watch_priority": 61,
@@ -9364,326 +9360,6 @@
         "independent_roots": 2,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-10-22T17:30:00Z"
-      }
-    },
-    {
-      "id": "claim-a99cf7ebf54e471c9d",
-      "headline": "Australia targets fraudulent North Korean workers propping up nuclear program",
-      "signature_tokens": [
-        "australia",
-        "fraudulent",
-        "korean",
-        "north",
-        "nuclear",
-        "program",
-        "propping",
-        "targets",
-        "workers"
-      ],
-      "observation_ids": [
-        "97bce0c686751c1c7380"
-      ],
-      "first_seen": "2026-10-23T06:29:42Z",
-      "last_seen": "2026-10-23T06:29:42Z",
-      "material_time": "2026-10-23T02:32:50Z",
-      "domains": [
-        "ECONOMIC",
-        "NUCLEAR"
-      ],
-      "regions": [
-        "KOREAN PENINSULA"
-      ],
-      "actors": [
-        "NORTH KOREA"
-      ],
-      "state": "CREDIBLE REPORT",
-      "confidence": 61,
-      "confidence_direction": "STABLE",
-      "confidence_components": {
-        "source_quality": 84,
-        "independence": 25,
-        "corroboration": 22,
-        "contradiction": 0,
-        "specificity": 66,
-        "recency": 92,
-        "evidence_type": 67,
-        "historical_reliability": 84,
-        "claim_maturity": 36
-      },
-      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-      "supporting_observation_ids": [
-        "97bce0c686751c1c7380"
-      ],
-      "contradictory_observation_ids": [],
-      "source_count": 1,
-      "independent_provenance_count": 1,
-      "sources": [
-        "ABC Australia World"
-      ],
-      "provenance_roots": [
-        "abc_australia"
-      ],
-      "evidence": [
-        {
-          "observation_id": "97bce0c686751c1c7380",
-          "title": "Australia targets fraudulent North Korean workers propping up nuclear program",
-          "source": "ABC Australia World",
-          "source_class": "regional_local",
-          "provenance_root": "abc_australia",
-          "stance": "allegation",
-          "published": "2026-10-23T02:32:50Z",
-          "url": "https://www.abc.net.au/news/2026-10-23/penny-wong-north-korea-company-sanctions/107301184",
-          "discovery_only": false
-        }
-      ],
-      "state_affiliated_reporting": false,
-      "discovery_only": false,
-      "branch_analysis": {
-        "current_observation": "Australia targets fraudulent North Korean workers propping up nuclear program",
-        "plausible_explanations": [
-          "A genuine ECONOMIC/NUCLEAR development involving NORTH KOREA is unfolding as reported.",
-          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
-          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
-        ],
-        "escalation_branch": "Related ECONOMIC/NUCLEAR indicators spread, become operational, or draw additional actors into the event.",
-        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
-        "confirm_indicators": [
-          "A primary record, sensor observation, or on-record official confirmation.",
-          "Matching detail from a genuinely independent provenance root.",
-          "Observable follow-on action consistent with the reported event."
-        ],
-        "falsify_indicators": [
-          "Time-stamped primary evidence incompatible with the claim.",
-          "Independent, technically specific refutation from credible sources.",
-          "Predicted follow-on indicators fail to occur inside the stated window."
-        ],
-        "contradictory_evidence_present": false
-      },
-      "historical_matches": [
-        {
-          "claim_id": "claim-4c62a054e2c3e2a949",
-          "headline": "South Korea’s Lee urges U.S. to ease North Korea sanctions, report says",
-          "material_time": "2026-09-22T23:04:00Z",
-          "shared_domains": [
-            "ECONOMIC"
-          ],
-          "shared_actors": [
-            "NORTH KOREA"
-          ],
-          "shared_regions": [
-            "KOREAN PENINSULA"
-          ]
-        },
-        {
-          "claim_id": "claim-944da7963b4a14b97a",
-          "headline": "North Korea launches missiles as it dials up pressure against U.S.",
-          "material_time": "2026-09-22T13:01:00Z",
-          "shared_domains": [
-            "NUCLEAR"
-          ],
-          "shared_actors": [
-            "NORTH KOREA"
-          ],
-          "shared_regions": [
-            "KOREAN PENINSULA"
-          ]
-        },
-        {
-          "claim_id": "claim-818d28b543c7663628",
-          "headline": "North Korea’s Kim hails ‘new’ weapon thought to be hypersonic missile",
-          "material_time": "2026-09-22T05:25:00Z",
-          "shared_domains": [
-            "NUCLEAR"
-          ],
-          "shared_actors": [
-            "NORTH KOREA"
-          ],
-          "shared_regions": [
-            "KOREAN PENINSULA"
-          ]
-        },
-        {
-          "claim_id": "claim-4ff50ed48a18b23fbe",
-          "headline": "North Korea fires two ballistic missiles into the sea in latest weapons display",
-          "material_time": "2026-09-20T12:00:34Z",
-          "shared_domains": [
-            "NUCLEAR"
-          ],
-          "shared_actors": [
-            "NORTH KOREA"
-          ],
-          "shared_regions": [
-            "KOREAN PENINSULA"
-          ]
-        },
-        {
-          "claim_id": "claim-ad89978b6a56a0a7ee",
-          "headline": "North Korea fires off second apparent ballistic missile - The Japan Times",
-          "material_time": "2026-09-20T10:04:28Z",
-          "shared_domains": [
-            "NUCLEAR"
-          ],
-          "shared_actors": [
-            "NORTH KOREA"
-          ],
-          "shared_regions": [
-            "KOREAN PENINSULA"
-          ]
-        }
-      ],
-      "cross_domain_links": [
-        {
-          "claim_id": "claim-f78b888fb13ed0bf34",
-          "shared_actors": [],
-          "shared_regions": [
-            "KOREAN PENINSULA"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-d1cf0897950ab0bb40",
-          "shared_actors": [
-            "NORTH KOREA"
-          ],
-          "shared_regions": [
-            "KOREAN PENINSULA"
-          ],
-          "domains": [
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-b06f4bf45350e92937",
-          "shared_actors": [
-            "NORTH KOREA"
-          ],
-          "shared_regions": [
-            "KOREAN PENINSULA"
-          ],
-          "domains": [
-            "POLITICAL",
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-25dd8a47e2f24699ca",
-          "shared_actors": [
-            "NORTH KOREA"
-          ],
-          "shared_regions": [
-            "KOREAN PENINSULA"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-45dd4802969a029282",
-          "shared_actors": [
-            "NORTH KOREA"
-          ],
-          "shared_regions": [
-            "KOREAN PENINSULA"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-dd59adde8d529c6904",
-          "shared_actors": [
-            "NORTH KOREA"
-          ],
-          "shared_regions": [
-            "KOREAN PENINSULA"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
-        },
-        {
-          "claim_id": "claim-b75b1015c7bf8783db",
-          "shared_actors": [
-            "NORTH KOREA"
-          ],
-          "shared_regions": [
-            "KOREAN PENINSULA"
-          ],
-          "domains": [
-            "SECURITY",
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-487967f6f41ce244c0",
-          "shared_actors": [],
-          "shared_regions": [
-            "KOREAN PENINSULA"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-4336e9ab102c93a245",
-          "shared_actors": [
-            "NORTH KOREA"
-          ],
-          "shared_regions": [
-            "KOREAN PENINSULA"
-          ],
-          "domains": [
-            "CYBER"
-          ]
-        },
-        {
-          "claim_id": "claim-918b412943f76a96ef",
-          "shared_actors": [],
-          "shared_regions": [
-            "KOREAN PENINSULA"
-          ],
-          "domains": [
-            "SECURITY"
-          ]
-        },
-        {
-          "claim_id": "claim-a169cfed3cf9576ac5",
-          "shared_actors": [],
-          "shared_regions": [
-            "KOREAN PENINSULA"
-          ],
-          "domains": [
-            "WAR"
-          ]
-        },
-        {
-          "claim_id": "claim-4ac504830b4920b1c6",
-          "shared_actors": [
-            "NORTH KOREA"
-          ],
-          "shared_regions": [
-            "KOREAN PENINSULA"
-          ],
-          "domains": [
-            "POLITICAL"
-          ]
-        }
-      ],
-      "anomaly_ids": [
-        "anomaly-fc7316f56515a128"
-      ],
-      "threat_score": 14,
-      "watch_priority": 40,
-      "audit": {
-        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
-        "support_count": 1,
-        "contradiction_count": 0,
-        "independent_roots": 1,
-        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
-        "material_time_used_for_decay": "2026-10-23T02:32:50Z"
       }
     },
     {
@@ -10057,7 +9733,7 @@
         "17972aae4ddb00f2f78a"
       ],
       "first_seen": "2026-10-19T17:46:53Z",
-      "last_seen": "2026-10-23T23:29:16Z",
+      "last_seen": "2026-10-24T01:57:25Z",
       "material_time": "2026-10-19T16:18:29Z",
       "domains": [
         "INFRA",
@@ -10135,6 +9811,32 @@
       },
       "historical_matches": [
         {
+          "claim_id": "claim-688ce31c4d7be2f87b",
+          "headline": "The Robot Ships of Route 90",
+          "material_time": "2026-09-23T23:35:40Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-7c523e4251d0c29ac7",
+          "headline": "Trump greets Xi Jinping at plane as Chinese leader arrives for state visit",
+          "material_time": "2026-09-23T23:30:50Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": []
+        },
+        {
           "claim_id": "claim-3cdabbc9d8b9498cc5",
           "headline": "3 Years of Middle East Combat Altering How Navy Supplies, Maintains Fleet, Leaders Say",
           "material_time": "2026-09-23T23:19:42Z",
@@ -10174,32 +9876,6 @@
           ],
           "shared_regions": [
             "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-a34aa79cca8ec519b6",
-          "headline": "Where Are The Aircraft Carriers?: September 23, 2026",
-          "material_time": "2026-09-23T19:14:35Z",
-          "shared_domains": [
-            "WAR"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-81fcdea928c853c781",
-          "headline": "Taiwan Transfers Coast Guard Patrol Vessel to the Philippines",
-          "material_time": "2026-09-23T18:53:24Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "INDO-PACIFIC"
           ]
         }
       ],
@@ -10377,7 +10053,7 @@
         "77fcad9b48dddce18ab1"
       ],
       "first_seen": "2026-10-23T20:24:02Z",
-      "last_seen": "2026-10-23T23:29:16Z",
+      "last_seen": "2026-10-24T01:57:25Z",
       "material_time": "2026-10-23T19:13:14Z",
       "domains": [
         "ECONOMIC",
@@ -10455,6 +10131,18 @@
       },
       "historical_matches": [
         {
+          "claim_id": "claim-830bd6f3de66ea1b5b",
+          "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+          "material_time": "2026-09-24T01:48:47Z",
+          "shared_domains": [
+            "INFRA"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ]
+        },
+        {
           "claim_id": "claim-2ccdf12129630ad09f",
           "headline": "Zelenskyy warns of painful winter for Russia if energy truce talks fail",
           "material_time": "2026-09-23T22:14:00Z",
@@ -10506,20 +10194,6 @@
           ],
           "shared_regions": [
             "EUROPE",
-            "RUSSIA"
-          ]
-        },
-        {
-          "claim_id": "claim-79d0fdcf7de583e810",
-          "headline": "Captain Killed in Russia’s Latest Attack on Merchant Shipping",
-          "material_time": "2026-09-23T17:45:11Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "RUSSIA"
-          ],
-          "shared_regions": [
             "RUSSIA"
           ]
         }
@@ -10683,7 +10357,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-64c179a89c68d5e9"
+        "anomaly-3f4f37cc8c55da47"
       ],
       "threat_score": 13,
       "watch_priority": 38,
@@ -10713,7 +10387,7 @@
         "fc38681582f12ca1424f"
       ],
       "first_seen": "2026-10-23T17:00:39Z",
-      "last_seen": "2026-10-23T23:29:16Z",
+      "last_seen": "2026-10-24T01:57:25Z",
       "material_time": "2026-10-23T13:55:40Z",
       "domains": [
         "POLITICAL",
@@ -10732,7 +10406,7 @@
         "corroboration": 25,
         "contradiction": 0,
         "specificity": 71,
-        "recency": 98,
+        "recency": 97,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 47
@@ -10800,6 +10474,43 @@
       },
       "historical_matches": [
         {
+          "claim_id": "claim-830bd6f3de66ea1b5b",
+          "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+          "material_time": "2026-09-24T01:48:47Z",
+          "shared_domains": [
+            "POLITICAL",
+            "WAR"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ]
+        },
+        {
+          "claim_id": "claim-8b4542a6fdb7ba9c2e",
+          "headline": "Europeans warn of rising Russian sabotage but see no imminent NATO attack",
+          "material_time": "2026-09-24T01:11:55Z",
+          "shared_domains": [
+            "POLITICAL"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ]
+        },
+        {
+          "claim_id": "claim-11efac226d9c73a7f8",
+          "headline": "Europeans warn of rising Russian sabotage but see no imminent NATO attack",
+          "material_time": "2026-09-24T01:02:00Z",
+          "shared_domains": [
+            "POLITICAL"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ]
+        },
+        {
           "claim_id": "claim-1ffa6cef2579d67302",
           "headline": "French court confirms rape trial for PSG and Morocco star Hakimi - France 24",
           "material_time": "2026-09-23T21:32:43Z",
@@ -10817,42 +10528,6 @@
           "material_time": "2026-09-23T19:24:39Z",
           "shared_domains": [
             "POLITICAL"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ]
-        },
-        {
-          "claim_id": "claim-0a365a8b8ed164a3fa",
-          "headline": "Holy regulation? Pope in Paris to press case for 'disarming' AI",
-          "material_time": "2026-09-23T18:44:11Z",
-          "shared_domains": [
-            "POLITICAL"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ]
-        },
-        {
-          "claim_id": "claim-c960c7ee9d4c7972be",
-          "headline": "Poland scrambles jets after Russian helicopter breaches its airspace",
-          "material_time": "2026-09-23T17:59:47Z",
-          "shared_domains": [
-            "POLITICAL"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ]
-        },
-        {
-          "claim_id": "claim-cdb8fba1cfd6a9470f",
-          "headline": "Russia not to pause special military operation for talks in any format — Lavrov",
-          "material_time": "2026-09-23T17:00:01Z",
-          "shared_domains": [
-            "WAR"
           ],
           "shared_actors": [],
           "shared_regions": [
@@ -11044,7 +10719,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 71,
-        "recency": 87,
+        "recency": 86,
         "evidence_type": 79,
         "historical_reliability": 84,
         "claim_maturity": 37
@@ -11100,6 +10775,43 @@
       },
       "historical_matches": [
         {
+          "claim_id": "claim-830bd6f3de66ea1b5b",
+          "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+          "material_time": "2026-09-24T01:48:47Z",
+          "shared_domains": [
+            "POLITICAL",
+            "WAR"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ]
+        },
+        {
+          "claim_id": "claim-8b4542a6fdb7ba9c2e",
+          "headline": "Europeans warn of rising Russian sabotage but see no imminent NATO attack",
+          "material_time": "2026-09-24T01:11:55Z",
+          "shared_domains": [
+            "POLITICAL"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ]
+        },
+        {
+          "claim_id": "claim-11efac226d9c73a7f8",
+          "headline": "Europeans warn of rising Russian sabotage but see no imminent NATO attack",
+          "material_time": "2026-09-24T01:02:00Z",
+          "shared_domains": [
+            "POLITICAL"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ]
+        },
+        {
           "claim_id": "claim-1ffa6cef2579d67302",
           "headline": "French court confirms rape trial for PSG and Morocco star Hakimi - France 24",
           "material_time": "2026-09-23T21:32:43Z",
@@ -11117,42 +10829,6 @@
           "material_time": "2026-09-23T19:24:39Z",
           "shared_domains": [
             "POLITICAL"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ]
-        },
-        {
-          "claim_id": "claim-0a365a8b8ed164a3fa",
-          "headline": "Holy regulation? Pope in Paris to press case for 'disarming' AI",
-          "material_time": "2026-09-23T18:44:11Z",
-          "shared_domains": [
-            "POLITICAL"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ]
-        },
-        {
-          "claim_id": "claim-c960c7ee9d4c7972be",
-          "headline": "Poland scrambles jets after Russian helicopter breaches its airspace",
-          "material_time": "2026-09-23T17:59:47Z",
-          "shared_domains": [
-            "POLITICAL"
-          ],
-          "shared_actors": [],
-          "shared_regions": [
-            "EUROPE"
-          ]
-        },
-        {
-          "claim_id": "claim-cdb8fba1cfd6a9470f",
-          "headline": "Russia not to pause special military operation for talks in any format — Lavrov",
-          "material_time": "2026-09-23T17:00:01Z",
-          "shared_domains": [
-            "WAR"
           ],
           "shared_actors": [],
           "shared_regions": [
@@ -11331,7 +11007,7 @@
         "c53c84556461f5da2b02"
       ],
       "first_seen": "2026-10-23T20:24:02Z",
-      "last_seen": "2026-10-23T23:29:16Z",
+      "last_seen": "2026-10-24T01:57:25Z",
       "material_time": "2026-10-23T20:04:09Z",
       "domains": [
         "INFRA",
@@ -11422,9 +11098,24 @@
       },
       "historical_matches": [
         {
-          "claim_id": "claim-6abf6b509e5b0c7fc6",
-          "headline": "Senior IRGC Commander Killed In Iran Armed Clash - The Whistler Newspaper",
-          "material_time": "2026-09-23T23:06:15Z",
+          "claim_id": "claim-830bd6f3de66ea1b5b",
+          "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+          "material_time": "2026-09-24T01:48:47Z",
+          "shared_domains": [
+            "INFRA",
+            "POLITICAL"
+          ],
+          "shared_actors": [
+            "IRAN"
+          ],
+          "shared_regions": [
+            "IRAN"
+          ]
+        },
+        {
+          "claim_id": "claim-993938898c12a9d1cf",
+          "headline": "Iran, US still far apart in peace talks, Iranian official says; Pezeshkian vows no surrender - Reuters",
+          "material_time": "2026-09-24T01:32:00Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -11436,23 +11127,9 @@
           ]
         },
         {
-          "claim_id": "claim-18ae7b8374a56a3c9d",
-          "headline": "Here's what happened on day 2 of the UN General Assembly",
-          "material_time": "2026-09-23T22:06:37Z",
-          "shared_domains": [
-            "POLITICAL"
-          ],
-          "shared_actors": [
-            "IRAN"
-          ],
-          "shared_regions": [
-            "IRAN"
-          ]
-        },
-        {
-          "claim_id": "claim-0c17007da2829c35ab",
-          "headline": "Commissioner Šuica addresses the 2nd Ministerial Meeting of the Coalition of Rome for Fertiliser Access and Food Security",
-          "material_time": "2026-09-23T22:00:00Z",
+          "claim_id": "claim-4c711b18d969b42aae",
+          "headline": "Lavrov discusses explosive situation in Persian Gulf with Arab League chief",
+          "material_time": "2026-09-24T01:09:15Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -11462,9 +11139,9 @@
           ]
         },
         {
-          "claim_id": "claim-e9f021b44bfded0252",
-          "headline": "Trump should press Xi to stop support for Iran, Democratic senator says - reuters.com",
-          "material_time": "2026-09-23T21:58:24Z",
+          "claim_id": "claim-ba1bbf32ca5cf6f779",
+          "headline": "Iran's president gives a rare wartime speech at the U.N.",
+          "material_time": "2026-09-24T01:00:00Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -11476,9 +11153,9 @@
           ]
         },
         {
-          "claim_id": "claim-6cd93730afcc0c8eaa",
-          "headline": "Iran’s president tells U.N. his country ‘must be powerful so as to avoid being threatened’",
-          "material_time": "2026-09-23T21:39:49Z",
+          "claim_id": "claim-99ab6228f6c9d94963",
+          "headline": "Iran war live: Tehran says it won’t be bullied, remains open for talks",
+          "material_time": "2026-09-24T00:00:00Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -11699,7 +11376,7 @@
         "corroboration": 52,
         "contradiction": 0,
         "specificity": 77,
-        "recency": 86,
+        "recency": 85,
         "evidence_type": 73,
         "historical_reliability": 79,
         "claim_maturity": 49
@@ -11769,9 +11446,39 @@
       },
       "historical_matches": [
         {
-          "claim_id": "claim-eaed33cce1049bfb3e",
-          "headline": "US, China to extend trade de-escalation arrangements — US Treasury secretary",
-          "material_time": "2026-09-23T23:10:41Z",
+          "claim_id": "claim-830bd6f3de66ea1b5b",
+          "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+          "material_time": "2026-09-24T01:48:47Z",
+          "shared_domains": [
+            "INFRA",
+            "POLITICAL"
+          ],
+          "shared_actors": [
+            "CHINA"
+          ],
+          "shared_regions": [
+            "CHINA"
+          ]
+        },
+        {
+          "claim_id": "claim-38d933c004e41418b2",
+          "headline": "Trump’s retreat from U.S. allies puts Taiwan in jeopardy",
+          "material_time": "2026-09-24T01:39:00Z",
+          "shared_domains": [
+            "POLITICAL"
+          ],
+          "shared_actors": [
+            "CHINA"
+          ],
+          "shared_regions": [
+            "CHINA",
+            "TAIWAN"
+          ]
+        },
+        {
+          "claim_id": "claim-2f8be02cfa4d8a4b83",
+          "headline": "Trump to raise detainees with Xi, but other rights issues may not come up",
+          "material_time": "2026-09-24T01:38:00Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -11783,9 +11490,9 @@
           ]
         },
         {
-          "claim_id": "claim-4f65a512b9fc370dd7",
-          "headline": "The hip side of Japan the tourists haven’t figured out yet",
-          "material_time": "2026-09-23T23:00:00Z",
+          "claim_id": "claim-05d6eb287e50e30442",
+          "headline": "Japan returns wrongly collected remains to Kazakhstan and Myanmar",
+          "material_time": "2026-09-24T01:33:00Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -11795,37 +11502,9 @@
           ]
         },
         {
-          "claim_id": "claim-ab357481bee134ceba",
-          "headline": "Trump greets China’s Xi Jinping on arrival for three-day US trip",
-          "material_time": "2026-09-23T22:56:41Z",
-          "shared_domains": [
-            "INFRA"
-          ],
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ]
-        },
-        {
-          "claim_id": "claim-77c7940485130969e9",
-          "headline": "Xi and Trump seek safe AI without slowing the race for supremacy",
-          "material_time": "2026-09-23T22:22:00Z",
-          "shared_domains": [
-            "POLITICAL"
-          ],
-          "shared_actors": [
-            "CHINA"
-          ],
-          "shared_regions": [
-            "CHINA"
-          ]
-        },
-        {
-          "claim_id": "claim-bf8d3f65e3e6ccf7c9",
-          "headline": "Trump greets Xi at aircraft stairs after his arrival in US",
-          "material_time": "2026-09-23T22:17:36Z",
+          "claim_id": "claim-c285dfb99149e918e1",
+          "headline": "Red carpet for Xi as Trump seeks to steady US-China ties - malaymail.com",
+          "material_time": "2026-09-24T01:25:31Z",
           "shared_domains": [
             "POLITICAL"
           ],
@@ -12012,7 +11691,7 @@
         "c9ee140deecc31596d25"
       ],
       "first_seen": "2026-10-21T18:17:27Z",
-      "last_seen": "2026-10-23T23:29:16Z",
+      "last_seen": "2026-10-24T01:57:25Z",
       "material_time": "2026-10-21T16:59:35Z",
       "domains": [
         "WAR"
@@ -12032,7 +11711,7 @@
         "corroboration": 22,
         "contradiction": 0,
         "specificity": 87,
-        "recency": 81,
+        "recency": 80,
         "evidence_type": 73,
         "historical_reliability": 86,
         "claim_maturity": 39
@@ -12088,6 +11767,18 @@
       },
       "historical_matches": [
         {
+          "claim_id": "claim-830bd6f3de66ea1b5b",
+          "headline": "Trump gives Xi rare airport welcome as Chinese leader begins US state visit - France 24",
+          "material_time": "2026-09-24T01:48:47Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [],
+          "shared_regions": [
+            "EUROPE"
+          ]
+        },
+        {
           "claim_id": "claim-cdb8fba1cfd6a9470f",
           "headline": "Russia not to pause special military operation for talks in any format — Lavrov",
           "material_time": "2026-09-23T17:00:01Z",
@@ -12135,18 +11826,6 @@
           "shared_actors": [
             "NATO"
           ],
-          "shared_regions": [
-            "EUROPE"
-          ]
-        },
-        {
-          "claim_id": "claim-a23db04266aa25b4de",
-          "headline": "Iran’s Pezeshkian tells UN his country is ‘victim’ of US ‘terrorism’",
-          "material_time": "2026-09-23T14:57:47Z",
-          "shared_domains": [
-            "WAR"
-          ],
-          "shared_actors": [],
           "shared_regions": [
             "EUROPE"
           ]
@@ -12292,7 +11971,7 @@
         }
       ],
       "anomaly_ids": [
-        "anomaly-5785d92e3c378e7b"
+        "anomaly-30071f8fa76f675e"
       ],
       "threat_score": 15,
       "watch_priority": 34,
@@ -12659,13 +12338,9 @@
           ]
         }
       ],
-      "anomaly_ids": [
-        "anomaly-64c179a89c68d5e9",
-        "anomaly-e58b1976b4ec955f",
-        "anomaly-e1cc2cf251bab881"
-      ],
+      "anomaly_ids": [],
       "threat_score": 11,
-      "watch_priority": 49,
+      "watch_priority": 25,
       "audit": {
         "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
         "support_count": 1,
@@ -12690,7 +12365,7 @@
         "a0e92bd01db38d8c90bc"
       ],
       "first_seen": "2026-10-23T20:24:02Z",
-      "last_seen": "2026-10-23T23:29:16Z",
+      "last_seen": "2026-10-24T01:57:25Z",
       "material_time": "2026-10-23T19:15:43Z",
       "domains": [
         "WAR"
@@ -12767,6 +12442,32 @@
       },
       "historical_matches": [
         {
+          "claim_id": "claim-688ce31c4d7be2f87b",
+          "headline": "The Robot Ships of Route 90",
+          "material_time": "2026-09-23T23:35:40Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-7c523e4251d0c29ac7",
+          "headline": "Trump greets Xi Jinping at plane as Chinese leader arrives for state visit",
+          "material_time": "2026-09-23T23:30:50Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": []
+        },
+        {
           "claim_id": "claim-3cdabbc9d8b9498cc5",
           "headline": "3 Years of Middle East Combat Altering How Navy Supplies, Maintains Fleet, Leaders Say",
           "material_time": "2026-09-23T23:19:42Z",
@@ -12798,34 +12499,6 @@
           "claim_id": "claim-4a0c284eadb0192ba8",
           "headline": "Steam catapults? US Navy appears to be sticking with electromagnetics on carriers",
           "material_time": "2026-09-23T18:22:04Z",
-          "shared_domains": [
-            "WAR"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-16ab3b4f8bea9373bd",
-          "headline": "Putin to be invited to G20 Summit in Miami, Rubio reveals",
-          "material_time": "2026-09-23T15:38:28Z",
-          "shared_domains": [
-            "WAR"
-          ],
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ]
-        },
-        {
-          "claim_id": "claim-5854d5692964b2e5ff",
-          "headline": "Greenland welcomes US military pact but trust still shaky",
-          "material_time": "2026-09-23T15:25:44Z",
           "shared_domains": [
             "WAR"
           ],
@@ -12960,18 +12633,6 @@
           ]
         },
         {
-          "claim_id": "claim-9927dcf0de320f8598",
-          "shared_actors": [
-            "UNITED STATES"
-          ],
-          "shared_regions": [
-            "UNITED STATES"
-          ],
-          "domains": [
-            "BIO"
-          ]
-        },
-        {
           "claim_id": "claim-107207e1187eac6028",
           "shared_actors": [
             "UNITED STATES"
@@ -12980,6 +12641,16 @@
           "domains": [
             "HUMANITARIAN",
             "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-bb974549ebae29f13d",
+          "shared_actors": [],
+          "shared_regions": [
+            "INDO-PACIFIC"
+          ],
+          "domains": [
+            "POLITICAL"
           ]
         }
       ],
@@ -13017,7 +12688,7 @@
         "6addbdac386e4aeb5e34"
       ],
       "first_seen": "2026-10-22T15:38:29Z",
-      "last_seen": "2026-10-23T23:29:16Z",
+      "last_seen": "2026-10-24T01:57:25Z",
       "material_time": "2026-10-22T18:55:57Z",
       "domains": [
         "ECONOMIC"
@@ -13037,7 +12708,7 @@
         "corroboration": 82,
         "contradiction": 0,
         "specificity": 80,
-        "recency": 89,
+        "recency": 88,
         "evidence_type": 79,
         "historical_reliability": 80,
         "claim_maturity": 59
@@ -13334,6 +13005,329 @@
         "independent_roots": 3,
         "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
         "material_time_used_for_decay": "2026-10-22T18:55:57Z"
+      }
+    },
+    {
+      "id": "claim-58382ac164c4d71a49",
+      "headline": "Theodore Roosevelt Carrier Strike Group Sails in the Philippine Sea for Keen Sword Drills",
+      "signature_tokens": [
+        "carrier",
+        "drills",
+        "group",
+        "keen",
+        "philippine",
+        "roosevelt",
+        "sails",
+        "sea",
+        "strike",
+        "sword",
+        "theodore"
+      ],
+      "observation_ids": [
+        "1a983824b66f1c6dedc0"
+      ],
+      "first_seen": "2026-10-22T19:29:57Z",
+      "last_seen": "2026-10-24T01:57:25Z",
+      "material_time": "2026-10-22T16:02:08Z",
+      "domains": [
+        "WAR"
+      ],
+      "regions": [
+        "INDO-PACIFIC",
+        "UNITED STATES"
+      ],
+      "actors": [
+        "UNITED STATES"
+      ],
+      "state": "CREDIBLE REPORT",
+      "confidence": 64,
+      "confidence_direction": "STABLE",
+      "confidence_components": {
+        "source_quality": 86,
+        "independence": 25,
+        "corroboration": 22,
+        "contradiction": 0,
+        "specificity": 87,
+        "recency": 87,
+        "evidence_type": 73,
+        "historical_reliability": 86,
+        "claim_maturity": 37
+      },
+      "classification_reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+      "supporting_observation_ids": [
+        "1a983824b66f1c6dedc0"
+      ],
+      "contradictory_observation_ids": [],
+      "source_count": 1,
+      "independent_provenance_count": 1,
+      "sources": [
+        "USNI News"
+      ],
+      "provenance_roots": [
+        "usni_news"
+      ],
+      "evidence": [
+        {
+          "observation_id": "1a983824b66f1c6dedc0",
+          "title": "Theodore Roosevelt Carrier Strike Group Sails in the Philippine Sea for Keen Sword Drills",
+          "source": "USNI News",
+          "source_class": "specialist",
+          "provenance_root": "usni_news",
+          "stance": "report",
+          "published": "2026-10-22T16:02:08Z",
+          "url": "https://news.usni.org/2026/10/22/theodore-roosevelt-carrier-strike-group-sails-in-the-philippine-sea-for-keen-sword-drills",
+          "discovery_only": false
+        }
+      ],
+      "state_affiliated_reporting": false,
+      "discovery_only": false,
+      "branch_analysis": {
+        "current_observation": "Theodore Roosevelt Carrier Strike Group Sails in the Philippine Sea for Keen Sword Drills",
+        "plausible_explanations": [
+          "A genuine WAR development involving UNITED STATES is unfolding as reported.",
+          "Routine, defensive, coercive, or signaling activity is being interpreted as escalation.",
+          "Incomplete sourcing, recycled attribution, or information operations are distorting the picture."
+        ],
+        "escalation_branch": "Related WAR indicators spread, become operational, or draw additional actors into the event.",
+        "de_escalation_branch": "Independent evidence fails to appear, activity reverses, or authoritative clarification narrows the claim.",
+        "confirm_indicators": [
+          "A primary record, sensor observation, or on-record official confirmation.",
+          "Matching detail from a genuinely independent provenance root.",
+          "Observable follow-on action consistent with the reported event."
+        ],
+        "falsify_indicators": [
+          "Time-stamped primary evidence incompatible with the claim.",
+          "Independent, technically specific refutation from credible sources.",
+          "Predicted follow-on indicators fail to occur inside the stated window."
+        ],
+        "contradictory_evidence_present": false
+      },
+      "historical_matches": [
+        {
+          "claim_id": "claim-688ce31c4d7be2f87b",
+          "headline": "The Robot Ships of Route 90",
+          "material_time": "2026-09-23T23:35:40Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-7c523e4251d0c29ac7",
+          "headline": "Trump greets Xi Jinping at plane as Chinese leader arrives for state visit",
+          "material_time": "2026-09-23T23:30:50Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": []
+        },
+        {
+          "claim_id": "claim-3cdabbc9d8b9498cc5",
+          "headline": "3 Years of Middle East Combat Altering How Navy Supplies, Maintains Fleet, Leaders Say",
+          "material_time": "2026-09-23T23:19:42Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-a34aa79cca8ec519b6",
+          "headline": "Where Are The Aircraft Carriers?: September 23, 2026",
+          "material_time": "2026-09-23T19:14:35Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        },
+        {
+          "claim_id": "claim-4a0c284eadb0192ba8",
+          "headline": "Steam catapults? US Navy appears to be sticking with electromagnetics on carriers",
+          "material_time": "2026-09-23T18:22:04Z",
+          "shared_domains": [
+            "WAR"
+          ],
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ]
+        }
+      ],
+      "cross_domain_links": [
+        {
+          "claim_id": "claim-307b86b500e3e0d2aa",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-48fd86d998c90f985e",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "HUMANITARIAN",
+            "POLITICAL",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-8415fb274d363dcea6",
+          "shared_actors": [],
+          "shared_regions": [
+            "INDO-PACIFIC"
+          ],
+          "domains": [
+            "POLITICAL",
+            "SECURITY"
+          ]
+        },
+        {
+          "claim_id": "claim-4711b8d748cb4254a4",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "HUMANITARIAN",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-9097b1a031c79bafe7",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "HUMANITARIAN",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-06e430d279df2520ec",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "HUMANITARIAN",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-2521ba96a7633a19a6",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
+        },
+        {
+          "claim_id": "claim-dc701a3829ce2e2355",
+          "shared_actors": [],
+          "shared_regions": [
+            "INDO-PACIFIC"
+          ],
+          "domains": [
+            "CYBER"
+          ]
+        },
+        {
+          "claim_id": "claim-f7cfdb8546dacd237d",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "INFRA",
+            "SECURITY",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-3648291cad32ccfdd8",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [
+            "UNITED STATES"
+          ],
+          "domains": [
+            "BIO"
+          ]
+        },
+        {
+          "claim_id": "claim-107207e1187eac6028",
+          "shared_actors": [
+            "UNITED STATES"
+          ],
+          "shared_regions": [],
+          "domains": [
+            "HUMANITARIAN",
+            "WAR"
+          ]
+        },
+        {
+          "claim_id": "claim-bb974549ebae29f13d",
+          "shared_actors": [],
+          "shared_regions": [
+            "INDO-PACIFIC"
+          ],
+          "domains": [
+            "POLITICAL"
+          ]
+        }
+      ],
+      "anomaly_ids": [
+        "anomaly-e1cc2cf251bab881"
+      ],
+      "threat_score": 13,
+      "watch_priority": 32,
+      "audit": {
+        "reason": "Credible sourcing clears the reporting threshold but the confirmation gate is not yet met.",
+        "support_count": 1,
+        "contradiction_count": 0,
+        "independent_roots": 1,
+        "confidence_formula": "23% source + 16% independence + 14% corroboration + 12% specificity + 12% recency + 10% evidence type + 8% historical reliability + 5% maturity - 35% contradiction",
+        "material_time_used_for_decay": "2026-10-22T16:02:08Z"
       }
     }
   ]
