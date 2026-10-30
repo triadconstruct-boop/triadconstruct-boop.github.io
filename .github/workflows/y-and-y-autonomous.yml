@@ -37,10 +37,13 @@ jobs:
         run: |
           python3 -m py_compile scripts/y_and_y_autonomous.py scripts/y_and_y_signal_refiner.py scripts/yy_engine/*.py
           node --check assets/y-and-y-live.js
+          node --check assets/worldwatch-views.js
           node --check assets/edges.js
 
       - name: Run historical and regression tests
-        run: python3 -m unittest discover -s tests -v
+        run: |
+          python3 -m unittest discover -s tests -v
+          node tests/test_worldwatch_views.cjs
 
       - name: Collect and analyze public sources
         run: python3 scripts/y_and_y_autonomous.py
@@ -105,3 +108,4 @@ jobs:
           done
           echo "Y&Y publish failed after three race-safe attempts." >&2
           exit 1
+

@@ -8,6 +8,10 @@ GitHub Pages serves the main portal at `yyrv.net`. Supporting project repositori
 
 ## Reading system state
 
+WORLDWATCH opens on a 24-report worldwide overview that rotates through geographic desks and topics. The Region and Conflict / Topic dropdowns drill into the same evidence states; regional views retain the existing priority order and offer additional reports through “Show more reports.” Headline geography sets the main browsing desk; ambiguous multi-region briefings remain global. Desk labels describe a story's subject geography, not a verified incident location.
+
+The WORLDWATCH export reserves regional and conflict/topic coverage before its 250-record limit, so a busy conflict cannot consume every slot before other regions reach the interface. The worldwide overview assigns each report to one main desk to avoid counting a multi-region story several times. Confidence, threat, watch priority, source collection, and the other tools' selection rules remain unchanged. A zero count indicates no matching exported reports, not that a region is quiet. Earlier curated briefings are preserved in a closed archive below the live view.
+
 | Status | Interpretation |
 |---|---|
 | Active with coverage | Active claims and at least 90% useful configured coverage |
@@ -25,4 +29,5 @@ GitHub Pages serves the main portal at `yyrv.net`. Supporting project repositori
 3. Re-run the workflow once for transient failures; do not hide persistent gaps.
 4. For rule changes, run offline reanalysis plus all tests and validators.
 5. Never manually relabel a claim by editing generated JSON. Change evidence/rules, add a reviewed override mechanism, or record an explicit source correction.
+
 

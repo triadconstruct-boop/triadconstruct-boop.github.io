@@ -28,6 +28,9 @@ def main() -> int:
         raise SystemExit("shared UI does not expose every required state/signal label")
     if 'option.value = "/edges/"' not in asset or "registerPortalRoute" not in asset:
         raise SystemExit("EDGES is missing from the portal selector registration")
+    worldwatch = (ROOT / "worldwatch" / "index.html").read_text(encoding="utf-8")
+    if "worldwatch-live-mount" not in worldwatch or "worldwatch-views.js" not in worldwatch or not (ROOT / "assets" / "worldwatch-views.js").exists():
+        raise SystemExit("WORLDWATCH geographic view or its script is missing")
     edges = (ROOT / "edges" / "index.html").read_text(encoding="utf-8")
     if any(label not in edges for label in ("REMOVE NAMES. LEAVE EDGES.", "DIRECT", "REPORTED", "ANALYTICAL", "HISTORICAL", "NON-INFERENCE RULE")):
         raise SystemExit("EDGES evidence boundaries are incomplete")
@@ -41,3 +44,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

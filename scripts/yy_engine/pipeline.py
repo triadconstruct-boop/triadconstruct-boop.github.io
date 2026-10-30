@@ -23,6 +23,7 @@ from .analysis import (
 )
 from .ingest import collect_sources, load_catalog
 from .relationships import build_edges_product
+from .worldwatch import build_worldwatch
 from .util import iso_z, load_json, parse_time, utcnow, write_json, write_json_archive
 
 
@@ -197,7 +198,7 @@ def run(root: Path, offline: bool = False, now: dt.datetime | None = None) -> di
         and (claim.get("watch_priority", 0) >= 24 or claim.get("state") in ("CONFIRMED", "REFUTED"))
         and _is_reported_signal(claim)
     ]
-    strategic_claims = sorted(
+    ranked_claims = sorted(
         recent_claims,
         key=lambda claim: (
             now - parse_time(claim.get("material_time")) <= dt.timedelta(hours=24),
@@ -205,7 +206,8 @@ def run(root: Path, offline: bool = False, now: dt.datetime | None = None) -> di
             claim.get("watch_priority", 0), claim.get("material_time", ""),
         ),
         reverse=True,
-    )[:250]
+    )
+    strategic_claims = ranked_claims[:250]
     observation_by_id = {row["id"]: row for row in observations}
     atlas_claims = [
         claim for claim in strategic_claims
@@ -224,7 +226,7 @@ def run(root: Path, offline: bool = False, now: dt.datetime | None = None) -> di
     write_json(data / "edges-live.json", edges_product)
     write_json(data / "autonomy-status.json", status)
     write_json(data / "live-events.json", {"generated_at": iso_z(now), "events": live_observations})
-    write_json(data / "worldwatch-live.json", {"generated_at": iso_z(now), "claims": strategic_claims, "state_counts": state_counts})
+    write_json(data / "worldwatch-live.json", build_worldwatch(ranked_claims, iso_z(now), state_counts))
     write_json(data / "atlas-live.json", {"generated_at": iso_z(now), "claims": atlas_claims})
     write_json(data / "infrawatch-live.json", {"generated_at": iso_z(now), "claims": infra_claims})
     write_json(data / "trfk-live.json", {"generated_at": iso_z(now), "claims": trafficking_claims})
@@ -259,3 +261,4 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

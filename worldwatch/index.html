@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A terminal-style strategic intelligence archive for the Ronin 1:1-world setting.">
+  <meta name="description" content="Worldwide reporting with geographic overviews and regional conflict views.">
   <title>Y&amp;Y // World Watch</title>
   <style>
     :root {
@@ -153,6 +153,10 @@
     }
   
     .portal-home{position:fixed;top:12px;right:12px;z-index:50;display:inline-block;padding:6px 9px;border:1px solid #ff2a2a;background:#030000;color:#ff2a2a;text-decoration:none;font:700 11px/1 "Courier New",monospace;letter-spacing:.14em;box-shadow:0 0 10px rgba(255,42,42,.18)}.portal-home:hover,.portal-home:focus{background:#ff2a2a;color:#030000;outline:none}
+    #worldwatch-archive{margin:24px 0;border:1px solid #5d1010;padding:0 14px}
+    #worldwatch-archive>summary{padding:16px 0;color:#b87777;font-size:12px;letter-spacing:.06em;list-style:revert}
+    #worldwatch-archive[open]>summary{border-bottom:1px solid #5d1010;margin-bottom:14px}
+    #worldwatch-archive .status-grid{border-top:1px solid #5d1010}
 </style>
 </head>
 <body><a class="portal-home" href="/" aria-label="Return to Y and Y system selector">Y&amp;Y</a>
@@ -170,7 +174,11 @@
       </div>
     </header>
 
-    <section class="status-grid" aria-label="Watch summary">
+    <div id="worldwatch-live-mount"><p role="status">Loading current worldwide reporting…</p></div>
+
+    <details id="worldwatch-archive">
+    <summary>EARLIER BRIEFINGS · 30 AUG–02 SEP 2026</summary>
+    <section class="status-grid" aria-label="Archive summary">
       <div><span>ARCHIVE</span><strong id="archive-count">00</strong></div>
       <div><span>CONFIRMED</span><strong id="confirmed-count">00</strong></div>
       <div><span>WARNINGS</span><strong id="warning-count">00</strong></div>
@@ -188,15 +196,17 @@
 
     <section aria-labelledby="feed-title">
       <div class="feed-heading">
-        <h2 id="feed-title">INTELLIGENCE FEED</h2>
+        <h2 id="feed-title">ARCHIVED INTELLIGENCE FEED</h2>
         <span id="record-count">0 RECORDS RETURNED</span>
       </div>
       <div id="feed"></div>
     </section>
 
+    </details>
+
     <footer>
       <span>END OF TRANSMISSION</span>
-      <span>STATIC ARCHIVE SNAPSHOT // SOURCES OPEN IN NEW WINDOW</span>
+      <span>WORLDWIDE REPORTING // SOURCES OPEN IN NEW WINDOW</span>
     </footer>
   </main>
 
@@ -1264,6 +1274,7 @@
     setInterval(updateClock, 1000);
     render();
   </script>
+  <script src="/assets/worldwatch-views.js" defer></script>
   <script src="/assets/y-and-y-live.js" defer></script>
 </body>
 </html>

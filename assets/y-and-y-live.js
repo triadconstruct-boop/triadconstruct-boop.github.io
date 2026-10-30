@@ -66,6 +66,7 @@
       #yy-dual-layer{width:min(1120px,calc(100% - 28px));margin:14px auto 22px;padding:12px}.yy-dual-title{color:var(--yy-red);font-size:11px;letter-spacing:.12em;font-weight:900;margin-bottom:8px}.yy-dual-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.yy-signal-box{border:1px solid #351414;padding:10px;background:#070202}.yy-signal-box h3{margin:0;color:#c7aaaa;font-size:11px;letter-spacing:.07em}.yy-signal-score{font-size:30px;font-weight:900;color:var(--yy-red);line-height:1.2}.yy-signal-box p{margin:3px 0;color:#9f7a7a;font-size:10px}
       @media(max-width:680px){#yy-live-panel{right:7px;bottom:7px;width:calc(100vw - 14px);max-height:66vh}.yy-layer-head{display:block}.yy-coverage{text-align:left;margin-top:7px}.yy-dual-grid{grid-template-columns:1fr}}
       @media print{#yy-live-panel{display:none!important}}
+      #worldwatch-live-mount #yy-intel-layer{width:100%;margin:18px 0 24px;padding:18px}.yy-geography{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0 8px}.yy-select-label{display:flex;flex-direction:column;gap:7px;color:#ba9999;font-size:11px;letter-spacing:.08em}.yy-select{width:100%;min-height:44px;border:1px solid #703030;border-radius:0;background:#100404;color:#f4dfdf;padding:9px 30px 9px 10px;font:13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.yy-select:focus-visible,.yy-filter:focus-visible,.yy-more:focus-visible{outline:2px solid #ff7777;outline-offset:3px}.yy-view-summary{margin:14px 0;color:#cbaaaa;font-size:12px}.yy-view-note{margin:8px 0 14px;color:#a48787;font-size:11px}.yy-region-label{display:block;color:#ff8f8f;font-size:10px;letter-spacing:.07em;margin-bottom:8px}.yy-more{display:block;min-height:44px;margin:18px auto 0;padding:10px 22px;border:1px solid #823030;background:#200606;color:#f0dede;font:12px ui-monospace,monospace;cursor:pointer}.yy-more[hidden]{display:none}.yy-coverage{font-size:11px}.yy-region-counts{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0}.yy-region-jump{border:1px solid #482020;background:#0c0303;color:#bd9999;padding:7px 9px;font:10px ui-monospace,monospace;cursor:pointer}.yy-region-jump[aria-pressed="true"]{color:#fff;border-color:#e94040}.yy-region-jump:focus-visible{outline:2px solid #ff7777;outline-offset:2px}@media(max-width:600px){.yy-geography{grid-template-columns:1fr}#worldwatch-live-mount #yy-intel-layer{padding:12px}.yy-card-top{align-items:flex-start;flex-wrap:wrap}.yy-scores{white-space:normal}}
     `;
     document.head.appendChild(style);
   }
@@ -192,30 +193,128 @@
     section.id = "yy-intel-layer";
     const head = node("div", "yy-layer-head");
     const copy = node("div");
-    copy.append(node("h2", "", "LIVE LAYERED INTELLIGENCE"), node("p", "", "What we know → what is credibly reported → what we suspect → why → what would prove or disprove it → what it could become. Curated WORLDWATCH remains below."));
-    head.append(copy, node("div", "yy-coverage", `${status.situation || "UNASSESSED"}\n${status.source_health_percent || 0}% COVERAGE`));
+    copy.append(node("h2", "", "WORLDWIDE OVERVIEW"), node("p", "", "Reporting from across the world. Choose a region, then a conflict or topic, to explore the developments behind the overview."));
+    head.append(copy, node("div", "yy-coverage", `${status.sources_ok || 0}/${status.sources_total || 0} SOURCES CURRENT`));
     section.appendChild(head);
-    const filters = node("div", "yy-filters");
-    const grid = node("div", "yy-claim-grid");
-    const allClaims = claimsFrom(data);
-    const show = selected => {
-      grid.replaceChildren();
-      const selectedClaims = allClaims.filter(claim => selected === "ALL" || claim.state === selected);
-      if (!selectedClaims.length) grid.appendChild(node("div", "yy-empty", "No claims in this state. This is not proof of absence; consult source coverage and blind spots."));
-      selectedClaims.slice(0, 80).forEach(claim => grid.appendChild(renderCard(claim)));
+    const regions = data.geography?.regions || [{id: "global", label: "Global & Cross-border", conflicts: []}];
+    const legacyRegions = {RUSSIA: "europe-eurasia", UKRAINE: "europe-eurasia", EUROPE: "europe-eurasia", IRAN: "middle-east-north-africa", "ISRAEL/PALESTINE": "middle-east-north-africa", "MIDDLE EAST": "middle-east-north-africa", AFRICA: "sub-saharan-africa", CHINA: "east-asia-pacific", TAIWAN: "east-asia-pacific", "KOREAN PENINSULA": "east-asia-pacific", "INDO-PACIFIC": "east-asia-pacific", "UNITED STATES": "north-america", "LATIN AMERICA": "latin-america-caribbean"};
+    const allClaims = claimsFrom(data).map(claim => {
+      if (claim.worldwatch) return claim;
+      const ids = [...new Set((claim.regions || []).map(tag => legacyRegions[tag]).filter(Boolean))];
+      return {...claim, worldwatch: {primary_region: ids.length === 1 ? ids[0] : "global", regions: ids.length ? ids : ["global"], conflicts: []}};
+    });
+    const geography = node("div", "yy-geography");
+    const makeSelect = (id, text) => {
+      const field = node("div", "yy-select-label");
+      const label = node("label", "yy-select-label", text);
+      label.htmlFor = id;
+      const select = node("select", "yy-select");
+      select.id = id;
+      field.append(label, select);
+      geography.appendChild(field);
+      return select;
     };
-    STATES.forEach((state, index) => {
-      const button = node("button", "yy-filter", state);
+    const regionSelect = makeSelect("yy-region-select", "REGION");
+    const conflictSelect = makeSelect("yy-conflict-select", "CONFLICT / TOPIC");
+    const addOption = (parent, value, label) => {
+      const option = node("option", "", label);
+      option.value = value;
+      parent.appendChild(option);
+    };
+    addOption(regionSelect, "overview", "Worldwide overview · regional mix");
+    addOption(regionSelect, "all", "All regions · priority order");
+    regions.forEach(region => addOption(regionSelect, region.id, `${region.label} (${region.count ?? allClaims.filter(claim => claim.worldwatch.regions.includes(region.id)).length})`));
+    const populateConflicts = () => {
+      conflictSelect.replaceChildren();
+      addOption(conflictSelect, "all", "All conflicts & topics");
+      const scoped = regions.filter(region => ["overview", "all", region.id].includes(regionSelect.value));
+      scoped.forEach(region => {
+        if (!region.conflicts?.length) return;
+        const group = node("optgroup");
+        group.label = region.label;
+        region.conflicts.forEach(conflict => addOption(group, conflict.id, `${conflict.label} (${conflict.count})`));
+        conflictSelect.appendChild(group);
+      });
+      conflictSelect.disabled = !scoped.some(region => region.conflicts?.length);
+    };
+    populateConflicts();
+    section.appendChild(geography);
+    const regionCounts = node("div", "yy-region-counts");
+    regionCounts.setAttribute("aria-label", "Browse regions");
+    regions.forEach(region => {
+      const button = node("button", "yy-region-jump", `${region.label} · ${region.count ?? 0}`);
+      button.type = "button";
+      button.dataset.region = region.id;
+      button.setAttribute("aria-pressed", "false");
+      button.addEventListener("click", () => { regionSelect.value = region.id; populateConflicts(); show(true); });
+      regionCounts.appendChild(button);
+    });
+    section.appendChild(regionCounts);
+    const filters = node("div", "yy-filters");
+    filters.setAttribute("aria-label", "Filter by evidence state");
+    const grid = node("div", "yy-claim-grid");
+    grid.id = "yy-worldwatch-cards";
+    const summary = node("p", "yy-view-summary");
+    summary.setAttribute("role", "status");
+    summary.setAttribute("aria-live", "polite");
+    const note = node("p", "yy-view-note");
+    const more = node("button", "yy-more", "Show more reports");
+    more.type = "button";
+    more.setAttribute("aria-controls", grid.id);
+    let state = "ALL";
+    let visibleCount = 24;
+    const show = (reset = false) => {
+      if (reset) visibleCount = 24;
+      grid.replaceChildren();
+      const selectedClaims = window.WorldwatchViews.selectClaims(allClaims, regions, {region: regionSelect.value, conflict: conflictSelect.value, state, limit: data.geography?.overview_limit || 24});
+      const visible = selectedClaims.slice(0, visibleCount);
+      const desk = regions.find(region => region.id === regionSelect.value);
+      const selectedConflict = regions.flatMap(region => region.conflicts || []).find(conflict => conflict.id === conflictSelect.value);
+      const label = selectedConflict?.label || desk?.label || (regionSelect.value === "overview" ? "Worldwide overview" : "All regions");
+      summary.textContent = `${label} · ${visible.length} of ${selectedClaims.length} reports${state === "ALL" ? "" : ` · ${state}`}`;
+      const overview = regionSelect.value === "overview" && conflictSelect.value === "all";
+      note.textContent = `${overview ? "The overview rotates through regions and topics. Regional views retain their priority order." : "Reports are listed in their existing priority order."} Updated ${date(data.generated_at)}. Cross-border reports can appear in multiple regional views. Gaps do not establish that a region is quiet.`;
+      if (!selectedClaims.length) grid.appendChild(node("div", "yy-empty", "No matching reports in this view. Try another region, conflict or evidence state, and consult source gaps before interpreting an absence of reporting."));
+      visible.forEach(claim => {
+        const card = renderCard(claim);
+        card.dataset.claimId = claim.id;
+        card.dataset.region = claim.worldwatch.primary_region;
+        const region = regions.find(item => item.id === claim.worldwatch.primary_region);
+        card.prepend(node("span", "yy-region-label", region?.label || "Global & Cross-border"));
+        grid.appendChild(card);
+      });
+      more.hidden = visible.length >= selectedClaims.length;
+      regionCounts.querySelectorAll("button").forEach(button => button.setAttribute("aria-pressed", String(button.dataset.region === regionSelect.value)));
+    };
+    STATES.forEach((value, index) => {
+      const button = node("button", "yy-filter", value);
       button.type = "button";
       button.setAttribute("aria-pressed", index === 0 ? "true" : "false");
       button.addEventListener("click", () => {
         filters.querySelectorAll("button").forEach(item => item.setAttribute("aria-pressed", String(item === button)));
-        show(state);
+        state = value;
+        show(true);
       });
       filters.appendChild(button);
     });
-    section.append(filters, grid);
-    show("ALL");
+    regionSelect.addEventListener("change", () => { populateConflicts(); show(true); });
+    conflictSelect.addEventListener("change", () => {
+      if (conflictSelect.value !== "all") {
+        const region = regions.find(item => item.conflicts?.some(conflict => conflict.id === conflictSelect.value));
+        if (region && regionSelect.value !== region.id) {
+          const selected = conflictSelect.value;
+          regionSelect.value = region.id;
+          populateConflicts();
+          conflictSelect.value = selected;
+        }
+      }
+      show(true);
+    });
+    more.addEventListener("click", () => { visibleCount += 24; show(); });
+    section.append(filters, summary, note, grid, more);
+    show();
+    const mount = document.getElementById("worldwatch-live-mount");
+    if (mount) { mount.replaceChildren(section); return; }
     const anchor = document.querySelector("main") || document.body.firstElementChild;
     if (anchor && anchor.parentNode === document.body) document.body.insertBefore(section, anchor);
     else document.body.insertBefore(section, document.body.firstChild);
@@ -260,6 +359,8 @@
       renderDual(data);
       renderPanel(status, data);
     } catch (error) {
+      const mount = document.getElementById("worldwatch-live-mount");
+      if (mount) mount.replaceChildren(node("p", "yy-empty", "Current reporting is unavailable. Check the status panel or open the earlier briefings below."));
       const panel = document.createElement("details");
       panel.id = "yy-live-panel";
       panel.open = true;
@@ -271,3 +372,4 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot, {once: true});
   else boot();
 })();
+
