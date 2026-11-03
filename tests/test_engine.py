@@ -17,6 +17,7 @@ from scripts.yy_engine.analysis import (
     enrich_item,
 )
 from scripts.yy_engine.ingest import _health
+from scripts.yy_engine.pipeline import _rank_trafficking_claims
 from scripts.yy_engine.relationships import build_edges_product
 from scripts.yy_engine.rules import detect_domains, stance
 from scripts.yy_engine.util import load_json, tokens, write_json_archive
@@ -56,6 +57,23 @@ def claims_for(*items: dict, now: dt.datetime = NOW, prior: list[dict] | None = 
 
 
 class EngineRegressionTests(unittest.TestCase):
+    def test_trfk_ranks_all_eligible_claims_within_its_domain(self):
+        trafficking = [
+            {"id": f"trfk-{i}", "domains": ["TRAFFICKING"], "watch_priority": 25}
+            for i in range(205)
+        ]
+        older = {"id": "older", "domains": ["TRAFFICKING"], "watch_priority": 70, "material_time": "2026-09-08T12:00:00Z"}
+        newer = {**older, "id": "newer", "material_time": "2026-09-09T12:00:00Z"}
+        unrelated = [
+            {"id": f"war-{i}", "domains": ["WAR"], "watch_priority": 100}
+            for i in range(250)
+        ]
+
+        ranked = _rank_trafficking_claims(unrelated + trafficking + [older, newer])
+
+        self.assertEqual(ranked[:2], [newer, older])
+        self.assertCountEqual([claim["id"] for claim in ranked[2:]], [claim["id"] for claim in trafficking])
+
     def test_all_required_states_are_declared(self):
         self.assertEqual(set(STATES), {"CONFIRMED", "CREDIBLE REPORT", "EARLY WARNING", "SPECULATIVE", "UNVERIFIED CLAIM", "REFUTED", "DORMANT"})
 

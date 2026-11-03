@@ -106,6 +106,14 @@ def _is_reported_signal(claim: dict) -> bool:
     )
 
 
+def _rank_trafficking_claims(eligible_claims: list[dict]) -> list[dict]:
+    return sorted(
+        (claim for claim in eligible_claims if "TRAFFICKING" in claim.get("domains", [])),
+        key=lambda claim: (claim.get("watch_priority", 0), claim.get("material_time", ""), claim["id"]),
+        reverse=True,
+    )
+
+
 def run(root: Path, offline: bool = False, now: dt.datetime | None = None) -> dict:
     now = now or utcnow()
     data = root / "data"
@@ -214,7 +222,7 @@ def run(root: Path, offline: bool = False, now: dt.datetime | None = None) -> di
         if any(observation_by_id.get(oid, {}).get("lat") is not None for oid in claim.get("observation_ids", []))
     ][:200]
     infra_claims = [claim for claim in strategic_claims if set(claim.get("domains", [])) & {"INFRA", "CYBER", "ECONOMIC", "CLIMATE", "SPACE"}][:200]
-    trafficking_claims = [claim for claim in strategic_claims if "TRAFFICKING" in claim.get("domains", [])][:200]
+    trafficking_claims = _rank_trafficking_claims(recent_claims)
     live_observations = [row for row in observations if now - parse_time(row.get("published")) <= dt.timedelta(days=30)][:1200]
 
     write_json(data / "source-registry.json", {"generated_at": iso_z(now), "catalog_version": catalog.get("version"), "sources": registry_rows})

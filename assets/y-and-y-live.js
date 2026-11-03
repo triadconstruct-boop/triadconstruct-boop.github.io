@@ -66,7 +66,7 @@
       #yy-dual-layer{width:min(1120px,calc(100% - 28px));margin:14px auto 22px;padding:12px}.yy-dual-title{color:var(--yy-red);font-size:11px;letter-spacing:.12em;font-weight:900;margin-bottom:8px}.yy-dual-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.yy-signal-box{border:1px solid #351414;padding:10px;background:#070202}.yy-signal-box h3{margin:0;color:#c7aaaa;font-size:11px;letter-spacing:.07em}.yy-signal-score{font-size:30px;font-weight:900;color:var(--yy-red);line-height:1.2}.yy-signal-box p{margin:3px 0;color:#9f7a7a;font-size:10px}
       @media(max-width:680px){#yy-live-panel{right:7px;bottom:7px;width:calc(100vw - 14px);max-height:66vh}.yy-layer-head{display:block}.yy-coverage{text-align:left;margin-top:7px}.yy-dual-grid{grid-template-columns:1fr}}
       @media print{#yy-live-panel{display:none!important}}
-      #worldwatch-live-mount #yy-intel-layer{width:100%;margin:18px 0 24px;padding:18px}.yy-geography{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0 8px}.yy-select-label{display:flex;flex-direction:column;gap:7px;color:#ba9999;font-size:11px;letter-spacing:.08em}.yy-select{width:100%;min-height:44px;border:1px solid #703030;border-radius:0;background:#100404;color:#f4dfdf;padding:9px 30px 9px 10px;font:13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.yy-select:focus-visible,.yy-filter:focus-visible,.yy-more:focus-visible{outline:2px solid #ff7777;outline-offset:3px}.yy-view-summary{margin:14px 0;color:#cbaaaa;font-size:12px}.yy-view-note{margin:8px 0 14px;color:#a48787;font-size:11px}.yy-region-label{display:block;color:#ff8f8f;font-size:10px;letter-spacing:.07em;margin-bottom:8px}.yy-more{display:block;min-height:44px;margin:18px auto 0;padding:10px 22px;border:1px solid #823030;background:#200606;color:#f0dede;font:12px ui-monospace,monospace;cursor:pointer}.yy-more[hidden]{display:none}.yy-coverage{font-size:11px}.yy-region-counts{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0}.yy-region-jump{border:1px solid #482020;background:#0c0303;color:#bd9999;padding:7px 9px;font:10px ui-monospace,monospace;cursor:pointer}.yy-region-jump[aria-pressed="true"]{color:#fff;border-color:#e94040}.yy-region-jump:focus-visible{outline:2px solid #ff7777;outline-offset:2px}@media(max-width:600px){.yy-geography{grid-template-columns:1fr}#worldwatch-live-mount #yy-intel-layer{padding:12px}.yy-card-top{align-items:flex-start;flex-wrap:wrap}.yy-scores{white-space:normal}}
+      :is(#worldwatch-live-mount,#trfk-live-mount) #yy-intel-layer{width:100%;margin:18px 0 24px;padding:18px}.yy-geography{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0 8px}.yy-select-label{display:flex;flex-direction:column;gap:7px;color:#ba9999;font-size:11px;letter-spacing:.08em}.yy-select{width:100%;min-height:44px;border:1px solid #703030;border-radius:0;background:#100404;color:#f4dfdf;padding:9px 30px 9px 10px;font:13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.yy-select:focus-visible,.yy-filter:focus-visible,.yy-more:focus-visible{outline:2px solid #ff7777;outline-offset:3px}.yy-view-summary{margin:14px 0;color:#cbaaaa;font-size:12px}.yy-view-note{margin:8px 0 14px;color:#a48787;font-size:11px}.yy-region-label{display:block;color:#ff8f8f;font-size:10px;letter-spacing:.07em;margin-bottom:8px}.yy-more{display:block;min-height:44px;margin:18px auto 0;padding:10px 22px;border:1px solid #823030;background:#200606;color:#f0dede;font:12px ui-monospace,monospace;cursor:pointer}.yy-more[hidden]{display:none}.yy-coverage{font-size:11px}.yy-region-counts{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0}.yy-region-jump{border:1px solid #482020;background:#0c0303;color:#bd9999;padding:7px 9px;font:10px ui-monospace,monospace;cursor:pointer}.yy-region-jump[aria-pressed="true"]{color:#fff;border-color:#e94040}.yy-region-jump:focus-visible{outline:2px solid #ff7777;outline-offset:2px}@media(max-width:600px){.yy-geography{grid-template-columns:1fr}:is(#worldwatch-live-mount,#trfk-live-mount) #yy-intel-layer{padding:12px}.yy-card-top{align-items:flex-start;flex-wrap:wrap}.yy-scores{white-space:normal}}
     `;
     document.head.appendChild(style);
   }
@@ -123,7 +123,7 @@
   function renderPanel(status, data) {
     const panel = document.createElement("details");
     panel.id = "yy-live-panel";
-    const keepClosed = route === "/" || route.includes("/worldwatch") || route.includes("/threshold") || route.includes("/wwt") || route.includes("/system");
+    const keepClosed = routeLabel === "TRFK" || route === "/" || route.includes("/worldwatch") || route.includes("/threshold") || route.includes("/wwt") || route.includes("/system");
     panel.open = !keepClosed && window.innerWidth >= 980;
     panel.appendChild(node("summary", "", `${routeLabel} // INTELLIGENCE LIVE`));
     const body = node("div", "yy-live-body");
@@ -137,7 +137,7 @@
     addRow(body, "ANOMALIES", status.anomaly_count || 0);
     addRow(body, "CHATGPT DEP.", status.chatgpt_dependency ? "YES" : "NO", status.chatgpt_dependency ? "yy-bad" : "yy-good");
     if (status.quiet_interpretation) body.appendChild(node("div", "yy-note", status.quiet_interpretation));
-    renderMiniClaims(body, claimsFrom(data));
+    if (routeLabel !== "TRFK") renderMiniClaims(body, claimsFrom(data));
     const gaps = Array.isArray(status.collection_blind_spots) ? status.collection_blind_spots : [];
     if (gaps.length) {
       body.appendChild(node("div", "yy-section-title", "COLLECTION BLIND SPOTS"));
@@ -161,12 +161,13 @@
     return details;
   }
 
-  function renderCard(claim) {
+  function renderCard(claim, rank) {
     const card = node("article", "yy-card");
     const top = node("div", "yy-card-top");
     top.append(stateBadge(claim.state), node("span", "yy-scores", `CONF ${score(claim.confidence)} ${claim.confidence_direction || ""} · WATCH ${score(claim.watch_priority)} · THREAT ${score(claim.threat_score)}`));
     card.appendChild(top);
-    card.appendChild(node("h3", "", claim.headline || "Untitled claim"));
+    const headline = claim.headline || "Untitled claim";
+    card.appendChild(node("h3", "", rank ? `#${rank} · ${headline}` : headline));
     card.appendChild(node("div", "yy-meta", `${(claim.domains || []).join("+") || "SECURITY"} // ${(claim.regions || []).join(", ") || "GLOBAL"} // ${date(claim.material_time)}`));
     card.appendChild(node("div", "yy-reason", claim.classification_reason || "Classification explanation unavailable."));
     const sources = node("div", "yy-evidence");
@@ -185,6 +186,30 @@
     if ((claim.anomaly_ids || []).length) card.appendChild(node("div", "yy-meta yy-warn", `ANOMALY CONVERGENCE // ${claim.anomaly_ids.length}`));
     card.appendChild(renderBranch(claim));
     return card;
+  }
+
+  function renderTrfk(data) {
+    const mount = document.getElementById("trfk-live-mount");
+    if (!mount) return;
+    const claims = claimsFrom(data);
+    const section = node("section");
+    section.id = "yy-intel-layer";
+    const head = node("div", "yy-layer-head");
+    const copy = node("div");
+    copy.append(
+      node("h2", "", "TRFK LIVE RANKING"),
+      node("p", "", "All qualifying trafficking claims from the past seven days, ranked by watch priority. Newer reports break ties. The evidence label is shown separately from rank."),
+    );
+    head.append(copy, node("div", "yy-coverage", `${claims.length} CLAIMS // ${date(data.generated_at)}`));
+    section.appendChild(head);
+    if (claims.length) {
+      const grid = node("div", "yy-claim-grid");
+      claims.forEach((claim, index) => grid.appendChild(renderCard(claim, index + 1)));
+      section.appendChild(grid);
+    } else {
+      section.appendChild(node("p", "yy-empty", "No qualifying trafficking claims in this collection window. Check source coverage before interpreting the gap."));
+    }
+    mount.replaceChildren(section);
   }
 
   function renderWorldwatch(status, data) {
@@ -356,11 +381,14 @@
       if (!statusResponse.ok || !dataResponse.ok) throw new Error(`HTTP ${statusResponse.status}/${dataResponse.status}`);
       const [status, data] = await Promise.all([statusResponse.json(), dataResponse.json()]);
       renderWorldwatch(status, data);
+      renderTrfk(data);
       renderDual(data);
       renderPanel(status, data);
     } catch (error) {
       const mount = document.getElementById("worldwatch-live-mount");
       if (mount) mount.replaceChildren(node("p", "yy-empty", "Current reporting is unavailable. Check the status panel or open the earlier briefings below."));
+      const trfkMount = document.getElementById("trfk-live-mount");
+      if (trfkMount) trfkMount.replaceChildren(node("p", "yy-empty", "Current trafficking rankings are unavailable. The earlier registry is still available."));
       const panel = document.createElement("details");
       panel.id = "yy-live-panel";
       panel.open = true;
